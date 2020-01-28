@@ -1,6 +1,8 @@
 # Learning glove
 ## Realtime Embedded project 5
 
+# Lexicon Glove
+
 This project proposes to build a wearable glove that can learn hand movements and produce speech from the movements of the hand.
 
 Proposed hardware:
