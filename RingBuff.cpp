@@ -1,22 +1,7 @@
-
-
 #include <iostream>
 #include "RingBuff.h"
-using namespace std;
 
-class RingBuff {
- 
-    protected:
-        int buf_size; 
-    public:
-        
-        double* buffer;
-        unsigned offset = 0;
-        RingBuff(int buf_size) ; 
-        void process(double sample);
-        void reset_buffer();
-        ~RingBuff();    
-};
+using namespace std;
 
 RingBuff::RingBuff(int buf_size) :
     buffer(new double[buf_size]()) ,
@@ -43,41 +28,40 @@ void RingBuff::process(double sample){
 }
 
 int main(){
-    int taps = 5;
-    RingBuff delayobj(taps);
+    int len = 4;
+    RingBuff delayobj len);
     
-
     cout << "input 1" << endl;
     delayobj.process(1.3);
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
 
     cout << "input 2" << endl;
     delayobj.process(2.1);
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
 
     cout << "input 3" << endl;
     delayobj.process(3.6);
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
 
     cout << "input 4" << endl;
     delayobj.process(4.8);
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
 
     cout << "input 5" << endl;
     delayobj.process(5.4);
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
@@ -85,7 +69,7 @@ int main(){
     cout << "reset_buffer" << endl;
     delayobj.reset_buffer();
 
-    for (int i = 0; i < taps;i++){
+    for (int i = 0; i < len;i++){
         cout << delayobj.buffer[i] << " " ;
     }
     cout << endl;
