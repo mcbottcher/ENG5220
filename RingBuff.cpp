@@ -1,6 +1,7 @@
 
 
 #include <iostream>
+#include "RingBuff.h"
 using namespace std;
 
 class RingBuff {
