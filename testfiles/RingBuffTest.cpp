@@ -5,7 +5,7 @@ using namespace std;
 
 void print_buff(double* buff, int len){
         for (int i = 0; i < len;i++){
-            cout << buff[i] << " " ;
+            cout << "[" << buff[i] << "]";
         }
         cout << endl;
     }

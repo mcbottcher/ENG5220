@@ -1,3 +1,5 @@
+using namespace std;
+
 class RingBuff {
 
     protected:
@@ -5,7 +7,7 @@ class RingBuff {
  
     public:
         double* buffer;
-        unsigned buff_point;
+        unsigned element_ptr;
  
         RingBuff(int buf_size) ; 
         void insert_sample(double sample);

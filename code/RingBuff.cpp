@@ -1,10 +1,8 @@
 #include "RingBuff.h"
 
-using namespace std;
-
 RingBuff::RingBuff(int buf_size) :
     buffer(new double[buf_size]()) ,
-    buff_point(0) , 
+    element_ptr(0) , 
     buf_size(buf_size){
     reset_buffer();
 }
@@ -21,9 +19,9 @@ void RingBuff::reset_buffer(){
 }
 
 void RingBuff::insert_sample(double sample){
-    double* val = &buffer[buff_point];
+    double* val = &buffer[element_ptr];
     *val = sample;
-    if (++buff_point >= buf_size){
-        buff_point = 0;
+    if (++element_ptr >= buf_size){
+        element_ptr = 0;
     }
 }
