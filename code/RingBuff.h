@@ -5,10 +5,10 @@ class RingBuff {
  
     public:
         double* buffer;
-        unsigned offset;
+        unsigned buff_point;
  
         RingBuff(int buf_size) ; 
-        void process(double sample);
+        void insert_sample(double sample);
         void reset_buffer();
         ~RingBuff();    
  

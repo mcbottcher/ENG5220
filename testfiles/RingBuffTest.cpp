@@ -1,5 +1,5 @@
 #include <iostream>
-#include "RingBuff.cpp"
+#include "../code/RingBuff.cpp"
 
 using namespace std;
 
@@ -16,26 +16,26 @@ int main(){
     RingBuff delayobj(len);
     
     cout << "input 1" << endl;
-    delayobj.process(1.3);
+    delayobj.insert_sample(1.3);
     print_buff(delayobj.buffer, len);
 
     cout << "input 2" << endl;
-    delayobj.process(2.1);
+    delayobj.insert_sample(2.1);
     print_buff(delayobj.buffer, len);
     cout << endl;
 
     cout << "input 3" << endl;
-    delayobj.process(3.6);
+    delayobj.insert_sample(3.6);
     print_buff(delayobj.buffer, len);
     cout << endl;
 
     cout << "input 4" << endl;
-    delayobj.process(4.8);
+    delayobj.insert_sample(4.8);
     print_buff(delayobj.buffer, len);
     cout << endl;
 
     cout << "input 5" << endl;
-    delayobj.process(5.4);
+    delayobj.insert_sample(5.4);
     print_buff(delayobj.buffer, len);
     cout << endl;
 

@@ -4,7 +4,7 @@ using namespace std;
 
 RingBuff::RingBuff(int buf_size) :
     buffer(new double[buf_size]()) ,
-    offset(0) , 
+    buff_point(0) , 
     buf_size(buf_size){
     reset_buffer();
 }
@@ -20,10 +20,10 @@ void RingBuff::reset_buffer(){
     }
 }
 
-void RingBuff::process(double sample){
-    double* val = &buffer[offset];
+void RingBuff::insert_sample(double sample){
+    double* val = &buffer[buff_point];
     *val = sample;
-    if (++offset>= buf_size){
-        offset = 0;
+    if (++buff_point >= buf_size){
+        buff_point = 0;
     }
 }
