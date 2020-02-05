@@ -20,7 +20,7 @@ Delay::Delay(int number_taps) :
  
  // Delay Class destructor
 Delay::~Delay(){
-    delete[] delayline;
+    delete[] buffer;
 }
 
 //Reset buffer
