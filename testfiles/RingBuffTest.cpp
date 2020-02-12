@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../code/RingBuff.cpp"
 
+
 using namespace std;
 
 void print_buff(double* buff, int len){
@@ -44,6 +45,8 @@ int main(){
     print_buff(delayobj.buffer, len);
     cout << endl;
 
+    cout << "buffer address: "<< delayobj.get_buff_address() << endl;
+    cout << "buffer length: " << delayobj.get_buff_len()<< endl;
 
 
     return 0;
