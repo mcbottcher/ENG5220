@@ -3,8 +3,6 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-
 #Plot the filtered signal
 filtered = [None]*4
 for i in range(4):

@@ -1,5 +1,4 @@
 #include <Iir.h>
-#include <vector>
 
 using namespace std;
 
@@ -20,16 +19,12 @@ class FilterBank {
     protected:
         int numberfilter;   // number of filters required
         const float fs;     // sample rate
-        float* fcarray;     // array of cutoff frequencies
         double* arrout;     // pointer to array of processed samples
-
-        // double pointer to filter wrapper
-        Filter** filterarray; //look up smart pointers
+        Filter** filterarray; // double pointer to filter wrapper //look up smart pointers
         
     public:
 
         FilterBank(int numberfilter, float fs, float* fcarray); 
-        ~FilterBank();
-
+        ~FilterBank(){delete[] filterarray;};
         double* filter_sample(double sample);   
 };    
