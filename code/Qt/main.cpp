@@ -1,18 +1,12 @@
-#include <MonitorWindow.h>
-
+#include "mainwindow.h"
 #include <QApplication>
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	QApplication app(argc, argv);
+ QApplication app (argc, argv);
 
-	// create the window
-	MonitorWindow window;
-	window.showMaximized();
+ MainWindow home_page;
+ home_page.show();
 
-	// call the window.timerEvent function every 40 ms
-	window.startTimer(40);
-
-	// execute the application
-	return app.exec();
+ return app.exec();
 }
