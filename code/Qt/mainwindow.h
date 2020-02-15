@@ -20,6 +20,7 @@ public:
     ~MainWindow();
 
 private:
+    size_t plotBufferSize = 10;
     MonitorWindow *monitor_window;
     QPixmap *logo_image;
     QFont title_font;

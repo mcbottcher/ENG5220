@@ -1,9 +1,13 @@
 #include "MonitorWindow.h"
-// #include "adcreader.h"
 
-#include <cmath>  // for sine stuff
 
-MonitorWindow::MonitorWindow(): count(0){
+#include <cmath> 
+
+using namespace std;
+
+MonitorWindow::MonitorWindow(size_t bufferSize): 
+    count(0),
+    bufferSize(bufferSize){
 	
 
     resetButton = new QPushButton("reset");
@@ -14,13 +18,15 @@ MonitorWindow::MonitorWindow(): count(0){
 
 
 	// set up the initial plot data
-	for( int index=0; index<plotDataSize; ++index ){
+	for(int index=0; index<plotDataSize; index++ ){
 		xAxisData[index] = index;
-        for(int j = 0; j<3;j++){
-            acc[j].data[index] = 0;
-            gyro[j].data[index] = 0;
+        for(size_t j = 0; j<5;j++){
+            if (j < 3){
+                acc[j].data[index] = 0;
+                gyro[j].data[index] = 0;
+            }
+            finger[j].data[index]=0;
         }
-        for (int j = 0; j<5;j++){finger[j].data[index]=0;}
 	}
 
     //setup curve names
@@ -40,35 +46,37 @@ MonitorWindow::MonitorWindow(): count(0){
 
 
     //setup checkboxes
-    for (int i = 0; i < 3; i++){
-        acc[i].checkbox = new QCheckBox(acc[i].name);
-        gyro[i].checkbox = new QCheckBox(gyro[i].name);
+    for (size_t i = 0; i < 5; i++){
+        if (i < 3){
+            acc[i].checkbox = new QCheckBox(acc[i].name);
+            gyro[i].checkbox = new QCheckBox(gyro[i].name);
+        }
+        finger[i].checkbox = new QCheckBox(finger[i].name);
     }
-
-    for (int i = 0; i < 5; i++){finger[i].checkbox = new QCheckBox(finger[i].name);}
-
 
     //setup Plots
     accelerometerPlot = new QwtPlot;
     gyroPlot = new QwtPlot;
     fingerPlot = new QwtPlot;
 
-    //attach curves to plots and set pen colour
-    for (int i = 0; i < 3; i++){
-        acc[i].plot = accelerometerPlot;
-        setupCurves(acc[i]);
-        acc[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
 
-        gyro[i].plot = gyroPlot;
-        setupCurves(gyro[i]);
-        gyro[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
+    //setup and attach curves to plots
+    for (size_t i = 0; i < 5; i++){
+        if (i < 3){
+            _setupCurves(accelerometerPlot, acc[i]);
+            _setupCurves(gyroPlot, gyro[i]);
+        }
+        _setupCurves(fingerPlot, finger[i]);
     }
-    for (int i = 0; i < 5; i++){
-        finger[i].plot = fingerPlot;
-        setupCurves(finger[i]);
+
+    //set colour of curves
+    for (size_t i = 0; i < 5; i++){
+        if (i < 3){
+            acc[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
+            gyro[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
+        }
         finger[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
     }
-
 
     //show plots
 	accelerometerPlot->replot();
@@ -80,25 +88,26 @@ MonitorWindow::MonitorWindow(): count(0){
 
 
 	// set up the layout
-	controlLayout = new QVBoxLayout;
+	controlLayout = new QHBoxLayout;
+    controlLayout->addStretch(400);
     controlLayout->addWidget(resetButton);
-    controlLayout->addWidget(closeButton);
+    controlLayout->addWidget(closeButton, Qt::AlignRight);
 
     accLayout = new QHBoxLayout;
     checkAccLayout = new QVBoxLayout;
-    for (int i=0; i<3; i++){checkAccLayout->addWidget(acc[i].checkbox);}
+    for (size_t i=0; i<3; i++){checkAccLayout->addWidget(acc[i].checkbox);}
     accLayout->addLayout(checkAccLayout);
     accLayout->addWidget(accelerometerPlot);
     
     gyroLayout  = new QHBoxLayout;
     checkGyroLayout = new QVBoxLayout;
-    for (int i=0; i<3; i++){checkGyroLayout->addWidget(gyro[i].checkbox);}
+    for (size_t i=0; i<3; i++){checkGyroLayout->addWidget(gyro[i].checkbox);}
     gyroLayout->addLayout(checkGyroLayout);
     gyroLayout->addWidget(gyroPlot);
 
     fingerLayout = new QHBoxLayout;
     checkFingerLayout = new QVBoxLayout;
-    for (int i=0; i<5; i++){checkFingerLayout->addWidget(finger[i].checkbox);}
+    for (size_t i=0; i<5; i++){checkFingerLayout->addWidget(finger[i].checkbox);}
     fingerLayout->addLayout(checkFingerLayout);
     fingerLayout->addWidget(fingerPlot);
 
@@ -111,81 +120,174 @@ MonitorWindow::MonitorWindow(): count(0){
     vPlotLayout->addLayout(fingerLayout);
     vPlotLayout->addLayout(hPlotLayout);
 
-	hLayout = new QHBoxLayout;
-	hLayout->addLayout(controlLayout);
-    hLayout->addLayout(vPlotLayout);
+	mainLayout = new QVBoxLayout;
+    mainLayout->addLayout(vPlotLayout);
+    mainLayout->addLayout(controlLayout);
 
-	setLayout(hLayout);
+	setLayout(mainLayout);
 }
 
 MonitorWindow::~MonitorWindow(){
 }
 
 
-// Method to draw a curve on a plot
-void MonitorWindow::plotHandler(CurveStruct &plotcurve){
+// Method to draw on a curve
+void MonitorWindow::_updateCurve(CurveStruct &plotcurve){
     plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
+}
+
+// Method to draw plot on the screen
+void MonitorWindow::_drawPlot(CurveStruct &plotcurve){
     plotcurve.plot->replot();
 }
 
-void MonitorWindow::insertSample(CurveStruct &plotcurve, double sample){
+// Method to draw all plots on the screen
+void MonitorWindow::drawPlots(){
+    accelerometerPlot->replot();
+    gyroPlot->replot();
+    fingerPlot->replot();
+}
+
+// Method to insert sample into curve data array
+void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
     memmove(plotcurve.data, plotcurve.data+1, (plotDataSize-1) * sizeof(double));
 	plotcurve.data[plotDataSize-1] = sample;
 }
 
 // Method to setup curves and attach to plot
-void MonitorWindow::setupCurves(CurveStruct &plotcurve){
+void MonitorWindow::_setupCurves(QwtPlot *plot, CurveStruct &plotcurve){
+    plotcurve.plot = plot;
     plotcurve.curve = new QwtPlotCurve();
     plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
 	plotcurve.curve->attach(plotcurve.plot);
-    resetCurve(plotcurve);
+    _resetCurve(plotcurve);
 }
 
-// Method to reset the Curves to Zero
-void MonitorWindow::resetCurve(CurveStruct &plotcurve){
-    for( int index=0; index<plotDataSize; ++index ){
+// Method to reset the Curves to zero.
+void MonitorWindow::_resetCurve(CurveStruct &plotcurve){
+    for(int index=0; index<plotDataSize; ++index ){
 		plotcurve.data[index] = 0;
 	}
     plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
-    plotcurve.plot->replot();
 }
 
-// Method to plot sample if button is checked
-void MonitorWindow::plotSample(CurveStruct &plotcurve, double sample){
+// Method to plot individual sample if button is checked
+void MonitorWindow::_plotSample(CurveStruct &plotcurve, double sample){
 
+    if (plotcurve.checkbox->isChecked()){_insertSample(plotcurve, sample);}
+    else {_insertSample(plotcurve, 0);}
+    _updateCurve(plotcurve);
+}
+
+// Method to plot buffer of samples if button is checked
+void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer){
     if (plotcurve.checkbox->isChecked()){
-        insertSample(plotcurve, sample);
+        for (size_t i=0; i< bufferSize;i++){_insertSample(plotcurve, buffer[i]);}
     }
-    else {insertSample(plotcurve, 0);}
-
-    plotHandler(plotcurve);
+    else {for (size_t i=0; i< bufferSize;i++){_insertSample(plotcurve, 0);}}
+    _updateCurve(plotcurve);
 }
+
+template <typename T>
+void MonitorWindow::plotAcc(T sample){
+    for (size_t i = 0; i <3; i++){_plotSample(acc[i], sample[i]);}
+}
+template <typename T>
+void MonitorWindow::plotGyro(T sample){
+    for (size_t i = 0; i <3; i++){_plotSample(gyro[i], sample[i]);}
+}
+template <typename T>
+void MonitorWindow::plotFinger(T sample){
+    for (size_t i = 0; i <5; i++){ _plotSample(finger[i], sample[i]);}
+}
+
 
 void MonitorWindow::timerEvent(QTimerEvent *){
-	double sample = 5 * sin(M_PI * count/50.0);
+
+    // //plot buffer of samples to each plot
+    // double **buffer;
+    // buffer = new double*[5];
+    
+    // for (size_t i = 0; i<5; i++){
+    //     buffer[i] = new double[bufferSize];
+    // }
+
+    // //fill buffers with samples
+    // for (size_t j = 0; j<bufferSize; j++){
+    //     double in = 5 * sin(M_PI * count/50.0);
+	//     ++count;
+    //     for (size_t i=0; i<5;i ++){
+    //         buffer[i][j]= in/(i+1);
+    //     }
+    // }
+    
+    // plotAcc(buffer);
+    // plotGyro(buffer);   
+    // plotFinger(buffer);
+    // drawPlots();
+
+    // delete[] buffer;
+
+    
+    
+
+    //plot single sample to each plot
+    double sample[5];
+
+    double in = 5 * sin(M_PI * count/50.0);
 	++count;
 
-    plotSample(acc[0], sample);
-    plotSample(acc[1], sample/2);
-    plotSample(acc[2], sample/3);
+    for (size_t i=0; i<5;i++){
+        sample[i]= in/(i+1);
+    }
+    
+    plotAcc(sample);
+    plotGyro(sample);   
+    plotFinger(sample);
+    drawPlots();
+    
 
-    plotSample(gyro[0], sample);
-    plotSample(gyro[1], sample/2);
-    plotSample(gyro[2], sample/3);
 
-    plotSample(finger[0], sample);
-    plotSample(finger[1], sample/2);
-    plotSample(finger[2], sample/3);
-    plotSample(finger[3], sample/4);
-    plotSample(finger[4], sample/5);
+    // //plot buffer of samples to each plot from instance
+    // double buffer[5][bufferSize];
 
+    // for (size_t i=0; i<bufferSize;i++){
+    //     double sample = 5 * sin(M_PI * count/50.0);
+    //     for (size_t j=0; j<5;j++ ){buffer[j][i] = sample/(j+1);}
+    //     ++count;
+    // }
+
+    // for (size_t i=0; i<5;i++){
+    //     if (i<3){
+    //         _plotSample(acc[i], buffer[i], bufferSize);
+    //         _plotSample(gyro[i], buffer[i], bufferSize);
+    //     }
+    //     _plotSample(finger[i], buffer[i], bufferSize);
+    // }
+    // drawPlots();
+
+
+    // //plot single sample to each plot from instance
+    // double sample = 5 * sin(M_PI * count/50.0);
+	// ++count;
+
+    // for (size_t i=0; i<5;i++){
+    //     if (i<3){
+    //         _plotSample(acc[i], sample/(i+1));
+    //         _plotSample(gyro[i] sample/(i+1));
+    //     }
+    //     _plotSample(finger[i], sample/(i+1));
+    // }
+    // drawPlots();
 }
 
 
 void MonitorWindow::resetbutton(){
-    for (int i=0;i<3;i++){
-        resetCurve(acc[i]);
-        resetCurve(gyro[i]);
+    for (size_t i=0;i<5;i++){
+        if (i < 3){
+            _resetCurve(acc[i]);
+            _resetCurve(gyro[i]);
+        }
+        _resetCurve(finger[i]);
     }
-    for (int i=0;i<5;i++){resetCurve(finger[i]);}
 }

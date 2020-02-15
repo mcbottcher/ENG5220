@@ -1,16 +1,16 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <QString>
 
 #include <qwt/qwt_knob.h>
-#include <QPushButton>
 #include <qwt/qwt_plot.h>
 #include <qwt/qwt_plot_curve.h>
 
 #include <QBoxLayout>
 #include <QColor>
 #include <QCheckBox>
+#include <QPushButton>
+#include <QString>
 
 
 // class definition 'MonitorWindow'
@@ -20,63 +20,71 @@ class MonitorWindow : public QWidget
 	Q_OBJECT
 
 // internal variables for the window class
+
 private:
+    int count;
+    const size_t bufferSize;
 	
-    QPushButton  *resetButton;
-    QPushButton  *closeButton;
+    QPushButton  *resetButton, *closeButton;
 
+	QwtPlot      *accelerometerPlot, *gyroPlot, *fingerPlot;
 
-	QwtPlot      *accelerometerPlot;
-    QwtPlot      *gyroPlot;
-    QwtPlot      *fingerPlot;
-
-
-    static const int plotDataSize = 100;
+    static const int plotDataSize = 200;
     double xAxisData[plotDataSize];
 
     struct CurveStruct{
-        QwtPlot *plot;
+        QwtPlot      *plot;
         QwtPlotCurve *curve;
-        QCheckBox *checkbox;
-        double data[100];
-        QString name;
+        QCheckBox    *checkbox;
+        double        data[plotDataSize];
+        QString       name;
     } acc[3], gyro[3], finger[5];
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
-	QVBoxLayout  *controlLayout;  // vertical layout
+	QHBoxLayout  *controlLayout;  // vertical layout
     
-    QVBoxLayout  *vPlotLayout;  // vertical layout
+    QVBoxLayout  *vPlotLayout;  
     QHBoxLayout  *hPlotLayout;
-	QHBoxLayout  *hLayout;  // horizontal layout
+	QVBoxLayout  *mainLayout;  
 
-    QVBoxLayout *checkAccLayout;
-    QVBoxLayout *checkGyroLayout;
-    QVBoxLayout *checkFingerLayout;
+    QVBoxLayout *checkAccLayout, *checkGyroLayout, *checkFingerLayout;
+    QHBoxLayout *accLayout, *gyroLayout, *fingerLayout;
 
-    QHBoxLayout *accLayout;
-    QHBoxLayout *gyroLayout;
-    QHBoxLayout *fingerLayout;
+    void _updateCurve(CurveStruct &plotcurve);
+    void _drawPlot(CurveStruct &plotcurve);
+    void _insertSample(CurveStruct &plotcurve, double sample);
+    void _setupCurves(QwtPlot *plot, CurveStruct &plotcurve);
+    void _plotSample(CurveStruct &plotcurve, double sample);
+    void _plotSample(CurveStruct &plotcurve, double *buffer);
+    void _resetCurve(CurveStruct &plotcurve);
 
-	int count;
 
 public:
 
-	MonitorWindow(); // default constructor - called when a Window is declared without arguments
+	MonitorWindow(size_t bufferSize); // default constructor - called when a Window is declared without arguments
 	~MonitorWindow();
 	void timerEvent( QTimerEvent * );
 
-    void plotHandler(CurveStruct &plotcurve);
-    void insertSample(CurveStruct &plotcurve, double sample);
-    void setupCurves(CurveStruct &plotcurve);
-    void plotSample(CurveStruct &plotcurve, double sample);
-    void resetCurve(CurveStruct &plotcurve);
+    //plot individual samples in format: 
+    //  sample[3] = {X,Y,Z}; or samples[3][n] = {{nX},{nY},{nZ}};
+    template <typename T>
+    void plotAcc(T sample);
+    template <typename T>
+    void plotGyro(T sample);
+    template <typename T>
+    void plotFinger(T sample);
+
+    // draw all plots
+    void drawPlots();
+
+
     
 
 public slots:
 
     void resetbutton();
-    void closeWindow(){this->close();}
+    void closeWindow(){this->hide();}
 
 };
 

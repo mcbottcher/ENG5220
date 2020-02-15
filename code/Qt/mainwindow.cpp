@@ -76,9 +76,13 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(but_quit, SIGNAL (clicked()),
             this, SLOT (but_quit_clicked()));
 
+
+    monitor_window = new MonitorWindow(plotBufferSize);
+    monitor_window->startTimer(80);
 }
 
 MainWindow::~MainWindow(){
+    delete monitor_window;
 }
 
 void MainWindow::but_quit_clicked(){
@@ -86,8 +90,6 @@ void MainWindow::but_quit_clicked(){
 }
 
 void MainWindow::monitor_button_clicked(){
-    monitor_window = new MonitorWindow();
-    monitor_window->startTimer(40);
     monitor_window->show();
 }
 
