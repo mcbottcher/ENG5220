@@ -78,12 +78,19 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
         finger[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
     }
 
-    //show plots
+    //Set plot titles
+    accelerometerPlot->setTitle("Accelerometer");
+    gyroPlot->setTitle("Gyroscope");
+    fingerPlot->setTitle("Fingers");
+
+    //pot initial curves
 	accelerometerPlot->replot();
-	accelerometerPlot->show();
     gyroPlot->replot();
-	gyroPlot->show();
     fingerPlot->replot();
+
+    //show plots
+	accelerometerPlot->show();
+	gyroPlot->show();
 	fingerPlot->show();
 
 
@@ -201,50 +208,51 @@ void MonitorWindow::plotFinger(T sample){
     for (size_t i = 0; i <5; i++){ _plotSample(finger[i], sample[i]);}
 }
 
-
+// currently just showing use cases, should actually 
+// be used to update the plots at regular intervals
 void MonitorWindow::timerEvent(QTimerEvent *){
 
-    // //plot buffer of samples to each plot
-    // double **buffer;
-    // buffer = new double*[5];
+    //plot buffer of samples to each plot
+    double **buffer;
+    buffer = new double*[5];
     
-    // for (size_t i = 0; i<5; i++){
-    //     buffer[i] = new double[bufferSize];
-    // }
+    for (size_t i = 0; i<5; i++){
+        buffer[i] = new double[bufferSize];
+    }
 
-    // //fill buffers with samples
-    // for (size_t j = 0; j<bufferSize; j++){
-    //     double in = 5 * sin(M_PI * count/50.0);
-	//     ++count;
-    //     for (size_t i=0; i<5;i ++){
-    //         buffer[i][j]= in/(i+1);
-    //     }
-    // }
-    
-    // plotAcc(buffer);
-    // plotGyro(buffer);   
-    // plotFinger(buffer);
-    // drawPlots();
-
-    // delete[] buffer;
-
-    
-    
-
-    //plot single sample to each plot
-    double sample[5];
-
-    double in = 5 * sin(M_PI * count/50.0);
-	++count;
-
-    for (size_t i=0; i<5;i++){
-        sample[i]= in/(i+1);
+    //fill buffers with samples
+    for (size_t j = 0; j<bufferSize; j++){
+        double in = 5 * sin(M_PI * count/50.0);
+	    ++count;
+        for (size_t i=0; i<5;i ++){
+            buffer[i][j]= in/(i+1);
+        }
     }
     
-    plotAcc(sample);
-    plotGyro(sample);   
-    plotFinger(sample);
+    plotAcc(buffer);
+    plotGyro(buffer);   
+    plotFinger(buffer);
     drawPlots();
+
+    delete[] buffer;
+
+    
+    
+
+    // //plot single sample to each plot
+    // double sample[5];
+
+    // double in = 5 * sin(M_PI * count/50.0);
+	// ++count;
+
+    // for (size_t i=0; i<5;i++){
+    //     sample[i]= in/(i+1);
+    // }
+    
+    // plotAcc(sample);
+    // plotGyro(sample);   
+    // plotFinger(sample);
+    // drawPlots();
     
 
 

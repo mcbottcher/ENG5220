@@ -1,5 +1,5 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef MONITORWINDOW_H
+#define MONITORWINDOW_H
 
 
 #include <qwt/qwt_knob.h>
@@ -88,4 +88,4 @@ public slots:
 
 };
 
-#endif // WINDOW_H
+#endif // MONITORWINDOW_H

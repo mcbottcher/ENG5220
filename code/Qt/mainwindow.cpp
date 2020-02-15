@@ -73,16 +73,32 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(but_mon, SIGNAL (clicked()),
             this, SLOT (monitor_button_clicked()));
 
+    connect(but_interpret, SIGNAL (clicked()),
+            this, SLOT (interpretButtonClicked()));
+
+    connect(but_train, SIGNAL (clicked()),
+            this, SLOT (trainButtonClicked()));
+
     connect(but_quit, SIGNAL (clicked()),
             this, SLOT (but_quit_clicked()));
 
 
     monitor_window = new MonitorWindow(plotBufferSize);
+    monitor_window->setWindowTitle("Monitor");
     monitor_window->startTimer(80);
+
+    interpretWindow = new InterpretWindow();
+    interpretWindow->setWindowTitle("Interpret Mode");
+    interpretWindow->startTimer(1000);
+
+    trainWindow = new TrainWindow();
+    trainWindow->setWindowTitle("Training Mode");
+    // trainWindow->startTimer(1000)
 }
 
 MainWindow::~MainWindow(){
     delete monitor_window;
+    delete interpretWindow;
 }
 
 void MainWindow::but_quit_clicked(){
@@ -91,5 +107,13 @@ void MainWindow::but_quit_clicked(){
 
 void MainWindow::monitor_button_clicked(){
     monitor_window->show();
+}
+
+void MainWindow::trainButtonClicked(){
+    trainWindow->show();
+}
+
+void MainWindow::interpretButtonClicked(){
+    interpretWindow->show();
 }
 

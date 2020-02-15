@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include "MonitorWindow.h"
+#include "InterpretWindow.h"
+#include "TrainWindow.h"
 #include <QMainWindow>
 #include <QPushButton>
 #include <QLayout>
@@ -9,7 +11,7 @@
 #include <QLabel>
 #include <QPixmap>
 #include <QToolButton>
-//#include <QFont>
+#include <QFont>
 
 class MainWindow : public QMainWindow
 {
@@ -22,6 +24,8 @@ public:
 private:
     size_t plotBufferSize = 10;
     MonitorWindow *monitor_window;
+    InterpretWindow *interpretWindow;
+    TrainWindow *trainWindow;
     QPixmap *logo_image;
     QFont title_font;
     QLabel *title_text, *logo, *lab_train, *lab_interpret, *lab_mon, *lab_icon;
@@ -31,6 +35,8 @@ private:
 
 private slots:
     void monitor_button_clicked();
+    void interpretButtonClicked();
+    void trainButtonClicked();
     void but_quit_clicked();
 
 };
