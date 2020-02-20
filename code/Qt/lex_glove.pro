@@ -22,6 +22,7 @@ HEADERS += \
     mainwindow.h \
     MonitorWindow.h \
     InterpretWindow.h \
-    TrainWindow.h
+    TrainWindow.h \
+    LightWidget.h
 
 FORMS +=

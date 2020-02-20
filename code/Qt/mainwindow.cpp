@@ -70,22 +70,26 @@ MainWindow::MainWindow(QWidget *parent) :
     // Set QWidget as the central layout of the main window
     setCentralWidget(window);
 
-    connect(but_mon, SIGNAL (clicked()),
-            this, SLOT (monitor_button_clicked()));
-
-    connect(but_interpret, SIGNAL (clicked()),
-            this, SLOT (interpretButtonClicked()));
-
-    connect(but_train, SIGNAL (clicked()),
-            this, SLOT (trainButtonClicked()));
-
-    connect(but_quit, SIGNAL (clicked()),
-            this, SLOT (but_quit_clicked()));
+    connect(but_mon, &QPushButton::clicked, 
+            this, [this](){this->monitor_button_clicked();});
 
 
-    monitor_window = new MonitorWindow(plotBufferSize);
-    monitor_window->setWindowTitle("Monitor");
-    monitor_window->startTimer(80);
+    connect(but_interpret, &QPushButton::clicked,
+            this, [this](){this->interpretButtonClicked();});
+
+    connect(but_train, &QPushButton::clicked,
+            this, [this](){this->trainButtonClicked();});
+
+    // connect(but_quit, SIGNAL (clicked()),
+    //         this, SLOT (but_quit_clicked()));
+
+    connect(but_quit, &QPushButton::clicked,
+             this, [this](){this->close();} );
+
+
+    monitorWindow = new MonitorWindow(plotBufferSize);
+    monitorWindow->setWindowTitle("Monitor");
+    monitorWindow->startTimer(10);
 
     interpretWindow = new InterpretWindow();
     interpretWindow->setWindowTitle("Interpret Mode");
@@ -93,11 +97,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     trainWindow = new TrainWindow();
     trainWindow->setWindowTitle("Training Mode");
-    // trainWindow->startTimer(1000)
+    trainWindow->startTimer(1000);
 }
 
 MainWindow::~MainWindow(){
-    delete monitor_window;
+    delete monitorWindow;
     delete interpretWindow;
 }
 
@@ -106,7 +110,7 @@ void MainWindow::but_quit_clicked(){
 }
 
 void MainWindow::monitor_button_clicked(){
-    monitor_window->show();
+    monitorWindow->show();
 }
 
 void MainWindow::trainButtonClicked(){

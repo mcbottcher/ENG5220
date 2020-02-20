@@ -12,7 +12,7 @@ InterpretWindow::InterpretWindow(){
     connect(wrongButton, SIGNAL(clicked()), SLOT(wrongButtonClicked()));
 
     homeButton = new QPushButton("Home");
-    connect(homeButton, SIGNAL(clicked()), SLOT(closeWindow()));
+    connect(homeButton, &QPushButton::clicked, [this](){this->close();});
 
     clearButton = new QPushButton("Clear");
     connect(clearButton, SIGNAL(clicked()), SLOT(clearTextClicked()));
@@ -60,9 +60,9 @@ InterpretWindow::InterpretWindow(){
 
 InterpretWindow::~InterpretWindow(){}
 
-void InterpretWindow::closeWindow(){
-    this->close();
-}
+// void InterpretWindow::closeWindow(){
+//     this->close();
+// }
 
 void InterpretWindow::wrongButtonClicked(){
     //system("echo Hello |festival --tts");

@@ -67,7 +67,7 @@ public:
 	void timerEvent( QTimerEvent * );
 
     //plot individual samples in format: 
-    //  sample[3] = {X,Y,Z}; or samples[3][n] = {{nX},{nY},{nZ}};
+    //  sample[3] = {X,Y,Z}; or samples[3][n] = {{Xn},{Yn},{Zn}};
     template <typename T>
     void plotAcc(T sample);
     template <typename T>
@@ -84,7 +84,7 @@ public:
 public slots:
 
     void resetbutton();
-    void closeWindow(){this->hide();}
+    //void closeWindow(){this->hide();}
 
 };
 
