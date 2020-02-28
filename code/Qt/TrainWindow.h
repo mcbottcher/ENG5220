@@ -15,6 +15,7 @@
 
 
 #include <stdio.h>
+#include "LightWidget.h"
 
 class TrainWindow : public QWidget{
     Q_OBJECT
@@ -30,6 +31,8 @@ private:
 
     QVBoxLayout *mainLayout;
     QHBoxLayout *homeLayout;
+    QHBoxLayout *lightBox;
+    //TrafficLightWidget **lights;
 
     QGridLayout *inputLayout, *trainLayout;
 
@@ -41,10 +44,9 @@ public:
 
 
 public slots:
-    void closeWindow();
+    // void closeWindow();
     void updateTimer();
 
 
 };
-
 #endif // TRAINWINDOW_H

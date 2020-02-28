@@ -23,7 +23,7 @@ public:
 
 private:
     size_t plotBufferSize = 10;
-    MonitorWindow *monitor_window;
+    MonitorWindow *monitorWindow;
     InterpretWindow *interpretWindow;
     TrainWindow *trainWindow;
     QPixmap *logo_image;

@@ -33,14 +33,25 @@ TrainWindow::TrainWindow(){
     connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
     timer->start(1000);
 
+    lights = new TrafficLightWidget*[10];
+   
+
+
+    lightBox = new QHBoxLayout(this);
+    for (int i =0; i<10; i++){
+        lightBox->addWidget(lights[i])
+    }
+
     trainLayout = new QGridLayout;
     trainLayout->addWidget(statusText, 0, 0);
     trainLayout->addWidget(timerText, 0, 1);
+    trainLayout->addLayout(lightBox);
     trainGroup->setLayout(trainLayout);
 
 
+
     homeButton = new QPushButton("Home");
-    connect(homeButton, SIGNAL(clicked()), SLOT(closeWindow()));
+    connect(homeButton, &QPushButton::clicked, [this](){this->close();});
 
     homeLayout = new QHBoxLayout;
     homeLayout->addStretch(100);
@@ -58,12 +69,8 @@ TrainWindow::TrainWindow(){
 }
 
 TrainWindow::~TrainWindow(){
-
 }
 
-void TrainWindow::closeWindow(){
-    this->close();
-}
 
 void TrainWindow::updateTimer(){
     char buffer [50];

@@ -57,7 +57,7 @@ public:
 
 public slots:
 
-    void closeWindow();
+    // void closeWindow();
     void wrongButtonClicked();
     void clearTextClicked();
 

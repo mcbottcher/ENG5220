@@ -13,8 +13,8 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     resetButton = new QPushButton("reset");
     closeButton = new QPushButton("close");
 
-    connect(resetButton, SIGNAL(clicked()), SLOT(resetbutton()));
-    connect(closeButton, SIGNAL(clicked()), SLOT(closeWindow()));
+    connect(resetButton, &QPushButton::clicked, [this](){this->resetbutton();});
+    connect(closeButton, &QPushButton::clicked, [this](){this->hide();});
 
 
 	// set up the initial plot data
@@ -180,7 +180,6 @@ void MonitorWindow::_resetCurve(CurveStruct &plotcurve){
 
 // Method to plot individual sample if button is checked
 void MonitorWindow::_plotSample(CurveStruct &plotcurve, double sample){
-
     if (plotcurve.checkbox->isChecked()){_insertSample(plotcurve, sample);}
     else {_insertSample(plotcurve, 0);}
     _updateCurve(plotcurve);
@@ -193,6 +192,16 @@ void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer){
     }
     else {for (size_t i=0; i< bufferSize;i++){_insertSample(plotcurve, 0);}}
     _updateCurve(plotcurve);
+}
+
+void MonitorWindow::resetbutton(){
+    for (size_t i=0;i<5;i++){
+        if (i < 3){
+            _resetCurve(acc[i]);
+            _resetCurve(gyro[i]);
+        }
+        _resetCurve(finger[i]);
+    }
 }
 
 template <typename T>
@@ -290,12 +299,4 @@ void MonitorWindow::timerEvent(QTimerEvent *){
 }
 
 
-void MonitorWindow::resetbutton(){
-    for (size_t i=0;i<5;i++){
-        if (i < 3){
-            _resetCurve(acc[i]);
-            _resetCurve(gyro[i]);
-        }
-        _resetCurve(finger[i]);
-    }
-}
+
