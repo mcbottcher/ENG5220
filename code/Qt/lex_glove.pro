@@ -16,13 +16,17 @@ SOURCES += \
     mainwindow.cpp \
     MonitorWindow.cpp \
     InterpretWindow.cpp \
-    TrainWindow.cpp
+    TrainWindow.cpp \
+    ../I2Cdev.cpp \
+    ../MPU6050.cpp
 
 HEADERS += \
     mainwindow.h \
     MonitorWindow.h \
     InterpretWindow.h \
     TrainWindow.h \
-    QLed.h
+    QLed.h \
+    ../I2Cdev.h \
+    ../MPU6050.h
 
 FORMS +=
