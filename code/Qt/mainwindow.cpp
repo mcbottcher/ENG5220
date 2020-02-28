@@ -97,6 +97,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     monitorWindow = new MonitorWindow(plotBufferSize);
     monitorWindow->setWindowTitle("Monitor");
+    //monitorWindow->setFixedSize(400,400);
     monitorWindow->startTimer(10);
 
     interpretWindow = new InterpretWindow();
