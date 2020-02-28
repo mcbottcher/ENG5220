@@ -1,14 +1,16 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+//#include "ui_mainwindow.h"
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
 {
-    QPixmap pix("home/danw/Qt/My_Files/Real_Time_5/lex_glove/GitHub-Mark.png");
+    QPixmap pix("TheLexiconGlove.png");
     //QLabel icon_label;
     //icon_label.setPixmap(pix);
     //icon_label.setText("Test");
+    pix = pix.scaledToWidth(300);
+    
     lab_icon = new QLabel("Test", this);
     lab_icon->setPixmap(pix);
 
@@ -53,10 +55,16 @@ MainWindow::MainWindow(QWidget *parent) :
     quit_layout->addStretch(400);
     quit_layout->addWidget(but_quit, Qt::AlignRight);
 
+    //Horizontal layout for icon
+    QHBoxLayout *icon_layout = new QHBoxLayout;
+    icon_layout->addStretch(100);
+    icon_layout->addWidget(lab_icon);
+    icon_layout->addStretch(100);
+
     //Vertical layout for whole window
     QVBoxLayout *main_layout = new QVBoxLayout;
     main_layout->setSpacing(10);
-    main_layout->addWidget(lab_icon);
+    main_layout->addLayout(icon_layout);
     main_layout->addLayout(title_layout, Qt::AlignCenter);
     main_layout->addLayout(grid_layout, Qt::AlignCenter);
     main_layout->addLayout(quit_layout);
@@ -64,27 +72,61 @@ MainWindow::MainWindow(QWidget *parent) :
     // Set layout in QWidget
     QWidget *window = new QWidget();
     window->setLayout(main_layout);
-    //this->setWindowIcon(QIcon("./home/danw/Qt/My_Files/Real_Time_5/lex_glove/GitHub-Mark.png"));
+    this->setWindowIcon(QIcon("TheLexiconGlove.png"));
     window->setWindowTitle("The Lexicon Glove");
 
     // Set QWidget as the central layout of the main window
     setCentralWidget(window);
 
-    connect(but_mon, SIGNAL (clicked()),
-            this, SLOT (monitor_button_clicked()));
+    connect(but_mon, &QPushButton::clicked, 
+            this, [this](){this->monitor_button_clicked();});
 
-    connect(but_quit, SIGNAL (clicked()),
-            QApplication::instance(), SLOT (quit()));
 
+    connect(but_interpret, &QPushButton::clicked,
+            this, [this](){this->interpretButtonClicked();});
+
+    connect(but_train, &QPushButton::clicked,
+            this, [this](){this->trainButtonClicked();});
+
+    // connect(but_quit, SIGNAL (clicked()),
+    //         this, SLOT (but_quit_clicked()));
+
+    connect(but_quit, &QPushButton::clicked,
+             this, [this](){this->close();} );
+
+
+    monitorWindow = new MonitorWindow(plotBufferSize);
+    monitorWindow->setWindowTitle("Monitor");
+    //monitorWindow->setFixedSize(400,400);
+    monitorWindow->startTimer(10);
+
+    interpretWindow = new InterpretWindow();
+    interpretWindow->setWindowTitle("Interpret Mode");
+    interpretWindow->startTimer(1000);
+
+    trainWindow = new TrainWindow();
+    trainWindow->setWindowTitle("Training Mode");
+    trainWindow->startTimer(1000);
 }
 
-MainWindow::~MainWindow()
-{
-    delete window();
+MainWindow::~MainWindow(){
+    delete monitorWindow;
+    delete interpretWindow;
+}
+
+void MainWindow::but_quit_clicked(){
+    this->close();
 }
 
 void MainWindow::monitor_button_clicked(){
-    monitor_window = new MonitorWindow();
-    monitor_window->show();
+    monitorWindow->show();
+}
+
+void MainWindow::trainButtonClicked(){
+    trainWindow->show();
+}
+
+void MainWindow::interpretButtonClicked(){
+    interpretWindow->show();
 }
 
