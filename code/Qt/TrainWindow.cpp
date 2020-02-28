@@ -19,7 +19,6 @@ TrainWindow::TrainWindow(){
     inputGroup->setLayout(inputLayout);
 
 
-    trainGroup = new QGroupBox(tr("Training stuff"));
 
     QFont Font("Arial", 20, QFont::Bold);
     statusText = new QLabel("", this);
@@ -33,19 +32,20 @@ TrainWindow::TrainWindow(){
     connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
     timer->start(1000);
 
-    lights = new TrafficLightWidget*[10];
-   
+    ledLayout = new QGridLayout;
+    for (int i =0; i<10;i++){
+        led[i] = new QLed();
+        led[i]->setState(Qt::red);
+        ledLayout->addWidget(led[i],0,i);
+        }
+    led[3]->setState(Qt::yellow);
 
-
-    lightBox = new QHBoxLayout(this);
-    for (int i =0; i<10; i++){
-        lightBox->addWidget(lights[i])
-    }
+    trainGroup = new QGroupBox(tr("Training stuff"));
 
     trainLayout = new QGridLayout;
     trainLayout->addWidget(statusText, 0, 0);
     trainLayout->addWidget(timerText, 0, 1);
-    trainLayout->addLayout(lightBox);
+    trainLayout->addLayout(ledLayout,1,0,1,2);
     trainGroup->setLayout(trainLayout);
 
 

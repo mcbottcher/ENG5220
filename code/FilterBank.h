@@ -1,30 +1,101 @@
-#include <Iir.h>
+#ifndef FILTERBANK_H
+#define FILTERBANK_H
 
+
+#include <Iir.h>
 using namespace std;
 
-//wrapper class to allow instancting template classes
+
+//!  A Filter wrapper class 
+/*!
+    A wrapper class allowing a pointer to pointers
+    of the Butterworth Highpass Iir filter class.
+
+    Link: <a href="https://github.com/berndporr/iir1">Iir class GitHub</a> 
+*/
 class Filter {
     protected:
-        const float fs;
-        const float fc;
-        Iir::Butterworth::HighPass<4> filt;  //setup fourth order filter
+        //! Sampling rate float.
+        /*! The Sampling rate of the filters. */
+        const float sampleRate;
+        //! Cutoff frequency float.
+        /*! The cutoff frequency of the filter. */
+        const float cutoffFrequency;
+        //! Filter order integer.
+        /*! the required order of the filter. */
+        int filterOrder;
+        //! Butterworth Highpass filter object.
+        /*!  */
+        Iir::Butterworth::HighPass<10> filt;  
 
     public:
-        Filter(float fs, float fc):
-        fs(fs), fc(fc){filt.setup(fs,fc);}
+        //! Filter constructor
+        /*!
+            Constructor for the Filter wrapper class.
+            \param sampleRate The sampling rate if the filter.
+            \param cutffFrequency The cutoff frequency of the filter.
+            \param filterOrder The required order of the filter.
+        */
+        Filter(int filterOrder, float sampleRate, float cutoffFrequency):
+            sampleRate(sampleRate), cutoffFrequency(cutoffFrequency), 
+            filterOrder(filterOrder){
+                filt.setup(filterOrder, sampleRate, cutoffFrequency);}
+        //! Filter method
+        /*!
+            A method to send the sample to the filter and
+            return the sample processed by the filter.
+        */
         double filter(double sample){return filt.filter(sample);}
 };
 
+//!  A Filterbank class 
+/*!
+    A class allowing multiple instances of Filters to be setup in parallel.
+    A sample sent to the FilterBank will be sent to each filter and the 
+    output of each filter returned as a pointer to an array of processed samples.
+    \sa Filter()
+*/
 class FilterBank {
     protected:
-        int numberfilter;   // number of filters required
-        const float fs;     // sample rate
-        double* arrout;     // pointer to array of processed samples
-        Filter** filterarray; // double pointer to filter wrapper //look up smart pointers
+        //! Number of filters integer.
+        /*! The number of filter objects required to run in parallel. */
+        int numberOfFilters;   
+        //! Sampling rate float.
+        /*! The Sampling rate of the filters. */
+        const float sampleRate;
+        //! Filter order integer.
+        /*! the required order of the filter. */
+        int filterOrder;     
+        //! Output array pointer.
+        /*! Pointer to array of processed samples. */
+        double* outputArray;     
+        //! Filter pointer.
+        /*! An array of pointers to the Filter class.
+            \sa Filter()
+         */
+        Filter** filterObjArray; 
         
     public:
-
-        FilterBank(int numberfilter, float fs, float* fcarray); 
-        ~FilterBank(){delete[] filterarray;};
-        double* filter_sample(double sample);   
+        //! FilterBank constructor.
+        /*!
+        Instanciate the FilterBank class and setup the filters with the given parameters
+        \param numberOfFilters The number of filters that are required.
+        \param filterOrder The required order of the filters.
+        \param sampleRate The sampling rate of the filters.
+        \param cutoffFrequencies a pointer to an array of cuttoff frequencies for each filter in the FilterBank
+        */
+        FilterBank(int numberOfFilters, int filterOrder, float sampleRate, float* cutoffFrequencies); 
+        //! FilterBank destructor.
+        /*!
+        Free up the memory and delete the array of Filer objects. 
+        */
+        ~FilterBank(){delete[] filterObjArray;};
+        //! Filter method
+        /*!
+            A method to send the sample to each filter in parallel
+        \param sample The sample to be passed through to all filters.
+        */
+        double* filter(double sample);   
 };    
+
+#endif // FILTERBANK_H

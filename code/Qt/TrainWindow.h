@@ -12,10 +12,10 @@
 #include <QLineEdit>
 #include <QGroupBox>
 #include <QTimer>
+#include "QLed.h"
 
 
 #include <stdio.h>
-#include "LightWidget.h"
 
 class TrainWindow : public QWidget{
     Q_OBJECT
@@ -27,14 +27,14 @@ private:
     QLabel *inputLabel, *statusText, *timerText; 
     QPushButton *wordTrain, *homeButton;
 
+    QLed *led[10];
     QGroupBox *inputGroup, *trainGroup;
 
     QVBoxLayout *mainLayout;
     QHBoxLayout *homeLayout;
     QHBoxLayout *lightBox;
-    //TrafficLightWidget **lights;
 
-    QGridLayout *inputLayout, *trainLayout;
+    QGridLayout *inputLayout, *trainLayout, *ledLayout;
 
     QTimer *timer;
 
