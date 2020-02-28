@@ -1,3 +1,6 @@
 [submodule "code/MPU6050"]
 	path = code/MPU6050
 	url = https://github.com/mcbottcher/MPU6050.git
+[submodule "code/MCP3428"]
+	path = code/MCP3428
+	url = https://github.com/mcbottcher/MCP3428.git
