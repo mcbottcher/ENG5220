@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     //QLabel icon_label;
     //icon_label.setPixmap(pix);
     //icon_label.setText("Test");
+    pix = pix.scaledToWidth(300);
+    
     lab_icon = new QLabel("Test", this);
     lab_icon->setPixmap(pix);
 
@@ -53,10 +55,16 @@ MainWindow::MainWindow(QWidget *parent) :
     quit_layout->addStretch(400);
     quit_layout->addWidget(but_quit, Qt::AlignRight);
 
+    //Horizontal layout for icon
+    QHBoxLayout *icon_layout = new QHBoxLayout;
+    icon_layout->addStretch(100);
+    icon_layout->addWidget(lab_icon);
+    icon_layout->addStretch(100);
+
     //Vertical layout for whole window
     QVBoxLayout *main_layout = new QVBoxLayout;
     main_layout->setSpacing(10);
-    main_layout->addWidget(lab_icon);
+    main_layout->addLayout(icon_layout);
     main_layout->addLayout(title_layout, Qt::AlignCenter);
     main_layout->addLayout(grid_layout, Qt::AlignCenter);
     main_layout->addLayout(quit_layout);
@@ -89,6 +97,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     monitorWindow = new MonitorWindow(plotBufferSize);
     monitorWindow->setWindowTitle("Monitor");
+    //monitorWindow->setFixedSize(400,400);
     monitorWindow->startTimer(10);
 
     interpretWindow = new InterpretWindow();

@@ -23,6 +23,6 @@ HEADERS += \
     MonitorWindow.h \
     InterpretWindow.h \
     TrainWindow.h \
-    LightWidget.h
+    QLed.h
 
 FORMS +=

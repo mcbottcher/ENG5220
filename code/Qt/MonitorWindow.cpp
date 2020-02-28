@@ -127,11 +127,11 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     vPlotLayout->addLayout(fingerLayout);
     vPlotLayout->addLayout(hPlotLayout);
 
-	mainLayout = new QVBoxLayout;
+    mainLayout = new QVBoxLayout;
     mainLayout->addLayout(vPlotLayout);
     mainLayout->addLayout(controlLayout);
-
-	setLayout(mainLayout);
+    setMinimumSize(300,300);
+    setLayout(mainLayout);
 }
 
 MonitorWindow::~MonitorWindow(){
