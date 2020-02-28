@@ -75,6 +75,7 @@ class FilterBank {
          */
         Filter** filterObjArray; 
         
+        
     public:
         //! FilterBank constructor.
         /*!
