@@ -19,7 +19,7 @@
 
 #define MPU6050_I2C_ADDRESS 0x69
 #define MCP3428_I2C_ADDRESS 0x6e
-#define MPU3421_I2C_ADDRESS 0x68
+#define MCP3421_I2C_ADDRESS 0x68
 
 #define NUMBER_OF_FINGERS 4
 
@@ -54,7 +54,7 @@ void sampleSensors(){
 	for(int i=0; i<NUMBER_OF_FINGERS; i++){
 		finger_value[i] = flexFingers.readChannel(i);
 	}
-	thumb_value = flexThumb.readChannel(i);
+	thumb_value = flexThumb.readChannel(1);
 }
 
 void insertDataToBuff(){
@@ -75,11 +75,11 @@ void insertDataToBuff(){
 
 class Ticker : public CppTimer{
 
-	void timerEvent{
+	void timerEvent(){
 		sampleSensors();
 		insertDataToBuff();
 	}
-}
+};
 
 
 
@@ -92,14 +92,14 @@ int main(){
 
 	//TODO put the config in a structure...
 	flexFingers.setConfig(	CONFIG_INIT_CONVERSION,
-				CONFIG_CH1,
-				CONFIG_CONTINOUS_CONVERSION_MODE,
+				CONFIG_CHN1,
+				CONFIG_CONTINUOUS_CONVERSION_MODE,
 				CONFIG_12BIT_240SPS,
 				CONFIG_GAIN_1X	);
 
 	flexThumb.setConfig(	CONFIG_INIT_CONVERSION,
-				CONFIG_CH1,
-				CONFIG_CONTINOUS_CONVERSION_MODE,
+				CONFIG_CHN1,
+				CONFIG_CONTINUOUS_CONVERSION_MODE,
 				CONFIG_12BIT_240SPS,
 				CONFIG_GAIN_1X	);
 
