@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h> 
 
-#include "CppTimer.h"
+#include "cppTimer/CppTimer.h"
 
 
 class Ticker : public CppTimer{
