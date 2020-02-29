@@ -4,3 +4,6 @@
 [submodule "code/MCP3428"]
 	path = code/MCP3428
 	url = https://github.com/mcbottcher/MCP3428.git
+[submodule "code/cppTimer"]
+	path = code/cppTimer
+	url = https://github.com/berndporr/cppTimer.git
