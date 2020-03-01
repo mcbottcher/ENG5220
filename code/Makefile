@@ -7,8 +7,8 @@ MCP3428.o: MCP3428/MCP3428.cpp MCP3428/MCP3428.h
 MPU6050.o: MPU6050/MPU6050.cpp MPU6050/MPU6050.h
 	g++ -c MPU6050/MPU6050.cpp
 
-I2Cdev.o: MPU6050/I2Cdev.cpp MPU6050/I2Cdev.h
-	g++ -c MPU6050/I2Cdev.cpp
+I2Cdev.o: MPU6050/I2Cdev/I2Cdev.cpp MPU6050/I2Cdev/I2Cdev.h
+	g++ -c MPU6050/I2Cdev/I2Cdev.cpp
 
 RingBuff.o: RingBuff.h RingBuff.cpp
 	g++ -c RingBuff.cpp

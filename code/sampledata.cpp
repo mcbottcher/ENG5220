@@ -6,7 +6,7 @@
 
 #include "cppTimer/CppTimer.h"
 #include "MPU6050/MPU6050.h"
-#include "MPU6050/I2Cdev.h"
+//#include "MPU6050/I2Cdev.h"
 #include "MCP3428/MCP3428.h"
 #include "RingBuff.h"
 
