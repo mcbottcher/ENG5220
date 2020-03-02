@@ -17,6 +17,7 @@ class RingBuff {
         double* getBuffAddress(){return buffer;}
         int getBuffLen(){return bufSize;}
         int getElementPtr(){return elementPtr;}
+        double* readBuffer();
 };    
  
 #endif // RINGBUFF_H
