@@ -45,7 +45,12 @@ class Filter {
                 filt = new Iir::Butterworth::HighPass<10>;
             }
 
+        //! Setup method
+        /*!
+            A method to setup the filter with the filter order, sample rate and cutoff frequency
+        */
         void setup(){filt->setup(filterOrder, sampleRate, cutoffFrequency);}
+        
         //! Filter method
         /*!
             A method to send the sample to the filter and
@@ -103,9 +108,20 @@ class FilterBank {
         /*!
             A method to send the sample to each filter in parallel
         \param sample The sample to be passed through to all filters.
+        \return returns pointer to array of processed sample
         */
         double* filter(double sample); 
+        //! Get Array method
+        /*!
+
+        \return returns pointer to array of processed sample
+        */
         double* getArray(){return outputArray;};
+        //! Setup method
+        /*!
+            A method to setup the FilterBank
+        
+        */
         void setup();
 };    
 
