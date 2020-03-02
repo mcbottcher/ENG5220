@@ -29,14 +29,14 @@ private:
 
 	QwtPlot      *accelerometerPlot, *gyroPlot, *fingerPlot;
 
-    static const int plotDataSize = 200;
-    double xAxisData[plotDataSize];
+    
+    double *xAxisData;
 
     struct CurveStruct{
         QwtPlot      *plot;
         QwtPlotCurve *curve;
         QCheckBox    *checkbox;
-        double        data[plotDataSize];
+        double        *data;
         QString       name;
     } acc[3], gyro[3], finger[5];
 
@@ -75,15 +75,19 @@ public:
     template <typename T>
     void plotFinger(T sample);
 
-    // draw all plots
-    void drawPlots();
+    // // draw all plots
+    // void drawPlots();
 
 
     
 
 public slots:
 
+    // draw all plots
+    void drawPlots();
+
     void resetbutton();
+    void timerEvent();
     //void closeWindow(){this->hide();}
 
 };

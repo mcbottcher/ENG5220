@@ -3,8 +3,15 @@
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent)
-{
+    QMainWindow(parent){
+    
+    createUI();
+    createFilters();
+
+}
+
+
+void MainWindow::createUI(){
     QPixmap pix("TheLexiconGlove.png");
     //QLabel icon_label;
     //icon_label.setPixmap(pix);
@@ -95,23 +102,32 @@ MainWindow::MainWindow(QWidget *parent) :
              this, [this](){this->close();} );
 
 
-    monitorWindow = new MonitorWindow(plotBufferSize);
-    monitorWindow->setWindowTitle("Monitor");
-    //monitorWindow->setFixedSize(400,400);
-    monitorWindow->startTimer(10);
+    // monitorWindow = new MonitorWindow(NUMER_OF_PLOT_SAMPLES);
+    // monitorWindow->setWindowTitle("Monitor");
+    // //monitorWindow->setFixedSize(400,400);
+    // monitorWindow->startTimer(MONITOR_REFRESH_RATE);
 
-    interpretWindow = new InterpretWindow();
-    interpretWindow->setWindowTitle("Interpret Mode");
-    interpretWindow->startTimer(1000);
+    // interpretWindow = new InterpretWindow();
+    // interpretWindow->setWindowTitle("Interpret Mode");
+    // interpretWindow->startTimer(1000);
 
     trainWindow = new TrainWindow();
     trainWindow->setWindowTitle("Training Mode");
     trainWindow->startTimer(1000);
 }
 
+void MainWindow::createFilters(){
+    accelFilterBank = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    gyroFilterBank  = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    fingerFilterBank= new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    accelFilterBank->setup();
+    gyroFilterBank->setup();
+    fingerFilterBank->setup();
+
+}
+
 MainWindow::~MainWindow(){
-    delete monitorWindow;
-    delete interpretWindow;
+
 }
 
 void MainWindow::but_quit_clicked(){
@@ -119,6 +135,13 @@ void MainWindow::but_quit_clicked(){
 }
 
 void MainWindow::monitor_button_clicked(){
+    monitorWindow = new MonitorWindow(NUMER_OF_PLOT_SAMPLES);
+    monitorWindow->setAttribute(Qt::WA_DeleteOnClose);
+    monitorWindow->setWindowTitle("Monitor");
+    moitortimer = new QTimer(monitorWindow);
+    connect(moitortimer, SIGNAL(timeout()), monitorWindow, SLOT(drawPlots()));
+    moitortimer->start(MONITOR_REFRESH_RATE);
+    monitorWindow->startTimer(100);
     monitorWindow->show();
 }
 
@@ -127,6 +150,17 @@ void MainWindow::trainButtonClicked(){
 }
 
 void MainWindow::interpretButtonClicked(){
+    interpretWindow = new InterpretWindow();
+    interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
+    interpretWindow->setWindowTitle("Interpret Mode");
+    windowtimer = new QTimer(interpretWindow);
+    connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
+    windowtimer->start(1000);
+    // connect(interpretWindow, SIGNAL(emitClose()),this, SLOT(interpretHome()));
     interpretWindow->show();
+}
+
+void MainWindow::interpretHome(){
+
 }
 
