@@ -14,19 +14,22 @@ using namespace std;
     Link: <a href="https://github.com/berndporr/iir1">Iir class GitHub</a> 
 */
 class Filter {
+
+    private:
+        
     protected:
-        //! Sampling rate float.
+        //! Sampling rate double.
         /*! The Sampling rate of the filters. */
-        const float sampleRate;
-        //! Cutoff frequency float.
+        const double sampleRate;
+        //! Cutoff frequency double.
         /*! The cutoff frequency of the filter. */
-        const float cutoffFrequency;
+        const double cutoffFrequency;
         //! Filter order integer.
         /*! the required order of the filter. */
         int filterOrder;
         //! Butterworth Highpass filter object.
         /*!  */
-        Iir::Butterworth::HighPass<10> filt;  
+        Iir::Butterworth::HighPass<10> *filt;  
 
     public:
         //! Filter constructor
@@ -36,16 +39,19 @@ class Filter {
             \param cutffFrequency The cutoff frequency of the filter.
             \param filterOrder The required order of the filter.
         */
-        Filter(int filterOrder, float sampleRate, float cutoffFrequency):
+        Filter(int filterOrder, double sampleRate, double cutoffFrequency):
             sampleRate(sampleRate), cutoffFrequency(cutoffFrequency), 
             filterOrder(filterOrder){
-                filt.setup(filterOrder, sampleRate, cutoffFrequency);}
+                filt = new Iir::Butterworth::HighPass<10>;
+            }
+
+        void setup(){filt->setup(filterOrder, sampleRate, cutoffFrequency);}
         //! Filter method
         /*!
             A method to send the sample to the filter and
             return the sample processed by the filter.
         */
-        double filter(double sample){return filt.filter(sample);}
+        double filter(double sample){return filt->filter(sample);}
 };
 
 //!  A Filterbank class 
@@ -56,13 +62,15 @@ class Filter {
     \sa Filter()
 */
 class FilterBank {
+    private:
+
     protected:
         //! Number of filters integer.
         /*! The number of filter objects required to run in parallel. */
         int numberOfFilters;   
-        //! Sampling rate float.
+        //! Sampling rate double.
         /*! The Sampling rate of the filters. */
-        const float sampleRate;
+        const double sampleRate;
         //! Filter order integer.
         /*! the required order of the filter. */
         int filterOrder;     
@@ -85,7 +93,7 @@ class FilterBank {
         \param sampleRate The sampling rate of the filters.
         \param cutoffFrequencies a pointer to an array of cuttoff frequencies for each filter in the FilterBank
         */
-        FilterBank(int numberOfFilters, int filterOrder, float sampleRate, float* cutoffFrequencies); 
+        FilterBank(int numberOfFilters, int filterOrder, double sampleRate, double* cutoffFrequencies); 
         //! FilterBank destructor.
         /*!
         Free up the memory and delete the array of Filer objects. 
@@ -96,7 +104,9 @@ class FilterBank {
             A method to send the sample to each filter in parallel
         \param sample The sample to be passed through to all filters.
         */
-        double* filter(double sample);   
+        double* filter(double sample); 
+        double* getArray(){return outputArray;};
+        void setup();
 };    
 
 #endif // FILTERBANK_H
