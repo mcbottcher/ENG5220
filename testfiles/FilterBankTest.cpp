@@ -8,9 +8,10 @@ using namespace std;
 
 int main(){
     const int numberfilters = 4;                // number of filters required
-    const float fs = 500;                       // sample rate
+    const int orderfilters = 4;                // order of filters required
+    const double fs = 500;                       // sample rate
     const int numbersamples = 500;              // number of samples
-    float fc[numberfilters] = {10,50,150,200};  // array of fequency cutoffs
+    double fc[numberfilters] = {10,50,150,200};  // array of fequency cutoffs
 
     double samples[numbersamples];                  // setup sample input array
     double samplesout[numberfilters][numbersamples];// setup sample output array
@@ -20,11 +21,13 @@ int main(){
     file.read((char*)samples, sizeof(double)*numbersamples);
 
     //create instance of filterbank with array of cutoff frequencies
-    FilterBank filt(numberfilters, fs, fc);
+    FilterBank filt(numberfilters,orderfilters, fs, fc);
+    filt.setup();
+
 
     // filter the samples
     for (int i = 0; i < numbersamples; i++){
-        double *temp = filt.filter_sample(samples[i]);
+        double *temp = filt.filter(samples[i]);
 
         // place samples in output array
         for (int j =0; j<numberfilters; j++){
@@ -45,14 +48,15 @@ int main(){
 
 
 
-    FilterBank f(numberfilters, fs, fc);
+    FilterBank f(numberfilters,orderfilters, fs, fc);
+    f.setup();
     double impulseresponse[numberfilters][numbersamples];
 
     // filter the samples
 	for(int i=0;i<numbersamples;i++) {
 		double a=0;
 		if (i==10) {a = 1;}
-		double *temp = f.filter_sample(a);
+		double *temp = f.filter(a);
         for(int j=0;j<numberfilters; j++){
             impulseresponse[j][i] = temp[j];
         }
