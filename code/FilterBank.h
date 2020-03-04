@@ -9,7 +9,7 @@ using namespace std;
 //!  A Filter wrapper class 
 /*!
     A wrapper class allowing a pointer to pointers
-    of the Butterworth Highpass Iir filter class.
+    of the Butterworth Lowpass Iir filter class.
 
     Link: <a href="https://github.com/berndporr/iir1">Iir class GitHub</a> 
 */
@@ -27,9 +27,9 @@ class Filter {
         //! Filter order integer.
         /*! the required order of the filter. */
         int filterOrder;
-        //! Butterworth Highpass filter object.
+        //! Butterworth Lowpass filter object.
         /*!  */
-        Iir::Butterworth::HighPass<10> *filt;  
+        Iir::Butterworth::LowPass<10> *filt;  
 
     public:
         //! Filter constructor
@@ -42,7 +42,7 @@ class Filter {
         Filter(int filterOrder, double sampleRate, double cutoffFrequency):
             sampleRate(sampleRate), cutoffFrequency(cutoffFrequency), 
             filterOrder(filterOrder){
-                filt = new Iir::Butterworth::HighPass<10>;
+                filt = new Iir::Butterworth::LowPass<10>;
             }
 
         //! Setup method
