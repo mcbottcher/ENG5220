@@ -5,6 +5,7 @@
 #include "InterpretWindow.h"
 #include "TrainWindow.h"
 #include "../FilterBank.h"
+#include "SamplingThread.h"
 
 #include <QMainWindow>
 #include <QPushButton>
@@ -14,15 +15,24 @@
 #include <QPixmap>
 #include <QToolButton>
 #include <QFont>
+#include <QThread>
+#include <QtConcurrent>
+
+#include <iostream>
+#include <cmath> 
 
 
-#define SAMPLE_RATE 500 //in Hertz
+#define SAMPLE_RATE 50 //in Hertz
+#define DATA_SAMPLE_INTERVAL 1000000000/SAMPLE_RATE //in nanoseconds
 
 #define NUMBER_OF_FILTERS 10 //number of filters in each filter bank
 #define ORDER_OF_FILTERS 4  //order of these filters
 
 #define MONITOR_REFRESH_RATE 100 //in msec
-#define NUMER_OF_PLOT_SAMPLES 200
+#define NUMBER_OF_PLOT_SAMPLES 200
+#define PLOT_BUFFER_SIZE 1
+
+using namespace std;
 
 class MainWindow : public QMainWindow
 {
@@ -34,7 +44,7 @@ public:
     
 
 private:
-    // size_t NUMER_OF_PLOT_SAMPLES = 10;
+    // size_t NUMBER_OF_PLOT_SAMPLES = 10;
     MonitorWindow *monitorWindow;
     InterpretWindow *interpretWindow;
     TrainWindow *trainWindow;
@@ -42,18 +52,27 @@ private:
     QFont title_font;
     QLabel *title_text, *logo, *lab_train, *lab_interpret, *lab_mon, *lab_icon;
     QPushButton *but_train, *but_interpret, *but_mon, *but_quit;
-    QTimer *windowtimer, *moitortimer;
+    QTimer *windowtimer, *moitorRefreshtimer;
     //QToolButton *logo_icon;
     //QVBoxLayout main_layout;
-    double filterCuttoffFreqs[10] = {0.01,5,10,20,30,40,50,100,150,200}; //cutoff frequencies for filters
+    double filterCuttoffFreqs[10] = {0.01,1,1,1,2,2,3,3,4,4}; //cutoff frequencies for filters
     FilterBank *accelFilterBank;
     FilterBank *gyroFilterBank;
     FilterBank *fingerFilterBank;
+    SamplingThread *cpptimer;
 
     void createUI();
     void createFilters();
+    int count = 0;
+    // void timerEvent();
+
+
+    double samplefinger[5][1];
+    double sampleacc[3][1];
+    double samplegyro[3][1];
 
 private slots:
+    void timerEvent();
     void monitor_button_clicked();
     void interpretButtonClicked();
     void interpretHome();
