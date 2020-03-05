@@ -10,6 +10,8 @@
 #include "MCP3428/MCP3428.h"
 #include "RingBuff.h"
 
+#define NUMBER_OF_REPETITIONS 20
+
 #define SAMPLE_RATE_Hz 10
 #define SAMPLE_TIME_SECONDS 2
 
@@ -23,6 +25,9 @@
 
 #define NUMBER_OF_FINGERS 4
 
+
+static int sample_counter = 0;
+
 //accelerometer and gyroscope values
 static int16_t ax, ay, az;
 static int16_t gx, gy, gz;
@@ -35,18 +40,8 @@ MPU6050 motionSensor(MPU6050_I2C_ADDRESS);
 MCP3428 flexFingers(MCP3428_I2C_ADDRESS);
 MCP3428 flexThumb(MCP3421_I2C_ADDRESS);
 
-//TODO make another class that can create an array of RingBuffs
-RingBuff buff_accel_x(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_accel_y(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_accel_z(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_gyro_x(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_gyro_y(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_gyro_z(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_finger1(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_finger2(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_finger3(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_finger4(NUMBER_OF_BUFFER_ELEMENTS);
-RingBuff buff_thumb(NUMBER_OF_BUFFER_ELEMENTS);
+//11 == number of sensors, 
+int16_t dataBuffer[11][NUMBER_OF_BUFFER_ELEMENTS];
 
 void sampleSensors(){
 
@@ -59,17 +54,19 @@ void sampleSensors(){
 
 void insertDataToBuff(){
 	
-	buff_accel_x.insertSample(ax);
-	buff_accel_y.insertSample(ay);
-	buff_accel_z.insertSample(az);
-	buff_gyro_x.insertSample(gx);
-	buff_gyro_y.insertSample(gy);
-	buff_gyro_z.insertSample(gz);
-	buff_finger1.insertSample(finger_value[0]);
-	buff_finger2.insertSample(finger_value[1]);
-	buff_finger3.insertSample(finger_value[2]);
-	buff_finger4.insertSample(finger_value[3]);
-	buff_thumb.insertSample(thumb_value);
+	if(sample_counter < NUMBER_OF_BUFFER_ELEMENTS){
+		dataBuffer[0][sample_counter] = ax;
+		dataBuffer[1][sample_counter] = ay;
+		dataBuffer[2][sample_counter] = az;
+		dataBuffer[3][sample_counter] = gx;
+		dataBuffer[4][sample_counter] = gy;
+		dataBuffer[5][sample_counter] = gz;
+		dataBuffer[6][sample_counter] = finger_value[0];
+		dataBuffer[7][sample_counter] = finger_value[1];
+		dataBuffer[8][sample_counter] = finger_value[2];
+		dataBuffer[9][sample_counter] = finger_value[3];
+		dataBuffer[10][sample_counter++] = thumb_value;
+	}
 
 }
 
@@ -82,6 +79,25 @@ class Ticker : public CppTimer{
 };
 
 
+class Timer : public CppTimer{
+
+	void timerEvent(){
+		//set a flag here...	
+	}
+};
+
+
+void countdown(){
+
+	printf("Starting in 3\n\r");
+	sleep(1);
+	printf("2\n\r");
+	sleep(1);
+	printf("1\n\r");
+	sleep(1);
+	printf("GO!\n\n\r");
+
+}
 
 /* **************************************************************************** */
 
@@ -105,11 +121,37 @@ int main(){
 
 
 	Ticker sampleTimer;
-	sampleTimer.start(ONE_NANO_SECOND/SAMPLE_RATE_Hz); 
-	printf("Timer Setup!\n\r");
+	
+	
+	
 
-	while(1){
+	for(int i=0; i<NUMBER_OF_REPETITIONS; i++){
+
+
+		countdown();
+
+		//start the ticker
+		sampleTimer.start(ONE_NANO_SECOND/SAMPLE_RATE_Hz, PERIODIC);
+
+		while(sample_counter < NUMBER_OF_BUFFER_ELEMENTS){
+			
+			sleep(1);
+			
+
+		}
+
+		printf("STOP\n\r");
+
+		//stop the ticker
+		sampleTimer.disarm();
+
+		//write to the file here!
+
+		sleep(2);
+
 
 	}
 
+	printf("Finished!");
+	
 }
