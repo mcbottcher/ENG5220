@@ -6,4 +6,4 @@
 	url = https://github.com/mcbottcher/MCP3428.git
 [submodule "code/cppTimer"]
 	path = code/cppTimer
-	url = https://github.com/berndporr/cppTimer.git
+	url = https://github.com/mcbottcher/cppTimer.git
