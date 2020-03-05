@@ -4,6 +4,9 @@
 #include <stdint.h> 
 #include <stdlib.h>
 
+#include <iostream>
+#include <fstream>
+
 #include "cppTimer/CppTimer.h"
 #include "MPU6050/MPU6050.h"
 //#include "MPU6050/I2Cdev.h"
@@ -120,10 +123,15 @@ int main(){
 				CONFIG_GAIN_1X	);
 
 
+	std::ofstream myfile;
+	myfile.open ("movement1.csv");
+	myfile << "AX,AY,AZ,GX,GY,GZ,F1,F2,F3,F4,T\n";
+
+	myfile << "\n";
+
+
 	Ticker sampleTimer;
-	
-	
-	
+		
 
 	for(int i=0; i<NUMBER_OF_REPETITIONS; i++){
 
@@ -139,19 +147,35 @@ int main(){
 			
 
 		}
-
+		
 		printf("STOP\n\r");
 
 		//stop the ticker
 		sampleTimer.disarm();
 
+		sample_counter = 0;
+
+		/******************************************************************************************/
 		//write to the file here!
+		
+		for(int j=0; j< NUMBER_OF_BUFFER_ELEMENTS;j++){
+
+			for(int k=0; k<11;k++){
+				myfile << dataBuffer[k][j] << ",";
+			}
+			myfile << "\n";	
+		}
+		
+		myfile << "\n";
+		
+		/************************************************************************/
 
 		sleep(2);
 
 
 	}
-
+	
+	myfile.close();
 	printf("Finished!");
 	
 }
