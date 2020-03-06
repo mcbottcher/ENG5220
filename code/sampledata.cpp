@@ -13,7 +13,7 @@
 #include "MCP3428/MCP3428.h"
 #include "RingBuff.h"
 
-#define NUMBER_OF_REPETITIONS 20
+#define NUMBER_OF_REPETITIONS 40
 
 #define SAMPLE_RATE_Hz 10
 #define SAMPLE_TIME_SECONDS 2
@@ -124,11 +124,7 @@ int main(){
 
 
 	std::ofstream myfile;
-	myfile.open ("movement1.csv");
-	myfile << "AX,AY,AZ,GX,GY,GZ,F1,F2,F3,F4,T\n";
-
-	myfile << "\n";
-
+	myfile.open ("verificationData.csv");
 
 	Ticker sampleTimer;
 		
@@ -158,12 +154,11 @@ int main(){
 		/******************************************************************************************/
 		//write to the file here!
 		
-		for(int j=0; j< NUMBER_OF_BUFFER_ELEMENTS;j++){
+		for(int j=0; j< 11;j++){
 
-			for(int k=0; k<11;k++){
-				myfile << dataBuffer[k][j] << ",";
+			for(int k=0; k< NUMBER_OF_BUFFER_ELEMENTS;k++){
+				myfile << dataBuffer[j][k] << ",";
 			}
-			myfile << "\n";	
 		}
 		
 		myfile << "\n";
@@ -176,6 +171,6 @@ int main(){
 	}
 	
 	myfile.close();
-	printf("Finished!");
+	printf("Finished!\n\n\r");
 	
 }
