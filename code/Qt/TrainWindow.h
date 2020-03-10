@@ -38,13 +38,15 @@ private:
 
     QTimer *timer;
 
+    void trainingDataLoop();
+
 public:
     TrainWindow();
     ~TrainWindow();
 
 
 public slots:
-    // void closeWindow();
+    void closeWindow();
     void updateTimer();
 
 

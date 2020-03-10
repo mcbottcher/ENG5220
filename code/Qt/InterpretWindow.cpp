@@ -64,9 +64,9 @@ InterpretWindow::InterpretWindow(){
 
     speech = new QTextToSpeech();
     speech->setLocale(QLocale(QLocale::English,QLocale::LatinScript,QLocale::UnitedStates));
-    speech->setRate(10);
+    speech->setRate(2);
     speech->setPitch(2);
-    speech->setVolume(50);
+    speech->setVolume(100);
 
     setLayout(mainLayout);
 
@@ -74,7 +74,7 @@ InterpretWindow::InterpretWindow(){
 
 
 InterpretWindow::~InterpretWindow(){
-
+    
 }
 
 void InterpretWindow::closeWindow(){
@@ -99,5 +99,5 @@ void InterpretWindow::timerEvent(){
     QString number(buffer);
     titleText->setText(number);
     ++count;
-    speech->say(number);
+    // speech->say(number);
 }

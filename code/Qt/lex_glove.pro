@@ -4,12 +4,13 @@ TARGET = lexicon_glove
 CONFIG += qt warn_on debug
 
 QT += core gui \
-    texttospeech 
+    texttospeech  \
+    concurrent
 
 
 
-greaterThan(QT_MAJOR_VERSION, 4): LIBS += -lqwt-qt5 -lm -liir 
-lessThan(QT_MAJOR_VERSION, 5): LIBS += -lqwt -lm -liir 
+greaterThan(QT_MAJOR_VERSION, 4): LIBS += -lqwt-qt5 -lm -liir -lrt
+lessThan(QT_MAJOR_VERSION, 5): LIBS += -lqwt -lm -liir  -lrt
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += \
@@ -27,6 +28,8 @@ HEADERS += \
     TrainWindow.h \
     QLed.h \
     ../FilterBank.h \
+    ../CppTimer.h \
+    SamplingThread.h
     
     
 
