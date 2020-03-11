@@ -1,0 +1,73 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : LEXICON_GLOVE2_7.brd                          )
+(    Software Version : 17.2S055                                      )
+(    Date/Time        : Fri Mar 06 18:45:31 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		2.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (inch)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		ENGLISH
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	NO
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		YES
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	YES
+ ENHANCED_EXCELLON	YES
+ SCALE			1.000000
+
+ WARNING(SPMHMF-358): Design precision is the same as that of the drill output file data.
+ WARNING(SPMHMF-359): Data rounding errors may still be possible.
+ WARNING(SPMHMF-368): Cannot find NC Drill tool file 'nc_tools.txt'
+ WARNING(SPMHMF-369): ... will auto-generate tool file 'nc_tools_auto.txt'.
+
+
+     Auto-generating tool file 'nc_tools_auto.txt' ...
+
+           Size  Plating  Tool        + Tolerance  - Tolerance
+
+          13.00  P        T01            0.000000     0.000000
+          35.00  P        T02            0.000000     0.000000
+          35.43  P        T03            0.000000     0.000000
+          94.49  N        T04            0.000000     0.000000
+         156.00  N        T05            0.000000     0.000000
+
+
+Drill files being output to directory 'H:/UNIVERSITY/REAL TIME EMBEDDED PROG 5/SENSOR_PCB/allegro' ...
+
+
+
+     'LEXICON_GLOVE_DRILL-1-2.drl' created for holes connecting TOP and BOTTOM
+     -------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T01    1.  13.0000    0.0000/  0.0000      PLATED         16
+     T02    2.  35.0000    0.0000/  0.0000      PLATED         14
+     T03    3.  35.4300    0.0000/  0.0000      PLATED          4
+     T04    4.  94.4900    0.0000/  0.0000  NON_PLATED          2
+     T05    5. 156.0000    0.0000/  0.0000  NON_PLATED          4
+
+     ---- Total holes:                                         40
+
+     ---- Total head travel:              1.35 feet (0.41 meters)
+
