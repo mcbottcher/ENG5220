@@ -1,0 +1,17 @@
+\t (00:00:08) allegro 17.2 S055 Windows SPB 64-bit Edition
+\t (00:00:08)     Journal start - Wed Mar 11 09:15:57 2020
+\t (00:00:08)         Host=RANK509-08 User=2183844w Pid=1956 CPUs=8
+\t (00:00:08) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe H:\University\Real Time Embedded Prog 5\sensor_pcb - Copy\allegro\LEXICON_GLOVE2_10.brd
+\t (00:00:08) 
+   (00:00:08) Loading axlcore.cxt 
+\t (00:00:09) Opening existing design...
+\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged LEXICON_GLOVE2_10
+\d (00:00:09) Design opened: H:/University/Real Time Embedded Prog 5/sensor_pcb - Copy/allegro/LEXICON_GLOVE2_10.brd
+\i (00:00:10) trapsize 815
+\i (00:00:10) trapsize 838
+\i (00:00:10) trapsize 815
+\i (00:00:10) trapsize 819
+\i (00:00:10) trapsize 819
+\i (00:00:11) generaledit 
+\i (00:00:14) exit 
+\t (00:00:15)     Journal end - Wed Mar 11 09:16:04 2020

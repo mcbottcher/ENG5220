@@ -7,8 +7,6 @@ QT += core gui \
     texttospeech  \
     concurrent
 
-
-
 greaterThan(QT_MAJOR_VERSION, 4): LIBS += -lqwt-qt5 -lm -liir -lrt
 lessThan(QT_MAJOR_VERSION, 5): LIBS += -lqwt -lm -liir  -lrt
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -22,6 +20,7 @@ SOURCES += \
     CppTimer.cpp \
     ../FilterBank.cpp
 
+
 HEADERS += \
     mainwindow.h \
     MonitorWindow.h \
@@ -31,7 +30,6 @@ HEADERS += \
     ../FilterBank.h \
     CppTimer.h \
     SamplingThread.h
-    
     
 
 FORMS +=
