@@ -110,10 +110,10 @@ void MainWindow::createUI(){
     cpptimer = new SamplingThread();
     
 
-    // connect(cpptimer, &QtCppTimer::timer,
-    //         this, [this](){this->timerEvent();});
+    connect(cpptimer, &SamplingThread::timeoutsignal,
+            this, [this](){this->timerEvent();});
 
-    connect(cpptimer, SIGNAL(timeoutsignal()), this, SLOT(timerEvent()));
+    // connect(cpptimer, SIGNAL(timeoutsignal()), this, SLOT(timerEvent()));
     
 
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);

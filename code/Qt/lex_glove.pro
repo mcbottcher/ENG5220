@@ -19,6 +19,7 @@ SOURCES += \
     MonitorWindow.cpp \
     InterpretWindow.cpp \
     TrainWindow.cpp \
+    CppTimer.cpp \
     ../FilterBank.cpp
 
 HEADERS += \
@@ -28,7 +29,7 @@ HEADERS += \
     TrainWindow.h \
     QLed.h \
     ../FilterBank.h \
-    ../CppTimer.h \
+    CppTimer.h \
     SamplingThread.h
     
     
