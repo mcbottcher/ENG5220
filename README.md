@@ -1,7 +1,15 @@
 # Learning glove
 ## Realtime Embedded project 5
 
-# Lexicon Glove
+echo "                                                               "
+echo "  _               _                    _____ _                 "
+echo " | |             (_)                  / ____| |                "
+echo " | |     _____  ___  ___ ___  _ __   | |  __| | _____   _____  "
+echo " | |    / _ \ \/ / |/ __/ _ \| '_ \  | | |_ | |/ _ \ \ / / _ \ "
+echo " | |___|  __/>  <| | (_| (_) | | | | | |__| | | (_) \ V /  __/ "
+echo " |______\___/_/\_\_|\___\___/|_| |_|  \_____|_|\___/ \_/ \___| "
+echo "                                                               "
+                                                                                                         
 # The power is in your hands
 
 This project proposes to build a wearable glove that can learn hand movements and produce speech from the movements of the hand.

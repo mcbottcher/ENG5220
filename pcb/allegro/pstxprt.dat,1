@@ -1,0 +1,391 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Mar-09-2020 at 11:13:13 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='LEXICON_GLOVE2';
+ POST_TIME='May 11 2019 05:12:43';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS1793@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins1793@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins1793@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C10 'CAP NP_GU-RC100_10U':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS12361@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins12361@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins12361@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C11 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS12377@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins12377@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins12377@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C12 'C_GU-C1411_1U':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS26800@DISCRETE.C.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins26800@discrete.\c.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins26800@discrete.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C13 'C_GU-C2312_4U7':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS27195@DISCRETE.C.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins27195@discrete.\c.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins27195@discrete.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C14 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS29554@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins29554@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins29554@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS1809@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins1809@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins1809@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C3 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS22642@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins22642@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins22642@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C4 'CAP NP_GU-R0805_10N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS22686@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins22686@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins22686@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'CAP NP_GU-R0805_2N2':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS22512@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins22512@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins22512@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C6 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS22702@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins22702@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins22702@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C8 'CAP NP_GU-R0805_100N':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS10916@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins10916@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins10916@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C9 'CAP NP_GU-RC100_10U':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS10999@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins10999@discrete.\cap np.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins10999@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'BAT54A/SOT_SOT23-6P95_280X145L4':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS33776@DISCRETE.BAT54A/SOT.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins33776@discrete.\bat54a/sot.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins33776@discrete.\bat54a/sot.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'CON14C_GU-SOIC14_MCP3428':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS1921@CONNECTOR.CON14C.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins1921@connector.\con14c.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins1921@connector.\con14c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J10 'CON2_GU-MOLEX2_F5':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS5964@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins5964@connector.\con2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins5964@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CON8B_1_GU-SOIC8_P82B96TD':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS23436@LEXICON_GLOVE2.CON8B_1.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins23436@lexicon_glove2.\con8b_1.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins23436@lexicon_glove2.\con8b_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J14 'CON4_WURTH_615004143821_PI':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS24094@CONNECTOR.CON4.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins24094@connector.\con4.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins24094@connector.\con4.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J15 'CON5_2_SOT23-5P95_280X145L45X37':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS25482@LEXICON_GLOVE2.CON5_2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins25482@lexicon_glove2.\con5_2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins25482@lexicon_glove2.\con5_2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'CON6AP_0_SOT23-6P95_280X145L45X':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS2684@LEXICON_GLOVE.CON6AP_0.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins2684@lexicon_glove.\con6ap_0.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins2684@lexicon_glove.\con6ap_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J5 'CON24C_2_QFN25P50_400X400X95L35':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS22560@LEXICON_GLOVE.CON24C_2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins22560@lexicon_glove.\con24c_2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins22560@lexicon_glove.\con24c_2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J6 'CON2_GU-MOLEX2_F1':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS5681@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins5681@connector.\con2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins5681@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J7 'CON2_GU-MOLEX2_F2':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS5769@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins5769@connector.\con2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins5769@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'CON2_GU-MOLEX2_F3':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS5833@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins5833@connector.\con2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins5833@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J9 'CON2_GU-MOLEX2_F4':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS5898@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins5898@connector.\con2.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins5898@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'RESISTOR_GU-R0805_33K':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS35@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins35@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins35@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'RESISTOR_GU-R0805_330R':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS24895@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins24895@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins24895@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'RESISTOR_GU-R0805_330R':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS24911@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins24911@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins24911@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'RESISTOR_GU-R0805_33K':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS125@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins125@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins125@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'RESISTOR_GU-R0805_33K':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS151@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins151@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins151@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'RESISTOR_GU-R0805_33K':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS177@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins177@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins177@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'RESISTOR_GU-R0805_33K':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS203@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins203@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins203@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'RESISTOR_GU-R0805_2K2':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS23078@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins23078@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins23078@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'RESISTOR_GU-R0805_2K2':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS23062@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins23062@discrete.\resistor.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins23062@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'TL074_SOP14P65_500X640X120L60X2':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS234@OPAMP.TL074.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins234@opamp.\tl074.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins234@opamp.\tl074.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='A';
+
+SECTION_NUMBER 2
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS275@OPAMP.TL074.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins275@opamp.\tl074.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins275@opamp.\tl074.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='B';
+
+SECTION_NUMBER 3
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS316@OPAMP.TL074.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins316@opamp.\tl074.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins316@opamp.\tl074.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='C';
+
+SECTION_NUMBER 4
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS357@OPAMP.TL074.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins357@opamp.\tl074.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins357@opamp.\tl074.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='D';
+
+PART_NAME
+ U2 'TL071_1_GU-SOIC8_TL071':;
+
+SECTION_NUMBER 1
+ '@LEXICON_GLOVE2.SCHEMATIC1(SCH_1):INS486@LEXICON_GLOVE.TL071_1.NORMAL(CHIPS)':
+ C_PATH='@lexicon_glove2.schematic1(sch_1):ins486@lexicon_glove.\tl071_1.normal\(chips)',
+ P_PATH='@lexicon_glove2.schematic1(sch_1):page1_ins486@lexicon_glove.\tl071_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

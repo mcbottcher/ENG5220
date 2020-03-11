@@ -1,1 +1,0 @@
-LEXICON_GLOVE_8.brd
