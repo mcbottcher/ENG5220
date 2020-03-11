@@ -7,9 +7,6 @@
 [submodule "code/cppTimer"]
 	path = code/cppTimer
 	url = https://github.com/berndporr/cppTimer.git
-[submodule "tiny-dnn"]
-	path = tiny-dnn
-	url = https://github.com/jamielee183/tiny-dnn.git
 [submodule "code/tiny-dnn"]
 	path = code/tiny-dnn
-	url = https://github.com/jamielee183/tiny-dnn
+	url = https://github.com/jamielee183/tiny-dnn.git
