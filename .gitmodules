@@ -10,3 +10,6 @@
 [submodule "code/tiny-dnn"]
 	path = code/tiny-dnn
 	url = https://github.com/jamielee183/tiny-dnn.git
+[submodule "code/CSVtoVectorCpp"]
+	path = code/CSVtoVectorCpp
+	url = https://github.com/mcbottcher/CSVtoVectorCpp.git
