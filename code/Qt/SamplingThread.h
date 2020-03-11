@@ -1,12 +1,13 @@
-#include "../CppTimer.h"
+
+#include "CppTimer.h"
 #include "../RingBuff.h"
 #include <QObject>
 #include <QThread>
 
-
 #define MPU6050_I2C_ADDRESS 0x69
 #define MCP3428_I2C_ADDRESS 0x6e
 #define MCP3421_I2C_ADDRESS 0x68
+
 
 class SamplingThread : public QObject, public CppTimer
 {
@@ -24,6 +25,7 @@ public:
         // MCP3428 flexFingers(MCP3428_I2C_ADDRESS);
         // MCP3428 flexThumb(MCP3421_I2C_ADDRESS);
     }
+
 
     void timerEvent(){
         emit timeoutsignal();

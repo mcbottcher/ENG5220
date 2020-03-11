@@ -10,7 +10,8 @@
 #include <QLabel>
 #include <QFont>
 #include <QPlainTextEdit>
-
+#include <QTextToSpeech>
+#include <QDebug>
 
 #include <stdio.h>
 
@@ -29,7 +30,7 @@ private:
     QFont titleFont;
     QLabel *titleText, *loudspeakerIcon;
 	
-    QPushButton  *homeButton, *wrongButton, *clearButton;
+    QPushButton  *homeButton, *wrongButton, *clearButton, *sayButton;
     QPlainTextEdit *textBox;
 
     QCheckBox    *soundCheckBox;
@@ -46,6 +47,7 @@ private:
     QVBoxLayout *checkAccLayout, *checkGyroLayout, *checkFingerLayout;
     QHBoxLayout *accLayout, *gyroLayout, *fingerLayout;
 
+    QTextToSpeech *speech;
 
 
 
@@ -53,13 +55,16 @@ public:
 
 	InterpretWindow(); // default constructor - called when a Window is declared without arguments
 	~InterpretWindow();
-    void timerEvent( QTimerEvent * );
+    void sayWords();
+
+signals:
+    void emitClose();
 
 public slots:
-
-    // void closeWindow();
+    void timerEvent();
+    void closeWindow();
     void wrongButtonClicked();
-    void clearTextClicked();
+    
 
 };
 

@@ -1,6 +1,8 @@
 #include "InterpretWindow.h"
 
 
+
+
 InterpretWindow::InterpretWindow(){
 
 
@@ -15,7 +17,10 @@ InterpretWindow::InterpretWindow(){
     connect(homeButton, &QPushButton::clicked, [this](){this->close();});
 
     clearButton = new QPushButton("Clear");
-    connect(clearButton, SIGNAL(clicked()), SLOT(clearTextClicked()));
+    connect(clearButton, &QPushButton::clicked, [this](){textBox->clear();});
+
+    sayButton = new QPushButton("Say words");
+    connect(sayButton, &QPushButton::clicked, [this](){this->sayWords();});
 
 
     soundCheckBox = new QCheckBox();
@@ -44,6 +49,7 @@ InterpretWindow::InterpretWindow(){
 
     homeLayout = new QHBoxLayout;
     homeLayout->addStretch(100);
+    homeLayout->addWidget(sayButton, Qt::AlignCenter);
     homeLayout->addWidget(clearButton, Qt::AlignCenter);
     homeLayout->addWidget(homeButton, Qt::AlignCenter);
     homeLayout->addStretch(100);
@@ -53,29 +59,45 @@ InterpretWindow::InterpretWindow(){
     mainLayout->addLayout(titleLayout);
     mainLayout->addWidget(textBox);
     mainLayout->addLayout(homeLayout);
+    
+
+
+    speech = new QTextToSpeech();
+    speech->setLocale(QLocale(QLocale::English,QLocale::LatinScript,QLocale::UnitedStates));
+    speech->setRate(2);
+    speech->setPitch(2);
+    speech->setVolume(100);
 
     setLayout(mainLayout);
 
 }
 
-InterpretWindow::~InterpretWindow(){}
 
-// void InterpretWindow::closeWindow(){
-//     this->close();
-// }
+InterpretWindow::~InterpretWindow(){
+    
+}
+
+void InterpretWindow::closeWindow(){
+    // this->close();
+    emit emitClose();
+
+}
+
+void InterpretWindow::sayWords(){
+    speech->say(textBox->toPlainText());
+   
+}
 
 void InterpretWindow::wrongButtonClicked(){
-    //system("echo Hello |festival --tts");
-}
-void InterpretWindow::clearTextClicked(){
-
 }
 
-void InterpretWindow::timerEvent(QTimerEvent *){
+
+void InterpretWindow::timerEvent(){
 
     char buffer [50];
     sprintf (buffer, "%d", count);
     QString number(buffer);
     titleText->setText(number);
     ++count;
+    // speech->say(number);
 }
