@@ -1,7 +1,7 @@
 #include "FilterBank.h"
 
 
-FilterBank::FilterBank(int numberOfFilters, int filterOrder, float sampleRate, float *cutoffFrequencies):
+FilterBank::FilterBank(int numberOfFilters, int filterOrder, double sampleRate, double *cutoffFrequencies):
     numberOfFilters(numberOfFilters),
     sampleRate(sampleRate),
     filterOrder(filterOrder),
@@ -11,6 +11,12 @@ FilterBank::FilterBank(int numberOfFilters, int filterOrder, float sampleRate, f
     //instantiate each Filter with consecutive elements of cutoff frequencies array
     for(int i = 0;i < numberOfFilters; i++){
         filterObjArray[i] = new Filter(filterOrder,sampleRate, cutoffFrequencies[i]);
+    }
+}
+
+void FilterBank::setup(){
+    for(int i = 0;i < numberOfFilters; i++){
+        filterObjArray[i]->setup();
     }
 }
 

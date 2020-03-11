@@ -38,7 +38,7 @@ TrainWindow::TrainWindow(){
         led[i]->setState(Qt::red);
         ledLayout->addWidget(led[i],0,i);
         }
-    led[3]->setState(Qt::yellow);
+    
 
     trainGroup = new QGroupBox(tr("Training stuff"));
 
@@ -50,8 +50,8 @@ TrainWindow::TrainWindow(){
 
 
 
-    homeButton = new QPushButton("Home");
-    connect(homeButton, &QPushButton::clicked, [this](){this->close();});
+    homeButton = new QPushButton("Save");
+    connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
     homeLayout = new QHBoxLayout;
     homeLayout->addStretch(100);
@@ -67,8 +67,23 @@ TrainWindow::TrainWindow(){
     setLayout(mainLayout);
 
 }
+void TrainWindow::trainingDataLoop(){
+    for(int i=0;i<10;i++){
+        led[i]->setState(Qt::yellow);
+        
+        led[i]->setState(Qt::green);
+    }
+
+}
 
 TrainWindow::~TrainWindow(){
+}
+
+void TrainWindow::closeWindow(){
+    /// Train the model with the new data
+    /// link the outputs to text files
+
+
 }
 
 

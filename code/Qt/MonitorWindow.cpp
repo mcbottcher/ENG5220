@@ -7,8 +7,16 @@ using namespace std;
 
 MonitorWindow::MonitorWindow(size_t bufferSize): 
     count(0),
-    bufferSize(bufferSize){
+    bufferSize(bufferSize),
+    xAxisData(new double[bufferSize]()){
 	
+    for (int i=0; i<3; i++){
+        acc[i].data = new double[bufferSize];
+        gyro[i].data = new double[bufferSize];
+    }
+    for (int i=0; i<5; i++){
+        finger[i].data = new double[bufferSize];
+    }
 
     resetButton = new QPushButton("reset");
     closeButton = new QPushButton("close");
@@ -18,7 +26,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
 
 
 	// set up the initial plot data
-	for(int index=0; index<plotDataSize; index++ ){
+	for(size_t index=0; index<bufferSize; index++ ){
 		xAxisData[index] = index;
         for(size_t j = 0; j<5;j++){
             if (j < 3){
@@ -135,12 +143,13 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
 }
 
 MonitorWindow::~MonitorWindow(){
+    
 }
 
 
 // Method to draw on a curve
 void MonitorWindow::_updateCurve(CurveStruct &plotcurve){
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
+    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 // Method to draw plot on the screen
@@ -157,42 +166,50 @@ void MonitorWindow::drawPlots(){
 
 // Method to insert sample into curve data array
 void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
-    memmove(plotcurve.data, plotcurve.data+1, (plotDataSize-1) * sizeof(double));
-	plotcurve.data[plotDataSize-1] = sample;
+    memmove(plotcurve.data, plotcurve.data+1, (bufferSize-1) * sizeof(double));
+	plotcurve.data[bufferSize-1] = sample;
 }
 
 // Method to setup curves and attach to plot
 void MonitorWindow::_setupCurves(QwtPlot *plot, CurveStruct &plotcurve){
     plotcurve.plot = plot;
     plotcurve.curve = new QwtPlotCurve();
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
+    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
 	plotcurve.curve->attach(plotcurve.plot);
     _resetCurve(plotcurve);
 }
 
 // Method to reset the Curves to zero.
 void MonitorWindow::_resetCurve(CurveStruct &plotcurve){
-    for(int index=0; index<plotDataSize; ++index ){
+    for(size_t index=0; index<bufferSize; ++index ){
 		plotcurve.data[index] = 0;
 	}
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, plotDataSize);
+    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 // Method to plot individual sample if button is checked
-void MonitorWindow::_plotSample(CurveStruct &plotcurve, double sample){
-    if (plotcurve.checkbox->isChecked()){_insertSample(plotcurve, sample);}
-    else {_insertSample(plotcurve, 0);}
+// void MonitorWindow::_plotSample(CurveStruct &plotcurve, double sample){
+//     if (plotcurve.checkbox->isChecked()){_insertSample(plotcurve, sample);}
+//     else {_insertSample(plotcurve, 0);}
+//     _updateCurve(plotcurve);
+// }
+
+// Method to plot buffer of samples if button is checked
+void MonitorWindow::_plotSample(CurveStruct &plotcurve, const double *buffer, size_t plotBufferSize){
+    if (plotcurve.checkbox->isChecked()){
+        for (size_t i=0; i< plotBufferSize;i++){
+            _insertSample(plotcurve, buffer[i]);
+        }
+    }
+    else {
+        for (size_t i=0; i< plotBufferSize;i++){
+            _insertSample(plotcurve, 0);
+        }
+    }
     _updateCurve(plotcurve);
 }
 
-// Method to plot buffer of samples if button is checked
-void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer){
-    if (plotcurve.checkbox->isChecked()){
-        for (size_t i=0; i< bufferSize;i++){_insertSample(plotcurve, buffer[i]);}
-    }
-    else {for (size_t i=0; i< bufferSize;i++){_insertSample(plotcurve, 0);}}
-    _updateCurve(plotcurve);
-}
+
 
 void MonitorWindow::resetbutton(){
     for (size_t i=0;i<5;i++){
@@ -204,99 +221,87 @@ void MonitorWindow::resetbutton(){
     }
 }
 
-template <typename T>
-void MonitorWindow::plotAcc(T sample){
-    for (size_t i = 0; i <3; i++){_plotSample(acc[i], sample[i]);}
-}
-template <typename T>
-void MonitorWindow::plotGyro(T sample){
-    for (size_t i = 0; i <3; i++){_plotSample(gyro[i], sample[i]);}
-}
-template <typename T>
-void MonitorWindow::plotFinger(T sample){
-    for (size_t i = 0; i <5; i++){ _plotSample(finger[i], sample[i]);}
-}
 
-// currently just showing use cases, should actually 
-// be used to update the plots at regular intervals
-void MonitorWindow::timerEvent(QTimerEvent *){
+// // currently just showing use cases, should actually 
+// // be used to update the plots at regular intervals
+// void MonitorWindow::timerEvent(QTimerEvent *){
 
-    //plot buffer of samples to each plot
-    double **buffer;
-    buffer = new double*[5];
+//     // //plot buffer of samples to each plot
+//     // double **buffer;
+//     // const int bufferlen = 10;
+//     // buffer = new double*[5];
     
-    for (size_t i = 0; i<5; i++){
-        buffer[i] = new double[bufferSize];
-    }
+//     // for (size_t i = 0; i<5; i++){
+//     //     buffer[i] = new double[bufferlen];
+//     // }
 
-    //fill buffers with samples
-    for (size_t j = 0; j<bufferSize; j++){
-        double in = 5 * sin(M_PI * count/50.0);
-	    ++count;
-        for (size_t i=0; i<5;i ++){
-            buffer[i][j]= in/(i+1);
-        }
-    }
+//     // //fill buffers with samples
+//     // for (size_t j = 0; j<bufferlen; j++){
+//     //     double in = 5 * sin(M_PI * count/50.0);
+// 	//     ++count;
+//     //     for (size_t i=0; i<5;i ++){
+//     //         buffer[i][j]= in/(i+1);
+//     //     }
+//     // }
     
-    plotAcc(buffer);
-    plotGyro(buffer);   
-    plotFinger(buffer);
-    drawPlots();
+//     // plotAcc(buffer);
+//     // plotGyro(buffer);   
+//     // plotFinger(buffer);
+//     // drawPlots();
 
-    delete[] buffer;
+//     // delete[] buffer;
 
     
     
 
-    // //plot single sample to each plot
-    // double sample[5];
+//     //plot single sample to each plot
+//     double meh[5];
 
-    // double in = 5 * sin(M_PI * count/50.0);
-	// ++count;
+//     // double in = 5 * sin(M_PI * count/50.0);
+// 	// ++count;
 
-    // for (size_t i=0; i<5;i++){
-    //     sample[i]= in/(i+1);
-    // }
+//     // for (size_t i=0; i<5;i++){
+//     //     sample[i]= in/(i+1);
+//     // }
     
-    // plotAcc(sample);
-    // plotGyro(sample);   
-    // plotFinger(sample);
-    // drawPlots();
+//     // plotGyro(meh);   
+//     // plotFinger(meh);
+//     // drawPlots();
     
 
 
-    // //plot buffer of samples to each plot from instance
-    // double buffer[5][bufferSize];
+//     // //plot buffer of samples to each plot from instance
+//     // double buffer[5][bufferSize];
 
-    // for (size_t i=0; i<bufferSize;i++){
-    //     double sample = 5 * sin(M_PI * count/50.0);
-    //     for (size_t j=0; j<5;j++ ){buffer[j][i] = sample/(j+1);}
-    //     ++count;
-    // }
+//     // for (size_t i=0; i<bufferSize;i++){
+//     //     double sample = 5 * sin(M_PI * count/50.0);
+//     //     for (size_t j=0; j<5;j++ ){buffer[j][i] = sample/(j+1);}
+//     //     ++count;
+//     // }
 
-    // for (size_t i=0; i<5;i++){
-    //     if (i<3){
-    //         _plotSample(acc[i], buffer[i], bufferSize);
-    //         _plotSample(gyro[i], buffer[i], bufferSize);
-    //     }
-    //     _plotSample(finger[i], buffer[i], bufferSize);
-    // }
-    // drawPlots();
+//     // for (size_t i=0; i<5;i++){
+//     //     if (i<3){
+//     //         _plotSample(acc[i], buffer[i], bufferSize);
+//     //         _plotSample(gyro[i], buffer[i], bufferSize);
+//     //     }
+//     //     _plotSample(finger[i], buffer[i], bufferSize);
+//     // }
+//     // drawPlots();
 
 
-    // //plot single sample to each plot from instance
-    // double sample = 5 * sin(M_PI * count/50.0);
-	// ++count;
+//     // //plot single sample to each plot from instance
+//     // double sample = 5 * sin(M_PI * count/50.0);
+// 	// ++count;
 
-    // for (size_t i=0; i<5;i++){
-    //     if (i<3){
-    //         _plotSample(acc[i], sample/(i+1));
-    //         _plotSample(gyro[i] sample/(i+1));
-    //     }
-    //     _plotSample(finger[i], sample/(i+1));
-    // }
-    // drawPlots();
-}
+//     // for (size_t i=0; i<5;i++){
+//     //     if (i<3){
+//     //         _plotSample(acc[i], sample/(i+1));
+//     //         _plotSample(gyro[i] sample/(i+1));
+//     //     }
+//     //     _plotSample(finger[i], sample/(i+1));
+//     // }
+//     // drawPlots();
+// }
 
 
 
