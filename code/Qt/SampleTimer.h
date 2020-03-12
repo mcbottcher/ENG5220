@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdint.h> 
 #include <stdlib.h>
+#include <mutex>
 #include <QObject>
 
 
@@ -27,7 +28,7 @@ class SampleTimer : public QObject, public CppTimer
 {
     Q_OBJECT
     private:
-
+	std::mutex mtx;
         MPU6050  *motionSensor;
         MCP3428  *flexFingers;
         MCP3428  *flexThumb;

@@ -30,8 +30,8 @@
 #define ORDER_OF_FILTERS 4  //order of these filters
 
 
-#define MONITOR_REFRESH_RATE 200 //in msec
-#define NUMBER_OF_PLOT_SAMPLES 200
+#define MONITOR_REFRESH_RATE 300 //in msec
+#define NUMBER_OF_PLOT_SAMPLES 50
 #define PLOT_BUFFER_SIZE 1
 
 using namespace std;
