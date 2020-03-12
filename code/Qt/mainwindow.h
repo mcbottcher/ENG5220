@@ -23,7 +23,7 @@
 #include <cmath> 
 
 
-#define SAMPLE_RATE 50 //in Hertz
+#define SAMPLE_RATE 10 //in Hertz
 #define DATA_SAMPLE_INTERVAL 1000000000/SAMPLE_RATE //in nanoseconds
 
 #define NUMBER_OF_FILTERS 10 //number of filters in each filter bank
@@ -57,9 +57,9 @@ private:
     //QToolButton *logo_icon;
     //QVBoxLayout main_layout;
     double filterCuttoffFreqs[10] = {0.01,1,1,1,2,2,3,3,4,4}; //cutoff frequencies for filters
-    FilterBank *accelFilterBank;
-    FilterBank *gyroFilterBank;
-    FilterBank *fingerFilterBank;
+    // FilterBank *accelFilterBank;
+    // FilterBank *gyroFilterBank;
+    // FilterBank *fingerFilterBank;
     SampleTimer  *cppSampleTimer;
 
     void createUI();
@@ -67,7 +67,7 @@ private:
     int count = 0;
     // void timerEvent();
 
-    int16_t *allData;
+    int16_t allData[11];
     double samplefinger[5][1];
     double sampleacc[3][1];
     double samplegyro[3][1];

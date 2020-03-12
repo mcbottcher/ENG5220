@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent){
     
     createUI();
-    createFilters();
+    //createFilters();
 
 }
 
@@ -110,8 +110,7 @@ void MainWindow::createUI(){
     
     cppSampleTimer = new SampleTimer();
 
-    allData = new int16_t[11];
-    allData = cppSampleTimer->getSensorValues();
+
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
 
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
@@ -122,17 +121,17 @@ void MainWindow::createUI(){
 }
 
 void MainWindow::createFilters(){
-    accelFilterBank = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    gyroFilterBank  = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    fingerFilterBank= new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    accelFilterBank ->setup();
-    gyroFilterBank  ->setup();
-    fingerFilterBank->setup();
+    // accelFilterBank = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    // gyroFilterBank  = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    // fingerFilterBank= new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
+    // accelFilterBank ->setup();
+    // gyroFilterBank  ->setup();
+    // fingerFilterBank->setup();
 
 }
 
 void MainWindow::newDataEvent(){
-
+    allData = cppSampleTimer->getSensorValues();
     sampleacc[0][0]   =allData[0];
     sampleacc[1][0]   =allData[1];
     sampleacc[2][0]   =allData[2];
