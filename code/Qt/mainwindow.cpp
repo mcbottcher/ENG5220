@@ -107,19 +107,17 @@ void MainWindow::createUI(){
     trainWindow->setWindowTitle("Training Mode");
     trainWindow->startTimer(1000);
     
-    cpptimer = new SamplingThread();
     
+    cppSampleTimer = new SampleTimer();
 
-    connect(cpptimer, &SamplingThread::timeoutsignal,
-            this, [this](){this->timerEvent();});
-
-    // connect(cpptimer, SIGNAL(timeoutsignal()), this, SLOT(timerEvent()));
-    
-
+    allData = new int16_t[11];
+    allData = cppSampleTimer->getSensorValues();
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
 
+    connect(cppSampleTimer, &SampleTimer::timeoutsignal,
+            this, [this](){this->newDataEvent();});
 
-    cpptimer->start(DATA_SAMPLE_INTERVAL);
+    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 
 }
 
@@ -131,6 +129,29 @@ void MainWindow::createFilters(){
     gyroFilterBank  ->setup();
     fingerFilterBank->setup();
 
+}
+
+void MainWindow::newDataEvent(){
+
+    sampleacc[0][0]   =allData[0];
+    sampleacc[1][0]   =allData[1];
+    sampleacc[2][0]   =allData[2];
+    samplegyro[0][0]  =allData[3];
+    samplegyro[1][0]  =allData[4];
+    samplegyro[2][0]  =allData[5];
+    samplefinger[0][0]=allData[6];
+    samplefinger[1][0]=allData[7];
+    samplefinger[2][0]=allData[8];
+    samplefinger[3][0]=allData[9];
+    samplefinger[4][0]=allData[10];
+
+    if (monitorWindow->isVisible()){
+        QtConcurrent::run([this]() {
+            monitorWindow->plotAcc(this->sampleacc);
+            monitorWindow->plotGyro(this->samplegyro);
+            monitorWindow->plotFinger(this->samplefinger);
+        });
+    }
 }
 
 void MainWindow::timerEvent(){
@@ -189,9 +210,6 @@ void MainWindow::monitor_button_clicked(){
     connect(moitorRefreshtimer, &QTimer::timeout,
             monitorWindow, [this](){monitorWindow->drawPlots();});
     moitorRefreshtimer->start(MONITOR_REFRESH_RATE);
-    // monitorWindow->startTimer(100);
-
-
     monitorWindow->show();
 }
 

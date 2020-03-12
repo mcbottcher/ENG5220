@@ -5,7 +5,7 @@
 #include "InterpretWindow.h"
 #include "TrainWindow.h"
 #include "../FilterBank.h"
-#include "SamplingThread.h"
+#include "SampleTimer.h"
 
 #include <QMainWindow>
 #include <QPushButton>
@@ -17,6 +17,7 @@
 #include <QFont>
 #include <QThread>
 #include <QtConcurrent>
+#include <QThread>
 
 #include <iostream>
 #include <cmath> 
@@ -59,20 +60,21 @@ private:
     FilterBank *accelFilterBank;
     FilterBank *gyroFilterBank;
     FilterBank *fingerFilterBank;
-    SamplingThread *cpptimer;
+    SampleTimer  *cppSampleTimer;
 
     void createUI();
     void createFilters();
     int count = 0;
     // void timerEvent();
 
-
+    int16_t *allData;
     double samplefinger[5][1];
     double sampleacc[3][1];
     double samplegyro[3][1];
 
 private slots:
     void timerEvent();
+    void newDataEvent();
     void monitor_button_clicked();
     void interpretButtonClicked();
     void interpretHome();

@@ -46,11 +46,11 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     gyro[1].name = "GyroY";
     gyro[2].name = "GyroZ";
 
-    finger[0].name = "Thumb";
-    finger[1].name = "Index";
-    finger[2].name = "Middle";
-    finger[3].name = "Ring";
-    finger[4].name = "Pinky";
+    finger[0].name = "Index";
+    finger[1].name = "Middle";
+    finger[2].name = "Ring";
+    finger[3].name = "Pinky";
+    finger[5].name = "Thumb";
 
 
     //setup checkboxes
