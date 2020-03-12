@@ -131,7 +131,9 @@ void MainWindow::createFilters(){
 }
 
 void MainWindow::newDataEvent(){
-    allData = cppSampleTimer->getSensorValues();
+
+    int16_t* allData = cppSampleTimer->getSensorValues();
+
     sampleacc[0][0]   =allData[0];
     sampleacc[1][0]   =allData[1];
     sampleacc[2][0]   =allData[2];

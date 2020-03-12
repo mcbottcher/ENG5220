@@ -67,7 +67,7 @@ private:
     int count = 0;
     // void timerEvent();
 
-    int16_t allData[11];
+    
     double samplefinger[5][1];
     double sampleacc[3][1];
     double samplegyro[3][1];
