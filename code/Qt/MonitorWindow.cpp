@@ -174,7 +174,7 @@ void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
 void MonitorWindow::_setupCurves(QwtPlot *plot, CurveStruct &plotcurve){
     plotcurve.plot = plot;
     plotcurve.curve = new QwtPlotCurve();
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
+    plotcurve.curve->setSamples(xAxisData,plotcurve.data, bufferSize);
 	plotcurve.curve->attach(plotcurve.plot);
     _resetCurve(plotcurve);
 }

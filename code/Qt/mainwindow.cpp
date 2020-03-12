@@ -137,9 +137,11 @@ void MainWindow::newDataEvent(){
     sampleacc[0][0]   =allData[0];
     sampleacc[1][0]   =allData[1];
     sampleacc[2][0]   =allData[2];
+
     samplegyro[0][0]  =allData[3];
     samplegyro[1][0]  =allData[4];
     samplegyro[2][0]  =allData[5];
+
     samplefinger[0][0]=allData[6];
     samplefinger[1][0]=allData[7];
     samplefinger[2][0]=allData[8];
@@ -164,7 +166,7 @@ void MainWindow::timerEvent(){
     // double samplefinger[5][1];
     // double sampleacc[3][1];
     
-    double in = 5 * sin(M_PI * count/50.0);
+    int16_t in = 5 * sin(M_PI * count/50.0);
     ++count;
     for (size_t i=0; i<5;i++){
         for (size_t j=0;j<1;j++){
