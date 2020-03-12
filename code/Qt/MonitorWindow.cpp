@@ -50,7 +50,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     finger[1].name = "Middle";
     finger[2].name = "Ring";
     finger[3].name = "Pinky";
-    finger[5].name = "Thumb";
+    finger[4].name = "Thumb";
 
 
     //setup checkboxes

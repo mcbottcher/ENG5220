@@ -114,7 +114,7 @@ void MainWindow::createUI(){
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
 
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
-            this, [this](){this->newDataEvent();});
+           this, [this](){this->newDataEvent();});
 
     cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 

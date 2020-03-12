@@ -29,7 +29,8 @@
 #define NUMBER_OF_FILTERS 10 //number of filters in each filter bank
 #define ORDER_OF_FILTERS 4  //order of these filters
 
-#define MONITOR_REFRESH_RATE 100 //in msec
+
+#define MONITOR_REFRESH_RATE 200 //in msec
 #define NUMBER_OF_PLOT_SAMPLES 200
 #define PLOT_BUFFER_SIZE 1
 
