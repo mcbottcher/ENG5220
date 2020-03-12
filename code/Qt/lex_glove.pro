@@ -17,8 +17,12 @@ SOURCES += \
     MonitorWindow.cpp \
     InterpretWindow.cpp \
     TrainWindow.cpp \
-    CppTimer.cpp \
-    ../FilterBank.cpp
+    SampleTimer.cpp \
+    ../FilterBank.cpp \
+    ../cppTimer/CppTimer.cpp \
+    ../MCP3428/MCP3428.cpp \
+    ../MPU6050/MPU6050.cpp \
+    ../MPU6050/I2Cdev/I2Cdev.cpp \
 
 
 HEADERS += \
@@ -28,8 +32,11 @@ HEADERS += \
     TrainWindow.h \
     QLed.h \
     ../FilterBank.h \
-    CppTimer.h \
-    SamplingThread.h
+    ../cppTimer/CppTimer.h \
+    SampleTimer.h \
+    ../MCP3428/MCP3428.h \
+    ../MPU6050/MPU6050.h \
+    ../MPU6050/I2Cdev/I2Cdev.h \
     
 
 FORMS +=
