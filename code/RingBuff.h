@@ -12,7 +12,7 @@ class RingBuff {
         unsigned elementPtr;
         RingBuff(int bufSize); 
         ~RingBuff(){delete[] buffer;};
-        void insertSample(double sample);
+        inline void insertSample(double sample);
         void resetBuffer();
         double* getBuffAddress(){return buffer;}
         int getBuffLen(){return bufSize;}

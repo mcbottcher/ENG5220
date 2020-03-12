@@ -63,7 +63,7 @@ private:
 
     void _updateCurve(CurveStruct &plotcurve);
     void _drawPlot(CurveStruct &plotcurve);
-    void _insertSample(CurveStruct &plotcurve, double sample);
+    inline void _insertSample(CurveStruct &plotcurve, double sample);
     void _setupCurves(QwtPlot *plot, CurveStruct &plotcurve);
     // void _plotSample(CurveStruct &plotcurve, double sample);
     void _plotSample(CurveStruct &plotcurve, const double *buffer, size_t plotBufferSize);

@@ -165,7 +165,7 @@ void MonitorWindow::drawPlots(){
 }
 
 // Method to insert sample into curve data array
-void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
+inline void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
     memmove(plotcurve.data, plotcurve.data+1, (bufferSize-1) * sizeof(double));
 	plotcurve.data[bufferSize-1] = sample;
 }

@@ -13,7 +13,7 @@ void RingBuff::resetBuffer(){
     }
 }
 
-void RingBuff::insertSample(double sample){
+inline void RingBuff::insertSample(double sample){
     double* val = &buffer[elementPtr];
     *val = sample;
     if (++elementPtr >= bufSize){

@@ -23,7 +23,7 @@ SampleTimer::SampleTimer(){
 
 }
 
-void SampleTimer::readfromSensors(){
+inline void SampleTimer::readfromSensors(){
         //TODO put a lock on this data?   
     motionSensor->getMotion6(&sensorValues[0],
                             &sensorValues[1],
