@@ -23,4 +23,5 @@ Proposed software:
 * Button interface to switch between learning and predicting mode
 * Tk/Qt interface?
 
-
+![ourhand](https://github.com/mcbottcher/ENG5220/blob/master/images/)
+***
