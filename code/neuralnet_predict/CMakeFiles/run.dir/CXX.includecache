@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CSVreader.cpp
+CSVreader.h
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CSVreader.h
+fstream
+-
+stdint.h
+-
+unistd.h
+-
+stdlib.h
+-
+
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CSVreader.h
+vector
+-
+iostream
+-
+
+/home/mcbottcher/Documents/gitprojects/kerasCpp/NeuralNet.cpp
+NeuralNet.h
+/home/mcbottcher/Documents/gitprojects/kerasCpp/NeuralNet.h
+vector
+-
+
+/home/mcbottcher/Documents/gitprojects/kerasCpp/NeuralNet.h
+fdeep/fdeep.hpp
+-
+
+/home/mcbottcher/Documents/gitprojects/kerasCpp/main.cpp
+NeuralNet.h
+/home/mcbottcher/Documents/gitprojects/kerasCpp/NeuralNet.h
+CSVreader.h
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CSVreader.h
+iostream
+-
+

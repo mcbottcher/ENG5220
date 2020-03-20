@@ -1,0 +1,3 @@
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CMakeFiles/rebuild_cache.dir
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CMakeFiles/run.dir
+/home/mcbottcher/Documents/gitprojects/kerasCpp/CMakeFiles/edit_cache.dir
