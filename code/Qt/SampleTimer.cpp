@@ -24,8 +24,14 @@ SampleTimer::SampleTimer(){
 
 }
 
+SampleTimer::~SampleTimer(){
+    delete motionSensor;
+    delete flexFingers;
+    delete flexThumb;
+}
+
 inline void SampleTimer::readfromSensors(){
-        //TODO put a lock on this data?   
+   
     mtx.lock();
     motionSensor->getMotion6(&sensorValues[0],
                             &sensorValues[1],
@@ -33,7 +39,7 @@ inline void SampleTimer::readfromSensors(){
                             &sensorValues[3],
                             &sensorValues[4],
                             &sensorValues[5]);
-    mtx.unlock();    
+    
 
     sensorValues[6]  = flexFingers->readChannel(2);
     sensorValues[7]  = flexFingers->readChannel(3);
@@ -41,7 +47,14 @@ inline void SampleTimer::readfromSensors(){
     sensorValues[9]  = flexFingers->readChannel(0);
     sensorValues[10] = flexThumb  ->readChannel(0);
     
+    mtx.unlock();  
+
     emit timeoutsignal();
 }
 
+void SampleTimer::timerEvent(){
+	
+	readfromSensors();
+        
+}
 

@@ -32,8 +32,8 @@ class SampleTimer : public QObject, public CppTimer
         MPU6050  *motionSensor;
         MCP3428  *flexFingers;
         MCP3428  *flexThumb;
-        inline void readfromSensors();
-        
+        inline void readfromSensors();      
+
         int16_t sensorValues[NUMBER_OF_SENSORS];
 
 
@@ -41,10 +41,9 @@ class SampleTimer : public QObject, public CppTimer
     public:
         // int16_t sensorValues[NUMBER_OF_SENSORS];
         SampleTimer();
+	~SampleTimer();
 
-        void timerEvent(){
-            readfromSensors();
-        }
+        void timerEvent();
 
         int16_t* getSensorValues(){return sensorValues;}
 
