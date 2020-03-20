@@ -47,7 +47,7 @@ class SampleTimer : public QObject, public CppTimer
         MCP3428  *flexThumb;
 
         //! sensorValues pointer.
-        /*! Where the data from the sensors is stored. */
+        /*! Where the data from the sensors is stored. */     
         int16_t sensorValues[NUMBER_OF_SENSORS];
 
         //! readFromSensors method.
@@ -64,10 +64,11 @@ class SampleTimer : public QObject, public CppTimer
         //! Class constructor.
         /*! Default constructor to setup the sensors with the required configurations. */
         SampleTimer();
+	    ~SampleTimer();
 
         //! timerEvent method.
-        /*! Overriding method of CppTimer parent class. This method calls when the CppTimer times out. */
-        void timerEvent(){readFromSensors();}
+        /*! Overridden method of CppTimer to call once timer has timed out. */
+        void timerEvent();
 
         //! getSensorValues function.
         /*! Return a pointer to the captured sensor values so we can process the captured samples.*/
