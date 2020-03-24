@@ -37,7 +37,6 @@ TrainWindow::TrainWindow(){
     //make a state machine
     //it outputs depending on the state and updates the state
     
-
     connect(timer, SIGNAL(timeout()), this, SLOT(data_aq_state_machine()));
 
     ledLayout = new QGridLayout;
@@ -69,12 +68,8 @@ TrainWindow::TrainWindow(){
     mainLayout->addWidget(inputGroup);
     mainLayout->addWidget(trainGroup);
     mainLayout->addLayout(homeLayout);
-
-
+    
     setLayout(mainLayout);
-    
-    
-    currentState = STATE_START;
 
 }
 void TrainWindow::trainingDataLoop(){
@@ -111,34 +106,48 @@ void TrainWindow::data_aq_state_machine(){
     switch(currentState){
         case STATE_START:
             statusText->setText("STARTING");
+            gesture_count = 0;
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
+            
         case STATE_COUNTDOWN_3:
             statusText->setText("3 ...");
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_2;
             break;
+            
         case STATE_COUNTDOWN_2:
             statusText->setText("2 ...");
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_1;
             break;
+            
         case STATE_COUNTDOWN_1:
             statusText->setText("1 ...");
             timer->start(1000); //time in ms
             currentState = STATE_GO;
             break;
+            
         case STATE_GO:
             statusText->setText("GO!");
-            timer->start(2000); //time in ms
+            //start the cpptimer in the main window
+            timer->start(2000); 
             currentState = STATE_STOP;
             break;
+            
         case STATE_STOP:
             statusText->setText("STOP!");
-            timer->start(1000); //time in ms
-            currentState = STATE_FINISHED;
+            if(++gesture_count >= 5){
+                currentState = STATE_FINISHED;
+                timer->start(1000); //time in ms
+            }
+            else{
+                currentState = STATE_COUNTDOWN_3;
+                timer->start(3000); //time in ms
+            }
             break;
+            
         case STATE_FINISHED:
             statusText->setText("FINISHED");
             currentState = STATE_START;

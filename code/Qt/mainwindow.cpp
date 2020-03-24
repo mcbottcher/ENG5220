@@ -116,7 +116,7 @@ void MainWindow::createUI(){
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
            this, [this](){this->newDataEvent();});
 
-    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
+    //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 
 }
 

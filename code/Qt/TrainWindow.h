@@ -30,7 +30,7 @@ class TrainWindow : public QWidget{
 
 private:
 
-    int count = 0;
+    int gesture_count = 0;
     QLineEdit *wordInput;
     QLabel *inputLabel, *statusText, *timerText; 
     QPushButton *wordTrain, *homeButton;
@@ -46,7 +46,7 @@ private:
 
     QTimer *timer;
 
-    trainingState_t currentState;
+    trainingState_t currentState = STATE_START;
 
     void trainingDataLoop();
 

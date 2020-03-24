@@ -30,7 +30,7 @@ SampleTimer::~SampleTimer(){
     delete flexThumb;
 }
 
-inline void SampleTimer::readfromSensors(){
+inline void SampleTimer::readFromSensors(){
    
     mtx.lock();
     motionSensor->getMotion6(&sensorValues[0],
@@ -54,7 +54,7 @@ inline void SampleTimer::readfromSensors(){
 
 void SampleTimer::timerEvent(){
 	
-	readfromSensors();
+	readFromSensors();
         
 }
 
