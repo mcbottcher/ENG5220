@@ -54,7 +54,8 @@ inline void SampleTimer::readFromSensors(){
 
 void SampleTimer::timerEvent(){
 	
-	readFromSensors();
+	//readFromSensors();
+	emit timeoutsignal();
         
 }
 

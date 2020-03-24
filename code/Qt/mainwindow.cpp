@@ -107,14 +107,23 @@ void MainWindow::createUI(){
     trainWindow->setWindowTitle("Training Mode");
     trainWindow->startTimer(1000);
     
-    
     cppSampleTimer = new SampleTimer();
 
+    connect(trainWindow, &TrainWindow::mysignal,
+           this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
+    
+    connect(trainWindow, &TrainWindow::openfile_sig,
+           this, [this](){this->openfile();});
+           
+    connect(trainWindow, &TrainWindow::closefile_sig,
+    this, [this](){this->closefile();});
 
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
 
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
            this, [this](){this->newDataEvent();});
+
+
 
     //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 
@@ -131,7 +140,7 @@ void MainWindow::createFilters(){
 }
 
 void MainWindow::newDataEvent(){
-
+    /*
     int16_t* allData = cppSampleTimer->getSensorValues();
     for (uint8_t i = 0; i<5; i++){
         if (i<3){
@@ -140,19 +149,38 @@ void MainWindow::newDataEvent(){
         }
         samplefinger[i][0]=allData[i+6];
     }
-    // sampleacc[0][0]   =allData[0];
-    // sampleacc[1][0]   =allData[1];
-    // sampleacc[2][0]   =allData[2];
-
-    // samplegyro[0][0]  =allData[3];
-    // samplegyro[1][0]  =allData[4];
-    // samplegyro[2][0]  =allData[5];
-
-    // samplefinger[0][0]=allData[6];
-    // samplefinger[1][0]=allData[7];
-    // samplefinger[2][0]=allData[8];
-    // samplefinger[3][0]=allData[9];
-    // samplefinger[4][0]=allData[10];
+    
+    */
+    
+    if(trainWindow->isVisible()){
+        
+        //place data into the data buffer...
+        movementData[0][sampleCount] = 69;
+        movementData[1][sampleCount] = 45;
+        movementData[2][sampleCount] = 69;
+        movementData[3][sampleCount] = 45;
+        movementData[4][sampleCount] = 69;
+        movementData[5][sampleCount] = 45;
+        movementData[6][sampleCount] = 69;
+        movementData[7][sampleCount] = 45;
+        movementData[8][sampleCount] = 69;
+        movementData[9][sampleCount] = 45;
+        movementData[10][sampleCount] = 69;
+        
+        sampleCount++;
+        
+        if(sampleCount == NUMBER_OF_BUFFER_ELEMENTS){
+            
+            cppSampleTimer->stop();
+            saveMovement();
+            trainWindow->data_aq_complete();
+            sampleCount = 0;
+        }
+        else{
+        
+        }
+    
+    }
 
     if (monitorWindow->isVisible()){
         QtConcurrent::run([this]() {
@@ -239,5 +267,27 @@ void MainWindow::interpretButtonClicked(){
 
 void MainWindow::interpretHome(){
 
+}
+
+
+void MainWindow::saveMovement(){
+    
+	for(int j=0; j< 11;j++){
+
+			for(int k=0; k< NUMBER_OF_BUFFER_ELEMENTS;k++){
+				myfile << movementData[j][k] << ",";
+			}
+		}
+		
+		myfile << "\n";
+ 
+}
+
+void MainWindow::openfile(){
+    myfile.open ("movement_insert_name_.csv");
+}
+
+void MainWindow::closefile(){
+    myfile.close();
 }
 

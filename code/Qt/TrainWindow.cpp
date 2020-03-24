@@ -85,21 +85,9 @@ TrainWindow::~TrainWindow(){
 }
 
 void TrainWindow::closeWindow(){
-    /// Train the model with the new data
-    /// link the outputs to text files
-
 
 }
 
-/*
-void TrainWindow::updateTimer(){
-    char buffer [50];
-    sprintf (buffer, "%d", count);
-    QString number(buffer);
-    statusText->setText(number);
-    ++count;
-}
-*/
 
 void TrainWindow::data_aq_state_machine(){
     
@@ -110,6 +98,7 @@ void TrainWindow::data_aq_state_machine(){
             for (int i =0; i<10;i++){
                 led[i]->setState(Qt::red);
             }
+            emit openfile_sig(); //TODO add filename
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
@@ -134,19 +123,19 @@ void TrainWindow::data_aq_state_machine(){
             
         case STATE_GO:
             statusText->setText("GO!");
-            //start the cpptimer in the main window
-            timer->start(2000); 
+            emit mysignal();
+            
             currentState = STATE_STOP;
             break;
             
         case STATE_STOP:
             statusText->setText("STOP!");
             
-            for (int i =0; i<(gesture_count*10/20);i++){
+            for (int i =0; i<(gesture_count*10/NUMBER_OF_REPETITIONS); i++){
                 led[i]->setState(Qt::green);
                 }
                 
-            if(++gesture_count > 20){
+            if(++gesture_count > NUMBER_OF_REPETITIONS){
                 currentState = STATE_FINISHED;
                 timer->start(1000); //time in ms
             }
@@ -157,6 +146,7 @@ void TrainWindow::data_aq_state_machine(){
             break;
             
         case STATE_FINISHED:
+            emit closefile_sig();
             statusText->setText("FINISHED");
             currentState = STATE_START;
             break;
@@ -164,4 +154,8 @@ void TrainWindow::data_aq_state_machine(){
     }
 }
 
+void TrainWindow::data_aq_complete(){
 
+    data_aq_state_machine();
+
+}

@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 
+#define NUMBER_OF_REPETITIONS 20
+
 typedef enum trainingState_t{
     STATE_START,
     STATE_COUNTDOWN_3,
@@ -54,12 +56,16 @@ public:
     TrainWindow();
     ~TrainWindow();
 
+    void data_aq_complete();
 
 public slots:
     void closeWindow();
-    //void updateTimer();
     void data_aq_state_machine();
 
+signals:
+    void mysignal();
+    void openfile_sig();
+    void closefile_sig();
 
 };
 #endif // TRAINWINDOW_H
