@@ -49,7 +49,7 @@ private:
     QTimer *timer;
 
     trainingState_t currentState = STATE_START;
-
+    QString temp;
     void trainingDataLoop();
 
 public:
@@ -64,7 +64,7 @@ public slots:
 
 signals:
     void mysignal();
-    void openfile_sig();
+    void openfile_sig(QString filename);
     void closefile_sig();
 
 };

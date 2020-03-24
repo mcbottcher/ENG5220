@@ -113,7 +113,7 @@ void MainWindow::createUI(){
            this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
     
     connect(trainWindow, &TrainWindow::openfile_sig,
-           this, [this](){this->openfile();});
+           this, &MainWindow::openfile);
            
     connect(trainWindow, &TrainWindow::closefile_sig,
     this, [this](){this->closefile();});
@@ -283,8 +283,8 @@ void MainWindow::saveMovement(){
  
 }
 
-void MainWindow::openfile(){
-    myfile.open ("movement_insert_name_.csv");
+void MainWindow::openfile(QString filename){
+    myfile.open (filename.toStdString() + ".csv");
 }
 
 void MainWindow::closefile(){

@@ -90,7 +90,7 @@ class MainWindow : public QMainWindow
         void interpretHome();
         void trainButtonClicked();
         void but_quit_clicked();
-        void openfile();
+        void openfile(QString filename);
         void closefile();
         
 

@@ -98,7 +98,10 @@ void TrainWindow::data_aq_state_machine(){
             for (int i =0; i<10;i++){
                 led[i]->setState(Qt::red);
             }
-            emit openfile_sig(); //TODO add filename
+            
+            temp = wordInput->text();
+            emit openfile_sig(temp); 
+            
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
