@@ -1,7 +1,6 @@
 #ifndef TRAINWINDOW_H
 #define TRAINWINDOW_H
 
-
 #include <QBoxLayout>
 #include <QColor>
 #include <QCheckBox>
@@ -14,8 +13,17 @@
 #include <QTimer>
 #include "QLed.h"
 
-
 #include <stdio.h>
+
+typedef enum trainingState_t{
+    STATE_START,
+    STATE_COUNTDOWN_3,
+    STATE_COUNTDOWN_2,
+    STATE_COUNTDOWN_1,
+    STATE_GO,
+    STATE_STOP,
+    STATE_FINISHED
+}trainingState_t;
 
 class TrainWindow : public QWidget{
     Q_OBJECT
@@ -38,6 +46,8 @@ private:
 
     QTimer *timer;
 
+    trainingState_t currentState;
+
     void trainingDataLoop();
 
 public:
@@ -47,7 +57,8 @@ public:
 
 public slots:
     void closeWindow();
-    void updateTimer();
+    //void updateTimer();
+    void data_aq_state_machine();
 
 
 };
