@@ -16,13 +16,4 @@ The Lexicon Glove could be useful as a sign language interpretation glove, allow
 
 
 
-Proposed hardware:
-* Sensors on fingers.
-* RaspberryPi to read movements and produce sounds.
-
-Proposed software:
-* Neural network to classify hand movement inputs.
-* Button interface to switch between learning and predicting mode
-* Tk/Qt interface?
-
 Follow us on [Twitter](https://twitter.com/GloveLexicon)! 
