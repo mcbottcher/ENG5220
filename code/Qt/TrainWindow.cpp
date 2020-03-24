@@ -54,19 +54,23 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     trainGroup->setLayout(trainLayout);
 
 
+    netGroup = new QGroupBox(tr("Neural Network"));
 
-    homeButton = new QPushButton("Save");
-    connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
+    nettrainButton = new QPushButton("Run Network");
+    connect(nettrainButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
-    homeLayout = new QHBoxLayout;
-    homeLayout->addStretch(100);
-    homeLayout->addWidget(homeButton,  Qt::AlignCenter);
-    homeLayout->addStretch(100);
+    movementList = new QListWidget();
+    
+
+    homeLayout = new QGridLayout;
+    homeLayout->addWidget(movementList, 0, 0);
+    homeLayout->addWidget(nettrainButton, 0, 1);
+    netGroup->setLayout(homeLayout);
 
     mainLayout = new QVBoxLayout;
     mainLayout->addWidget(inputGroup);
     mainLayout->addWidget(trainGroup);
-    mainLayout->addLayout(homeLayout);
+    mainLayout->addWidget(netGroup);
     
     setLayout(mainLayout);
 

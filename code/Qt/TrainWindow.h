@@ -13,6 +13,7 @@
 #include <QLineEdit>
 #include <QGroupBox>
 #include <QTimer>
+#include <QListWidget>
 #include "QLed.h"
 
 #include <stdio.h>
@@ -38,13 +39,15 @@ private:
     int gesture_count = 0;
     QLineEdit *wordInput;
     QLabel *inputLabel, *statusText, *timerText; 
-    QPushButton *wordTrain, *homeButton;
+    QPushButton *wordTrain, *nettrainButton;
 
     QLed *led[10];
-    QGroupBox *inputGroup, *trainGroup;
+    QGroupBox *inputGroup, *trainGroup, *netGroup;
+
+    QListWidget *movementList;
 
     QVBoxLayout *mainLayout;
-    QHBoxLayout *homeLayout;
+    QGridLayout *homeLayout;
     QHBoxLayout *lightBox;
 
     QGridLayout *inputLayout, *trainLayout, *ledLayout;
