@@ -15,6 +15,7 @@
 #include <QTimer>
 #include <QListWidget>
 #include <QDir>
+#include <QAbstractItemView>
 #include "QLed.h"
 
 #include <stdio.h>
