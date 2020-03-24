@@ -124,7 +124,7 @@ int main(){
 
 
 	std::ofstream myfile;
-	myfile.open ("verificationData.csv");
+	myfile.open ("DanMoveVerification.csv");
 
 	Ticker sampleTimer;
 		
@@ -147,7 +147,7 @@ int main(){
 		printf("STOP\n\r");
 
 		//stop the ticker
-		sampleTimer.disarm();
+		sampleTimer.stop();
 
 		sample_counter = 0;
 
