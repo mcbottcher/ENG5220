@@ -106,7 +106,10 @@ void TrainWindow::data_aq_state_machine(){
     switch(currentState){
         case STATE_START:
             statusText->setText("STARTING");
-            gesture_count = 0;
+            gesture_count = 1;
+            for (int i =0; i<10;i++){
+                led[i]->setState(Qt::red);
+            }
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
@@ -138,7 +141,12 @@ void TrainWindow::data_aq_state_machine(){
             
         case STATE_STOP:
             statusText->setText("STOP!");
-            if(++gesture_count >= 5){
+            
+            for (int i =0; i<(gesture_count*10/20);i++){
+                led[i]->setState(Qt::green);
+                }
+                
+            if(++gesture_count > 20){
                 currentState = STATE_FINISHED;
                 timer->start(1000); //time in ms
             }
