@@ -14,6 +14,7 @@
 #include <QGroupBox>
 #include <QTimer>
 #include <QListWidget>
+#include <QDir>
 #include "QLed.h"
 
 #include <stdio.h>
@@ -53,6 +54,8 @@ private:
     QGridLayout *inputLayout, *trainLayout, *ledLayout;
 
     QTimer *timer;
+
+    QStringList files;
 
     trainingState_t currentState = STATE_START;
     QString temp;

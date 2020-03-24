@@ -60,7 +60,9 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     connect(nettrainButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
     movementList = new QListWidget();
-    
+    QDir directory;
+    QStringList files = directory.entryList(QStringList() << "*.csv", QDir::Files);
+    movementList->addItems(files);
 
     homeLayout = new QGridLayout;
     homeLayout->addWidget(movementList, 0, 0);
