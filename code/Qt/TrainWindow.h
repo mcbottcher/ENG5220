@@ -1,6 +1,8 @@
 #ifndef TRAINWINDOW_H
 #define TRAINWINDOW_H
 
+#include "config.h"
+
 #include <QBoxLayout>
 #include <QColor>
 #include <QCheckBox>
@@ -14,6 +16,7 @@
 #include "QLed.h"
 
 #include <stdio.h>
+#include <fstream>
 
 #define NUMBER_OF_REPETITIONS 20
 
@@ -51,21 +54,30 @@ private:
     trainingState_t currentState = STATE_START;
     QString temp;
     void trainingDataLoop();
+    
+    void saveMovement();
+    int sampleCount = 0;
+    
+    int16_t* sensorDataptr;
+    
+    std::ofstream myfile;
+	QString filename; 
+    float movementData[11][NUMBER_OF_BUFFER_ELEMENTS];
 
 public:
-    TrainWindow();
+    TrainWindow(int16_t* dataPtr);
     ~TrainWindow();
 
-    void data_aq_complete();
+    void handle_samples();
 
 public slots:
     void closeWindow();
     void data_aq_state_machine();
 
 signals:
-    void mysignal();
-    void openfile_sig(QString filename);
-    void closefile_sig();
-
+    void startSampling_sig();
+    void stopSampling_sig();
+  
 };
 #endif // TRAINWINDOW_H
+

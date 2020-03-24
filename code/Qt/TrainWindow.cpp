@@ -1,7 +1,12 @@
 #include "TrainWindow.h"
 
 
-TrainWindow::TrainWindow(){
+TrainWindow::TrainWindow(int16_t* dataPtr){
+    
+    sensorDataptr = dataPtr;
+    for(int i=0; i<11; i++){
+        sensorDataptr[i] = i;
+    }
     
     inputGroup = new QGroupBox(tr("Input"));
 
@@ -20,8 +25,6 @@ TrainWindow::TrainWindow(){
     inputLayout->addWidget(wordTrain, 1, 3);
     inputGroup->setLayout(inputLayout);
 
-
-
     QFont Font("Arial", 20, QFont::Bold);
     statusText = new QLabel("", this);
     statusText->setFont(Font);
@@ -32,10 +35,6 @@ TrainWindow::TrainWindow(){
 
     timer = new QTimer(this);
     timer->setSingleShot(true);
-    
-    //so we want the timer to exist
-    //make a state machine
-    //it outputs depending on the state and updates the state
     
     connect(timer, SIGNAL(timeout()), this, SLOT(data_aq_state_machine()));
 
@@ -99,8 +98,8 @@ void TrainWindow::data_aq_state_machine(){
                 led[i]->setState(Qt::red);
             }
             
-            temp = wordInput->text();
-            emit openfile_sig(temp); 
+            filename = wordInput->text();
+            myfile.open (filename.toStdString() + ".csv"); 
             
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
@@ -126,13 +125,15 @@ void TrainWindow::data_aq_state_machine(){
             
         case STATE_GO:
             statusText->setText("GO!");
-            emit mysignal();
-            
+            emit startSampling_sig();
             currentState = STATE_STOP;
             break;
             
         case STATE_STOP:
+        
             statusText->setText("STOP!");
+            
+            saveMovement();
             
             for (int i =0; i<(gesture_count*10/NUMBER_OF_REPETITIONS); i++){
                 led[i]->setState(Qt::green);
@@ -149,7 +150,7 @@ void TrainWindow::data_aq_state_machine(){
             break;
             
         case STATE_FINISHED:
-            emit closefile_sig();
+            myfile.close();
             statusText->setText("FINISHED");
             currentState = STATE_START;
             break;
@@ -157,8 +158,39 @@ void TrainWindow::data_aq_state_machine(){
     }
 }
 
-void TrainWindow::data_aq_complete(){
-
-    data_aq_state_machine();
-
+void TrainWindow::handle_samples(){
+    
+    for(int i=0; i<11; i++){
+        movementData[i][sampleCount] = sensorDataptr[i];
+    }
+  
+    sampleCount++;
+    
+    if(sampleCount == 20){
+        sampleCount = 0;
+        //stop the cpptimer with a signal
+        emit stopSampling_sig();
+        //write row to csv file
+        saveMovement();
+        //goto the next state
+        data_aq_state_machine();
+    }
+    else{
+        //nop
+    }
+    
+      
 }
+
+void TrainWindow::saveMovement(){
+    
+	for(int j=0; j< 11;j++){
+
+			for(int k=0; k< NUMBER_OF_BUFFER_ELEMENTS;k++){
+				myfile << movementData[j][k] << ",";
+			}
+		}
+		myfile << "\n";
+}
+
+

@@ -101,22 +101,20 @@ void MainWindow::createUI(){
     connect(but_quit, &QPushButton::clicked,
              this, [this](){this->close();} );
 
-
-
-    trainWindow = new TrainWindow();
-    trainWindow->setWindowTitle("Training Mode");
-    trainWindow->startTimer(1000);
-    
     cppSampleTimer = new SampleTimer();
 
-    connect(trainWindow, &TrainWindow::mysignal,
+    trainWindow = new TrainWindow(cppSampleTimer->getSensorValues());
+    trainWindow->setWindowTitle("Training Mode");
+    //trainWindow->startTimer(1000);
+    
+    
+
+    connect(trainWindow, &TrainWindow::startSampling_sig,
            this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
     
-    connect(trainWindow, &TrainWindow::openfile_sig,
-           this, &MainWindow::openfile);
-           
-    connect(trainWindow, &TrainWindow::closefile_sig,
-    this, [this](){this->closefile();});
+    connect(trainWindow, &TrainWindow::stopSampling_sig,
+           this, [this](){this->cppSampleTimer->stop();});
+  
 
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
 
@@ -154,31 +152,9 @@ void MainWindow::newDataEvent(){
     
     if(trainWindow->isVisible()){
         
-        //place data into the data buffer...
-        movementData[0][sampleCount] = 69;
-        movementData[1][sampleCount] = 45;
-        movementData[2][sampleCount] = 69;
-        movementData[3][sampleCount] = 45;
-        movementData[4][sampleCount] = 69;
-        movementData[5][sampleCount] = 45;
-        movementData[6][sampleCount] = 69;
-        movementData[7][sampleCount] = 45;
-        movementData[8][sampleCount] = 69;
-        movementData[9][sampleCount] = 45;
-        movementData[10][sampleCount] = 69;
-        
-        sampleCount++;
-        
-        if(sampleCount == NUMBER_OF_BUFFER_ELEMENTS){
-            
-            cppSampleTimer->stop();
-            saveMovement();
-            trainWindow->data_aq_complete();
-            sampleCount = 0;
-        }
-        else{
-        
-        }
+        //send data to trainwindow
+        //TODO change this to a signal...
+        trainWindow->handle_samples();
     
     }
 
@@ -270,24 +246,5 @@ void MainWindow::interpretHome(){
 }
 
 
-void MainWindow::saveMovement(){
-    
-	for(int j=0; j< 11;j++){
 
-			for(int k=0; k< NUMBER_OF_BUFFER_ELEMENTS;k++){
-				myfile << movementData[j][k] << ",";
-			}
-		}
-		
-		myfile << "\n";
- 
-}
-
-void MainWindow::openfile(QString filename){
-    myfile.open (filename.toStdString() + ".csv");
-}
-
-void MainWindow::closefile(){
-    myfile.close();
-}
 

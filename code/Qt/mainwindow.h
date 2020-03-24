@@ -6,6 +6,7 @@
 #include "TrainWindow.h"
 #include "../FilterBank.h"
 #include "SampleTimer.h"
+#include "config.h"
 
 #include <QMainWindow>
 #include <QPushButton>
@@ -21,10 +22,6 @@
 
 #include <iostream>
 #include <cmath> 
-#include <fstream>
-#define SAMPLE_RATE 10 //in Hertz
-#define SAMPLE_TIME_SECONDS 2
-#define NUMBER_OF_BUFFER_ELEMENTS SAMPLE_RATE*SAMPLE_TIME_SECONDS
 
 #define DATA_SAMPLE_INTERVAL 1000000000/SAMPLE_RATE //in nanoseconds
 
@@ -67,20 +64,13 @@ class MainWindow : public QMainWindow
 
         void createUI();
         void createFilters();
-        void saveMovement();
         int count = 0;
-
-        int sampleCount = 0;
 
         // void timerEvent();
 
         double samplefinger[5][1];
         double sampleacc[3][1];
         double samplegyro[3][1];
-
-        float movementData[11][NUMBER_OF_BUFFER_ELEMENTS];	
-
-        std::ofstream myfile;
 	
     private slots:
         void timerEvent(); //depreciated: used to plot sinewave to curves 
@@ -90,9 +80,7 @@ class MainWindow : public QMainWindow
         void interpretHome();
         void trainButtonClicked();
         void but_quit_clicked();
-        void openfile(QString filename);
-        void closefile();
-        
+                
 
 };
 
