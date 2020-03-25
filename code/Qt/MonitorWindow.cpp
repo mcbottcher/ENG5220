@@ -169,6 +169,7 @@ void MonitorWindow::drawPlots(){
 inline void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
     memmove(plotcurve.data, plotcurve.data+1, (bufferSize-1) * sizeof(double));
 	plotcurve.data[bufferSize-1] = sample;
+    // _updateCurve(plotcurve);
 }
 
 // Method to setup curves and attach to plot
@@ -207,7 +208,7 @@ void MonitorWindow::_plotSample(CurveStruct &plotcurve, const double *buffer, si
             _insertSample(plotcurve, 0);
         }
     }
-    _updateCurve(plotcurve);
+    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 
