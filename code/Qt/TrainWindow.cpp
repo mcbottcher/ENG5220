@@ -93,20 +93,15 @@ TrainWindow::~TrainWindow(){
 void TrainWindow::startNeuralNet(){
     
     QList<QListWidgetItem *> selected_movements = movementList->selectedItems();
-    //now we have a list of files...
-    myfile.open("movement_inputs.txt");
+    
+    std::string command = "./neuralNet.py ";
     
     for(int i=0; i<selected_movements.size(); i++){
-        myfile << (selected_movements[i]->text()).toStdString() << "\n";
+        command += (selected_movements[i]->text()).toStdString();
+        command += " ";
     }
     
-    myfile.close();
-    
-    //now we call the python script to train the network with argument of selected_movments:
-    //do this by sending out a system call...
-    
-    
-    
+    system(command.c_str()); 
 }
 
 
