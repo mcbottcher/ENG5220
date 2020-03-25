@@ -143,7 +143,8 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
 }
 
 MonitorWindow::~MonitorWindow(){
-    
+    delete[] xAxisData;
+
 }
 
 

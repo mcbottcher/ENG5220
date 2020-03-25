@@ -62,6 +62,9 @@ class MonitorWindow : public QWidget
             QCheckBox    *checkbox; /*!< Checkbox to turn the curve on and off. */
             double       *data;     /*!< Pointer to the data held in memory for that curve. */
             QString       name;     /*!< The name of each curve so the user knows what curve is what data. */
+            ~CurveStruct(){
+                delete[] data;
+            }
         } CurveStruct_t;
         
         //! Data structure for sensor data.
