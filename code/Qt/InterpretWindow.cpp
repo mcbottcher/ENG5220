@@ -1,10 +1,11 @@
 #include "InterpretWindow.h"
 
+InterpretWindow::InterpretWindow(int16_t* sensorValues){
 
+    sensorValuesPtr = sensorValues;
 
-
-InterpretWindow::InterpretWindow(){
-
+    predictor = new NeuralNet;
+    
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->close();});
 
@@ -50,12 +51,15 @@ InterpretWindow::InterpretWindow(){
     speech->setVolume(100);
 
     setLayout(mainLayout);
+    
+    //emit startSampling_sig();
 
 }
 
 
 InterpretWindow::~InterpretWindow(){
-    
+    emit stopSampling_sig();
+    delete predictor;
 }
 
 void InterpretWindow::closeWindow(){
@@ -63,6 +67,34 @@ void InterpretWindow::closeWindow(){
 
 }
 
+void InterpretWindow::handleSamples(){
+
+    //need to be converted to floats
+    float normalised_samples[11];
+    for(int i=0; i<6; i++){
+        //for the accell/gyro
+        normalised_samples[i] = (sensorValuesPtr[i]/32768.0);
+    }
+    for(int i=6; i<11; i++){
+        //for the fingers
+        normalised_samples[i] = (sensorValuesPtr[i]/4096.0) - 0.5;
+    }
+    
+    
+    //std::cout << "handling samples" << std::endl;
+    
+    predictor->insertSamples(normalised_samples);
+    
+    predict();
+    
+}
+
+void InterpretWindow::predict(){
+
+    //std::cout << "predicting values" << std::endl;
+    predictor->predict();
+
+}
 
 //used for outputting the voice...
 //speech->say(textBox->toPlainText());

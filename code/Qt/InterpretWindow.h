@@ -14,7 +14,9 @@
 #include <QDebug>
 
 #include <stdio.h>
+#include <iostream>
 
+#include "../neuralnet_predict/NeuralNet.h"
 
 // class definition 'MonitorWindow'
 class InterpretWindow : public QWidget
@@ -50,19 +52,27 @@ private:
 
     QTextToSpeech *speech;
 
+    NeuralNet *predictor;
 
+    void predict();
+    
+    int16_t* sensorValuesPtr;
 
 public:
 
-	InterpretWindow(); // default constructor - called when a Window is declared without arguments
+	InterpretWindow(int16_t* sensorValues); // default constructor - called when a Window is declared without arguments
 	~InterpretWindow();
     void sayWords();
 
 signals:
     void emitClose();
+    //void startSampling_sig();
+    void stopSampling_sig();
 
 public slots:
     void closeWindow();
+    void handleSamples();
+    
 
 };
 

@@ -42,7 +42,6 @@ class MainWindow : public QMainWindow
     public:
         explicit MainWindow(QWidget *parent = nullptr);
         ~MainWindow();
-        
 
     private:
         // size_t NUMBER_OF_PLOT_SAMPLES = 10;

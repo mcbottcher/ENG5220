@@ -147,8 +147,16 @@ void MainWindow::newDataEvent(){
     }
     
     */
+
+    if(interpretWindow->isVisible()){
+        
+        //insert into neural network...
+        //neural network will be stored in the predict window code...
+        interpretWindow->handleSamples();
+        
+    }
     
-    if(trainWindow->isVisible()){
+    else if(trainWindow->isVisible()){
         
         //send data to trainwindow
         //TODO change this to a signal...
@@ -156,7 +164,7 @@ void MainWindow::newDataEvent(){
     
     }
 
-    if (monitorWindow->isVisible()){
+    else if (monitorWindow->isVisible()){
         QtConcurrent::run([this]() {
             monitorWindow->plotAcc(this->sampleacc);
             monitorWindow->plotGyro(this->samplegyro);
@@ -230,14 +238,21 @@ void MainWindow::trainButtonClicked(){
 
 void MainWindow::interpretButtonClicked(){
 
-    interpretWindow = new InterpretWindow();
+    interpretWindow = new InterpretWindow(cppSampleTimer->getSensorValues());
     interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
     interpretWindow->setWindowTitle("Interpret Mode");
     windowtimer = new QTimer(interpretWindow);
     //connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
     //windowtimer->start(1000);
     // connect(interpretWindow, SIGNAL(emitClose()),this, SLOT(interpretHome()));
+
+    connect(interpretWindow, &InterpretWindow::stopSampling_sig,
+           this, [this](){this->cppSampleTimer->stop();});
+    
+    
     interpretWindow->show();
+    
+    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
 void MainWindow::interpretHome(){

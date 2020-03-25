@@ -23,6 +23,7 @@ SOURCES += \
     ../MCP3428/MCP3428.cpp \
     ../MPU6050/MPU6050.cpp \
     ../MPU6050/I2Cdev/I2Cdev.cpp \
+    ../neuralnet_predict/NeuralNet.cpp \
 
 
 HEADERS += \
@@ -37,6 +38,7 @@ HEADERS += \
     ../MCP3428/MCP3428.h \
     ../MPU6050/MPU6050.h \
     ../MPU6050/I2Cdev/I2Cdev.h \
+    ../neuralnet_predict/NeuralNet.h \
     
 
 FORMS +=
