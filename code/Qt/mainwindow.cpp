@@ -107,8 +107,6 @@ void MainWindow::createUI(){
     trainWindow->setWindowTitle("Training Mode");
     //trainWindow->startTimer(1000);
     
-    
-
     connect(trainWindow, &TrainWindow::startSampling_sig,
            this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
     
@@ -231,12 +229,13 @@ void MainWindow::trainButtonClicked(){
 }
 
 void MainWindow::interpretButtonClicked(){
+
     interpretWindow = new InterpretWindow();
     interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
     interpretWindow->setWindowTitle("Interpret Mode");
     windowtimer = new QTimer(interpretWindow);
-    connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
-    windowtimer->start(1000);
+    //connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
+    //windowtimer->start(1000);
     // connect(interpretWindow, SIGNAL(emitClose()),this, SLOT(interpretHome()));
     interpretWindow->show();
 }
