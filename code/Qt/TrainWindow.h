@@ -78,7 +78,7 @@ public:
     void handle_samples();
 
 public slots:
-    void closeWindow();
+    void startNeuralNet();
     void data_aq_state_machine();
 
 signals:

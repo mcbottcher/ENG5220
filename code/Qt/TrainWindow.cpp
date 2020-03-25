@@ -57,7 +57,7 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     netGroup = new QGroupBox(tr("Neural Network"));
 
     nettrainButton = new QPushButton("Run Network");
-    connect(nettrainButton, &QPushButton::clicked, [this](){this->closeWindow();});
+    connect(nettrainButton, &QPushButton::clicked, [this](){this->startNeuralNet();});
 
     movementList = new QListWidget();
     movementList->setSelectionMode(QAbstractItemView::ExtendedSelection);
@@ -90,8 +90,23 @@ void TrainWindow::trainingDataLoop(){
 TrainWindow::~TrainWindow(){
 }
 
-void TrainWindow::closeWindow(){
-
+void TrainWindow::startNeuralNet(){
+    
+    QList<QListWidgetItem *> selected_movements = movementList->selectedItems();
+    //now we have a list of files...
+    myfile.open("movement_inputs.txt");
+    
+    for(int i=0; i<selected_movements.size(); i++){
+        myfile << (selected_movements[i]->text()).toStdString() << "\n";
+    }
+    
+    myfile.close();
+    
+    //now we call the python script to train the network with argument of selected_movments:
+    //do this by sending out a system call...
+    
+    
+    
 }
 
 
