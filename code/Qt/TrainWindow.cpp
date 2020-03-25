@@ -94,7 +94,7 @@ void TrainWindow::startNeuralNet(){
     
     QList<QListWidgetItem *> selected_movements = movementList->selectedItems();
     
-    std::string command = "./neuralNet.py ";
+    std::string command = "python3 neuralNet.py ";
     
     for(int i=0; i<selected_movements.size(); i++){
         command += (selected_movements[i]->text()).toStdString();
