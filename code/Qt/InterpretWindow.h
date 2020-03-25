@@ -27,18 +27,19 @@ class InterpretWindow : public QWidget
 private:
     int count=0;
 
-    QFont titleFont;
-    QLabel *titleText, *loudspeakerIcon;
+  
+    QLabel *loudspeakerIcon;
 	
-    QPushButton  *homeButton, *wrongButton, *clearButton, *sayButton;
-    QPlainTextEdit *textBox;
+    QPushButton  *homeButton, *clearButton;
+    QPlainTextEdit *predictedWordBox, *outputWeightBox;
 
     QCheckBox    *soundCheckBox;
     
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
-	QHBoxLayout  *titleLayout, *soundLayout, *homeLayout;  // vertical layout
+	QHBoxLayout  *soundLayout, *homeLayout;  // vertical layout
+    QVBoxLayout  *textLayout;
     
     QVBoxLayout  *vPlotLayout;  
     QHBoxLayout  *hPlotLayout;
@@ -61,10 +62,7 @@ signals:
     void emitClose();
 
 public slots:
-    void timerEvent();
     void closeWindow();
-    void wrongButtonClicked();
-    
 
 };
 
