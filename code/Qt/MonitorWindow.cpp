@@ -5,22 +5,47 @@
 
 using namespace std;
 
-MonitorWindow::MonitorWindow(size_t bufferSize): 
-    count(0),
+MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr): 
     bufferSize(bufferSize),
     xAxisData(new double[bufferSize]()){
 
-    acc = new CurveStruct_t[3]{bufferSize,bufferSize,bufferSize};
-    gyro = new CurveStruct_t[3]{bufferSize,bufferSize,bufferSize};
-    finger = new CurveStruct_t[5]{bufferSize,bufferSize,bufferSize,bufferSize,bufferSize};
-	
-    // for (int i=0; i<3; i++){
-    //     acc[i].data = new double[bufferSize];
-    //     gyro[i].data = new double[bufferSize];
-    // }
-    // for (int i=0; i<5; i++){
-    //     finger[i].data = new double[bufferSize];
-    // }
+    // set up the initial plot data
+	for(size_t i=0; i<bufferSize; i++ ){
+		xAxisData[i] = i;
+	}
+
+    sensorDataPtr = dataPtr;
+
+
+    accelerometerPlot = new QwtPlot;
+    gyroPlot = new QwtPlot;
+    fingerPlot = new QwtPlot;
+    //Set plot titles
+    accelerometerPlot->setTitle("Accelerometer");
+    gyroPlot->setTitle("Gyroscope");
+    fingerPlot->setTitle("Fingers");
+
+    //construct all the curves
+    acc = new Curve[3]{
+        Curve(bufferSize,accelerometerPlot,"AccX",xAxisData),
+        Curve(bufferSize,accelerometerPlot,"AccY",xAxisData),
+        Curve(bufferSize,accelerometerPlot,"AccZ",xAxisData)
+    };
+    gyro = new Curve[3]{
+        Curve(bufferSize,gyroPlot,"GyroX",xAxisData),
+        Curve(bufferSize,gyroPlot,"GyroY",xAxisData),
+        Curve(bufferSize,gyroPlot,"GyroZ",xAxisData)
+    };
+    finger = new Curve[5]{
+        Curve(bufferSize,fingerPlot,"Index",xAxisData),
+        Curve(bufferSize,fingerPlot,"Middle",xAxisData),
+        Curve(bufferSize,fingerPlot,"Ring",xAxisData),
+        Curve(bufferSize,fingerPlot,"Pinky",xAxisData),
+        Curve(bufferSize,fingerPlot,"Thumb",xAxisData)
+    };
+
+
+
 
     resetButton = new QPushButton("reset");
     closeButton = new QPushButton("close");
@@ -28,77 +53,22 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     connect(resetButton, &QPushButton::clicked, [this](){this->resetbutton();});
     connect(closeButton, &QPushButton::clicked, [this](){this->hide();});
 
-
-	// set up the initial plot data
-	for(size_t index=0; index<bufferSize; index++ ){
-		xAxisData[index] = index;
-        for(size_t j = 0; j<5;j++){
-            if (j < 3){
-                acc[j].data[index] = 0;
-                gyro[j].data[index] = 0;
-            }
-            finger[j].data[index]=0;
-        }
-	}
-
-    //setup curve names
-    acc[0].name = "AccX";
-    acc[1].name = "AccY";
-    acc[2].name = "AccZ";
-
-    gyro[0].name = "GyroX";
-    gyro[1].name = "GyroY";
-    gyro[2].name = "GyroZ";
-
-    finger[0].name = "Index";
-    finger[1].name = "Middle";
-    finger[2].name = "Ring";
-    finger[3].name = "Pinky";
-    finger[4].name = "Thumb";
-
-
-    //setup checkboxes
+ 
+    //setup and attach curves to plots (also colour them!)
     for (uint8_t i = 0; i < 5; i++){
         if (i < 3){
-            acc[i].checkbox = new QCheckBox(acc[i].name);
-            gyro[i].checkbox = new QCheckBox(gyro[i].name);
-        }
-        finger[i].checkbox = new QCheckBox(finger[i].name);
-    }
-
-    //setup Plots
-    accelerometerPlot = new QwtPlot;
-    gyroPlot = new QwtPlot;
-    fingerPlot = new QwtPlot;
-
-
-    //setup and attach curves to plots
-    for (uint8_t i = 0; i < 5; i++){
-        if (i < 3){
-            _setupCurves(accelerometerPlot, acc[i]);
-            _setupCurves(gyroPlot, gyro[i]);
-        }
-        _setupCurves(fingerPlot, finger[i]);
-    }
-
-    //set colour of curves
-    for (uint8_t i = 0; i < 5; i++){
-        if (i < 3){
+            acc[i].setupCurve();
             acc[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
+            gyro[i].setupCurve();
             gyro[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
         }
+        finger[i].setupCurve();
         finger[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
     }
 
-    //Set plot titles
-    accelerometerPlot->setTitle("Accelerometer");
-    gyroPlot->setTitle("Gyroscope");
-    fingerPlot->setTitle("Fingers");
 
-    //pot initial curves
-	accelerometerPlot->replot();
-    gyroPlot->replot();
-    fingerPlot->replot();
+    //plot initial curves
+	drawPlots();
 
     //show plots
 	accelerometerPlot->show();
@@ -148,71 +118,15 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
 
 MonitorWindow::~MonitorWindow(){
     delete[] xAxisData;
-
 }
 
-
-// Method to draw on a curve
-void MonitorWindow::_updateCurve(CurveStruct &plotcurve){
-    plotcurve.curve->setRawSamples(xAxisData, plotcurve.data, bufferSize);
-}
-
-// Method to draw plot on the screen
-void MonitorWindow::_drawPlot(CurveStruct &plotcurve){
-    plotcurve.plot->replot();
-}
 
 // Method to draw all plots on the screen
 void MonitorWindow::drawPlots(){
+    // checkCheckboxes();
     accelerometerPlot->replot();
     gyroPlot->replot();
     fingerPlot->replot();
-}
-
-// Method to insert sample into curve data array
-inline void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
-    memmove(plotcurve.data, plotcurve.data+1, (bufferSize-1) * sizeof(double));
-	plotcurve.data[bufferSize-1] = sample;
-    // _updateCurve(plotcurve);
-}
-
-// Method to setup curves and attach to plot
-void MonitorWindow::_setupCurves(QwtPlot *plot, CurveStruct &plotcurve){
-    plotcurve.plot = plot;
-    plotcurve.curve = new QwtPlotCurve();
-    plotcurve.curve->setRawSamples(xAxisData,plotcurve.data, bufferSize);
-	plotcurve.curve->attach(plotcurve.plot);
-    _resetCurve(plotcurve);
-}
-
-// Method to reset the Curves to zero.
-void MonitorWindow::_resetCurve(CurveStruct &plotcurve){
-    for(size_t index=0; index<bufferSize; ++index ){
-		plotcurve.data[index] = 0;
-	}
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
-}
-
-// Method to plot individual sample if button is checked
-// void MonitorWindow::_plotSample(CurveStruct &plotcurve, double sample){
-//     if (plotcurve.checkbox->isChecked()){_insertSample(plotcurve, sample);}
-//     else {_insertSample(plotcurve, 0);}
-//     _updateCurve(plotcurve);
-// }
-
-// Method to plot buffer of samples if button is checked
-void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer, size_t plotBufferSize){
-    if (plotcurve.checkbox->isChecked()){
-        for (size_t i=0; i< plotBufferSize;i++){
-            _insertSample(plotcurve, buffer[i]);
-        }
-    }
-    else {
-        for (size_t i=0; i< plotBufferSize;i++){
-            _insertSample(plotcurve, 0);
-        }
-    }
-    plotcurve.curve->setRawSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 
@@ -220,94 +134,19 @@ void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer, size_t p
 void MonitorWindow::resetbutton(){
     for (uint8_t i=0;i<5;i++){
         if (i < 3){
-            _resetCurve(acc[i]);
-            _resetCurve(gyro[i]);
+            acc[i].resetCurve();
+            gyro[i].resetCurve();
         }
-        _resetCurve(finger[i]);
+        finger[i].resetCurve();
     }
 }
 
-
-// // currently just showing use cases, should actually 
-// // be used to update the plots at regular intervals
-// void MonitorWindow::timerEvent(QTimerEvent *){
-
-//     // //plot buffer of samples to each plot
-//     // double **buffer;
-//     // const int bufferlen = 10;
-//     // buffer = new double*[5];
-    
-//     // for (size_t i = 0; i<5; i++){
-//     //     buffer[i] = new double[bufferlen];
-//     // }
-
-//     // //fill buffers with samples
-//     // for (size_t j = 0; j<bufferlen; j++){
-//     //     double in = 5 * sin(M_PI * count/50.0);
-// 	//     ++count;
-//     //     for (size_t i=0; i<5;i ++){
-//     //         buffer[i][j]= in/(i+1);
-//     //     }
-//     // }
-    
-//     // plotAcc(buffer);
-//     // plotGyro(buffer);   
-//     // plotFinger(buffer);
-//     // drawPlots();
-
-//     // delete[] buffer;
-
-    
-    
-
-//     //plot single sample to each plot
-//     double meh[5];
-
-//     // double in = 5 * sin(M_PI * count/50.0);
-// 	// ++count;
-
-//     // for (size_t i=0; i<5;i++){
-//     //     sample[i]= in/(i+1);
-//     // }
-    
-//     // plotGyro(meh);   
-//     // plotFinger(meh);
-//     // drawPlots();
-    
-
-
-//     // //plot buffer of samples to each plot from instance
-//     // double buffer[5][bufferSize];
-
-//     // for (size_t i=0; i<bufferSize;i++){
-//     //     double sample = 5 * sin(M_PI * count/50.0);
-//     //     for (size_t j=0; j<5;j++ ){buffer[j][i] = sample/(j+1);}
-//     //     ++count;
-//     // }
-
-//     // for (size_t i=0; i<5;i++){
-//     //     if (i<3){
-//     //         _plotSample(acc[i], buffer[i], bufferSize);
-//     //         _plotSample(gyro[i], buffer[i], bufferSize);
-//     //     }
-//     //     _plotSample(finger[i], buffer[i], bufferSize);
-//     // }
-//     // drawPlots();
-
-
-//     // //plot single sample to each plot from instance
-//     // double sample = 5 * sin(M_PI * count/50.0);
-// 	// ++count;
-
-//     // for (size_t i=0; i<5;i++){
-//     //     if (i<3){
-//     //         _plotSample(acc[i], sample/(i+1));
-//     //         _plotSample(gyro[i] sample/(i+1));
-//     //     }
-//     //     _plotSample(finger[i], sample/(i+1));
-//     // }
-//     // drawPlots();
-// }
-
-
-
+void MonitorWindow::handleSamples(){
+    for(int i=0; i<3; i++){
+        acc[i].plotSample(sensorDataPtr[i]);
+        gyro[i].plotSample(sensorDataPtr[i+3]);
+    } 
+    for(int i=0; i<5; i++){
+        finger[i].plotSample(sensorDataPtr[i+6]);
+    }
+}

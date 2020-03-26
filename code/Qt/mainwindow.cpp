@@ -116,7 +116,7 @@ void MainWindow::createUI(){
            this, [this](){this->cppSampleTimer->stop();});
   
 
-    monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
+    monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES, cppSampleTimer->getSensorValues());
 
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
            this, [this](){this->newDataEvent();});
@@ -139,21 +139,7 @@ void MainWindow::createFilters(){
 
 void MainWindow::newDataEvent(){
     
-    int16_t* allData = cppSampleTimer->getSensorValues();
-    //for (uint8_t i = 0; i<5; i++){
-    //    if (i<3){
-    //        sampleacc[i][0] =allData[i];
-    //        samplegyro[i][0]=allData[i+3];
-    //    }
-    //    samplefinger[i][0]=allData[i+6];
-    //}
-    for(uint8_t i=0; i<3;i++){
-        sampleacc[i][0] = allData[i];
-        samplegyro[i][0]= allData[i+3];
-    }
-    for(uint8_t i=0; i<5;i++){
-        samplefinger[i][0]=allData[i+6];
-    }
+    // int16_t* allData = cppSampleTimer->getSensorValues();
     
     if(trainWindow->isVisible()){
         
@@ -164,15 +150,7 @@ void MainWindow::newDataEvent(){
     }
 
     if (monitorWindow->isVisible()){
-        QtConcurrent::run([this]() {monitorWindow->plotAcc(this->sampleacc);});
-        QtConcurrent::run([this]() {monitorWindow->plotGyro(this->samplegyro);});
-        QtConcurrent::run([this]() {monitorWindow->plotFinger(this->samplefinger);});
-        //});
-        // QtConcurrent::run(&MonitorWindow::plotAcc,sampleacc);
-        // QtConcurrent::run(&MonitorWindow::plotGyro,samplegyro);
-        // QtConcurrent::run(&MonitorWindow::plotFinger,samplefinger);
-
-
+        monitorWindow->handleSamples();
     }
 }
 
@@ -225,7 +203,7 @@ void MainWindow::but_quit_clicked(){
 }
 
 void MainWindow::monitor_button_clicked(){
-    monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES);
+    monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES, cppSampleTimer->getSensorValues());
     monitorWindow->setAttribute(Qt::WA_DeleteOnClose);
     monitorWindow->setWindowTitle("Monitor");
     moitorRefreshtimer = new QTimer(monitorWindow);
