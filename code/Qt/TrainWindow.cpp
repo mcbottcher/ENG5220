@@ -175,6 +175,9 @@ void TrainWindow::data_aq_state_machine(){
         case STATE_FINISHED:
             myfile.close();
             statusText->setText("FINISHED");
+            // wordInput->text().toStdString()+ ".csv");
+            // QStr
+            movementList->addItem(QString(wordInput->text()+ ".csv"));
             currentState = STATE_START;
             break;
     
