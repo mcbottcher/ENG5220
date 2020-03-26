@@ -219,6 +219,10 @@ public:
         }
     }
 
+signals:
+    //! Signal to emit when closing window
+    void stopSig();
+
 
 public slots:
 

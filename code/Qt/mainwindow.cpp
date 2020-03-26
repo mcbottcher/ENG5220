@@ -118,13 +118,16 @@ void MainWindow::createUI(){
 
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES, cppSampleTimer->getSensorValues());
 
+    connect(monitorWindow, &MonitorWindow::stopSig,
+           this, [this](){this->cppSampleTimer->stop();});
+
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
            this, [this](){this->newDataEvent();});
 
 
 
 
-    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
+    //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
 void MainWindow::createFilters(){
@@ -199,6 +202,7 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::but_quit_clicked(){
+    cppSampleTimer->stop();
     this->close();
 }
 
@@ -210,6 +214,7 @@ void MainWindow::monitor_button_clicked(){
     connect(moitorRefreshtimer, &QTimer::timeout,
             monitorWindow, [this](){monitorWindow->drawPlots();});
     moitorRefreshtimer->start(MONITOR_REFRESH_RATE);
+    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
     monitorWindow->show();
 }
 

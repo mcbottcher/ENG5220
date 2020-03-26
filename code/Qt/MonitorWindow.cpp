@@ -51,7 +51,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
     closeButton = new QPushButton("close");
 
     connect(resetButton, &QPushButton::clicked, [this](){this->resetbutton();});
-    connect(closeButton, &QPushButton::clicked, [this](){this->hide();});
+    connect(closeButton, &QPushButton::clicked, [this](){this->hide(); emit stopSig();});
 
  
     //setup and attach curves to plots (also colour them!)
