@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
   <compounddef id="class_c_s_vreader" kind="class" language="C++" prot="public">
     <compoundname>CSVreader</compoundname>
-    <includes refid="_c_s_vreader_8h" local="no">CSVreader.h</includes>
+    <includes refid="neuralnet__predict_2_c_s_vreader_8h" local="no">CSVreader.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_c_s_vreader_1a532424f295b67937b40ccf8cc9bace60" prot="private" static="no" mutable="no">
         <type>string</type>

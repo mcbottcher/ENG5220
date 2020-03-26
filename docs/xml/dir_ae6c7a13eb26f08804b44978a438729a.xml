@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_ae6c7a13eb26f08804b44978a438729a" kind="dir">
+    <compoundname>code/MCP3428</compoundname>
+    <innerdir refid="dir_1df141921b961d29b0d038bfbe1482fe">code/MCP3428/I2Cdev</innerdir>
+    <innerfile refid="_m_c_p3428_8cpp">MCP3428.cpp</innerfile>
+    <innerfile refid="_m_c_p3428_8h">MCP3428.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/MCP3428/"/>
+  </compounddef>
+</doxygen>

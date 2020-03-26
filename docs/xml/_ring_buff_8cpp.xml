@@ -5,25 +5,25 @@
     <includes refid="_ring_buff_8h" local="yes">RingBuff.h</includes>
     <includedby refid="_ring_buff_test_8cpp" local="yes">testfiles/RingBuffTest.cpp</includedby>
     <incdepgraph>
-      <node id="389">
+      <node id="521">
         <label>RingBuff.h</label>
         <link refid="_ring_buff_8h"/>
       </node>
-      <node id="388">
+      <node id="520">
         <label>code/RingBuff.cpp</label>
         <link refid="_ring_buff_8cpp"/>
-        <childnode refid="389" relation="include">
+        <childnode refid="521" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="390">
+      <node id="522">
         <label>code/RingBuff.cpp</label>
         <link refid="_ring_buff_8cpp"/>
-        <childnode refid="391" relation="include">
+        <childnode refid="523" relation="include">
         </childnode>
       </node>
-      <node id="391">
+      <node id="523">
         <label>testfiles/RingBuffTest.cpp</label>
         <link refid="_ring_buff_test_8cpp"/>
       </node>

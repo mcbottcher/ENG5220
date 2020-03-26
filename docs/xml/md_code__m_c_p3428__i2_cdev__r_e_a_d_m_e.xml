@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md_code__m_c_p3428__i2_cdev__r_e_a_d_m_e" kind="page">
+    <compoundname>md_code_MCP3428_I2Cdev_README</compoundname>
+    <title>I2Cdev</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access of RPI I2C bus </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

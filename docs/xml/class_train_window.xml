@@ -520,36 +520,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="57">
+      <node id="75">
         <label>QWidget</label>
       </node>
-      <node id="56">
+      <node id="74">
         <label>TrainWindow</label>
         <link refid="class_train_window"/>
-        <childnode refid="57" relation="public-inheritance">
+        <childnode refid="75" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="59">
+      <node id="77">
         <label>QWidget</label>
       </node>
-      <node id="60">
+      <node id="78">
         <label>QLed</label>
         <link refid="class_q_led"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="79" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="58">
+      <node id="76">
         <label>TrainWindow</label>
         <link refid="class_train_window"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="77" relation="public-inheritance">
         </childnode>
-        <childnode refid="60" relation="usage">
+        <childnode refid="78" relation="usage">
           <edgelabel>led</edgelabel>
         </childnode>
       </node>
-      <node id="61">
+      <node id="79">
         <label>QFrame</label>
       </node>
     </collaborationgraph>

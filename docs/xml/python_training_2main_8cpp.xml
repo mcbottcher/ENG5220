@@ -4,29 +4,29 @@
     <compoundname>main.cpp</compoundname>
     <includes refid="train_net_8hpp" local="yes">trainNet.hpp</includes>
     <incdepgraph>
-      <node id="47">
+      <node id="41">
         <label>python3.6m/Python.h</label>
       </node>
-      <node id="46">
+      <node id="40">
         <label>curses.h</label>
       </node>
-      <node id="44">
+      <node id="38">
         <label>trainNet.hpp</label>
         <link refid="train_net_8hpp"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
-      <node id="43">
+      <node id="37">
         <label>code/pythonTraining/main.cpp</label>
         <link refid="python_training_2main_8cpp"/>
-        <childnode refid="44" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="45">
+      <node id="39">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -52,7 +52,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="train_net_8hpp" kindref="compound">trainNet.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="python_training_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="neuralnet__predict_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="3" refid="python_training_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_c_s_vto_vector_cpp_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_net" kindref="compound">TrainNet</ref><sp/>*net;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>net<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_train_net" kindref="compound">TrainNet</ref>();</highlight></codeline>
 <codeline lineno="6"><highlight class="normal">}</highlight></codeline>

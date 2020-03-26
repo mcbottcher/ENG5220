@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wave',['wave',['../namespacecreatesines.html#ac7337cec3a25d030904168ebbef7db5b',1,'createsines']]],
-  ['wrongbuttonclicked',['wrongButtonClicked',['../class_interpret_window.html#a8fbac855c9221e540e3c1af1a53f11d2',1,'InterpretWindow']]]
+  ['updatecurve',['updateCurve',['../struct_monitor_window_1_1_curve.html#ab2de430b5650941488fb62691f8d64a4',1,'MonitorWindow::Curve']]]
 ];

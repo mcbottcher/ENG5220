@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2cpp_timer_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>CppTimer</highlight></codeline>
+<codeline><highlight class="normal">Generic<sp/>C++<sp/>Timer<sp/>for<sp/>Linux</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>a<sp/>wrapper<sp/>around<sp/>the<sp/>Linux<sp/>timers.<sp/>There<sp/>are<sp/>two<sp/>ways<sp/>of<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>timer:<sp/>by<sp/>overloading<sp/>the<sp/>`timerEvent()`<sp/>method<sp/>in<sp/>the<sp/>`CppTimer`<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">itself<sp/>(fastest)<sp/>or<sp/>by<sp/>registering<sp/>a<sp/>callback<sp/>class<sp/>called<sp/>`Runnable`</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>an<sp/>overloaded<sp/>`run()`<sp/>method.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Usage<sp/>(overloading<sp/>the<sp/>timer<sp/>event)</highlight></codeline>
+<codeline><highlight class="normal">Include<sp/>CppTimer.h<sp/>in<sp/>your<sp/>program<sp/>and<sp/>link<sp/>the<sp/>static<sp/>library<sp/>`libcpptimer.a`</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>your<sp/>project:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">TARGET_LINK_LIBRARIES(your_project_title<sp/>cpptimer<sp/>rt)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Create<sp/>the<sp/>Timer<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyTimer<sp/>:<sp/>public<sp/>CppTimer<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>timerEvent()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>your<sp/>timer<sp/>event<sp/>code<sp/>here</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>you<sp/>override<sp/>`timerEvent`<sp/>with<sp/>your<sp/>function.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Run<sp/>the<sp/>Timer<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>timer<sp/>is<sp/>programmed<sp/>in<sp/>nanoseconds.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MyTimer<sp/>myTimer;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>every<sp/>500000ns</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>myTimer.start(500000);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>soon<sp/>as<sp/>start<sp/>returns<sp/>the<sp/>timer<sp/>fires<sp/>instantly<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">then<sp/>at<sp/>the<sp/>specified<sp/>interval.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Demo<sp/>program</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>run<sp/>`demo.cpp`<sp/>just<sp/>do<sp/>`cmake<sp/>.`,<sp/>`make`<sp/>and<sp/>then<sp/>`./demo`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Callback<sp/>version</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Instead<sp/>of<sp/>overloading<sp/>the<sp/>`run()`<sp/>method<sp/>in<sp/>the<sp/>timer<sp/>class<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">overload<sp/>the<sp/>`run()`<sp/>method<sp/>in<sp/>the<sp/>`Runnable`<sp/>class<sp/>and<sp/>then<sp/>register</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>class<sp/>with<sp/>the<sp/>timer<sp/>class.<sp/><sp/>Check<sp/>out<sp/>`demo_runnable`<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">demonstrates<sp/>how<sp/>to<sp/>use<sp/>this<sp/>method.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Unit<sp/>tests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Run:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ctest</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">That&apos;s<sp/>it.<sp/>Enjoy!</highlight></codeline>
+    </programlisting>
+    <location file="code/cppTimer/README.md"/>
+  </compounddef>
+</doxygen>

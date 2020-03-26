@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_c_s_vto_vector_cpp_2_c_s_vreader_8h" kind="file" language="C++">
+    <compoundname>CSVreader.h</compoundname>
+    <includedby refid="_c_s_vto_vector_cpp_2_c_s_vreader_8cpp" local="yes">code/CSVtoVectorCpp/CSVreader.cpp</includedby>
+    <includedby refid="_c_s_vto_vector_cpp_2main_8cpp" local="yes">code/CSVtoVectorCpp/main.cpp</includedby>
+    <invincdepgraph>
+      <node id="14">
+        <label>code/CSVtoVectorCpp/CSVreader.cpp</label>
+        <link refid="_c_s_vto_vector_cpp_2_c_s_vreader_8cpp"/>
+      </node>
+      <node id="13">
+        <label>code/CSVtoVectorCpp/CSVreader.h</label>
+        <link refid="_c_s_vto_vector_cpp_2_c_s_vreader_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>code/CSVtoVectorCpp/main.cpp</label>
+        <link refid="_c_s_vto_vector_cpp_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+    </programlisting>
+    <location file="code/CSVtoVectorCpp/CSVreader.h"/>
+  </compounddef>
+</doxygen>

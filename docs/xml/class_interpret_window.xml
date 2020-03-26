@@ -408,24 +408,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="10">
+      <node id="14">
         <label>QWidget</label>
       </node>
-      <node id="9">
+      <node id="13">
         <label>InterpretWindow</label>
         <link refid="class_interpret_window"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="14" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12">
+      <node id="16">
         <label>QWidget</label>
       </node>
-      <node id="11">
+      <node id="15">
         <label>InterpretWindow</label>
         <link refid="class_interpret_window"/>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

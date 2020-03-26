@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_m_c_p3428_8cpp" kind="file" language="C++">
+    <compoundname>MCP3428.cpp</compoundname>
+    <includes refid="_m_c_p3428_8h" local="yes">MCP3428.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">linux/i2c-dev.h</includes>
+    <includes local="no">sys/ioctl.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">unistd.h</includes>
+    <incdepgraph>
+      <node id="183">
+        <label>stdint.h</label>
+      </node>
+      <node id="185">
+        <label>stdlib.h</label>
+      </node>
+      <node id="189">
+        <label>fcntl.h</label>
+      </node>
+      <node id="184">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="181">
+        <label>code/MCP3428/MCP3428.cpp</label>
+        <link refid="_m_c_p3428_8cpp"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>MCP3428.h</label>
+        <link refid="_m_c_p3428_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>unistd.h</label>
+      </node>
+      <node id="186">
+        <label>iostream</label>
+      </node>
+      <node id="187">
+        <label>linux/i2c-dev.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Adapted<sp/>from<sp/>https://github.com/ControlEverythingCommunity/MCP3428/tree/master/C<sp/>for<sp/>C++</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Original<sp/>Licence:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">Distributed<sp/>with<sp/>a<sp/>free-will<sp/>license.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">Use<sp/>it<sp/>any<sp/>way<sp/>you<sp/>want,<sp/>profit<sp/>or<sp/>free,<sp/>provided<sp/>it<sp/>fits<sp/>in<sp/>the<sp/>licenses<sp/>of<sp/>its<sp/>associated<sp/>works.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">MCP3428</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>code<sp/>is<sp/>designed<sp/>to<sp/>work<sp/>with<sp/>the<sp/>MCP3428_I2CADC<sp/>I2C<sp/>Mini<sp/>Module<sp/>available<sp/>from<sp/>ControlEverything.com.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">https://www.controleverything.com/content/Analog-Digital-Converters?sku=MCP3428_I2CADC#tabs-0-product_tabset-2</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_c_p3428_8h" kindref="compound">MCP3428.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;linux/i2c-dev.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/ioctl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_m_c_p3428_1a465c84e16b26e35a8bc12f11d6b29040" refkind="member"><highlight class="normal"><ref refid="class_m_c_p3428_1a465c84e16b26e35a8bc12f11d6b29040" kindref="member">MCP3428::MCP3428</ref>(uint8_t<sp/>i2c_address<sp/>=<sp/>0x68){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" kindref="member">_slaveAddress</ref><sp/>=<sp/>i2c_address;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_m_c_p3428_1ae58238ff46a204fb03ff33fed52a073b" refkind="member"><highlight class="normal"><ref refid="class_m_c_p3428_1ae58238ff46a204fb03ff33fed52a073b" kindref="member">MCP3428::~MCP3428</ref>(){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" kindref="member">MCP3428::setConfig</ref>(uint8_t<sp/>RDYflag<sp/>=<sp/><ref refid="_m_c_p3428_8h_1af6efc5eb5053736e287d1e3e49ac8eeb" kindref="member">CONFIG_CONVERSION_NO_EFFECT</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>channel<sp/>=<sp/><ref refid="_m_c_p3428_8h_1a4fde4a0dda433b99ce4bead1794e351a" kindref="member">CONFIG_CHN1</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="_m_c_p3428_8h_1aff2fa42ce9a7873d6aab9bccc6eeb310" kindref="member">conversion_mode</ref><sp/>=<sp/><ref refid="_m_c_p3428_8h_1a79d01715089d1e7ee083e736d6152946" kindref="member">CONFIG_CONTINUOUS_CONVERSION_MODE</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="_m_c_p3428_8h_1a2b8bdf2ccdee1cc9e95e8ec7714b68d2" kindref="member">resolution</ref><sp/>=<sp/><ref refid="_m_c_p3428_8h_1aeb1c3a88dae5e8a9ace81548ac4561e8" kindref="member">CONFIG_12BIT_240SPS</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>PGA<sp/>=<sp/><ref refid="_m_c_p3428_8h_1aee5a82c5936b9456bef6cfc4d93ae9d6" kindref="member">CONFIG_GAIN_1X</ref>){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1a1789e56d30b801bef868aa802d1565c0" kindref="member">RDY_bar</ref><sp/>=<sp/>RDYflag;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" kindref="member">channel_select</ref><sp/>=<sp/>channel;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1ad08f71fa4d1883ea81332498c156d288" kindref="member">conversion_mode</ref><sp/>=<sp/><ref refid="_m_c_p3428_8h_1aff2fa42ce9a7873d6aab9bccc6eeb310" kindref="member">conversion_mode</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1ac30320cc5af5955f2041f12a7760e547" kindref="member">resolution</ref><sp/>=<sp/><ref refid="_m_c_p3428_8h_1a2b8bdf2ccdee1cc9e95e8ec7714b68d2" kindref="member">resolution</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1a072954d757394d1de8fd1f6c8e6601a7" kindref="member">gain</ref><sp/>=<sp/>PGA;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" kindref="member">_writeConfig</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" kindref="member">MCP3428::_setChannel</ref>(uint8_t<sp/>channel_number){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>.<ref refid="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" kindref="member">channel_select</ref><sp/>=<sp/>channel_number;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" kindref="member">_writeConfig</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" kindref="member">MCP3428::_writeConfig</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" kindref="member">i2c</ref>.<ref refid="class_i2_cdev_1aea44932d610604d29699ac932fcdcd9f" kindref="member">write_std</ref>(<ref refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" kindref="member">_slaveAddress</ref>,<sp/>(uint8_t*)(&amp;<ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>),<sp/>1);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>usleep(5000);<sp/></highlight><highlight class="comment">//need<sp/>this<sp/>since<sp/>new<sp/>sample<sp/>after<sp/>1/240<sp/>s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_m_c_p3428_1a5d5ba6815cafd19cfef940fa72e1a3a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a5d5ba6815cafd19cfef940fa72e1a3a6" kindref="member">MCP3428::readConfig</ref>(){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" refkind="member"><highlight class="normal">int16_t<sp/><ref refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" kindref="member">MCP3428::readChannel</ref>(uint8_t<sp/>channel_number){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" kindref="member">_setChannel</ref>(channel_number);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>reg[1]<sp/>=<sp/>{0x00};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" kindref="member">i2c</ref>.<ref refid="class_i2_cdev_1aea44932d610604d29699ac932fcdcd9f" kindref="member">write_std</ref>(<ref refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" kindref="member">_slaveAddress</ref>,<sp/>reg,<sp/>1);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" kindref="member">i2c</ref>.<ref refid="class_i2_cdev_1a32fcdbfba31615b5761c5e991253898c" kindref="member">read_std</ref>(<ref refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" kindref="member">_slaveAddress</ref>,<sp/><ref refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" kindref="member">_data</ref>,<sp/>2);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tmp_hold<sp/>=<sp/>((<ref refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" kindref="member">_data</ref>[0]&amp;0x0f)<sp/>*<sp/>256<sp/>+<sp/><ref refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" kindref="member">_data</ref>[1]);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*((int16_t*)(&amp;tmp_hold));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_m_c_p3428_1a87bc56015ab65b2bbf79e39a4b5bab9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a87bc56015ab65b2bbf79e39a4b5bab9a" kindref="member">MCP3428::readChannelScaled</ref>(uint8_t<sp/>channel_number){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int16_t<sp/>digital_value<sp/>=<sp/>readChannel(uint8_t<sp/>channel);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#TODO<sp/>need<sp/>to<sp/>fix<sp/>**<sp/>to<sp/>pow()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>((digital_value/(2**(12+(2<sp/>*<sp/>_configReg.resolution))))<sp/>/<sp/>(2**_configReg.gain))*2.048;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2.0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/MCP3428/MCP3428.cpp"/>
+  </compounddef>
+</doxygen>

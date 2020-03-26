@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h" kind="file" language="C++">
+    <compoundname>I2Cdev.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8cpp" local="yes">code/MPU6050/I2Cdev/I2Cdev.cpp</includedby>
+    <includedby refid="_m_p_u6050_8h" local="yes">code/MPU6050/MPU6050.h</includedby>
+    <incdepgraph>
+      <node id="170">
+        <label>stdlib.h</label>
+      </node>
+      <node id="169">
+        <label>code/MPU6050/I2Cdev/I2Cdev.h</label>
+        <link refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="173">
+        <label>code/MPU6050/MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>code/Qt/SampleTimer.cpp</label>
+        <link refid="_sample_timer_8cpp"/>
+      </node>
+      <node id="180">
+        <label>code/sampledata.cpp</label>
+        <link refid="sampledata_8cpp"/>
+      </node>
+      <node id="178">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="172">
+        <label>code/MPU6050/I2Cdev/I2Cdev.cpp</label>
+        <link refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8cpp"/>
+      </node>
+      <node id="175">
+        <label>code/Qt/SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>code/MPU6050/I2Cdev/I2Cdev.h</label>
+        <link refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>code/MPU6050/MPU6050.cpp</label>
+        <link refid="_m_p_u6050_8cpp"/>
+      </node>
+      <node id="177">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_i2_cdev" prot="public">I2Cdev</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>(1==1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="48" column="9" bodyfile="code/MPU6050/I2Cdev/I2Cdev.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>(0==1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="49" column="9" bodyfile="code/MPU6050/I2Cdev/I2Cdev.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1ac7c7f66e72782af783d48976ae3a80c1" prot="public" static="no">
+        <name>I2C_BUS_DEV_FILE_PATH</name>
+        <initializer>&quot;/dev/i2c-1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="52" column="9" bodyfile="code/MPU6050/I2Cdev/I2Cdev.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1a088fcd01abf240d727695f5bb15d00e3" prot="public" static="no" mutable="no">
+        <type>class <ref refid="class_i2_cdev" kindref="compound">I2Cdev</ref></type>
+        <definition>class I2Cdev __attribute__</definition>
+        <argsstring></argsstring>
+        <name>__attribute__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>I2Cdev<sp/>library<sp/>collection<sp/>-<sp/>Main<sp/>I2C<sp/>device<sp/>class<sp/>header<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Abstracts<sp/>bit<sp/>and<sp/>byte<sp/>I2C<sp/>R/W<sp/>functions<sp/>into<sp/>a<sp/>convenient<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6/9/2012<sp/>by<sp/>Jeff<sp/>Rowberg<sp/>&lt;jeff@rowberg.net&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Changelog:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2012-06-09<sp/>-<sp/>fix<sp/>major<sp/>issue<sp/>with<sp/>reading<sp/>&gt;<sp/>32<sp/>bytes<sp/>at<sp/>a<sp/>time<sp/>with<sp/>Arduino<sp/>Wire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>add<sp/>compiler<sp/>warnings<sp/>when<sp/>using<sp/>outdated<sp/>or<sp/>IDE<sp/>or<sp/>limited<sp/>I2Cdev<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-11-01<sp/>-<sp/>fix<sp/>write*Bits<sp/>mask<sp/>calculation<sp/>(thanks<sp/>sasquatch<sp/>@<sp/>Arduino<sp/>forums)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-10-03<sp/>-<sp/>added<sp/>automatic<sp/>Arduino<sp/>version<sp/>detection<sp/>for<sp/>ease<sp/>of<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-10-02<sp/>-<sp/>added<sp/>Gene<sp/>Knight&apos;s<sp/>NBWire<sp/>TwoWire<sp/>class<sp/>implementation<sp/>with<sp/>small<sp/>modifications</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-08-31<sp/>-<sp/>added<sp/>support<sp/>for<sp/>Arduino<sp/>1.0<sp/>Wire<sp/>library<sp/>(methods<sp/>are<sp/>different<sp/>from<sp/>0.x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-08-03<sp/>-<sp/>added<sp/>optional<sp/>timeout<sp/>parameter<sp/>to<sp/>read*<sp/>methods<sp/>to<sp/>easily<sp/>change<sp/>from<sp/>default</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-08-02<sp/>-<sp/>added<sp/>support<sp/>for<sp/>16-bit<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>fixed<sp/>incorrect<sp/>Doxygen<sp/>comments<sp/>on<sp/>some<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>added<sp/>timeout<sp/>value<sp/>for<sp/>read<sp/>operations<sp/>(thanks<sp/>mem<sp/>@<sp/>Arduino<sp/>forums)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-07-30<sp/>-<sp/>changed<sp/>read/write<sp/>function<sp/>structures<sp/>to<sp/>return<sp/>success<sp/>or<sp/>byte<sp/>counts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>made<sp/>all<sp/>methods<sp/>static<sp/>for<sp/>multi-device<sp/>memory<sp/>savings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2011-07-28<sp/>-<sp/>initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>============================================</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">I2Cdev<sp/>device<sp/>library<sp/>code<sp/>is<sp/>placed<sp/>under<sp/>the<sp/>MIT<sp/>license</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">Copyright<sp/>(c)<sp/>2012<sp/>Jeff<sp/>Rowberg</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">===============================================</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_I2CDEV_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_I2CDEV_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRUE<sp/><sp/><sp/><sp/>(1==1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1aa93f0eb578d23995850d61f7d61c55c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/><sp/><sp/>(0==1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h_1ac7c7f66e72782af783d48976ae3a80c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_BUS_DEV_FILE_PATH<sp/>&quot;/dev/i2c-1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_i2_cdev" kindref="compound">I2Cdev</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" kindref="member">I2Cdev</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1abe6d8ea07027d362419de86188981559" kindref="member">readBit</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitNum,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1aaaa3b9ef9500a7d69ccc3d0ccaae33c4" kindref="member">readBitW</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitNum,<sp/>uint16_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1a8e5e9742072bb80db06ccd46f52e2b6d" kindref="member">readBits</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitStart,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1a1f417ba3e5ce99832e07c31522c97f87" kindref="member">readBitsW</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitStart,<sp/>uint8_t<sp/>length,<sp/>uint16_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1ad3fb41ce124a29f93749d99611c75c33" kindref="member">readByte</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1a545cd48b1e806e7e467b542c9e38e8c8" kindref="member">readWord</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint16_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1aca9c503da5cffd6ac6f8eff9b195c5f4" kindref="member">readBytes</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="class_i2_cdev_1a1b3d895dc6a00cbb5fb3b0441b2e35de" kindref="member">readWords</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>length,<sp/>uint16_t<sp/>*data,<sp/>uint16_t<sp/>timeout=<ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1aa68890af87de5471d32e583ebbd91acb" kindref="member">writeBit</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitNum,<sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1a1b5fbedfadec5d429c81ee84d27e658d" kindref="member">writeBitW</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitNum,<sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1a913371251b6a41520c080115650e1b59" kindref="member">writeBits</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitStart,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1a8f8652a1328224cce867eed665a45c4d" kindref="member">writeBitsW</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>bitStart,<sp/>uint8_t<sp/>length,<sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1aeb297637ef985cd562da465ba61b7042" kindref="member">writeByte</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1acbe68a802d6a177301736e60bedd1def" kindref="member">writeWord</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1aa4e39cac6c0eac5112f9132084bcc93e" kindref="member">writeBytes</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>*data);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1aae37c0526e4b4730a5b2ffd752fd8b21" kindref="member">writeWords</ref>(uint8_t<sp/>devAddr,<sp/>uint8_t<sp/>regAddr,<sp/>uint8_t<sp/>length,<sp/>uint16_t<sp/>*data);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1aea44932d610604d29699ac932fcdcd9f" kindref="member">write_std</ref>(uint8_t<sp/>slaveAddress,<sp/>uint8_t*<sp/>txdataBuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>number_of_bytes);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i2_cdev_1a32fcdbfba31615b5761c5e991253898c" kindref="member">read_std</ref>(uint8_t<sp/>slaveAddress,<sp/>uint8_t*<sp/>rxdataBuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>number_of_bytes);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">readTimeout</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_I2CDEV_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="code/MPU6050/I2Cdev/I2Cdev.h"/>
+  </compounddef>
+</doxygen>

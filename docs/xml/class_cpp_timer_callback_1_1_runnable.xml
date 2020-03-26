@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_cpp_timer_callback_1_1_runnable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CppTimerCallback::Runnable</compoundname>
+    <derivedcompoundref refid="class_callback1" prot="public" virt="non-virtual">Callback1</derivedcompoundref>
+    <derivedcompoundref refid="class_callback2" prot="public" virt="non-virtual">Callback2</derivedcompoundref>
+    <includes refid="_cpp_timer_callback_8h" local="no">CppTimerCallback.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cpp_timer_callback_1_1_runnable_1af8d11a3b580e76431151e76ac1886e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CppTimerCallback::Runnable::run</definition>
+        <argsstring>()=0</argsstring>
+        <name>run</name>
+        <reimplementedby refid="class_callback1_1ae334834afb1b42788c7b8460baba4aaa">run</reimplementedby>
+        <reimplementedby refid="class_callback2_1a0baf16d3fa8414fa079fbabb6560046b">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/cppTimer/CppTimerCallback.h" line="13" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>Callback1</label>
+        <link refid="class_callback1"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Callback2</label>
+        <link refid="class_callback2"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>CppTimerCallback::Runnable</label>
+        <link refid="class_cpp_timer_callback_1_1_runnable"/>
+      </node>
+    </inheritancegraph>
+    <location file="code/cppTimer/CppTimerCallback.h" line="11" column="1" bodyfile="code/cppTimer/CppTimerCallback.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_cpp_timer_callback_1_1_runnable_1af8d11a3b580e76431151e76ac1886e6e" prot="public" virt="pure-virtual"><scope>CppTimerCallback::Runnable</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

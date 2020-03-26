@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['mcp3421_5fi2c_5faddress',['MCP3421_I2C_ADDRESS',['../_sample_timer_8h.html#a0211acdeea921fb313fc5836ed6e2145',1,'MCP3421_I2C_ADDRESS():&#160;SampleTimer.h'],['../sampledata_8cpp.html#a0211acdeea921fb313fc5836ed6e2145',1,'MCP3421_I2C_ADDRESS():&#160;sampledata.cpp']]],
-  ['mcp3428_5fi2c_5faddress',['MCP3428_I2C_ADDRESS',['../_sample_timer_8h.html#a6456c13b8d7bebacf0dbfdf7934ced1f',1,'MCP3428_I2C_ADDRESS():&#160;SampleTimer.h'],['../sampledata_8cpp.html#a6456c13b8d7bebacf0dbfdf7934ced1f',1,'MCP3428_I2C_ADDRESS():&#160;sampledata.cpp']]],
-  ['monitor_5frefresh_5frate',['MONITOR_REFRESH_RATE',['../mainwindow_8h.html#ad55661e5f9609e2daf717a5cac566320',1,'mainwindow.h']]],
-  ['mpu6050_5fi2c_5faddress',['MPU6050_I2C_ADDRESS',['../_sample_timer_8h.html#a9d33ce0b80020007ba5277b9427fd003',1,'MPU6050_I2C_ADDRESS():&#160;SampleTimer.h'],['../sampledata_8cpp.html#a9d33ce0b80020007ba5277b9427fd003',1,'MPU6050_I2C_ADDRESS():&#160;sampledata.cpp']]]
+  ['i2c_5fbus',['I2C_BUS',['../_m_c_p3428_8h.html#a357ae664eb5f3c937443339e9b568c51',1,'MCP3428.h']]],
+  ['i2c_5fbus_5fdev_5ffile_5fpath',['I2C_BUS_DEV_FILE_PATH',['../_m_c_p3428_2_i2_cdev_2_i2_cdev_8h.html#ac7c7f66e72782af783d48976ae3a80c1',1,'I2C_BUS_DEV_FILE_PATH():&#160;I2Cdev.h'],['../_m_p_u6050_2_i2_cdev_2_i2_cdev_8h.html#ac7c7f66e72782af783d48976ae3a80c1',1,'I2C_BUS_DEV_FILE_PATH():&#160;I2Cdev.h']]]
 ];

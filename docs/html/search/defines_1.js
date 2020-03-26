@@ -2,5 +2,20 @@ var searchData=
 [
   ['c_5fdialect',['C_DIALECT',['../_c_make_c_compiler_id_8c.html#a07f8e5783674099cd7f5110e22a78cdb',1,'CMakeCCompilerId.c']]],
   ['compiler_5fid',['COMPILER_ID',['../_c_make_c_compiler_id_8c.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCXXCompilerId.cpp']]],
+  ['config_5f12bit_5f240sps',['CONFIG_12BIT_240SPS',['../_m_c_p3428_8h.html#aeb1c3a88dae5e8a9ace81548ac4561e8',1,'MCP3428.h']]],
+  ['config_5f14bit_5f60sps',['CONFIG_14BIT_60SPS',['../_m_c_p3428_8h.html#a46aaea2d88bc8f694a33672d56a406ff',1,'MCP3428.h']]],
+  ['config_5f16bit_5f15sps',['CONFIG_16BIT_15SPS',['../_m_c_p3428_8h.html#aa752f7a385841d8e8b8f13fd9e6b6908',1,'MCP3428.h']]],
+  ['config_5fchn1',['CONFIG_CHN1',['../_m_c_p3428_8h.html#a4fde4a0dda433b99ce4bead1794e351a',1,'MCP3428.h']]],
+  ['config_5fchn2',['CONFIG_CHN2',['../_m_c_p3428_8h.html#a073f26ab15d6f2e4b4d5418c7e600404',1,'MCP3428.h']]],
+  ['config_5fchn3',['CONFIG_CHN3',['../_m_c_p3428_8h.html#acc8ead7eecb77bb6c4d9931bd2884fe2',1,'MCP3428.h']]],
+  ['config_5fchn4',['CONFIG_CHN4',['../_m_c_p3428_8h.html#aafc5ccc5089da81e6947aa93758a3fb2',1,'MCP3428.h']]],
+  ['config_5fcontinuous_5fconversion_5fmode',['CONFIG_CONTINUOUS_CONVERSION_MODE',['../_m_c_p3428_8h.html#a79d01715089d1e7ee083e736d6152946',1,'MCP3428.h']]],
+  ['config_5fconversion_5fno_5feffect',['CONFIG_CONVERSION_NO_EFFECT',['../_m_c_p3428_8h.html#af6efc5eb5053736e287d1e3e49ac8eeb',1,'MCP3428.h']]],
+  ['config_5fgain_5f1x',['CONFIG_GAIN_1X',['../_m_c_p3428_8h.html#aee5a82c5936b9456bef6cfc4d93ae9d6',1,'MCP3428.h']]],
+  ['config_5fgain_5f2x',['CONFIG_GAIN_2X',['../_m_c_p3428_8h.html#a8e7f53b6f35f70a3550fe4a85a608e0e',1,'MCP3428.h']]],
+  ['config_5fgain_5f4x',['CONFIG_GAIN_4X',['../_m_c_p3428_8h.html#a8275b657a742e5cd5450d424450aac9d',1,'MCP3428.h']]],
+  ['config_5fgain_5f8x',['CONFIG_GAIN_8X',['../_m_c_p3428_8h.html#a7bea17267ed6acdea3766e1450614a19',1,'MCP3428.h']]],
+  ['config_5finit_5fconversion',['CONFIG_INIT_CONVERSION',['../_m_c_p3428_8h.html#a710901e9d92a1d7631b85d7392f9e25f',1,'MCP3428.h']]],
+  ['config_5foneshot_5fconversion_5fmode',['CONFIG_ONESHOT_CONVERSION_MODE',['../_m_c_p3428_8h.html#a470d362dad0470f07bb5233002990885',1,'MCP3428.h']]],
   ['cxx_5fstd',['CXX_STD',['../_c_make_c_x_x_compiler_id_8cpp.html#a34cc889e576a1ae6c84ae9e0a851ba21',1,'CMakeCXXCompilerId.cpp']]]
 ];

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_callback1" kind="class" language="C++" prot="public">
+    <compoundname>Callback1</compoundname>
+    <basecompoundref refid="class_cpp_timer_callback_1_1_runnable" prot="public" virt="non-virtual">CppTimerCallback::Runnable</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_callback1_1ae334834afb1b42788c7b8460baba4aaa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Callback1::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="class_cpp_timer_callback_1_1_runnable_1af8d11a3b580e76431151e76ac1886e6e">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/cppTimer/demo_runnable.cpp" line="7" column="1" bodyfile="code/cppTimer/demo_runnable.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Callback1</label>
+        <link refid="class_callback1"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CppTimerCallback::Runnable</label>
+        <link refid="class_cpp_timer_callback_1_1_runnable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Callback1</label>
+        <link refid="class_callback1"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppTimerCallback::Runnable</label>
+        <link refid="class_cpp_timer_callback_1_1_runnable"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/cppTimer/demo_runnable.cpp" line="6" column="1" bodyfile="code/cppTimer/demo_runnable.cpp" bodystart="6" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_callback1_1ae334834afb1b42788c7b8460baba4aaa" prot="private" virt="virtual"><scope>Callback1</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

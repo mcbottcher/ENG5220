@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['getarray',['getArray',['../class_filter_bank.html#aac19fa7a28bf8077907c311952fde784',1,'FilterBank']]],
-  ['getbuffaddress',['getBuffAddress',['../class_ring_buff.html#a2e8b87cab47fba276b539f27953527cc',1,'RingBuff']]],
-  ['getbufflen',['getBuffLen',['../class_ring_buff.html#ae663d7b920cff4225d19b7b53c37901a',1,'RingBuff']]],
-  ['getelementptr',['getElementPtr',['../class_ring_buff.html#aaa58b11867eb027f840bf3479f5eee8c',1,'RingBuff']]],
-  ['getsensorvalues',['getSensorValues',['../class_sample_timer.html#a62ef0731bffe1dea3b0a5c0584b2d4c5',1,'SampleTimer']]],
-  ['getvaluearray',['getValueArray',['../class_c_s_vreader.html#af554f9e1d8f26c25b01f606979870926',1,'CSVreader']]],
-  ['getvectorarray',['getVectorArray',['../class_c_s_vreader.html#aca7e333b60603c09f942438a4a1f1162',1,'CSVreader']]]
+  ['filter',['Filter',['../class_filter.html#a2c086f16145e51138ec79105fef6e022',1,'Filter::Filter(int filterOrder, double sampleRate, double cutoffFrequency)'],['../class_filter.html#afe4d216c91859366458add7f7fcbb6aa',1,'Filter::filter(double sample)'],['../class_filter_bank.html#a09881ea60cd2c2d21c29b3c599ef2c0b',1,'FilterBank::filter()']]],
+  ['filterbank',['FilterBank',['../class_filter_bank.html#a1f4c10f55bed118220c55f10215be634',1,'FilterBank']]]
 ];

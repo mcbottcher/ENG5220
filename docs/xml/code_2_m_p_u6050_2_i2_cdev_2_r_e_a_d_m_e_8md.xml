@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2_m_p_u6050_2_i2_cdev_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>I2Cdev</highlight></codeline>
+<codeline><highlight class="normal">Access<sp/>of<sp/>RPI<sp/>I2C<sp/>bus</highlight></codeline>
+    </programlisting>
+    <location file="code/MPU6050/I2Cdev/README.md"/>
+  </compounddef>
+</doxygen>

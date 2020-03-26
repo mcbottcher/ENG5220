@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md_code__m_p_u6050__r_e_a_d_m_e" kind="page">
+    <compoundname>md_code_MPU6050_README</compoundname>
+    <title>MPU6050</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Extension of previously made <ref refid="class_m_p_u6050" kindref="compound">MPU6050</ref> API for RaspberryPI 3B in C++</para>
+<para>Designed to be used as a submodule... For use as a single entity refer to the template folder for a main.cpp example and Makefile example </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_m_c_p3428_8h" kind="file" language="C++">
+    <compoundname>MCP3428.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h" local="yes">I2Cdev/I2Cdev.h</includes>
+    <includedby refid="_m_c_p3428_8cpp" local="yes">code/MCP3428/MCP3428.cpp</includedby>
+    <includedby refid="_sample_timer_8h" local="yes">code/Qt/SampleTimer.h</includedby>
+    <includedby refid="sampledata_8cpp" local="yes">code/sampledata.cpp</includedby>
+    <incdepgraph>
+      <node id="193">
+        <label>stdint.h</label>
+      </node>
+      <node id="195">
+        <label>stdlib.h</label>
+      </node>
+      <node id="194">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>code/MCP3428/MCP3428.h</label>
+        <link refid="_m_c_p3428_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="202">
+        <label>code/Qt/SampleTimer.cpp</label>
+        <link refid="_sample_timer_8cpp"/>
+      </node>
+      <node id="203">
+        <label>code/sampledata.cpp</label>
+        <link refid="sampledata_8cpp"/>
+      </node>
+      <node id="201">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="197">
+        <label>code/MCP3428/MCP3428.cpp</label>
+        <link refid="_m_c_p3428_8cpp"/>
+      </node>
+      <node id="196">
+        <label>code/MCP3428/MCP3428.h</label>
+        <link refid="_m_c_p3428_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>code/Qt/SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_c_p3428" prot="public">MCP3428</innerclass>
+    <innerclass refid="struct_m_c_p3428_1_1config_reg_struct" prot="private">MCP3428::configRegStruct</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_c_p3428_8h_1a357ae664eb5f3c937443339e9b568c51" prot="public" static="no">
+        <name>I2C_BUS</name>
+        <initializer>&quot;/dev/i2c-1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="13" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a710901e9d92a1d7631b85d7392f9e25f" prot="public" static="no">
+        <name>CONFIG_INIT_CONVERSION</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="17" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1af6efc5eb5053736e287d1e3e49ac8eeb" prot="public" static="no">
+        <name>CONFIG_CONVERSION_NO_EFFECT</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="18" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a4fde4a0dda433b99ce4bead1794e351a" prot="public" static="no">
+        <name>CONFIG_CHN1</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="20" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a073f26ab15d6f2e4b4d5418c7e600404" prot="public" static="no">
+        <name>CONFIG_CHN2</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="21" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1acc8ead7eecb77bb6c4d9931bd2884fe2" prot="public" static="no">
+        <name>CONFIG_CHN3</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="22" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1aafc5ccc5089da81e6947aa93758a3fb2" prot="public" static="no">
+        <name>CONFIG_CHN4</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="23" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a79d01715089d1e7ee083e736d6152946" prot="public" static="no">
+        <name>CONFIG_CONTINUOUS_CONVERSION_MODE</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="25" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a470d362dad0470f07bb5233002990885" prot="public" static="no">
+        <name>CONFIG_ONESHOT_CONVERSION_MODE</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="26" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1aeb1c3a88dae5e8a9ace81548ac4561e8" prot="public" static="no">
+        <name>CONFIG_12BIT_240SPS</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="28" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a46aaea2d88bc8f694a33672d56a406ff" prot="public" static="no">
+        <name>CONFIG_14BIT_60SPS</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="29" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1aa752f7a385841d8e8b8f13fd9e6b6908" prot="public" static="no">
+        <name>CONFIG_16BIT_15SPS</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="30" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1aee5a82c5936b9456bef6cfc4d93ae9d6" prot="public" static="no">
+        <name>CONFIG_GAIN_1X</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="32" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a8e7f53b6f35f70a3550fe4a85a608e0e" prot="public" static="no">
+        <name>CONFIG_GAIN_2X</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="33" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a8275b657a742e5cd5450d424450aac9d" prot="public" static="no">
+        <name>CONFIG_GAIN_4X</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="34" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_c_p3428_8h_1a7bea17267ed6acdea3766e1450614a19" prot="public" static="no">
+        <name>CONFIG_GAIN_8X</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="35" column="9" bodyfile="code/MCP3428/MCP3428.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_m_c_p3428_8h_1a5c9c0f59d06b7360c990c3f49be81fa7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="44" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_m_c_p3428_8h_1a2b8bdf2ccdee1cc9e95e8ec7714b68d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="45" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_m_c_p3428_8h_1aff2fa42ce9a7873d6aab9bccc6eeb310" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t conversion_mode</definition>
+        <argsstring></argsstring>
+        <name>conversion_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="46" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_m_c_p3428_8h_1a286adbf6da614e751ef93a403bb120a0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t channel_select</definition>
+        <argsstring></argsstring>
+        <name>channel_select</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="47" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_m_c_p3428_8h_1ada38fba529204dfd36200b083aad0d8f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RDY_bar</definition>
+        <argsstring></argsstring>
+        <name>RDY_bar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="48" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Module<sp/>for<sp/>communicating<sp/>with<sp/>MCP3428<sp/>over<sp/>I2C</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">with<sp/>the<sp/>RaspberryPi</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">See<sp/>MCP3428.cpp<sp/>for<sp/>licence</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;I2Cdev/I2Cdev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_m_c_p3428_8h_1a357ae664eb5f3c937443339e9b568c51" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_BUS<sp/>&quot;/dev/i2c-1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>change<sp/>these<sp/>to<sp/>enums...<sp/>so<sp/>its<sp/>more<sp/>obvious<sp/>which<sp/>config<sp/>corresponds<sp/>to<sp/>what...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="17" refid="_m_c_p3428_8h_1a710901e9d92a1d7631b85d7392f9e25f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_INIT_CONVERSION<sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_m_c_p3428_8h_1af6efc5eb5053736e287d1e3e49ac8eeb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CONVERSION_NO_EFFECT<sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_m_c_p3428_8h_1a4fde4a0dda433b99ce4bead1794e351a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CHN1<sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_m_c_p3428_8h_1a073f26ab15d6f2e4b4d5418c7e600404" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CHN2<sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_m_c_p3428_8h_1acc8ead7eecb77bb6c4d9931bd2884fe2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CHN3<sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_m_c_p3428_8h_1aafc5ccc5089da81e6947aa93758a3fb2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CHN4<sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_m_c_p3428_8h_1a79d01715089d1e7ee083e736d6152946" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_CONTINUOUS_CONVERSION_MODE<sp/>1U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_m_c_p3428_8h_1a470d362dad0470f07bb5233002990885" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ONESHOT_CONVERSION_MODE<sp/><sp/><sp/><sp/><sp/><sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_m_c_p3428_8h_1aeb1c3a88dae5e8a9ace81548ac4561e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_12BIT_240SPS<sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_m_c_p3428_8h_1a46aaea2d88bc8f694a33672d56a406ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_14BIT_60SPS<sp/><sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_m_c_p3428_8h_1aa752f7a385841d8e8b8f13fd9e6b6908" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_16BIT_15SPS<sp/><sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_m_c_p3428_8h_1aee5a82c5936b9456bef6cfc4d93ae9d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_GAIN_1X<sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_m_c_p3428_8h_1a8e7f53b6f35f70a3550fe4a85a608e0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_GAIN_2X<sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_m_c_p3428_8h_1a8275b657a742e5cd5450d424450aac9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_GAIN_4X<sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_m_c_p3428_8h_1a7bea17267ed6acdea3766e1450614a19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_GAIN_8X<sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_m_c_p3428" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" kindref="member">_slaveAddress</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_m_c_p3428_1a13bd7e01708ef3560122bd9c233fcde5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a13bd7e01708ef3560122bd9c233fcde5" kindref="member">_PGAgain</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i2_cdev" kindref="compound">I2Cdev</ref><sp/><ref refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" kindref="member">i2c</ref>;</highlight></codeline>
+<codeline lineno="44" refid="_m_c_p3428_8h_1a5c9c0f59d06b7360c990c3f49be81fa7" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_m_c_p3428_8h_1a2b8bdf2ccdee1cc9e95e8ec7714b68d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">configRegStruct{</highlight></codeline>
+<codeline lineno="46" refid="_m_c_p3428_8h_1aff2fa42ce9a7873d6aab9bccc6eeb310" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct_1a072954d757394d1de8fd1f6c8e6601a7" kindref="member">gain</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="_m_c_p3428_8h_1a286adbf6da614e751ef93a403bb120a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct_1ac30320cc5af5955f2041f12a7760e547" kindref="member">resolution</ref><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="48" refid="_m_c_p3428_8h_1ada38fba529204dfd36200b083aad0d8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct_1ad08f71fa4d1883ea81332498c156d288" kindref="member">conversion_mode</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="49" refid="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" kindref="member">channel_select</ref><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="50" refid="struct_m_c_p3428_1_1config_reg_struct_1a1789e56d30b801bef868aa802d1565c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct_1a1789e56d30b801bef868aa802d1565c0" kindref="member">RDY_bar</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<ref refid="class_m_c_p3428_1a45f5de5c78af614f925214fc5d3f988b" kindref="member">__attribute__</ref>((__packed__));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" kindref="member">_data</ref>[2];</highlight></codeline>
+<codeline lineno="54" refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_m_c_p3428_1_1config_reg_struct" kindref="compound">configRegStruct</ref><sp/><ref refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" kindref="member">_configReg</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" kindref="member">_writeConfig</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" kindref="member">_setChannel</ref>(uint8_t<sp/>channel_number);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1a465c84e16b26e35a8bc12f11d6b29040" kindref="member">MCP3428</ref>(uint8_t<sp/>i2c_address);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_c_p3428_1ae58238ff46a204fb03ff33fed52a073b" kindref="member">~MCP3428</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" kindref="member">setConfig</ref>(uint8_t<sp/>RDYflag,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>channel,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="_m_c_p3428_8h_1aff2fa42ce9a7873d6aab9bccc6eeb310" kindref="member">conversion_mode</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="_m_c_p3428_8h_1a2b8bdf2ccdee1cc9e95e8ec7714b68d2" kindref="member">resolution</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>PGA);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a5d5ba6815cafd19cfef940fa72e1a3a6" kindref="member">readConfig</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" kindref="member">readChannel</ref>(uint8_t<sp/>channel_number);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_c_p3428_1a87bc56015ab65b2bbf79e39a4b5bab9a" kindref="member">readChannelScaled</ref>(uint8_t<sp/>channel_numer);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="code/MCP3428/MCP3428.h"/>
+  </compounddef>
+</doxygen>

@@ -16,92 +16,92 @@
     <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
     <includedby refid="_monitor_window_8cpp" local="yes">code/Qt/MonitorWindow.cpp</includedby>
     <incdepgraph>
-      <node id="295">
+      <node id="423">
         <label>QtConcurrent</label>
       </node>
-      <node id="292">
+      <node id="420">
         <label>QCheckBox</label>
       </node>
-      <node id="286">
+      <node id="414">
         <label>code/Qt/MonitorWindow.h</label>
         <link refid="_monitor_window_8h"/>
-        <childnode refid="287" relation="include">
+        <childnode refid="415" relation="include">
         </childnode>
-        <childnode refid="288" relation="include">
+        <childnode refid="416" relation="include">
         </childnode>
-        <childnode refid="289" relation="include">
+        <childnode refid="417" relation="include">
         </childnode>
-        <childnode refid="290" relation="include">
+        <childnode refid="418" relation="include">
         </childnode>
-        <childnode refid="291" relation="include">
+        <childnode refid="419" relation="include">
         </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="420" relation="include">
         </childnode>
-        <childnode refid="293" relation="include">
+        <childnode refid="421" relation="include">
         </childnode>
-        <childnode refid="294" relation="include">
+        <childnode refid="422" relation="include">
         </childnode>
-        <childnode refid="295" relation="include">
+        <childnode refid="423" relation="include">
         </childnode>
-        <childnode refid="296" relation="include">
+        <childnode refid="424" relation="include">
         </childnode>
-        <childnode refid="297" relation="include">
+        <childnode refid="425" relation="include">
         </childnode>
       </node>
-      <node id="289">
+      <node id="417">
         <label>qwt/qwt_plot_curve.h</label>
       </node>
-      <node id="287">
+      <node id="415">
         <label>qwt/qwt_knob.h</label>
       </node>
-      <node id="294">
+      <node id="422">
         <label>QString</label>
       </node>
-      <node id="291">
+      <node id="419">
         <label>QColor</label>
       </node>
-      <node id="293">
+      <node id="421">
         <label>QPushButton</label>
       </node>
-      <node id="288">
+      <node id="416">
         <label>qwt/qwt_plot.h</label>
       </node>
-      <node id="296">
+      <node id="424">
         <label>QThreadPool</label>
       </node>
-      <node id="290">
+      <node id="418">
         <label>QBoxLayout</label>
       </node>
-      <node id="297">
+      <node id="425">
         <label>thread</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="301">
+      <node id="429">
         <label>code/Qt/mainwindow.cpp</label>
         <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="298">
+      <node id="426">
         <label>code/Qt/MonitorWindow.h</label>
         <link refid="_monitor_window_8h"/>
-        <childnode refid="299" relation="include">
+        <childnode refid="427" relation="include">
         </childnode>
-        <childnode refid="302" relation="include">
+        <childnode refid="430" relation="include">
         </childnode>
       </node>
-      <node id="302">
+      <node id="430">
         <label>code/Qt/MonitorWindow.cpp</label>
         <link refid="_monitor_window_8cpp"/>
       </node>
-      <node id="299">
+      <node id="427">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="300" relation="include">
+        <childnode refid="428" relation="include">
         </childnode>
-        <childnode refid="301" relation="include">
+        <childnode refid="429" relation="include">
         </childnode>
       </node>
-      <node id="300">
+      <node id="428">
         <label>code/Qt/main.cpp</label>
         <link refid="_qt_2main_8cpp"/>
       </node>
@@ -251,26 +251,26 @@
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
 <codeline lineno="186"></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
-<codeline lineno="191" refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" kindref="member">plotAcc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[3][plotBufferSize]){</highlight></codeline>
+<codeline lineno="191" refid="class_monitor_window_1ac6cc1742f3fcd20f4fa4f07b8687b0d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1ac6cc1742f3fcd20f4fa4f07b8687b0d1" kindref="member">plotAcc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>)[3][plotBufferSize]){</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++){</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>[i],<sp/>plotBufferSize);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
-<codeline lineno="203" refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" kindref="member">plotGyro</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[3][plotBufferSize]){<sp/></highlight></codeline>
+<codeline lineno="203" refid="class_monitor_window_1a96fdff7dc8de70530edd6db2b1cad6b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a96fdff7dc8de70530edd6db2b1cad6b5" kindref="member">plotGyro</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>)[3][plotBufferSize]){<sp/></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++){</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>[i],<sp/>plotBufferSize);</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
 <codeline lineno="211"></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
-<codeline lineno="216" refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" kindref="member">plotFinger</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[5][plotBufferSize]){</highlight></codeline>
+<codeline lineno="216" refid="class_monitor_window_1a90fdb8aff13223f47e310b648f3e21cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a90fdb8aff13223f47e310b648f3e21cf" kindref="member">plotFinger</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>)[5][plotBufferSize]){</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>i++){</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kindref="member">samples</ref>[i],<sp/>plotBufferSize);</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>

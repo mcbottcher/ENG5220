@@ -1,0 +1,26 @@
+var _m_c_p3428_8h =
+[
+    [ "MCP3428", "class_m_c_p3428.html", "class_m_c_p3428" ],
+    [ "configRegStruct", "struct_m_c_p3428_1_1config_reg_struct.html", "struct_m_c_p3428_1_1config_reg_struct" ],
+    [ "CONFIG_12BIT_240SPS", "_m_c_p3428_8h.html#aeb1c3a88dae5e8a9ace81548ac4561e8", null ],
+    [ "CONFIG_14BIT_60SPS", "_m_c_p3428_8h.html#a46aaea2d88bc8f694a33672d56a406ff", null ],
+    [ "CONFIG_16BIT_15SPS", "_m_c_p3428_8h.html#aa752f7a385841d8e8b8f13fd9e6b6908", null ],
+    [ "CONFIG_CHN1", "_m_c_p3428_8h.html#a4fde4a0dda433b99ce4bead1794e351a", null ],
+    [ "CONFIG_CHN2", "_m_c_p3428_8h.html#a073f26ab15d6f2e4b4d5418c7e600404", null ],
+    [ "CONFIG_CHN3", "_m_c_p3428_8h.html#acc8ead7eecb77bb6c4d9931bd2884fe2", null ],
+    [ "CONFIG_CHN4", "_m_c_p3428_8h.html#aafc5ccc5089da81e6947aa93758a3fb2", null ],
+    [ "CONFIG_CONTINUOUS_CONVERSION_MODE", "_m_c_p3428_8h.html#a79d01715089d1e7ee083e736d6152946", null ],
+    [ "CONFIG_CONVERSION_NO_EFFECT", "_m_c_p3428_8h.html#af6efc5eb5053736e287d1e3e49ac8eeb", null ],
+    [ "CONFIG_GAIN_1X", "_m_c_p3428_8h.html#aee5a82c5936b9456bef6cfc4d93ae9d6", null ],
+    [ "CONFIG_GAIN_2X", "_m_c_p3428_8h.html#a8e7f53b6f35f70a3550fe4a85a608e0e", null ],
+    [ "CONFIG_GAIN_4X", "_m_c_p3428_8h.html#a8275b657a742e5cd5450d424450aac9d", null ],
+    [ "CONFIG_GAIN_8X", "_m_c_p3428_8h.html#a7bea17267ed6acdea3766e1450614a19", null ],
+    [ "CONFIG_INIT_CONVERSION", "_m_c_p3428_8h.html#a710901e9d92a1d7631b85d7392f9e25f", null ],
+    [ "CONFIG_ONESHOT_CONVERSION_MODE", "_m_c_p3428_8h.html#a470d362dad0470f07bb5233002990885", null ],
+    [ "I2C_BUS", "_m_c_p3428_8h.html#a357ae664eb5f3c937443339e9b568c51", null ],
+    [ "channel_select", "_m_c_p3428_8h.html#a286adbf6da614e751ef93a403bb120a0", null ],
+    [ "conversion_mode", "_m_c_p3428_8h.html#aff2fa42ce9a7873d6aab9bccc6eeb310", null ],
+    [ "gain", "_m_c_p3428_8h.html#a5c9c0f59d06b7360c990c3f49be81fa7", null ],
+    [ "RDY_bar", "_m_c_p3428_8h.html#ada38fba529204dfd36200b083aad0d8f", null ],
+    [ "resolution", "_m_c_p3428_8h.html#a2b8bdf2ccdee1cc9e95e8ec7714b68d2", null ]
+];

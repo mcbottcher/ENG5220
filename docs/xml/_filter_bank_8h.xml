@@ -6,55 +6,54 @@
     <includedby refid="_filter_bank_8cpp" local="yes">code/FilterBank.cpp</includedby>
     <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
     <incdepgraph>
-      <node id="6">
+      <node id="122">
         <label>Iir.h</label>
       </node>
-      <node id="5">
+      <node id="121">
         <label>code/FilterBank.h</label>
         <link refid="_filter_bank_8h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="9">
+      <node id="125">
         <label>testfiles/FilterBankTest.cpp</label>
         <link refid="_filter_bank_test_8cpp"/>
       </node>
-      <node id="8">
+      <node id="124">
         <label>code/FilterBank.cpp</label>
         <link refid="_filter_bank_8cpp"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="128">
         <label>code/Qt/mainwindow.cpp</label>
         <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="7">
+      <node id="123">
         <label>code/FilterBank.h</label>
         <link refid="_filter_bank_8h"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="126" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="126">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="127" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="127">
         <label>code/Qt/main.cpp</label>
         <link refid="_qt_2main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_filter" prot="public">Filter</innerclass>
     <innerclass refid="class_filter_bank" prot="public">FilterBank</innerclass>
-    <innernamespace refid="namespacestd">std</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

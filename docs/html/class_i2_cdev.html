@@ -28,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_with_text-1 copy 2.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_with_text_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
@@ -96,9 +96,13 @@ $(document).ready(function(){initNavTree('class_i2_cdev.html','');});
 <div class="title">I2Cdev Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h_source.html">I2Cdev.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a466e2323d9f719a1ecc9fa11ac5c84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84">I2Cdev</a> ()</td></tr>
+<tr class="separator:a0a466e2323d9f719a1ecc9fa11ac5c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a466e2323d9f719a1ecc9fa11ac5c84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84">I2Cdev</a> ()</td></tr>
 <tr class="separator:a0a466e2323d9f719a1ecc9fa11ac5c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,65 +140,45 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa4e39cac6c0eac5112f9132084bcc93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae37c0526e4b4730a5b2ffd752fd8b21"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#aae37c0526e4b4730a5b2ffd752fd8b21">writeWords</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</td></tr>
 <tr class="separator:aae37c0526e4b4730a5b2ffd752fd8b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea44932d610604d29699ac932fcdcd9f"><td class="memItemLeft" align="right" valign="top"><a id="aea44932d610604d29699ac932fcdcd9f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>write_std</b> (uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</td></tr>
+<tr class="memitem:aea44932d610604d29699ac932fcdcd9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#aea44932d610604d29699ac932fcdcd9f">write_std</a> (uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</td></tr>
 <tr class="separator:aea44932d610604d29699ac932fcdcd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32fcdbfba31615b5761c5e991253898c"><td class="memItemLeft" align="right" valign="top"><a id="a32fcdbfba31615b5761c5e991253898c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>read_std</b> (uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</td></tr>
+<tr class="memitem:a32fcdbfba31615b5761c5e991253898c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a32fcdbfba31615b5761c5e991253898c">read_std</a> (uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</td></tr>
 <tr class="separator:a32fcdbfba31615b5761c5e991253898c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada206f7b5787944363ad9c56a7602351"><td class="memItemLeft" align="right" valign="top"><a id="ada206f7b5787944363ad9c56a7602351"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readBit</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:ada206f7b5787944363ad9c56a7602351"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#ada206f7b5787944363ad9c56a7602351">readBit</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:ada206f7b5787944363ad9c56a7602351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819dec6daa932e8a7137066c834f6bc3"><td class="memItemLeft" align="right" valign="top"><a id="a819dec6daa932e8a7137066c834f6bc3"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readBitW</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:a819dec6daa932e8a7137066c834f6bc3"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a819dec6daa932e8a7137066c834f6bc3">readBitW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:a819dec6daa932e8a7137066c834f6bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceeb3b466e36d87cb40767337bb6bede"><td class="memItemLeft" align="right" valign="top"><a id="aceeb3b466e36d87cb40767337bb6bede"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readBits</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:aceeb3b466e36d87cb40767337bb6bede"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#aceeb3b466e36d87cb40767337bb6bede">readBits</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:aceeb3b466e36d87cb40767337bb6bede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a03873c2806b464f1455d33110ef80"><td class="memItemLeft" align="right" valign="top"><a id="a13a03873c2806b464f1455d33110ef80"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readBitsW</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:a13a03873c2806b464f1455d33110ef80"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a13a03873c2806b464f1455d33110ef80">readBitsW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:a13a03873c2806b464f1455d33110ef80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11d59589047e81521fb1cb91bdce262"><td class="memItemLeft" align="right" valign="top"><a id="ab11d59589047e81521fb1cb91bdce262"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readByte</b> (uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:ab11d59589047e81521fb1cb91bdce262"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#ab11d59589047e81521fb1cb91bdce262">readByte</a> (uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:ab11d59589047e81521fb1cb91bdce262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5d90a762bb6fb950a0f168c5405801"><td class="memItemLeft" align="right" valign="top"><a id="a6d5d90a762bb6fb950a0f168c5405801"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readWord</b> (uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:a6d5d90a762bb6fb950a0f168c5405801"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a6d5d90a762bb6fb950a0f168c5405801">readWord</a> (uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:a6d5d90a762bb6fb950a0f168c5405801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db3ad2a5a5fc99a10de028598088143"><td class="memItemLeft" align="right" valign="top"><a id="a9db3ad2a5a5fc99a10de028598088143"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readBytes</b> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:a9db3ad2a5a5fc99a10de028598088143"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a9db3ad2a5a5fc99a10de028598088143">readBytes</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:a9db3ad2a5a5fc99a10de028598088143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb5571bcef670759c995b02380cdb8a"><td class="memItemLeft" align="right" valign="top"><a id="a7bb5571bcef670759c995b02380cdb8a"></a>
-static int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>readWords</b> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
+<tr class="memitem:a7bb5571bcef670759c995b02380cdb8a"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a7bb5571bcef670759c995b02380cdb8a">readWords</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint16_t timeout=<a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a>)</td></tr>
 <tr class="separator:a7bb5571bcef670759c995b02380cdb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fee368b18443d2f0098647d260ef00"><td class="memItemLeft" align="right" valign="top"><a id="aa4fee368b18443d2f0098647d260ef00"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBit</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)</td></tr>
+<tr class="memitem:aa4fee368b18443d2f0098647d260ef00"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#aa4fee368b18443d2f0098647d260ef00">writeBit</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)</td></tr>
 <tr class="separator:aa4fee368b18443d2f0098647d260ef00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb39954a2858470b16ed1264cc871e34"><td class="memItemLeft" align="right" valign="top"><a id="adb39954a2858470b16ed1264cc871e34"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBitW</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)</td></tr>
+<tr class="memitem:adb39954a2858470b16ed1264cc871e34"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#adb39954a2858470b16ed1264cc871e34">writeBitW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)</td></tr>
 <tr class="separator:adb39954a2858470b16ed1264cc871e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a09ceb15a27ac621fc7816f0dac5c3"><td class="memItemLeft" align="right" valign="top"><a id="a19a09ceb15a27ac621fc7816f0dac5c3"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBits</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</td></tr>
+<tr class="memitem:a19a09ceb15a27ac621fc7816f0dac5c3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a19a09ceb15a27ac621fc7816f0dac5c3">writeBits</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</td></tr>
 <tr class="separator:a19a09ceb15a27ac621fc7816f0dac5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0caf5928c7b5e14696aa325344670b"><td class="memItemLeft" align="right" valign="top"><a id="a3d0caf5928c7b5e14696aa325344670b"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBitsW</b> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)</td></tr>
+<tr class="memitem:a3d0caf5928c7b5e14696aa325344670b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a3d0caf5928c7b5e14696aa325344670b">writeBitsW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)</td></tr>
 <tr class="separator:a3d0caf5928c7b5e14696aa325344670b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a630ff78728db0cfc4e06556ab87ebd18"><td class="memItemLeft" align="right" valign="top"><a id="a630ff78728db0cfc4e06556ab87ebd18"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeByte</b> (uint8_t devAddr, uint8_t regAddr, uint8_t data)</td></tr>
+<tr class="memitem:a630ff78728db0cfc4e06556ab87ebd18"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a630ff78728db0cfc4e06556ab87ebd18">writeByte</a> (uint8_t devAddr, uint8_t regAddr, uint8_t data)</td></tr>
 <tr class="separator:a630ff78728db0cfc4e06556ab87ebd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939f61622f39de4c3b14b02bb12d9927"><td class="memItemLeft" align="right" valign="top"><a id="a939f61622f39de4c3b14b02bb12d9927"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeWord</b> (uint8_t devAddr, uint8_t regAddr, uint16_t data)</td></tr>
+<tr class="memitem:a939f61622f39de4c3b14b02bb12d9927"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a939f61622f39de4c3b14b02bb12d9927">writeWord</a> (uint8_t devAddr, uint8_t regAddr, uint16_t data)</td></tr>
 <tr class="separator:a939f61622f39de4c3b14b02bb12d9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff98d08476804e210ce0575995e5235"><td class="memItemLeft" align="right" valign="top"><a id="a3ff98d08476804e210ce0575995e5235"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBytes</b> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)</td></tr>
+<tr class="memitem:a3ff98d08476804e210ce0575995e5235"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a3ff98d08476804e210ce0575995e5235">writeBytes</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)</td></tr>
 <tr class="separator:a3ff98d08476804e210ce0575995e5235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a255d5177c0736b5c069708e7ad8a0cf4"><td class="memItemLeft" align="right" valign="top"><a id="a255d5177c0736b5c069708e7ad8a0cf4"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeWords</b> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</td></tr>
+<tr class="memitem:a255d5177c0736b5c069708e7ad8a0cf4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a255d5177c0736b5c069708e7ad8a0cf4">writeWords</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</td></tr>
 <tr class="separator:a255d5177c0736b5c069708e7ad8a0cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49618ca1bfae6ef27fba9f0c8b349dc4"><td class="memItemLeft" align="right" valign="top"><a id="a49618ca1bfae6ef27fba9f0c8b349dc4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>write_std</b> (uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</td></tr>
+<tr class="memitem:a49618ca1bfae6ef27fba9f0c8b349dc4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a49618ca1bfae6ef27fba9f0c8b349dc4">write_std</a> (uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</td></tr>
 <tr class="separator:a49618ca1bfae6ef27fba9f0c8b349dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9491cbbafac3040e91bc59909ec233"><td class="memItemLeft" align="right" valign="top"><a id="a2a9491cbbafac3040e91bc59909ec233"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>read_std</b> (uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</td></tr>
+<tr class="memitem:a2a9491cbbafac3040e91bc59909ec233"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_cdev.html#a2a9491cbbafac3040e91bc59909ec233">read_std</a> (uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</td></tr>
 <tr class="separator:a2a9491cbbafac3040e91bc59909ec233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -207,7 +191,7 @@ Static Public Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h_source.html#l00056">56</a> of file <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h_source.html">I2Cdev.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a466e2323d9f719a1ecc9fa11ac5c84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a466e2323d9f719a1ecc9fa11ac5c84">&#9670;&nbsp;</a></span>I2Cdev()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a466e2323d9f719a1ecc9fa11ac5c84">&#9670;&nbsp;</a></span>I2Cdev() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,9 +210,112 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0a466e2323d9f719a1ecc9fa11ac5c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a466e2323d9f719a1ecc9fa11ac5c84">&#9670;&nbsp;</a></span>I2Cdev() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2Cdev::I2Cdev </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a32fcdbfba31615b5761c5e991253898c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fcdbfba31615b5761c5e991253898c">&#9670;&nbsp;</a></span>read_std() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I2Cdev::read_std </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>slaveAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>rxdataBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>number_of_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html#l00438">438</a> of file <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html">I2Cdev.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2a9491cbbafac3040e91bc59909ec233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9491cbbafac3040e91bc59909ec233">&#9670;&nbsp;</a></span>read_std() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I2Cdev::read_std </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>slaveAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>rxdataBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>number_of_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abe6d8ea07027d362419de86188981559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe6d8ea07027d362419de86188981559">&#9670;&nbsp;</a></span>readBit()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6d8ea07027d362419de86188981559">&#9670;&nbsp;</a></span>readBit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,8 +381,122 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ada206f7b5787944363ad9c56a7602351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada206f7b5787944363ad9c56a7602351">&#9670;&nbsp;</a></span>readBit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readBit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aceeb3b466e36d87cb40767337bb6bede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceeb3b466e36d87cb40767337bb6bede">&#9670;&nbsp;</a></span>readBits() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readBits </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8e5e9742072bb80db06ccd46f52e2b6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e5e9742072bb80db06ccd46f52e2b6d">&#9670;&nbsp;</a></span>readBits()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5e9742072bb80db06ccd46f52e2b6d">&#9670;&nbsp;</a></span>readBits() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +570,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a1f417ba3e5ce99832e07c31522c97f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f417ba3e5ce99832e07c31522c97f87">&#9670;&nbsp;</a></span>readBitsW()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f417ba3e5ce99832e07c31522c97f87">&#9670;&nbsp;</a></span>readBitsW() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,8 +643,68 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a13a03873c2806b464f1455d33110ef80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a03873c2806b464f1455d33110ef80">&#9670;&nbsp;</a></span>readBitsW() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readBitsW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaaa3b9ef9500a7d69ccc3d0ccaae33c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaa3b9ef9500a7d69ccc3d0ccaae33c4">&#9670;&nbsp;</a></span>readBitW()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa3b9ef9500a7d69ccc3d0ccaae33c4">&#9670;&nbsp;</a></span>readBitW() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,8 +770,62 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a819dec6daa932e8a7137066c834f6bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819dec6daa932e8a7137066c834f6bc3">&#9670;&nbsp;</a></span>readBitW() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readBitW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad3fb41ce124a29f93749d99611c75c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3fb41ce124a29f93749d99611c75c33">&#9670;&nbsp;</a></span>readByte()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3fb41ce124a29f93749d99611c75c33">&#9670;&nbsp;</a></span>readByte() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,8 +884,110 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab11d59589047e81521fb1cb91bdce262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11d59589047e81521fb1cb91bdce262">&#9670;&nbsp;</a></span>readByte() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9db3ad2a5a5fc99a10de028598088143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db3ad2a5a5fc99a10de028598088143">&#9670;&nbsp;</a></span>readBytes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readBytes </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aca9c503da5cffd6ac6f8eff9b195c5f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca9c503da5cffd6ac6f8eff9b195c5f4">&#9670;&nbsp;</a></span>readBytes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9c503da5cffd6ac6f8eff9b195c5f4">&#9670;&nbsp;</a></span>readBytes() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -637,7 +1054,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a545cd48b1e806e7e467b542c9e38e8c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a545cd48b1e806e7e467b542c9e38e8c8">&#9670;&nbsp;</a></span>readWord()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a545cd48b1e806e7e467b542c9e38e8c8">&#9670;&nbsp;</a></span>readWord() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,8 +1113,56 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d5d90a762bb6fb950a0f168c5405801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5d90a762bb6fb950a0f168c5405801">&#9670;&nbsp;</a></span>readWord() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readWord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1b3d895dc6a00cbb5fb3b0441b2e35de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b3d895dc6a00cbb5fb3b0441b2e35de">&#9670;&nbsp;</a></span>readWords()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3d895dc6a00cbb5fb3b0441b2e35de">&#9670;&nbsp;</a></span>readWords() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -763,8 +1228,148 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7bb5571bcef670759c995b02380cdb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb5571bcef670759c995b02380cdb8a">&#9670;&nbsp;</a></span>readWords() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t I2Cdev::readWords </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c">I2Cdev::readTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea44932d610604d29699ac932fcdcd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea44932d610604d29699ac932fcdcd9f">&#9670;&nbsp;</a></span>write_std() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I2Cdev::write_std </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>slaveAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>txdataBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>number_of_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html#l00423">423</a> of file <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html">I2Cdev.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a49618ca1bfae6ef27fba9f0c8b349dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49618ca1bfae6ef27fba9f0c8b349dc4">&#9670;&nbsp;</a></span>write_std() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I2Cdev::write_std </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>slaveAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>txdataBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>number_of_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa68890af87de5471d32e583ebbd91acb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa68890af87de5471d32e583ebbd91acb">&#9670;&nbsp;</a></span>writeBit()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68890af87de5471d32e583ebbd91acb">&#9670;&nbsp;</a></span>writeBit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -823,8 +1428,56 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4fee368b18443d2f0098647d260ef00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4fee368b18443d2f0098647d260ef00">&#9670;&nbsp;</a></span>writeBit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeBit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a913371251b6a41520c080115650e1b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a913371251b6a41520c080115650e1b59">&#9670;&nbsp;</a></span>writeBits()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a913371251b6a41520c080115650e1b59">&#9670;&nbsp;</a></span>writeBits() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,8 +1543,62 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a19a09ceb15a27ac621fc7816f0dac5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a09ceb15a27ac621fc7816f0dac5c3">&#9670;&nbsp;</a></span>writeBits() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeBits </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8f8652a1328224cce867eed665a45c4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f8652a1328224cce867eed665a45c4d">&#9670;&nbsp;</a></span>writeBitsW()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8652a1328224cce867eed665a45c4d">&#9670;&nbsp;</a></span>writeBitsW() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -957,8 +1664,62 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d0caf5928c7b5e14696aa325344670b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0caf5928c7b5e14696aa325344670b">&#9670;&nbsp;</a></span>writeBitsW() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeBitsW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1b5fbedfadec5d429c81ee84d27e658d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5fbedfadec5d429c81ee84d27e658d">&#9670;&nbsp;</a></span>writeBitW()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5fbedfadec5d429c81ee84d27e658d">&#9670;&nbsp;</a></span>writeBitW() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1017,8 +1778,56 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adb39954a2858470b16ed1264cc871e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb39954a2858470b16ed1264cc871e34">&#9670;&nbsp;</a></span>writeBitW() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeBitW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeb297637ef985cd562da465ba61b7042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb297637ef985cd562da465ba61b7042">&#9670;&nbsp;</a></span>writeByte()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb297637ef985cd562da465ba61b7042">&#9670;&nbsp;</a></span>writeByte() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1070,8 +1879,98 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a630ff78728db0cfc4e06556ab87ebd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630ff78728db0cfc4e06556ab87ebd18">&#9670;&nbsp;</a></span>writeByte() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ff98d08476804e210ce0575995e5235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff98d08476804e210ce0575995e5235">&#9670;&nbsp;</a></span>writeBytes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeBytes </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa4e39cac6c0eac5112f9132084bcc93e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4e39cac6c0eac5112f9132084bcc93e">&#9670;&nbsp;</a></span>writeBytes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e39cac6c0eac5112f9132084bcc93e">&#9670;&nbsp;</a></span>writeBytes() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1130,8 +2029,50 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a939f61622f39de4c3b14b02bb12d9927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939f61622f39de4c3b14b02bb12d9927">&#9670;&nbsp;</a></span>writeWord() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeWord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acbe68a802d6a177301736e60bedd1def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe68a802d6a177301736e60bedd1def">&#9670;&nbsp;</a></span>writeWord()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe68a802d6a177301736e60bedd1def">&#9670;&nbsp;</a></span>writeWord() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1184,7 +2125,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aae37c0526e4b4730a5b2ffd752fd8b21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae37c0526e4b4730a5b2ffd752fd8b21">&#9670;&nbsp;</a></span>writeWords()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae37c0526e4b4730a5b2ffd752fd8b21">&#9670;&nbsp;</a></span>writeWords() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1240,6 +2181,54 @@ Static Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation (true = success) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html#l00381">381</a> of file <a class="el" href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8cpp_source.html">I2Cdev.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a255d5177c0736b5c069708e7ad8a0cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255d5177c0736b5c069708e7ad8a0cf4">&#9670;&nbsp;</a></span>writeWords() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I2Cdev::writeWords </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -9,63 +9,83 @@
     <includes local="no">iostream</includes>
     <includes local="no">fstream</includes>
     <includes local="yes">cppTimer/CppTimer.h</includes>
-    <includes local="yes">MPU6050/MPU6050.h</includes>
-    <includes local="yes">MCP3428/MCP3428.h</includes>
+    <includes refid="_m_p_u6050_8h" local="yes">MPU6050/MPU6050.h</includes>
+    <includes refid="_m_c_p3428_8h" local="yes">MCP3428/MCP3428.h</includes>
     <includes refid="_ring_buff_8h" local="yes">RingBuff.h</includes>
     <incdepgraph>
-      <node id="411">
-        <label>MCP3428/MCP3428.h</label>
-      </node>
-      <node id="409">
+      <node id="541">
         <label>cppTimer/CppTimer.h</label>
       </node>
-      <node id="412">
+      <node id="546">
         <label>RingBuff.h</label>
         <link refid="_ring_buff_8h"/>
       </node>
-      <node id="405">
+      <node id="537">
         <label>stdint.h</label>
       </node>
-      <node id="406">
+      <node id="538">
         <label>stdlib.h</label>
       </node>
-      <node id="410">
+      <node id="542">
         <label>MPU6050/MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="543" relation="include">
+        </childnode>
       </node>
-      <node id="408">
+      <node id="545">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="540">
         <label>fstream</label>
       </node>
-      <node id="402">
+      <node id="534">
         <label>code/sampledata.cpp</label>
         <link refid="sampledata_8cpp"/>
-        <childnode refid="403" relation="include">
+        <childnode refid="535" relation="include">
         </childnode>
-        <childnode refid="404" relation="include">
+        <childnode refid="536" relation="include">
         </childnode>
-        <childnode refid="405" relation="include">
+        <childnode refid="537" relation="include">
         </childnode>
-        <childnode refid="406" relation="include">
+        <childnode refid="538" relation="include">
         </childnode>
-        <childnode refid="407" relation="include">
+        <childnode refid="539" relation="include">
         </childnode>
-        <childnode refid="408" relation="include">
+        <childnode refid="540" relation="include">
         </childnode>
-        <childnode refid="409" relation="include">
+        <childnode refid="541" relation="include">
         </childnode>
-        <childnode refid="410" relation="include">
+        <childnode refid="542" relation="include">
         </childnode>
-        <childnode refid="411" relation="include">
+        <childnode refid="544" relation="include">
         </childnode>
-        <childnode refid="412" relation="include">
+        <childnode refid="546" relation="include">
         </childnode>
       </node>
-      <node id="403">
+      <node id="544">
+        <label>MCP3428/MCP3428.h</label>
+        <link refid="_m_c_p3428_8h"/>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+      </node>
+      <node id="535">
         <label>unistd.h</label>
       </node>
-      <node id="407">
+      <node id="539">
         <label>iostream</label>
       </node>
-      <node id="404">
+      <node id="543">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="536">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -291,6 +311,45 @@
         </inbodydescription>
         <location file="code/sampledata.cpp" line="39" column="1" bodyfile="code/sampledata.cpp" bodystart="39" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="sampledata_8cpp_1aa0a4c127913498f3ade83e13ae6db9e9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m_p_u6050" kindref="compound">MPU6050</ref></type>
+        <definition>MPU6050 motionSensor(MPU6050_I2C_ADDRESS)</definition>
+        <argsstring>(MPU6050_I2C_ADDRESS)</argsstring>
+        <name>motionSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/sampledata.cpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sampledata_8cpp_1ad6786df5304329c5da62507fcb109a5c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref></type>
+        <definition>MCP3428 flexFingers(MCP3428_I2C_ADDRESS)</definition>
+        <argsstring>(MCP3428_I2C_ADDRESS)</argsstring>
+        <name>flexFingers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/sampledata.cpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sampledata_8cpp_1a0ba7967a5ea0eb591dd02fa02958a247" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref></type>
+        <definition>MCP3428 flexThumb(MCP3421_I2C_ADDRESS)</definition>
+        <argsstring>(MCP3421_I2C_ADDRESS)</argsstring>
+        <name>flexThumb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/sampledata.cpp" line="44" column="1"/>
+      </memberdef>
       <memberdef kind="variable" id="sampledata_8cpp_1a2a0e63f3a7f80821c082ca75f9c8a09c" prot="public" static="no" mutable="no">
         <type>int16_t</type>
         <definition>int16_t dataBuffer[11][NUMBER_OF_BUFFER_ELEMENTS]</definition>
@@ -306,54 +365,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>MPU6050</type>
-        <definition>MPU6050 motionSensor</definition>
-        <argsstring>(MPU6050_I2C_ADDRESS)</argsstring>
-        <name>motionSensor</name>
-        <param>
-          <type><ref refid="sampledata_8cpp_1a9d33ce0b80020007ba5277b9427fd003" kindref="member">MPU6050_I2C_ADDRESS</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="code/sampledata.cpp" line="42" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="sampledata_8cpp_1aa32b5e52035231274566aa4cbda948d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>MCP3428</type>
-        <definition>MCP3428 flexFingers</definition>
-        <argsstring>(MCP3428_I2C_ADDRESS)</argsstring>
-        <name>flexFingers</name>
-        <param>
-          <type><ref refid="sampledata_8cpp_1a6456c13b8d7bebacf0dbfdf7934ced1f" kindref="member">MCP3428_I2C_ADDRESS</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="code/sampledata.cpp" line="43" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="sampledata_8cpp_1a62d229031b86e55130e5c0160504de49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>MCP3428</type>
-        <definition>MCP3428 flexThumb</definition>
-        <argsstring>(MCP3421_I2C_ADDRESS)</argsstring>
-        <name>flexThumb</name>
-        <param>
-          <type><ref refid="sampledata_8cpp_1a0211acdeea921fb313fc5836ed6e2145" kindref="member">MCP3421_I2C_ADDRESS</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="code/sampledata.cpp" line="44" column="1"/>
-      </memberdef>
       <memberdef kind="function" id="sampledata_8cpp_1ab644c7e32bd82c73e211f74c032bd315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void sampleSensors</definition>
@@ -422,9 +433,9 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cppTimer/CppTimer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MPU6050/MPU6050.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_p_u6050_8h" kindref="compound">MPU6050/MPU6050.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;MPU6050/I2Cdev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MCP3428/MCP3428.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_c_p3428_8h" kindref="compound">MCP3428/MCP3428.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ring_buff_8h" kindref="compound">RingBuff.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="sampledata_8cpp_1ae7e21fec441ccd6e563cb94a90452c1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_REPETITIONS<sp/>40</highlight><highlight class="normal"></highlight></codeline>
@@ -453,20 +464,20 @@
 <codeline lineno="39" refid="sampledata_8cpp_1ae9dd6ba93ed713dd79a6f61b97c58486" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="sampledata_8cpp_1ae9dd6ba93ed713dd79a6f61b97c58486" kindref="member">thumb_value</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>check<sp/>if<sp/>the<sp/>splitting<sp/>of<sp/>file<sp/>descriptors<sp/>is<sp/>an<sp/>issue...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal">MPU6050<sp/><ref refid="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" kindref="member">motionSensor</ref>(<ref refid="sampledata_8cpp_1a9d33ce0b80020007ba5277b9427fd003" kindref="member">MPU6050_I2C_ADDRESS</ref>);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal">MCP3428<sp/><ref refid="sampledata_8cpp_1aa32b5e52035231274566aa4cbda948d6" kindref="member">flexFingers</ref>(<ref refid="sampledata_8cpp_1a6456c13b8d7bebacf0dbfdf7934ced1f" kindref="member">MCP3428_I2C_ADDRESS</ref>);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">MCP3428<sp/><ref refid="sampledata_8cpp_1a62d229031b86e55130e5c0160504de49" kindref="member">flexThumb</ref>(<ref refid="sampledata_8cpp_1a0211acdeea921fb313fc5836ed6e2145" kindref="member">MCP3421_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="class_m_p_u6050" kindref="compound">MPU6050</ref><sp/><ref refid="sampledata_8cpp_1aa0a4c127913498f3ade83e13ae6db9e9" kindref="member">motionSensor</ref>(<ref refid="sampledata_8cpp_1a9d33ce0b80020007ba5277b9427fd003" kindref="member">MPU6050_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref><sp/><ref refid="sampledata_8cpp_1ad6786df5304329c5da62507fcb109a5c" kindref="member">flexFingers</ref>(<ref refid="sampledata_8cpp_1a6456c13b8d7bebacf0dbfdf7934ced1f" kindref="member">MCP3428_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref><sp/><ref refid="sampledata_8cpp_1a0ba7967a5ea0eb591dd02fa02958a247" kindref="member">flexThumb</ref>(<ref refid="sampledata_8cpp_1a0211acdeea921fb313fc5836ed6e2145" kindref="member">MCP3421_I2C_ADDRESS</ref>);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//11<sp/>==<sp/>number<sp/>of<sp/>sensors,<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47" refid="sampledata_8cpp_1a2a0e63f3a7f80821c082ca75f9c8a09c" refkind="member"><highlight class="normal">int16_t<sp/><ref refid="sampledata_8cpp_1a2a0e63f3a7f80821c082ca75f9c8a09c" kindref="member">dataBuffer</ref>[11][<ref refid="sampledata_8cpp_1a15dda0e84869655d2b16ff1b2c3c6d5b" kindref="member">NUMBER_OF_BUFFER_ELEMENTS</ref>];</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49" refid="sampledata_8cpp_1ab644c7e32bd82c73e211f74c032bd315" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sampledata_8cpp_1ab644c7e32bd82c73e211f74c032bd315" kindref="member">sampleSensors</ref>(){</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" kindref="member">motionSensor</ref>.getMotion6(&amp;<ref refid="sampledata_8cpp_1aebedd0a48fe876cce3d3f14326e4ca66" kindref="member">ax</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a46d26903f1874d06875a974dfa1a9d3c" kindref="member">ay</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a41e60f9324f9d4fd9e916e964370fb2f" kindref="member">az</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a4524555b50a829ee7628cf5e5806f227" kindref="member">gx</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a8bd44b73dc5745833a8dd8d2a6240613" kindref="member">gy</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1aa61e9778c784ec4695029ed2cc769a61" kindref="member">gz</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1aa0a4c127913498f3ade83e13ae6db9e9" kindref="member">motionSensor</ref>.<ref refid="class_m_p_u6050_1a574d3093dc131e4251a9b37adf208ca7" kindref="member">getMotion6</ref>(&amp;<ref refid="sampledata_8cpp_1aebedd0a48fe876cce3d3f14326e4ca66" kindref="member">ax</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a46d26903f1874d06875a974dfa1a9d3c" kindref="member">ay</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a41e60f9324f9d4fd9e916e964370fb2f" kindref="member">az</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a4524555b50a829ee7628cf5e5806f227" kindref="member">gx</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1a8bd44b73dc5745833a8dd8d2a6240613" kindref="member">gy</ref>,<sp/>&amp;<ref refid="sampledata_8cpp_1aa61e9778c784ec4695029ed2cc769a61" kindref="member">gz</ref>);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="sampledata_8cpp_1ab678d4cc931a32dbfcde84c6cda87d89" kindref="member">NUMBER_OF_FINGERS</ref>;<sp/>i++){</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1a1e23b69cbfb15c0a5587aa3272f9dbac" kindref="member">finger_value</ref>[i]<sp/>=<sp/><ref refid="sampledata_8cpp_1aa32b5e52035231274566aa4cbda948d6" kindref="member">flexFingers</ref>.readChannel(i);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1a1e23b69cbfb15c0a5587aa3272f9dbac" kindref="member">finger_value</ref>[i]<sp/>=<sp/><ref refid="sampledata_8cpp_1ad6786df5304329c5da62507fcb109a5c" kindref="member">flexFingers</ref>.<ref refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" kindref="member">readChannel</ref>(i);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1ae9dd6ba93ed713dd79a6f61b97c58486" kindref="member">thumb_value</ref><sp/>=<sp/><ref refid="sampledata_8cpp_1a62d229031b86e55130e5c0160504de49" kindref="member">flexThumb</ref>.readChannel(1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1ae9dd6ba93ed713dd79a6f61b97c58486" kindref="member">thumb_value</ref><sp/>=<sp/><ref refid="sampledata_8cpp_1a0ba7967a5ea0eb591dd02fa02958a247" kindref="member">flexThumb</ref>.<ref refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" kindref="member">readChannel</ref>(1);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58" refid="sampledata_8cpp_1a299ad0f14f85526d4bb7bffebefdc1f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sampledata_8cpp_1a299ad0f14f85526d4bb7bffebefdc1f0" kindref="member">insertDataToBuff</ref>(){</highlight></codeline>
@@ -520,21 +531,21 @@
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107" refid="sampledata_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sampledata_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" kindref="member">motionSensor</ref>.initialize();<sp/><sp/></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(<ref refid="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" kindref="member">motionSensor</ref>.testConnection()<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>successful\r\n&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>failed\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1aa0a4c127913498f3ade83e13ae6db9e9" kindref="member">motionSensor</ref>.<ref refid="class_m_p_u6050_1abd8fc6c18adf158011118fbccc7e7054" kindref="member">initialize</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(<ref refid="sampledata_8cpp_1aa0a4c127913498f3ade83e13ae6db9e9" kindref="member">motionSensor</ref>.<ref refid="class_m_p_u6050_1a95ffab7b44fce3834236e0813687d11a" kindref="member">testConnection</ref>()<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>successful\r\n&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>failed\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>put<sp/>the<sp/>config<sp/>in<sp/>a<sp/>structure...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1aa32b5e52035231274566aa4cbda948d6" kindref="member">flexFingers</ref>.setConfig(<sp/><sp/>CONFIG_INIT_CONVERSION,</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CHN1,</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CONTINUOUS_CONVERSION_MODE,</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_12BIT_240SPS,</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_GAIN_1X<sp/><sp/>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1ad6786df5304329c5da62507fcb109a5c" kindref="member">flexFingers</ref>.<ref refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" kindref="member">setConfig</ref>(<sp/><sp/><ref refid="_m_c_p3428_8h_1a710901e9d92a1d7631b85d7392f9e25f" kindref="member">CONFIG_INIT_CONVERSION</ref>,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1a4fde4a0dda433b99ce4bead1794e351a" kindref="member">CONFIG_CHN1</ref>,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1a79d01715089d1e7ee083e736d6152946" kindref="member">CONFIG_CONTINUOUS_CONVERSION_MODE</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1aeb1c3a88dae5e8a9ace81548ac4561e8" kindref="member">CONFIG_12BIT_240SPS</ref>,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1aee5a82c5936b9456bef6cfc4d93ae9d6" kindref="member">CONFIG_GAIN_1X</ref><sp/><sp/>);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1a62d229031b86e55130e5c0160504de49" kindref="member">flexThumb</ref>.setConfig(<sp/><sp/><sp/><sp/>CONFIG_INIT_CONVERSION,</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CHN1,</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CONTINUOUS_CONVERSION_MODE,</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_12BIT_240SPS,</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_GAIN_1X<sp/><sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sampledata_8cpp_1a0ba7967a5ea0eb591dd02fa02958a247" kindref="member">flexThumb</ref>.<ref refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" kindref="member">setConfig</ref>(<sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1a710901e9d92a1d7631b85d7392f9e25f" kindref="member">CONFIG_INIT_CONVERSION</ref>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1a4fde4a0dda433b99ce4bead1794e351a" kindref="member">CONFIG_CHN1</ref>,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1a79d01715089d1e7ee083e736d6152946" kindref="member">CONFIG_CONTINUOUS_CONVERSION_MODE</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1aeb1c3a88dae5e8a9ace81548ac4561e8" kindref="member">CONFIG_12BIT_240SPS</ref>,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_c_p3428_8h_1aee5a82c5936b9456bef6cfc4d93ae9d6" kindref="member">CONFIG_GAIN_1X</ref><sp/><sp/>);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>myfile;</highlight></codeline>

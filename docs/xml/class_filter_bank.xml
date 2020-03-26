@@ -235,14 +235,14 @@
 </para>
     </detaileddescription>
     <collaborationgraph>
-      <node id="8">
+      <node id="10">
         <label>Filter</label>
         <link refid="class_filter"/>
       </node>
-      <node id="7">
+      <node id="9">
         <label>FilterBank</label>
         <link refid="class_filter_bank"/>
-        <childnode refid="8" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>filterObjArray</edgelabel>
         </childnode>
       </node>

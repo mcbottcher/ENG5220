@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['main',['main',['../_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCXXCompilerId.cpp'],['../feature__tests_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;feature_tests.c'],['../feature__tests_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;feature_tests.cxx'],['../neuralnet__predict_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../python_training_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../_qt_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp'],['../sampledata_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;sampledata.cpp'],['../_filter_bank_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;FilterBankTest.cpp'],['../_ring_buff_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;RingBuffTest.cpp']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow']]],
-  ['monitor_5fbutton_5fclicked',['monitor_button_clicked',['../class_main_window.html#aa4fa6a554c62b580d26a9f4882b35395',1,'MainWindow']]],
-  ['monitorwindow',['MonitorWindow',['../class_monitor_window.html#afafb4e4916800024a71876dbe89a4952',1,'MonitorWindow']]],
-  ['motionsensor',['motionSensor',['../sampledata_8cpp.html#abeaed26c55101162aeb097d5a2a1468b',1,'sampledata.cpp']]]
+  ['i2cdev',['I2Cdev',['../class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84',1,'I2Cdev::I2Cdev()'],['../class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84',1,'I2Cdev::I2Cdev()']]],
+  ['initialize',['initialize',['../class_m_p_u6050.html#abd8fc6c18adf158011118fbccc7e7054',1,'MPU6050']]],
+  ['insertdatatobuff',['insertDataToBuff',['../sampledata_8cpp.html#a299ad0f14f85526d4bb7bffebefdc1f0',1,'sampledata.cpp']]],
+  ['insertsample',['insertSample',['../struct_monitor_window_1_1_curve.html#af3f945d24ae061be01d6b420f8ba26c2',1,'MonitorWindow::Curve::insertSample()'],['../class_ring_buff.html#a0074a4b03a04b9b245545c6224dc2f9b',1,'RingBuff::insertSample()']]],
+  ['insertsamples',['insertSamples',['../class_neural_net.html#a7886a708a90f398259221e5a9f9e1a65',1,'NeuralNet']]],
+  ['interpretbuttonclicked',['interpretButtonClicked',['../class_main_window.html#a5f79fa5048dcd15e8fbc9e2cc585cdf2',1,'MainWindow']]],
+  ['interprethome',['interpretHome',['../class_main_window.html#a34837782b2e58775e746e79bd825c102',1,'MainWindow']]],
+  ['interpretwindow',['InterpretWindow',['../class_interpret_window.html#ac30a9385a01d43c87d4567ec278a9e35',1,'InterpretWindow']]]
 ];

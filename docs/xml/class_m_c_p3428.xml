@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_m_c_p3428" kind="class" language="C++" prot="public">
+    <compoundname>MCP3428</compoundname>
+    <includes refid="_m_c_p3428_8h" local="no">MCP3428.h</includes>
+    <innerclass refid="struct_m_c_p3428_1_1config_reg_struct" prot="private">MCP3428::configRegStruct</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::_slaveAddress</definition>
+        <argsstring></argsstring>
+        <name>_slaveAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="41" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_c_p3428_1a13bd7e01708ef3560122bd9c233fcde5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MCP3428::_PGAgain</definition>
+        <argsstring></argsstring>
+        <name>_PGAgain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="42" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i2_cdev" kindref="compound">I2Cdev</ref></type>
+        <definition>I2Cdev MCP3428::i2c</definition>
+        <argsstring></argsstring>
+        <name>i2c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="43" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::_data[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="53" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_m_c_p3428_1_1config_reg_struct" kindref="compound">configRegStruct</ref></type>
+        <definition>configRegStruct MCP3428::_configReg</definition>
+        <argsstring></argsstring>
+        <name>_configReg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="54" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_m_c_p3428_1a45f5de5c78af614f925214fc5d3f988b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct_m_c_p3428_1_1config_reg_struct" kindref="compound">MCP3428::configRegStruct</ref></type>
+        <definition>struct MCP3428::configRegStruct MCP3428::__attribute__</definition>
+        <argsstring>((__packed__))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(__packed__)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP3428::_writeConfig</definition>
+        <argsstring>()</argsstring>
+        <name>_writeConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="56" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP3428::_setChannel</definition>
+        <argsstring>(uint8_t channel_number)</argsstring>
+        <name>_setChannel</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="57" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_c_p3428_1a465c84e16b26e35a8bc12f11d6b29040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MCP3428::MCP3428</definition>
+        <argsstring>(uint8_t i2c_address)</argsstring>
+        <name>MCP3428</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2c_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="61" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1ae58238ff46a204fb03ff33fed52a073b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MCP3428::~MCP3428</definition>
+        <argsstring>()</argsstring>
+        <name>~MCP3428</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="62" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="28" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP3428::setConfig</definition>
+        <argsstring>(uint8_t RDYflag, uint8_t channel, uint8_t conversion_mode, uint8_t resolution, uint8_t PGA)</argsstring>
+        <name>setConfig</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>RDYflag</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>conversion_mode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PGA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="64" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="32" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1a5d5ba6815cafd19cfef940fa72e1a3a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP3428::readConfig</definition>
+        <argsstring>()</argsstring>
+        <name>readConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="70" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t MCP3428::readChannel</definition>
+        <argsstring>(uint8_t channel_number)</argsstring>
+        <name>readChannel</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="73" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="64" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_c_p3428_1a87bc56015ab65b2bbf79e39a4b5bab9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double MCP3428::readChannelScaled</definition>
+        <argsstring>(uint8_t channel_numer)</argsstring>
+        <name>readChannelScaled</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel_numer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="74" column="1" bodyfile="code/MCP3428/MCP3428.cpp" bodystart="78" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="36">
+        <label>MCP3428</label>
+        <link refid="class_m_c_p3428"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>_configReg</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>i2c</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>I2Cdev</label>
+        <link refid="class_i2_cdev"/>
+      </node>
+      <node id="37">
+        <label>MCP3428::configRegStruct</label>
+        <link refid="struct_m_c_p3428_1_1config_reg_struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/MCP3428/MCP3428.h" line="37" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="37" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_m_c_p3428_1a45f5de5c78af614f925214fc5d3f988b" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>__attribute__</name></member>
+      <member refid="class_m_c_p3428_1a2b63d4810f8ddf90de29a5835973ff1f" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_configReg</name></member>
+      <member refid="class_m_c_p3428_1a54ab7c037fb1891679ee7258346169f6" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_data</name></member>
+      <member refid="class_m_c_p3428_1a13bd7e01708ef3560122bd9c233fcde5" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_PGAgain</name></member>
+      <member refid="class_m_c_p3428_1aa16671ba958b8afadd76f5975c4f4d49" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_setChannel</name></member>
+      <member refid="class_m_c_p3428_1ac49a077350b0d058f83b5c25c6b1876e" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_slaveAddress</name></member>
+      <member refid="class_m_c_p3428_1a38604159af4f2558d0e6058f01a2d6de" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>_writeConfig</name></member>
+      <member refid="class_m_c_p3428_1a51eb206de1889199eb73ce1d94b9a8fe" prot="private" virt="non-virtual"><scope>MCP3428</scope><name>i2c</name></member>
+      <member refid="class_m_c_p3428_1a465c84e16b26e35a8bc12f11d6b29040" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>MCP3428</name></member>
+      <member refid="class_m_c_p3428_1a6e21eeffb6aaaf44271e14d8a931f784" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>readChannel</name></member>
+      <member refid="class_m_c_p3428_1a87bc56015ab65b2bbf79e39a4b5bab9a" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>readChannelScaled</name></member>
+      <member refid="class_m_c_p3428_1a5d5ba6815cafd19cfef940fa72e1a3a6" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>readConfig</name></member>
+      <member refid="class_m_c_p3428_1aadd87f78e05d1e6ded1ec568fe86f03f" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>setConfig</name></member>
+      <member refid="class_m_c_p3428_1ae58238ff46a204fb03ff33fed52a073b" prot="public" virt="non-virtual"><scope>MCP3428</scope><name>~MCP3428</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

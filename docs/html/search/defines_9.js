@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['sample_5frate',['SAMPLE_RATE',['../config_8h.html#a4b76a0c2859cfd819a343a780070ee2b',1,'config.h']]],
-  ['sample_5frate_5fhz',['SAMPLE_RATE_Hz',['../sampledata_8cpp.html#a58d0c7ca9b21de6ae87f55ea649157b9',1,'sampledata.cpp']]],
-  ['sample_5ftime_5fseconds',['SAMPLE_TIME_SECONDS',['../config_8h.html#a9dbac9b6d0cfcac1e3070b1c81c0c8a0',1,'SAMPLE_TIME_SECONDS():&#160;config.h'],['../sampledata_8cpp.html#a9dbac9b6d0cfcac1e3070b1c81c0c8a0',1,'SAMPLE_TIME_SECONDS():&#160;sampledata.cpp']]],
-  ['stringify',['STRINGIFY',['../_c_make_c_compiler_id_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY():&#160;CMakeCXXCompilerId.cpp']]],
-  ['stringify_5fhelper',['STRINGIFY_HELPER',['../_c_make_c_compiler_id_8c.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'STRINGIFY_HELPER():&#160;CMakeCXXCompilerId.cpp']]]
+  ['pgm_5fread_5fbyte',['pgm_read_byte',['../_m_p_u6050_8h.html#ae6778ca2c38951f24bd39f9c38cab9b2',1,'MPU6050.h']]],
+  ['platform_5fid',['PLATFORM_ID',['../_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp']]],
+  ['plot_5fbuffer_5fsize',['PLOT_BUFFER_SIZE',['../mainwindow_8h.html#a013ac9311fb70daf016d70e1cc00c5ed',1,'mainwindow.h']]]
 ];

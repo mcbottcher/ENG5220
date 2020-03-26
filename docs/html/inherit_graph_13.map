@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_train_net.html" title=" " alt="" coords="5,5,77,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,85,80"/>
+<area shape="rect" id="node2" href="$class_sample_timer.html" title="Sample Timer Class." alt="" coords="133,5,233,31"/>
+<area shape="rect" id="node3" href="$class_ticker.html" title=" " alt="" coords="154,55,211,80"/>
+<area shape="rect" id="node4" href="$class_timer.html" title=" " alt="" coords="155,104,210,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="10,5,80,31"/>
 </map>

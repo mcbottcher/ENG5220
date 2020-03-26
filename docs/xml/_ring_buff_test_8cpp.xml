@@ -5,25 +5,25 @@
     <includes local="no">iostream</includes>
     <includes refid="_ring_buff_8cpp" local="yes">../code/RingBuff.cpp</includes>
     <incdepgraph>
-      <node id="431">
+      <node id="567">
         <label>RingBuff.h</label>
         <link refid="_ring_buff_8h"/>
       </node>
-      <node id="430">
+      <node id="566">
         <label>../code/RingBuff.cpp</label>
         <link refid="_ring_buff_8cpp"/>
-        <childnode refid="431" relation="include">
+        <childnode refid="567" relation="include">
         </childnode>
       </node>
-      <node id="429">
+      <node id="565">
         <label>iostream</label>
       </node>
-      <node id="428">
+      <node id="564">
         <label>testfiles/RingBuffTest.cpp</label>
         <link refid="_ring_buff_test_8cpp"/>
-        <childnode refid="429" relation="include">
+        <childnode refid="565" relation="include">
         </childnode>
-        <childnode refid="430" relation="include">
+        <childnode refid="566" relation="include">
         </childnode>
       </node>
     </incdepgraph>

@@ -22,7 +22,7 @@
         <location file="code/Qt/SampleTimer.h" line="38" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" prot="private" static="no" mutable="no">
-        <type>MPU6050 *</type>
+        <type><ref refid="class_m_p_u6050" kindref="compound">MPU6050</ref> *</type>
         <definition>MPU6050* SampleTimer::motionSensor</definition>
         <argsstring></argsstring>
         <name>motionSensor</name>
@@ -30,14 +30,14 @@
 <para>Motion sensor pointer. </para>
         </briefdescription>
         <detaileddescription>
-<para>A pointer to the MPU6050 for data acquision from the Accelerometer/Gyroscope. </para>
+<para>A pointer to the <ref refid="class_m_p_u6050" kindref="compound">MPU6050</ref> for data acquision from the Accelerometer/Gyroscope. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="code/Qt/SampleTimer.h" line="41" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" prot="private" static="no" mutable="no">
-        <type>MCP3428 *</type>
+        <type><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref> *</type>
         <definition>MCP3428* SampleTimer::flexFingers</definition>
         <argsstring></argsstring>
         <name>flexFingers</name>
@@ -45,14 +45,14 @@
 <para>Finger sensors pointer. </para>
         </briefdescription>
         <detaileddescription>
-<para>A pointer to the MCP3428 for data acquision from the four fingers. </para>
+<para>A pointer to the <ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref> for data acquision from the four fingers. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="code/Qt/SampleTimer.h" line="44" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" prot="private" static="no" mutable="no">
-        <type>MCP3428 *</type>
+        <type><ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref> *</type>
         <definition>MCP3428* SampleTimer::flexThumb</definition>
         <argsstring></argsstring>
         <name>flexThumb</name>
@@ -60,7 +60,7 @@
 <para>Thumb sensor pointer. </para>
         </briefdescription>
         <detaileddescription>
-<para>A pointer to the MCP3428 for data acquision from the thumb sensor. </para>
+<para>A pointer to the <ref refid="class_m_c_p3428" kindref="compound">MCP3428</ref> for data acquision from the thumb sensor. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -191,35 +191,64 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="41">
+      <node id="55">
         <label>QObject</label>
       </node>
-      <node id="42">
+      <node id="56">
         <label>CppTimer</label>
       </node>
-      <node id="40">
+      <node id="54">
         <label>SampleTimer</label>
         <link refid="class_sample_timer"/>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
-        <childnode refid="42" relation="public-inheritance">
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="44">
+      <node id="58">
         <label>QObject</label>
       </node>
-      <node id="45">
+      <node id="61">
+        <label>MCP3428</label>
+        <link refid="class_m_c_p3428"/>
+        <childnode refid="62" relation="usage">
+          <edgelabel>_configReg</edgelabel>
+        </childnode>
+        <childnode refid="63" relation="usage">
+          <edgelabel>i2c</edgelabel>
+        </childnode>
+      </node>
+      <node id="60">
+        <label>MPU6050</label>
+        <link refid="class_m_p_u6050"/>
+      </node>
+      <node id="59">
         <label>CppTimer</label>
       </node>
-      <node id="43">
+      <node id="57">
         <label>SampleTimer</label>
         <link refid="class_sample_timer"/>
-        <childnode refid="44" relation="public-inheritance">
+        <childnode refid="58" relation="public-inheritance">
         </childnode>
-        <childnode refid="45" relation="public-inheritance">
+        <childnode refid="59" relation="public-inheritance">
         </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>motionSensor</edgelabel>
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>flexThumb</edgelabel>
+          <edgelabel>flexFingers</edgelabel>
+        </childnode>
+      </node>
+      <node id="63">
+        <label>I2Cdev</label>
+        <link refid="class_i2_cdev"/>
+      </node>
+      <node id="62">
+        <label>MCP3428::configRegStruct</label>
+        <link refid="struct_m_c_p3428_1_1config_reg_struct"/>
       </node>
     </collaborationgraph>
     <location file="code/Qt/SampleTimer.h" line="33" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="32" bodyend="82"/>

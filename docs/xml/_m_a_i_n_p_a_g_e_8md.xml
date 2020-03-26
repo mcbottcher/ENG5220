@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_m_a_i_n_p_a_g_e_8md" kind="file" language="Markdown">
+    <compoundname>MAINPAGE.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;img<sp/>height=&quot;269&quot;<sp/>width=&quot;500&quot;<sp/>src=&quot;https://github.com/mcbottcher/ENG5220/blob/master/images/logo_with_text-1.png&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>Power<sp/>Is<sp/>In<sp/>Your<sp/>Hands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Lexicon<sp/>Glove<sp/>is<sp/>a<sp/>wearable<sp/>glove<sp/>capable<sp/>of<sp/>interpreting<sp/>hand<sp/>movements<sp/>to<sp/>produce<sp/>speech<sp/>and<sp/>text<sp/>outputs<sp/>so<sp/>that<sp/>the<sp/>wearer<sp/>can<sp/>communicate<sp/>in<sp/>ways<sp/>they<sp/>may<sp/>be<sp/>unable<sp/>to<sp/>otherwise.<sp/>A<sp/>combination<sp/>of<sp/>flex<sp/>sensors<sp/>and<sp/>an<sp/>accelerometer/gyroscope<sp/>provide<sp/>data<sp/>about<sp/>the<sp/>position<sp/>and<sp/>movement<sp/>of<sp/>the<sp/>user&apos;s<sp/>hands.<sp/>Using<sp/>this<sp/>data<sp/>to<sp/>train<sp/>a<sp/>neural<sp/>network,<sp/>the<sp/>user<sp/>can<sp/>teach<sp/>custom<sp/>gestures<sp/>to<sp/>the<sp/>Lexicon<sp/>Glove<sp/>to<sp/>suit<sp/>their<sp/>individual<sp/>needs.<sp/>Gestures<sp/>are<sp/>linked<sp/>with<sp/>words<sp/>or<sp/>phrases<sp/>that<sp/>will<sp/>be<sp/>output<sp/>as<sp/>text<sp/>and<sp/>audio<sp/>when<sp/>the<sp/>glove<sp/>is<sp/>interpreting<sp/>the<sp/>user&apos;s<sp/>movements.<sp/>The<sp/>Lexicon<sp/>Glove<sp/>is<sp/>controlled<sp/>using<sp/>a<sp/>Qt<sp/>application<sp/>run<sp/>on<sp/>a<sp/>Raspberry<sp/>Pi<sp/>and<sp/>displayed<sp/>on<sp/>a<sp/>monitor.<sp/>There<sp/>are<sp/>two<sp/>modes<sp/>of<sp/>operation;<sp/>Training<sp/>Mode<sp/>and<sp/>Interpret<sp/>Mode.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>Training<sp/>Mode,<sp/>the<sp/>user<sp/>can<sp/>create<sp/>a<sp/>new<sp/>custom<sp/>gesture<sp/>linked<sp/>to<sp/>a<sp/>word<sp/>or<sp/>phrase<sp/>of<sp/>their<sp/>choice.<sp/>During<sp/>training,<sp/>they<sp/>will<sp/>be<sp/>taken<sp/>through<sp/>the<sp/>process<sp/>of<sp/>creating<sp/>training<sp/>data<sp/>for<sp/>the<sp/>neural<sp/>network<sp/>by<sp/>repeating<sp/>the<sp/>movement<sp/>a<sp/>number<sp/>of<sp/>times.<sp/>Once<sp/>training<sp/>is<sp/>completed,<sp/>the<sp/>training<sp/>data<sp/>for<sp/>all<sp/>of<sp/>the<sp/>gestures<sp/>is<sp/>used<sp/>to<sp/>create<sp/>a<sp/>neural<sp/>network<sp/>model.<sp/>In<sp/>Interpret<sp/>Mode,<sp/>the<sp/>model<sp/>is<sp/>used<sp/>to<sp/>correctly<sp/>output<sp/>words/phrases<sp/>based<sp/>on<sp/>the<sp/>glove<sp/>movements<sp/>in<sp/>real<sp/>time.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Applications</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>Lexicon<sp/>Glove<sp/>could<sp/>be<sp/>useful<sp/>as<sp/>a<sp/>sign<sp/>language<sp/>interpretation<sp/>glove,<sp/>allowing<sp/>deaf<sp/>people<sp/>and<sp/>other<sp/>sign<sp/>language<sp/>users<sp/>to<sp/>communicate<sp/>more<sp/>easily<sp/>with<sp/>people<sp/>who<sp/>don&apos;t<sp/>understand<sp/>sign<sp/>language,<sp/>as<sp/>well<sp/>as<sp/>a<sp/>tool<sp/>for<sp/>sign<sp/>language<sp/>education.<sp/>With<sp/>further<sp/>development,<sp/>an<sp/>online<sp/>database<sp/>could<sp/>be<sp/>created<sp/>for<sp/>users<sp/>to<sp/>share<sp/>and<sp/>access<sp/>movement<sp/>data<sp/>to<sp/>create<sp/>large<sp/>libraries<sp/>of<sp/>gestures.<sp/>The<sp/>glove&apos;s<sp/>ability<sp/>to<sp/>learn<sp/>custom<sp/>gestures<sp/>means<sp/>it<sp/>could<sp/>also<sp/>be<sp/>very<sp/>useful<sp/>for<sp/>people<sp/>with<sp/>a<sp/>range<sp/>of<sp/>other<sp/>disabilites<sp/>to<sp/>communicate<sp/>using<sp/>movements<sp/>that<sp/>are<sp/>easy<sp/>for<sp/>them.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Build<sp/>Instructions</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Follow<sp/>us<sp/>on<sp/>[Twitter](https://twitter.com/GloveLexicon)!<sp/></highlight></codeline>
+    </programlisting>
+    <location file="MAINPAGE.md"/>
+  </compounddef>
+</doxygen>

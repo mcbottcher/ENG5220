@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2_m_c_p3428_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>MCP3428</highlight></codeline>
+<codeline><highlight class="normal">RaspberryPI<sp/>C++<sp/>API<sp/>for<sp/>MCP3428<sp/>with<sp/>I2C</highlight></codeline>
+    </programlisting>
+    <location file="code/MCP3428/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,7 +1,9 @@
 <map id="CppTimer" name="CppTimer">
-<area shape="rect" id="node1" title=" " alt="" coords="170,5,249,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="291,5,370,31"/>
 <area shape="rect" id="node2" href="$class_cpp_timer_callback.html" title=" " alt="" coords="5,79,136,104"/>
 <area shape="rect" id="node3" href="$class_demo_timer1.html" title=" " alt="" coords="160,79,258,104"/>
 <area shape="rect" id="node4" href="$class_demo_timer2.html" title=" " alt="" coords="282,79,380,104"/>
 <area shape="rect" id="node5" href="$class_sample_timer.html" title="Sample Timer Class." alt="" coords="403,79,503,104"/>
+<area shape="rect" id="node6" href="$class_ticker.html" title=" " alt="" coords="527,79,584,104"/>
+<area shape="rect" id="node7" href="$class_timer.html" title=" " alt="" coords="608,79,663,104"/>
 </map>

@@ -23,24 +23,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="51">
+      <node id="69">
         <label>CppTimer</label>
       </node>
-      <node id="50">
+      <node id="68">
         <label>Timer</label>
         <link refid="class_timer"/>
-        <childnode refid="51" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="53">
+      <node id="71">
         <label>CppTimer</label>
       </node>
-      <node id="52">
+      <node id="70">
         <label>Timer</label>
         <link refid="class_timer"/>
-        <childnode refid="53" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

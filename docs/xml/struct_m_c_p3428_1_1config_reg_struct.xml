@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_m_c_p3428_1_1config_reg_struct" kind="struct" language="C++" prot="private">
+    <compoundname>MCP3428::configRegStruct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_c_p3428_1_1config_reg_struct_1a072954d757394d1de8fd1f6c8e6601a7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::configRegStruct::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="46" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_c_p3428_1_1config_reg_struct_1ac30320cc5af5955f2041f12a7760e547" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::configRegStruct::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="47" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_c_p3428_1_1config_reg_struct_1ad08f71fa4d1883ea81332498c156d288" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::configRegStruct::conversion_mode</definition>
+        <argsstring></argsstring>
+        <name>conversion_mode</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="48" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::configRegStruct::channel_select</definition>
+        <argsstring></argsstring>
+        <name>channel_select</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="49" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_c_p3428_1_1config_reg_struct_1a1789e56d30b801bef868aa802d1565c0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP3428::configRegStruct::RDY_bar</definition>
+        <argsstring></argsstring>
+        <name>RDY_bar</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/MCP3428.h" line="50" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/MCP3428/MCP3428.h" line="45" column="1" bodyfile="code/MCP3428/MCP3428.h" bodystart="45" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_m_c_p3428_1_1config_reg_struct_1a39e7733c8d106cd63974366c2ea31eaf" prot="public" virt="non-virtual"><scope>MCP3428::configRegStruct</scope><name>channel_select</name></member>
+      <member refid="struct_m_c_p3428_1_1config_reg_struct_1ad08f71fa4d1883ea81332498c156d288" prot="public" virt="non-virtual"><scope>MCP3428::configRegStruct</scope><name>conversion_mode</name></member>
+      <member refid="struct_m_c_p3428_1_1config_reg_struct_1a072954d757394d1de8fd1f6c8e6601a7" prot="public" virt="non-virtual"><scope>MCP3428::configRegStruct</scope><name>gain</name></member>
+      <member refid="struct_m_c_p3428_1_1config_reg_struct_1a1789e56d30b801bef868aa802d1565c0" prot="public" virt="non-virtual"><scope>MCP3428::configRegStruct</scope><name>RDY_bar</name></member>
+      <member refid="struct_m_c_p3428_1_1config_reg_struct_1ac30320cc5af5955f2041f12a7760e547" prot="public" virt="non-virtual"><scope>MCP3428::configRegStruct</scope><name>resolution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

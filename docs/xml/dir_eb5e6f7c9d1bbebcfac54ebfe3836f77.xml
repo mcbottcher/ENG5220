@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_eb5e6f7c9d1bbebcfac54ebfe3836f77" kind="dir">
+    <compoundname>code/MPU6050</compoundname>
+    <innerdir refid="dir_acfe5e0f36e92cbc5695bfd1476c27b7">code/MPU6050/I2Cdev</innerdir>
+    <innerfile refid="_m_p_u6050_8cpp">MPU6050.cpp</innerfile>
+    <innerfile refid="_m_p_u6050_8h">MPU6050.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/MPU6050/"/>
+  </compounddef>
+</doxygen>

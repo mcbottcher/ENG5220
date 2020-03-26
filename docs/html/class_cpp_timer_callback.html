@@ -28,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_with_text-1 copy 2.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_with_text_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
@@ -90,11 +90,14 @@ $(document).ready(function(){initNavTree('class_cpp_timer_callback.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_cpp_timer_callback-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CppTimerCallback Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CppTimerCallback:</div>
 <div class="dyncontent">
@@ -109,8 +112,9 @@ Collaboration diagram for CppTimerCallback:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cpp_timer_callback__coll__graph.png" border="0" usemap="#_cpp_timer_callback_coll__map" alt="Collaboration graph"/></div>
 <map name="_cpp_timer_callback_coll__map" id="_cpp_timer_callback_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,79,136,104"/>
-<area shape="rect"  href="class_cpp_timer.html" title=" " alt="" coords="31,5,110,31"/>
+<area shape="rect"  title=" " alt="" coords="60,92,190,117"/>
+<area shape="rect"  href="class_cpp_timer.html" title=" " alt="" coords="5,5,85,31"/>
+<area shape="rect"  href="class_cpp_timer_callback_1_1_runnable.html" title=" " alt="" coords="109,5,304,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -121,23 +125,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6e815f1c3b65ea4f10fe0332e13acb9"><td class="memItemLeft" align="right" valign="top"><a id="ae6e815f1c3b65ea4f10fe0332e13acb9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>registerEventRunnable</b> (<a class="el" href="class_cpp_timer_callback_1_1_runnable.html">Runnable</a> &amp;h)</td></tr>
+<tr class="memitem:ae6e815f1c3b65ea4f10fe0332e13acb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer_callback.html#ae6e815f1c3b65ea4f10fe0332e13acb9">registerEventRunnable</a> (<a class="el" href="class_cpp_timer_callback_1_1_runnable.html">Runnable</a> &amp;h)</td></tr>
 <tr class="separator:ae6e815f1c3b65ea4f10fe0332e13acb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d8d5a426a3d15bca8a42c2c897f50f"><td class="memItemLeft" align="right" valign="top"><a id="a29d8d5a426a3d15bca8a42c2c897f50f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterEventRunnable</b> ()</td></tr>
+<tr class="memitem:a29d8d5a426a3d15bca8a42c2c897f50f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer_callback.html#a29d8d5a426a3d15bca8a42c2c897f50f">unregisterEventRunnable</a> ()</td></tr>
 <tr class="separator:a29d8d5a426a3d15bca8a42c2c897f50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6b39f5eb8e98bfc1b301ac3f25276e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer_callback.html#af6b39f5eb8e98bfc1b301ac3f25276e9">timerEvent</a> ()</td></tr>
 <tr class="separator:af6b39f5eb8e98bfc1b301ac3f25276e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_cpp_timer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cpp_timer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_cpp_timer.html">CppTimer</a></td></tr>
 <tr class="memitem:a327a07c051b9b60fcc61e6fd8f40f381 inherit pub_methods_class_cpp_timer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer.html#a327a07c051b9b60fcc61e6fd8f40f381">CppTimer</a> ()</td></tr>
 <tr class="separator:a327a07c051b9b60fcc61e6fd8f40f381 inherit pub_methods_class_cpp_timer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64989025caa3c030c6c397ca76a2d20b inherit pub_methods_class_cpp_timer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer.html#a64989025caa3c030c6c397ca76a2d20b">start</a> (long nanosecs, cppTimerType_t type=PERIODIC)</td></tr>
+<tr class="memitem:a64989025caa3c030c6c397ca76a2d20b inherit pub_methods_class_cpp_timer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer.html#a64989025caa3c030c6c397ca76a2d20b">start</a> (long nanosecs, <a class="el" href="_cpp_timer_8h.html#a110d07ab6a96d7815149d3d95435790a">cppTimerType_t</a> type=<a class="el" href="_cpp_timer_8h.html#a110d07ab6a96d7815149d3d95435790aae4379d044711537d9ce3b3b58c575c58">PERIODIC</a>)</td></tr>
 <tr class="separator:a64989025caa3c030c6c397ca76a2d20b inherit pub_methods_class_cpp_timer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb95ddee98a536d0818b8f6096bf7e7 inherit pub_methods_class_cpp_timer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer.html#a4bb95ddee98a536d0818b8f6096bf7e7">stop</a> ()</td></tr>
 <tr class="separator:a4bb95ddee98a536d0818b8f6096bf7e7 inherit pub_methods_class_cpp_timer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91779a93fce7383a8d832ed481399342 inherit pub_methods_class_cpp_timer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer.html#a91779a93fce7383a8d832ed481399342">~CppTimer</a> ()</td></tr>
 <tr class="separator:a91779a93fce7383a8d832ed481399342 inherit pub_methods_class_cpp_timer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a578cc701cee7be10f3afab2859eac74f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cpp_timer_callback_1_1_runnable.html">Runnable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_timer_callback.html#a578cc701cee7be10f3afab2859eac74f">cppTimerEventRunnable</a> = NULL</td></tr>
+<tr class="separator:a578cc701cee7be10f3afab2859eac74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -146,6 +153,34 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_cpp_timer_callback_8h_source.html#l00008">8</a> of file <a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae6e815f1c3b65ea4f10fe0332e13acb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e815f1c3b65ea4f10fe0332e13acb9">&#9670;&nbsp;</a></span>registerEventRunnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CppTimerCallback::registerEventRunnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cpp_timer_callback_1_1_runnable.html">Runnable</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cpp_timer_callback_8h_source.html#l00016">16</a> of file <a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>.</p>
+
+</div>
+</div>
 <a id="af6b39f5eb8e98bfc1b301ac3f25276e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6b39f5eb8e98bfc1b301ac3f25276e9">&#9670;&nbsp;</a></span>timerEvent()</h2>
 
@@ -173,6 +208,58 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_cpp_timer.html#ac2665403595b6aee5f581d0ebfeb886c">CppTimer</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_cpp_timer_callback_8h_source.html#l00024">24</a> of file <a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>.</p>
+
+</div>
+</div>
+<a id="a29d8d5a426a3d15bca8a42c2c897f50f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d8d5a426a3d15bca8a42c2c897f50f">&#9670;&nbsp;</a></span>unregisterEventRunnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CppTimerCallback::unregisterEventRunnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cpp_timer_callback_8h_source.html#l00020">20</a> of file <a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a578cc701cee7be10f3afab2859eac74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578cc701cee7be10f3afab2859eac74f">&#9670;&nbsp;</a></span>cppTimerEventRunnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cpp_timer_callback_1_1_runnable.html">Runnable</a>* CppTimerCallback::cppTimerEventRunnable = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cpp_timer_callback_8h_source.html#l00031">31</a> of file <a class="el" href="_cpp_timer_callback_8h_source.html">CppTimerCallback.h</a>.</p>
 
 </div>
 </div>

@@ -67,24 +67,24 @@
 <para>Class to draw small coloured squares that can change colour using the setState method. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="34">
+      <node id="48">
         <label>QLed</label>
         <link refid="class_q_led"/>
-        <childnode refid="35" relation="public-inheritance">
+        <childnode refid="49" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="49">
         <label>QFrame</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="36">
+      <node id="50">
         <label>QLed</label>
         <link refid="class_q_led"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="51">
         <label>QFrame</label>
       </node>
     </collaborationgraph>

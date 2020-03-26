@@ -4,6 +4,7 @@ var searchData=
   ['temp',['temp',['../class_train_window.html#a31001357f600b4fba56c237d959ea030',1,'TrainWindow::temp()'],['../namespaceattempt1.html#a5d26d562c132123e902e42986ffa3cc6',1,'attempt1.temp()'],['../namespaceneural_net.html#aeb2fce31088901853b27a3220d6d31d3',1,'neuralNet.temp()']]],
   ['test_5fimages',['test_images',['../namespacemodel.html#a35ba16d78d67d22ccf3daa8fec6f5510',1,'model']]],
   ['test_5flabels',['test_labels',['../namespacemodel.html#a2b89d7653db85cca9451b204ceeaf95a',1,'model']]],
+  ['testconnection',['testConnection',['../class_m_p_u6050.html#a95ffab7b44fce3834236e0813687d11a',1,'MPU6050']]],
   ['textbox',['textBox',['../class_interpret_window.html#a3d6df0c01749c4931213162c027d385b',1,'InterpretWindow']]],
   ['thumb_5fvalue',['thumb_value',['../sampledata_8cpp.html#ae9dd6ba93ed713dd79a6f61b97c58486',1,'sampledata.cpp']]],
   ['ticker',['Ticker',['../class_ticker.html',1,'']]],
@@ -27,7 +28,8 @@ var searchData=
   ['trainlayout',['trainLayout',['../class_train_window.html#a6db70bf087ef2448ad0e1793077b6390',1,'TrainWindow']]],
   ['trainnet',['TrainNet',['../class_train_net.html',1,'TrainNet'],['../class_train_net.html#ac864ec4ac65529cfcaba64a2360ce595',1,'TrainNet::TrainNet()']]],
   ['trainnet_2ehpp',['trainNet.hpp',['../train_net_8hpp.html',1,'']]],
-  ['trainwindow',['TrainWindow',['../class_train_window.html',1,'TrainWindow'],['../class_train_window.html#a38c4279089ffe00a125bc6d53abbb682',1,'TrainWindow::TrainWindow()'],['../class_main_window.html#a0e70c73ab2c766dc32c6a96a54768796',1,'MainWindow::trainWindow()']]],
+  ['trainwindow',['TrainWindow',['../class_train_window.html',1,'TrainWindow'],['../class_main_window.html#a0e70c73ab2c766dc32c6a96a54768796',1,'MainWindow::trainWindow()'],['../class_train_window.html#a38c4279089ffe00a125bc6d53abbb682',1,'TrainWindow::TrainWindow()']]],
   ['trainwindow_2ecpp',['TrainWindow.cpp',['../_train_window_8cpp.html',1,'']]],
-  ['trainwindow_2eh',['TrainWindow.h',['../_train_window_8h.html',1,'']]]
+  ['trainwindow_2eh',['TrainWindow.h',['../_train_window_8h.html',1,'']]],
+  ['true',['TRUE',['../_m_c_p3428_2_i2_cdev_2_i2_cdev_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;I2Cdev.h'],['../_m_p_u6050_2_i2_cdev_2_i2_cdev_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;I2Cdev.h']]]
 ];

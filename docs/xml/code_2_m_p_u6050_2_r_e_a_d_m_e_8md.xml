@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2_m_p_u6050_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>MPU6050</highlight></codeline>
+<codeline><highlight class="normal">Extension<sp/>of<sp/>previously<sp/>made<sp/>MPU6050<sp/>API<sp/>for<sp/>RaspberryPI<sp/>3B<sp/>in<sp/>C++</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Designed<sp/>to<sp/>be<sp/>used<sp/>as<sp/>a<sp/>submodule...<sp/></highlight></codeline>
+<codeline><highlight class="normal">For<sp/>use<sp/>as<sp/>a<sp/>single<sp/>entity<sp/>refer<sp/>to<sp/>the<sp/>template<sp/>folder<sp/>for<sp/>a<sp/>main.cpp<sp/>example<sp/>and<sp/>Makefile<sp/>example</highlight></codeline>
+    </programlisting>
+    <location file="code/MPU6050/README.md"/>
+  </compounddef>
+</doxygen>

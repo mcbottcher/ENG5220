@@ -1,0 +1,1849 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_i2_cdev" kind="class" language="C++" prot="public">
+    <compoundname>I2Cdev</compoundname>
+    <includes refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h" local="no">I2Cdev.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" prot="public" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>static uint16_t I2Cdev::readTimeout</definition>
+        <argsstring></argsstring>
+        <name>readTimeout</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default timeout value for read operations. Set this to 0 to disable timeout detection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="81" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>I2Cdev::I2Cdev</definition>
+        <argsstring>()</argsstring>
+        <name>I2Cdev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="58" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>I2Cdev::I2Cdev</definition>
+        <argsstring>()</argsstring>
+        <name>I2Cdev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i2_cdev_1abe6d8ea07027d362419de86188981559" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a single bit from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to read (0-7) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for single bit value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="60" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="70" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aaaa3b9ef9500a7d69ccc3d0ccaae33c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a single bit from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to read (0-15) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for single bit value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="61" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a8e5e9742072bb80db06ccd46f52e2b6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bits from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to read (0-7) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to read (not more than 8) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for right-aligned value (i.e. &apos;101&apos; read from any bitStart position will equal 0x05) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="62" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="101" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a1f417ba3e5ce99832e07c31522c97f87" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bits from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to read (0-15) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to read (not more than 16) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for right-aligned value (i.e. &apos;101&apos; read from any bitStart position will equal 0x05) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (1 = success, 0 = failure, -1 = timeout) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="63" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="126" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ad3fb41ce124a29f93749d99611c75c33" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read single byte from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for byte value read from device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="64" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a545cd48b1e806e7e467b542c9e38e8c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read single word from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for word value read from device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="65" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aca9c503da5cffd6ac6f8eff9b195c5f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bytes from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store read data in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes read (-1 indicates failure) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="66" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="173" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a1b3d895dc6a00cbb5fb3b0441b2e35de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple words from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register regAddr to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of words to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store read data in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of words read (0 indicates failure) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="67" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="214" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aa68890af87de5471d32e583ebbd91acb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)</argsstring>
+        <name>writeBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write a single bit in an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to write (0-7) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New bit value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="69" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="231" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a1b5fbedfadec5d429c81ee84d27e658d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)</argsstring>
+        <name>writeBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write a single bit in a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to write (0-15) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New bit value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="70" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a913371251b6a41520c080115650e1b59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</argsstring>
+        <name>writeBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bits in an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to write (0-7) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to write (not more than 8) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-aligned value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="71" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="260" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a8f8652a1328224cce867eed665a45c4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)</argsstring>
+        <name>writeBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bits in a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to write (0-15) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to write (not more than 16) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-aligned value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="72" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="289" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aeb297637ef985cd562da465ba61b7042" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t data)</argsstring>
+        <name>writeByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write single byte to an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register address to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New byte value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="73" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="316" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1acbe68a802d6a177301736e60bedd1def" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t data)</argsstring>
+        <name>writeWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write single word to a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register address to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New word value to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="74" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="326" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aa4e39cac6c0eac5112f9132084bcc93e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)</argsstring>
+        <name>writeBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bytes to an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register address to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to copy new data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="75" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="337" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aae37c0526e4b4730a5b2ffd752fd8b21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</argsstring>
+        <name>writeWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple words to a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register address to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of words to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to copy new data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="76" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="381" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aea44932d610604d29699ac932fcdcd9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2Cdev::write_std</definition>
+        <argsstring>(uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</argsstring>
+        <name>write_std</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>slaveAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>txdataBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>number_of_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="78" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="423" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a32fcdbfba31615b5761c5e991253898c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2Cdev::read_std</definition>
+        <argsstring>(uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</argsstring>
+        <name>read_std</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>slaveAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rxdataBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>number_of_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="79" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.cpp" bodystart="438" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ada206f7b5787944363ad9c56a7602351" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a819dec6daa932e8a7137066c834f6bc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aceeb3b466e36d87cb40767337bb6bede" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a13a03873c2806b464f1455d33110ef80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ab11d59589047e81521fb1cb91bdce262" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a6d5d90a762bb6fb950a0f168c5405801" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a9db3ad2a5a5fc99a10de028598088143" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a7bb5571bcef670759c995b02380cdb8a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>static int8_t I2Cdev::readWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout)</argsstring>
+        <name>readWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aa4fee368b18443d2f0098647d260ef00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)</argsstring>
+        <name>writeBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1adb39954a2858470b16ed1264cc871e34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)</argsstring>
+        <name>writeBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a19a09ceb15a27ac621fc7816f0dac5c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</argsstring>
+        <name>writeBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a3d0caf5928c7b5e14696aa325344670b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)</argsstring>
+        <name>writeBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a630ff78728db0cfc4e06556ab87ebd18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t data)</argsstring>
+        <name>writeByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a939f61622f39de4c3b14b02bb12d9927" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t data)</argsstring>
+        <name>writeWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a3ff98d08476804e210ce0575995e5235" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)</argsstring>
+        <name>writeBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a255d5177c0736b5c069708e7ad8a0cf4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool I2Cdev::writeWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</argsstring>
+        <name>writeWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a49618ca1bfae6ef27fba9f0c8b349dc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void I2Cdev::write_std</definition>
+        <argsstring>(uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)</argsstring>
+        <name>write_std</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>slaveAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>txdataBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>number_of_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a2a9491cbbafac3040e91bc59909ec233" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void I2Cdev::read_std</definition>
+        <argsstring>(uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)</argsstring>
+        <name>read_std</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>slaveAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rxdataBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>number_of_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/MPU6050/I2Cdev/I2Cdev.h" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/MCP3428/I2Cdev/I2Cdev.h" line="56" column="1" bodyfile="code/MCP3428/I2Cdev/I2Cdev.h" bodystart="56" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>I2Cdev</name></member>
+      <member refid="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>I2Cdev</name></member>
+      <member refid="class_i2_cdev_1a32fcdbfba31615b5761c5e991253898c" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>read_std</name></member>
+      <member refid="class_i2_cdev_1a2a9491cbbafac3040e91bc59909ec233" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>read_std</name></member>
+      <member refid="class_i2_cdev_1abe6d8ea07027d362419de86188981559" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBit</name></member>
+      <member refid="class_i2_cdev_1ada206f7b5787944363ad9c56a7602351" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBit</name></member>
+      <member refid="class_i2_cdev_1a8e5e9742072bb80db06ccd46f52e2b6d" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBits</name></member>
+      <member refid="class_i2_cdev_1aceeb3b466e36d87cb40767337bb6bede" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBits</name></member>
+      <member refid="class_i2_cdev_1a1f417ba3e5ce99832e07c31522c97f87" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitsW</name></member>
+      <member refid="class_i2_cdev_1a13a03873c2806b464f1455d33110ef80" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitsW</name></member>
+      <member refid="class_i2_cdev_1aaaa3b9ef9500a7d69ccc3d0ccaae33c4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitW</name></member>
+      <member refid="class_i2_cdev_1a819dec6daa932e8a7137066c834f6bc3" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitW</name></member>
+      <member refid="class_i2_cdev_1ad3fb41ce124a29f93749d99611c75c33" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readByte</name></member>
+      <member refid="class_i2_cdev_1ab11d59589047e81521fb1cb91bdce262" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readByte</name></member>
+      <member refid="class_i2_cdev_1aca9c503da5cffd6ac6f8eff9b195c5f4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBytes</name></member>
+      <member refid="class_i2_cdev_1a9db3ad2a5a5fc99a10de028598088143" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBytes</name></member>
+      <member refid="class_i2_cdev_1a89c2dd0649451cb09d2edb96c27c158c" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readTimeout</name></member>
+      <member refid="class_i2_cdev_1a545cd48b1e806e7e467b542c9e38e8c8" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWord</name></member>
+      <member refid="class_i2_cdev_1a6d5d90a762bb6fb950a0f168c5405801" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWord</name></member>
+      <member refid="class_i2_cdev_1a1b3d895dc6a00cbb5fb3b0441b2e35de" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWords</name></member>
+      <member refid="class_i2_cdev_1a7bb5571bcef670759c995b02380cdb8a" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWords</name></member>
+      <member refid="class_i2_cdev_1aea44932d610604d29699ac932fcdcd9f" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>write_std</name></member>
+      <member refid="class_i2_cdev_1a49618ca1bfae6ef27fba9f0c8b349dc4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>write_std</name></member>
+      <member refid="class_i2_cdev_1aa68890af87de5471d32e583ebbd91acb" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBit</name></member>
+      <member refid="class_i2_cdev_1aa4fee368b18443d2f0098647d260ef00" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBit</name></member>
+      <member refid="class_i2_cdev_1a913371251b6a41520c080115650e1b59" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBits</name></member>
+      <member refid="class_i2_cdev_1a19a09ceb15a27ac621fc7816f0dac5c3" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBits</name></member>
+      <member refid="class_i2_cdev_1a8f8652a1328224cce867eed665a45c4d" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitsW</name></member>
+      <member refid="class_i2_cdev_1a3d0caf5928c7b5e14696aa325344670b" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitsW</name></member>
+      <member refid="class_i2_cdev_1a1b5fbedfadec5d429c81ee84d27e658d" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitW</name></member>
+      <member refid="class_i2_cdev_1adb39954a2858470b16ed1264cc871e34" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitW</name></member>
+      <member refid="class_i2_cdev_1aeb297637ef985cd562da465ba61b7042" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeByte</name></member>
+      <member refid="class_i2_cdev_1a630ff78728db0cfc4e06556ab87ebd18" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeByte</name></member>
+      <member refid="class_i2_cdev_1aa4e39cac6c0eac5112f9132084bcc93e" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBytes</name></member>
+      <member refid="class_i2_cdev_1a3ff98d08476804e210ce0575995e5235" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBytes</name></member>
+      <member refid="class_i2_cdev_1acbe68a802d6a177301736e60bedd1def" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWord</name></member>
+      <member refid="class_i2_cdev_1a939f61622f39de4c3b14b02bb12d9927" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWord</name></member>
+      <member refid="class_i2_cdev_1aae37c0526e4b4730a5b2ffd752fd8b21" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWords</name></member>
+      <member refid="class_i2_cdev_1a255d5177c0736b5c069708e7ad8a0cf4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

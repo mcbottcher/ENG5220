@@ -28,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_with_text-1 copy 2.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_with_text_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
@@ -93,6 +93,12 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SampleTimer()
 : <a class="el" href="class_sample_timer.html#a9a588688d79ddf9b4a72bfca79283924">SampleTimer</a>
 </li>
+<li>saveMovement()
+: <a class="el" href="class_train_window.html#a109a176bfbe5a423aad9005ca3ab4ebc">TrainWindow</a>
+</li>
+<li>sayWords()
+: <a class="el" href="class_interpret_window.html#ad4aaeb7dbd8688280d834fa6e21d3d8a">InterpretWindow</a>
+</li>
 <li>setAccelerometerPowerOnDelay()
 : <a class="el" href="class_m_p_u6050.html#a2bbde7653d2d2d37e16e515599f3b08b">MPU6050</a>
 </li>
@@ -117,17 +123,32 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>setClockSource()
 : <a class="el" href="class_m_p_u6050.html#a4c1cd147d038e024bdeaa053c4d77734">MPU6050</a>
 </li>
+<li>setConfig()
+: <a class="el" href="class_m_c_p3428.html#aadd87f78e05d1e6ded1ec568fe86f03f">MCP3428</a>
+</li>
 <li>setDHPFMode()
 : <a class="el" href="class_m_p_u6050.html#a44cc43aaad1e52c1ba3142d4490af611">MPU6050</a>
 </li>
 <li>setDLPFMode()
 : <a class="el" href="class_m_p_u6050.html#a7a782ade8af2f88dfef7171487f59a3b">MPU6050</a>
 </li>
+<li>setDMPConfig1()
+: <a class="el" href="class_m_p_u6050.html#a0126b95e4074de16bb61d9c4e4cf837f">MPU6050</a>
+</li>
+<li>setDMPConfig2()
+: <a class="el" href="class_m_p_u6050.html#aea90c3e6a6666f070f7833a913cfa821">MPU6050</a>
+</li>
+<li>setDMPEnabled()
+: <a class="el" href="class_m_p_u6050.html#abb6bf6db86b84700c7f13bd838d63755">MPU6050</a>
+</li>
 <li>setExternalFrameSync()
 : <a class="el" href="class_m_p_u6050.html#a77b36f41c531a11b5a835fc75a9aefe6">MPU6050</a>
 </li>
 <li>setExternalShadowDelayEnabled()
 : <a class="el" href="class_m_p_u6050.html#a9160193d883871037c6535a9d3e02ee2">MPU6050</a>
+</li>
+<li>setFIFOByte()
+: <a class="el" href="class_m_p_u6050.html#a66da5bc38aa82404117d1ef5306c951a">MPU6050</a>
 </li>
 <li>setFIFOEnabled()
 : <a class="el" href="class_m_p_u6050.html#a78e58ab27986db6999af775ed4d43091">MPU6050</a>
@@ -162,6 +183,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>setIntDataReadyEnabled()
 : <a class="el" href="class_m_p_u6050.html#a67a11be7fc7ab6b1186469b94ea33dda">MPU6050</a>
 </li>
+<li>setIntDMPEnabled()
+: <a class="el" href="class_m_p_u6050.html#a889d29900cb0dd16e0199c13822f0f88">MPU6050</a>
+</li>
 <li>setIntEnabled()
 : <a class="el" href="class_m_p_u6050.html#ac7bcf24249dd5000320a8ec0ffe488c6">MPU6050</a>
 </li>
@@ -189,11 +213,20 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>setIntMotionEnabled()
 : <a class="el" href="class_m_p_u6050.html#a2d2d1d3b03198a09c83a48ec3bc20bd8">MPU6050</a>
 </li>
+<li>setIntPLLReadyEnabled()
+: <a class="el" href="class_m_p_u6050.html#aef44106927c1b986588f36bffaebea54">MPU6050</a>
+</li>
 <li>setIntZeroMotionEnabled()
 : <a class="el" href="class_m_p_u6050.html#a5e36e3acace6e545718d7997169cff9b">MPU6050</a>
 </li>
 <li>setMasterClockSpeed()
 : <a class="el" href="class_m_p_u6050.html#a8a4779ea709ff0633f9798369478400b">MPU6050</a>
+</li>
+<li>setMemoryBank()
+: <a class="el" href="class_m_p_u6050.html#aa0c1753f6d2dacb1942fbef156a075bc">MPU6050</a>
+</li>
+<li>setMemoryStartAddress()
+: <a class="el" href="class_m_p_u6050.html#a45013abb39103e858d432cc720bc351a">MPU6050</a>
 </li>
 <li>setMotionDetectionCounterDecrement()
 : <a class="el" href="class_m_p_u6050.html#a74cc3ea727afa5d4406175085e60d08c">MPU6050</a>
@@ -206,6 +239,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>setMultiMasterEnabled()
 : <a class="el" href="class_m_p_u6050.html#a039f5724974c5bf3f373ed9be031441c">MPU6050</a>
+</li>
+<li>setOTPBankValid()
+: <a class="el" href="class_m_p_u6050.html#a074024a7818b2998b3f1c99064bea3a0">MPU6050</a>
 </li>
 <li>setRate()
 : <a class="el" href="class_m_p_u6050.html#a7d03801d6b656e8e12cd3c1dd97824a8">MPU6050</a>
@@ -276,6 +312,24 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>setSleepEnabled()
 : <a class="el" href="class_m_p_u6050.html#a15ec5f8e7daf235f507c1d8b96af051a">MPU6050</a>
 </li>
+<li>setStandbyXAccelEnabled()
+: <a class="el" href="class_m_p_u6050.html#af4df87fd2e87f41d06706cfd5bbc2a2c">MPU6050</a>
+</li>
+<li>setStandbyXGyroEnabled()
+: <a class="el" href="class_m_p_u6050.html#ac1c6d8f623a9ca00a4ddc50f6615b977">MPU6050</a>
+</li>
+<li>setStandbyYAccelEnabled()
+: <a class="el" href="class_m_p_u6050.html#a7ce7d3299479eb66518acf0697132835">MPU6050</a>
+</li>
+<li>setStandbyYGyroEnabled()
+: <a class="el" href="class_m_p_u6050.html#ab0973d64b7132188539b07991f7ea1f0">MPU6050</a>
+</li>
+<li>setStandbyZAccelEnabled()
+: <a class="el" href="class_m_p_u6050.html#ac5fd917549d2ed0f12b8a17167271199">MPU6050</a>
+</li>
+<li>setStandbyZGyroEnabled()
+: <a class="el" href="class_m_p_u6050.html#ada7c8a873fe157703dcdc08e25b48e32">MPU6050</a>
+</li>
 <li>setState()
 : <a class="el" href="class_q_led.html#a75d8271a4122be12d1b6d8dcdeb0ed5a">QLed</a>
 </li>
@@ -289,17 +343,50 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="class_filter.html#aa50bc47ce6e1eed97a274ebe239579cf">Filter</a>
 , <a class="el" href="class_filter_bank.html#ad95fe17a4040bf978ad977a37ce3a868">FilterBank</a>
 </li>
+<li>setupCurve()
+: <a class="el" href="struct_monitor_window_1_1_curve.html#a6520efc990024d5b34a328f8e30466b6">MonitorWindow::Curve</a>
+</li>
 <li>setWaitForExternalSensorEnabled()
 : <a class="el" href="class_m_p_u6050.html#a20dc4bdedbe1550580c28a6d090291be">MPU6050</a>
 </li>
 <li>setWakeCycleEnabled()
 : <a class="el" href="class_m_p_u6050.html#a340eade71cf6286f6904c2021330944e">MPU6050</a>
 </li>
+<li>setWakeFrequency()
+: <a class="el" href="class_m_p_u6050.html#a62495e89f4787e6b18f0f795cef2b7cd">MPU6050</a>
+</li>
+<li>setXAccelOffset()
+: <a class="el" href="class_m_p_u6050.html#a447144e025f55b1dc96d7c209c5defd6">MPU6050</a>
+</li>
+<li>setXFineGain()
+: <a class="el" href="class_m_p_u6050.html#a73d4473d134cf5f7c516ff38faa2b4a8">MPU6050</a>
+</li>
 <li>setXGyroFIFOEnabled()
 : <a class="el" href="class_m_p_u6050.html#a53a03d1f255a62f01375c870cdc85767">MPU6050</a>
 </li>
+<li>setXGyroOffset()
+: <a class="el" href="class_m_p_u6050.html#ad0c66eb7f77ab0ef19fca7124c63ba9d">MPU6050</a>
+</li>
+<li>setXGyroOffsetUser()
+: <a class="el" href="class_m_p_u6050.html#a2306a15d278eab385af6ea0fd54c908a">MPU6050</a>
+</li>
+<li>setYAccelOffset()
+: <a class="el" href="class_m_p_u6050.html#a6214fa36c8881f3b02a3e7033678bfb3">MPU6050</a>
+</li>
+<li>setYFineGain()
+: <a class="el" href="class_m_p_u6050.html#a7f97e86dcfa1d491d8f809112c6fb40b">MPU6050</a>
+</li>
 <li>setYGyroFIFOEnabled()
 : <a class="el" href="class_m_p_u6050.html#a16eb12bbf07bc17a9d852941d834175e">MPU6050</a>
+</li>
+<li>setYGyroOffset()
+: <a class="el" href="class_m_p_u6050.html#a7f547a52a20bc1ebb23faa1e6668bff1">MPU6050</a>
+</li>
+<li>setYGyroOffsetUser()
+: <a class="el" href="class_m_p_u6050.html#a8504811dc64bb338037ac7c098c86913">MPU6050</a>
+</li>
+<li>setZAccelOffset()
+: <a class="el" href="class_m_p_u6050.html#a4d1868b660d695eae912ef73407e21e8">MPU6050</a>
 </li>
 <li>setZeroMotionDetectionDuration()
 : <a class="el" href="class_m_p_u6050.html#a6d25a21e1673682f096399b719c66d2c">MPU6050</a>
@@ -307,14 +394,26 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>setZeroMotionDetectionThreshold()
 : <a class="el" href="class_m_p_u6050.html#a347a51fd25de20b9ead4659015ef793b">MPU6050</a>
 </li>
+<li>setZFineGain()
+: <a class="el" href="class_m_p_u6050.html#a98107dec68994cfc8c8cb1d0d78d2b6b">MPU6050</a>
+</li>
 <li>setZGyroFIFOEnabled()
 : <a class="el" href="class_m_p_u6050.html#af5b5bc39b66466ba910f6eef1259444c">MPU6050</a>
 </li>
-<li>start()
-: <a class="el" href="class_cpp_timer.html#a64989025caa3c030c6c397ca76a2d20b">CppTimer</a>
+<li>setZGyroOffset()
+: <a class="el" href="class_m_p_u6050.html#a20dbe1fac22c021fb3228522aea5c96e">MPU6050</a>
 </li>
-<li>stop()
-: <a class="el" href="class_cpp_timer.html#a4bb95ddee98a536d0818b8f6096bf7e7">CppTimer</a>
+<li>setZGyroOffsetUser()
+: <a class="el" href="class_m_p_u6050.html#ada31a0757966357c75189f1cd13f0fee">MPU6050</a>
+</li>
+<li>startNeuralNet()
+: <a class="el" href="class_train_window.html#a47fec3efdd9a0da36032a45914ded39b">TrainWindow</a>
+</li>
+<li>startSampling_sig()
+: <a class="el" href="class_train_window.html#a9a84bcae91eac1f4597291143c30b280">TrainWindow</a>
+</li>
+<li>stopSampling_sig()
+: <a class="el" href="class_train_window.html#a5f677ae82a80691a899134bd719db1b1">TrainWindow</a>
 </li>
 <li>switchSPIEnabled()
 : <a class="el" href="class_m_p_u6050.html#a269710b7bca814bbf67e7bb38c381650">MPU6050</a>

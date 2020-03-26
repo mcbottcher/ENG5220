@@ -16,92 +16,92 @@
     <includedby refid="_interpret_window_8cpp" local="yes">code/Qt/InterpretWindow.cpp</includedby>
     <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
     <incdepgraph>
-      <node id="156">
+      <node id="280">
         <label>QFont</label>
       </node>
-      <node id="158">
+      <node id="282">
         <label>QTextToSpeech</label>
       </node>
-      <node id="157">
+      <node id="281">
         <label>QPlainTextEdit</label>
       </node>
-      <node id="152">
+      <node id="276">
         <label>QCheckBox</label>
       </node>
-      <node id="159">
+      <node id="283">
         <label>QDebug</label>
       </node>
-      <node id="154">
+      <node id="278">
         <label>QString</label>
       </node>
-      <node id="151">
+      <node id="275">
         <label>QColor</label>
       </node>
-      <node id="153">
+      <node id="277">
         <label>QPushButton</label>
       </node>
-      <node id="155">
+      <node id="279">
         <label>QLabel</label>
       </node>
-      <node id="150">
+      <node id="274">
         <label>QBoxLayout</label>
       </node>
-      <node id="149">
+      <node id="273">
         <label>code/Qt/InterpretWindow.h</label>
         <link refid="_interpret_window_8h"/>
-        <childnode refid="150" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
-        <childnode refid="151" relation="include">
+        <childnode refid="275" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="276" relation="include">
         </childnode>
-        <childnode refid="153" relation="include">
+        <childnode refid="277" relation="include">
         </childnode>
-        <childnode refid="154" relation="include">
+        <childnode refid="278" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="279" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="280" relation="include">
         </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="281" relation="include">
         </childnode>
-        <childnode refid="158" relation="include">
+        <childnode refid="282" relation="include">
         </childnode>
-        <childnode refid="159" relation="include">
+        <childnode refid="283" relation="include">
         </childnode>
-        <childnode refid="160" relation="include">
+        <childnode refid="284" relation="include">
         </childnode>
       </node>
-      <node id="160">
+      <node id="284">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="165">
+      <node id="289">
         <label>code/Qt/mainwindow.cpp</label>
         <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="162">
+      <node id="286">
         <label>code/Qt/InterpretWindow.cpp</label>
         <link refid="_interpret_window_8cpp"/>
       </node>
-      <node id="163">
+      <node id="287">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="164" relation="include">
+        <childnode refid="288" relation="include">
         </childnode>
-        <childnode refid="165" relation="include">
+        <childnode refid="289" relation="include">
         </childnode>
       </node>
-      <node id="161">
+      <node id="285">
         <label>code/Qt/InterpretWindow.h</label>
         <link refid="_interpret_window_8h"/>
-        <childnode refid="162" relation="include">
+        <childnode refid="286" relation="include">
         </childnode>
-        <childnode refid="163" relation="include">
+        <childnode refid="287" relation="include">
         </childnode>
       </node>
-      <node id="164">
+      <node id="288">
         <label>code/Qt/main.cpp</label>
         <link refid="_qt_2main_8cpp"/>
       </node>

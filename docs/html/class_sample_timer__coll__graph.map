@@ -1,5 +1,9 @@
 <map id="SampleTimer" name="SampleTimer">
-<area shape="rect" id="node1" title="Sample Timer Class." alt="" coords="40,79,140,104"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,31"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,5,179,31"/>
+<area shape="rect" id="node1" title="Sample Timer Class." alt="" coords="137,192,237,217"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,92,76,117"/>
+<area shape="rect" id="node3" title=" " alt="" coords="99,92,179,117"/>
+<area shape="rect" id="node4" href="$class_m_p_u6050.html" title=" " alt="" coords="203,92,283,117"/>
+<area shape="rect" id="node5" href="$class_m_c_p3428.html" title=" " alt="" coords="312,92,393,117"/>
+<area shape="rect" id="node6" href="$struct_m_c_p3428_1_1config_reg_struct.html" title=" " alt="" coords="188,5,371,31"/>
+<area shape="rect" id="node7" href="$class_i2_cdev.html" title=" " alt="" coords="394,5,458,31"/>
 </map>

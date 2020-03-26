@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_5707726cdf5fca020007958de32a660f" kind="dir">
+    <compoundname>code/cppTimer/test</compoundname>
+    <innerfile refid="startstop_8cpp">startstop.cpp</innerfile>
+    <innerfile refid="twotimers_8cpp">twotimers.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/cppTimer/test/"/>
+  </compounddef>
+</doxygen>

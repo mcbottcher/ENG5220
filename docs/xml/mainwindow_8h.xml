@@ -23,320 +23,340 @@
     <includedby refid="_qt_2main_8cpp" local="yes">code/Qt/main.cpp</includedby>
     <includedby refid="mainwindow_8cpp" local="yes">code/Qt/mainwindow.cpp</includedby>
     <incdepgraph>
-      <node id="228">
+      <node id="354">
         <label>QtConcurrent</label>
       </node>
-      <node id="238">
+      <node id="364">
         <label>TrainWindow.h</label>
         <link refid="_train_window_8h"/>
-        <childnode refid="239" relation="include">
+        <childnode refid="365" relation="include">
         </childnode>
-        <childnode refid="223" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="240" relation="include">
+        <childnode refid="366" relation="include">
         </childnode>
-        <childnode refid="241" relation="include">
+        <childnode refid="367" relation="include">
         </childnode>
-        <childnode refid="242" relation="include">
+        <childnode refid="368" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="369" relation="include">
         </childnode>
-        <childnode refid="244" relation="include">
+        <childnode refid="370" relation="include">
         </childnode>
-        <childnode refid="245" relation="include">
+        <childnode refid="371" relation="include">
         </childnode>
-        <childnode refid="246" relation="include">
+        <childnode refid="372" relation="include">
         </childnode>
-        <childnode refid="237" relation="include">
+        <childnode refid="363" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
       </node>
-      <node id="262">
+      <node id="390">
         <label>QLayout</label>
       </node>
-      <node id="258">
+      <node id="384">
         <label>QObject</label>
       </node>
-      <node id="253">
+      <node id="379">
         <label>../RingBuff.h</label>
         <link refid="_ring_buff_8h"/>
       </node>
-      <node id="255">
+      <node id="381">
         <label>stdint.h</label>
       </node>
-      <node id="256">
+      <node id="382">
         <label>stdlib.h</label>
       </node>
-      <node id="265">
+      <node id="393">
         <label>QThread</label>
       </node>
-      <node id="267">
+      <node id="387">
+        <label>../MPU6050/MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="388" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
         <label>cmath</label>
       </node>
-      <node id="233">
+      <node id="359">
         <label>QFont</label>
       </node>
-      <node id="239">
+      <node id="365">
         <label>config.h</label>
         <link refid="config_8h"/>
       </node>
-      <node id="261">
+      <node id="389">
         <label>QMainWindow</label>
       </node>
-      <node id="235">
+      <node id="361">
         <label>QTextToSpeech</label>
       </node>
-      <node id="234">
+      <node id="360">
         <label>QPlainTextEdit</label>
       </node>
-      <node id="225">
+      <node id="386">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
         <label>QCheckBox</label>
       </node>
-      <node id="248">
+      <node id="374">
         <label>fstream</label>
       </node>
-      <node id="252">
+      <node id="378">
         <label>../cppTimer/CppTimer.h</label>
       </node>
-      <node id="243">
+      <node id="369">
         <label>QListWidget</label>
       </node>
-      <node id="250">
+      <node id="376">
         <label>Iir.h</label>
       </node>
-      <node id="246">
+      <node id="372">
         <label>QLed.h</label>
         <link refid="_q_led_8h"/>
-        <childnode refid="247" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
       </node>
-      <node id="264">
+      <node id="392">
         <label>QToolButton</label>
       </node>
-      <node id="219">
+      <node id="345">
         <label>MonitorWindow.h</label>
         <link refid="_monitor_window_8h"/>
-        <childnode refid="220" relation="include">
+        <childnode refid="346" relation="include">
         </childnode>
-        <childnode refid="221" relation="include">
+        <childnode refid="347" relation="include">
         </childnode>
-        <childnode refid="222" relation="include">
+        <childnode refid="348" relation="include">
         </childnode>
-        <childnode refid="223" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="228" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
+        <childnode refid="355" relation="include">
         </childnode>
-        <childnode refid="230" relation="include">
+        <childnode refid="356" relation="include">
         </childnode>
       </node>
-      <node id="236">
+      <node id="385">
+        <label>../MCP3428/MCP3428.h</label>
+        <link refid="_m_c_p3428_8h"/>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+      </node>
+      <node id="362">
         <label>QDebug</label>
       </node>
-      <node id="245">
+      <node id="371">
         <label>QAbstractItemView</label>
       </node>
-      <node id="254">
+      <node id="380">
         <label>unistd.h</label>
       </node>
-      <node id="242">
+      <node id="368">
         <label>QTimer</label>
       </node>
-      <node id="241">
+      <node id="367">
         <label>QGroupBox</label>
       </node>
-      <node id="222">
+      <node id="348">
         <label>qwt/qwt_plot_curve.h</label>
       </node>
-      <node id="259">
-        <label>../MCP3428/MCP3428.h</label>
-      </node>
-      <node id="240">
+      <node id="366">
         <label>QLineEdit</label>
       </node>
-      <node id="220">
+      <node id="346">
         <label>qwt/qwt_knob.h</label>
       </node>
-      <node id="227">
+      <node id="353">
         <label>QString</label>
       </node>
-      <node id="224">
+      <node id="350">
         <label>QColor</label>
       </node>
-      <node id="226">
+      <node id="352">
         <label>QPushButton</label>
       </node>
-      <node id="232">
+      <node id="358">
         <label>QLabel</label>
       </node>
-      <node id="251">
+      <node id="377">
         <label>SampleTimer.h</label>
         <link refid="_sample_timer_8h"/>
-        <childnode refid="252" relation="include">
+        <childnode refid="378" relation="include">
         </childnode>
-        <childnode refid="253" relation="include">
+        <childnode refid="379" relation="include">
         </childnode>
-        <childnode refid="254" relation="include">
+        <childnode refid="380" relation="include">
         </childnode>
-        <childnode refid="237" relation="include">
+        <childnode refid="363" relation="include">
         </childnode>
-        <childnode refid="255" relation="include">
+        <childnode refid="381" relation="include">
         </childnode>
-        <childnode refid="256" relation="include">
+        <childnode refid="382" relation="include">
         </childnode>
-        <childnode refid="257" relation="include">
+        <childnode refid="383" relation="include">
         </childnode>
-        <childnode refid="258" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
-        <childnode refid="259" relation="include">
+        <childnode refid="385" relation="include">
         </childnode>
-        <childnode refid="260" relation="include">
+        <childnode refid="387" relation="include">
         </childnode>
       </node>
-      <node id="249">
+      <node id="375">
         <label>../FilterBank.h</label>
         <link refid="_filter_bank_8h"/>
-        <childnode refid="250" relation="include">
+        <childnode refid="376" relation="include">
         </childnode>
       </node>
-      <node id="221">
+      <node id="347">
         <label>qwt/qwt_plot.h</label>
       </node>
-      <node id="229">
+      <node id="355">
         <label>QThreadPool</label>
       </node>
-      <node id="266">
+      <node id="394">
         <label>iostream</label>
       </node>
-      <node id="260">
-        <label>../MPU6050/MPU6050.h</label>
+      <node id="388">
+        <label>I2Cdev/I2Cdev.h</label>
+        <link refid="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h"/>
+        <childnode refid="382" relation="include">
+        </childnode>
       </node>
-      <node id="218">
+      <node id="344">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="219" relation="include">
+        <childnode refid="345" relation="include">
         </childnode>
-        <childnode refid="231" relation="include">
+        <childnode refid="357" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
+        <childnode refid="364" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
+        <childnode refid="375" relation="include">
         </childnode>
-        <childnode refid="251" relation="include">
+        <childnode refid="377" relation="include">
         </childnode>
-        <childnode refid="239" relation="include">
+        <childnode refid="365" relation="include">
         </childnode>
-        <childnode refid="261" relation="include">
+        <childnode refid="389" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="262" relation="include">
+        <childnode refid="390" relation="include">
         </childnode>
-        <childnode refid="223" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="263" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
-        <childnode refid="264" relation="include">
+        <childnode refid="392" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="265" relation="include">
+        <childnode refid="393" relation="include">
         </childnode>
-        <childnode refid="228" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="266" relation="include">
+        <childnode refid="394" relation="include">
         </childnode>
-        <childnode refid="267" relation="include">
+        <childnode refid="395" relation="include">
         </childnode>
       </node>
-      <node id="257">
+      <node id="383">
         <label>mutex</label>
       </node>
-      <node id="223">
+      <node id="349">
         <label>QBoxLayout</label>
       </node>
-      <node id="263">
+      <node id="391">
         <label>QPixmap</label>
       </node>
-      <node id="244">
+      <node id="370">
         <label>QDir</label>
       </node>
-      <node id="231">
+      <node id="357">
         <label>InterpretWindow.h</label>
         <link refid="_interpret_window_8h"/>
-        <childnode refid="223" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="360" relation="include">
         </childnode>
-        <childnode refid="235" relation="include">
+        <childnode refid="361" relation="include">
         </childnode>
-        <childnode refid="236" relation="include">
+        <childnode refid="362" relation="include">
         </childnode>
-        <childnode refid="237" relation="include">
+        <childnode refid="363" relation="include">
         </childnode>
       </node>
-      <node id="230">
+      <node id="356">
         <label>thread</label>
       </node>
-      <node id="247">
+      <node id="373">
         <label>QFrame</label>
       </node>
-      <node id="237">
+      <node id="363">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="270">
+      <node id="398">
         <label>code/Qt/mainwindow.cpp</label>
         <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="268">
+      <node id="396">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="269" relation="include">
+        <childnode refid="397" relation="include">
         </childnode>
-        <childnode refid="270" relation="include">
+        <childnode refid="398" relation="include">
         </childnode>
       </node>
-      <node id="269">
+      <node id="397">
         <label>code/Qt/main.cpp</label>
         <link refid="_qt_2main_8cpp"/>
       </node>

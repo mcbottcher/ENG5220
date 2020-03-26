@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['i2c',['i2c',['../class_m_c_p3428.html#a51eb206de1889199eb73ce1d94b9a8fe',1,'MCP3428']]],
   ['impulse',['impulse',['../namespaceplotfilter.html#ae95257774854536afeb3dd69a1f4e975',1,'plotfilter']]],
   ['include_5foptimizer',['include_optimizer',['../namespaceattempt1.html#aacfadd5941a15fa339acff1364bab7ca',1,'attempt1.include_optimizer()'],['../namespaceneural_net.html#ae079b848cf02a89fdd3d0fdba02f6b7b',1,'neuralNet.include_optimizer()']]],
   ['info_5farch',['info_arch',['../_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],

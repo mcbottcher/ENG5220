@@ -3,8 +3,8 @@
   <compounddef id="dir_af44102312650f84b9954b0d1e54ecca" kind="dir">
     <compoundname>code/neuralnet_predict</compoundname>
     <innerdir refid="dir_b0714d89f0428038d6fed14ef0766e14">code/neuralnet_predict/CMakeFiles</innerdir>
-    <innerfile refid="_c_s_vreader_8cpp">CSVreader.cpp</innerfile>
-    <innerfile refid="_c_s_vreader_8h">CSVreader.h</innerfile>
+    <innerfile refid="neuralnet__predict_2_c_s_vreader_8cpp">CSVreader.cpp</innerfile>
+    <innerfile refid="neuralnet__predict_2_c_s_vreader_8h">CSVreader.h</innerfile>
     <innerfile refid="neuralnet__predict_2main_8cpp">main.cpp</innerfile>
     <innerfile refid="_neural_net_8cpp">NeuralNet.cpp</innerfile>
     <innerfile refid="_neural_net_8h">NeuralNet.h</innerfile>

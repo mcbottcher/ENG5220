@@ -5,39 +5,39 @@
     <includedby refid="_train_window_8h" local="yes">code/Qt/TrainWindow.h</includedby>
     <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
     <invincdepgraph>
-      <node id="130">
+      <node id="254">
         <label>code/Qt/TrainWindow.h</label>
         <link refid="_train_window_8h"/>
-        <childnode refid="131" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
       </node>
-      <node id="129">
+      <node id="253">
         <label>code/Qt/config.h</label>
         <link refid="config_8h"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
       </node>
-      <node id="133">
+      <node id="257">
         <label>code/Qt/mainwindow.cpp</label>
         <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="134">
+      <node id="258">
         <label>code/Qt/TrainWindow.cpp</label>
         <link refid="_train_window_8cpp"/>
       </node>
-      <node id="131">
+      <node id="255">
         <label>code/Qt/mainwindow.h</label>
         <link refid="mainwindow_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
       </node>
-      <node id="132">
+      <node id="256">
         <label>code/Qt/main.cpp</label>
         <link refid="_qt_2main_8cpp"/>
       </node>

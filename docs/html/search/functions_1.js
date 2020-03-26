@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['but_5fquit_5fclicked',['but_quit_clicked',['../class_main_window.html#a134754908a28096e7f14418368db0581',1,'MainWindow']]]
+  ['attach',['attach',['../struct_monitor_window_1_1_curve.html#adbe8adf5aa44e0e1df1dda96faf75f07',1,'MonitorWindow::Curve']]]
 ];

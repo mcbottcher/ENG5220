@@ -12,8 +12,8 @@ var searchData=
   ['finger_5fvalue',['finger_value',['../sampledata_8cpp.html#a1e23b69cbfb15c0a5587aa3272f9dbac',1,'sampledata.cpp']]],
   ['fingerlayout',['fingerLayout',['../class_interpret_window.html#a72831bdda5dbae269c53bb6021645435',1,'InterpretWindow::fingerLayout()'],['../class_monitor_window.html#aa2f1384109f069600aae3b33c6952410',1,'MonitorWindow::fingerLayout()']]],
   ['fingerplot',['fingerPlot',['../class_monitor_window.html#add518550737fac91912a0e99f6ea282e',1,'MonitorWindow']]],
-  ['flexfingers',['flexFingers',['../class_sample_timer.html#ae149758a165b26a99a759de0936ce97d',1,'SampleTimer']]],
-  ['flexthumb',['flexThumb',['../class_sample_timer.html#a5d89018646d2b57446ac016e08b4b9eb',1,'SampleTimer']]],
+  ['flexfingers',['flexFingers',['../class_sample_timer.html#ae149758a165b26a99a759de0936ce97d',1,'SampleTimer::flexFingers()'],['../sampledata_8cpp.html#ad6786df5304329c5da62507fcb109a5c',1,'flexFingers():&#160;sampledata.cpp']]],
+  ['flexthumb',['flexThumb',['../class_sample_timer.html#a5d89018646d2b57446ac016e08b4b9eb',1,'SampleTimer::flexThumb()'],['../sampledata_8cpp.html#a0ba7967a5ea0eb591dd02fa02958a247',1,'flexThumb():&#160;sampledata.cpp']]],
   ['fltvaluearray',['fltvaluearray',['../class_c_s_vreader.html#a9ec8f6633293fdcd48a3c96d1c159faf',1,'CSVreader']]],
   ['fs',['fs',['../namespacecreatesines.html#a81f9c9d4665e4c02dbbc7228bb0f0c83',1,'createsines']]]
 ];

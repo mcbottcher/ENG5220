@@ -369,7 +369,7 @@
         </inbodydescription>
         <location file="code/Qt/MonitorWindow.h" line="182" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="119" bodyend="121"/>
       </memberdef>
-      <memberdef kind="function" id="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_monitor_window_1ac6cc1742f3fcd20f4fa4f07b8687b0d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>size_t</type>
@@ -379,11 +379,11 @@
         </templateparamlist>
         <type>void</type>
         <definition>void MonitorWindow::plotAcc</definition>
-        <argsstring>(double(&amp;sample)[3][plotBufferSize])</argsstring>
+        <argsstring>(double(&amp;samples)[3][plotBufferSize])</argsstring>
         <name>plotAcc</name>
         <param>
           <type>double(&amp;)</type>
-          <declname>sample</declname>
+          <declname>samples</declname>
           <array>[3][plotBufferSize]</array>
         </param>
         <briefdescription>
@@ -407,7 +407,7 @@
         </inbodydescription>
         <location file="code/Qt/MonitorWindow.h" line="191" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="191" bodyend="195"/>
       </memberdef>
-      <memberdef kind="function" id="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_monitor_window_1a96fdff7dc8de70530edd6db2b1cad6b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>size_t</type>
@@ -417,11 +417,11 @@
         </templateparamlist>
         <type>void</type>
         <definition>void MonitorWindow::plotGyro</definition>
-        <argsstring>(double(&amp;sample)[3][plotBufferSize])</argsstring>
+        <argsstring>(double(&amp;samples)[3][plotBufferSize])</argsstring>
         <name>plotGyro</name>
         <param>
           <type>double(&amp;)</type>
-          <declname>sample</declname>
+          <declname>samples</declname>
           <array>[3][plotBufferSize]</array>
         </param>
         <briefdescription>
@@ -445,7 +445,7 @@
         </inbodydescription>
         <location file="code/Qt/MonitorWindow.h" line="203" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="203" bodyend="207"/>
       </memberdef>
-      <memberdef kind="function" id="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_monitor_window_1a90fdb8aff13223f47e310b648f3e21cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>size_t</type>
@@ -455,11 +455,11 @@
         </templateparamlist>
         <type>void</type>
         <definition>void MonitorWindow::plotFinger</definition>
-        <argsstring>(double(&amp;sample)[5][plotBufferSize])</argsstring>
+        <argsstring>(double(&amp;samples)[5][plotBufferSize])</argsstring>
         <name>plotFinger</name>
         <param>
           <type>double(&amp;)</type>
-          <declname>sample</declname>
+          <declname>samples</declname>
           <array>[5][plotBufferSize]</array>
         </param>
         <briefdescription>
@@ -538,32 +538,32 @@
 <para>Class to plot and monitor all the sensor data in real time </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="27">
+      <node id="39">
         <label>MonitorWindow</label>
         <link refid="class_monitor_window"/>
-        <childnode refid="28" relation="public-inheritance">
+        <childnode refid="40" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="40">
         <label>QWidget</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="29">
+      <node id="41">
         <label>MonitorWindow</label>
         <link refid="class_monitor_window"/>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="42" relation="public-inheritance">
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="43" relation="usage">
           <edgelabel>finger</edgelabel>
           <edgelabel>acc</edgelabel>
           <edgelabel>gyro</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="42">
         <label>QWidget</label>
       </node>
-      <node id="31">
+      <node id="43">
         <label>MonitorWindow::Curve</label>
         <link refid="struct_monitor_window_1_1_curve"/>
       </node>
@@ -591,9 +591,9 @@
       <member refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>hPlotLayout</name></member>
       <member refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>mainLayout</name></member>
       <member refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>MonitorWindow</name></member>
-      <member refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotAcc</name></member>
-      <member refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotFinger</name></member>
-      <member refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotGyro</name></member>
+      <member refid="class_monitor_window_1ac6cc1742f3fcd20f4fa4f07b8687b0d1" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotAcc</name></member>
+      <member refid="class_monitor_window_1a90fdb8aff13223f47e310b648f3e21cf" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotFinger</name></member>
+      <member refid="class_monitor_window_1a96fdff7dc8de70530edd6db2b1cad6b5" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotGyro</name></member>
       <member refid="class_monitor_window_1abb358daca8435681df006590a3024624" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>resetbutton</name></member>
       <member refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>resetButton</name></member>
       <member refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>sensorDataPtr</name></member>

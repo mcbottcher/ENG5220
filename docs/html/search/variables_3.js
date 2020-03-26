@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['channel_5fselect',['channel_select',['../struct_m_c_p3428_1_1config_reg_struct.html#a39e7733c8d106cd63974366c2ea31eaf',1,'MCP3428::configRegStruct::channel_select()'],['../_m_c_p3428_8h.html#a286adbf6da614e751ef93a403bb120a0',1,'channel_select():&#160;MCP3428.h']]],
   ['checkacclayout',['checkAccLayout',['../class_interpret_window.html#a89f0baab902e72c7a58381d708cda204',1,'InterpretWindow::checkAccLayout()'],['../class_monitor_window.html#acfe48d4188290d427d3b06df1a94b83d',1,'MonitorWindow::checkAccLayout()']]],
   ['checkbox',['checkbox',['../struct_monitor_window_1_1_curve.html#a8f41885b80a62488ba81abba49529a55',1,'MonitorWindow::Curve']]],
   ['checkfingerlayout',['checkFingerLayout',['../class_interpret_window.html#ac628cbff66c1c07854f4622e303c08fa',1,'InterpretWindow::checkFingerLayout()'],['../class_monitor_window.html#a895f948fb4fa2b9aea5dc02eba49f166',1,'MonitorWindow::checkFingerLayout()']]],
@@ -7,6 +8,7 @@ var searchData=
   ['clearbutton',['clearButton',['../class_interpret_window.html#a56a12b27e6101c6418c559655fdd55a3',1,'InterpretWindow']]],
   ['closebutton',['closeButton',['../class_monitor_window.html#a03b22f55b1bb3a4e8ea1f78b80f80735',1,'MonitorWindow']]],
   ['controllayout',['controlLayout',['../class_monitor_window.html#a2ac66a8c2583ec9d392815a4eb515122',1,'MonitorWindow']]],
+  ['conversion_5fmode',['conversion_mode',['../struct_m_c_p3428_1_1config_reg_struct.html#ad08f71fa4d1883ea81332498c156d288',1,'MCP3428::configRegStruct::conversion_mode()'],['../_m_c_p3428_8h.html#aff2fa42ce9a7873d6aab9bccc6eeb310',1,'conversion_mode():&#160;MCP3428.h']]],
   ['count',['count',['../class_interpret_window.html#a1b8e9ca0a2577b18715d20d41c7bb34e',1,'InterpretWindow::count()'],['../class_main_window.html#a56d8727651a8b002ebff58e79e5ef26f',1,'MainWindow::count()']]],
   ['cppsampletimer',['cppSampleTimer',['../class_main_window.html#a626eec967d3981392e278927c4505264',1,'MainWindow']]],
   ['csv_5fdata',['csv_data',['../namespaceneural_net.html#a0a5495581094cf2010535e247a1ff50b',1,'neuralNet']]],
