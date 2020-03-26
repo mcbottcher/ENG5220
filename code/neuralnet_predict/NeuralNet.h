@@ -1,6 +1,5 @@
 #include <fdeep/fdeep.hpp>
 
-
 #define NUMBER_OF_ROWS 11
 #define NUMBER_OF_COLUMNS 20
 
@@ -10,7 +9,7 @@ class NeuralNet{
         NeuralNet();
         ~NeuralNet();
 
-	void predict();
+	fdeep::tensor predict();
 
 	void insertSamples(float* sampleBuff);
         

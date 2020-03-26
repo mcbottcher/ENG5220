@@ -85,14 +85,25 @@ void InterpretWindow::handleSamples(){
     
     predictor->insertSamples(normalised_samples);
     
-    predict();
+    fdeep::tensor result = predictor->predict();
+    
+    
+    
+	std::cout << result.get(fdeep::tensor_pos(0)) << " " 
+            << result.get(fdeep::tensor_pos(1)) << " "
+            << result.get(fdeep::tensor_pos(2)) << " "
+            << result.get(fdeep::tensor_pos(3)) << " "
+            << result.get(fdeep::tensor_pos(4)) << " "
+            << result.get(fdeep::tensor_pos(5)) << " "
+            << std::endl;
+
     
 }
 
 void InterpretWindow::predict(){
 
     //std::cout << "predicting values" << std::endl;
-    predictor->predict();
+    //predictor->predict();
 
 }
 
