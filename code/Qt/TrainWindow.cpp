@@ -54,19 +54,31 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     trainGroup->setLayout(trainLayout);
 
 
+    netGroup = new QGroupBox(tr("Neural Network"));
 
-    homeButton = new QPushButton("Save");
+    nettrainButton = new QPushButton("Run Network");
+    connect(nettrainButton, &QPushButton::clicked, [this](){this->startNeuralNet();});
+
+    movementList = new QListWidget();
+    movementList->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    QDir directory;
+    QStringList files = directory.entryList(QStringList() << "*.csv", QDir::Files);
+    movementList->addItems(files);
+
+    homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
-    homeLayout = new QHBoxLayout;
-    homeLayout->addStretch(100);
-    homeLayout->addWidget(homeButton,  Qt::AlignCenter);
-    homeLayout->addStretch(100);
+
+    homeLayout = new QGridLayout;
+    homeLayout->addWidget(movementList, 0, 0);
+    homeLayout->addWidget(nettrainButton, 0, 1);
+    netGroup->setLayout(homeLayout);
 
     mainLayout = new QVBoxLayout;
     mainLayout->addWidget(inputGroup);
     mainLayout->addWidget(trainGroup);
-    mainLayout->addLayout(homeLayout);
+    mainLayout->addWidget(netGroup);
+    mainLayout->addWidget(homeButton);
     
     setLayout(mainLayout);
 
@@ -83,8 +95,18 @@ void TrainWindow::trainingDataLoop(){
 TrainWindow::~TrainWindow(){
 }
 
-void TrainWindow::closeWindow(){
-
+void TrainWindow::startNeuralNet(){
+    
+    QList<QListWidgetItem *> selected_movements = movementList->selectedItems();
+    
+    std::string command = "python3 neuralNet.py ";
+    
+    for(int i=0; i<selected_movements.size(); i++){
+        command += (selected_movements[i]->text()).toStdString();
+        command += " ";
+    }
+    
+    system(command.c_str()); 
 }
 
 
@@ -101,6 +123,7 @@ void TrainWindow::data_aq_state_machine(){
             filename = wordInput->text();
             myfile.open (filename.toStdString() + ".csv"); 
             
+            sampleCount = 0;
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
@@ -193,4 +216,14 @@ void TrainWindow::saveMovement(){
 		myfile << "\n";
 }
 
+void TrainWindow::closeWindow(){
 
+    timer->stop();
+    emit stopSampling_sig();
+    if(myfile.is_open()){
+        myfile.close();
+    }
+    currentState = STATE_START;
+
+    this->close();
+}

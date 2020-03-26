@@ -13,6 +13,9 @@
 #include <QLineEdit>
 #include <QGroupBox>
 #include <QTimer>
+#include <QListWidget>
+#include <QDir>
+#include <QAbstractItemView>
 #include "QLed.h"
 
 #include <stdio.h>
@@ -38,18 +41,22 @@ private:
     int gesture_count = 0;
     QLineEdit *wordInput;
     QLabel *inputLabel, *statusText, *timerText; 
-    QPushButton *wordTrain, *homeButton;
+    QPushButton *wordTrain, *nettrainButton, *homeButton;
 
     QLed *led[10];
-    QGroupBox *inputGroup, *trainGroup;
+    QGroupBox *inputGroup, *trainGroup, *netGroup;
+
+    QListWidget *movementList;
 
     QVBoxLayout *mainLayout;
-    QHBoxLayout *homeLayout;
+    QGridLayout *homeLayout;
     QHBoxLayout *lightBox;
 
     QGridLayout *inputLayout, *trainLayout, *ledLayout;
 
     QTimer *timer;
+
+    QStringList files;
 
     trainingState_t currentState = STATE_START;
     QString temp;
@@ -71,8 +78,9 @@ public:
     void handle_samples();
 
 public slots:
-    void closeWindow();
+    void startNeuralNet();
     void data_aq_state_machine();
+    void closeWindow();
 
 signals:
     void startSampling_sig();
