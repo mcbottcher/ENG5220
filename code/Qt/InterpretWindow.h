@@ -58,6 +58,8 @@ private:
     
     int16_t* sensorValuesPtr;
 
+    int number_of_net_outputs;
+
 public:
 
 	InterpretWindow(int16_t* sensorValues); // default constructor - called when a Window is declared without arguments

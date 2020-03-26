@@ -5,6 +5,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     sensorValuesPtr = sensorValues;
 
     predictor = new NeuralNet;
+    number_of_net_outputs = predictor->get_number_of_outputs();
     
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->close();});
@@ -87,8 +88,10 @@ void InterpretWindow::handleSamples(){
     
     fdeep::tensor result = predictor->predict();
     
+    //need to output these to the text box...
+    //also need to check how many outputs there are...: held in number_of_net_outputs
     
-    
+    /*
 	std::cout << result.get(fdeep::tensor_pos(0)) << " " 
             << result.get(fdeep::tensor_pos(1)) << " "
             << result.get(fdeep::tensor_pos(2)) << " "
@@ -96,7 +99,16 @@ void InterpretWindow::handleSamples(){
             << result.get(fdeep::tensor_pos(4)) << " "
             << result.get(fdeep::tensor_pos(5)) << " "
             << std::endl;
-
+    */
+    
+    outputWeightBox->clear();
+    
+    for(int i=0; i<number_of_net_outputs; i++){
+        
+        outputWeightBox->appendPlainText(QString::number(result.get(fdeep::tensor_pos(i))));
+    
+    }
+    
     
 }
 

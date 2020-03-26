@@ -44,3 +44,12 @@ void NeuralNet::insertSamples(float* sampleBuff){
   
 }
 
+int NeuralNet::get_number_of_outputs(){
+
+    std::vector<fdeep::tensor_shape_variable> shape = _model.get_output_shapes();
+    
+    size_t mikkel = (shape[0].depth_).unsafe_get_just();
+    
+    return int(mikkel);
+
+}

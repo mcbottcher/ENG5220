@@ -12,6 +12,8 @@ class NeuralNet{
 	fdeep::tensor predict();
 
 	void insertSamples(float* sampleBuff);
+
+	int get_number_of_outputs();
         
     private:
         
@@ -19,5 +21,5 @@ class NeuralNet{
         
         //11 rows, 20 columns
         float netInputs[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS] = {0};
-        
+
 };
