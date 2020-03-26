@@ -183,25 +183,26 @@ void TrainWindow::data_aq_state_machine(){
 
 void TrainWindow::handle_samples(){
     
-    for(int i=0; i<11; i++){
-        movementData[i][sampleCount] = sensorDataptr[i];
-    }
-  
-    sampleCount++;
+    if (currentState !=STATE_START){
+        for(int i=0; i<11; i++){
+            movementData[i][sampleCount] = sensorDataptr[i];
+        }
     
-    if(sampleCount == 20){
-        sampleCount = 0;
-        //stop the cpptimer with a signal
-        emit stopSampling_sig();
-        //write row to csv file
-        saveMovement();
-        //goto the next state
-        data_aq_state_machine();
+        sampleCount++;
+        
+        if(sampleCount == 20){
+            sampleCount = 0;
+            //stop the cpptimer with a signal
+            emit stopSampling_sig();
+            //write row to csv file
+            saveMovement();
+            //goto the next state
+            data_aq_state_machine();
+        }
+        else{
+            //nop
+        }
     }
-    else{
-        //nop
-    }
-    
       
 }
 
