@@ -188,9 +188,9 @@ public:
         \note pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}};
     */
     template <size_t plotBufferSize>
-    void plotAcc(double (&sample)[3][plotBufferSize]){
+    void plotAcc(double (&samples)[3][plotBufferSize]){
         for (size_t i = 0; i < 3; i++){
-            acc[i].plotSample(sample[i], plotBufferSize);
+            acc[i].plotSample(samples[i], plotBufferSize);
         }
     }
 
@@ -200,9 +200,9 @@ public:
         \note pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}};
     */
     template <size_t plotBufferSize>
-    void plotGyro(double (&sample)[3][plotBufferSize]){ 
+    void plotGyro(double (&samples)[3][plotBufferSize]){ 
         for (size_t i = 0; i < 3; i++){
-            gyro[i].plotSample(sample[i], plotBufferSize);
+            gyro[i].plotSample(samples[i], plotBufferSize);
         }
     }
 
@@ -213,9 +213,9 @@ public:
         \note pass samples in format: samples[5][n] = {{IndexFingerArray}, {...}, {...},{PinkyFingerArray}, {ThumbArray}};
     */
     template <size_t plotBufferSize>
-    void plotFinger(double (&sample)[5][plotBufferSize]){
+    void plotFinger(double (&samples)[5][plotBufferSize]){
         for (size_t i = 0; i < 5; i++){
-            finger[i].plotSample(sample[i], plotBufferSize);
+            finger[i].plotSample(samples[i], plotBufferSize);
         }
     }
 
