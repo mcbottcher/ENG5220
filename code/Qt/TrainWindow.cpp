@@ -98,6 +98,15 @@ TrainWindow::~TrainWindow(){
 void TrainWindow::startNeuralNet(){
     
     QList<QListWidgetItem *> selected_movements = movementList->selectedItems();
+    if (selected_movements.size()<2){
+        QMessageBox msg;
+        msg.setText("Not enough movements selected.");
+        msg.setInformativeText("At least two movements must be selected.");
+        msg.setStandardButtons(QMessageBox::Ok);
+        msg.setDefaultButton(QMessageBox::Ok);
+        msg.exec();
+        return;
+    }
     
     std::string command = "python3 neuralNet.py ";
     
@@ -105,9 +114,19 @@ void TrainWindow::startNeuralNet(){
         command += (selected_movements[i]->text()).toStdString();
         command += " ";
     }
-    
-    system(command.c_str()); 
+
+    command += "&";
+    QMessageBox msg1;
+    msg1.setText("Training neural network.");
+    msg1.setInformativeText("This may take a while...");
+    msg1.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
+    msg1.setDefaultButton(QMessageBox::Ok);
+
+    if (msg1.exec() ==QMessageBox::Ok){
+        system(command.c_str());
+    }
 }
+
 
 
 void TrainWindow::data_aq_state_machine(){
@@ -175,8 +194,6 @@ void TrainWindow::data_aq_state_machine(){
         case STATE_FINISHED:
             myfile.close();
             statusText->setText("FINISHED");
-            // wordInput->text().toStdString()+ ".csv");
-            // QStr
             movementList->addItem(QString(wordInput->text()+ ".csv"));
             currentState = STATE_START;
             break;

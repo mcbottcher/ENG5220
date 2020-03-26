@@ -16,6 +16,7 @@
 #include <QListWidget>
 #include <QDir>
 #include <QAbstractItemView>
+#include <QMessageBox>
 #include "QLed.h"
 
 #include <stdio.h>
