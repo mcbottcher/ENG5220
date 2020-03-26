@@ -57,13 +57,13 @@ private:
     //! CurveStruct data structure.
     /*! Data structure for each curve on the graphs. */
     typedef struct Curve{
+        const size_t  buffsize; /*!< Length of the ploting buffer */
+        QString       name;     /*!< The name of each curve so the user knows what curve is what data. */
+        double       *data;     /*!< Pointer to the data held in memory for that curve. */
         QwtPlot      *plot;     /*!< The associated QwtPlot for the curve. */
         QwtPlotCurve *curve;    /*!< The actual curve object itsself. */
         QCheckBox    *checkbox; /*!< Checkbox to turn the curve on and off. */
-        double       *data;     /*!< Pointer to the data held in memory for that curve. */
         double       *xAxisData;/*!< Pointer to the xAxis data */
-        const size_t  buffsize; /*!< Length of the ploting buffer */
-        QString       name;     /*!< The name of each curve so the user knows what curve is what data. */
 
 
         //! Curve constructor.
