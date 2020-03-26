@@ -65,6 +65,10 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     QStringList files = directory.entryList(QStringList() << "*.csv", QDir::Files);
     movementList->addItems(files);
 
+    homeButton = new QPushButton("Home");
+    connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
+
+
     homeLayout = new QGridLayout;
     homeLayout->addWidget(movementList, 0, 0);
     homeLayout->addWidget(nettrainButton, 0, 1);
@@ -74,6 +78,7 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     mainLayout->addWidget(inputGroup);
     mainLayout->addWidget(trainGroup);
     mainLayout->addWidget(netGroup);
+    mainLayout->addWidget(homeButton);
     
     setLayout(mainLayout);
 
@@ -118,6 +123,7 @@ void TrainWindow::data_aq_state_machine(){
             filename = wordInput->text();
             myfile.open (filename.toStdString() + ".csv"); 
             
+            sampleCount = 0;
             timer->start(1000); //time in ms
             currentState = STATE_COUNTDOWN_3;
             break;
@@ -210,4 +216,14 @@ void TrainWindow::saveMovement(){
 		myfile << "\n";
 }
 
+void TrainWindow::closeWindow(){
 
+    timer->stop();
+    emit stopSampling_sig();
+    if(myfile.is_open()){
+        myfile.close();
+    }
+    currentState = STATE_START;
+
+    this->close();
+}

@@ -41,7 +41,7 @@ private:
     int gesture_count = 0;
     QLineEdit *wordInput;
     QLabel *inputLabel, *statusText, *timerText; 
-    QPushButton *wordTrain, *nettrainButton;
+    QPushButton *wordTrain, *nettrainButton, *homeButton;
 
     QLed *led[10];
     QGroupBox *inputGroup, *trainGroup, *netGroup;
@@ -80,6 +80,7 @@ public:
 public slots:
     void startNeuralNet();
     void data_aq_state_machine();
+    void closeWindow();
 
 signals:
     void startSampling_sig();
