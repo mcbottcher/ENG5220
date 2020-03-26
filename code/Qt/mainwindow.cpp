@@ -123,8 +123,8 @@ void MainWindow::createUI(){
 
 
 
-    //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 
+    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
 void MainWindow::createFilters(){
@@ -138,17 +138,22 @@ void MainWindow::createFilters(){
 }
 
 void MainWindow::newDataEvent(){
-    /*
+    
     int16_t* allData = cppSampleTimer->getSensorValues();
-    for (uint8_t i = 0; i<5; i++){
-        if (i<3){
-            sampleacc[i][0] =allData[i];
-            samplegyro[i][0]=allData[i+3];
-        }
+    //for (uint8_t i = 0; i<5; i++){
+    //    if (i<3){
+    //        sampleacc[i][0] =allData[i];
+    //        samplegyro[i][0]=allData[i+3];
+    //    }
+    //    samplefinger[i][0]=allData[i+6];
+    //}
+    for(uint8_t i=0; i<3;i++){
+        sampleacc[i][0] = allData[i];
+        samplegyro[i][0]= allData[i+3];
+    }
+    for(uint8_t i=0; i<5;i++){
         samplefinger[i][0]=allData[i+6];
     }
-    
-    */
     
     if(trainWindow->isVisible()){
         
@@ -159,11 +164,15 @@ void MainWindow::newDataEvent(){
     }
 
     if (monitorWindow->isVisible()){
-        QtConcurrent::run([this]() {
-            monitorWindow->plotAcc(this->sampleacc);
-            monitorWindow->plotGyro(this->samplegyro);
-            monitorWindow->plotFinger(this->samplefinger);
-        });
+        QtConcurrent::run([this]() {monitorWindow->plotAcc(this->sampleacc);});
+        QtConcurrent::run([this]() {monitorWindow->plotGyro(this->samplegyro);});
+        QtConcurrent::run([this]() {monitorWindow->plotFinger(this->samplefinger);});
+        //});
+        // QtConcurrent::run(&MonitorWindow::plotAcc,sampleacc);
+        // QtConcurrent::run(&MonitorWindow::plotGyro,samplegyro);
+        // QtConcurrent::run(&MonitorWindow::plotFinger,samplefinger);
+
+
     }
 }
 
@@ -180,13 +189,13 @@ void MainWindow::timerEvent(){
     ++count;
     for (size_t i=0; i<5;i++){
         for (size_t j=0;j<1;j++){
-            samplefinger[i][j]= in/(i+1);
+            // samplefinger[i][j]= in/(i+1);
         }
     }
     for (size_t i=0; i<3;i++){
         for (size_t j=0;j<1;j++){ 
-            sampleacc[i][j]= in/(i+1);
-            samplegyro[i][j]= in/(i+1);
+            // sampleacc[i][j]= in/(i+1);
+            // samplegyro[i][j]= in/(i+1);
         }
     }
     // accelFilterBank->filter(sampleacc[0][0]);

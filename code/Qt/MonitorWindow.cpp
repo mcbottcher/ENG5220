@@ -9,14 +9,18 @@ MonitorWindow::MonitorWindow(size_t bufferSize):
     count(0),
     bufferSize(bufferSize),
     xAxisData(new double[bufferSize]()){
+
+    acc = new CurveStruct_t[3]{bufferSize,bufferSize,bufferSize};
+    gyro = new CurveStruct_t[3]{bufferSize,bufferSize,bufferSize};
+    finger = new CurveStruct_t[5]{bufferSize,bufferSize,bufferSize,bufferSize,bufferSize};
 	
-    for (int i=0; i<3; i++){
-        acc[i].data = new double[bufferSize];
-        gyro[i].data = new double[bufferSize];
-    }
-    for (int i=0; i<5; i++){
-        finger[i].data = new double[bufferSize];
-    }
+    // for (int i=0; i<3; i++){
+    //     acc[i].data = new double[bufferSize];
+    //     gyro[i].data = new double[bufferSize];
+    // }
+    // for (int i=0; i<5; i++){
+    //     finger[i].data = new double[bufferSize];
+    // }
 
     resetButton = new QPushButton("reset");
     closeButton = new QPushButton("close");
@@ -150,7 +154,7 @@ MonitorWindow::~MonitorWindow(){
 
 // Method to draw on a curve
 void MonitorWindow::_updateCurve(CurveStruct &plotcurve){
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
+    plotcurve.curve->setRawSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 // Method to draw plot on the screen
@@ -176,7 +180,7 @@ inline void MonitorWindow::_insertSample(CurveStruct &plotcurve, double sample){
 void MonitorWindow::_setupCurves(QwtPlot *plot, CurveStruct &plotcurve){
     plotcurve.plot = plot;
     plotcurve.curve = new QwtPlotCurve();
-    plotcurve.curve->setSamples(xAxisData,plotcurve.data, bufferSize);
+    plotcurve.curve->setRawSamples(xAxisData,plotcurve.data, bufferSize);
 	plotcurve.curve->attach(plotcurve.plot);
     _resetCurve(plotcurve);
 }
@@ -197,7 +201,7 @@ void MonitorWindow::_resetCurve(CurveStruct &plotcurve){
 // }
 
 // Method to plot buffer of samples if button is checked
-void MonitorWindow::_plotSample(CurveStruct &plotcurve, const double *buffer, size_t plotBufferSize){
+void MonitorWindow::_plotSample(CurveStruct &plotcurve, double *buffer, size_t plotBufferSize){
     if (plotcurve.checkbox->isChecked()){
         for (size_t i=0; i< plotBufferSize;i++){
             _insertSample(plotcurve, buffer[i]);
@@ -208,7 +212,7 @@ void MonitorWindow::_plotSample(CurveStruct &plotcurve, const double *buffer, si
             _insertSample(plotcurve, 0);
         }
     }
-    plotcurve.curve->setSamples(xAxisData, plotcurve.data, bufferSize);
+    plotcurve.curve->setRawSamples(xAxisData, plotcurve.data, bufferSize);
 }
 
 

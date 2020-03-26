@@ -62,6 +62,9 @@ class MonitorWindow : public QWidget
             QCheckBox    *checkbox; /*!< Checkbox to turn the curve on and off. */
             double       *data;     /*!< Pointer to the data held in memory for that curve. */
             QString       name;     /*!< The name of each curve so the user knows what curve is what data. */
+
+            CurveStruct(const size_t buffsize):data(new double[buffsize]()){
+            }
             ~CurveStruct(){
                 delete[] data;
             }
@@ -71,7 +74,7 @@ class MonitorWindow : public QWidget
         /*! Create data scructures for each type of data.
             \sa CurveStruct    
         */
-        CurveStruct_t acc[3], gyro[3], finger[5];
+        CurveStruct_t *acc, *gyro, *finger;
 
         //! Vertical layout members.
         /*! Vertical QT layout elements of the GUI */
@@ -118,7 +121,7 @@ class MonitorWindow : public QWidget
             \param plotBufferSize The size of the buffer to be plotted. 
             \sa CurveStruct and _insertSample()  
         */
-        void _plotSample(CurveStruct &plotcurve, const double *buffer, size_t plotBufferSize);
+        void _plotSample(CurveStruct &plotcurve, double *buffer, size_t plotBufferSize);
 
         //! resetCurve method.
         /*! Helper method to reset a curve to all zeros.*/
