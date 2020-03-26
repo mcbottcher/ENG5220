@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_train_net" kind="class" language="C++" prot="public">
+    <compoundname>TrainNet</compoundname>
+    <includes refid="train_net_8hpp" local="no">trainNet.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_train_net_1ac864ec4ac65529cfcaba64a2360ce595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TrainNet::TrainNet</definition>
+        <argsstring>()</argsstring>
+        <name>TrainNet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/trainNet.hpp" line="11" column="1" bodyfile="code/pythonTraining/trainNet.hpp" bodystart="11" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/pythonTraining/trainNet.hpp" line="7" column="1" bodyfile="code/pythonTraining/trainNet.hpp" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_train_net_1ac864ec4ac65529cfcaba64a2360ce595" prot="public" virt="non-virtual"><scope>TrainNet</scope><name>TrainNet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

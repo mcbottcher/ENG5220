@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_interpret_window_8cpp" kind="file" language="C++">
+    <compoundname>InterpretWindow.cpp</compoundname>
+    <includes refid="_interpret_window_8h" local="yes">InterpretWindow.h</includes>
+    <incdepgraph>
+      <node id="143">
+        <label>QFont</label>
+      </node>
+      <node id="145">
+        <label>QTextToSpeech</label>
+      </node>
+      <node id="144">
+        <label>QPlainTextEdit</label>
+      </node>
+      <node id="139">
+        <label>QCheckBox</label>
+      </node>
+      <node id="146">
+        <label>QDebug</label>
+      </node>
+      <node id="141">
+        <label>QString</label>
+      </node>
+      <node id="138">
+        <label>QColor</label>
+      </node>
+      <node id="140">
+        <label>QPushButton</label>
+      </node>
+      <node id="142">
+        <label>QLabel</label>
+      </node>
+      <node id="135">
+        <label>code/Qt/InterpretWindow.cpp</label>
+        <link refid="_interpret_window_8cpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="136">
+        <label>InterpretWindow.h</label>
+        <link refid="_interpret_window_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interpret_window_8h" kindref="compound">InterpretWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_interpret_window_1ac30a9385a01d43c87d4567ec278a9e35" refkind="member"><highlight class="normal"><ref refid="class_interpret_window_1ac30a9385a01d43c87d4567ec278a9e35" kindref="member">InterpretWindow::InterpretWindow</ref>(){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QFont<sp/><ref refid="class_interpret_window_1ab81d81f2e5585af5765698f329cbe569" kindref="member">titleFont</ref>(</highlight><highlight class="stringliteral">&quot;Arial&quot;</highlight><highlight class="normal">,<sp/>20,<sp/>QFont::Bold);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a1167de8e7cc94ef9b855d9c702c13f37" kindref="member">titleText</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a1167de8e7cc94ef9b855d9c702c13f37" kindref="member">titleText</ref>-&gt;setFont(<ref refid="class_interpret_window_1ab81d81f2e5585af5765698f329cbe569" kindref="member">titleFont</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a18ef0a58c63b719e1924dcd0c11f36a4" kindref="member">wrongButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Wrong<sp/>word&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_interpret_window_1a18ef0a58c63b719e1924dcd0c11f36a4" kindref="member">wrongButton</ref>,<sp/>SIGNAL(clicked()),<sp/>SLOT(<ref refid="class_interpret_window_1a8fbac855c9221e540e3c1af1a53f11d2" kindref="member">wrongButtonClicked</ref>()));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a938dd1e4e7c4bd5fcd3a8b1880449275" kindref="member">homeButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Home&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_interpret_window_1a938dd1e4e7c4bd5fcd3a8b1880449275" kindref="member">homeButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;close();});</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a56a12b27e6101c6418c559655fdd55a3" kindref="member">clearButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Clear&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_interpret_window_1a56a12b27e6101c6418c559655fdd55a3" kindref="member">clearButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){<ref refid="class_interpret_window_1a3d6df0c01749c4931213162c027d385b" kindref="member">textBox</ref>-&gt;clear();});</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a6682fb7c95c63be174f699e42bc8b470" kindref="member">sayButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Say<sp/>words&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_interpret_window_1a6682fb7c95c63be174f699e42bc8b470" kindref="member">sayButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_interpret_window_1ad4aaeb7dbd8688280d834fa6e21d3d8a" kindref="member">sayWords</ref>();});</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a3c0c90a6fd30e65815c26c1a677e13b3" kindref="member">soundCheckBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QCheckBox();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QPixmap<sp/>pix(</highlight><highlight class="stringliteral">&quot;Speaker_Icon.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kindref="member">loudspeakerIcon</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kindref="member">loudspeakerIcon</ref>-&gt;setPixmap(pix.scaled(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kindref="member">loudspeakerIcon</ref>-&gt;width(),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kindref="member">loudspeakerIcon</ref>-&gt;height(),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Qt::KeepAspectRatio));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a3d6df0c01749c4931213162c027d385b" kindref="member">textBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPlainTextEdit;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kindref="member">soundLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kindref="member">soundLayout</ref>-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kindref="member">soundLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a3c0c90a6fd30e65815c26c1a677e13b3" kindref="member">soundCheckBox</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kindref="member">soundLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kindref="member">loudspeakerIcon</ref>,<sp/>Qt::AlignRight);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref>-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a1167de8e7cc94ef9b855d9c702c13f37" kindref="member">titleText</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref>-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a18ef0a58c63b719e1924dcd0c11f36a4" kindref="member">wrongButton</ref>,<sp/>Qt::AlignRight);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a6682fb7c95c63be174f699e42bc8b470" kindref="member">sayButton</ref>,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a56a12b27e6101c6418c559655fdd55a3" kindref="member">clearButton</ref>,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a938dd1e4e7c4bd5fcd3a8b1880449275" kindref="member">homeButton</ref>,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref>-&gt;addLayout(<ref refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kindref="member">soundLayout</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref>-&gt;addLayout(<ref refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kindref="member">titleLayout</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref>-&gt;addWidget(<ref refid="class_interpret_window_1a3d6df0c01749c4931213162c027d385b" kindref="member">textBox</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref>-&gt;addLayout(<ref refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kindref="member">homeLayout</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTextToSpeech();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref>-&gt;setLocale(QLocale(QLocale::English,QLocale::LatinScript,QLocale::UnitedStates));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref>-&gt;setRate(2);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref>-&gt;setPitch(2);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref>-&gt;setVolume(100);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>setLayout(<ref refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kindref="member">mainLayout</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_interpret_window_1a8537eb63d6a149536180b66aca631d04" refkind="member"><highlight class="normal"><ref refid="class_interpret_window_1a8537eb63d6a149536180b66aca631d04" kindref="member">InterpretWindow::~InterpretWindow</ref>(){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_interpret_window_1a2368591a03d045adb4e91e54c96fa9d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interpret_window_1a2368591a03d045adb4e91e54c96fa9d8" kindref="member">InterpretWindow::closeWindow</ref>(){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this-&gt;close();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_interpret_window_1a34d00ce5e7a8fda44136bb60d0ea76b1" kindref="member">emitClose</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_interpret_window_1ad4aaeb7dbd8688280d834fa6e21d3d8a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interpret_window_1ad4aaeb7dbd8688280d834fa6e21d3d8a" kindref="member">InterpretWindow::sayWords</ref>(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kindref="member">speech</ref>-&gt;say(<ref refid="class_interpret_window_1a3d6df0c01749c4931213162c027d385b" kindref="member">textBox</ref>-&gt;toPlainText());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_interpret_window_1a8fbac855c9221e540e3c1af1a53f11d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interpret_window_1a8fbac855c9221e540e3c1af1a53f11d2" kindref="member">InterpretWindow::wrongButtonClicked</ref>(){</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_interpret_window_1a1955a852966c9acf37428e4c954713e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interpret_window_1a1955a852966c9acf37428e4c954713e4" kindref="member">InterpretWindow::timerEvent</ref>(){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer<sp/>[50];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf<sp/>(buffer,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_interpret_window_1a1b8e9ca0a2577b18715d20d41c7bb34e" kindref="member">count</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>number(buffer);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interpret_window_1a1167de8e7cc94ef9b855d9c702c13f37" kindref="member">titleText</ref>-&gt;setText(number);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>++<ref refid="class_interpret_window_1a1b8e9ca0a2577b18715d20d41c7bb34e" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>speech-&gt;say(number);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/InterpretWindow.cpp"/>
+  </compounddef>
+</doxygen>

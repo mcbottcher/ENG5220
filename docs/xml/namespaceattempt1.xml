@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespaceattempt1" kind="namespace" language="Python">
+    <compoundname>attempt1</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceattempt1_1ac987ffe9fbcad6f4827da2e70d6be31f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.df1</definition>
+        <argsstring></argsstring>
+        <name>df1</name>
+        <initializer>=  pd.read_csv(&quot;movement1.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="11" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1ae68a8f0aafb1c34ac31ba27741fe8a86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data1</definition>
+        <argsstring></argsstring>
+        <name>data1</name>
+        <initializer>=  df1.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="12" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a5d26d562c132123e902e42986ffa3cc6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <initializer>=  <ref refid="namespaceattempt1_1ae68a8f0aafb1c34ac31ba27741fe8a86" kindref="member">data1</ref>[i]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="16" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1ae24a853f8acf349663fa5fa61d6aa446" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.df2</definition>
+        <argsstring></argsstring>
+        <name>df2</name>
+        <initializer>=  pd.read_csv(&quot;movement2.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="20" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1af47f22874523bec9920133a512ba330e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data2</definition>
+        <argsstring></argsstring>
+        <name>data2</name>
+        <initializer>=  df2.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="21" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a8f8ed1b6b6d37bd0d37813c0cb5cbd32" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.df3</definition>
+        <argsstring></argsstring>
+        <name>df3</name>
+        <initializer>=  pd.read_csv(&quot;movement3.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="29" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1ad530e447cfc0ae005c66870075642a29" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data3</definition>
+        <argsstring></argsstring>
+        <name>data3</name>
+        <initializer>=  df3.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="30" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a340769700edac4df748aeeb891ab6b47" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.df4</definition>
+        <argsstring></argsstring>
+        <name>df4</name>
+        <initializer>=  pd.read_csv(&quot;movement4.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="38" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a16abfd4fc68e78fc24128b4286734ec6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data4</definition>
+        <argsstring></argsstring>
+        <name>data4</name>
+        <initializer>=  df4.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="39" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a94c47060d510d76e0269ad7d5e8873d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data5</definition>
+        <argsstring></argsstring>
+        <name>data5</name>
+        <initializer>=  np.append(<ref refid="namespaceattempt1_1ae68a8f0aafb1c34ac31ba27741fe8a86" kindref="member">data1</ref>, <ref refid="namespaceattempt1_1af47f22874523bec9920133a512ba330e" kindref="member">data2</ref>, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="47" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a7f890463a1dcdf83dcb7056f3ff381f6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.data6</definition>
+        <argsstring></argsstring>
+        <name>data6</name>
+        <initializer>=  np.append(<ref refid="namespaceattempt1_1ad530e447cfc0ae005c66870075642a29" kindref="member">data3</ref>, <ref refid="namespaceattempt1_1a16abfd4fc68e78fc24128b4286734ec6" kindref="member">data4</ref>, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="48" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1ad9383799d7ca9211cf8584fd0251846e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.training_data</definition>
+        <argsstring></argsstring>
+        <name>training_data</name>
+        <initializer>=  np.append(<ref refid="namespaceattempt1_1a94c47060d510d76e0269ad7d5e8873d2" kindref="member">data5</ref>, <ref refid="namespaceattempt1_1a7f890463a1dcdf83dcb7056f3ff381f6" kindref="member">data6</ref>, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="50" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a56ff3423c0f32dda1145c386ad8af251" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.training_labels</definition>
+        <argsstring></argsstring>
+        <name>training_labels</name>
+        <initializer>=  np.zeros(76)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="52" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1ad3ecdd9ef1003f442f9ae4a7166ff54d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <initializer>=  Sequential([
+  Dense(330, activation=&apos;relu&apos;, input_shape=(220,)),
+  Dense(64, activation=&apos;relu&apos;),
+  Dense(64, activation=&apos;relu&apos;),
+  Dense(5, activation=&apos;softmax&apos;),
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="60" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a3fb2a517c56fff4e5944a2db24b59cac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.optimizer</definition>
+        <argsstring></argsstring>
+        <name>optimizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="69" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a72702d4da9ff6e8430c8c4386a9952db" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.loss</definition>
+        <argsstring></argsstring>
+        <name>loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="70" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a88e21a64e3c625c5877c2fa707528050" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.metrics</definition>
+        <argsstring></argsstring>
+        <name>metrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="71" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a7369af2701767423e7bd7a817af61c6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.epochs</definition>
+        <argsstring></argsstring>
+        <name>epochs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="78" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a227a5e71feb6649041f9c58da3944995" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.batch_size</definition>
+        <argsstring></argsstring>
+        <name>batch_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="79" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1acbbfa1843b536dc3f62108beaddaff09" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.df5</definition>
+        <argsstring></argsstring>
+        <name>df5</name>
+        <initializer>=  pd.read_csv(&quot;verificationData.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="82" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1a041f1eb97ba888e532d0b8ac3596b2f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.predict_data</definition>
+        <argsstring></argsstring>
+        <name>predict_data</name>
+        <initializer>=  df5.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="83" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1aacfadd5941a15fa339acff1364bab7ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.include_optimizer</definition>
+        <argsstring></argsstring>
+        <name>include_optimizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="103" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceattempt1_1aa7c65aa6ad580fe38b6ad850cc1f3ea0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>attempt1.predictions</definition>
+        <argsstring></argsstring>
+        <name>predictions</name>
+        <initializer>=  model.predict(<ref refid="namespaceattempt1_1a041f1eb97ba888e532d0b8ac3596b2f9" kindref="member">predict_data</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/attempt1.py" line="107" column="1" bodyfile="code/pythonTraining/attempt1.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/pythonTraining/attempt1.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

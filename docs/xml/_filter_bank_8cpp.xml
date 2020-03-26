@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_filter_bank_8cpp" kind="file" language="C++">
+    <compoundname>FilterBank.cpp</compoundname>
+    <includes refid="_filter_bank_8h" local="yes">FilterBank.h</includes>
+    <includedby refid="_filter_bank_test_8cpp" local="yes">testfiles/FilterBankTest.cpp</includedby>
+    <incdepgraph>
+      <node id="0">
+        <label>code/FilterBank.cpp</label>
+        <link refid="_filter_bank_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Iir.h</label>
+      </node>
+      <node id="1">
+        <label>FilterBank.h</label>
+        <link refid="_filter_bank_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>testfiles/FilterBankTest.cpp</label>
+        <link refid="_filter_bank_test_8cpp"/>
+      </node>
+      <node id="3">
+        <label>code/FilterBank.cpp</label>
+        <link refid="_filter_bank_8cpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_filter_bank_8h" kindref="compound">FilterBank.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_filter_bank_1a1f4c10f55bed118220c55f10215be634" refkind="member"><highlight class="normal"><ref refid="class_filter_bank_1a1f4c10f55bed118220c55f10215be634" kindref="member">FilterBank::FilterBank</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfFilters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterOrder,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampleRate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*cutoffFrequencies):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>numberOfFilters(numberOfFilters),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>sampleRate(sampleRate),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>filterOrder(filterOrder),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>outputArray(new<sp/>double[numberOfFilters]()){<sp/></highlight><highlight class="comment">//<sp/>create<sp/>output<sp/>array<sp/>of<sp/>number<sp/>filter<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" kindref="member">filterObjArray</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_filter" kindref="compound">Filter</ref>*[<ref refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" kindref="member">numberOfFilters</ref>];<sp/><sp/></highlight><highlight class="comment">//create<sp/>array<sp/>of<sp/>poitners<sp/>to<sp/><sp/>Filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//instantiate<sp/>each<sp/>Filter<sp/>with<sp/>consecutive<sp/>elements<sp/>of<sp/>cutoff<sp/>frequencies<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" kindref="member">numberOfFilters</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" kindref="member">filterObjArray</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_filter" kindref="compound">Filter</ref>(<ref refid="class_filter_bank_1a83780bb546eda422318b54103df62613" kindref="member">filterOrder</ref>,<ref refid="class_filter_bank_1ac706a43798d1322e8d078ac7af0256bf" kindref="member">sampleRate</ref>,<sp/>cutoffFrequencies[i]);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_filter_bank_1ad95fe17a4040bf978ad977a37ce3a868" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_filter_bank_1ad95fe17a4040bf978ad977a37ce3a868" kindref="member">FilterBank::setup</ref>(){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" kindref="member">numberOfFilters</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" kindref="member">filterObjArray</ref>[i]-&gt;<ref refid="class_filter_1aa50bc47ce6e1eed97a274ebe239579cf" kindref="member">setup</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//filter<sp/>single<sp/>sample<sp/>though<sp/>the<sp/>array<sp/>of<sp/>filters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_filter_bank_1a09881ea60cd2c2d21c29b3c599ef2c0b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_filter_bank_1a09881ea60cd2c2d21c29b3c599ef2c0b" kindref="member">FilterBank::filter</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" kindref="member">numberOfFilters</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_filter_bank_1adc84ce6490841a630b6634092e9d1613" kindref="member">outputArray</ref>[i]<sp/>=<sp/><ref refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" kindref="member">filterObjArray</ref>[i]-&gt;<ref refid="class_filter_1afe4d216c91859366458add7f7fcbb6aa" kindref="member">filter</ref>(sample);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_filter_bank_1adc84ce6490841a630b6634092e9d1613" kindref="member">outputArray</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>returns<sp/>pointer<sp/>to<sp/>array<sp/>of<sp/>processed<sp/>sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/FilterBank.cpp"/>
+  </compounddef>
+</doxygen>

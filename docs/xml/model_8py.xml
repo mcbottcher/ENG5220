@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="model_8py" kind="file" language="Python">
+    <compoundname>model.py</compoundname>
+    <innernamespace refid="namespacemodel">model</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacemodel" refkind="compound"><highlight class="comment">#<sp/>The<sp/>full<sp/>neural<sp/>network<sp/>code!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mnist</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.models<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Sequential</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.layers<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Dense</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.utils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>to_categorical</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacemodel_1aec7f6990dc1028c8b46249ea8b1dc0ef" refkind="member"><highlight class="normal">train_images<sp/>=<sp/>mnist.train_images()</highlight></codeline>
+<codeline lineno="10" refid="namespacemodel_1a2f5c3e7553cf97b074eb5c2e6d08f1f7" refkind="member"><highlight class="normal">train_labels<sp/>=<sp/>mnist.train_labels()</highlight></codeline>
+<codeline lineno="11" refid="namespacemodel_1a35ba16d78d67d22ccf3daa8fec6f5510" refkind="member"><highlight class="normal">test_images<sp/>=<sp/>mnist.test_images()</highlight></codeline>
+<codeline lineno="12" refid="namespacemodel_1a2b89d7653db85cca9451b204ceeaf95a" refkind="member"><highlight class="normal">test_labels<sp/>=<sp/>mnist.test_labels()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Normalize<sp/>the<sp/>images.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">train_images<sp/>=<sp/>(train_images<sp/>/<sp/>255)<sp/>-<sp/>0.5</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">test_images<sp/>=<sp/>(test_images<sp/>/<sp/>255)<sp/>-<sp/>0.5</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Flatten<sp/>the<sp/>images.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">train_images<sp/>=<sp/>train_images.reshape((-1,<sp/>784))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">test_images<sp/>=<sp/>test_images.reshape((-1,<sp/>784))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">print(train_images.shape)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">print(train_labels.shape)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">print(test_images.shape)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">print(test_labels.shape)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">#so<sp/>it<sp/>is<sp/>a<sp/>list<sp/>of<sp/>784<sp/>sized<sp/>lists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Build<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespacemodel_1a6b818d9c9b87a426af94bca26557cdbf" refkind="member"><highlight class="normal">model<sp/>=<sp/>Sequential([</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>Dense(64,<sp/>activation=</highlight><highlight class="stringliteral">&apos;relu&apos;</highlight><highlight class="normal">,<sp/>input_shape=(784,)),</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>Dense(64,<sp/>activation=</highlight><highlight class="stringliteral">&apos;relu&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>Dense(10,<sp/>activation=</highlight><highlight class="stringliteral">&apos;softmax&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Compile<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">model.compile(</highlight></codeline>
+<codeline lineno="43" refid="namespacemodel_1ab90d52c49af7eb73afb02e36a60b42bf" refkind="member"><highlight class="normal"><sp/><sp/>optimizer=</highlight><highlight class="stringliteral">&apos;adam&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44" refid="namespacemodel_1a7130251ef25baeba82d82f90c404c1a0" refkind="member"><highlight class="normal"><sp/><sp/>loss=</highlight><highlight class="stringliteral">&apos;categorical_crossentropy&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45" refid="namespacemodel_1a90a3cddfd0f2e022a9ae91ce22ecb4ab" refkind="member"><highlight class="normal"><sp/><sp/>metrics=[</highlight><highlight class="stringliteral">&apos;accuracy&apos;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Train<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">model.fit(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>train_images,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>to_categorical(train_labels),</highlight></codeline>
+<codeline lineno="52" refid="namespacemodel_1a91f095411a173a98e6faf13d9979da37" refkind="member"><highlight class="normal"><sp/><sp/>epochs=5,</highlight></codeline>
+<codeline lineno="53" refid="namespacemodel_1a770f95f65ed1e39e7c8edfb93ab76390" refkind="member"><highlight class="normal"><sp/><sp/>batch_size=32,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Evaluate<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">model.evaluate(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>test_images,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>to_categorical(test_labels)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Save<sp/>the<sp/>model<sp/>to<sp/>disk.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">model.save_weights(</highlight><highlight class="stringliteral">&apos;model.h5&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Load<sp/>the<sp/>model<sp/>from<sp/>disk<sp/>later<sp/>using:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>model.load_weights(&apos;model.h5&apos;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Predict<sp/>on<sp/>the<sp/>first<sp/>5<sp/>test<sp/>images.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespacemodel_1ab0d140afe5408f3dc50f96bfb9a0e25d" refkind="member"><highlight class="normal">predictions<sp/>=<sp/>model.predict(test_images[:5])</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Print<sp/>our<sp/>model&apos;s<sp/>predictions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">print(np.argmax(predictions,<sp/>axis=1))<sp/></highlight><highlight class="comment">#<sp/>[7,<sp/>2,<sp/>1,<sp/>0,<sp/>4]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Check<sp/>our<sp/>predictions<sp/>against<sp/>the<sp/>ground<sp/>truths.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">print(test_labels[:5])<sp/></highlight><highlight class="comment">#<sp/>[7,<sp/>2,<sp/>1,<sp/>0,<sp/>4]</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/pythonTraining/model.py"/>
+  </compounddef>
+</doxygen>

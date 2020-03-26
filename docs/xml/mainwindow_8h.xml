@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="mainwindow_8h" kind="file" language="C++">
+    <compoundname>mainwindow.h</compoundname>
+    <includes refid="_monitor_window_8h" local="yes">MonitorWindow.h</includes>
+    <includes refid="_interpret_window_8h" local="yes">InterpretWindow.h</includes>
+    <includes refid="_train_window_8h" local="yes">TrainWindow.h</includes>
+    <includes refid="_filter_bank_8h" local="yes">../FilterBank.h</includes>
+    <includes refid="_sample_timer_8h" local="yes">SampleTimer.h</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">QPushButton</includes>
+    <includes local="no">QLayout</includes>
+    <includes local="no">QBoxLayout</includes>
+    <includes local="no">QLabel</includes>
+    <includes local="no">QPixmap</includes>
+    <includes local="no">QToolButton</includes>
+    <includes local="no">QFont</includes>
+    <includes local="no">QThread</includes>
+    <includes local="no">QtConcurrent</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="_qt_2main_8cpp" local="yes">code/Qt/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">code/Qt/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="228">
+        <label>QtConcurrent</label>
+      </node>
+      <node id="238">
+        <label>TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>QLayout</label>
+      </node>
+      <node id="258">
+        <label>QObject</label>
+      </node>
+      <node id="253">
+        <label>../RingBuff.h</label>
+        <link refid="_ring_buff_8h"/>
+      </node>
+      <node id="255">
+        <label>stdint.h</label>
+      </node>
+      <node id="256">
+        <label>stdlib.h</label>
+      </node>
+      <node id="265">
+        <label>QThread</label>
+      </node>
+      <node id="267">
+        <label>cmath</label>
+      </node>
+      <node id="233">
+        <label>QFont</label>
+      </node>
+      <node id="239">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="261">
+        <label>QMainWindow</label>
+      </node>
+      <node id="235">
+        <label>QTextToSpeech</label>
+      </node>
+      <node id="234">
+        <label>QPlainTextEdit</label>
+      </node>
+      <node id="225">
+        <label>QCheckBox</label>
+      </node>
+      <node id="248">
+        <label>fstream</label>
+      </node>
+      <node id="252">
+        <label>../cppTimer/CppTimer.h</label>
+      </node>
+      <node id="243">
+        <label>QListWidget</label>
+      </node>
+      <node id="250">
+        <label>Iir.h</label>
+      </node>
+      <node id="246">
+        <label>QLed.h</label>
+        <link refid="_q_led_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>QToolButton</label>
+      </node>
+      <node id="219">
+        <label>MonitorWindow.h</label>
+        <link refid="_monitor_window_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>QDebug</label>
+      </node>
+      <node id="245">
+        <label>QAbstractItemView</label>
+      </node>
+      <node id="254">
+        <label>unistd.h</label>
+      </node>
+      <node id="242">
+        <label>QTimer</label>
+      </node>
+      <node id="241">
+        <label>QGroupBox</label>
+      </node>
+      <node id="222">
+        <label>qwt/qwt_plot_curve.h</label>
+      </node>
+      <node id="259">
+        <label>../MCP3428/MCP3428.h</label>
+      </node>
+      <node id="240">
+        <label>QLineEdit</label>
+      </node>
+      <node id="220">
+        <label>qwt/qwt_knob.h</label>
+      </node>
+      <node id="227">
+        <label>QString</label>
+      </node>
+      <node id="224">
+        <label>QColor</label>
+      </node>
+      <node id="226">
+        <label>QPushButton</label>
+      </node>
+      <node id="232">
+        <label>QLabel</label>
+      </node>
+      <node id="251">
+        <label>SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>../FilterBank.h</label>
+        <link refid="_filter_bank_8h"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>qwt/qwt_plot.h</label>
+      </node>
+      <node id="229">
+        <label>QThreadPool</label>
+      </node>
+      <node id="266">
+        <label>iostream</label>
+      </node>
+      <node id="260">
+        <label>../MPU6050/MPU6050.h</label>
+      </node>
+      <node id="218">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>mutex</label>
+      </node>
+      <node id="223">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="263">
+        <label>QPixmap</label>
+      </node>
+      <node id="244">
+        <label>QDir</label>
+      </node>
+      <node id="231">
+        <label>InterpretWindow.h</label>
+        <link refid="_interpret_window_8h"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>thread</label>
+      </node>
+      <node id="247">
+        <label>QFrame</label>
+      </node>
+      <node id="237">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="270">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="268">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_main_window" prot="public">MainWindow</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mainwindow_8h_1ad557ebb485c649939aba76bc5872fea7" prot="public" static="no">
+        <name>DATA_SAMPLE_INTERVAL</name>
+        <initializer>1000000000/<ref refid="config_8h_1a4b76a0c2859cfd819a343a780070ee2b" kindref="member">SAMPLE_RATE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="26" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1ab17f37d0201e908d801abd754b3da58e" prot="public" static="no">
+        <name>NUMBER_OF_FILTERS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="28" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1a7d5429b16245ce4bd409c3f34bf0c3d9" prot="public" static="no">
+        <name>ORDER_OF_FILTERS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="29" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1ad55661e5f9609e2daf717a5cac566320" prot="public" static="no">
+        <name>MONITOR_REFRESH_RATE</name>
+        <initializer>300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="32" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1aaf8216d4adaed8b173d40fe64e52d11b" prot="public" static="no">
+        <name>NUMBER_OF_PLOT_SAMPLES</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="33" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1a013ac9311fb70daf016d70e1cc00c5ed" prot="public" static="no">
+        <name>PLOT_BUFFER_SIZE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="34" column="9" bodyfile="code/Qt/mainwindow.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_monitor_window_8h" kindref="compound">MonitorWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interpret_window_8h" kindref="compound">InterpretWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_train_window_8h" kindref="compound">TrainWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../FilterBank.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sample_timer_8h" kindref="compound">SampleTimer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBoxLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPixmap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QToolButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFont&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QThread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtConcurrent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QThread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="mainwindow_8h_1ad557ebb485c649939aba76bc5872fea7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_SAMPLE_INTERVAL<sp/>1000000000/SAMPLE_RATE<sp/>//in<sp/>nanoseconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="mainwindow_8h_1ab17f37d0201e908d801abd754b3da58e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_FILTERS<sp/>10<sp/>//number<sp/>of<sp/>filters<sp/>in<sp/>each<sp/>filter<sp/>bank</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="mainwindow_8h_1a7d5429b16245ce4bd409c3f34bf0c3d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORDER_OF_FILTERS<sp/>4<sp/><sp/>//order<sp/>of<sp/>these<sp/>filters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="mainwindow_8h_1ad55661e5f9609e2daf717a5cac566320" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MONITOR_REFRESH_RATE<sp/>300<sp/>//in<sp/>msec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="mainwindow_8h_1aaf8216d4adaed8b173d40fe64e52d11b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_PLOT_SAMPLES<sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="mainwindow_8h_1a013ac9311fb70daf016d70e1cc00c5ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLOT_BUFFER_SIZE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="class_main_window" kindref="compound">MainWindow</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>size_t<sp/>NUMBER_OF_PLOT_SAMPLES<sp/>=<sp/>10;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_main_window_1a4914486ee3b888bda79eda5690011331" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window" kindref="compound">MonitorWindow</ref><sp/>*<ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_interpret_window" kindref="compound">InterpretWindow</ref><sp/>*<ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window" kindref="compound">TrainWindow</ref><sp/>*<ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_main_window_1a82198bd0b2620b2d0a9d0a319010135a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPixmap<sp/>*<ref refid="class_main_window_1a82198bd0b2620b2d0a9d0a319010135a" kindref="member">logo_image</ref>;</highlight></codeline>
+<codeline lineno="53" refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFont<sp/><ref refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" kindref="member">title_font</ref>;</highlight></codeline>
+<codeline lineno="54" refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" kindref="member">title_text</ref>,<sp/>*logo,<sp/>*lab_train,<sp/>*lab_interpret,<sp/>*lab_mon,<sp/>*lab_icon;</highlight></codeline>
+<codeline lineno="55" refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" kindref="member">but_train</ref>,<sp/>*but_interpret,<sp/>*but_mon,<sp/>*but_quit;</highlight></codeline>
+<codeline lineno="56" refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer<sp/>*<ref refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" kindref="member">windowtimer</ref>,<sp/>*moitorRefreshtimer;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//QToolButton<sp/>*logo_icon;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//QVBoxLayout<sp/>main_layout;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>filterCuttoffFreqs[10]<sp/>=<sp/>{0.01,1,1,1,2,2,3,3,4,4};<sp/>//cutoff<sp/>frequencies<sp/>for<sp/>filters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FilterBank<sp/>*accelFilterBank;<sp/>//depreciated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FilterBank<sp/>*gyroFilterBank;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FilterBank<sp/>*fingerFilterBank;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_main_window_1a626eec967d3981392e278927c4505264" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sample_timer" kindref="compound">SampleTimer</ref><sp/><sp/>*<ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createUI();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createFilters();</highlight></codeline>
+<codeline lineno="67" refid="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>timerEvent();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_main_window_1a8c11c1f81534b212a1a59251cc857ce6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>samplefinger[5][1];</highlight></codeline>
+<codeline lineno="72" refid="class_main_window_1aed3379fb5bc938c45c8f6575b2f9e1e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampleacc[3][1];</highlight></codeline>
+<codeline lineno="73" refid="class_main_window_1a80eb4bded0c7a73670d49f5895de74a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>samplegyro[3][1];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>timerEvent();<sp/></highlight><highlight class="comment">//depreciated:<sp/>used<sp/>to<sp/>plot<sp/>sinewave<sp/>to<sp/>curves<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>newDataEvent();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>monitor_button_clicked();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>interpretButtonClicked();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>interpretHome();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trainButtonClicked();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>but_quit_clicked();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/mainwindow.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespaceneural_net" kind="namespace" language="Python">
+    <compoundname>neuralNet</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceneural_net_1ae7a97e407478d66944242507a3acdeaa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.training_data</definition>
+        <argsstring></argsstring>
+        <name>training_data</name>
+        <initializer>=  np.empty(shape=(0,220))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="14" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a15081ae6f8a28618f92123c6d9f7db94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.training_labels</definition>
+        <argsstring></argsstring>
+        <name>training_labels</name>
+        <initializer>=  np.empty(shape=(0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="15" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a2094cfee9ae84db76df9c0bf5a4c98fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.net_output_map</definition>
+        <argsstring></argsstring>
+        <name>net_output_map</name>
+        <initializer>=  dict()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="17" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <initializer>=  str(sys.argv[argument_number])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="21" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a5e79f78458febef5d7b6c67653668dc3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.csv_file</definition>
+        <argsstring></argsstring>
+        <name>csv_file</name>
+        <initializer>=  pd.read_csv(<ref refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" kindref="member">filename</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="26" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a0a5495581094cf2010535e247a1ff50b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.csv_data</definition>
+        <argsstring></argsstring>
+        <name>csv_data</name>
+        <initializer>=  csv_file.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="27" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1aeb2fce31088901853b27a3220d6d31d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <initializer>=  <ref refid="namespaceneural_net_1a0a5495581094cf2010535e247a1ff50b" kindref="member">csv_data</ref>[row]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="33" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a7c8a173dd4ce7f904cd0e970b7a52510" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <initializer>=  np.zeros(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="37" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a54183e3964c5f31770e5d3278f44586d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <initializer>=  Sequential([
+  Dense(330, activation=&apos;relu&apos;, input_shape=(220,)),
+  Dense(64, activation=&apos;relu&apos;),
+  Dense(64, activation=&apos;relu&apos;),
+  Dense(len(sys.argv)-1, activation=&apos;softmax&apos;),
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="47" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1ab4b4615d268bce64f061b9a34be29484" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.optimizer</definition>
+        <argsstring></argsstring>
+        <name>optimizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="56" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a508b45cb8f1199cd35bce0a5927dff1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.loss</definition>
+        <argsstring></argsstring>
+        <name>loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="57" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1acf123fed89e8767b80de2fb6e86330d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.metrics</definition>
+        <argsstring></argsstring>
+        <name>metrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="58" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a50b77809cfbe26521e90af1431d9464f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.epochs</definition>
+        <argsstring></argsstring>
+        <name>epochs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="65" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1ab7970914cb5fa26632d45310d5d05059" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.batch_size</definition>
+        <argsstring></argsstring>
+        <name>batch_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="66" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1ae079b848cf02a89fdd3d0fdba02f6b7b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.include_optimizer</definition>
+        <argsstring></argsstring>
+        <name>include_optimizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="70" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1afa2b3b9bc7579fa5687436031f9ff67f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.file1</definition>
+        <argsstring></argsstring>
+        <name>file1</name>
+        <initializer>=  open(&quot;outputMap.txt&quot;,&quot;w&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="72" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1ab3674337e34c94ed1ee6234dc4300b4b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.df5</definition>
+        <argsstring></argsstring>
+        <name>df5</name>
+        <initializer>=  pd.read_csv(&quot;verificationData.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="76" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1ac5af0e0a420f7d686e1548a49ac6884c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.predict_data</definition>
+        <argsstring></argsstring>
+        <name>predict_data</name>
+        <initializer>=  df5.to_numpy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="77" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceneural_net_1a86b84d5b03a4d887980632c9873ae520" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>neuralNet.predictions</definition>
+        <argsstring></argsstring>
+        <name>predictions</name>
+        <initializer>=  model.predict(<ref refid="namespaceneural_net_1ac5af0e0a420f7d686e1548a49ac6884c" kindref="member">predict_data</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/neuralNet.py" line="85" column="1" bodyfile="code/Qt/neuralNet.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/Qt/neuralNet.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

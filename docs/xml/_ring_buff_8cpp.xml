@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_ring_buff_8cpp" kind="file" language="C++">
+    <compoundname>RingBuff.cpp</compoundname>
+    <includes refid="_ring_buff_8h" local="yes">RingBuff.h</includes>
+    <includedby refid="_ring_buff_test_8cpp" local="yes">testfiles/RingBuffTest.cpp</includedby>
+    <incdepgraph>
+      <node id="389">
+        <label>RingBuff.h</label>
+        <link refid="_ring_buff_8h"/>
+      </node>
+      <node id="388">
+        <label>code/RingBuff.cpp</label>
+        <link refid="_ring_buff_8cpp"/>
+        <childnode refid="389" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="390">
+        <label>code/RingBuff.cpp</label>
+        <link refid="_ring_buff_8cpp"/>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>testfiles/RingBuffTest.cpp</label>
+        <link refid="_ring_buff_test_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ring_buff_8h" kindref="compound">RingBuff.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_ring_buff_1a947ed6099f2a84c02840749132ae943d" refkind="member"><highlight class="normal"><ref refid="class_ring_buff_1a947ed6099f2a84c02840749132ae943d" kindref="member">RingBuff::RingBuff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufSize)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>buffer(new<sp/>double[bufSize]()),</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>elementPtr(0),<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>bufSize(bufSize){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ring_buff_1a60a7bd9404d60d4f12b4832ad8c149e6" kindref="member">resetBuffer</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_ring_buff_1a60a7bd9404d60d4f12b4832ad8c149e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1a60a7bd9404d60d4f12b4832ad8c149e6" kindref="member">RingBuff::resetBuffer</ref>(){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kindref="member">bufSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kindref="member">buffer</ref>[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_ring_buff_1a0074a4b03a04b9b245545c6224dc2f9b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1a0074a4b03a04b9b245545c6224dc2f9b" kindref="member">RingBuff::insertSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>val<sp/>=<sp/>&amp;<ref refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kindref="member">buffer</ref>[<ref refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kindref="member">elementPtr</ref>];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>*val<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(++<ref refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kindref="member">elementPtr</ref><sp/>&gt;=<sp/><ref refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kindref="member">bufSize</ref>){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kindref="member">elementPtr</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_ring_buff_1a2690243a3abb7a5c2a5b9c45c0b3e6d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_ring_buff_1a2690243a3abb7a5c2a5b9c45c0b3e6d0" kindref="member">RingBuff::readBuffer</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>outputBuffer[<ref refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kindref="member">bufSize</ref>];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempBuffPtr<sp/>=<sp/><ref refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kindref="member">elementPtr</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count=1;<sp/>tempBuffPtr+count&lt;<ref refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kindref="member">bufSize</ref>;<sp/>count++){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputBuffer[i]=<ref refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kindref="member">buffer</ref>[tempBuffPtr+count];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count=0;<sp/>count&lt;=tempBuffPtr;<sp/>count++){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputBuffer[i]<sp/>=<sp/><ref refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kindref="member">buffer</ref>[count];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outputBuffer;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="code/RingBuff.cpp"/>
+  </compounddef>
+</doxygen>

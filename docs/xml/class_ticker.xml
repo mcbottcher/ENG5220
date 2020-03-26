@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_ticker" kind="class" language="C++" prot="public">
+    <compoundname>Ticker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CppTimer</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ticker_1ad8f13d067d028448dc8f6fa3dcab532c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ticker::timerEvent</definition>
+        <argsstring>()</argsstring>
+        <name>timerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/sampledata.cpp" line="78" column="1" bodyfile="code/sampledata.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="46">
+        <label>Ticker</label>
+        <link refid="class_ticker"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>CppTimer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>Ticker</label>
+        <link refid="class_ticker"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CppTimer</label>
+      </node>
+    </collaborationgraph>
+    <location file="code/sampledata.cpp" line="76" column="1" bodyfile="code/sampledata.cpp" bodystart="76" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_ticker_1ad8f13d067d028448dc8f6fa3dcab532c" prot="private" virt="non-virtual"><scope>Ticker</scope><name>timerEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,20 +1,14 @@
 var hierarchy =
 [
-    [ "CppTimer", "class_cpp_timer.html", [
-      [ "CppTimerCallback", "class_cpp_timer_callback.html", null ],
-      [ "DemoTimer1", "class_demo_timer1.html", null ],
-      [ "DemoTimer1", "class_demo_timer1.html", null ],
-      [ "DemoTimer1", "class_demo_timer1.html", null ],
-      [ "DemoTimer2", "class_demo_timer2.html", null ],
-      [ "DemoTimer2", "class_demo_timer2.html", null ],
-      [ "SampleTimer", "class_sample_timer.html", null ]
+    [ "CppTimer", null, [
+      [ "SampleTimer", "class_sample_timer.html", null ],
+      [ "Ticker", "class_ticker.html", null ],
+      [ "Timer", "class_timer.html", null ]
     ] ],
     [ "CSVreader", "class_c_s_vreader.html", null ],
+    [ "MonitorWindow::Curve", "struct_monitor_window_1_1_curve.html", null ],
     [ "Filter", "class_filter.html", null ],
     [ "FilterBank", "class_filter_bank.html", null ],
-    [ "I2Cdev", "class_i2_cdev.html", null ],
-    [ "MCP3428", "class_m_c_p3428.html", null ],
-    [ "MPU6050", "class_m_p_u6050.html", null ],
     [ "NeuralNet", "class_neural_net.html", null ],
     [ "QFrame", null, [
       [ "QLed", "class_q_led.html", null ]
@@ -31,9 +25,5 @@ var hierarchy =
       [ "TrainWindow", "class_train_window.html", null ]
     ] ],
     [ "RingBuff", "class_ring_buff.html", null ],
-    [ "CppTimerCallback::Runnable", "class_cpp_timer_callback_1_1_runnable.html", [
-      [ "Callback1", "class_callback1.html", null ],
-      [ "Callback2", "class_callback2.html", null ]
-    ] ],
     [ "TrainNet", "class_train_net.html", null ]
 ];

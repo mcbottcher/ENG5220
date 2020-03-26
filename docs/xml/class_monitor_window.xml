@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_monitor_window" kind="class" language="C++" prot="public">
+    <compoundname>MonitorWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="_monitor_window_8h" local="no">MonitorWindow.h</includes>
+    <innerclass refid="struct_monitor_window_1_1_curve" prot="private">MonitorWindow::Curve</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" prot="private" static="no">
+        <type>struct <ref refid="struct_monitor_window_1_1_curve" kindref="compound">MonitorWindow::Curve</ref></type>
+        <definition>typedef struct MonitorWindow::Curve  MonitorWindow::Curve_t</definition>
+        <argsstring></argsstring>
+        <name>Curve_t</name>
+        <briefdescription>
+<para>CurveStruct data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Data structure for each curve on the graphs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="157" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" prot="private" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t MonitorWindow::bufferSize</definition>
+        <argsstring></argsstring>
+        <name>bufferSize</name>
+        <briefdescription>
+<para>bufferSize size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The length of buffer for each plotting curve. Set by calling the constructor. <simplesect kind="see"><para><ref refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" kindref="member">MonitorWindow()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="36" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MonitorWindow::resetButton</definition>
+        <argsstring></argsstring>
+        <name>resetButton</name>
+        <briefdescription>
+<para>Clickable button pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointers to QPushButtons to allow user to close windows and reset buffers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="40" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * MonitorWindow::closeButton</definition>
+        <argsstring></argsstring>
+        <name>closeButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="40" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" prot="private" static="no" mutable="no">
+        <type>QwtPlot *</type>
+        <definition>QwtPlot* MonitorWindow::accelerometerPlot</definition>
+        <argsstring></argsstring>
+        <name>accelerometerPlot</name>
+        <briefdescription>
+<para>QwtPlot pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointers to plots to allow curves to be added to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="44" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" prot="private" static="no" mutable="no">
+        <type>QwtPlot *</type>
+        <definition>QwtPlot * MonitorWindow::gyroPlot</definition>
+        <argsstring></argsstring>
+        <name>gyroPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="44" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1add518550737fac91912a0e99f6ea282e" prot="private" static="no" mutable="no">
+        <type>QwtPlot *</type>
+        <definition>QwtPlot * MonitorWindow::fingerPlot</definition>
+        <argsstring></argsstring>
+        <name>fingerPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="44" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* MonitorWindow::xAxisData</definition>
+        <argsstring></argsstring>
+        <name>xAxisData</name>
+        <briefdescription>
+<para>xAsisData pointer to a double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>xAxis data for plotting the curves will be filled by constructor with values 0 to bufferSize. <simplesect kind="see"><para><ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref> and <ref refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" kindref="member">MonitorWindow()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="49" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a6d774e837240f24538c6737a379acf29" prot="private" static="no" mutable="no">
+        <type>int16_t *</type>
+        <definition>int16_t* MonitorWindow::sensorDataPtr</definition>
+        <argsstring></argsstring>
+        <name>sensorDataPtr</name>
+        <briefdescription>
+<para>sensorData pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to where new samples will be stored when the arrive. <simplesect kind="see"><para><ref refid="class_sample_timer" kindref="compound">SampleTimer()</ref>, newDataEvent() and <ref refid="class_main_window" kindref="compound">MainWindow()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="54" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" prot="private" static="no" mutable="no">
+        <type><ref refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" kindref="member">Curve_t</ref> *</type>
+        <definition>Curve_t* MonitorWindow::acc</definition>
+        <argsstring></argsstring>
+        <name>acc</name>
+        <briefdescription>
+<para><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref> structure for sensor data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create <ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref> class for each type of data. <simplesect kind="see"><para><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="163" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" kindref="member">Curve_t</ref> *</type>
+        <definition>Curve_t * MonitorWindow::gyro</definition>
+        <argsstring></argsstring>
+        <name>gyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="163" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" kindref="member">Curve_t</ref> *</type>
+        <definition>Curve_t * MonitorWindow::finger</definition>
+        <argsstring></argsstring>
+        <name>finger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="163" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* MonitorWindow::mainLayout</definition>
+        <argsstring></argsstring>
+        <name>mainLayout</name>
+        <briefdescription>
+<para>Vertical layout members. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical QT layout elements of the GUI </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="167" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout * MonitorWindow::vPlotLayout</definition>
+        <argsstring></argsstring>
+        <name>vPlotLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="167" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout * MonitorWindow::checkAccLayout</definition>
+        <argsstring></argsstring>
+        <name>checkAccLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="167" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout * MonitorWindow::checkGyroLayout</definition>
+        <argsstring></argsstring>
+        <name>checkGyroLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="167" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout * MonitorWindow::checkFingerLayout</definition>
+        <argsstring></argsstring>
+        <name>checkFingerLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="167" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* MonitorWindow::controlLayout</definition>
+        <argsstring></argsstring>
+        <name>controlLayout</name>
+        <briefdescription>
+<para>Horizontal layout members. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal QT layout elements of the GUI </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="170" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout * MonitorWindow::hPlotLayout</definition>
+        <argsstring></argsstring>
+        <name>hPlotLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="170" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout * MonitorWindow::accLayout</definition>
+        <argsstring></argsstring>
+        <name>accLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="170" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout * MonitorWindow::gyroLayout</definition>
+        <argsstring></argsstring>
+        <name>gyroLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="170" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout * MonitorWindow::fingerLayout</definition>
+        <argsstring></argsstring>
+        <name>fingerLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="170" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MonitorWindow::MonitorWindow</definition>
+        <argsstring>(size_t bufferSize, int16_t *dataPtr)</argsstring>
+        <name>MonitorWindow</name>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+<para>Class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the Window. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of buffers required for plotting. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="178" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="8" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MonitorWindow::~MonitorWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MonitorWindow</name>
+        <briefdescription>
+<para>Class destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>default destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="182" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>plotBufferSize</declname>
+            <defname>plotBufferSize</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void MonitorWindow::plotAcc</definition>
+        <argsstring>(double(&amp;sample)[3][plotBufferSize])</argsstring>
+        <name>plotAcc</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>sample</declname>
+          <array>[3][plotBufferSize]</array>
+        </param>
+        <briefdescription>
+<para>plotAcc helper method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a buffer of samples of varing length to the accelerometer graph. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="191" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="191" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>plotBufferSize</declname>
+            <defname>plotBufferSize</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void MonitorWindow::plotGyro</definition>
+        <argsstring>(double(&amp;sample)[3][plotBufferSize])</argsstring>
+        <name>plotGyro</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>sample</declname>
+          <array>[3][plotBufferSize]</array>
+        </param>
+        <briefdescription>
+<para>plotGyro helper method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a buffer of samples of varing length to the gyroscope graph. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="203" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>plotBufferSize</declname>
+            <defname>plotBufferSize</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void MonitorWindow::plotFinger</definition>
+        <argsstring>(double(&amp;sample)[5][plotBufferSize])</argsstring>
+        <name>plotFinger</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>sample</declname>
+          <array>[5][plotBufferSize]</array>
+        </param>
+        <briefdescription>
+<para>plotFinger helper method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a buffer of samples of varing length to the finger graph. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>pass samples in format: samples[5][n] = {{IndexFingerArray}, {...}, {...},{PinkyFingerArray}, {ThumbArray}}; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="216" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="216" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::drawPlots</definition>
+        <argsstring>()</argsstring>
+        <name>drawPlots</name>
+        <briefdescription>
+<para>drawPlots method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Public slot to allow refreshing of the screen and update the cruves onto the screen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="227" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_monitor_window_1abb358daca8435681df006590a3024624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::resetbutton</definition>
+        <argsstring>()</argsstring>
+        <name>resetbutton</name>
+        <briefdescription>
+<para>resetbutton method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Public slot to reset all the buffers to zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="231" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="134" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::handleSamples</definition>
+        <argsstring>()</argsstring>
+        <name>handleSamples</name>
+        <briefdescription>
+<para>handle samples. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Public slot to update the curves with new data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="235" column="1" bodyfile="code/Qt/MonitorWindow.cpp" bodystart="144" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Monitor Window Class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to plot and monitor all the sensor data in real time </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>MonitorWindow</label>
+        <link refid="class_monitor_window"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>MonitorWindow</label>
+        <link refid="class_monitor_window"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>finger</edgelabel>
+          <edgelabel>acc</edgelabel>
+          <edgelabel>gyro</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>QWidget</label>
+      </node>
+      <node id="31">
+        <label>MonitorWindow::Curve</label>
+        <link refid="struct_monitor_window_1_1_curve"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/Qt/MonitorWindow.h" line="27" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="27" bodyend="237"/>
+    <listofallmembers>
+      <member refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>acc</name></member>
+      <member refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>accelerometerPlot</name></member>
+      <member refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>accLayout</name></member>
+      <member refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>bufferSize</name></member>
+      <member refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>checkAccLayout</name></member>
+      <member refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>checkFingerLayout</name></member>
+      <member refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>checkGyroLayout</name></member>
+      <member refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>closeButton</name></member>
+      <member refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>controlLayout</name></member>
+      <member refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>Curve_t</name></member>
+      <member refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>drawPlots</name></member>
+      <member refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>finger</name></member>
+      <member refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>fingerLayout</name></member>
+      <member refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>fingerPlot</name></member>
+      <member refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>gyro</name></member>
+      <member refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>gyroLayout</name></member>
+      <member refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>gyroPlot</name></member>
+      <member refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>handleSamples</name></member>
+      <member refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>hPlotLayout</name></member>
+      <member refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>mainLayout</name></member>
+      <member refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>MonitorWindow</name></member>
+      <member refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotAcc</name></member>
+      <member refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotFinger</name></member>
+      <member refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>plotGyro</name></member>
+      <member refid="class_monitor_window_1abb358daca8435681df006590a3024624" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>resetbutton</name></member>
+      <member refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>resetButton</name></member>
+      <member refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>sensorDataPtr</name></member>
+      <member refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>vPlotLayout</name></member>
+      <member refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" prot="private" virt="non-virtual"><scope>MonitorWindow</scope><name>xAxisData</name></member>
+      <member refid="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" prot="public" virt="non-virtual"><scope>MonitorWindow</scope><name>~MonitorWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

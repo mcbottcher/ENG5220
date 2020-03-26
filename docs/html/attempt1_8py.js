@@ -1,0 +1,26 @@
+var attempt1_8py =
+[
+    [ "batch_size", "attempt1_8py.html#a227a5e71feb6649041f9c58da3944995", null ],
+    [ "data1", "attempt1_8py.html#ae68a8f0aafb1c34ac31ba27741fe8a86", null ],
+    [ "data2", "attempt1_8py.html#af47f22874523bec9920133a512ba330e", null ],
+    [ "data3", "attempt1_8py.html#ad530e447cfc0ae005c66870075642a29", null ],
+    [ "data4", "attempt1_8py.html#a16abfd4fc68e78fc24128b4286734ec6", null ],
+    [ "data5", "attempt1_8py.html#a94c47060d510d76e0269ad7d5e8873d2", null ],
+    [ "data6", "attempt1_8py.html#a7f890463a1dcdf83dcb7056f3ff381f6", null ],
+    [ "df1", "attempt1_8py.html#ac987ffe9fbcad6f4827da2e70d6be31f", null ],
+    [ "df2", "attempt1_8py.html#ae24a853f8acf349663fa5fa61d6aa446", null ],
+    [ "df3", "attempt1_8py.html#a8f8ed1b6b6d37bd0d37813c0cb5cbd32", null ],
+    [ "df4", "attempt1_8py.html#a340769700edac4df748aeeb891ab6b47", null ],
+    [ "df5", "attempt1_8py.html#acbbfa1843b536dc3f62108beaddaff09", null ],
+    [ "epochs", "attempt1_8py.html#a7369af2701767423e7bd7a817af61c6a", null ],
+    [ "include_optimizer", "attempt1_8py.html#aacfadd5941a15fa339acff1364bab7ca", null ],
+    [ "loss", "attempt1_8py.html#a72702d4da9ff6e8430c8c4386a9952db", null ],
+    [ "metrics", "attempt1_8py.html#a88e21a64e3c625c5877c2fa707528050", null ],
+    [ "model", "attempt1_8py.html#ad3ecdd9ef1003f442f9ae4a7166ff54d", null ],
+    [ "optimizer", "attempt1_8py.html#a3fb2a517c56fff4e5944a2db24b59cac", null ],
+    [ "predict_data", "attempt1_8py.html#a041f1eb97ba888e532d0b8ac3596b2f9", null ],
+    [ "predictions", "attempt1_8py.html#aa7c65aa6ad580fe38b6ad850cc1f3ea0", null ],
+    [ "temp", "attempt1_8py.html#a5d26d562c132123e902e42986ffa3cc6", null ],
+    [ "training_data", "attempt1_8py.html#ad9383799d7ca9211cf8584fd0251846e", null ],
+    [ "training_labels", "attempt1_8py.html#a56ff3423c0f32dda1145c386ad8af251", null ]
+];

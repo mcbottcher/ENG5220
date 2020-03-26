@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_train_window" kind="class" language="C++" prot="public">
+    <compoundname>TrainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="_train_window_8h" local="no">TrainWindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrainWindow::gesture_count</definition>
+        <argsstring></argsstring>
+        <name>gesture_count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="41" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* TrainWindow::wordInput</definition>
+        <argsstring></argsstring>
+        <name>wordInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="42" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a67689bed14d31159d7980f3aa50782c9" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TrainWindow::inputLabel</definition>
+        <argsstring></argsstring>
+        <name>inputLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="43" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * TrainWindow::statusText</definition>
+        <argsstring></argsstring>
+        <name>statusText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="43" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * TrainWindow::timerText</definition>
+        <argsstring></argsstring>
+        <name>timerText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="43" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TrainWindow::wordTrain</definition>
+        <argsstring></argsstring>
+        <name>wordTrain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="44" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TrainWindow::nettrainButton</definition>
+        <argsstring></argsstring>
+        <name>nettrainButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="44" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TrainWindow::homeButton</definition>
+        <argsstring></argsstring>
+        <name>homeButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="44" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_q_led" kindref="compound">QLed</ref> *</type>
+        <definition>QLed* TrainWindow::led[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>led</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="46" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* TrainWindow::inputGroup</definition>
+        <argsstring></argsstring>
+        <name>inputGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="47" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox * TrainWindow::trainGroup</definition>
+        <argsstring></argsstring>
+        <name>trainGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="47" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox * TrainWindow::netGroup</definition>
+        <argsstring></argsstring>
+        <name>netGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="47" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" prot="private" static="no" mutable="no">
+        <type>QListWidget *</type>
+        <definition>QListWidget* TrainWindow::movementList</definition>
+        <argsstring></argsstring>
+        <name>movementList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="49" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1adba4cedd97c9927343883dbaca972f22" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* TrainWindow::mainLayout</definition>
+        <argsstring></argsstring>
+        <name>mainLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="51" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ae6acd3a6da2a532e65174512048a539f" prot="private" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* TrainWindow::homeLayout</definition>
+        <argsstring></argsstring>
+        <name>homeLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="52" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a65444f2c11767d83dd5228539142778a" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TrainWindow::lightBox</definition>
+        <argsstring></argsstring>
+        <name>lightBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="53" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" prot="private" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* TrainWindow::inputLayout</definition>
+        <argsstring></argsstring>
+        <name>inputLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="55" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" prot="private" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout * TrainWindow::trainLayout</definition>
+        <argsstring></argsstring>
+        <name>trainLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="55" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a689d4caf2892cccbb7678918b07b1259" prot="private" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout * TrainWindow::ledLayout</definition>
+        <argsstring></argsstring>
+        <name>ledLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="55" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* TrainWindow::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="57" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList TrainWindow::files</definition>
+        <argsstring></argsstring>
+        <name>files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="59" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" prot="private" static="no" mutable="no">
+        <type><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kindref="member">trainingState_t</ref></type>
+        <definition>trainingState_t TrainWindow::currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <initializer>= <ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="61" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a31001357f600b4fba56c237d959ea030" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString TrainWindow::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="62" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrainWindow::sampleCount</definition>
+        <argsstring></argsstring>
+        <name>sampleCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="66" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" prot="private" static="no" mutable="no">
+        <type>int16_t *</type>
+        <definition>int16_t* TrainWindow::sensorDataptr</definition>
+        <argsstring></argsstring>
+        <name>sensorDataptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="68" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream TrainWindow::myfile</definition>
+        <argsstring></argsstring>
+        <name>myfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="70" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString TrainWindow::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="71" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainWindow::movementData[11][NUMBER_OF_BUFFER_ELEMENTS]</definition>
+        <argsstring>[11][NUMBER_OF_BUFFER_ELEMENTS]</argsstring>
+        <name>movementData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="72" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_train_window_1a67a932ea98e16f96223f91845924ff54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::trainingDataLoop</definition>
+        <argsstring>()</argsstring>
+        <name>trainingDataLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="63" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::saveMovement</definition>
+        <argsstring>()</argsstring>
+        <name>saveMovement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="65" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="208" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrainWindow::TrainWindow</definition>
+        <argsstring>(int16_t *dataPtr)</argsstring>
+        <name>TrainWindow</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="75" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="4" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrainWindow::~TrainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~TrainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="76" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="95" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::handle_samples</definition>
+        <argsstring>()</argsstring>
+        <name>handle_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="78" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="184" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::startNeuralNet</definition>
+        <argsstring>()</argsstring>
+        <name>startNeuralNet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="81" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_train_window_1a3ac1003b67f10110bd18174087194ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::data_aq_state_machine</definition>
+        <argsstring>()</argsstring>
+        <name>data_aq_state_machine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="82" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="113" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_train_window_1ae93a5e77d3d2196bf96d574072993394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::closeWindow</definition>
+        <argsstring>()</argsstring>
+        <name>closeWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="83" column="1" bodyfile="code/Qt/TrainWindow.cpp" bodystart="219" bodyend="229"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_train_window_1a9a84bcae91eac1f4597291143c30b280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::startSampling_sig</definition>
+        <argsstring>()</argsstring>
+        <name>startSampling_sig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="class_train_window_1a5f677ae82a80691a899134bd719db1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainWindow::stopSampling_sig</definition>
+        <argsstring>()</argsstring>
+        <name>stopSampling_sig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="87" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>QWidget</label>
+      </node>
+      <node id="56">
+        <label>TrainWindow</label>
+        <link refid="class_train_window"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>QWidget</label>
+      </node>
+      <node id="60">
+        <label>QLed</label>
+        <link refid="class_q_led"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>TrainWindow</label>
+        <link refid="class_train_window"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>led</edgelabel>
+        </childnode>
+      </node>
+      <node id="61">
+        <label>QFrame</label>
+      </node>
+    </collaborationgraph>
+    <location file="code/Qt/TrainWindow.h" line="36" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="36" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>closeWindow</name></member>
+      <member refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>currentState</name></member>
+      <member refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>data_aq_state_machine</name></member>
+      <member refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>filename</name></member>
+      <member refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>files</name></member>
+      <member refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>gesture_count</name></member>
+      <member refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>handle_samples</name></member>
+      <member refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>homeButton</name></member>
+      <member refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>homeLayout</name></member>
+      <member refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>inputGroup</name></member>
+      <member refid="class_train_window_1a67689bed14d31159d7980f3aa50782c9" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>inputLabel</name></member>
+      <member refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>inputLayout</name></member>
+      <member refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>led</name></member>
+      <member refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>ledLayout</name></member>
+      <member refid="class_train_window_1a65444f2c11767d83dd5228539142778a" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>lightBox</name></member>
+      <member refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>mainLayout</name></member>
+      <member refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>movementData</name></member>
+      <member refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>movementList</name></member>
+      <member refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>myfile</name></member>
+      <member refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>netGroup</name></member>
+      <member refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>nettrainButton</name></member>
+      <member refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>sampleCount</name></member>
+      <member refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>saveMovement</name></member>
+      <member refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>sensorDataptr</name></member>
+      <member refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>startNeuralNet</name></member>
+      <member refid="class_train_window_1a9a84bcae91eac1f4597291143c30b280" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>startSampling_sig</name></member>
+      <member refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>statusText</name></member>
+      <member refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>stopSampling_sig</name></member>
+      <member refid="class_train_window_1a31001357f600b4fba56c237d959ea030" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>temp</name></member>
+      <member refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>timer</name></member>
+      <member refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>timerText</name></member>
+      <member refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>trainGroup</name></member>
+      <member refid="class_train_window_1a67a932ea98e16f96223f91845924ff54" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>trainingDataLoop</name></member>
+      <member refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>trainLayout</name></member>
+      <member refid="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>TrainWindow</name></member>
+      <member refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>wordInput</name></member>
+      <member refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" prot="private" virt="non-virtual"><scope>TrainWindow</scope><name>wordTrain</name></member>
+      <member refid="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" prot="public" virt="non-virtual"><scope>TrainWindow</scope><name>~TrainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

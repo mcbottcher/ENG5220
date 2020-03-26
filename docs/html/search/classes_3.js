@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['i2cdev',['I2Cdev',['../class_i2_cdev.html',1,'']]],
-  ['interpretwindow',['InterpretWindow',['../class_interpret_window.html',1,'']]]
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
+  ['monitorwindow',['MonitorWindow',['../class_monitor_window.html',1,'']]]
 ];

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md_code_neuralnet_predict__r_e_a_d_m_e" kind="page">
+    <compoundname>md_code_neuralnet_predict_README</compoundname>
+    <title>kerasCpp</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>c++ implementation of feed-forward cnn from keras using frugally-deep </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

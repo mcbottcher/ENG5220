@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="createsines_8py" kind="file" language="Python">
+    <compoundname>createsines.py</compoundname>
+    <innernamespace refid="namespacecreatesines">createsines</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecreatesines" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>mpl</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">mpl.use(</highlight><highlight class="stringliteral">&apos;Agg&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.pyplot<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>plt</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" refkind="member"><highlight class="normal">fs<sp/>=<sp/>500</highlight></codeline>
+<codeline lineno="7" refid="namespacecreatesines_1a0abc310e26cca360b199f33679d047b7" refkind="member"><highlight class="normal">t<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="8" refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" refkind="member"><highlight class="normal">samples<sp/>=<sp/>np.arange(t<sp/>*<sp/>fs)<sp/>/<sp/>fs</highlight></codeline>
+<codeline lineno="9" refid="namespacecreatesines_1a8477e86d34388cffabe6aec83f9ca2d8" refkind="member"><highlight class="normal">out<sp/>=<sp/>np.zeros(fs*t)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kindref="member">wave</ref>(freq):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>sine_wave<sp/>=<sp/>np.sin(2<sp/>*<sp/>np.pi<sp/>*<sp/>freq<sp/>*<sp/>samples)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>sine_wave<sp/>=<sp/>sine_wave/max(sine_wave)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sine_wave</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">out<sp/>=<sp/><ref refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kindref="member">wave</ref>(10)<sp/>+<sp/><ref refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kindref="member">wave</ref>(50)<sp/>+<sp/><ref refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kindref="member">wave</ref>(150)<sp/>+<sp/><ref refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kindref="member">wave</ref>(200)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">out.tofile(</highlight><highlight class="stringliteral">&apos;testdata/sin.bin&apos;</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">plt.plot(out)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">plt.savefig(</highlight><highlight class="stringliteral">&apos;testdata/mixsin.png&apos;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="testfiles/createsines.py"/>
+  </compounddef>
+</doxygen>

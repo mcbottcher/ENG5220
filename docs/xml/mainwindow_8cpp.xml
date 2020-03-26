@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="mainwindow_8cpp" kind="file" language="C++">
+    <compoundname>mainwindow.cpp</compoundname>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes local="no">QPixmap</includes>
+    <incdepgraph>
+      <node id="177">
+        <label>QtConcurrent</label>
+      </node>
+      <node id="187">
+        <label>TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>QLayout</label>
+      </node>
+      <node id="207">
+        <label>QObject</label>
+      </node>
+      <node id="202">
+        <label>../RingBuff.h</label>
+        <link refid="_ring_buff_8h"/>
+      </node>
+      <node id="204">
+        <label>stdint.h</label>
+      </node>
+      <node id="205">
+        <label>stdlib.h</label>
+      </node>
+      <node id="214">
+        <label>QThread</label>
+      </node>
+      <node id="216">
+        <label>cmath</label>
+      </node>
+      <node id="182">
+        <label>QFont</label>
+      </node>
+      <node id="188">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="210">
+        <label>QMainWindow</label>
+      </node>
+      <node id="184">
+        <label>QTextToSpeech</label>
+      </node>
+      <node id="183">
+        <label>QPlainTextEdit</label>
+      </node>
+      <node id="174">
+        <label>QCheckBox</label>
+      </node>
+      <node id="197">
+        <label>fstream</label>
+      </node>
+      <node id="201">
+        <label>../cppTimer/CppTimer.h</label>
+      </node>
+      <node id="192">
+        <label>QListWidget</label>
+      </node>
+      <node id="199">
+        <label>Iir.h</label>
+      </node>
+      <node id="195">
+        <label>QLed.h</label>
+        <link refid="_q_led_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>QToolButton</label>
+      </node>
+      <node id="168">
+        <label>MonitorWindow.h</label>
+        <link refid="_monitor_window_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>QDebug</label>
+      </node>
+      <node id="194">
+        <label>QAbstractItemView</label>
+      </node>
+      <node id="203">
+        <label>unistd.h</label>
+      </node>
+      <node id="191">
+        <label>QTimer</label>
+      </node>
+      <node id="190">
+        <label>QGroupBox</label>
+      </node>
+      <node id="171">
+        <label>qwt/qwt_plot_curve.h</label>
+      </node>
+      <node id="208">
+        <label>../MCP3428/MCP3428.h</label>
+      </node>
+      <node id="189">
+        <label>QLineEdit</label>
+      </node>
+      <node id="169">
+        <label>qwt/qwt_knob.h</label>
+      </node>
+      <node id="176">
+        <label>QString</label>
+      </node>
+      <node id="173">
+        <label>QColor</label>
+      </node>
+      <node id="175">
+        <label>QPushButton</label>
+      </node>
+      <node id="181">
+        <label>QLabel</label>
+      </node>
+      <node id="200">
+        <label>SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>../FilterBank.h</label>
+        <link refid="_filter_bank_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>qwt/qwt_plot.h</label>
+      </node>
+      <node id="178">
+        <label>QThreadPool</label>
+      </node>
+      <node id="215">
+        <label>iostream</label>
+      </node>
+      <node id="209">
+        <label>../MPU6050/MPU6050.h</label>
+      </node>
+      <node id="167">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>mutex</label>
+      </node>
+      <node id="172">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="212">
+        <label>QPixmap</label>
+      </node>
+      <node id="193">
+        <label>QDir</label>
+      </node>
+      <node id="180">
+        <label>InterpretWindow.h</label>
+        <link refid="_interpret_window_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>thread</label>
+      </node>
+      <node id="196">
+        <label>QFrame</label>
+      </node>
+      <node id="186">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPixmap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" refkind="member"><highlight class="normal"><ref refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" kindref="member">MainWindow::MainWindow</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow(parent){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" kindref="member">createUI</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//createFilters();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" kindref="member">MainWindow::createUI</ref>(){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>QPixmap<sp/>pix(</highlight><highlight class="stringliteral">&quot;TheLexiconGlove.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//QLabel<sp/>icon_label;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//icon_label.setPixmap(pix);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//icon_label.setText(&quot;Test&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>pix<sp/>=<sp/>pix.scaledToWidth(300);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a47338c0917ca1834819265ee37daf94d" kindref="member">lab_icon</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a47338c0917ca1834819265ee37daf94d" kindref="member">lab_icon</ref>-&gt;setPixmap(pix);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Add<sp/>buttons<sp/>and<sp/>labels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>QFont<sp/><ref refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" kindref="member">title_font</ref>(</highlight><highlight class="stringliteral">&quot;Arial&quot;</highlight><highlight class="normal">,<sp/>20,<sp/>QFont::Bold);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" kindref="member">title_text</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;The<sp/>Lexicon<sp/>Glove&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" kindref="member">title_text</ref>-&gt;setFont(<ref refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" kindref="member">title_font</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" kindref="member">but_train</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Go&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" kindref="member">but_interpret</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Go&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1acba63738e6d4acf1092ffa85e292b951" kindref="member">but_mon</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Go&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" kindref="member">but_quit</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Quit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a2afd294ea45f6d00538ac439731b5688" kindref="member">lab_train</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Training<sp/>Mode&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a16e5d3d19dbc3fbed256ed72c99ebc7c" kindref="member">lab_interpret</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Interpret<sp/>Mode&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a5bb6b7334521ee0f6761d2fe1c1574d3" kindref="member">lab_mon</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Data<sp/>Monitoring&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Horizontal<sp/>layout<sp/><sp/>for<sp/>title</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*title_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>title_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>title_layout-&gt;addWidget(<ref refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" kindref="member">title_text</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>title_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Grid<sp/>layout<sp/>for<sp/>buttons<sp/>and<sp/>labels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout<sp/>*button_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;setHorizontalSpacing(10);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;setVerticalSpacing(10);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//button_layout-&gt;addWidget(logo);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" kindref="member">but_train</ref>,<sp/>0,<sp/>0,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1a2afd294ea45f6d00538ac439731b5688" kindref="member">lab_train</ref>,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" kindref="member">but_interpret</ref>,<sp/>1,<sp/>0,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1a16e5d3d19dbc3fbed256ed72c99ebc7c" kindref="member">lab_interpret</ref>,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1acba63738e6d4acf1092ffa85e292b951" kindref="member">but_mon</ref>,<sp/>2,<sp/>0,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>button_layout-&gt;addWidget(<ref refid="class_main_window_1a5bb6b7334521ee0f6761d2fe1c1574d3" kindref="member">lab_mon</ref>,<sp/>2,<sp/>1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Horizontal<sp/>layout<sp/>for<sp/>Grid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*grid_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>grid_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>grid_layout-&gt;addLayout(button_layout);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>grid_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Horizontal<sp/>layout<sp/>for<sp/>Quit<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*quit_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>quit_layout-&gt;addStretch(400);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>quit_layout-&gt;addWidget(<ref refid="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" kindref="member">but_quit</ref>,<sp/>Qt::AlignRight);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Horizontal<sp/>layout<sp/>for<sp/>icon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*icon_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>icon_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>icon_layout-&gt;addWidget(<ref refid="class_main_window_1a47338c0917ca1834819265ee37daf94d" kindref="member">lab_icon</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>icon_layout-&gt;addStretch(100);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Vertical<sp/>layout<sp/>for<sp/>whole<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*main_layout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>main_layout-&gt;setSpacing(10);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>main_layout-&gt;addLayout(icon_layout);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>main_layout-&gt;addLayout(title_layout,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>main_layout-&gt;addLayout(grid_layout,<sp/>Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>main_layout-&gt;addLayout(quit_layout);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>layout<sp/>in<sp/>QWidget</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*window<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;setLayout(main_layout);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowIcon(QIcon(</highlight><highlight class="stringliteral">&quot;TheLexiconGlove.png&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;The<sp/>Lexicon<sp/>Glove&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>QWidget<sp/>as<sp/>the<sp/>central<sp/>layout<sp/>of<sp/>the<sp/>main<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>setCentralWidget(window);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1acba63738e6d4acf1092ffa85e292b951" kindref="member">but_mon</ref>,<sp/>&amp;QPushButton::clicked,<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" kindref="member">monitor_button_clicked</ref>();});</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" kindref="member">but_interpret</ref>,<sp/>&amp;QPushButton::clicked,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" kindref="member">interpretButtonClicked</ref>();});</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" kindref="member">but_train</ref>,<sp/>&amp;QPushButton::clicked,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" kindref="member">trainButtonClicked</ref>();});</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>connect(but_quit,<sp/>SIGNAL<sp/>(clicked()),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this,<sp/>SLOT<sp/>(but_quit_clicked()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" kindref="member">but_quit</ref>,<sp/>&amp;QPushButton::clicked,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;close();}<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer" kindref="compound">SampleTimer</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_train_window" kindref="compound">TrainWindow</ref>(<ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref>-&gt;<ref refid="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" kindref="member">getSensorValues</ref>());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Training<sp/>Mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//trainWindow-&gt;startTimer(1000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>,<sp/>&amp;<ref refid="class_train_window_1a9a84bcae91eac1f4597291143c30b280" kindref="member">TrainWindow::startSampling_sig</ref>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;cppSampleTimer-&gt;start(<ref refid="mainwindow_8h_1ad557ebb485c649939aba76bc5872fea7" kindref="member">DATA_SAMPLE_INTERVAL</ref>);});<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>,<sp/>&amp;<ref refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" kindref="member">TrainWindow::stopSampling_sig</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;cppSampleTimer-&gt;stop();});</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window" kindref="compound">MonitorWindow</ref>(<ref refid="mainwindow_8h_1aaf8216d4adaed8b173d40fe64e52d11b" kindref="member">NUMBER_OF_PLOT_SAMPLES</ref>,<sp/><ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref>-&gt;<ref refid="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" kindref="member">getSensorValues</ref>());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref>,<sp/>&amp;<ref refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" kindref="member">SampleTimer::timeoutsignal</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" kindref="member">newDataEvent</ref>();});</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>cppSampleTimer-&gt;start(<ref refid="mainwindow_8h_1ad557ebb485c649939aba76bc5872fea7" kindref="member">DATA_SAMPLE_INTERVAL</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="class_main_window_1ae24d795221d33aeed0bf1df68e8e369a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae24d795221d33aeed0bf1df68e8e369a" kindref="member">MainWindow::createFilters</ref>(){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>accelFilterBank<sp/>=<sp/>new<sp/>FilterBank(NUMBER_OF_FILTERS,<sp/>ORDER_OF_FILTERS,<sp/>SAMPLE_RATE,<sp/>filterCuttoffFreqs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gyroFilterBank<sp/><sp/>=<sp/>new<sp/>FilterBank(NUMBER_OF_FILTERS,<sp/>ORDER_OF_FILTERS,<sp/>SAMPLE_RATE,<sp/>filterCuttoffFreqs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fingerFilterBank=<sp/>new<sp/>FilterBank(NUMBER_OF_FILTERS,<sp/>ORDER_OF_FILTERS,<sp/>SAMPLE_RATE,<sp/>filterCuttoffFreqs);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>accelFilterBank<sp/>-&gt;setup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gyroFilterBank<sp/><sp/>-&gt;setup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fingerFilterBank-&gt;setup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" kindref="member">MainWindow::newDataEvent</ref>(){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int16_t*<sp/>allData<sp/>=<sp/>cppSampleTimer-&gt;getSensorValues();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>-&gt;isVisible()){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//send<sp/>data<sp/>to<sp/>trainwindow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>change<sp/>this<sp/>to<sp/>a<sp/>signal...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>-&gt;<ref refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" kindref="member">handle_samples</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;isVisible()){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;<ref refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" kindref="member">handleSamples</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" kindref="member">MainWindow::timerEvent</ref>(){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Read<sp/>MPU6050<sp/>and<sp/>ADCs</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//for<sp/>now,<sp/>create<sp/>fake<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>samplefinger[5][1];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>sampleacc[3][1];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>in<sp/>=<sp/>5<sp/>*<sp/>sin(M_PI<sp/>*<sp/><ref refid="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" kindref="member">count</ref>/50.0);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>++<ref refid="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;5;i++){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j=0;j&lt;1;j++){</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>samplefinger[i][j]=<sp/>in/(i+1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;3;i++){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j=0;j&lt;1;j++){<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sampleacc[i][j]=<sp/>in/(i+1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>samplegyro[i][j]=<sp/>in/(i+1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>accelFilterBank-&gt;filter(sampleacc[0][0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gyroFilterBank-&gt;filter(sampleacc[0][0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fingerFilterBank-&gt;filter(samplefinger[0][0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;EMIT<sp/>outside\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;isVisible()){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QtConcurrent::run([</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;<ref refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" kindref="member">plotAcc</ref>(this-&gt;<ref refid="class_main_window_1aed3379fb5bc938c45c8f6575b2f9e1e2" kindref="member">sampleacc</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;<ref refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" kindref="member">plotGyro</ref>(this-&gt;<ref refid="class_main_window_1a80eb4bded0c7a73670d49f5895de74a3" kindref="member">samplegyro</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;<ref refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" kindref="member">plotFinger</ref>(this-&gt;<ref refid="class_main_window_1a8c11c1f81534b212a1a59251cc857ce6" kindref="member">samplefinger</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" refkind="member"><highlight class="normal"><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">MainWindow::~MainWindow</ref>(){</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="class_main_window_1a134754908a28096e7f14418368db0581" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a134754908a28096e7f14418368db0581" kindref="member">MainWindow::but_quit_clicked</ref>(){</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;close();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" kindref="member">MainWindow::monitor_button_clicked</ref>(){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window" kindref="compound">MonitorWindow</ref>(<ref refid="mainwindow_8h_1aaf8216d4adaed8b173d40fe64e52d11b" kindref="member">NUMBER_OF_PLOT_SAMPLES</ref>,<sp/><ref refid="class_main_window_1a626eec967d3981392e278927c4505264" kindref="member">cppSampleTimer</ref>-&gt;<ref refid="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" kindref="member">getSensorValues</ref>());</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;setAttribute(Qt::WA_DeleteOnClose);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Monitor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a5413c743856077ba000b3b02b462ae40" kindref="member">moitorRefreshtimer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer(<ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1a5413c743856077ba000b3b02b462ae40" kindref="member">moitorRefreshtimer</ref>,<sp/>&amp;QTimer::timeout,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){<ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;<ref refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" kindref="member">drawPlots</ref>();});</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a5413c743856077ba000b3b02b462ae40" kindref="member">moitorRefreshtimer</ref>-&gt;start(<ref refid="mainwindow_8h_1ad55661e5f9609e2daf717a5cac566320" kindref="member">MONITOR_REFRESH_RATE</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kindref="member">monitorWindow</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" kindref="member">MainWindow::trainButtonClicked</ref>(){</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kindref="member">trainWindow</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" kindref="member">MainWindow::interpretButtonClicked</ref>(){</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_interpret_window" kindref="compound">InterpretWindow</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>-&gt;setAttribute(Qt::WA_DeleteOnClose);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Interpret<sp/>Mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" kindref="member">windowtimer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer(<ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" kindref="member">windowtimer</ref>,<sp/>SIGNAL(timeout()),<ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>,<sp/>SLOT(<ref refid="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" kindref="member">timerEvent</ref>()));</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" kindref="member">windowtimer</ref>-&gt;start(1000);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>connect(interpretWindow,<sp/>SIGNAL(emitClose()),this,<sp/>SLOT(interpretHome()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kindref="member">interpretWindow</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_main_window_1a34837782b2e58775e746e79bd825c102" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a34837782b2e58775e746e79bd825c102" kindref="member">MainWindow::interpretHome</ref>(){</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

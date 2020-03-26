@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="plotfilter_8py" kind="file" language="Python">
+    <compoundname>plotfilter.py</compoundname>
+    <innernamespace refid="namespaceplotfilter">plotfilter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceplotfilter" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>mpl</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">mpl.use(</highlight><highlight class="stringliteral">&apos;Agg&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.pyplot<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>plt</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#Plot<sp/>the<sp/>filtered<sp/>signal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceplotfilter_1a03f2bc93d269885b2b62fcfc4be986d8" refkind="member"><highlight class="normal">filtered<sp/>=<sp/>[</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">]*4</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(4):</highlight></codeline>
+<codeline lineno="9" refid="namespaceplotfilter_1ac2377d502933142fd25f9db1e7dd2038" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>filtered[i]<sp/>=<sp/>np.fromfile(</highlight><highlight class="stringliteral">&quot;testdata/filtered{}.bin&quot;</highlight><highlight class="normal">.format(i),dtype=np.dtype(</highlight><highlight class="stringliteral">&apos;d&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.figure(i)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.plot(filtered[i])</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.savefig(</highlight><highlight class="stringliteral">&apos;testdata/filtered{}.png&apos;</highlight><highlight class="normal">.format(i))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#Plot<sp/>the<sp/>impulse<sp/>response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespaceplotfilter_1ae95257774854536afeb3dd69a1f4e975" refkind="member"><highlight class="normal">impulse<sp/>=<sp/>[</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">]*4</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(4):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>impulse[i]<sp/>=<sp/>np.fromfile(</highlight><highlight class="stringliteral">&quot;testdata/impulse{}.bin&quot;</highlight><highlight class="normal">.format(i),dtype=np.dtype(</highlight><highlight class="stringliteral">&apos;d&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.figure(10+i)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.plot(impulse[i])</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>plt.savefig(</highlight><highlight class="stringliteral">&apos;testdata/impulse{}.png&apos;</highlight><highlight class="normal">.format(i))</highlight></codeline>
+    </programlisting>
+    <location file="testfiles/plotfilter.py"/>
+  </compounddef>
+</doxygen>

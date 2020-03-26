@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_ring_buff_8h" kind="file" language="C++">
+    <compoundname>RingBuff.h</compoundname>
+    <includedby refid="_sample_timer_8h" local="yes">code/Qt/SampleTimer.h</includedby>
+    <includedby refid="_ring_buff_8cpp" local="yes">code/RingBuff.cpp</includedby>
+    <includedby refid="sampledata_8cpp" local="yes">code/sampledata.cpp</includedby>
+    <invincdepgraph>
+      <node id="393">
+        <label>code/RingBuff.h</label>
+        <link refid="_ring_buff_8h"/>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>code/Qt/SampleTimer.cpp</label>
+        <link refid="_sample_timer_8cpp"/>
+      </node>
+      <node id="401">
+        <label>code/sampledata.cpp</label>
+        <link refid="sampledata_8cpp"/>
+      </node>
+      <node id="399">
+        <label>code/RingBuff.cpp</label>
+        <link refid="_ring_buff_8cpp"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="394">
+        <label>code/Qt/SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+      <node id="400">
+        <label>testfiles/RingBuffTest.cpp</label>
+        <link refid="_ring_buff_test_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ring_buff" prot="public">RingBuff</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RINGBUFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RINGBUFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_ring_buff" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ring_buff" kindref="compound">RingBuff</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8" refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kindref="member">bufSize</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kindref="member">elementPtr</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ring_buff" kindref="compound">RingBuff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufSize);<sp/></highlight></codeline>
+<codeline lineno="14" refid="class_ring_buff_1a1dfc4ebc8401c49cea0452a679473c74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ring_buff_1a1dfc4ebc8401c49cea0452a679473c74" kindref="member">~RingBuff</ref>(){</highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buffer;};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertSample(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetBuffer();</highlight></codeline>
+<codeline lineno="17" refid="class_ring_buff_1a2e8b87cab47fba276b539f27953527cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_ring_buff_1a2e8b87cab47fba276b539f27953527cc" kindref="member">getBuffAddress</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer;}</highlight></codeline>
+<codeline lineno="18" refid="class_ring_buff_1ae663d7b920cff4225d19b7b53c37901a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1ae663d7b920cff4225d19b7b53c37901a" kindref="member">getBuffLen</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bufSize;}</highlight></codeline>
+<codeline lineno="19" refid="class_ring_buff_1aaa58b11867eb027f840bf3479f5eee8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ring_buff_1aaa58b11867eb027f840bf3479f5eee8c" kindref="member">getElementPtr</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elementPtr;}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>readBuffer();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RINGBUFF_H</highlight></codeline>
+    </programlisting>
+    <location file="code/RingBuff.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_sample_timer" kind="class" language="C++" prot="public">
+    <compoundname>SampleTimer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">CppTimer</basecompoundref>
+    <includes refid="_sample_timer_8h" local="no">SampleTimer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sample_timer_1a0d542e70862cbe8d334dcc9e6078467f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex SampleTimer::mtx</definition>
+        <argsstring></argsstring>
+        <name>mtx</name>
+        <briefdescription>
+<para>mtx mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A mutex to lock the data while the sampling is occuring. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="38" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" prot="private" static="no" mutable="no">
+        <type>MPU6050 *</type>
+        <definition>MPU6050* SampleTimer::motionSensor</definition>
+        <argsstring></argsstring>
+        <name>motionSensor</name>
+        <briefdescription>
+<para>Motion sensor pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the MPU6050 for data acquision from the Accelerometer/Gyroscope. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="41" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" prot="private" static="no" mutable="no">
+        <type>MCP3428 *</type>
+        <definition>MCP3428* SampleTimer::flexFingers</definition>
+        <argsstring></argsstring>
+        <name>flexFingers</name>
+        <briefdescription>
+<para>Finger sensors pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the MCP3428 for data acquision from the four fingers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="44" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" prot="private" static="no" mutable="no">
+        <type>MCP3428 *</type>
+        <definition>MCP3428* SampleTimer::flexThumb</definition>
+        <argsstring></argsstring>
+        <name>flexThumb</name>
+        <briefdescription>
+<para>Thumb sensor pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the MCP3428 for data acquision from the thumb sensor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="47" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sample_timer_1a752cebe286db338ba440607938dea067" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SampleTimer::sensorValues[NUMBER_OF_SENSORS]</definition>
+        <argsstring>[NUMBER_OF_SENSORS]</argsstring>
+        <name>sensorValues</name>
+        <briefdescription>
+<para>sensorValues pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Where the data from the sensors is stored. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="51" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sample_timer_1a64e770c1941ded68bec40c5a24d43b19" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SampleTimer::readFromSensors</definition>
+        <argsstring>()</argsstring>
+        <name>readFromSensors</name>
+        <briefdescription>
+<para>readFromSensors method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A method to capture the data from the various sensors and place them in the sensorValues array. <simplesect kind="note"><para>This method emits a QT signal upon completion of data acquision to let the main window know that there is data ready. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref> and <ref refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" kindref="member">timeoutsignal()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="58" column="1" bodyfile="code/Qt/SampleTimer.cpp" bodystart="33" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sample_timer_1a9a588688d79ddf9b4a72bfca79283924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SampleTimer::SampleTimer</definition>
+        <argsstring>()</argsstring>
+        <name>SampleTimer</name>
+        <briefdescription>
+<para>Class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor to setup the sensors with the required configurations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="66" column="1" bodyfile="code/Qt/SampleTimer.cpp" bodystart="4" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sample_timer_1a02c53338803f835c3cb0c9071b8cf406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SampleTimer::~SampleTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~SampleTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="67" column="1" bodyfile="code/Qt/SampleTimer.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sample_timer_1aeb8b390f578e49bf74cc93bd901d29ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SampleTimer::timerEvent</definition>
+        <argsstring>()</argsstring>
+        <name>timerEvent</name>
+        <briefdescription>
+<para>timerEvent method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Overridden method of CppTimer to call once timer has timed out. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="71" column="1" bodyfile="code/Qt/SampleTimer.cpp" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t *</type>
+        <definition>int16_t* SampleTimer::getSensorValues</definition>
+        <argsstring>()</argsstring>
+        <name>getSensorValues</name>
+        <briefdescription>
+<para>getSensorValues function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a pointer to the captured sensor values so we can process the captured samples. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="75" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SampleTimer::timeoutsignal</definition>
+        <argsstring>()</argsstring>
+        <name>timeoutsignal</name>
+        <briefdescription>
+<para>timeoutsignal signal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Qt signal to emit once data has been succsesfully captured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/SampleTimer.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sample <ref refid="class_timer" kindref="compound">Timer</ref> Class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to plot perform data aquisition from the sensors. <simplesect kind="see"><para>CppTimer() </para>
+</simplesect>
+<simplesect kind="see"><para>QObject() </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>QObject</label>
+      </node>
+      <node id="42">
+        <label>CppTimer</label>
+      </node>
+      <node id="40">
+        <label>SampleTimer</label>
+        <link refid="class_sample_timer"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>QObject</label>
+      </node>
+      <node id="45">
+        <label>CppTimer</label>
+      </node>
+      <node id="43">
+        <label>SampleTimer</label>
+        <link refid="class_sample_timer"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/Qt/SampleTimer.h" line="33" column="1" bodyfile="code/Qt/SampleTimer.h" bodystart="32" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>flexFingers</name></member>
+      <member refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>flexThumb</name></member>
+      <member refid="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" prot="public" virt="non-virtual"><scope>SampleTimer</scope><name>getSensorValues</name></member>
+      <member refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>motionSensor</name></member>
+      <member refid="class_sample_timer_1a0d542e70862cbe8d334dcc9e6078467f" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>mtx</name></member>
+      <member refid="class_sample_timer_1a64e770c1941ded68bec40c5a24d43b19" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>readFromSensors</name></member>
+      <member refid="class_sample_timer_1a9a588688d79ddf9b4a72bfca79283924" prot="public" virt="non-virtual"><scope>SampleTimer</scope><name>SampleTimer</name></member>
+      <member refid="class_sample_timer_1a752cebe286db338ba440607938dea067" prot="private" virt="non-virtual"><scope>SampleTimer</scope><name>sensorValues</name></member>
+      <member refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" prot="public" virt="non-virtual"><scope>SampleTimer</scope><name>timeoutsignal</name></member>
+      <member refid="class_sample_timer_1aeb8b390f578e49bf74cc93bd901d29ae" prot="public" virt="non-virtual"><scope>SampleTimer</scope><name>timerEvent</name></member>
+      <member refid="class_sample_timer_1a02c53338803f835c3cb0c9071b8cf406" prot="public" virt="non-virtual"><scope>SampleTimer</scope><name>~SampleTimer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

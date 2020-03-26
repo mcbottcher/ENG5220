@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_filter_bank" kind="class" language="C++" prot="public">
+    <compoundname>FilterBank</compoundname>
+    <includes refid="_filter_bank_8h" local="no">FilterBank.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FilterBank::numberOfFilters</definition>
+        <argsstring></argsstring>
+        <name>numberOfFilters</name>
+        <briefdescription>
+<para>Number of filters integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of filter objects required to run in parallel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="75" column="1" bodyfile="code/FilterBank.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_bank_1ac706a43798d1322e8d078ac7af0256bf" prot="protected" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double FilterBank::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+<para>Sampling rate double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Sampling rate of the filters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="78" column="1" bodyfile="code/FilterBank.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_bank_1a83780bb546eda422318b54103df62613" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FilterBank::filterOrder</definition>
+        <argsstring></argsstring>
+        <name>filterOrder</name>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> order integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the required order of the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="81" column="1" bodyfile="code/FilterBank.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_bank_1adc84ce6490841a630b6634092e9d1613" prot="protected" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* FilterBank::outputArray</definition>
+        <argsstring></argsstring>
+        <name>outputArray</name>
+        <briefdescription>
+<para>Output array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to array of processed samples. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="84" column="1" bodyfile="code/FilterBank.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_filter" kindref="compound">Filter</ref> **</type>
+        <definition>Filter** FilterBank::filterObjArray</definition>
+        <argsstring></argsstring>
+        <name>filterObjArray</name>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An array of pointers to the <ref refid="class_filter" kindref="compound">Filter</ref> class. <simplesect kind="see"><para><ref refid="class_filter" kindref="compound">Filter()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="89" column="1" bodyfile="code/FilterBank.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_filter_bank_1a1f4c10f55bed118220c55f10215be634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterBank::FilterBank</definition>
+        <argsstring>(int numberOfFilters, int filterOrder, double sampleRate, double *cutoffFrequencies)</argsstring>
+        <name>FilterBank</name>
+        <param>
+          <type>int</type>
+          <declname>numberOfFilters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filterOrder</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>cutoffFrequencies</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_filter_bank" kindref="compound">FilterBank</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instanciate the <ref refid="class_filter_bank" kindref="compound">FilterBank</ref> class and setup the filters with the given parameters <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfFilters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of filters that are required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filterOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required order of the filters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sampling rate of the filters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutoffFrequencies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an array of cuttoff frequencies for each filter in the <ref refid="class_filter_bank" kindref="compound">FilterBank</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="101" column="1" bodyfile="code/FilterBank.cpp" bodystart="4" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_bank_1a6a86009cdb85acdc393a902aa9c00164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FilterBank::~FilterBank</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterBank</name>
+        <briefdescription>
+<para><ref refid="class_filter_bank" kindref="compound">FilterBank</ref> destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Free up the memory and delete the array of Filer objects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="106" column="1" bodyfile="code/FilterBank.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_bank_1a09881ea60cd2c2d21c29b3c599ef2c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * FilterBank::filter</definition>
+        <argsstring>(double sample)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>double</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A method to send the sample to each filter in parallel
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample to be passed through to all filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns pointer to array of processed sample </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="113" column="1" bodyfile="code/FilterBank.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_bank_1aac19fa7a28bf8077907c311952fde784" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double* FilterBank::getArray</definition>
+        <argsstring>()</argsstring>
+        <name>getArray</name>
+        <briefdescription>
+<para>Get Array method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>returns pointer to array of processed sample </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="119" column="1" bodyfile="code/FilterBank.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_bank_1ad95fe17a4040bf978ad977a37ce3a868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterBank::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+<para>Setup method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A method to setup the <ref refid="class_filter_bank" kindref="compound">FilterBank</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="125" column="1" bodyfile="code/FilterBank.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Filterbank class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A class allowing multiple instances of Filters to be setup in parallel. A sample sent to the <ref refid="class_filter_bank" kindref="compound">FilterBank</ref> will be sent to each filter and the output of each filter returned as a pointer to an array of processed samples. <simplesect kind="see"><para><ref refid="class_filter" kindref="compound">Filter()</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>Filter</label>
+        <link refid="class_filter"/>
+      </node>
+      <node id="7">
+        <label>FilterBank</label>
+        <link refid="class_filter_bank"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>filterObjArray</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/FilterBank.h" line="69" column="1" bodyfile="code/FilterBank.h" bodystart="69" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_filter_bank_1a09881ea60cd2c2d21c29b3c599ef2c0b" prot="public" virt="non-virtual"><scope>FilterBank</scope><name>filter</name></member>
+      <member refid="class_filter_bank_1a1f4c10f55bed118220c55f10215be634" prot="public" virt="non-virtual"><scope>FilterBank</scope><name>FilterBank</name></member>
+      <member refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" prot="protected" virt="non-virtual"><scope>FilterBank</scope><name>filterObjArray</name></member>
+      <member refid="class_filter_bank_1a83780bb546eda422318b54103df62613" prot="protected" virt="non-virtual"><scope>FilterBank</scope><name>filterOrder</name></member>
+      <member refid="class_filter_bank_1aac19fa7a28bf8077907c311952fde784" prot="public" virt="non-virtual"><scope>FilterBank</scope><name>getArray</name></member>
+      <member refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" prot="protected" virt="non-virtual"><scope>FilterBank</scope><name>numberOfFilters</name></member>
+      <member refid="class_filter_bank_1adc84ce6490841a630b6634092e9d1613" prot="protected" virt="non-virtual"><scope>FilterBank</scope><name>outputArray</name></member>
+      <member refid="class_filter_bank_1ac706a43798d1322e8d078ac7af0256bf" prot="protected" virt="non-virtual"><scope>FilterBank</scope><name>sampleRate</name></member>
+      <member refid="class_filter_bank_1ad95fe17a4040bf978ad977a37ce3a868" prot="public" virt="non-virtual"><scope>FilterBank</scope><name>setup</name></member>
+      <member refid="class_filter_bank_1a6a86009cdb85acdc393a902aa9c00164" prot="public" virt="non-virtual"><scope>FilterBank</scope><name>~FilterBank</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacecreatesines" kind="namespace" language="Python">
+    <compoundname>createsines</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int createsines.fs</definition>
+        <argsstring></argsstring>
+        <name>fs</name>
+        <initializer>=  500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/createsines.py" line="6" column="1" bodyfile="testfiles/createsines.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreatesines_1a0abc310e26cca360b199f33679d047b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int createsines.t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/createsines.py" line="7" column="1" bodyfile="testfiles/createsines.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int createsines.samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <initializer>=  np.arange(<ref refid="namespacecreatesines_1a0abc310e26cca360b199f33679d047b7" kindref="member">t</ref> * <ref refid="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" kindref="member">fs</ref>) / <ref refid="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" kindref="member">fs</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/createsines.py" line="8" column="1" bodyfile="testfiles/createsines.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreatesines_1a8477e86d34388cffabe6aec83f9ca2d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>def createsines::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <initializer>=  np.zeros(<ref refid="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" kindref="member">fs</ref>*<ref refid="namespacecreatesines_1a0abc310e26cca360b199f33679d047b7" kindref="member">t</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/createsines.py" line="9" column="1" bodyfile="testfiles/createsines.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def createsines.wave</definition>
+        <argsstring>(freq)</argsstring>
+        <name>wave</name>
+        <param>
+          <type>freq</type>
+          <defname>freq</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/createsines.py" line="11" column="1" bodyfile="testfiles/createsines.py" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="testfiles/createsines.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_train_window_8cpp" kind="file" language="C++">
+    <compoundname>TrainWindow.cpp</compoundname>
+    <includes refid="_train_window_8h" local="yes">TrainWindow.h</includes>
+    <incdepgraph>
+      <node id="344">
+        <label>TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>QFont</label>
+      </node>
+      <node id="345">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="348">
+        <label>QCheckBox</label>
+      </node>
+      <node id="362">
+        <label>fstream</label>
+      </node>
+      <node id="356">
+        <label>QListWidget</label>
+      </node>
+      <node id="359">
+        <label>QLed.h</label>
+        <link refid="_q_led_8h"/>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>QAbstractItemView</label>
+      </node>
+      <node id="355">
+        <label>QTimer</label>
+      </node>
+      <node id="354">
+        <label>QGroupBox</label>
+      </node>
+      <node id="353">
+        <label>QLineEdit</label>
+      </node>
+      <node id="343">
+        <label>code/Qt/TrainWindow.cpp</label>
+        <link refid="_train_window_8cpp"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>QString</label>
+      </node>
+      <node id="347">
+        <label>QColor</label>
+      </node>
+      <node id="349">
+        <label>QPushButton</label>
+      </node>
+      <node id="351">
+        <label>QLabel</label>
+      </node>
+      <node id="346">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="357">
+        <label>QDir</label>
+      </node>
+      <node id="360">
+        <label>QFrame</label>
+      </node>
+      <node id="361">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_train_window_8h" kindref="compound">TrainWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" refkind="member"><highlight class="normal"><ref refid="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" kindref="member">TrainWindow::TrainWindow</ref>(int16_t*<sp/>dataPtr){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" kindref="member">sensorDataptr</ref><sp/>=<sp/>dataPtr;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;11;<sp/>i++){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" kindref="member">sensorDataptr</ref>[i]<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" kindref="member">inputGroup</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGroupBox(tr(</highlight><highlight class="stringliteral">&quot;Input&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a67689bed14d31159d7980f3aa50782c9" kindref="member">inputLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(tr(</highlight><highlight class="stringliteral">&quot;Training<sp/>word:&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLineEdit;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref>-&gt;setPlaceholderText(</highlight><highlight class="stringliteral">&quot;Insert<sp/>word<sp/>Here&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref>-&gt;setFocus();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" kindref="member">wordTrain</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Train<sp/>word&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" kindref="member">wordTrain</ref>,<sp/>SIGNAL<sp/>(released()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT<sp/>(<ref refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kindref="member">data_aq_state_machine</ref>()));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a67689bed14d31159d7980f3aa50782c9" kindref="member">inputLabel</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref>,<sp/>1,<sp/>0,<sp/>1,<sp/>2);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" kindref="member">wordTrain</ref>,<sp/>1,<sp/>3);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" kindref="member">inputGroup</ref>-&gt;setLayout(<ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>QFont<sp/>Font(</highlight><highlight class="stringliteral">&quot;Arial&quot;</highlight><highlight class="normal">,<sp/>20,<sp/>QFont::Bold);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setFont(Font);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" kindref="member">timerText</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" kindref="member">timerText</ref>-&gt;setFont(Font);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;setSingleShot(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>,<sp/>SIGNAL(timeout()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kindref="member">data_aq_state_machine</ref>()));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" kindref="member">ledLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=0;<sp/>i&lt;10;i++){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_q_led" kindref="compound">QLed</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]-&gt;<ref refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kindref="member">setState</ref>(Qt::red);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" kindref="member">ledLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i],0,i);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" kindref="member">trainGroup</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGroupBox(tr(</highlight><highlight class="stringliteral">&quot;Data<sp/>Aquisition&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kindref="member">trainLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kindref="member">trainLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kindref="member">trainLayout</ref>-&gt;addLayout(<ref refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" kindref="member">ledLayout</ref>,1,0,1,2);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" kindref="member">trainGroup</ref>-&gt;setLayout(<ref refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kindref="member">trainLayout</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" kindref="member">netGroup</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGroupBox(tr(</highlight><highlight class="stringliteral">&quot;Neural<sp/>Network&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" kindref="member">nettrainButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Run<sp/>Network&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" kindref="member">nettrainButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" kindref="member">startNeuralNet</ref>();});</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QListWidget();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref>-&gt;setSelectionMode(QAbstractItemView::ExtendedSelection);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>QDir<sp/>directory;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" kindref="member">files</ref><sp/>=<sp/>directory.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;*.csv&quot;</highlight><highlight class="normal">,<sp/>QDir::Files);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref>-&gt;addItems(<ref refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" kindref="member">files</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" kindref="member">homeButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Home&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" kindref="member">homeButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" kindref="member">closeWindow</ref>();});</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kindref="member">homeLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kindref="member">homeLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kindref="member">homeLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" kindref="member">nettrainButton</ref>,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" kindref="member">netGroup</ref>-&gt;setLayout(<ref refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kindref="member">homeLayout</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" kindref="member">inputGroup</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" kindref="member">trainGroup</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" kindref="member">netGroup</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>-&gt;addWidget(<ref refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" kindref="member">homeButton</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>setLayout(<ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86" refid="class_train_window_1a67a932ea98e16f96223f91845924ff54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a67a932ea98e16f96223f91845924ff54" kindref="member">TrainWindow::trainingDataLoop</ref>(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]-&gt;<ref refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kindref="member">setState</ref>(Qt::yellow);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]-&gt;<ref refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kindref="member">setState</ref>(Qt::green);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" refkind="member"><highlight class="normal"><ref refid="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" kindref="member">TrainWindow::~TrainWindow</ref>(){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" kindref="member">TrainWindow::startNeuralNet</ref>(){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QListWidgetItem<sp/>*&gt;<sp/>selected_movements<sp/>=<sp/><ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref>-&gt;selectedItems();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>command<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;python3<sp/>neuralNet.py<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;selected_movements.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>command<sp/>+=<sp/>(selected_movements[i]-&gt;text()).toStdString();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>command<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>system(command.c_str());<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kindref="member">TrainWindow::data_aq_state_machine</ref>(){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref>){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref>:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;STARTING&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" kindref="member">gesture_count</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=0;<sp/>i&lt;10;i++){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]-&gt;<ref refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kindref="member">setState</ref>(Qt::red);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" kindref="member">filename</ref><sp/>=<sp/><ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref>-&gt;text();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref>.open<sp/>(<ref refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" kindref="member">filename</ref>.toStdString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.csv&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(1000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" kindref="member">STATE_COUNTDOWN_3</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" kindref="member">STATE_COUNTDOWN_3</ref>:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;3<sp/>...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(1000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" kindref="member">STATE_COUNTDOWN_2</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" kindref="member">STATE_COUNTDOWN_2</ref>:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;2<sp/>...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(1000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" kindref="member">STATE_COUNTDOWN_1</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" kindref="member">STATE_COUNTDOWN_1</ref>:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;1<sp/>...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(1000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" kindref="member">STATE_GO</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" kindref="member">STATE_GO</ref>:</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;GO!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_train_window_1a9a84bcae91eac1f4597291143c30b280" kindref="member">startSampling_sig</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" kindref="member">STATE_STOP</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" kindref="member">STATE_STOP</ref>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;STOP!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" kindref="member">saveMovement</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=0;<sp/>i&lt;(<ref refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" kindref="member">gesture_count</ref>*10/<ref refid="_train_window_8h_1ae7e21fec441ccd6e563cb94a90452c1d" kindref="member">NUMBER_OF_REPETITIONS</ref>);<sp/>i++){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[i]-&gt;<ref refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kindref="member">setState</ref>(Qt::green);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(++<ref refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" kindref="member">gesture_count</ref><sp/>&gt;<sp/><ref refid="_train_window_8h_1ae7e21fec441ccd6e563cb94a90452c1d" kindref="member">NUMBER_OF_REPETITIONS</ref>){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" kindref="member">STATE_FINISHED</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(1000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" kindref="member">STATE_COUNTDOWN_3</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;start(3000);<sp/></highlight><highlight class="comment">//time<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" kindref="member">STATE_FINISHED</ref>:</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref>.close();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;FINISHED&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" kindref="member">TrainWindow::handle_samples</ref>(){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;11;<sp/>i++){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" kindref="member">movementData</ref>[i][<ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref>]<sp/>=<sp/><ref refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" kindref="member">sensorDataptr</ref>[i];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref>++;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref><sp/>==<sp/>20){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stop<sp/>the<sp/>cpptimer<sp/>with<sp/>a<sp/>signal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" kindref="member">stopSampling_sig</ref>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>row<sp/>to<sp/>csv<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" kindref="member">saveMovement</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//goto<sp/>the<sp/>next<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kindref="member">data_aq_state_machine</ref>();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//nop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" kindref="member">TrainWindow::saveMovement</ref>(){</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;<sp/>11;j++){</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k=0;<sp/>k&lt;<sp/><ref refid="config_8h_1a15dda0e84869655d2b16ff1b2c3c6d5b" kindref="member">NUMBER_OF_BUFFER_ELEMENTS</ref>;k++){</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref><sp/>&lt;&lt;<sp/><ref refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" kindref="member">movementData</ref>[j][k]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" kindref="member">TrainWindow::closeWindow</ref>(){</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>-&gt;stop();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" kindref="member">stopSampling_sig</ref>();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref>.is_open()){</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref>.close();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;close();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/TrainWindow.cpp"/>
+  </compounddef>
+</doxygen>

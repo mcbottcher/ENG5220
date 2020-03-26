@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_neural_net_8h" kind="file" language="C++">
+    <compoundname>NeuralNet.h</compoundname>
+    <includes local="no">fdeep/fdeep.hpp</includes>
+    <includedby refid="neuralnet__predict_2main_8cpp" local="yes">code/neuralnet_predict/main.cpp</includedby>
+    <includedby refid="_neural_net_8cpp" local="yes">code/neuralnet_predict/NeuralNet.cpp</includedby>
+    <incdepgraph>
+      <node id="108">
+        <label>fdeep/fdeep.hpp</label>
+      </node>
+      <node id="107">
+        <label>code/neuralnet_predict/NeuralNet.h</label>
+        <link refid="_neural_net_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="111">
+        <label>code/neuralnet_predict/NeuralNet.cpp</label>
+        <link refid="_neural_net_8cpp"/>
+      </node>
+      <node id="110">
+        <label>code/neuralnet_predict/main.cpp</label>
+        <link refid="neuralnet__predict_2main_8cpp"/>
+      </node>
+      <node id="109">
+        <label>code/neuralnet_predict/NeuralNet.h</label>
+        <link refid="_neural_net_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_neural_net" prot="public">NeuralNet</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_neural_net_8h_1a00ad6a3a94ffdd1bc6b55e789f9dfda9" prot="public" static="no">
+        <name>NUMBER_OF_ROWS</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="4" column="9" bodyfile="code/neuralnet_predict/NeuralNet.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_neural_net_8h_1a0240364487a54a70da4ffb51459ada98" prot="public" static="no">
+        <name>NUMBER_OF_COLUMNS</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="5" column="9" bodyfile="code/neuralnet_predict/NeuralNet.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;fdeep/fdeep.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="_neural_net_8h_1a00ad6a3a94ffdd1bc6b55e789f9dfda9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_ROWS<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_neural_net_8h_1a0240364487a54a70da4ffb51459ada98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_COLUMNS<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_neural_net" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_neural_net" kindref="compound">NeuralNet</ref>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_neural_net_1a66b1ddd47bc5b393cf184f02517e82d4" kindref="member">NeuralNet</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_neural_net_1afd68e306bdf39aaa8c6ef016e4da18a1" kindref="member">~NeuralNet</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neural_net_1a5847c3d58230e3f5df8598a6f8b0bceb" kindref="member">predict</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neural_net_1a7886a708a90f398259221e5a9f9e1a65" kindref="member">insertSamples</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>sampleBuff);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="class_neural_net_1a0fcc02dadaff06b0228304e3e89e9095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceattempt1_1ad3ecdd9ef1003f442f9ae4a7166ff54d" kindref="member">fdeep::model</ref><sp/><ref refid="class_neural_net_1a0fcc02dadaff06b0228304e3e89e9095" kindref="member">_model</ref><sp/>=<sp/>fdeep::load_model(</highlight><highlight class="stringliteral">&quot;fdeep_model.json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//11<sp/>rows,<sp/>20<sp/>columns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_neural_net_1a8de1915a65411a91c61923795a6d273d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_neural_net_1a8de1915a65411a91c61923795a6d273d" kindref="member">netInputs</ref>[<ref refid="_neural_net_8h_1a00ad6a3a94ffdd1bc6b55e789f9dfda9" kindref="member">NUMBER_OF_ROWS</ref>][<ref refid="_neural_net_8h_1a0240364487a54a70da4ffb51459ada98" kindref="member">NUMBER_OF_COLUMNS</ref>]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="code/neuralnet_predict/NeuralNet.h"/>
+  </compounddef>
+</doxygen>

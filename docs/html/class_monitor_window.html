@@ -28,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_with_text-1 copy 2.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_with_text_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('class_monitor_window.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_monitor_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MonitorWindow Class Reference</div>  </div>
@@ -115,11 +117,18 @@ Collaboration diagram for MonitorWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_monitor_window__coll__graph.png" border="0" usemap="#_monitor_window_coll__map" alt="Collaboration graph"/></div>
 <map name="_monitor_window_coll__map" id="_monitor_window_coll__map">
-<area shape="rect"  title="Monitor Window Class." alt="" coords="5,79,119,104"/>
-<area shape="rect"  title=" " alt="" coords="25,5,99,31"/>
+<area shape="rect"  title="Monitor Window Class." alt="" coords="55,119,168,144"/>
+<area shape="rect"  title=" " alt="" coords="5,5,79,31"/>
+<area shape="rect"  href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure." alt="" coords="103,5,259,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_monitor_window_1_1_curve.html">Curve</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CurveStruct data structure.  <a href="struct_monitor_window_1_1_curve.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:aec028f61c1d8b96cea24b484d95ed87e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#aec028f61c1d8b96cea24b484d95ed87e">drawPlots</a> ()</td></tr>
@@ -128,12 +137,15 @@ Public Slots</h2></td></tr>
 <tr class="memitem:abb358daca8435681df006590a3024624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#abb358daca8435681df006590a3024624">resetbutton</a> ()</td></tr>
 <tr class="memdesc:abb358daca8435681df006590a3024624"><td class="mdescLeft">&#160;</td><td class="mdescRight">resetbutton method.  <a href="#abb358daca8435681df006590a3024624">More...</a><br /></td></tr>
 <tr class="separator:abb358daca8435681df006590a3024624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5effc4c616eaca46212f0e922669b4d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a5effc4c616eaca46212f0e922669b4d2">handleSamples</a> ()</td></tr>
+<tr class="memdesc:a5effc4c616eaca46212f0e922669b4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle samples.  <a href="#a5effc4c616eaca46212f0e922669b4d2">More...</a><br /></td></tr>
+<tr class="separator:a5effc4c616eaca46212f0e922669b4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae11359f0e70111f291e159c0e7d32fae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#ae11359f0e70111f291e159c0e7d32fae">MonitorWindow</a> (size_t bufferSize)</td></tr>
-<tr class="memdesc:ae11359f0e70111f291e159c0e7d32fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ae11359f0e70111f291e159c0e7d32fae">More...</a><br /></td></tr>
-<tr class="separator:ae11359f0e70111f291e159c0e7d32fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafb4e4916800024a71876dbe89a4952"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#afafb4e4916800024a71876dbe89a4952">MonitorWindow</a> (size_t <a class="el" href="class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7">bufferSize</a>, int16_t *dataPtr)</td></tr>
+<tr class="memdesc:afafb4e4916800024a71876dbe89a4952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#afafb4e4916800024a71876dbe89a4952">More...</a><br /></td></tr>
+<tr class="separator:afafb4e4916800024a71876dbe89a4952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd6a957bc31c8b95faff7cb575c903f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#addd6a957bc31c8b95faff7cb575c903f">~MonitorWindow</a> ()</td></tr>
 <tr class="memdesc:addd6a957bc31c8b95faff7cb575c903f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#addd6a957bc31c8b95faff7cb575c903f">More...</a><br /></td></tr>
 <tr class="separator:addd6a957bc31c8b95faff7cb575c903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,15 +161,100 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a658bde4a4b7296b53af09affdf69010a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a658bde4a4b7296b53af09affdf69010a">plotFinger</a> (double(&amp;sample)[5][plotBufferSize])</td></tr>
 <tr class="memdesc:a658bde4a4b7296b53af09affdf69010a"><td class="mdescLeft">&#160;</td><td class="mdescRight">plotFinger helper method.  <a href="#a658bde4a4b7296b53af09affdf69010a">More...</a><br /></td></tr>
 <tr class="separator:a658bde4a4b7296b53af09affdf69010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a1570ba7a14d4bbaa97ef521ccbed48f6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_monitor_window_1_1_curve.html">MonitorWindow::Curve</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a></td></tr>
+<tr class="memdesc:a1570ba7a14d4bbaa97ef521ccbed48f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CurveStruct data structure.  <a href="#a1570ba7a14d4bbaa97ef521ccbed48f6">More...</a><br /></td></tr>
+<tr class="separator:a1570ba7a14d4bbaa97ef521ccbed48f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7">bufferSize</a></td></tr>
+<tr class="memdesc:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">bufferSize size_t.  <a href="#aa8ad8d4e48eb26f29ce3219dd06cabc7">More...</a><br /></td></tr>
+<tr class="separator:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13199c2b7020ffaf2bcc3c239ed12162"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a13199c2b7020ffaf2bcc3c239ed12162">resetButton</a></td></tr>
+<tr class="memdesc:a13199c2b7020ffaf2bcc3c239ed12162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clickable button pointers.  <a href="#a13199c2b7020ffaf2bcc3c239ed12162">More...</a><br /></td></tr>
+<tr class="separator:a13199c2b7020ffaf2bcc3c239ed12162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b22f55b1bb3a4e8ea1f78b80f80735"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a03b22f55b1bb3a4e8ea1f78b80f80735">closeButton</a></td></tr>
+<tr class="separator:a03b22f55b1bb3a4e8ea1f78b80f80735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d6292e40924044b7ebe6f86fea92a7"><td class="memItemLeft" align="right" valign="top">QwtPlot *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a28d6292e40924044b7ebe6f86fea92a7">accelerometerPlot</a></td></tr>
+<tr class="memdesc:a28d6292e40924044b7ebe6f86fea92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">QwtPlot pointers.  <a href="#a28d6292e40924044b7ebe6f86fea92a7">More...</a><br /></td></tr>
+<tr class="separator:a28d6292e40924044b7ebe6f86fea92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52de85dce2a646edca75c6ac4637ed5e"><td class="memItemLeft" align="right" valign="top">QwtPlot *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a52de85dce2a646edca75c6ac4637ed5e">gyroPlot</a></td></tr>
+<tr class="separator:a52de85dce2a646edca75c6ac4637ed5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add518550737fac91912a0e99f6ea282e"><td class="memItemLeft" align="right" valign="top">QwtPlot *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#add518550737fac91912a0e99f6ea282e">fingerPlot</a></td></tr>
+<tr class="separator:add518550737fac91912a0e99f6ea282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a08d96ae9a999d7d5e72ae0ce0d89f223">xAxisData</a></td></tr>
+<tr class="memdesc:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="mdescLeft">&#160;</td><td class="mdescRight">xAsisData pointer to a double.  <a href="#a08d96ae9a999d7d5e72ae0ce0d89f223">More...</a><br /></td></tr>
+<tr class="separator:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d774e837240f24538c6737a379acf29"><td class="memItemLeft" align="right" valign="top">int16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a6d774e837240f24538c6737a379acf29">sensorDataPtr</a></td></tr>
+<tr class="memdesc:a6d774e837240f24538c6737a379acf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensorData pointer.  <a href="#a6d774e837240f24538c6737a379acf29">More...</a><br /></td></tr>
+<tr class="separator:a6d774e837240f24538c6737a379acf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc757305052a3a36784c5cd6ce704772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#adc757305052a3a36784c5cd6ce704772">acc</a></td></tr>
+<tr class="memdesc:adc757305052a3a36784c5cd6ce704772"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> structure for sensor data.  <a href="#adc757305052a3a36784c5cd6ce704772">More...</a><br /></td></tr>
+<tr class="separator:adc757305052a3a36784c5cd6ce704772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ed0e3fb8f78b7b19b02a5665205d9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#ac1ed0e3fb8f78b7b19b02a5665205d9f">gyro</a></td></tr>
+<tr class="separator:ac1ed0e3fb8f78b7b19b02a5665205d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27c111f826a869a122147e6652ab36a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#ab27c111f826a869a122147e6652ab36a">finger</a></td></tr>
+<tr class="separator:ab27c111f826a869a122147e6652ab36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8938e9c6106d1750220c780bab105cc4"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a8938e9c6106d1750220c780bab105cc4">mainLayout</a></td></tr>
+<tr class="memdesc:a8938e9c6106d1750220c780bab105cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical layout members.  <a href="#a8938e9c6106d1750220c780bab105cc4">More...</a><br /></td></tr>
+<tr class="separator:a8938e9c6106d1750220c780bab105cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af288cc53017bb1fc672f9f3acaa6d474"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#af288cc53017bb1fc672f9f3acaa6d474">vPlotLayout</a></td></tr>
+<tr class="separator:af288cc53017bb1fc672f9f3acaa6d474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe48d4188290d427d3b06df1a94b83d"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#acfe48d4188290d427d3b06df1a94b83d">checkAccLayout</a></td></tr>
+<tr class="separator:acfe48d4188290d427d3b06df1a94b83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716bdcff7c835f6b0025360b67c31644"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a716bdcff7c835f6b0025360b67c31644">checkGyroLayout</a></td></tr>
+<tr class="separator:a716bdcff7c835f6b0025360b67c31644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895f948fb4fa2b9aea5dc02eba49f166"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a895f948fb4fa2b9aea5dc02eba49f166">checkFingerLayout</a></td></tr>
+<tr class="separator:a895f948fb4fa2b9aea5dc02eba49f166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac66a8c2583ec9d392815a4eb515122"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a2ac66a8c2583ec9d392815a4eb515122">controlLayout</a></td></tr>
+<tr class="memdesc:a2ac66a8c2583ec9d392815a4eb515122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal layout members.  <a href="#a2ac66a8c2583ec9d392815a4eb515122">More...</a><br /></td></tr>
+<tr class="separator:a2ac66a8c2583ec9d392815a4eb515122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3827d57fca6096314e4f23d8fc1cc07"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#af3827d57fca6096314e4f23d8fc1cc07">hPlotLayout</a></td></tr>
+<tr class="separator:af3827d57fca6096314e4f23d8fc1cc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4bb3b60f13de0a6c6f099614de06ac"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a2a4bb3b60f13de0a6c6f099614de06ac">accLayout</a></td></tr>
+<tr class="separator:a2a4bb3b60f13de0a6c6f099614de06ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f0235f04f770b2addcb4e38cf7c96b"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#ae9f0235f04f770b2addcb4e38cf7c96b">gyroLayout</a></td></tr>
+<tr class="separator:ae9f0235f04f770b2addcb4e38cf7c96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f1384109f069600aae3b33c6952410"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#aa2f1384109f069600aae3b33c6952410">fingerLayout</a></td></tr>
+<tr class="separator:aa2f1384109f069600aae3b33c6952410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Monitor Window Class. </p>
 <p>Class to plot and monitor all the sensor data in real time </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00026">26</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae11359f0e70111f291e159c0e7d32fae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11359f0e70111f291e159c0e7d32fae">&#9670;&nbsp;</a></span>MonitorWindow()</h2>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00027">27</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a1570ba7a14d4bbaa97ef521ccbed48f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1570ba7a14d4bbaa97ef521ccbed48f6">&#9670;&nbsp;</a></span>Curve_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_monitor_window_1_1_curve.html">MonitorWindow::Curve</a>  <a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">MonitorWindow::Curve_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CurveStruct data structure. </p>
+<p>Data structure for each curve on the graphs. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afafb4e4916800024a71876dbe89a4952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafb4e4916800024a71876dbe89a4952">&#9670;&nbsp;</a></span>MonitorWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,8 +263,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">MonitorWindow::MonitorWindow </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em></td><td>)</td>
+          <td class="paramname"><em>bufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramname"><em>dataPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +309,7 @@ Public Member Functions</h2></td></tr>
 <p>Class destructor. </p>
 <p>default destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00145">145</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00119">119</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +340,37 @@ Public Member Functions</h2></td></tr>
 <p>drawPlots method. </p>
 <p>Public slot to allow refreshing of the screen and update the cruves onto the screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00161">161</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00125">125</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5effc4c616eaca46212f0e922669b4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5effc4c616eaca46212f0e922669b4d2">&#9670;&nbsp;</a></span>handleSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MonitorWindow::handleSamples </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>handle samples. </p>
+<p>Public slot to update the curves with new data </p>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00144">144</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +409,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00144">144</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00191">191</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +448,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[5][n] = {{IndexFingerArray}, {...}, {...},{PinkyFingerArray}, {ThumbArray}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00169">169</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00216">216</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +487,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00156">156</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00203">203</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +517,536 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>resetbutton method. </p>
 <p>Public slot to reset all the buffers to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00214">214</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00134">134</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adc757305052a3a36784c5cd6ce704772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc757305052a3a36784c5cd6ce704772">&#9670;&nbsp;</a></span>acc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a>* MonitorWindow::acc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> structure for sensor data. </p>
+<p>Create <a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> class for each type of data. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a28d6292e40924044b7ebe6f86fea92a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d6292e40924044b7ebe6f86fea92a7">&#9670;&nbsp;</a></span>accelerometerPlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlot* MonitorWindow::accelerometerPlot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>QwtPlot pointers. </p>
+<p>Pointers to plots to allow curves to be added to. </p>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a4bb3b60f13de0a6c6f099614de06ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4bb3b60f13de0a6c6f099614de06ac">&#9670;&nbsp;</a></span>accLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHBoxLayout * MonitorWindow::accLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa8ad8d4e48eb26f29ce3219dd06cabc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ad8d4e48eb26f29ce3219dd06cabc7">&#9670;&nbsp;</a></span>bufferSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MonitorWindow::bufferSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>bufferSize size_t. </p>
+<p>The length of buffer for each plotting curve. Set by calling the constructor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_monitor_window.html#afafb4e4916800024a71876dbe89a4952" title="Class constructor.">MonitorWindow()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00036">36</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="acfe48d4188290d427d3b06df1a94b83d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe48d4188290d427d3b06df1a94b83d">&#9670;&nbsp;</a></span>checkAccLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout * MonitorWindow::checkAccLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a895f948fb4fa2b9aea5dc02eba49f166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895f948fb4fa2b9aea5dc02eba49f166">&#9670;&nbsp;</a></span>checkFingerLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout * MonitorWindow::checkFingerLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a716bdcff7c835f6b0025360b67c31644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716bdcff7c835f6b0025360b67c31644">&#9670;&nbsp;</a></span>checkGyroLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout * MonitorWindow::checkGyroLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a03b22f55b1bb3a4e8ea1f78b80f80735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b22f55b1bb3a4e8ea1f78b80f80735">&#9670;&nbsp;</a></span>closeButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton * MonitorWindow::closeButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00040">40</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ac66a8c2583ec9d392815a4eb515122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac66a8c2583ec9d392815a4eb515122">&#9670;&nbsp;</a></span>controlLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHBoxLayout* MonitorWindow::controlLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Horizontal layout members. </p>
+<p>Horizontal QT layout elements of the GUI </p>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ab27c111f826a869a122147e6652ab36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27c111f826a869a122147e6652ab36a">&#9670;&nbsp;</a></span>finger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> * MonitorWindow::finger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2f1384109f069600aae3b33c6952410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f1384109f069600aae3b33c6952410">&#9670;&nbsp;</a></span>fingerLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHBoxLayout * MonitorWindow::fingerLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="add518550737fac91912a0e99f6ea282e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add518550737fac91912a0e99f6ea282e">&#9670;&nbsp;</a></span>fingerPlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlot * MonitorWindow::fingerPlot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ac1ed0e3fb8f78b7b19b02a5665205d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ed0e3fb8f78b7b19b02a5665205d9f">&#9670;&nbsp;</a></span>gyro</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> * MonitorWindow::gyro</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ae9f0235f04f770b2addcb4e38cf7c96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f0235f04f770b2addcb4e38cf7c96b">&#9670;&nbsp;</a></span>gyroLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHBoxLayout * MonitorWindow::gyroLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a52de85dce2a646edca75c6ac4637ed5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52de85dce2a646edca75c6ac4637ed5e">&#9670;&nbsp;</a></span>gyroPlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlot * MonitorWindow::gyroPlot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="af3827d57fca6096314e4f23d8fc1cc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3827d57fca6096314e4f23d8fc1cc07">&#9670;&nbsp;</a></span>hPlotLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHBoxLayout * MonitorWindow::hPlotLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a8938e9c6106d1750220c780bab105cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8938e9c6106d1750220c780bab105cc4">&#9670;&nbsp;</a></span>mainLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout* MonitorWindow::mainLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vertical layout members. </p>
+<p>Vertical QT layout elements of the GUI </p>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a13199c2b7020ffaf2bcc3c239ed12162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13199c2b7020ffaf2bcc3c239ed12162">&#9670;&nbsp;</a></span>resetButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MonitorWindow::resetButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clickable button pointers. </p>
+<p>Pointers to QPushButtons to allow user to close windows and reset buffers. </p>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00040">40</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d774e837240f24538c6737a379acf29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d774e837240f24538c6737a379acf29">&#9670;&nbsp;</a></span>sensorDataPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t* MonitorWindow::sensorDataPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sensorData pointer. </p>
+<p>Pointer to where new samples will be stored when the arrive. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sample_timer.html" title="Sample Timer Class.">SampleTimer()</a>, newDataEvent() and <a class="el" href="class_main_window.html">MainWindow()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00054">54</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="af288cc53017bb1fc672f9f3acaa6d474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af288cc53017bb1fc672f9f3acaa6d474">&#9670;&nbsp;</a></span>vPlotLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout * MonitorWindow::vPlotLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a08d96ae9a999d7d5e72ae0ce0d89f223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d96ae9a999d7d5e72ae0ce0d89f223">&#9670;&nbsp;</a></span>xAxisData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* MonitorWindow::xAxisData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>xAsisData pointer to a double. </p>
+<p>xAxis data for plotting the curves will be filled by constructor with values 0 to bufferSize. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7" title="bufferSize size_t.">bufferSize</a> and <a class="el" href="class_monitor_window.html#afafb4e4916800024a71876dbe89a4952" title="Class constructor.">MonitorWindow()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00049">49</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>

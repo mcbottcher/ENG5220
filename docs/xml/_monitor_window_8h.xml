@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_monitor_window_8h" kind="file" language="C++">
+    <compoundname>MonitorWindow.h</compoundname>
+    <includes local="no">qwt/qwt_knob.h</includes>
+    <includes local="no">qwt/qwt_plot.h</includes>
+    <includes local="no">qwt/qwt_plot_curve.h</includes>
+    <includes local="no">QBoxLayout</includes>
+    <includes local="no">QColor</includes>
+    <includes local="no">QCheckBox</includes>
+    <includes local="no">QPushButton</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QtConcurrent</includes>
+    <includes local="no">QThreadPool</includes>
+    <includes local="no">thread</includes>
+    <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
+    <includedby refid="_monitor_window_8cpp" local="yes">code/Qt/MonitorWindow.cpp</includedby>
+    <incdepgraph>
+      <node id="295">
+        <label>QtConcurrent</label>
+      </node>
+      <node id="292">
+        <label>QCheckBox</label>
+      </node>
+      <node id="286">
+        <label>code/Qt/MonitorWindow.h</label>
+        <link refid="_monitor_window_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>qwt/qwt_plot_curve.h</label>
+      </node>
+      <node id="287">
+        <label>qwt/qwt_knob.h</label>
+      </node>
+      <node id="294">
+        <label>QString</label>
+      </node>
+      <node id="291">
+        <label>QColor</label>
+      </node>
+      <node id="293">
+        <label>QPushButton</label>
+      </node>
+      <node id="288">
+        <label>qwt/qwt_plot.h</label>
+      </node>
+      <node id="296">
+        <label>QThreadPool</label>
+      </node>
+      <node id="290">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="297">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="301">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="298">
+        <label>code/Qt/MonitorWindow.h</label>
+        <link refid="_monitor_window_8h"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>code/Qt/MonitorWindow.cpp</label>
+        <link refid="_monitor_window_8cpp"/>
+      </node>
+      <node id="299">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_monitor_window" prot="public">MonitorWindow</innerclass>
+    <innerclass refid="struct_monitor_window_1_1_curve" prot="private">MonitorWindow::Curve</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MONITORWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MONITORWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwt/qwt_knob.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwt/qwt_plot.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwt/qwt_plot_curve.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBoxLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCheckBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtConcurrent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QThreadPool&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"></codeline>
+<codeline lineno="27" refid="class_monitor_window" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_monitor_window" kindref="compound">MonitorWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>include<sp/>the<sp/>Q_OBJECT<sp/>macro<sp/>for<sp/>for<sp/>the<sp/>Qt<sp/>signals/slots<sp/>framework<sp/>to<sp/>work<sp/>with<sp/>this<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">Q_OBJECT</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"></codeline>
+<codeline lineno="36" refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"></codeline>
+<codeline lineno="40" refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/><sp/>*<ref refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" kindref="member">resetButton</ref>,<sp/>*<ref refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" kindref="member">closeButton</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"></codeline>
+<codeline lineno="44" refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QwtPlot<sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>,<sp/>*<ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>,<sp/>*<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"></codeline>
+<codeline lineno="49" refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"></codeline>
+<codeline lineno="54" refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t*<sp/><ref refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kindref="member">sensorDataPtr</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"></codeline>
+<codeline lineno="59" refid="struct_monitor_window_1_1_curve" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>{</highlight></codeline>
+<codeline lineno="60" refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QwtPlot<sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" kindref="member">plot</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QwtPlotCurve<sp/>*<ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QCheckBox<sp/><sp/><sp/><sp/>*<ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref>;<sp/></highlight></codeline>
+<codeline lineno="63" refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" kindref="member">xAxisData</ref>;</highlight></codeline>
+<codeline lineno="65" refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"></codeline>
+<codeline lineno="76" refid="struct_monitor_window_1_1_curve_1a5513f75472fd39827fc5f286b14bcd63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a5513f75472fd39827fc5f286b14bcd63" kindref="member">Curve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>,<sp/>QwtPlot<sp/>*plotin,<sp/>QString<sp/><ref refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*xAxis):<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>(<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>),<sp/><ref refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kindref="member">name</ref>(<ref refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kindref="member">name</ref>),<sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>(new<sp/>double[<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>]()){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QwtPlotCurve();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" kindref="member">plot</ref><sp/>=<sp/>plotin;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" kindref="member">xAxisData</ref><sp/>=<sp/>xAxis;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QCheckBox(<ref refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=0;<sp/>i&lt;<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>;<sp/>i++){<ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>[i]<sp/>=<sp/>0;}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87" refid="struct_monitor_window_1_1_curve_1a2dda9999eece86007701836ce2490301" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a2dda9999eece86007701836ce2490301" kindref="member">~Curve</ref>(){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"></codeline>
+<codeline lineno="93" refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kindref="member">updateCurve</ref>(){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>-&gt;setRawSamples(<ref refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" kindref="member">xAxisData</ref>,<sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>,<sp/><ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"></codeline>
+<codeline lineno="98" refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" kindref="member">resetCurve</ref>(){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kindref="member">updateCurve</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105" refid="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" kindref="member">attach</ref>(){<ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>-&gt;attach(<ref refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" kindref="member">plot</ref>);}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"></codeline>
+<codeline lineno="109" refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" kindref="member">setupCurve</ref>(){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kindref="member">updateCurve</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" kindref="member">attach</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"></codeline>
+<codeline lineno="118" refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memmove(<ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>,<sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>+1,<sp/>(<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>-1)<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kindref="member">data</ref>[<ref refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kindref="member">buffsize</ref>-1]<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"></codeline>
+<codeline lineno="128" refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref>-&gt;isChecked()){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample</ref>(sample);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample</ref>(0);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kindref="member">updateCurve</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"></codeline>
+<codeline lineno="144" refid="struct_monitor_window_1_1_curve_1ac88a34e2214bfb13dd86a4413bd20c3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve_1ac88a34e2214bfb13dd86a4413bd20c3a" kindref="member">plotSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotSize){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref>-&gt;isChecked()){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<sp/>plotSize;i++){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample</ref>(buffer[i]);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<sp/>plotSize;i++){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample</ref>(0);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kindref="member">updateCurve</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" kindref="member">Curve_t</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"></codeline>
+<codeline lineno="163" refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve_t</ref><sp/>*<ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>,<sp/>*<ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>,<sp/>*<ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"></codeline>
+<codeline lineno="167" refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*<ref refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kindref="member">mainLayout</ref>,<sp/>*<ref refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kindref="member">vPlotLayout</ref>,<sp/>*<ref refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" kindref="member">checkAccLayout</ref>,<sp/>*<ref refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" kindref="member">checkGyroLayout</ref>,<sp/>*<ref refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" kindref="member">checkFingerLayout</ref>;</highlight></codeline>
+<codeline lineno="169"></codeline>
+<codeline lineno="170" refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*<ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref>,<sp/>*<ref refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kindref="member">hPlotLayout</ref>,<sp/>*<ref refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kindref="member">accLayout</ref>,<sp/>*<ref refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kindref="member">gyroLayout</ref>,<sp/>*<ref refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kindref="member">fingerLayout</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" kindref="member">MonitorWindow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<sp/>int16_t*<sp/>dataPtr);</highlight></codeline>
+<codeline lineno="180"></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" kindref="member">~MonitorWindow</ref>();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
+<codeline lineno="191" refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" kindref="member">plotAcc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[3][plotBufferSize]){</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
+<codeline lineno="203" refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" kindref="member">plotGyro</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[3][plotBufferSize]){<sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>plotBufferSize&gt;</highlight></codeline>
+<codeline lineno="216" refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" kindref="member">plotFinger</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(&amp;sample)[5][plotBufferSize]){</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>i++){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(sample[i],<sp/>plotBufferSize);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" kindref="member">drawPlots</ref>();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1abb358daca8435681df006590a3024624" kindref="member">resetbutton</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" kindref="member">handleSamples</ref>();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MONITORWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/MonitorWindow.h"/>
+  </compounddef>
+</doxygen>

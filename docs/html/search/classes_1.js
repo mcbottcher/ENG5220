@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['demotimer1',['DemoTimer1',['../class_demo_timer1.html',1,'']]],
-  ['demotimer2',['DemoTimer2',['../class_demo_timer2.html',1,'']]]
+  ['filter',['Filter',['../class_filter.html',1,'']]],
+  ['filterbank',['FilterBank',['../class_filter_bank.html',1,'']]]
 ];

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_sample_timer_8cpp" kind="file" language="C++">
+    <compoundname>SampleTimer.cpp</compoundname>
+    <includes refid="_sample_timer_8h" local="yes">SampleTimer.h</includes>
+    <incdepgraph>
+      <node id="323">
+        <label>QObject</label>
+      </node>
+      <node id="317">
+        <label>../RingBuff.h</label>
+        <link refid="_ring_buff_8h"/>
+      </node>
+      <node id="320">
+        <label>stdint.h</label>
+      </node>
+      <node id="321">
+        <label>stdlib.h</label>
+      </node>
+      <node id="314">
+        <label>code/Qt/SampleTimer.cpp</label>
+        <link refid="_sample_timer_8cpp"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>../cppTimer/CppTimer.h</label>
+      </node>
+      <node id="318">
+        <label>unistd.h</label>
+      </node>
+      <node id="324">
+        <label>../MCP3428/MCP3428.h</label>
+      </node>
+      <node id="315">
+        <label>SampleTimer.h</label>
+        <link refid="_sample_timer_8h"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>../MPU6050/MPU6050.h</label>
+      </node>
+      <node id="322">
+        <label>mutex</label>
+      </node>
+      <node id="319">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sample_timer_8h" kindref="compound">SampleTimer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_sample_timer_1a9a588688d79ddf9b4a72bfca79283924" refkind="member"><highlight class="normal"><ref refid="class_sample_timer_1a9a588688d79ddf9b4a72bfca79283924" kindref="member">SampleTimer::SampleTimer</ref>(){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" kindref="member">motionSensor</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MPU6050(<ref refid="_sample_timer_8h_1a9d33ce0b80020007ba5277b9427fd003" kindref="member">MPU6050_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MCP3428(<ref refid="_sample_timer_8h_1a6456c13b8d7bebacf0dbfdf7934ced1f" kindref="member">MCP3428_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" kindref="member">flexThumb</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MCP3428(<ref refid="_sample_timer_8h_1a0211acdeea921fb313fc5836ed6e2145" kindref="member">MCP3421_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" kindref="member">motionSensor</ref>-&gt;initialize();<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(motionSensor.testConnection()<sp/>?<sp/>&quot;MPU6050<sp/>connection<sp/>successful\r\n&quot;<sp/>:<sp/>&quot;MPU6050<sp/>connection<sp/>failed\r\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>-&gt;setConfig(CONFIG_INIT_CONVERSION,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CHN1,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CONTINUOUS_CONVERSION_MODE,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_12BIT_240SPS,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_GAIN_1X);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" kindref="member">flexThumb</ref>-&gt;setConfig(CONFIG_INIT_CONVERSION,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CHN1,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_CONTINUOUS_CONVERSION_MODE,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_12BIT_240SPS,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONFIG_GAIN_1X);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_sample_timer_1a02c53338803f835c3cb0c9071b8cf406" refkind="member"><highlight class="normal"><ref refid="class_sample_timer_1a02c53338803f835c3cb0c9071b8cf406" kindref="member">SampleTimer::~SampleTimer</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" kindref="member">motionSensor</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" kindref="member">flexThumb</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_sample_timer_1a64e770c1941ded68bec40c5a24d43b19" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer_1a64e770c1941ded68bec40c5a24d43b19" kindref="member">SampleTimer::readFromSensors</ref>(){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a0d542e70862cbe8d334dcc9e6078467f" kindref="member">mtx</ref>.lock();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" kindref="member">motionSensor</ref>-&gt;getMotion6(&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[0],</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[1],</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[2],</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[3],</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[4],</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[5]);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[6]<sp/><sp/>=<sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>-&gt;readChannel(2);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[7]<sp/><sp/>=<sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>-&gt;readChannel(3);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[8]<sp/><sp/>=<sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>-&gt;readChannel(1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[9]<sp/><sp/>=<sp/><ref refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kindref="member">flexFingers</ref>-&gt;readChannel(0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kindref="member">sensorValues</ref>[10]<sp/>=<sp/><ref refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" kindref="member">flexThumb</ref><sp/><sp/>-&gt;readChannel(0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sample_timer_1a0d542e70862cbe8d334dcc9e6078467f" kindref="member">mtx</ref>.unlock();<sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" kindref="member">timeoutsignal</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_sample_timer_1aeb8b390f578e49bf74cc93bd901d29ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sample_timer_1aeb8b390f578e49bf74cc93bd901d29ae" kindref="member">SampleTimer::timerEvent</ref>(){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//readFromSensors();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" kindref="member">timeoutsignal</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/SampleTimer.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_timer" kind="class" language="C++" prot="public">
+    <compoundname>Timer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CppTimer</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_timer_1a76d40cc2816da1521102b34427635e3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::timerEvent</definition>
+        <argsstring>()</argsstring>
+        <name>timerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/sampledata.cpp" line="87" column="1" bodyfile="code/sampledata.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>CppTimer</label>
+      </node>
+      <node id="50">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>CppTimer</label>
+      </node>
+      <node id="52">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/sampledata.cpp" line="85" column="1" bodyfile="code/sampledata.cpp" bodystart="85" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_timer_1a76d40cc2816da1521102b34427635e3e" prot="private" virt="non-virtual"><scope>Timer</scope><name>timerEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

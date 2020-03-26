@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['filter',['Filter',['../class_filter.html',1,'']]],
-  ['filterbank',['FilterBank',['../class_filter_bank.html',1,'']]]
+  ['interpretwindow',['InterpretWindow',['../class_interpret_window.html',1,'']]]
 ];

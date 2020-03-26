@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_monitor_window_8cpp" kind="file" language="C++">
+    <compoundname>MonitorWindow.cpp</compoundname>
+    <includes refid="_monitor_window_8h" local="yes">MonitorWindow.h</includes>
+    <includes local="no">cmath</includes>
+    <incdepgraph>
+      <node id="281">
+        <label>QtConcurrent</label>
+      </node>
+      <node id="284">
+        <label>cmath</label>
+      </node>
+      <node id="278">
+        <label>QCheckBox</label>
+      </node>
+      <node id="272">
+        <label>MonitorWindow.h</label>
+        <link refid="_monitor_window_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>qwt/qwt_plot_curve.h</label>
+      </node>
+      <node id="273">
+        <label>qwt/qwt_knob.h</label>
+      </node>
+      <node id="280">
+        <label>QString</label>
+      </node>
+      <node id="277">
+        <label>QColor</label>
+      </node>
+      <node id="279">
+        <label>QPushButton</label>
+      </node>
+      <node id="274">
+        <label>qwt/qwt_plot.h</label>
+      </node>
+      <node id="271">
+        <label>code/Qt/MonitorWindow.cpp</label>
+        <link refid="_monitor_window_8cpp"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>QThreadPool</label>
+      </node>
+      <node id="276">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="283">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_monitor_window_8h" kindref="compound">MonitorWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" refkind="member"><highlight class="normal"><ref refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" kindref="member">MonitorWindow::MonitorWindow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bufferSize,<sp/>int16_t*<sp/>dataPtr):<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>bufferSize(bufferSize),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>xAxisData(new<sp/>double[bufferSize]()){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>up<sp/>the<sp/>initial<sp/>plot<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>;<sp/>i++<sp/>){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>[i]<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kindref="member">sensorDataPtr</ref><sp/>=<sp/>dataPtr;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QwtPlot;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QwtPlot;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QwtPlot;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>plot<sp/>titles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;Accelerometer&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;Gyroscope&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;Fingers&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//construct<sp/>all<sp/>the<sp/>curves</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>[3]{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>,</highlight><highlight class="stringliteral">&quot;AccX&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>,</highlight><highlight class="stringliteral">&quot;AccY&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>,</highlight><highlight class="stringliteral">&quot;AccZ&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>[3]{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>,</highlight><highlight class="stringliteral">&quot;GyroX&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>,</highlight><highlight class="stringliteral">&quot;GyroY&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>,</highlight><highlight class="stringliteral">&quot;GyroZ&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>[5]{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>,</highlight><highlight class="stringliteral">&quot;Index&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>,</highlight><highlight class="stringliteral">&quot;Middle&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>,</highlight><highlight class="stringliteral">&quot;Ring&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>,</highlight><highlight class="stringliteral">&quot;Pinky&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>),</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref>(<ref refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kindref="member">bufferSize</ref>,<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>,</highlight><highlight class="stringliteral">&quot;Thumb&quot;</highlight><highlight class="normal">,<ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" kindref="member">resetButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;reset&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" kindref="member">closeButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;close&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" kindref="member">resetButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;<ref refid="class_monitor_window_1abb358daca8435681df006590a3024624" kindref="member">resetbutton</ref>();});</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" kindref="member">closeButton</ref>,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](){this-&gt;hide();});</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//setup<sp/>and<sp/>attach<sp/>curves<sp/>to<sp/>plots<sp/>(also<sp/>colour<sp/>them!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>i++){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>3){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" kindref="member">setupCurve</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>-&gt;setPen(QColor(Qt::GlobalColor(Qt::red+i)));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" kindref="member">setupCurve</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>-&gt;setPen(QColor(Qt::GlobalColor(Qt::red+i)));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" kindref="member">setupCurve</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kindref="member">curve</ref>-&gt;setPen(QColor(Qt::GlobalColor(Qt::red+i)));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//plot<sp/>initial<sp/>curves</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" kindref="member">drawPlots</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//show<sp/>plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>up<sp/>the<sp/>layout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref>-&gt;addStretch(400);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" kindref="member">resetButton</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" kindref="member">closeButton</ref>,<sp/>Qt::AlignRight);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kindref="member">accLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" kindref="member">checkAccLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i=0;<sp/>i&lt;3;<sp/>i++){<ref refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" kindref="member">checkAccLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].checkbox);}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kindref="member">accLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" kindref="member">checkAccLayout</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kindref="member">accLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kindref="member">gyroLayout</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" kindref="member">checkGyroLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i=0;<sp/>i&lt;3;<sp/>i++){<ref refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" kindref="member">checkGyroLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].checkbox);}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kindref="member">gyroLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" kindref="member">checkGyroLayout</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kindref="member">gyroLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kindref="member">fingerLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" kindref="member">checkFingerLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i=0;<sp/>i&lt;5;<sp/>i++){<ref refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" kindref="member">checkFingerLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].checkbox);}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kindref="member">fingerLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" kindref="member">checkFingerLayout</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kindref="member">fingerLayout</ref>-&gt;addWidget(<ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//main<sp/>layout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kindref="member">hPlotLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kindref="member">hPlotLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kindref="member">accLayout</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kindref="member">hPlotLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kindref="member">gyroLayout</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kindref="member">vPlotLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kindref="member">vPlotLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kindref="member">fingerLayout</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kindref="member">vPlotLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kindref="member">hPlotLayout</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kindref="member">mainLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kindref="member">mainLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kindref="member">vPlotLayout</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kindref="member">mainLayout</ref>-&gt;addLayout(<ref refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kindref="member">controlLayout</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>setMinimumSize(300,300);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>setLayout(<ref refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kindref="member">mainLayout</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" refkind="member"><highlight class="normal"><ref refid="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" kindref="member">MonitorWindow::~MonitorWindow</ref>(){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kindref="member">xAxisData</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Method<sp/>to<sp/>draw<sp/>all<sp/>plots<sp/>on<sp/>the<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" kindref="member">MonitorWindow::drawPlots</ref>(){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>checkCheckboxes();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kindref="member">accelerometerPlot</ref>-&gt;replot();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kindref="member">gyroPlot</ref>-&gt;replot();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kindref="member">fingerPlot</ref>-&gt;replot();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_monitor_window_1abb358daca8435681df006590a3024624" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1abb358daca8435681df006590a3024624" kindref="member">MonitorWindow::resetbutton</ref>(){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i=0;i&lt;5;i++){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>3){</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" kindref="member">resetCurve</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" kindref="member">resetCurve</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" kindref="member">resetCurve</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" kindref="member">MonitorWindow::handleSamples</ref>(){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;3;<sp/>i++){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kindref="member">acc</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kindref="member">sensorDataPtr</ref>[i]);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kindref="member">gyro</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kindref="member">sensorDataPtr</ref>[i+3]);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;5;<sp/>i++){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kindref="member">finger</ref>[i].<ref refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kindref="member">plotSample</ref>(<ref refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kindref="member">sensorDataPtr</ref>[i+6]);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/MonitorWindow.cpp"/>
+  </compounddef>
+</doxygen>

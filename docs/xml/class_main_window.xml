@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a4914486ee3b888bda79eda5690011331" prot="private" static="no" mutable="no">
+        <type><ref refid="class_monitor_window" kindref="compound">MonitorWindow</ref> *</type>
+        <definition>MonitorWindow* MainWindow::monitorWindow</definition>
+        <argsstring></argsstring>
+        <name>monitorWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="49" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_interpret_window" kindref="compound">InterpretWindow</ref> *</type>
+        <definition>InterpretWindow* MainWindow::interpretWindow</definition>
+        <argsstring></argsstring>
+        <name>interpretWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="50" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" prot="private" static="no" mutable="no">
+        <type><ref refid="class_train_window" kindref="compound">TrainWindow</ref> *</type>
+        <definition>TrainWindow* MainWindow::trainWindow</definition>
+        <argsstring></argsstring>
+        <name>trainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="51" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a82198bd0b2620b2d0a9d0a319010135a" prot="private" static="no" mutable="no">
+        <type>QPixmap *</type>
+        <definition>QPixmap* MainWindow::logo_image</definition>
+        <argsstring></argsstring>
+        <name>logo_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="52" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" prot="private" static="no" mutable="no">
+        <type>QFont</type>
+        <definition>QFont MainWindow::title_font</definition>
+        <argsstring></argsstring>
+        <name>title_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="53" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* MainWindow::title_text</definition>
+        <argsstring></argsstring>
+        <name>title_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1acb3bde298a3db1072f56a0210caa19bc" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * MainWindow::logo</definition>
+        <argsstring></argsstring>
+        <name>logo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a2afd294ea45f6d00538ac439731b5688" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * MainWindow::lab_train</definition>
+        <argsstring></argsstring>
+        <name>lab_train</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a16e5d3d19dbc3fbed256ed72c99ebc7c" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * MainWindow::lab_interpret</definition>
+        <argsstring></argsstring>
+        <name>lab_interpret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a5bb6b7334521ee0f6761d2fe1c1574d3" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * MainWindow::lab_mon</definition>
+        <argsstring></argsstring>
+        <name>lab_mon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a47338c0917ca1834819265ee37daf94d" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel * MainWindow::lab_icon</definition>
+        <argsstring></argsstring>
+        <name>lab_icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="54" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::but_train</definition>
+        <argsstring></argsstring>
+        <name>but_train</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="55" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * MainWindow::but_interpret</definition>
+        <argsstring></argsstring>
+        <name>but_interpret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="55" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1acba63738e6d4acf1092ffa85e292b951" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * MainWindow::but_mon</definition>
+        <argsstring></argsstring>
+        <name>but_mon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="55" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * MainWindow::but_quit</definition>
+        <argsstring></argsstring>
+        <name>but_quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="55" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1aaa776530b3613f80f6135d71485f24c7" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* MainWindow::windowtimer</definition>
+        <argsstring></argsstring>
+        <name>windowtimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="56" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a5413c743856077ba000b3b02b462ae40" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer * MainWindow::moitorRefreshtimer</definition>
+        <argsstring></argsstring>
+        <name>moitorRefreshtimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="56" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a626eec967d3981392e278927c4505264" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sample_timer" kindref="compound">SampleTimer</ref> *</type>
+        <definition>SampleTimer* MainWindow::cppSampleTimer</definition>
+        <argsstring></argsstring>
+        <name>cppSampleTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="63" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="67" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a8c11c1f81534b212a1a59251cc857ce6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MainWindow::samplefinger[5][1]</definition>
+        <argsstring>[5][1]</argsstring>
+        <name>samplefinger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="71" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1aed3379fb5bc938c45c8f6575b2f9e1e2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MainWindow::sampleacc[3][1]</definition>
+        <argsstring>[3][1]</argsstring>
+        <name>sampleacc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="72" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a80eb4bded0c7a73670d49f5895de74a3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MainWindow::samplegyro[3][1]</definition>
+        <argsstring>[3][1]</argsstring>
+        <name>samplegyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="73" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="43" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="44" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="198" bodyend="199"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createUI</definition>
+        <argsstring>()</argsstring>
+        <name>createUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="65" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="14" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae24d795221d33aeed0bf1df68e8e369a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createFilters</definition>
+        <argsstring>()</argsstring>
+        <name>createFilters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="66" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="130" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::timerEvent</definition>
+        <argsstring>()</argsstring>
+        <name>timerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="76" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="157" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::newDataEvent</definition>
+        <argsstring>()</argsstring>
+        <name>newDataEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="77" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="140" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::monitor_button_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>monitor_button_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="78" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="205" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::interpretButtonClicked</definition>
+        <argsstring>()</argsstring>
+        <name>interpretButtonClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="79" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="220" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a34837782b2e58775e746e79bd825c102" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::interpretHome</definition>
+        <argsstring>()</argsstring>
+        <name>interpretHome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="80" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::trainButtonClicked</definition>
+        <argsstring>()</argsstring>
+        <name>trainButtonClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="81" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a134754908a28096e7f14418368db0581" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::but_quit_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>but_quit_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/mainwindow.h" line="82" column="1" bodyfile="code/Qt/mainwindow.cpp" bodystart="201" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>QMainWindow</label>
+      </node>
+      <node id="13">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>QObject</label>
+      </node>
+      <node id="16">
+        <label>QMainWindow</label>
+      </node>
+      <node id="15">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>monitorWindow</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>trainWindow</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>cppSampleTimer</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>interpretWindow</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>CppTimer</label>
+      </node>
+      <node id="17">
+        <label>MonitorWindow</label>
+        <link refid="class_monitor_window"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>finger</edgelabel>
+          <edgelabel>acc</edgelabel>
+          <edgelabel>gyro</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QWidget</label>
+      </node>
+      <node id="23">
+        <label>SampleTimer</label>
+        <link refid="class_sample_timer"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QLed</label>
+        <link refid="class_q_led"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>MonitorWindow::Curve</label>
+        <link refid="struct_monitor_window_1_1_curve"/>
+      </node>
+      <node id="20">
+        <label>TrainWindow</label>
+        <link refid="class_train_window"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>led</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QFrame</label>
+      </node>
+      <node id="26">
+        <label>InterpretWindow</label>
+        <link refid="class_interpret_window"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/Qt/mainwindow.h" line="39" column="1" bodyfile="code/Qt/mainwindow.h" bodystart="38" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>but_interpret</name></member>
+      <member refid="class_main_window_1acba63738e6d4acf1092ffa85e292b951" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>but_mon</name></member>
+      <member refid="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>but_quit</name></member>
+      <member refid="class_main_window_1a134754908a28096e7f14418368db0581" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>but_quit_clicked</name></member>
+      <member refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>but_train</name></member>
+      <member refid="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>count</name></member>
+      <member refid="class_main_window_1a626eec967d3981392e278927c4505264" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>cppSampleTimer</name></member>
+      <member refid="class_main_window_1ae24d795221d33aeed0bf1df68e8e369a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createFilters</name></member>
+      <member refid="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createUI</name></member>
+      <member refid="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>interpretButtonClicked</name></member>
+      <member refid="class_main_window_1a34837782b2e58775e746e79bd825c102" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>interpretHome</name></member>
+      <member refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>interpretWindow</name></member>
+      <member refid="class_main_window_1a47338c0917ca1834819265ee37daf94d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>lab_icon</name></member>
+      <member refid="class_main_window_1a16e5d3d19dbc3fbed256ed72c99ebc7c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>lab_interpret</name></member>
+      <member refid="class_main_window_1a5bb6b7334521ee0f6761d2fe1c1574d3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>lab_mon</name></member>
+      <member refid="class_main_window_1a2afd294ea45f6d00538ac439731b5688" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>lab_train</name></member>
+      <member refid="class_main_window_1acb3bde298a3db1072f56a0210caa19bc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>logo</name></member>
+      <member refid="class_main_window_1a82198bd0b2620b2d0a9d0a319010135a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>logo_image</name></member>
+      <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a5413c743856077ba000b3b02b462ae40" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moitorRefreshtimer</name></member>
+      <member refid="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>monitor_button_clicked</name></member>
+      <member refid="class_main_window_1a4914486ee3b888bda79eda5690011331" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>monitorWindow</name></member>
+      <member refid="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>newDataEvent</name></member>
+      <member refid="class_main_window_1aed3379fb5bc938c45c8f6575b2f9e1e2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>sampleacc</name></member>
+      <member refid="class_main_window_1a8c11c1f81534b212a1a59251cc857ce6" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>samplefinger</name></member>
+      <member refid="class_main_window_1a80eb4bded0c7a73670d49f5895de74a3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>samplegyro</name></member>
+      <member refid="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>timerEvent</name></member>
+      <member refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>title_font</name></member>
+      <member refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>title_text</name></member>
+      <member refid="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>trainButtonClicked</name></member>
+      <member refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>trainWindow</name></member>
+      <member refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>windowtimer</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

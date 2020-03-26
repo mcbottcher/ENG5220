@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_train_window_8h" kind="file" language="C++">
+    <compoundname>TrainWindow.h</compoundname>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes local="no">QBoxLayout</includes>
+    <includes local="no">QColor</includes>
+    <includes local="no">QCheckBox</includes>
+    <includes local="no">QPushButton</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QLabel</includes>
+    <includes local="no">QFont</includes>
+    <includes local="no">QLineEdit</includes>
+    <includes local="no">QGroupBox</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">QListWidget</includes>
+    <includes local="no">QDir</includes>
+    <includes local="no">QAbstractItemView</includes>
+    <includes refid="_q_led_8h" local="yes">QLed.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
+    <includedby refid="_train_window_8cpp" local="yes">code/Qt/TrainWindow.cpp</includedby>
+    <incdepgraph>
+      <node id="364">
+        <label>code/Qt/TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>QFont</label>
+      </node>
+      <node id="365">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="368">
+        <label>QCheckBox</label>
+      </node>
+      <node id="382">
+        <label>fstream</label>
+      </node>
+      <node id="376">
+        <label>QListWidget</label>
+      </node>
+      <node id="379">
+        <label>QLed.h</label>
+        <link refid="_q_led_8h"/>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>QAbstractItemView</label>
+      </node>
+      <node id="375">
+        <label>QTimer</label>
+      </node>
+      <node id="374">
+        <label>QGroupBox</label>
+      </node>
+      <node id="373">
+        <label>QLineEdit</label>
+      </node>
+      <node id="370">
+        <label>QString</label>
+      </node>
+      <node id="367">
+        <label>QColor</label>
+      </node>
+      <node id="369">
+        <label>QPushButton</label>
+      </node>
+      <node id="371">
+        <label>QLabel</label>
+      </node>
+      <node id="366">
+        <label>QBoxLayout</label>
+      </node>
+      <node id="377">
+        <label>QDir</label>
+      </node>
+      <node id="380">
+        <label>QFrame</label>
+      </node>
+      <node id="381">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="383">
+        <label>code/Qt/TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="387">
+        <label>code/Qt/TrainWindow.cpp</label>
+        <link refid="_train_window_8cpp"/>
+      </node>
+      <node id="384">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_train_window" prot="public">TrainWindow</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_train_window_8h_1ae7e21fec441ccd6e563cb94a90452c1d" prot="public" static="no">
+        <name>NUMBER_OF_REPETITIONS</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="24" column="9" bodyfile="code/Qt/TrainWindow.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" prot="public" static="no" strong="no">
+        <type></type>
+        <name>trainingState_t</name>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" prot="public">
+          <name>STATE_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" prot="public">
+          <name>STATE_COUNTDOWN_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" prot="public">
+          <name>STATE_COUNTDOWN_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" prot="public">
+          <name>STATE_COUNTDOWN_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" prot="public">
+          <name>STATE_GO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" prot="public">
+          <name>STATE_STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" prot="public">
+          <name>STATE_FINISHED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="26" column="1" bodyfile="code/Qt/TrainWindow.h" bodystart="26" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_train_window_8h_1a4035705b355143a0b896f42e1a92eed9" prot="public" static="no">
+        <type>enum <ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kindref="member">trainingState_t</ref></type>
+        <definition>typedef enum trainingState_t trainingState_t</definition>
+        <argsstring></argsstring>
+        <name>trainingState_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/TrainWindow.h" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TRAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBoxLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCheckBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFont&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGroupBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QListWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDir&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QAbstractItemView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_q_led_8h" kindref="compound">QLed.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_train_window_8h_1ae7e21fec441ccd6e563cb94a90452c1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_REPETITIONS<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kindref="member">trainingState_t</ref>{</highlight></codeline>
+<codeline lineno="27" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref>,</highlight></codeline>
+<codeline lineno="28" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" kindref="member">STATE_COUNTDOWN_3</ref>,</highlight></codeline>
+<codeline lineno="29" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" kindref="member">STATE_COUNTDOWN_2</ref>,</highlight></codeline>
+<codeline lineno="30" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" kindref="member">STATE_COUNTDOWN_1</ref>,</highlight></codeline>
+<codeline lineno="31" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" kindref="member">STATE_GO</ref>,</highlight></codeline>
+<codeline lineno="32" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" kindref="member">STATE_STOP</ref>,</highlight></codeline>
+<codeline lineno="33" refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" kindref="member">STATE_FINISHED</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kindref="member">trainingState_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_train_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_train_window" kindref="compound">TrainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" kindref="member">gesture_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42" refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit<sp/>*<ref refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kindref="member">wordInput</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_train_window_1a67689bed14d31159d7980f3aa50782c9" kindref="member">inputLabel</ref>,<sp/>*<ref refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kindref="member">statusText</ref>,<sp/>*<ref refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" kindref="member">timerText</ref>;<sp/></highlight></codeline>
+<codeline lineno="44" refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" kindref="member">wordTrain</ref>,<sp/>*<ref refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" kindref="member">nettrainButton</ref>,<sp/>*<ref refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" kindref="member">homeButton</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_q_led" kindref="compound">QLed</ref><sp/>*<ref refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kindref="member">led</ref>[10];</highlight></codeline>
+<codeline lineno="47" refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGroupBox<sp/>*<ref refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" kindref="member">inputGroup</ref>,<sp/>*<ref refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" kindref="member">trainGroup</ref>,<sp/>*<ref refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" kindref="member">netGroup</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QListWidget<sp/>*<ref refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kindref="member">movementList</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*<ref refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kindref="member">mainLayout</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout<sp/>*<ref refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kindref="member">homeLayout</ref>;</highlight></codeline>
+<codeline lineno="53" refid="class_train_window_1a65444f2c11767d83dd5228539142778a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*<ref refid="class_train_window_1a65444f2c11767d83dd5228539142778a" kindref="member">lightBox</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout<sp/>*<ref refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kindref="member">inputLayout</ref>,<sp/>*<ref refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kindref="member">trainLayout</ref>,<sp/>*<ref refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" kindref="member">ledLayout</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTimer<sp/>*<ref refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" kindref="member">files</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kindref="member">trainingState_t</ref><sp/><ref refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kindref="member">currentState</ref><sp/>=<sp/><ref refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kindref="member">STATE_START</ref>;</highlight></codeline>
+<codeline lineno="62" refid="class_train_window_1a31001357f600b4fba56c237d959ea030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_train_window_1a31001357f600b4fba56c237d959ea030" kindref="member">temp</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a67a932ea98e16f96223f91845924ff54" kindref="member">trainingDataLoop</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" kindref="member">saveMovement</ref>();</highlight></codeline>
+<codeline lineno="66" refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kindref="member">sampleCount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t*<sp/><ref refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" kindref="member">sensorDataptr</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kindref="member">myfile</ref>;</highlight></codeline>
+<codeline lineno="71" refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" kindref="member">filename</ref>;<sp/></highlight></codeline>
+<codeline lineno="72" refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" kindref="member">movementData</ref>[11][<ref refid="config_8h_1a15dda0e84869655d2b16ff1b2c3c6d5b" kindref="member">NUMBER_OF_BUFFER_ELEMENTS</ref>];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" kindref="member">TrainWindow</ref>(int16_t*<sp/>dataPtr);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" kindref="member">~TrainWindow</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" kindref="member">handle_samples</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" kindref="member">startNeuralNet</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kindref="member">data_aq_state_machine</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" kindref="member">closeWindow</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a9a84bcae91eac1f4597291143c30b280" kindref="member">startSampling_sig</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" kindref="member">stopSampling_sig</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TRAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/TrainWindow.h"/>
+  </compounddef>
+</doxygen>

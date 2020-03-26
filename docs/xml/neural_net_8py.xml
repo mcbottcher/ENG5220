@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="neural_net_8py" kind="file" language="Python">
+    <compoundname>neuralNet.py</compoundname>
+    <innernamespace refid="namespaceneural_net">neuralNet</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceneural_net" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.models<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Sequential</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.layers<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Dense</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>keras.utils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>to_categorical</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>genfromtxt</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pandas<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>pd</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>number<sp/>of<sp/>arguments<sp/>:<sp/>len(sys.argv)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>list<sp/>of<sp/>strings<sp/>of<sp/>arugments:<sp/>str(sys.argv)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="namespaceneural_net_1ae7a97e407478d66944242507a3acdeaa" refkind="member"><highlight class="normal">training_data<sp/>=<sp/>np.empty(shape=(0,220))</highlight></codeline>
+<codeline lineno="15" refid="namespaceneural_net_1a15081ae6f8a28618f92123c6d9f7db94" refkind="member"><highlight class="normal">training_labels<sp/>=<sp/>np.empty(shape=(0))</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespaceneural_net_1a2094cfee9ae84db76df9c0bf5a4c98fb" refkind="member"><highlight class="normal">net_output_map<sp/>=<sp/>dict()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>argument_number<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(1,len(sys.argv)):<sp/></highlight><highlight class="comment">#first<sp/>argument<sp/>is<sp/>the<sp/>filename...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>filename<sp/>=<sp/>str(sys.argv[argument_number])</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>filename<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>net_output_map.keys():</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>net_output_map[filename]<sp/>=<sp/>(argument_number<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="namespaceneural_net_1a5e79f78458febef5d7b6c67653668dc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>csv_file<sp/>=<sp/>pd.read_csv(filename)</highlight></codeline>
+<codeline lineno="27" refid="namespaceneural_net_1a0a5495581094cf2010535e247a1ff50b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>csv_data<sp/>=<sp/>csv_file.to_numpy()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#delete<sp/>the<sp/>nans</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>csv_data<sp/>=<sp/>np.delete(csv_data,<sp/>220,<sp/>1)<sp/></highlight><highlight class="comment">#this<sp/>220<sp/>assumes<sp/>2<sp/>seconds<sp/>at<sp/>10<sp/>hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>row<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(len(csv_data)):</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="namespaceneural_net_1aeb2fce31088901853b27a3220d6d31d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>csv_data[row]</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[:120]<sp/>=<sp/>(temp[:120]/2**15)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[120:]<sp/>=<sp/>(temp[120:]/2**12)<sp/>-<sp/>0.5</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="namespaceneural_net_1a7c8a173dd4ce7f904cd0e970b7a52510" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label<sp/>=<sp/>np.zeros(1)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label[0]<sp/>=<sp/>argument_number<sp/>-<sp/>1</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>training_labels<sp/>=<sp/>np.append(training_labels,<sp/>label,<sp/>0)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>training_data<sp/>=<sp/>np.append(training_data,<sp/>csv_data,<sp/>0)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Build<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespaceneural_net_1a54183e3964c5f31770e5d3278f44586d" refkind="member"><highlight class="normal">model<sp/>=<sp/>Sequential([</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>Dense(330,<sp/>activation=</highlight><highlight class="stringliteral">&apos;relu&apos;</highlight><highlight class="normal">,<sp/>input_shape=(220,)),</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>Dense(64,<sp/>activation=</highlight><highlight class="stringliteral">&apos;relu&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>Dense(64,<sp/>activation=</highlight><highlight class="stringliteral">&apos;relu&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>Dense(len(sys.argv)-1,<sp/>activation=</highlight><highlight class="stringliteral">&apos;softmax&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Compile<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">model.compile(</highlight></codeline>
+<codeline lineno="56" refid="namespaceneural_net_1ab4b4615d268bce64f061b9a34be29484" refkind="member"><highlight class="normal"><sp/><sp/>optimizer=</highlight><highlight class="stringliteral">&apos;adam&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="57" refid="namespaceneural_net_1a508b45cb8f1199cd35bce0a5927dff1c" refkind="member"><highlight class="normal"><sp/><sp/>loss=</highlight><highlight class="stringliteral">&apos;categorical_crossentropy&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58" refid="namespaceneural_net_1acf123fed89e8767b80de2fb6e86330d0" refkind="member"><highlight class="normal"><sp/><sp/>metrics=[</highlight><highlight class="stringliteral">&apos;accuracy&apos;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Train<sp/>the<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">model.fit(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>training_data,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>to_categorical(training_labels),</highlight></codeline>
+<codeline lineno="65" refid="namespaceneural_net_1a50b77809cfbe26521e90af1431d9464f" refkind="member"><highlight class="normal"><sp/><sp/>epochs=1000,</highlight></codeline>
+<codeline lineno="66" refid="namespaceneural_net_1ab7970914cb5fa26632d45310d5d05059" refkind="member"><highlight class="normal"><sp/><sp/>batch_size=32,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespaceneural_net_1ae079b848cf02a89fdd3d0fdba02f6b7b" refkind="member"><highlight class="normal">model.save(</highlight><highlight class="stringliteral">&apos;keras_model.h5&apos;</highlight><highlight class="normal">,<sp/>include_optimizer=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="namespaceneural_net_1afa2b3b9bc7579fa5687436031f9ff67f" refkind="member"><highlight class="normal">file1<sp/>=<sp/>open(</highlight><highlight class="stringliteral">&quot;outputMap.txt&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">file1.write(str(net_output_map))<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">file1.close()<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="namespaceneural_net_1ab3674337e34c94ed1ee6234dc4300b4b" refkind="member"><highlight class="normal">df5<sp/>=<sp/>pd.read_csv(</highlight><highlight class="stringliteral">&quot;verificationData.csv&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77" refid="namespaceneural_net_1ac5af0e0a420f7d686e1548a49ac6884c" refkind="member"><highlight class="normal">predict_data<sp/>=<sp/>df5.to_numpy()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">#delete<sp/>the<sp/>nans</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">predict_data<sp/>=<sp/>np.delete(predict_data,<sp/>220,<sp/>1)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(len(predict_data)):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>predict_data[i]</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>temp[:120]<sp/>=<sp/>(temp[:120]/2**15)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>temp[120:]<sp/>=<sp/>(temp[120:]/2**12)<sp/>-<sp/>0.5</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="namespaceneural_net_1a86b84d5b03a4d887980632c9873ae520" refkind="member"><highlight class="normal">predictions<sp/>=<sp/>model.predict(predict_data)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">#for<sp/>i<sp/>in<sp/>range(len(predictions)):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/>print(predictions[i])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">print(np.argmax(predictions,<sp/>axis=1))</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/neuralNet.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="train_net_8hpp" kind="file" language="C++">
+    <compoundname>trainNet.hpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">curses.h</includes>
+    <includes local="no">python3.6m/Python.h</includes>
+    <includedby refid="python_training_2main_8cpp" local="yes">code/pythonTraining/main.cpp</includedby>
+    <incdepgraph>
+      <node id="125">
+        <label>python3.6m/Python.h</label>
+      </node>
+      <node id="124">
+        <label>curses.h</label>
+      </node>
+      <node id="122">
+        <label>code/pythonTraining/trainNet.hpp</label>
+        <link refid="train_net_8hpp"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="126">
+        <label>code/pythonTraining/trainNet.hpp</label>
+        <link refid="train_net_8hpp"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>code/pythonTraining/main.cpp</label>
+        <link refid="python_training_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_train_net" prot="public">TrainNet</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="train_net_8hpp_1a8de29f7c8bbf1a81cc6e71ac602032d3" prot="public" static="no">
+        <name>FILENAME</name>
+        <initializer>&quot;attempt1.py&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/trainNet.hpp" line="5" column="9" bodyfile="code/pythonTraining/trainNet.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;curses.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;python3.6m/Python.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="train_net_8hpp_1a8de29f7c8bbf1a81cc6e71ac602032d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILENAME<sp/>&quot;attempt1.py&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_train_net" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_train_net" kindref="compound">TrainNet</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_train_net_1ac864ec4ac65529cfcaba64a2360ce595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_train_net_1ac864ec4ac65529cfcaba64a2360ce595" kindref="member">TrainNet</ref>(){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" kindref="member">filename</ref>[]<sp/>=<sp/><ref refid="train_net_8hpp_1a8de29f7c8bbf1a81cc6e71ac602032d3" kindref="member">FILENAME</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE*<sp/>fp;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Py_Initialize();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp<sp/>=<sp/>_Py_fopen(<ref refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" kindref="member">filename</ref>,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PyRun_SimpleFile(fp,<sp/><ref refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Py_Finalize();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="code/pythonTraining/trainNet.hpp"/>
+  </compounddef>
+</doxygen>

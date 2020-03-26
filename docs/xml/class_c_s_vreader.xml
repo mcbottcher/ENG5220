@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_c_s_vreader" kind="class" language="C++" prot="public">
+    <compoundname>CSVreader</compoundname>
+    <includes refid="_c_s_vreader_8h" local="no">CSVreader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_s_vreader_1a532424f295b67937b40ccf8cc9bace60" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CSVreader::_filename</definition>
+        <argsstring></argsstring>
+        <name>_filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="21" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_s_vreader_1a8e635040456641fe9224bc04da87a7a1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CSVreader::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="22" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_s_vreader_1aab890a2ae82c008906beb433bf2d68e1" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; float &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;float&gt; &gt; CSVreader::vectorarray</definition>
+        <argsstring></argsstring>
+        <name>vectorarray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="23" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_s_vreader_1afb1326f8abfadd3b3eb4448cf9144af7" prot="private" static="no" mutable="no">
+        <type>long int</type>
+        <definition>long int CSVreader::valuearray[220]</definition>
+        <argsstring>[220]</argsstring>
+        <name>valuearray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="25" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_s_vreader_1a9ec8f6633293fdcd48a3c96d1c159faf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CSVreader::fltvaluearray[220]</definition>
+        <argsstring>[220]</argsstring>
+        <name>fltvaluearray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="26" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_s_vreader_1a92841dcf40072cb132f75d67ec32cf7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CSVreader::CSVreader</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>CSVreader</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="10" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_vreader_1a66f4a060f2dbfde6c1f00d8b52a979fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CSVreader::~CSVreader</definition>
+        <argsstring>()</argsstring>
+        <name>~CSVreader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="11" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_vreader_1a9b57c67c6032d6366c629ecde54013ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSVreader::readCSV</definition>
+        <argsstring>()</argsstring>
+        <name>readCSV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="13" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="16" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_vreader_1a72b7f3244e80e67f95572c91595f0ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSVreader::printVectorArray</definition>
+        <argsstring>()</argsstring>
+        <name>printVectorArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="14" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_vreader_1aca7e333b60603c09f942438a4a1f1162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; vector&lt; float &gt; &gt;</type>
+        <definition>vector&lt; vector&lt; float &gt; &gt; CSVreader::getVectorArray</definition>
+        <argsstring>()</argsstring>
+        <name>getVectorArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="16" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_vreader_1af554f9e1d8f26c25b01f606979870926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const long int *</type>
+        <definition>const long int * CSVreader::getValueArray</definition>
+        <argsstring>()</argsstring>
+        <name>getValueArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/CSVreader.h" line="17" column="1" bodyfile="code/neuralnet_predict/CSVreader.cpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/neuralnet_predict/CSVreader.h" line="7" column="1" bodyfile="code/neuralnet_predict/CSVreader.h" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_c_s_vreader_1a532424f295b67937b40ccf8cc9bace60" prot="private" virt="non-virtual"><scope>CSVreader</scope><name>_filename</name></member>
+      <member refid="class_c_s_vreader_1a92841dcf40072cb132f75d67ec32cf7a" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>CSVreader</name></member>
+      <member refid="class_c_s_vreader_1a9ec8f6633293fdcd48a3c96d1c159faf" prot="private" virt="non-virtual"><scope>CSVreader</scope><name>fltvaluearray</name></member>
+      <member refid="class_c_s_vreader_1af554f9e1d8f26c25b01f606979870926" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>getValueArray</name></member>
+      <member refid="class_c_s_vreader_1aca7e333b60603c09f942438a4a1f1162" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>getVectorArray</name></member>
+      <member refid="class_c_s_vreader_1a8e635040456641fe9224bc04da87a7a1" prot="private" virt="non-virtual"><scope>CSVreader</scope><name>line</name></member>
+      <member refid="class_c_s_vreader_1a72b7f3244e80e67f95572c91595f0ab9" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>printVectorArray</name></member>
+      <member refid="class_c_s_vreader_1a9b57c67c6032d6366c629ecde54013ee" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>readCSV</name></member>
+      <member refid="class_c_s_vreader_1afb1326f8abfadd3b3eb4448cf9144af7" prot="private" virt="non-virtual"><scope>CSVreader</scope><name>valuearray</name></member>
+      <member refid="class_c_s_vreader_1aab890a2ae82c008906beb433bf2d68e1" prot="private" virt="non-virtual"><scope>CSVreader</scope><name>vectorarray</name></member>
+      <member refid="class_c_s_vreader_1a66f4a060f2dbfde6c1f00d8b52a979fa" prot="public" virt="non-virtual"><scope>CSVreader</scope><name>~CSVreader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacemodel" kind="namespace" language="Python">
+    <compoundname>model</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemodel_1aec7f6990dc1028c8b46249ea8b1dc0ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tuple model::train_images</definition>
+        <argsstring></argsstring>
+        <name>train_images</name>
+        <initializer>=  mnist.train_images()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="9" column="1" bodyfile="code/pythonTraining/model.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a2f5c3e7553cf97b074eb5c2e6d08f1f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.train_labels</definition>
+        <argsstring></argsstring>
+        <name>train_labels</name>
+        <initializer>=  mnist.train_labels()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="10" column="1" bodyfile="code/pythonTraining/model.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a35ba16d78d67d22ccf3daa8fec6f5510" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tuple model::test_images</definition>
+        <argsstring></argsstring>
+        <name>test_images</name>
+        <initializer>=  mnist.test_images()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="11" column="1" bodyfile="code/pythonTraining/model.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a2b89d7653db85cca9451b204ceeaf95a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.test_labels</definition>
+        <argsstring></argsstring>
+        <name>test_labels</name>
+        <initializer>=  mnist.test_labels()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="12" column="1" bodyfile="code/pythonTraining/model.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a6b818d9c9b87a426af94bca26557cdbf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <initializer>=  Sequential([
+  Dense(64, activation=&apos;relu&apos;, input_shape=(784,)),
+  Dense(64, activation=&apos;relu&apos;),
+  Dense(10, activation=&apos;softmax&apos;),
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="35" column="1" bodyfile="code/pythonTraining/model.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1ab90d52c49af7eb73afb02e36a60b42bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.optimizer</definition>
+        <argsstring></argsstring>
+        <name>optimizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="43" column="1" bodyfile="code/pythonTraining/model.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a7130251ef25baeba82d82f90c404c1a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.loss</definition>
+        <argsstring></argsstring>
+        <name>loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="44" column="1" bodyfile="code/pythonTraining/model.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a90a3cddfd0f2e022a9ae91ce22ecb4ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.metrics</definition>
+        <argsstring></argsstring>
+        <name>metrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="45" column="1" bodyfile="code/pythonTraining/model.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a91f095411a173a98e6faf13d9979da37" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.epochs</definition>
+        <argsstring></argsstring>
+        <name>epochs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="52" column="1" bodyfile="code/pythonTraining/model.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1a770f95f65ed1e39e7c8edfb93ab76390" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.batch_size</definition>
+        <argsstring></argsstring>
+        <name>batch_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="53" column="1" bodyfile="code/pythonTraining/model.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodel_1ab0d140afe5408f3dc50f96bfb9a0e25d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>model.predictions</definition>
+        <argsstring></argsstring>
+        <name>predictions</name>
+        <initializer>=  model.predict(<ref refid="namespacemodel_1a35ba16d78d67d22ccf3daa8fec6f5510" kindref="member">test_images</ref>[:5])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/pythonTraining/model.py" line="69" column="1" bodyfile="code/pythonTraining/model.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/pythonTraining/model.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

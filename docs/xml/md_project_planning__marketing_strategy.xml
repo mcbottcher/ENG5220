@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md_project_planning__marketing_strategy" kind="page">
+    <compoundname>md_project_planning_Marketing_strategy</compoundname>
+    <title>Marketing</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a list of the project marketing strategy</para>
+<para><orderedlist>
+<listitem><para>Clear Readme on useinstructions.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>GitHub WIKI.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>Presentation slides.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>Social Media platforms.<orderedlist>
+<listitem><para>Twitter; Following project lifeline</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>Hackaday; Showing project upon completion<orderedlist>
+<listitem><para>DIY kit.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>PCB gerbers / schematic PDFs.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>List of components.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>Build instructions. </para>
+</listitem></orderedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

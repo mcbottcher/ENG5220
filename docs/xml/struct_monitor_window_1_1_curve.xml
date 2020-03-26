@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_monitor_window_1_1_curve" kind="struct" language="C++" prot="private">
+    <compoundname>MonitorWindow::Curve</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" prot="public" static="no" mutable="no">
+        <type>QwtPlot *</type>
+        <definition>QwtPlot* MonitorWindow::Curve::plot</definition>
+        <argsstring></argsstring>
+        <name>plot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The associated QwtPlot for the curve. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="60" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" prot="public" static="no" mutable="no">
+        <type>QwtPlotCurve *</type>
+        <definition>QwtPlotCurve* MonitorWindow::Curve::curve</definition>
+        <argsstring></argsstring>
+        <name>curve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual curve object itsself. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="61" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" prot="public" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* MonitorWindow::Curve::checkbox</definition>
+        <argsstring></argsstring>
+        <name>checkbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checkbox to turn the curve on and off. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="62" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* MonitorWindow::Curve::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the data held in memory for that curve. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="63" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* MonitorWindow::Curve::xAxisData</definition>
+        <argsstring></argsstring>
+        <name>xAxisData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the xAxis data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="64" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t MonitorWindow::Curve::buffsize</definition>
+        <argsstring></argsstring>
+        <name>buffsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of the ploting buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="65" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString MonitorWindow::Curve::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of each curve so the user knows what curve is what data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="66" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1a5513f75472fd39827fc5f286b14bcd63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MonitorWindow::Curve::Curve</definition>
+        <argsstring>(size_t buffsize, QwtPlot *plotin, QString name, double *xAxis)</argsstring>
+        <name>Curve</name>
+        <param>
+          <type>size_t</type>
+          <declname>buffsize</declname>
+        </param>
+        <param>
+          <type>QwtPlot *</type>
+          <declname>plotin</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>xAxis</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a single samples if the checkbox has been selected by the user. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of buffer for the plot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plotin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The plot that the curve is attached to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the curve. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xAxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The xAxis data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="76" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1a2dda9999eece86007701836ce2490301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MonitorWindow::Curve::~Curve</definition>
+        <argsstring>()</argsstring>
+        <name>~Curve</name>
+        <briefdescription>
+<para>Default <ref refid="struct_monitor_window_1_1_curve" kindref="compound">Curve</ref> destuctor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="87" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::updateCurve</definition>
+        <argsstring>()</argsstring>
+        <name>updateCurve</name>
+        <briefdescription>
+<para>updateCurve method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to set the samples of a curve with the data held in its CurveStruct. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="93" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::resetCurve</definition>
+        <argsstring>()</argsstring>
+        <name>resetCurve</name>
+        <briefdescription>
+<para>resetCurve method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to rest the curve to zeros </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="98" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::attach</definition>
+        <argsstring>()</argsstring>
+        <name>attach</name>
+        <briefdescription>
+<para>Attach curve to plot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="105" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::setupCurve</definition>
+        <argsstring>()</argsstring>
+        <name>setupCurve</name>
+        <briefdescription>
+<para>setupCuves method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper Method setup and attach curves to their respective plot widgets. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="109" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::insertSample</definition>
+        <argsstring>(double sample)</argsstring>
+        <name>insertSample</name>
+        <param>
+          <type>double</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para>insertSample method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to insert a sample into a curve. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample to be added to the curve. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="118" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::plotSample</definition>
+        <argsstring>(double sample)</argsstring>
+        <name>plotSample</name>
+        <param>
+          <type>double</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para>plotSample method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a single samples if the checkbox has been selected by the user. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref> and _insertSample() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="128" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="128" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_monitor_window_1_1_curve_1ac88a34e2214bfb13dd86a4413bd20c3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitorWindow::Curve::plotSample</definition>
+        <argsstring>(double *buffer, size_t plotSize)</argsstring>
+        <name>plotSample</name>
+        <param>
+          <type>double *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>plotSize</declname>
+        </param>
+        <briefdescription>
+<para>plotSample method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot a buffer of samples if the checkbox has been selected by the user. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plotSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer to be plotted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kindref="member">insertSample()</ref> and <ref refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kindref="member">checkbox</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/MonitorWindow.h" line="144" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="144" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CurveStruct data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure for each curve on the graphs. </para>
+    </detaileddescription>
+    <location file="code/Qt/MonitorWindow.h" line="59" column="1" bodyfile="code/Qt/MonitorWindow.h" bodystart="59" bodyend="157"/>
+    <listofallmembers>
+      <member refid="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>attach</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>buffsize</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>checkbox</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a5513f75472fd39827fc5f286b14bcd63" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>Curve</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>curve</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>data</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>insertSample</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>name</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>plot</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>plotSample</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1ac88a34e2214bfb13dd86a4413bd20c3a" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>plotSample</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>resetCurve</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>setupCurve</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>updateCurve</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>xAxisData</name></member>
+      <member refid="struct_monitor_window_1_1_curve_1a2dda9999eece86007701836ce2490301" prot="public" virt="non-virtual"><scope>MonitorWindow::Curve</scope><name>~Curve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

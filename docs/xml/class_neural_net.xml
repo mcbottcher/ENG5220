@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_neural_net" kind="class" language="C++" prot="public">
+    <compoundname>NeuralNet</compoundname>
+    <includes refid="_neural_net_8h" local="no">NeuralNet.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_neural_net_1a0fcc02dadaff06b0228304e3e89e9095" prot="private" static="no" mutable="no">
+        <type>fdeep::model</type>
+        <definition>fdeep::model NeuralNet::_model</definition>
+        <argsstring></argsstring>
+        <name>_model</name>
+        <initializer>= fdeep::load_model(&quot;fdeep_model.json&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="19" column="1" bodyfile="code/neuralnet_predict/NeuralNet.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_neural_net_1a8de1915a65411a91c61923795a6d273d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float NeuralNet::netInputs[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS]</definition>
+        <argsstring>[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS]</argsstring>
+        <name>netInputs</name>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="22" column="1" bodyfile="code/neuralnet_predict/NeuralNet.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_neural_net_1a66b1ddd47bc5b393cf184f02517e82d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NeuralNet::NeuralNet</definition>
+        <argsstring>()</argsstring>
+        <name>NeuralNet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="10" column="1" bodyfile="code/neuralnet_predict/NeuralNet.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neural_net_1afd68e306bdf39aaa8c6ef016e4da18a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NeuralNet::~NeuralNet</definition>
+        <argsstring>()</argsstring>
+        <name>~NeuralNet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="11" column="1" bodyfile="code/neuralnet_predict/NeuralNet.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neural_net_1a5847c3d58230e3f5df8598a6f8b0bceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NeuralNet::predict</definition>
+        <argsstring>()</argsstring>
+        <name>predict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="13" column="1" bodyfile="code/neuralnet_predict/NeuralNet.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neural_net_1a7886a708a90f398259221e5a9f9e1a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NeuralNet::insertSamples</definition>
+        <argsstring>(float *sampleBuff)</argsstring>
+        <name>insertSamples</name>
+        <param>
+          <type>float *</type>
+          <declname>sampleBuff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/neuralnet_predict/NeuralNet.h" line="15" column="1" bodyfile="code/neuralnet_predict/NeuralNet.cpp" bodystart="26" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/neuralnet_predict/NeuralNet.h" line="7" column="1" bodyfile="code/neuralnet_predict/NeuralNet.h" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_neural_net_1a0fcc02dadaff06b0228304e3e89e9095" prot="private" virt="non-virtual"><scope>NeuralNet</scope><name>_model</name></member>
+      <member refid="class_neural_net_1a7886a708a90f398259221e5a9f9e1a65" prot="public" virt="non-virtual"><scope>NeuralNet</scope><name>insertSamples</name></member>
+      <member refid="class_neural_net_1a8de1915a65411a91c61923795a6d273d" prot="private" virt="non-virtual"><scope>NeuralNet</scope><name>netInputs</name></member>
+      <member refid="class_neural_net_1a66b1ddd47bc5b393cf184f02517e82d4" prot="public" virt="non-virtual"><scope>NeuralNet</scope><name>NeuralNet</name></member>
+      <member refid="class_neural_net_1a5847c3d58230e3f5df8598a6f8b0bceb" prot="public" virt="non-virtual"><scope>NeuralNet</scope><name>predict</name></member>
+      <member refid="class_neural_net_1afd68e306bdf39aaa8c6ef016e4da18a1" prot="public" virt="non-virtual"><scope>NeuralNet</scope><name>~NeuralNet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

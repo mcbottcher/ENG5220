@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_050edd66366d13764f98250ef6db77f6" kind="dir">
+    <compoundname>code</compoundname>
+    <innerdir refid="dir_af44102312650f84b9954b0d1e54ecca">code/neuralnet_predict</innerdir>
+    <innerdir refid="dir_370628634cbf8843f4a6faa285b66f9b">code/pythonTraining</innerdir>
+    <innerdir refid="dir_a938007a2d12d32793990e9e791b7794">code/Qt</innerdir>
+    <innerfile refid="_filter_bank_8cpp">FilterBank.cpp</innerfile>
+    <innerfile refid="_filter_bank_8h">FilterBank.h</innerfile>
+    <innerfile refid="_ring_buff_8cpp">RingBuff.cpp</innerfile>
+    <innerfile refid="_ring_buff_8h">RingBuff.h</innerfile>
+    <innerfile refid="sampledata_8cpp">sampledata.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/"/>
+  </compounddef>
+</doxygen>

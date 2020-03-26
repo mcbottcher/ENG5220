@@ -28,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_with_text-1 copy 2.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_with_text_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
@@ -96,50 +96,297 @@ $(document).ready(function(){initNavTree('class_ring_buff.html','');});
 <div class="title">RingBuff Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a947ed6099f2a84c02840749132ae943d"><td class="memItemLeft" align="right" valign="top"><a id="a947ed6099f2a84c02840749132ae943d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RingBuff</b> (int bufSize)</td></tr>
+<tr class="memitem:a947ed6099f2a84c02840749132ae943d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a947ed6099f2a84c02840749132ae943d">RingBuff</a> (int <a class="el" href="class_ring_buff.html#aa444ffb4f62b071b6d39463a49bc61e2">bufSize</a>)</td></tr>
 <tr class="separator:a947ed6099f2a84c02840749132ae943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0074a4b03a04b9b245545c6224dc2f9b"><td class="memItemLeft" align="right" valign="top"><a id="a0074a4b03a04b9b245545c6224dc2f9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insertSample</b> (double sample)</td></tr>
+<tr class="memitem:a1dfc4ebc8401c49cea0452a679473c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a1dfc4ebc8401c49cea0452a679473c74">~RingBuff</a> ()</td></tr>
+<tr class="separator:a1dfc4ebc8401c49cea0452a679473c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0074a4b03a04b9b245545c6224dc2f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a0074a4b03a04b9b245545c6224dc2f9b">insertSample</a> (double sample)</td></tr>
 <tr class="separator:a0074a4b03a04b9b245545c6224dc2f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a7bd9404d60d4f12b4832ad8c149e6"><td class="memItemLeft" align="right" valign="top"><a id="a60a7bd9404d60d4f12b4832ad8c149e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resetBuffer</b> ()</td></tr>
+<tr class="memitem:a60a7bd9404d60d4f12b4832ad8c149e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a60a7bd9404d60d4f12b4832ad8c149e6">resetBuffer</a> ()</td></tr>
 <tr class="separator:a60a7bd9404d60d4f12b4832ad8c149e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e8b87cab47fba276b539f27953527cc"><td class="memItemLeft" align="right" valign="top"><a id="a2e8b87cab47fba276b539f27953527cc"></a>
-double *&#160;</td><td class="memItemRight" valign="bottom"><b>getBuffAddress</b> ()</td></tr>
+<tr class="memitem:a2e8b87cab47fba276b539f27953527cc"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a2e8b87cab47fba276b539f27953527cc">getBuffAddress</a> ()</td></tr>
 <tr class="separator:a2e8b87cab47fba276b539f27953527cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae663d7b920cff4225d19b7b53c37901a"><td class="memItemLeft" align="right" valign="top"><a id="ae663d7b920cff4225d19b7b53c37901a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getBuffLen</b> ()</td></tr>
+<tr class="memitem:ae663d7b920cff4225d19b7b53c37901a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#ae663d7b920cff4225d19b7b53c37901a">getBuffLen</a> ()</td></tr>
 <tr class="separator:ae663d7b920cff4225d19b7b53c37901a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa58b11867eb027f840bf3479f5eee8c"><td class="memItemLeft" align="right" valign="top"><a id="aaa58b11867eb027f840bf3479f5eee8c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getElementPtr</b> ()</td></tr>
+<tr class="memitem:aaa58b11867eb027f840bf3479f5eee8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#aaa58b11867eb027f840bf3479f5eee8c">getElementPtr</a> ()</td></tr>
 <tr class="separator:aaa58b11867eb027f840bf3479f5eee8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2690243a3abb7a5c2a5b9c45c0b3e6d0"><td class="memItemLeft" align="right" valign="top"><a id="a2690243a3abb7a5c2a5b9c45c0b3e6d0"></a>
-double *&#160;</td><td class="memItemRight" valign="bottom"><b>readBuffer</b> ()</td></tr>
+<tr class="memitem:a2690243a3abb7a5c2a5b9c45c0b3e6d0"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a2690243a3abb7a5c2a5b9c45c0b3e6d0">readBuffer</a> ()</td></tr>
 <tr class="separator:a2690243a3abb7a5c2a5b9c45c0b3e6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a94cbd2f64a3f104e4adb0a29c1b1a69c"><td class="memItemLeft" align="right" valign="top"><a id="a94cbd2f64a3f104e4adb0a29c1b1a69c"></a>
-double *&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
+<tr class="memitem:a94cbd2f64a3f104e4adb0a29c1b1a69c"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#a94cbd2f64a3f104e4adb0a29c1b1a69c">buffer</a></td></tr>
 <tr class="separator:a94cbd2f64a3f104e4adb0a29c1b1a69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ec9ff344c601770ecaa216bde36b5d"><td class="memItemLeft" align="right" valign="top"><a id="aa3ec9ff344c601770ecaa216bde36b5d"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>elementPtr</b></td></tr>
+<tr class="memitem:aa3ec9ff344c601770ecaa216bde36b5d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#aa3ec9ff344c601770ecaa216bde36b5d">elementPtr</a></td></tr>
 <tr class="separator:aa3ec9ff344c601770ecaa216bde36b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa444ffb4f62b071b6d39463a49bc61e2"><td class="memItemLeft" align="right" valign="top"><a id="aa444ffb4f62b071b6d39463a49bc61e2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>bufSize</b></td></tr>
+<tr class="memitem:aa444ffb4f62b071b6d39463a49bc61e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ring_buff.html#aa444ffb4f62b071b6d39463a49bc61e2">bufSize</a></td></tr>
 <tr class="separator:aa444ffb4f62b071b6d39463a49bc61e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00006">6</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a947ed6099f2a84c02840749132ae943d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947ed6099f2a84c02840749132ae943d">&#9670;&nbsp;</a></span>RingBuff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RingBuff::RingBuff </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8cpp_source.html#l00003">3</a> of file <a class="el" href="_ring_buff_8cpp_source.html">RingBuff.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1dfc4ebc8401c49cea0452a679473c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfc4ebc8401c49cea0452a679473c74">&#9670;&nbsp;</a></span>~RingBuff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RingBuff::~RingBuff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00014">14</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2e8b87cab47fba276b539f27953527cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8b87cab47fba276b539f27953527cc">&#9670;&nbsp;</a></span>getBuffAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* RingBuff::getBuffAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00017">17</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<a id="ae663d7b920cff4225d19b7b53c37901a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae663d7b920cff4225d19b7b53c37901a">&#9670;&nbsp;</a></span>getBuffLen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuff::getBuffLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00018">18</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<a id="aaa58b11867eb027f840bf3479f5eee8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa58b11867eb027f840bf3479f5eee8c">&#9670;&nbsp;</a></span>getElementPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuff::getElementPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00019">19</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<a id="a0074a4b03a04b9b245545c6224dc2f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0074a4b03a04b9b245545c6224dc2f9b">&#9670;&nbsp;</a></span>insertSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RingBuff::insertSample </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sample</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8cpp_source.html#l00016">16</a> of file <a class="el" href="_ring_buff_8cpp_source.html">RingBuff.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2690243a3abb7a5c2a5b9c45c0b3e6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2690243a3abb7a5c2a5b9c45c0b3e6d0">&#9670;&nbsp;</a></span>readBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * RingBuff::readBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8cpp_source.html#l00024">24</a> of file <a class="el" href="_ring_buff_8cpp_source.html">RingBuff.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60a7bd9404d60d4f12b4832ad8c149e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a7bd9404d60d4f12b4832ad8c149e6">&#9670;&nbsp;</a></span>resetBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RingBuff::resetBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8cpp_source.html#l00010">10</a> of file <a class="el" href="_ring_buff_8cpp_source.html">RingBuff.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a94cbd2f64a3f104e4adb0a29c1b1a69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cbd2f64a3f104e4adb0a29c1b1a69c">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* RingBuff::buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00011">11</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<a id="aa444ffb4f62b071b6d39463a49bc61e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa444ffb4f62b071b6d39463a49bc61e2">&#9670;&nbsp;</a></span>bufSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuff::bufSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00008">8</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<a id="aa3ec9ff344c601770ecaa216bde36b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ec9ff344c601770ecaa216bde36b5d">&#9670;&nbsp;</a></span>elementPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned RingBuff::elementPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ring_buff_8h_source.html#l00012">12</a> of file <a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>code/<a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a></li>
 <li>code/<a class="el" href="_ring_buff_8cpp_source.html">RingBuff.cpp</a></li>
 </ul>

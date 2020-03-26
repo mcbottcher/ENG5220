@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2neuralnet__predict_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>kerasCpp</highlight></codeline>
+<codeline><highlight class="normal">c++<sp/>implementation<sp/>of<sp/>feed-forward<sp/>cnn<sp/>from<sp/>keras<sp/>using<sp/>frugally-deep</highlight></codeline>
+    </programlisting>
+    <location file="code/neuralnet_predict/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_40fae8e1a8c215df42338d81a5ade107" kind="dir">
+    <compoundname>testfiles</compoundname>
+    <innerfile refid="createsines_8py">createsines.py</innerfile>
+    <innerfile refid="_filter_bank_test_8cpp">FilterBankTest.cpp</innerfile>
+    <innerfile refid="plotfilter_8py">plotfilter.py</innerfile>
+    <innerfile refid="_ring_buff_test_8cpp">RingBuffTest.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="testfiles/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="code_2python_training_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>gestureTraining</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>model<sp/>for<sp/>training<sp/>gestures<sp/>using<sp/>neural<sp/>network</highlight></codeline>
+    </programlisting>
+    <location file="code/pythonTraining/README.md"/>
+  </compounddef>
+</doxygen>

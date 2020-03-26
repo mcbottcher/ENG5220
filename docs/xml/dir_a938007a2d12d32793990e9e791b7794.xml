@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_a938007a2d12d32793990e9e791b7794" kind="dir">
+    <compoundname>code/Qt</compoundname>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="_interpret_window_8cpp">InterpretWindow.cpp</innerfile>
+    <innerfile refid="_interpret_window_8h">InterpretWindow.h</innerfile>
+    <innerfile refid="_qt_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="mainwindow_8cpp">mainwindow.cpp</innerfile>
+    <innerfile refid="mainwindow_8h">mainwindow.h</innerfile>
+    <innerfile refid="_monitor_window_8cpp">MonitorWindow.cpp</innerfile>
+    <innerfile refid="_monitor_window_8h">MonitorWindow.h</innerfile>
+    <innerfile refid="neural_net_8py">neuralNet.py</innerfile>
+    <innerfile refid="_q_led_8h">QLed.h</innerfile>
+    <innerfile refid="_sample_timer_8cpp">SampleTimer.cpp</innerfile>
+    <innerfile refid="_sample_timer_8h">SampleTimer.h</innerfile>
+    <innerfile refid="_train_window_8cpp">TrainWindow.cpp</innerfile>
+    <innerfile refid="_train_window_8h">TrainWindow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/Qt/"/>
+  </compounddef>
+</doxygen>

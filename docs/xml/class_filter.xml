@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_filter" kind="class" language="C++" prot="public">
+    <compoundname>Filter</compoundname>
+    <includes refid="_filter_bank_8h" local="no">FilterBank.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_filter_1aa2354dc08d7f38ee399711712dc077dc" prot="protected" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Filter::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+<para>Sampling rate double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Sampling rate of the filters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="23" column="1" bodyfile="code/FilterBank.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_1a8a11e2fb77cc7ec2c99db82b4a7645e1" prot="protected" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Filter::cutoffFrequency</definition>
+        <argsstring></argsstring>
+        <name>cutoffFrequency</name>
+        <briefdescription>
+<para>Cutoff frequency double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cutoff frequency of the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="26" column="1" bodyfile="code/FilterBank.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_1a58d09f34bb6da619aeb71f1fbb737847" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Filter::filterOrder</definition>
+        <argsstring></argsstring>
+        <name>filterOrder</name>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> order integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the required order of the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="29" column="1" bodyfile="code/FilterBank.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_1a8851ff43b3d2e3009c44b04b9329e249" prot="protected" static="no" mutable="no">
+        <type>Iir::Butterworth::LowPass&lt; 10 &gt; *</type>
+        <definition>Iir::Butterworth::LowPass&lt;10&gt;* Filter::filt</definition>
+        <argsstring></argsstring>
+        <name>filt</name>
+        <briefdescription>
+<para>Butterworth Lowpass filter object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="32" column="1" bodyfile="code/FilterBank.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_filter_1a2c086f16145e51138ec79105fef6e022" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Filter::Filter</definition>
+        <argsstring>(int filterOrder, double sampleRate, double cutoffFrequency)</argsstring>
+        <name>Filter</name>
+        <param>
+          <type>int</type>
+          <declname>filterOrder</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoffFrequency</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for the <ref refid="class_filter" kindref="compound">Filter</ref> wrapper class. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sampling rate if the filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutffFrequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cutoff frequency of the filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filterOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required order of the filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="42" column="1" bodyfile="code/FilterBank.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_1aa50bc47ce6e1eed97a274ebe239579cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Filter::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+<para>Setup method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A method to setup the filter with the filter order, sample rate and cutoff frequency </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="52" column="1" bodyfile="code/FilterBank.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_1afe4d216c91859366458add7f7fcbb6aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Filter::filter</definition>
+        <argsstring>(double sample)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>double</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_filter" kindref="compound">Filter</ref> method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A method to send the sample to the filter and return the sample processed by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/FilterBank.h" line="59" column="1" bodyfile="code/FilterBank.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="class_filter" kindref="compound">Filter</ref> wrapper class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A wrapper class allowing a pointer to pointers of the Butterworth Lowpass Iir filter class.</para>
+<para>Link: <ulink url="https://github.com/berndporr/iir1">Iir class GitHub</ulink> </para>
+    </detaileddescription>
+    <location file="code/FilterBank.h" line="16" column="1" bodyfile="code/FilterBank.h" bodystart="16" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_filter_1a8a11e2fb77cc7ec2c99db82b4a7645e1" prot="protected" virt="non-virtual"><scope>Filter</scope><name>cutoffFrequency</name></member>
+      <member refid="class_filter_1a8851ff43b3d2e3009c44b04b9329e249" prot="protected" virt="non-virtual"><scope>Filter</scope><name>filt</name></member>
+      <member refid="class_filter_1a2c086f16145e51138ec79105fef6e022" prot="public" virt="non-virtual"><scope>Filter</scope><name>Filter</name></member>
+      <member refid="class_filter_1afe4d216c91859366458add7f7fcbb6aa" prot="public" virt="non-virtual"><scope>Filter</scope><name>filter</name></member>
+      <member refid="class_filter_1a58d09f34bb6da619aeb71f1fbb737847" prot="protected" virt="non-virtual"><scope>Filter</scope><name>filterOrder</name></member>
+      <member refid="class_filter_1aa2354dc08d7f38ee399711712dc077dc" prot="protected" virt="non-virtual"><scope>Filter</scope><name>sampleRate</name></member>
+      <member refid="class_filter_1aa50bc47ce6e1eed97a274ebe239579cf" prot="public" virt="non-virtual"><scope>Filter</scope><name>setup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

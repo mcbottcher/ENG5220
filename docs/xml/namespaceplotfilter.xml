@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespaceplotfilter" kind="namespace" language="Python">
+    <compoundname>plotfilter</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceplotfilter_1a03f2bc93d269885b2b62fcfc4be986d8" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list plotfilter.filtered</definition>
+        <argsstring></argsstring>
+        <name>filtered</name>
+        <initializer>=  [None]*4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/plotfilter.py" line="7" column="1" bodyfile="testfiles/plotfilter.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceplotfilter_1ac2377d502933142fd25f9db1e7dd2038" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>plotfilter.dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/plotfilter.py" line="9" column="1" bodyfile="testfiles/plotfilter.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceplotfilter_1ae95257774854536afeb3dd69a1f4e975" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list plotfilter.impulse</definition>
+        <argsstring></argsstring>
+        <name>impulse</name>
+        <initializer>=  [None]*4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testfiles/plotfilter.py" line="15" column="1" bodyfile="testfiles/plotfilter.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="testfiles/plotfilter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

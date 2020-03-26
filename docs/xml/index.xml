@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="class_c_s_vreader" kind="class"><name>CSVreader</name>
+    <member refid="class_c_s_vreader_1a532424f295b67937b40ccf8cc9bace60" kind="variable"><name>_filename</name></member>
+    <member refid="class_c_s_vreader_1a8e635040456641fe9224bc04da87a7a1" kind="variable"><name>line</name></member>
+    <member refid="class_c_s_vreader_1aab890a2ae82c008906beb433bf2d68e1" kind="variable"><name>vectorarray</name></member>
+    <member refid="class_c_s_vreader_1afb1326f8abfadd3b3eb4448cf9144af7" kind="variable"><name>valuearray</name></member>
+    <member refid="class_c_s_vreader_1a9ec8f6633293fdcd48a3c96d1c159faf" kind="variable"><name>fltvaluearray</name></member>
+    <member refid="class_c_s_vreader_1a92841dcf40072cb132f75d67ec32cf7a" kind="function"><name>CSVreader</name></member>
+    <member refid="class_c_s_vreader_1a66f4a060f2dbfde6c1f00d8b52a979fa" kind="function"><name>~CSVreader</name></member>
+    <member refid="class_c_s_vreader_1a9b57c67c6032d6366c629ecde54013ee" kind="function"><name>readCSV</name></member>
+    <member refid="class_c_s_vreader_1a72b7f3244e80e67f95572c91595f0ab9" kind="function"><name>printVectorArray</name></member>
+    <member refid="class_c_s_vreader_1aca7e333b60603c09f942438a4a1f1162" kind="function"><name>getVectorArray</name></member>
+    <member refid="class_c_s_vreader_1af554f9e1d8f26c25b01f606979870926" kind="function"><name>getValueArray</name></member>
+  </compound>
+  <compound refid="struct_monitor_window_1_1_curve" kind="struct"><name>MonitorWindow::Curve</name>
+    <member refid="struct_monitor_window_1_1_curve_1abc5ea7a38bd35b6dff07be32877a4530" kind="variable"><name>plot</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a74e6857fb0325a5b32471213db62a5fb" kind="variable"><name>curve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a8f41885b80a62488ba81abba49529a55" kind="variable"><name>checkbox</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a2134fd6e982a6b216f777af2a5f1f317" kind="variable"><name>data</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a3e7dafb37c52f50e4fc2297329f99bc5" kind="variable"><name>xAxisData</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a122ffb2ce770c69fc051d7c069d1e39f" kind="variable"><name>buffsize</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a8ac5d7ab30877a1643f18b7e1c95cbd0" kind="variable"><name>name</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a5513f75472fd39827fc5f286b14bcd63" kind="function"><name>Curve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a2dda9999eece86007701836ce2490301" kind="function"><name>~Curve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1ab2de430b5650941488fb62691f8d64a4" kind="function"><name>updateCurve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a39fb42b0276a8e47dbdb2e65a3d67491" kind="function"><name>resetCurve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1adbe8adf5aa44e0e1df1dda96faf75f07" kind="function"><name>attach</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a6520efc990024d5b34a328f8e30466b6" kind="function"><name>setupCurve</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1af3f945d24ae061be01d6b420f8ba26c2" kind="function"><name>insertSample</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1a2b3bbf4489f2b4c836fae1a4bca3d534" kind="function"><name>plotSample</name></member>
+    <member refid="struct_monitor_window_1_1_curve_1ac88a34e2214bfb13dd86a4413bd20c3a" kind="function"><name>plotSample</name></member>
+  </compound>
+  <compound refid="class_filter" kind="class"><name>Filter</name>
+    <member refid="class_filter_1aa2354dc08d7f38ee399711712dc077dc" kind="variable"><name>sampleRate</name></member>
+    <member refid="class_filter_1a8a11e2fb77cc7ec2c99db82b4a7645e1" kind="variable"><name>cutoffFrequency</name></member>
+    <member refid="class_filter_1a58d09f34bb6da619aeb71f1fbb737847" kind="variable"><name>filterOrder</name></member>
+    <member refid="class_filter_1a8851ff43b3d2e3009c44b04b9329e249" kind="variable"><name>filt</name></member>
+    <member refid="class_filter_1a2c086f16145e51138ec79105fef6e022" kind="function"><name>Filter</name></member>
+    <member refid="class_filter_1aa50bc47ce6e1eed97a274ebe239579cf" kind="function"><name>setup</name></member>
+    <member refid="class_filter_1afe4d216c91859366458add7f7fcbb6aa" kind="function"><name>filter</name></member>
+  </compound>
+  <compound refid="class_filter_bank" kind="class"><name>FilterBank</name>
+    <member refid="class_filter_bank_1a7632671c2bea2b20ce5d47963e4250ae" kind="variable"><name>numberOfFilters</name></member>
+    <member refid="class_filter_bank_1ac706a43798d1322e8d078ac7af0256bf" kind="variable"><name>sampleRate</name></member>
+    <member refid="class_filter_bank_1a83780bb546eda422318b54103df62613" kind="variable"><name>filterOrder</name></member>
+    <member refid="class_filter_bank_1adc84ce6490841a630b6634092e9d1613" kind="variable"><name>outputArray</name></member>
+    <member refid="class_filter_bank_1a3653c92ac4ffffd5b48954a9030451cc" kind="variable"><name>filterObjArray</name></member>
+    <member refid="class_filter_bank_1a1f4c10f55bed118220c55f10215be634" kind="function"><name>FilterBank</name></member>
+    <member refid="class_filter_bank_1a6a86009cdb85acdc393a902aa9c00164" kind="function"><name>~FilterBank</name></member>
+    <member refid="class_filter_bank_1a09881ea60cd2c2d21c29b3c599ef2c0b" kind="function"><name>filter</name></member>
+    <member refid="class_filter_bank_1aac19fa7a28bf8077907c311952fde784" kind="function"><name>getArray</name></member>
+    <member refid="class_filter_bank_1ad95fe17a4040bf978ad977a37ce3a868" kind="function"><name>setup</name></member>
+  </compound>
+  <compound refid="class_interpret_window" kind="class"><name>InterpretWindow</name>
+    <member refid="class_interpret_window_1a1b8e9ca0a2577b18715d20d41c7bb34e" kind="variable"><name>count</name></member>
+    <member refid="class_interpret_window_1ab81d81f2e5585af5765698f329cbe569" kind="variable"><name>titleFont</name></member>
+    <member refid="class_interpret_window_1a1167de8e7cc94ef9b855d9c702c13f37" kind="variable"><name>titleText</name></member>
+    <member refid="class_interpret_window_1a27acfe18ca7d53e67d070603cf1b52a0" kind="variable"><name>loudspeakerIcon</name></member>
+    <member refid="class_interpret_window_1a938dd1e4e7c4bd5fcd3a8b1880449275" kind="variable"><name>homeButton</name></member>
+    <member refid="class_interpret_window_1a18ef0a58c63b719e1924dcd0c11f36a4" kind="variable"><name>wrongButton</name></member>
+    <member refid="class_interpret_window_1a56a12b27e6101c6418c559655fdd55a3" kind="variable"><name>clearButton</name></member>
+    <member refid="class_interpret_window_1a6682fb7c95c63be174f699e42bc8b470" kind="variable"><name>sayButton</name></member>
+    <member refid="class_interpret_window_1a3d6df0c01749c4931213162c027d385b" kind="variable"><name>textBox</name></member>
+    <member refid="class_interpret_window_1a3c0c90a6fd30e65815c26c1a677e13b3" kind="variable"><name>soundCheckBox</name></member>
+    <member refid="class_interpret_window_1a91063ca4fe89d0da70f4429db871e84e" kind="variable"><name>titleLayout</name></member>
+    <member refid="class_interpret_window_1aca9bfdce291ed18c1c85fd17e2572bf7" kind="variable"><name>soundLayout</name></member>
+    <member refid="class_interpret_window_1addecf2f1edbd5ac17e814151c97f10c0" kind="variable"><name>homeLayout</name></member>
+    <member refid="class_interpret_window_1a865f3bb899600a52fb5f32d404829dbe" kind="variable"><name>vPlotLayout</name></member>
+    <member refid="class_interpret_window_1aca760ca7a50c6e59999314e1265fd343" kind="variable"><name>hPlotLayout</name></member>
+    <member refid="class_interpret_window_1ab621a0916cb0396af0b7aec2a2ec4863" kind="variable"><name>mainLayout</name></member>
+    <member refid="class_interpret_window_1a89f0baab902e72c7a58381d708cda204" kind="variable"><name>checkAccLayout</name></member>
+    <member refid="class_interpret_window_1aac0913311466b304231d071d4a020756" kind="variable"><name>checkGyroLayout</name></member>
+    <member refid="class_interpret_window_1ac628cbff66c1c07854f4622e303c08fa" kind="variable"><name>checkFingerLayout</name></member>
+    <member refid="class_interpret_window_1a4d6ef92cac5791696ab92350ee50d063" kind="variable"><name>accLayout</name></member>
+    <member refid="class_interpret_window_1a33e5ea808a2cacf6875298674af6ba8c" kind="variable"><name>gyroLayout</name></member>
+    <member refid="class_interpret_window_1a72831bdda5dbae269c53bb6021645435" kind="variable"><name>fingerLayout</name></member>
+    <member refid="class_interpret_window_1a602e7f2fdb1d49dcae2ad83fc1853d83" kind="variable"><name>speech</name></member>
+    <member refid="class_interpret_window_1ac30a9385a01d43c87d4567ec278a9e35" kind="function"><name>InterpretWindow</name></member>
+    <member refid="class_interpret_window_1a8537eb63d6a149536180b66aca631d04" kind="function"><name>~InterpretWindow</name></member>
+    <member refid="class_interpret_window_1ad4aaeb7dbd8688280d834fa6e21d3d8a" kind="function"><name>sayWords</name></member>
+    <member refid="class_interpret_window_1a34d00ce5e7a8fda44136bb60d0ea76b1" kind="signal"><name>emitClose</name></member>
+    <member refid="class_interpret_window_1a1955a852966c9acf37428e4c954713e4" kind="slot"><name>timerEvent</name></member>
+    <member refid="class_interpret_window_1a2368591a03d045adb4e91e54c96fa9d8" kind="slot"><name>closeWindow</name></member>
+    <member refid="class_interpret_window_1a8fbac855c9221e540e3c1af1a53f11d2" kind="slot"><name>wrongButtonClicked</name></member>
+  </compound>
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a4914486ee3b888bda79eda5690011331" kind="variable"><name>monitorWindow</name></member>
+    <member refid="class_main_window_1aa40db177d33ae137ea6f49adf36a76cb" kind="variable"><name>interpretWindow</name></member>
+    <member refid="class_main_window_1a0e70c73ab2c766dc32c6a96a54768796" kind="variable"><name>trainWindow</name></member>
+    <member refid="class_main_window_1a82198bd0b2620b2d0a9d0a319010135a" kind="variable"><name>logo_image</name></member>
+    <member refid="class_main_window_1ab7666e594453210c6f6a2007b09d72f2" kind="variable"><name>title_font</name></member>
+    <member refid="class_main_window_1aa2ada250d55b0d32a974067d7799b05a" kind="variable"><name>title_text</name></member>
+    <member refid="class_main_window_1acb3bde298a3db1072f56a0210caa19bc" kind="variable"><name>logo</name></member>
+    <member refid="class_main_window_1a2afd294ea45f6d00538ac439731b5688" kind="variable"><name>lab_train</name></member>
+    <member refid="class_main_window_1a16e5d3d19dbc3fbed256ed72c99ebc7c" kind="variable"><name>lab_interpret</name></member>
+    <member refid="class_main_window_1a5bb6b7334521ee0f6761d2fe1c1574d3" kind="variable"><name>lab_mon</name></member>
+    <member refid="class_main_window_1a47338c0917ca1834819265ee37daf94d" kind="variable"><name>lab_icon</name></member>
+    <member refid="class_main_window_1a736a4a4844c6ef154f358bb50f956a75" kind="variable"><name>but_train</name></member>
+    <member refid="class_main_window_1a0e6f44bb3f84d854cbd73f7fdc08e73b" kind="variable"><name>but_interpret</name></member>
+    <member refid="class_main_window_1acba63738e6d4acf1092ffa85e292b951" kind="variable"><name>but_mon</name></member>
+    <member refid="class_main_window_1aebf1692636f3619e5afd469a2cee6e9c" kind="variable"><name>but_quit</name></member>
+    <member refid="class_main_window_1aaa776530b3613f80f6135d71485f24c7" kind="variable"><name>windowtimer</name></member>
+    <member refid="class_main_window_1a5413c743856077ba000b3b02b462ae40" kind="variable"><name>moitorRefreshtimer</name></member>
+    <member refid="class_main_window_1a626eec967d3981392e278927c4505264" kind="variable"><name>cppSampleTimer</name></member>
+    <member refid="class_main_window_1a56d8727651a8b002ebff58e79e5ef26f" kind="variable"><name>count</name></member>
+    <member refid="class_main_window_1a8c11c1f81534b212a1a59251cc857ce6" kind="variable"><name>samplefinger</name></member>
+    <member refid="class_main_window_1aed3379fb5bc938c45c8f6575b2f9e1e2" kind="variable"><name>sampleacc</name></member>
+    <member refid="class_main_window_1a80eb4bded0c7a73670d49f5895de74a3" kind="variable"><name>samplegyro</name></member>
+    <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="class_main_window_1aabd8d480a18455fd70abceb51345d6a6" kind="function"><name>createUI</name></member>
+    <member refid="class_main_window_1ae24d795221d33aeed0bf1df68e8e369a" kind="function"><name>createFilters</name></member>
+    <member refid="class_main_window_1ace2ea99e6e9074d660b73f78c4e46aaf" kind="slot"><name>timerEvent</name></member>
+    <member refid="class_main_window_1ac753b09079c4652b29c6e96e1f055d5b" kind="slot"><name>newDataEvent</name></member>
+    <member refid="class_main_window_1aa4fa6a554c62b580d26a9f4882b35395" kind="slot"><name>monitor_button_clicked</name></member>
+    <member refid="class_main_window_1a5f79fa5048dcd15e8fbc9e2cc585cdf2" kind="slot"><name>interpretButtonClicked</name></member>
+    <member refid="class_main_window_1a34837782b2e58775e746e79bd825c102" kind="slot"><name>interpretHome</name></member>
+    <member refid="class_main_window_1ac739668022b7b6aa8062e8a2bb3a8776" kind="slot"><name>trainButtonClicked</name></member>
+    <member refid="class_main_window_1a134754908a28096e7f14418368db0581" kind="slot"><name>but_quit_clicked</name></member>
+  </compound>
+  <compound refid="class_monitor_window" kind="class"><name>MonitorWindow</name>
+    <member refid="class_monitor_window_1a1570ba7a14d4bbaa97ef521ccbed48f6" kind="typedef"><name>Curve_t</name></member>
+    <member refid="class_monitor_window_1aa8ad8d4e48eb26f29ce3219dd06cabc7" kind="variable"><name>bufferSize</name></member>
+    <member refid="class_monitor_window_1a13199c2b7020ffaf2bcc3c239ed12162" kind="variable"><name>resetButton</name></member>
+    <member refid="class_monitor_window_1a03b22f55b1bb3a4e8ea1f78b80f80735" kind="variable"><name>closeButton</name></member>
+    <member refid="class_monitor_window_1a28d6292e40924044b7ebe6f86fea92a7" kind="variable"><name>accelerometerPlot</name></member>
+    <member refid="class_monitor_window_1a52de85dce2a646edca75c6ac4637ed5e" kind="variable"><name>gyroPlot</name></member>
+    <member refid="class_monitor_window_1add518550737fac91912a0e99f6ea282e" kind="variable"><name>fingerPlot</name></member>
+    <member refid="class_monitor_window_1a08d96ae9a999d7d5e72ae0ce0d89f223" kind="variable"><name>xAxisData</name></member>
+    <member refid="class_monitor_window_1a6d774e837240f24538c6737a379acf29" kind="variable"><name>sensorDataPtr</name></member>
+    <member refid="class_monitor_window_1adc757305052a3a36784c5cd6ce704772" kind="variable"><name>acc</name></member>
+    <member refid="class_monitor_window_1ac1ed0e3fb8f78b7b19b02a5665205d9f" kind="variable"><name>gyro</name></member>
+    <member refid="class_monitor_window_1ab27c111f826a869a122147e6652ab36a" kind="variable"><name>finger</name></member>
+    <member refid="class_monitor_window_1a8938e9c6106d1750220c780bab105cc4" kind="variable"><name>mainLayout</name></member>
+    <member refid="class_monitor_window_1af288cc53017bb1fc672f9f3acaa6d474" kind="variable"><name>vPlotLayout</name></member>
+    <member refid="class_monitor_window_1acfe48d4188290d427d3b06df1a94b83d" kind="variable"><name>checkAccLayout</name></member>
+    <member refid="class_monitor_window_1a716bdcff7c835f6b0025360b67c31644" kind="variable"><name>checkGyroLayout</name></member>
+    <member refid="class_monitor_window_1a895f948fb4fa2b9aea5dc02eba49f166" kind="variable"><name>checkFingerLayout</name></member>
+    <member refid="class_monitor_window_1a2ac66a8c2583ec9d392815a4eb515122" kind="variable"><name>controlLayout</name></member>
+    <member refid="class_monitor_window_1af3827d57fca6096314e4f23d8fc1cc07" kind="variable"><name>hPlotLayout</name></member>
+    <member refid="class_monitor_window_1a2a4bb3b60f13de0a6c6f099614de06ac" kind="variable"><name>accLayout</name></member>
+    <member refid="class_monitor_window_1ae9f0235f04f770b2addcb4e38cf7c96b" kind="variable"><name>gyroLayout</name></member>
+    <member refid="class_monitor_window_1aa2f1384109f069600aae3b33c6952410" kind="variable"><name>fingerLayout</name></member>
+    <member refid="class_monitor_window_1afafb4e4916800024a71876dbe89a4952" kind="function"><name>MonitorWindow</name></member>
+    <member refid="class_monitor_window_1addd6a957bc31c8b95faff7cb575c903f" kind="function"><name>~MonitorWindow</name></member>
+    <member refid="class_monitor_window_1a129474efec59d3fef571bc1fe154cef3" kind="function"><name>plotAcc</name></member>
+    <member refid="class_monitor_window_1a31264e5700223486fdd38742c5d4b03d" kind="function"><name>plotGyro</name></member>
+    <member refid="class_monitor_window_1a658bde4a4b7296b53af09affdf69010a" kind="function"><name>plotFinger</name></member>
+    <member refid="class_monitor_window_1aec028f61c1d8b96cea24b484d95ed87e" kind="slot"><name>drawPlots</name></member>
+    <member refid="class_monitor_window_1abb358daca8435681df006590a3024624" kind="slot"><name>resetbutton</name></member>
+    <member refid="class_monitor_window_1a5effc4c616eaca46212f0e922669b4d2" kind="slot"><name>handleSamples</name></member>
+  </compound>
+  <compound refid="class_neural_net" kind="class"><name>NeuralNet</name>
+    <member refid="class_neural_net_1a0fcc02dadaff06b0228304e3e89e9095" kind="variable"><name>_model</name></member>
+    <member refid="class_neural_net_1a8de1915a65411a91c61923795a6d273d" kind="variable"><name>netInputs</name></member>
+    <member refid="class_neural_net_1a66b1ddd47bc5b393cf184f02517e82d4" kind="function"><name>NeuralNet</name></member>
+    <member refid="class_neural_net_1afd68e306bdf39aaa8c6ef016e4da18a1" kind="function"><name>~NeuralNet</name></member>
+    <member refid="class_neural_net_1a5847c3d58230e3f5df8598a6f8b0bceb" kind="function"><name>predict</name></member>
+    <member refid="class_neural_net_1a7886a708a90f398259221e5a9f9e1a65" kind="function"><name>insertSamples</name></member>
+  </compound>
+  <compound refid="class_q_led" kind="class"><name>QLed</name>
+    <member refid="class_q_led_1a9ff2b0474a59d392a590d4334d554f3f" kind="function"><name>QLed</name></member>
+    <member refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" kind="function"><name>setState</name></member>
+    <member refid="class_q_led_1ad3e464928552b3b6c7b6a1027d1925b1" kind="function"><name>~QLed</name></member>
+  </compound>
+  <compound refid="class_ring_buff" kind="class"><name>RingBuff</name>
+    <member refid="class_ring_buff_1aa444ffb4f62b071b6d39463a49bc61e2" kind="variable"><name>bufSize</name></member>
+    <member refid="class_ring_buff_1a94cbd2f64a3f104e4adb0a29c1b1a69c" kind="variable"><name>buffer</name></member>
+    <member refid="class_ring_buff_1aa3ec9ff344c601770ecaa216bde36b5d" kind="variable"><name>elementPtr</name></member>
+    <member refid="class_ring_buff_1a947ed6099f2a84c02840749132ae943d" kind="function"><name>RingBuff</name></member>
+    <member refid="class_ring_buff_1a1dfc4ebc8401c49cea0452a679473c74" kind="function"><name>~RingBuff</name></member>
+    <member refid="class_ring_buff_1a0074a4b03a04b9b245545c6224dc2f9b" kind="function"><name>insertSample</name></member>
+    <member refid="class_ring_buff_1a60a7bd9404d60d4f12b4832ad8c149e6" kind="function"><name>resetBuffer</name></member>
+    <member refid="class_ring_buff_1a2e8b87cab47fba276b539f27953527cc" kind="function"><name>getBuffAddress</name></member>
+    <member refid="class_ring_buff_1ae663d7b920cff4225d19b7b53c37901a" kind="function"><name>getBuffLen</name></member>
+    <member refid="class_ring_buff_1aaa58b11867eb027f840bf3479f5eee8c" kind="function"><name>getElementPtr</name></member>
+    <member refid="class_ring_buff_1a2690243a3abb7a5c2a5b9c45c0b3e6d0" kind="function"><name>readBuffer</name></member>
+  </compound>
+  <compound refid="class_sample_timer" kind="class"><name>SampleTimer</name>
+    <member refid="class_sample_timer_1a0d542e70862cbe8d334dcc9e6078467f" kind="variable"><name>mtx</name></member>
+    <member refid="class_sample_timer_1aabdada00833e1b4c9174eeec100fc291" kind="variable"><name>motionSensor</name></member>
+    <member refid="class_sample_timer_1ae149758a165b26a99a759de0936ce97d" kind="variable"><name>flexFingers</name></member>
+    <member refid="class_sample_timer_1a5d89018646d2b57446ac016e08b4b9eb" kind="variable"><name>flexThumb</name></member>
+    <member refid="class_sample_timer_1a752cebe286db338ba440607938dea067" kind="variable"><name>sensorValues</name></member>
+    <member refid="class_sample_timer_1a64e770c1941ded68bec40c5a24d43b19" kind="function"><name>readFromSensors</name></member>
+    <member refid="class_sample_timer_1a9a588688d79ddf9b4a72bfca79283924" kind="function"><name>SampleTimer</name></member>
+    <member refid="class_sample_timer_1a02c53338803f835c3cb0c9071b8cf406" kind="function"><name>~SampleTimer</name></member>
+    <member refid="class_sample_timer_1aeb8b390f578e49bf74cc93bd901d29ae" kind="function"><name>timerEvent</name></member>
+    <member refid="class_sample_timer_1a62ef0731bffe1dea3b0a5c0584b2d4c5" kind="function"><name>getSensorValues</name></member>
+    <member refid="class_sample_timer_1a92a78d3dcbf7fb9e7086ea2c00d8b7c8" kind="signal"><name>timeoutsignal</name></member>
+  </compound>
+  <compound refid="class_ticker" kind="class"><name>Ticker</name>
+    <member refid="class_ticker_1ad8f13d067d028448dc8f6fa3dcab532c" kind="function"><name>timerEvent</name></member>
+  </compound>
+  <compound refid="class_timer" kind="class"><name>Timer</name>
+    <member refid="class_timer_1a76d40cc2816da1521102b34427635e3e" kind="function"><name>timerEvent</name></member>
+  </compound>
+  <compound refid="class_train_net" kind="class"><name>TrainNet</name>
+    <member refid="class_train_net_1ac864ec4ac65529cfcaba64a2360ce595" kind="function"><name>TrainNet</name></member>
+  </compound>
+  <compound refid="class_train_window" kind="class"><name>TrainWindow</name>
+    <member refid="class_train_window_1a9b3b0b3b051577a914171f34ff1d091f" kind="variable"><name>gesture_count</name></member>
+    <member refid="class_train_window_1af493f6dac5779a7f4ca417e46b3857ec" kind="variable"><name>wordInput</name></member>
+    <member refid="class_train_window_1a67689bed14d31159d7980f3aa50782c9" kind="variable"><name>inputLabel</name></member>
+    <member refid="class_train_window_1a29771cbd5f4dd8ea819d7bcda0564699" kind="variable"><name>statusText</name></member>
+    <member refid="class_train_window_1ae4217046292af998d1c746bfeb1a5e2d" kind="variable"><name>timerText</name></member>
+    <member refid="class_train_window_1a0c29d679ab30618205fc2fd41e7ec0e3" kind="variable"><name>wordTrain</name></member>
+    <member refid="class_train_window_1aa7c509fb02bd36c851d0399632fc1f9b" kind="variable"><name>nettrainButton</name></member>
+    <member refid="class_train_window_1afb00204db5fe54bc939a9aa761dfa12b" kind="variable"><name>homeButton</name></member>
+    <member refid="class_train_window_1a24207b851e8fadc4a6e86094bed20ab8" kind="variable"><name>led</name></member>
+    <member refid="class_train_window_1ac91bcd3dce8877b57fd315c68f5e9a2d" kind="variable"><name>inputGroup</name></member>
+    <member refid="class_train_window_1a784645b4b0cb86966297faf33ef1dd95" kind="variable"><name>trainGroup</name></member>
+    <member refid="class_train_window_1a28fd0bc48bc7d2f630d5babd7226459d" kind="variable"><name>netGroup</name></member>
+    <member refid="class_train_window_1acbdeaf3a57e2ce7c5b67a32763119fdf" kind="variable"><name>movementList</name></member>
+    <member refid="class_train_window_1adba4cedd97c9927343883dbaca972f22" kind="variable"><name>mainLayout</name></member>
+    <member refid="class_train_window_1ae6acd3a6da2a532e65174512048a539f" kind="variable"><name>homeLayout</name></member>
+    <member refid="class_train_window_1a65444f2c11767d83dd5228539142778a" kind="variable"><name>lightBox</name></member>
+    <member refid="class_train_window_1a29dd1a782eb748a4ec5fe30b926c065f" kind="variable"><name>inputLayout</name></member>
+    <member refid="class_train_window_1a6db70bf087ef2448ad0e1793077b6390" kind="variable"><name>trainLayout</name></member>
+    <member refid="class_train_window_1a689d4caf2892cccbb7678918b07b1259" kind="variable"><name>ledLayout</name></member>
+    <member refid="class_train_window_1a3eee763d0c3a69eea7591bf37b9f9939" kind="variable"><name>timer</name></member>
+    <member refid="class_train_window_1ad1f9aa799eda833c113b0d69de46e197" kind="variable"><name>files</name></member>
+    <member refid="class_train_window_1ac17ab662f5906dd6fc940a0ae500467b" kind="variable"><name>currentState</name></member>
+    <member refid="class_train_window_1a31001357f600b4fba56c237d959ea030" kind="variable"><name>temp</name></member>
+    <member refid="class_train_window_1adaae19b2144247a0a421c5a5bca3ae48" kind="variable"><name>sampleCount</name></member>
+    <member refid="class_train_window_1a28b376d89e6ad5ab911e17e9c15e0995" kind="variable"><name>sensorDataptr</name></member>
+    <member refid="class_train_window_1ad9e8ca40fe4da69290f4159b9a72b846" kind="variable"><name>myfile</name></member>
+    <member refid="class_train_window_1a9d3b493d9264b763fe1715b539507b7a" kind="variable"><name>filename</name></member>
+    <member refid="class_train_window_1a2177d1eeac0b36612d944b7fb21b241e" kind="variable"><name>movementData</name></member>
+    <member refid="class_train_window_1a67a932ea98e16f96223f91845924ff54" kind="function"><name>trainingDataLoop</name></member>
+    <member refid="class_train_window_1a109a176bfbe5a423aad9005ca3ab4ebc" kind="function"><name>saveMovement</name></member>
+    <member refid="class_train_window_1a38c4279089ffe00a125bc6d53abbb682" kind="function"><name>TrainWindow</name></member>
+    <member refid="class_train_window_1aa74198b3627a7be602ccb2569f5ccf47" kind="function"><name>~TrainWindow</name></member>
+    <member refid="class_train_window_1a3b35a7cb98236f51a089e998b3d21770" kind="function"><name>handle_samples</name></member>
+    <member refid="class_train_window_1a47fec3efdd9a0da36032a45914ded39b" kind="slot"><name>startNeuralNet</name></member>
+    <member refid="class_train_window_1a3ac1003b67f10110bd18174087194ad3" kind="slot"><name>data_aq_state_machine</name></member>
+    <member refid="class_train_window_1ae93a5e77d3d2196bf96d574072993394" kind="slot"><name>closeWindow</name></member>
+    <member refid="class_train_window_1a9a84bcae91eac1f4597291143c30b280" kind="signal"><name>startSampling_sig</name></member>
+    <member refid="class_train_window_1a5f677ae82a80691a899134bd719db1b1" kind="signal"><name>stopSampling_sig</name></member>
+  </compound>
+  <compound refid="namespaceattempt1" kind="namespace"><name>attempt1</name>
+    <member refid="namespaceattempt1_1ac987ffe9fbcad6f4827da2e70d6be31f" kind="variable"><name>df1</name></member>
+    <member refid="namespaceattempt1_1ae68a8f0aafb1c34ac31ba27741fe8a86" kind="variable"><name>data1</name></member>
+    <member refid="namespaceattempt1_1a5d26d562c132123e902e42986ffa3cc6" kind="variable"><name>temp</name></member>
+    <member refid="namespaceattempt1_1ae24a853f8acf349663fa5fa61d6aa446" kind="variable"><name>df2</name></member>
+    <member refid="namespaceattempt1_1af47f22874523bec9920133a512ba330e" kind="variable"><name>data2</name></member>
+    <member refid="namespaceattempt1_1a8f8ed1b6b6d37bd0d37813c0cb5cbd32" kind="variable"><name>df3</name></member>
+    <member refid="namespaceattempt1_1ad530e447cfc0ae005c66870075642a29" kind="variable"><name>data3</name></member>
+    <member refid="namespaceattempt1_1a340769700edac4df748aeeb891ab6b47" kind="variable"><name>df4</name></member>
+    <member refid="namespaceattempt1_1a16abfd4fc68e78fc24128b4286734ec6" kind="variable"><name>data4</name></member>
+    <member refid="namespaceattempt1_1a94c47060d510d76e0269ad7d5e8873d2" kind="variable"><name>data5</name></member>
+    <member refid="namespaceattempt1_1a7f890463a1dcdf83dcb7056f3ff381f6" kind="variable"><name>data6</name></member>
+    <member refid="namespaceattempt1_1ad9383799d7ca9211cf8584fd0251846e" kind="variable"><name>training_data</name></member>
+    <member refid="namespaceattempt1_1a56ff3423c0f32dda1145c386ad8af251" kind="variable"><name>training_labels</name></member>
+    <member refid="namespaceattempt1_1ad3ecdd9ef1003f442f9ae4a7166ff54d" kind="variable"><name>model</name></member>
+    <member refid="namespaceattempt1_1a3fb2a517c56fff4e5944a2db24b59cac" kind="variable"><name>optimizer</name></member>
+    <member refid="namespaceattempt1_1a72702d4da9ff6e8430c8c4386a9952db" kind="variable"><name>loss</name></member>
+    <member refid="namespaceattempt1_1a88e21a64e3c625c5877c2fa707528050" kind="variable"><name>metrics</name></member>
+    <member refid="namespaceattempt1_1a7369af2701767423e7bd7a817af61c6a" kind="variable"><name>epochs</name></member>
+    <member refid="namespaceattempt1_1a227a5e71feb6649041f9c58da3944995" kind="variable"><name>batch_size</name></member>
+    <member refid="namespaceattempt1_1acbbfa1843b536dc3f62108beaddaff09" kind="variable"><name>df5</name></member>
+    <member refid="namespaceattempt1_1a041f1eb97ba888e532d0b8ac3596b2f9" kind="variable"><name>predict_data</name></member>
+    <member refid="namespaceattempt1_1aacfadd5941a15fa339acff1364bab7ca" kind="variable"><name>include_optimizer</name></member>
+    <member refid="namespaceattempt1_1aa7c65aa6ad580fe38b6ad850cc1f3ea0" kind="variable"><name>predictions</name></member>
+  </compound>
+  <compound refid="namespacecreatesines" kind="namespace"><name>createsines</name>
+    <member refid="namespacecreatesines_1a81f9c9d4665e4c02dbbc7228bb0f0c83" kind="variable"><name>fs</name></member>
+    <member refid="namespacecreatesines_1a0abc310e26cca360b199f33679d047b7" kind="variable"><name>t</name></member>
+    <member refid="namespacecreatesines_1a2fb2853971bafed636e0149fab0018e0" kind="variable"><name>samples</name></member>
+    <member refid="namespacecreatesines_1a8477e86d34388cffabe6aec83f9ca2d8" kind="variable"><name>out</name></member>
+    <member refid="namespacecreatesines_1ac7337cec3a25d030904168ebbef7db5b" kind="function"><name>wave</name></member>
+  </compound>
+  <compound refid="namespacemodel" kind="namespace"><name>model</name>
+    <member refid="namespacemodel_1aec7f6990dc1028c8b46249ea8b1dc0ef" kind="variable"><name>train_images</name></member>
+    <member refid="namespacemodel_1a2f5c3e7553cf97b074eb5c2e6d08f1f7" kind="variable"><name>train_labels</name></member>
+    <member refid="namespacemodel_1a35ba16d78d67d22ccf3daa8fec6f5510" kind="variable"><name>test_images</name></member>
+    <member refid="namespacemodel_1a2b89d7653db85cca9451b204ceeaf95a" kind="variable"><name>test_labels</name></member>
+    <member refid="namespacemodel_1a6b818d9c9b87a426af94bca26557cdbf" kind="variable"><name>model</name></member>
+    <member refid="namespacemodel_1ab90d52c49af7eb73afb02e36a60b42bf" kind="variable"><name>optimizer</name></member>
+    <member refid="namespacemodel_1a7130251ef25baeba82d82f90c404c1a0" kind="variable"><name>loss</name></member>
+    <member refid="namespacemodel_1a90a3cddfd0f2e022a9ae91ce22ecb4ab" kind="variable"><name>metrics</name></member>
+    <member refid="namespacemodel_1a91f095411a173a98e6faf13d9979da37" kind="variable"><name>epochs</name></member>
+    <member refid="namespacemodel_1a770f95f65ed1e39e7c8edfb93ab76390" kind="variable"><name>batch_size</name></member>
+    <member refid="namespacemodel_1ab0d140afe5408f3dc50f96bfb9a0e25d" kind="variable"><name>predictions</name></member>
+  </compound>
+  <compound refid="namespaceneural_net" kind="namespace"><name>neuralNet</name>
+    <member refid="namespaceneural_net_1ae7a97e407478d66944242507a3acdeaa" kind="variable"><name>training_data</name></member>
+    <member refid="namespaceneural_net_1a15081ae6f8a28618f92123c6d9f7db94" kind="variable"><name>training_labels</name></member>
+    <member refid="namespaceneural_net_1a2094cfee9ae84db76df9c0bf5a4c98fb" kind="variable"><name>net_output_map</name></member>
+    <member refid="namespaceneural_net_1a8ea57b14a0cc6fc9c85af6c47e0acbab" kind="variable"><name>filename</name></member>
+    <member refid="namespaceneural_net_1a5e79f78458febef5d7b6c67653668dc3" kind="variable"><name>csv_file</name></member>
+    <member refid="namespaceneural_net_1a0a5495581094cf2010535e247a1ff50b" kind="variable"><name>csv_data</name></member>
+    <member refid="namespaceneural_net_1aeb2fce31088901853b27a3220d6d31d3" kind="variable"><name>temp</name></member>
+    <member refid="namespaceneural_net_1a7c8a173dd4ce7f904cd0e970b7a52510" kind="variable"><name>label</name></member>
+    <member refid="namespaceneural_net_1a54183e3964c5f31770e5d3278f44586d" kind="variable"><name>model</name></member>
+    <member refid="namespaceneural_net_1ab4b4615d268bce64f061b9a34be29484" kind="variable"><name>optimizer</name></member>
+    <member refid="namespaceneural_net_1a508b45cb8f1199cd35bce0a5927dff1c" kind="variable"><name>loss</name></member>
+    <member refid="namespaceneural_net_1acf123fed89e8767b80de2fb6e86330d0" kind="variable"><name>metrics</name></member>
+    <member refid="namespaceneural_net_1a50b77809cfbe26521e90af1431d9464f" kind="variable"><name>epochs</name></member>
+    <member refid="namespaceneural_net_1ab7970914cb5fa26632d45310d5d05059" kind="variable"><name>batch_size</name></member>
+    <member refid="namespaceneural_net_1ae079b848cf02a89fdd3d0fdba02f6b7b" kind="variable"><name>include_optimizer</name></member>
+    <member refid="namespaceneural_net_1afa2b3b9bc7579fa5687436031f9ff67f" kind="variable"><name>file1</name></member>
+    <member refid="namespaceneural_net_1ab3674337e34c94ed1ee6234dc4300b4b" kind="variable"><name>df5</name></member>
+    <member refid="namespaceneural_net_1ac5af0e0a420f7d686e1548a49ac6884c" kind="variable"><name>predict_data</name></member>
+    <member refid="namespaceneural_net_1a86b84d5b03a4d887980632c9873ae520" kind="variable"><name>predictions</name></member>
+  </compound>
+  <compound refid="namespaceplotfilter" kind="namespace"><name>plotfilter</name>
+    <member refid="namespaceplotfilter_1a03f2bc93d269885b2b62fcfc4be986d8" kind="variable"><name>filtered</name></member>
+    <member refid="namespaceplotfilter_1ac2377d502933142fd25f9db1e7dd2038" kind="variable"><name>dtype</name></member>
+    <member refid="namespaceplotfilter_1ae95257774854536afeb3dd69a1f4e975" kind="variable"><name>impulse</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_filter_bank_8cpp" kind="file"><name>FilterBank.cpp</name>
+  </compound>
+  <compound refid="_filter_bank_8h" kind="file"><name>FilterBank.h</name>
+  </compound>
+  <compound refid="_c_make_c_compiler_id_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="_c_make_c_compiler_id_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_make_c_x_x_compiler_id_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" kind="define"><name>CXX_STD</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="feature__tests_8c" kind="file"><name>feature_tests.c</name>
+    <member refid="feature__tests_8c_1a1582568e32f689337602a16bf8a5bff0" kind="variable"><name>features</name></member>
+    <member refid="feature__tests_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="feature__tests_8cxx" kind="file"><name>feature_tests.cxx</name>
+    <member refid="feature__tests_8cxx_1a1582568e32f689337602a16bf8a5bff0" kind="variable"><name>features</name></member>
+    <member refid="feature__tests_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_s_vreader_8cpp" kind="file"><name>CSVreader.cpp</name>
+  </compound>
+  <compound refid="_c_s_vreader_8h" kind="file"><name>CSVreader.h</name>
+  </compound>
+  <compound refid="neuralnet__predict_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="neuralnet__predict_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="python_training_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="python_training_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_qt_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="_qt_2main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_neural_net_8cpp" kind="file"><name>NeuralNet.cpp</name>
+  </compound>
+  <compound refid="_neural_net_8h" kind="file"><name>NeuralNet.h</name>
+    <member refid="_neural_net_8h_1a00ad6a3a94ffdd1bc6b55e789f9dfda9" kind="define"><name>NUMBER_OF_ROWS</name></member>
+    <member refid="_neural_net_8h_1a0240364487a54a70da4ffb51459ada98" kind="define"><name>NUMBER_OF_COLUMNS</name></member>
+  </compound>
+  <compound refid="code_2neuralnet__predict_2_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="code_2python_training_2_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="attempt1_8py" kind="file"><name>attempt1.py</name>
+  </compound>
+  <compound refid="model_8py" kind="file"><name>model.py</name>
+  </compound>
+  <compound refid="train_net_8hpp" kind="file"><name>trainNet.hpp</name>
+    <member refid="train_net_8hpp_1a8de29f7c8bbf1a81cc6e71ac602032d3" kind="define"><name>FILENAME</name></member>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_1a4b76a0c2859cfd819a343a780070ee2b" kind="define"><name>SAMPLE_RATE</name></member>
+    <member refid="config_8h_1a9dbac9b6d0cfcac1e3070b1c81c0c8a0" kind="define"><name>SAMPLE_TIME_SECONDS</name></member>
+    <member refid="config_8h_1a15dda0e84869655d2b16ff1b2c3c6d5b" kind="define"><name>NUMBER_OF_BUFFER_ELEMENTS</name></member>
+  </compound>
+  <compound refid="_interpret_window_8cpp" kind="file"><name>InterpretWindow.cpp</name>
+  </compound>
+  <compound refid="_interpret_window_8h" kind="file"><name>InterpretWindow.h</name>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+    <member refid="mainwindow_8h_1ad557ebb485c649939aba76bc5872fea7" kind="define"><name>DATA_SAMPLE_INTERVAL</name></member>
+    <member refid="mainwindow_8h_1ab17f37d0201e908d801abd754b3da58e" kind="define"><name>NUMBER_OF_FILTERS</name></member>
+    <member refid="mainwindow_8h_1a7d5429b16245ce4bd409c3f34bf0c3d9" kind="define"><name>ORDER_OF_FILTERS</name></member>
+    <member refid="mainwindow_8h_1ad55661e5f9609e2daf717a5cac566320" kind="define"><name>MONITOR_REFRESH_RATE</name></member>
+    <member refid="mainwindow_8h_1aaf8216d4adaed8b173d40fe64e52d11b" kind="define"><name>NUMBER_OF_PLOT_SAMPLES</name></member>
+    <member refid="mainwindow_8h_1a013ac9311fb70daf016d70e1cc00c5ed" kind="define"><name>PLOT_BUFFER_SIZE</name></member>
+  </compound>
+  <compound refid="_monitor_window_8cpp" kind="file"><name>MonitorWindow.cpp</name>
+  </compound>
+  <compound refid="_monitor_window_8h" kind="file"><name>MonitorWindow.h</name>
+  </compound>
+  <compound refid="neural_net_8py" kind="file"><name>neuralNet.py</name>
+  </compound>
+  <compound refid="_q_led_8h" kind="file"><name>QLed.h</name>
+  </compound>
+  <compound refid="_sample_timer_8cpp" kind="file"><name>SampleTimer.cpp</name>
+  </compound>
+  <compound refid="_sample_timer_8h" kind="file"><name>SampleTimer.h</name>
+    <member refid="_sample_timer_8h_1aa8f8564a6944121058f4c4278894ead1" kind="define"><name>NUMBER_OF_SENSORS</name></member>
+    <member refid="_sample_timer_8h_1a9d33ce0b80020007ba5277b9427fd003" kind="define"><name>MPU6050_I2C_ADDRESS</name></member>
+    <member refid="_sample_timer_8h_1a6456c13b8d7bebacf0dbfdf7934ced1f" kind="define"><name>MCP3428_I2C_ADDRESS</name></member>
+    <member refid="_sample_timer_8h_1a0211acdeea921fb313fc5836ed6e2145" kind="define"><name>MCP3421_I2C_ADDRESS</name></member>
+  </compound>
+  <compound refid="_train_window_8cpp" kind="file"><name>TrainWindow.cpp</name>
+  </compound>
+  <compound refid="_train_window_8h" kind="file"><name>TrainWindow.h</name>
+    <member refid="_train_window_8h_1ae7e21fec441ccd6e563cb94a90452c1d" kind="define"><name>NUMBER_OF_REPETITIONS</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26" kind="enum"><name>trainingState_t</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a1844f314039d713261df43a309145446" kind="enumvalue"><name>STATE_START</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aa19741600eceb7a20a766a4ab0155ed4" kind="enumvalue"><name>STATE_COUNTDOWN_3</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a18e11bcf658cd2d0a7edb4471528596e" kind="enumvalue"><name>STATE_COUNTDOWN_2</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26ae654bbe2b66bf505738e78fa89fa8f81" kind="enumvalue"><name>STATE_COUNTDOWN_1</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a8880fceccf85d9d435b8e25236069ef7" kind="enumvalue"><name>STATE_GO</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26aacbe6cbcad841c9cfd0cbf67bd0784d2" kind="enumvalue"><name>STATE_STOP</name></member>
+    <member refid="_train_window_8h_1a70ea54f87b6ab435fbf4166ff83c6e26a5e09161e3e14f41b526727f69a2e4148" kind="enumvalue"><name>STATE_FINISHED</name></member>
+    <member refid="_train_window_8h_1a4035705b355143a0b896f42e1a92eed9" kind="typedef"><name>trainingState_t</name></member>
+  </compound>
+  <compound refid="_ring_buff_8cpp" kind="file"><name>RingBuff.cpp</name>
+  </compound>
+  <compound refid="_ring_buff_8h" kind="file"><name>RingBuff.h</name>
+  </compound>
+  <compound refid="sampledata_8cpp" kind="file"><name>sampledata.cpp</name>
+    <member refid="sampledata_8cpp_1ae7e21fec441ccd6e563cb94a90452c1d" kind="define"><name>NUMBER_OF_REPETITIONS</name></member>
+    <member refid="sampledata_8cpp_1a58d0c7ca9b21de6ae87f55ea649157b9" kind="define"><name>SAMPLE_RATE_Hz</name></member>
+    <member refid="sampledata_8cpp_1a9dbac9b6d0cfcac1e3070b1c81c0c8a0" kind="define"><name>SAMPLE_TIME_SECONDS</name></member>
+    <member refid="sampledata_8cpp_1a15dda0e84869655d2b16ff1b2c3c6d5b" kind="define"><name>NUMBER_OF_BUFFER_ELEMENTS</name></member>
+    <member refid="sampledata_8cpp_1a42b6b9ffb678c8cb0577c99e7a5a40c3" kind="define"><name>ONE_NANO_SECOND</name></member>
+    <member refid="sampledata_8cpp_1a9d33ce0b80020007ba5277b9427fd003" kind="define"><name>MPU6050_I2C_ADDRESS</name></member>
+    <member refid="sampledata_8cpp_1a6456c13b8d7bebacf0dbfdf7934ced1f" kind="define"><name>MCP3428_I2C_ADDRESS</name></member>
+    <member refid="sampledata_8cpp_1a0211acdeea921fb313fc5836ed6e2145" kind="define"><name>MCP3421_I2C_ADDRESS</name></member>
+    <member refid="sampledata_8cpp_1ab678d4cc931a32dbfcde84c6cda87d89" kind="define"><name>NUMBER_OF_FINGERS</name></member>
+    <member refid="sampledata_8cpp_1ab62a20486901fbd3ea7371ca48d917a8" kind="variable"><name>sample_counter</name></member>
+    <member refid="sampledata_8cpp_1aebedd0a48fe876cce3d3f14326e4ca66" kind="variable"><name>ax</name></member>
+    <member refid="sampledata_8cpp_1a46d26903f1874d06875a974dfa1a9d3c" kind="variable"><name>ay</name></member>
+    <member refid="sampledata_8cpp_1a41e60f9324f9d4fd9e916e964370fb2f" kind="variable"><name>az</name></member>
+    <member refid="sampledata_8cpp_1a4524555b50a829ee7628cf5e5806f227" kind="variable"><name>gx</name></member>
+    <member refid="sampledata_8cpp_1a8bd44b73dc5745833a8dd8d2a6240613" kind="variable"><name>gy</name></member>
+    <member refid="sampledata_8cpp_1aa61e9778c784ec4695029ed2cc769a61" kind="variable"><name>gz</name></member>
+    <member refid="sampledata_8cpp_1a1e23b69cbfb15c0a5587aa3272f9dbac" kind="variable"><name>finger_value</name></member>
+    <member refid="sampledata_8cpp_1ae9dd6ba93ed713dd79a6f61b97c58486" kind="variable"><name>thumb_value</name></member>
+    <member refid="sampledata_8cpp_1a2a0e63f3a7f80821c082ca75f9c8a09c" kind="variable"><name>dataBuffer</name></member>
+    <member refid="sampledata_8cpp_1abeaed26c55101162aeb097d5a2a1468b" kind="function"><name>motionSensor</name></member>
+    <member refid="sampledata_8cpp_1aa32b5e52035231274566aa4cbda948d6" kind="function"><name>flexFingers</name></member>
+    <member refid="sampledata_8cpp_1a62d229031b86e55130e5c0160504de49" kind="function"><name>flexThumb</name></member>
+    <member refid="sampledata_8cpp_1ab644c7e32bd82c73e211f74c032bd315" kind="function"><name>sampleSensors</name></member>
+    <member refid="sampledata_8cpp_1a299ad0f14f85526d4bb7bffebefdc1f0" kind="function"><name>insertDataToBuff</name></member>
+    <member refid="sampledata_8cpp_1a87726c5d201ef29efa9aa57511a2e562" kind="function"><name>countdown</name></member>
+    <member refid="sampledata_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_marketing__strategy_8md" kind="file"><name>Marketing_strategy.md</name>
+  </compound>
+  <compound refid="createsines_8py" kind="file"><name>createsines.py</name>
+  </compound>
+  <compound refid="_filter_bank_test_8cpp" kind="file"><name>FilterBankTest.cpp</name>
+    <member refid="_filter_bank_test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="plotfilter_8py" kind="file"><name>plotfilter.py</name>
+  </compound>
+  <compound refid="_ring_buff_test_8cpp" kind="file"><name>RingBuffTest.cpp</name>
+    <member refid="_ring_buff_test_8cpp_1ad32668a8d7bc8d97892af5dcda5c2347" kind="function"><name>print_buff</name></member>
+    <member refid="_ring_buff_test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md_code_neuralnet_predict__r_e_a_d_m_e" kind="page"><name>md_code_neuralnet_predict_README</name>
+  </compound>
+  <compound refid="md_code_python_training__r_e_a_d_m_e" kind="page"><name>md_code_pythonTraining_README</name>
+  </compound>
+  <compound refid="md_project_planning__marketing_strategy" kind="page"><name>md_project_planning_Marketing_strategy</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_8fda05fab4039694f7a8aad90be26776" kind="dir"><name>code/neuralnet_predict/CMakeFiles/3.10.2</name>
+  </compound>
+  <compound refid="dir_b0714d89f0428038d6fed14ef0766e14" kind="dir"><name>code/neuralnet_predict/CMakeFiles</name>
+  </compound>
+  <compound refid="dir_050edd66366d13764f98250ef6db77f6" kind="dir"><name>code</name>
+  </compound>
+  <compound refid="dir_492001065f3e082759cd445b40fb468d" kind="dir"><name>code/neuralnet_predict/CMakeFiles/3.10.2/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_5c3857031b6809103ae3a36e94511098" kind="dir"><name>code/neuralnet_predict/CMakeFiles/3.10.2/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_af44102312650f84b9954b0d1e54ecca" kind="dir"><name>code/neuralnet_predict</name>
+  </compound>
+  <compound refid="dir_24114c4889d9413e35276fbc3e301c54" kind="dir"><name>project_planning</name>
+  </compound>
+  <compound refid="dir_370628634cbf8843f4a6faa285b66f9b" kind="dir"><name>code/pythonTraining</name>
+  </compound>
+  <compound refid="dir_a938007a2d12d32793990e9e791b7794" kind="dir"><name>code/Qt</name>
+  </compound>
+  <compound refid="dir_40fae8e1a8c215df42338d81a5ade107" kind="dir"><name>testfiles</name>
+  </compound>
+</doxygenindex>

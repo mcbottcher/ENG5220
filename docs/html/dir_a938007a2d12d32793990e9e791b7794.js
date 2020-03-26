@@ -1,15 +1,24 @@
 var dir_a938007a2d12d32793990e9e791b7794 =
 [
-    [ "InterpretWindow.cpp", "_interpret_window_8cpp_source.html", null ],
-    [ "InterpretWindow.h", "_interpret_window_8h_source.html", null ],
-    [ "main.cpp", "_qt_2main_8cpp_source.html", null ],
-    [ "mainwindow.cpp", "mainwindow_8cpp_source.html", null ],
-    [ "mainwindow.h", "mainwindow_8h_source.html", null ],
-    [ "MonitorWindow.cpp", "_monitor_window_8cpp_source.html", null ],
-    [ "MonitorWindow.h", "_monitor_window_8h_source.html", null ],
-    [ "QLed.h", "_q_led_8h_source.html", null ],
-    [ "SampleTimer.cpp", "_sample_timer_8cpp_source.html", null ],
-    [ "SampleTimer.h", "_sample_timer_8h_source.html", null ],
-    [ "TrainWindow.cpp", "_train_window_8cpp_source.html", null ],
-    [ "TrainWindow.h", "_train_window_8h_source.html", null ]
+    [ "config.h", "config_8h.html", "config_8h" ],
+    [ "InterpretWindow.cpp", "_interpret_window_8cpp.html", null ],
+    [ "InterpretWindow.h", "_interpret_window_8h.html", [
+      [ "InterpretWindow", "class_interpret_window.html", "class_interpret_window" ]
+    ] ],
+    [ "main.cpp", "_qt_2main_8cpp.html", "_qt_2main_8cpp" ],
+    [ "mainwindow.cpp", "mainwindow_8cpp.html", null ],
+    [ "mainwindow.h", "mainwindow_8h.html", "mainwindow_8h" ],
+    [ "MonitorWindow.cpp", "_monitor_window_8cpp.html", null ],
+    [ "MonitorWindow.h", "_monitor_window_8h.html", [
+      [ "MonitorWindow", "class_monitor_window.html", "class_monitor_window" ],
+      [ "Curve", "struct_monitor_window_1_1_curve.html", "struct_monitor_window_1_1_curve" ]
+    ] ],
+    [ "neuralNet.py", "neural_net_8py.html", "neural_net_8py" ],
+    [ "QLed.h", "_q_led_8h.html", [
+      [ "QLed", "class_q_led.html", "class_q_led" ]
+    ] ],
+    [ "SampleTimer.cpp", "_sample_timer_8cpp.html", null ],
+    [ "SampleTimer.h", "_sample_timer_8h.html", "_sample_timer_8h" ],
+    [ "TrainWindow.cpp", "_train_window_8cpp.html", null ],
+    [ "TrainWindow.h", "_train_window_8h.html", "_train_window_8h" ]
 ];

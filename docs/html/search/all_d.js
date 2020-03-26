@@ -1,8 +1,22 @@
 var searchData=
 [
-  ['testconnection',['testConnection',['../class_m_p_u6050.html#a95ffab7b44fce3834236e0813687d11a',1,'MPU6050']]],
-  ['timeoutsignal',['timeoutsignal',['../class_sample_timer.html#a92a78d3dcbf7fb9e7086ea2c00d8b7c8',1,'SampleTimer']]],
-  ['timerevent',['timerEvent',['../class_cpp_timer.html#ac2665403595b6aee5f581d0ebfeb886c',1,'CppTimer::timerEvent()'],['../class_cpp_timer_callback.html#af6b39f5eb8e98bfc1b301ac3f25276e9',1,'CppTimerCallback::timerEvent()'],['../class_demo_timer1.html#a2e9fe735ff1660ab322b11831970f44a',1,'DemoTimer1::timerEvent()'],['../class_demo_timer2.html#a8e5183f647e8f8c1cdebbfdf4c46b206',1,'DemoTimer2::timerEvent()'],['../class_sample_timer.html#aeb8b390f578e49bf74cc93bd901d29ae',1,'SampleTimer::timerEvent()']]],
-  ['trainnet',['TrainNet',['../class_train_net.html',1,'']]],
-  ['trainwindow',['TrainWindow',['../class_train_window.html',1,'']]]
+  ['name',['name',['../struct_monitor_window_1_1_curve.html#a8ac5d7ab30877a1643f18b7e1c95cbd0',1,'MonitorWindow::Curve']]],
+  ['net_5foutput_5fmap',['net_output_map',['../namespaceneural_net.html#a2094cfee9ae84db76df9c0bf5a4c98fb',1,'neuralNet']]],
+  ['netgroup',['netGroup',['../class_train_window.html#a28fd0bc48bc7d2f630d5babd7226459d',1,'TrainWindow']]],
+  ['netinputs',['netInputs',['../class_neural_net.html#a8de1915a65411a91c61923795a6d273d',1,'NeuralNet']]],
+  ['nettrainbutton',['nettrainButton',['../class_train_window.html#aa7c509fb02bd36c851d0399632fc1f9b',1,'TrainWindow']]],
+  ['neuralnet',['NeuralNet',['../class_neural_net.html',1,'NeuralNet'],['../namespaceneural_net.html',1,'neuralNet'],['../class_neural_net.html#a66b1ddd47bc5b393cf184f02517e82d4',1,'NeuralNet::NeuralNet()']]],
+  ['neuralnet_2ecpp',['NeuralNet.cpp',['../_neural_net_8cpp.html',1,'']]],
+  ['neuralnet_2eh',['NeuralNet.h',['../_neural_net_8h.html',1,'']]],
+  ['neuralnet_2epy',['neuralNet.py',['../neural_net_8py.html',1,'']]],
+  ['newdataevent',['newDataEvent',['../class_main_window.html#ac753b09079c4652b29c6e96e1f055d5b',1,'MainWindow']]],
+  ['number_5fof_5fbuffer_5felements',['NUMBER_OF_BUFFER_ELEMENTS',['../config_8h.html#a15dda0e84869655d2b16ff1b2c3c6d5b',1,'NUMBER_OF_BUFFER_ELEMENTS():&#160;config.h'],['../sampledata_8cpp.html#a15dda0e84869655d2b16ff1b2c3c6d5b',1,'NUMBER_OF_BUFFER_ELEMENTS():&#160;sampledata.cpp']]],
+  ['number_5fof_5fcolumns',['NUMBER_OF_COLUMNS',['../_neural_net_8h.html#a0240364487a54a70da4ffb51459ada98',1,'NeuralNet.h']]],
+  ['number_5fof_5ffilters',['NUMBER_OF_FILTERS',['../mainwindow_8h.html#ab17f37d0201e908d801abd754b3da58e',1,'mainwindow.h']]],
+  ['number_5fof_5ffingers',['NUMBER_OF_FINGERS',['../sampledata_8cpp.html#ab678d4cc931a32dbfcde84c6cda87d89',1,'sampledata.cpp']]],
+  ['number_5fof_5fplot_5fsamples',['NUMBER_OF_PLOT_SAMPLES',['../mainwindow_8h.html#aaf8216d4adaed8b173d40fe64e52d11b',1,'mainwindow.h']]],
+  ['number_5fof_5frepetitions',['NUMBER_OF_REPETITIONS',['../_train_window_8h.html#ae7e21fec441ccd6e563cb94a90452c1d',1,'NUMBER_OF_REPETITIONS():&#160;TrainWindow.h'],['../sampledata_8cpp.html#ae7e21fec441ccd6e563cb94a90452c1d',1,'NUMBER_OF_REPETITIONS():&#160;sampledata.cpp']]],
+  ['number_5fof_5frows',['NUMBER_OF_ROWS',['../_neural_net_8h.html#a00ad6a3a94ffdd1bc6b55e789f9dfda9',1,'NeuralNet.h']]],
+  ['number_5fof_5fsensors',['NUMBER_OF_SENSORS',['../_sample_timer_8h.html#aa8f8564a6944121058f4c4278894ead1',1,'SampleTimer.h']]],
+  ['numberoffilters',['numberOfFilters',['../class_filter_bank.html#a7632671c2bea2b20ce5d47963e4250ae',1,'FilterBank']]]
 ];

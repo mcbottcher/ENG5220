@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includedby refid="_train_window_8h" local="yes">code/Qt/TrainWindow.h</includedby>
+    <includedby refid="mainwindow_8h" local="yes">code/Qt/mainwindow.h</includedby>
+    <invincdepgraph>
+      <node id="130">
+        <label>code/Qt/TrainWindow.h</label>
+        <link refid="_train_window_8h"/>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>code/Qt/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>code/Qt/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="134">
+        <label>code/Qt/TrainWindow.cpp</label>
+        <link refid="_train_window_8cpp"/>
+      </node>
+      <node id="131">
+        <label>code/Qt/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>code/Qt/main.cpp</label>
+        <link refid="_qt_2main_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1a4b76a0c2859cfd819a343a780070ee2b" prot="public" static="no">
+        <name>SAMPLE_RATE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/config.h" line="1" column="9" bodyfile="code/Qt/config.h" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9dbac9b6d0cfcac1e3070b1c81c0c8a0" prot="public" static="no">
+        <name>SAMPLE_TIME_SECONDS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/config.h" line="2" column="9" bodyfile="code/Qt/config.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a15dda0e84869655d2b16ff1b2c3c6d5b" prot="public" static="no">
+        <name>NUMBER_OF_BUFFER_ELEMENTS</name>
+        <initializer><ref refid="config_8h_1a4b76a0c2859cfd819a343a780070ee2b" kindref="member">SAMPLE_RATE</ref>*<ref refid="sampledata_8cpp_1a9dbac9b6d0cfcac1e3070b1c81c0c8a0" kindref="member">SAMPLE_TIME_SECONDS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/config.h" line="3" column="9" bodyfile="code/Qt/config.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="config_8h_1a4b76a0c2859cfd819a343a780070ee2b" refkind="member"><highlight class="preprocessor">#define<sp/>SAMPLE_RATE<sp/>10<sp/>//in<sp/>Hertz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="config_8h_1a9dbac9b6d0cfcac1e3070b1c81c0c8a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_TIME_SECONDS<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="config_8h_1a15dda0e84869655d2b16ff1b2c3c6d5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_BUFFER_ELEMENTS<sp/>SAMPLE_RATE*SAMPLE_TIME_SECONDS</highlight></codeline>
+    </programlisting>
+    <location file="code/Qt/config.h"/>
+  </compounddef>
+</doxygen>

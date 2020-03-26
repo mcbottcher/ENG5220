@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['writebit',['writeBit',['../class_i2_cdev.html#aa68890af87de5471d32e583ebbd91acb',1,'I2Cdev']]],
-  ['writebits',['writeBits',['../class_i2_cdev.html#a913371251b6a41520c080115650e1b59',1,'I2Cdev']]],
-  ['writebitsw',['writeBitsW',['../class_i2_cdev.html#a8f8652a1328224cce867eed665a45c4d',1,'I2Cdev']]],
-  ['writebitw',['writeBitW',['../class_i2_cdev.html#a1b5fbedfadec5d429c81ee84d27e658d',1,'I2Cdev']]],
-  ['writebyte',['writeByte',['../class_i2_cdev.html#aeb297637ef985cd562da465ba61b7042',1,'I2Cdev']]],
-  ['writebytes',['writeBytes',['../class_i2_cdev.html#aa4e39cac6c0eac5112f9132084bcc93e',1,'I2Cdev']]],
-  ['writeword',['writeWord',['../class_i2_cdev.html#acbe68a802d6a177301736e60bedd1def',1,'I2Cdev']]],
-  ['writewords',['writeWords',['../class_i2_cdev.html#aae37c0526e4b4730a5b2ffd752fd8b21',1,'I2Cdev']]]
+  ['one_5fnano_5fsecond',['ONE_NANO_SECOND',['../sampledata_8cpp.html#a42b6b9ffb678c8cb0577c99e7a5a40c3',1,'sampledata.cpp']]],
+  ['optimizer',['optimizer',['../namespaceattempt1.html#a3fb2a517c56fff4e5944a2db24b59cac',1,'attempt1.optimizer()'],['../namespacemodel.html#ab90d52c49af7eb73afb02e36a60b42bf',1,'model.optimizer()'],['../namespaceneural_net.html#ab4b4615d268bce64f061b9a34be29484',1,'neuralNet.optimizer()']]],
+  ['order_5fof_5ffilters',['ORDER_OF_FILTERS',['../mainwindow_8h.html#a7d5429b16245ce4bd409c3f34bf0c3d9',1,'mainwindow.h']]],
+  ['out',['out',['../namespacecreatesines.html#a8477e86d34388cffabe6aec83f9ca2d8',1,'createsines']]],
+  ['outputarray',['outputArray',['../class_filter_bank.html#adc84ce6490841a630b6634092e9d1613',1,'FilterBank']]]
 ];

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_370628634cbf8843f4a6faa285b66f9b" kind="dir">
+    <compoundname>code/pythonTraining</compoundname>
+    <innerfile refid="attempt1_8py">attempt1.py</innerfile>
+    <innerfile refid="python_training_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="model_8py">model.py</innerfile>
+    <innerfile refid="train_net_8hpp">trainNet.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/pythonTraining/"/>
+  </compounddef>
+</doxygen>

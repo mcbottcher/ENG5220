@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_q_led" kind="class" language="C++" prot="public">
+    <compoundname>QLed</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QFrame</basecompoundref>
+    <includes refid="_q_led_8h" local="no">QLed.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_led_1a9ff2b0474a59d392a590d4334d554f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QLed::QLed</definition>
+        <argsstring>()</argsstring>
+        <name>QLed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/QLed.h" line="13" column="1" bodyfile="code/Qt/QLed.h" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QLed::setState</definition>
+        <argsstring>(const QColor &amp;colour)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>colour</declname>
+        </param>
+        <briefdescription>
+<para>setState method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>method to set the colour of the LED. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>colour argument to change the <ref refid="class_q_led" kindref="compound">QLed</ref> colour (i.e Qt::red, Qt::green). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/QLed.h" line="30" column="1" bodyfile="code/Qt/QLed.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_led_1ad3e464928552b3b6c7b6a1027d1925b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual QLed::~QLed</definition>
+        <argsstring>()</argsstring>
+        <name>~QLed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/Qt/QLed.h" line="35" column="1" bodyfile="code/Qt/QLed.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_q_led" kindref="compound">QLed</ref> Class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to draw small coloured squares that can change colour using the setState method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>QLed</label>
+        <link refid="class_q_led"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>QFrame</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>QLed</label>
+        <link refid="class_q_led"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>QFrame</label>
+      </node>
+    </collaborationgraph>
+    <location file="code/Qt/QLed.h" line="10" column="1" bodyfile="code/Qt/QLed.h" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_q_led_1a9ff2b0474a59d392a590d4334d554f3f" prot="public" virt="non-virtual"><scope>QLed</scope><name>QLed</name></member>
+      <member refid="class_q_led_1a75d8271a4122be12d1b6d8dcdeb0ed5a" prot="public" virt="non-virtual"><scope>QLed</scope><name>setState</name></member>
+      <member refid="class_q_led_1ad3e464928552b3b6c7b6a1027d1925b1" prot="public" virt="virtual"><scope>QLed</scope><name>~QLed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

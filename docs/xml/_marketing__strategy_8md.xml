@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_marketing__strategy_8md" kind="file" language="Markdown">
+    <compoundname>Marketing_strategy.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Marketing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>a<sp/>list<sp/>of<sp/>the<sp/>project<sp/>marketing<sp/>strategy<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Clear<sp/>Readme<sp/>on<sp/>useinstructions.</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>GitHub<sp/>WIKI.</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Presentation<sp/>slides.</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Social<sp/>Media<sp/>platforms.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>Twitter;<sp/>Following<sp/>project<sp/>lifeline</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>Hackaday;<sp/>Showing<sp/>project<sp/>upon<sp/>completion</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>DIY<sp/>kit.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>PCB<sp/>gerbers<sp/>/<sp/>schematic<sp/>PDFs.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>List<sp/>of<sp/>components.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Build<sp/>instructions.</highlight></codeline>
+    </programlisting>
+    <location file="project_planning/Marketing_strategy.md"/>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['cutofffrequency',['cutoffFrequency',['../class_filter.html#a8a11e2fb77cc7ec2c99db82b4a7645e1',1,'Filter']]]
+  ['_5ffilename',['_filename',['../class_c_s_vreader.html#a532424f295b67937b40ccf8cc9bace60',1,'CSVreader']]],
+  ['_5fmodel',['_model',['../class_neural_net.html#a0fcc02dadaff06b0228304e3e89e9095',1,'NeuralNet']]]
 ];
