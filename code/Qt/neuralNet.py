@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import convert_model
 import sys
 import numpy as np
 from keras.models import Sequential
@@ -73,6 +74,9 @@ model.save('keras_model.h5', include_optimizer=False)
 with open('outputMap.json', 'w') as json_file:
     json.dump(net_output_map, json_file)
  
+
+convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
+
 
 df5 = pd.read_csv("verificationData.csv")
 predict_data = df5.to_numpy()
