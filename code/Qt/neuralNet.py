@@ -8,6 +8,8 @@ from keras.utils import to_categorical
 from numpy import genfromtxt
 import pandas as pd
 
+import json
+
 # number of arguments : len(sys.argv)
 # list of strings of arugments: str(sys.argv)
 
@@ -20,8 +22,8 @@ for argument_number in range(1,len(sys.argv)): #first argument is the filename..
     
     filename = str(sys.argv[argument_number])
     
-    if filename not in net_output_map.keys():
-        net_output_map[filename] = (argument_number - 1)
+    if (argument_number - 1) not in net_output_map.keys():
+        net_output_map[(argument_number - 1)] = filename
     
     csv_file = pd.read_csv(filename)
     csv_data = csv_file.to_numpy()
@@ -66,12 +68,11 @@ model.fit(
   batch_size=32,
 )
 
-
 model.save('keras_model.h5', include_optimizer=False)
 
-file1 = open("outputMap.txt","w")
-file1.write(str(net_output_map)) 
-file1.close() 
+with open('outputMap.json', 'w') as json_file:
+    json.dump(net_output_map, json_file)
+ 
 
 df5 = pd.read_csv("verificationData.csv")
 predict_data = df5.to_numpy()
