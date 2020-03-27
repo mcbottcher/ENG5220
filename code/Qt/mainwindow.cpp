@@ -140,11 +140,6 @@ void MainWindow::createFilters(){
 
 void MainWindow::newDataEvent(){
     
-<<<<<<< HEAD
-    // int16_t* allData = cppSampleTimer->getSensorValues();
-=======
-    */
-
     if(interpretWindow->isVisible()){
         
         //insert into neural network...
@@ -152,7 +147,6 @@ void MainWindow::newDataEvent(){
         interpretWindow->handleSamples();
         
     }
->>>>>>> qt_predictions
     
     else if(trainWindow->isVisible()){
         
@@ -162,17 +156,8 @@ void MainWindow::newDataEvent(){
     
     }
 
-<<<<<<< HEAD
-    if (monitorWindow->isVisible()){
-        monitorWindow->handleSamples();
-=======
     else if (monitorWindow->isVisible()){
-        QtConcurrent::run([this]() {
-            monitorWindow->plotAcc(this->sampleacc);
-            monitorWindow->plotGyro(this->samplegyro);
-            monitorWindow->plotFinger(this->samplefinger);
-        });
->>>>>>> qt_predictions
+        monitorWindow->handleSamples();
     }
 }
 
