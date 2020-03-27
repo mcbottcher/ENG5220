@@ -9,7 +9,6 @@ from keras.utils import to_categorical
 from numpy import genfromtxt
 import pandas as pd
 
-import json
 
 # number of arguments : len(sys.argv)
 # list of strings of arugments: str(sys.argv)
@@ -71,9 +70,11 @@ model.fit(
 
 model.save('keras_model.h5', include_optimizer=False)
 
-with open('outputMap.json', 'w') as json_file:
-    json.dump(net_output_map, json_file)
- 
+file1 = open("outputMap.txt","w")
+for key in net_output_map.keys():
+    file1.write(net_output_map[key])
+    file1.write("\n")
+file1.close() 
 
 convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
 
