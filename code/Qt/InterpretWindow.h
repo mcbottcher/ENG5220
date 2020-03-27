@@ -14,7 +14,9 @@
 #include <QDebug>
 
 #include <stdio.h>
+#include <iostream>
 
+#include "../neuralnet_predict/NeuralNet.h"
 
 // class definition 'MonitorWindow'
 class InterpretWindow : public QWidget
@@ -27,18 +29,19 @@ class InterpretWindow : public QWidget
 private:
     int count=0;
 
-    QFont titleFont;
-    QLabel *titleText, *loudspeakerIcon;
+  
+    QLabel *loudspeakerIcon;
 	
-    QPushButton  *homeButton, *wrongButton, *clearButton, *sayButton;
-    QPlainTextEdit *textBox;
+    QPushButton  *homeButton, *clearButton;
+    QPlainTextEdit *predictedWordBox, *outputWeightBox;
 
     QCheckBox    *soundCheckBox;
     
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
-	QHBoxLayout  *titleLayout, *soundLayout, *homeLayout;  // vertical layout
+	QHBoxLayout  *soundLayout, *homeLayout;  // vertical layout
+    QVBoxLayout  *textLayout;
     
     QVBoxLayout  *vPlotLayout;  
     QHBoxLayout  *hPlotLayout;
@@ -49,21 +52,30 @@ private:
 
     QTextToSpeech *speech;
 
+    NeuralNet *predictor;
 
+    void predict();
+    
+    int16_t* sensorValuesPtr;
+
+    int number_of_net_outputs;
+    
+    char** net_output_words;
 
 public:
 
-	InterpretWindow(); // default constructor - called when a Window is declared without arguments
+	InterpretWindow(int16_t* sensorValues); // default constructor - called when a Window is declared without arguments
 	~InterpretWindow();
     void sayWords();
 
 signals:
     void emitClose();
+    //void startSampling_sig();
+    void stopSampling_sig();
 
 public slots:
-    void timerEvent();
     void closeWindow();
-    void wrongButtonClicked();
+    void handleSamples();
     
 
 };

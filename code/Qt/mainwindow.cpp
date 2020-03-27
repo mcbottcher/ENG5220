@@ -107,8 +107,6 @@ void MainWindow::createUI(){
     trainWindow->setWindowTitle("Training Mode");
     //trainWindow->startTimer(1000);
     
-    
-
     connect(trainWindow, &TrainWindow::startSampling_sig,
            this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
     
@@ -142,9 +140,21 @@ void MainWindow::createFilters(){
 
 void MainWindow::newDataEvent(){
     
+<<<<<<< HEAD
     // int16_t* allData = cppSampleTimer->getSensorValues();
+=======
+    */
+
+    if(interpretWindow->isVisible()){
+        
+        //insert into neural network...
+        //neural network will be stored in the predict window code...
+        interpretWindow->handleSamples();
+        
+    }
+>>>>>>> qt_predictions
     
-    if(trainWindow->isVisible()){
+    else if(trainWindow->isVisible()){
         
         //send data to trainwindow
         //TODO change this to a signal...
@@ -152,8 +162,17 @@ void MainWindow::newDataEvent(){
     
     }
 
+<<<<<<< HEAD
     if (monitorWindow->isVisible()){
         monitorWindow->handleSamples();
+=======
+    else if (monitorWindow->isVisible()){
+        QtConcurrent::run([this]() {
+            monitorWindow->plotAcc(this->sampleacc);
+            monitorWindow->plotGyro(this->samplegyro);
+            monitorWindow->plotFinger(this->samplefinger);
+        });
+>>>>>>> qt_predictions
     }
 }
 
@@ -223,14 +242,22 @@ void MainWindow::trainButtonClicked(){
 }
 
 void MainWindow::interpretButtonClicked(){
-    interpretWindow = new InterpretWindow();
+
+    interpretWindow = new InterpretWindow(cppSampleTimer->getSensorValues());
     interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
     interpretWindow->setWindowTitle("Interpret Mode");
     windowtimer = new QTimer(interpretWindow);
-    connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
-    windowtimer->start(1000);
+    //connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
+    //windowtimer->start(1000);
     // connect(interpretWindow, SIGNAL(emitClose()),this, SLOT(interpretHome()));
+
+    connect(interpretWindow, &InterpretWindow::stopSampling_sig,
+           this, [this](){this->cppSampleTimer->stop();});
+    
+    
     interpretWindow->show();
+    
+    cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
 void MainWindow::interpretHome(){
