@@ -59,6 +59,8 @@ private:
     int16_t* sensorValuesPtr;
 
     int number_of_net_outputs;
+    
+    char** net_output_words;
 
 public:
 

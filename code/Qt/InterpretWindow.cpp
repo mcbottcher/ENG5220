@@ -7,6 +7,25 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     predictor = new NeuralNet;
     number_of_net_outputs = predictor->get_number_of_outputs();
     
+    net_output_words = new char* [number_of_net_outputs];
+    
+    
+    
+    std::ifstream file1;
+    file1.open("outputMap.txt");
+    
+    std::string temp;
+    
+    for(int i=0; i<number_of_net_outputs; i++){
+        std::getline(file1, temp);
+        net_output_words[i] = new char [temp.length()];
+        strcpy(net_output_words[i], temp.c_str());
+    }
+    
+    file1.close();
+    
+    
+    
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->close();});
 
@@ -61,6 +80,10 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 InterpretWindow::~InterpretWindow(){
     emit stopSampling_sig();
     delete predictor;
+    for(int i=0; i<number_of_net_outputs;i++){
+        delete net_output_words[i];
+    }
+    delete net_output_words;
 }
 
 void InterpretWindow::closeWindow(){
@@ -81,34 +104,33 @@ void InterpretWindow::handleSamples(){
         normalised_samples[i] = (sensorValuesPtr[i]/4096.0) - 0.5;
     }
     
-    
-    //std::cout << "handling samples" << std::endl;
-    
     predictor->insertSamples(normalised_samples);
     
     fdeep::tensor result = predictor->predict();
     
-    //need to output these to the text box...
-    //also need to check how many outputs there are...: held in number_of_net_outputs
-    
-    /*
-	std::cout << result.get(fdeep::tensor_pos(0)) << " " 
-            << result.get(fdeep::tensor_pos(1)) << " "
-            << result.get(fdeep::tensor_pos(2)) << " "
-            << result.get(fdeep::tensor_pos(3)) << " "
-            << result.get(fdeep::tensor_pos(4)) << " "
-            << result.get(fdeep::tensor_pos(5)) << " "
-            << std::endl;
-    */
-    
     outputWeightBox->clear();
+    
+    float max = 0;
+    int max_index = 0;
+    float outputweight; 
     
     for(int i=0; i<number_of_net_outputs; i++){
         
-        outputWeightBox->appendPlainText(QString::number(result.get(fdeep::tensor_pos(i))));
+        outputweight = result.get(fdeep::tensor_pos(i));
+        
+        if(outputweight>max){
+            max = outputweight;
+            max_index = i;
+        }
+        
+        outputWeightBox->appendPlainText(QString::number(outputweight));
     
     }
     
+   
+    predictedWordBox->clear();
+    QString predictedWord(net_output_words[max_index]);
+    predictedWordBox->appendPlainText(predictedWord);
     
 }
 
