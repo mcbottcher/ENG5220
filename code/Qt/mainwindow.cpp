@@ -174,16 +174,8 @@ void MainWindow::timerEvent(){
 
     // printf("EMIT outside\n");
     if (monitorWindow->isVisible()){
-        QtConcurrent::run([this]() {
-            monitorWindow->plotAcc(this->sampleacc);
-            monitorWindow->plotGyro(this->samplegyro);
-            monitorWindow->plotFinger(this->samplefinger);
-        });
+        monitorWindow->handleSamples();
     }
-
-
-
-
 
 }
 
@@ -232,7 +224,7 @@ void MainWindow::trainButtonClicked(){
 
     connect(trainWindow, &TrainWindow::emitClose,
            this, &MainWindow::trainQuit);
-           
+
     trainWindowOpen = true;
     trainWindow->show();
 }

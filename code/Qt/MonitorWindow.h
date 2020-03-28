@@ -12,10 +12,6 @@
 #include <QPushButton>
 #include <QString>
 
-
-#include <QtConcurrent>
-#include <QThreadPool>
-
 #include <thread>
 
 
@@ -34,7 +30,17 @@ private:
         \sa MonitorWindow()
     */
     const size_t bufferSize;
+
+    //! sensorData pointer.
+    /*! Pointer to where new samples will be stored when the arrive.
+        \sa SampleTimer(), newDataEvent() and MainWindow() */
+    int16_t* sensorDataPtr;
     
+        //! xAsisData pointer to a double.
+    /*! xAxis data for plotting the curves will be filled by constructor with values 0 to bufferSize.
+        \sa bufferSize and MonitorWindow() */
+    double *xAxisData;
+
     //! Clickable button pointers.
     /*! Pointers to QPushButtons to allow user to close windows and reset buffers. */
     QPushButton  *resetButton, *closeButton;
@@ -42,17 +48,6 @@ private:
     //! QwtPlot pointers.
     /*! Pointers to plots to allow curves to be added to. */
     QwtPlot      *accelerometerPlot, *gyroPlot, *fingerPlot;
-
-    //! xAsisData pointer to a double.
-    /*! xAxis data for plotting the curves will be filled by constructor with values 0 to bufferSize.
-        \sa bufferSize and MonitorWindow() */
-    double *xAxisData;
-
-    //! sensorData pointer.
-    /*! Pointer to where new samples will be stored when the arrive.
-        \sa SampleTimer(), newDataEvent() and MainWindow() */
-    int16_t* sensorDataPtr;
-
 
     //! CurveStruct data structure.
     /*! Data structure for each curve on the graphs. */

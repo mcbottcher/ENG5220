@@ -7,6 +7,7 @@ using namespace std;
 
 MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr): 
     bufferSize(bufferSize),
+    sensorDataPtr(dataPtr),
     xAxisData(new double[bufferSize]()){
         
     // set up the initial plot data
@@ -14,7 +15,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
 		xAxisData[i] = i;
 	}
 
-    sensorDataPtr = dataPtr;
+    // sensorDataPtr = dataPtr;
 
 
     accelerometerPlot = new QwtPlot;
