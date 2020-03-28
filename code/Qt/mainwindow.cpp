@@ -122,7 +122,7 @@ void MainWindow::createUI(){
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
            this, [this](){this->newDataEvent();});
 
-
+    interpretWindow = new InterpretWindow(cppSampleTimer->getSensorValues());
 
 
     //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
@@ -189,16 +189,8 @@ void MainWindow::timerEvent(){
 
     // printf("EMIT outside\n");
     if (monitorWindow->isVisible()){
-        QtConcurrent::run([this]() {
-            monitorWindow->plotAcc(this->sampleacc);
-            monitorWindow->plotGyro(this->samplegyro);
-            monitorWindow->plotFinger(this->samplefinger);
-        });
+        monitorWindow->handleSamples();
     }
-
-
-
-
 
 }
 

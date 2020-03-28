@@ -17,8 +17,6 @@
 #include <QToolButton>
 #include <QFont>
 #include <QThread>
-#include <QtConcurrent>
-#include <QThread>
 
 #include <iostream>
 #include <cmath> 
