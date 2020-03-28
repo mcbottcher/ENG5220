@@ -52,7 +52,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     homeLayout->addWidget(homeButton, Qt::AlignCenter);
     homeLayout->addStretch(100);
 
-    predictedWordBox = new QPlainTextEdit;
+    predictedWordBox = new QLabel("Prediction",this);
     outputWeightBox = new QPlainTextEdit;
 
     textLayout = new QVBoxLayout;
@@ -128,9 +128,9 @@ void InterpretWindow::handleSamples(){
     }
     
    
-    predictedWordBox->clear();
+    // predictedWordBox->clear();
     QString predictedWord(net_output_words[max_index]);
-    predictedWordBox->appendPlainText(predictedWord);
+    predictedWordBox->setText(predictedWord);
     
 }
 

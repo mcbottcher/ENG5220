@@ -33,7 +33,8 @@ private:
     QLabel *loudspeakerIcon;
 	
     QPushButton  *homeButton, *clearButton;
-    QPlainTextEdit *predictedWordBox, *outputWeightBox;
+    QLabel  *predictedWordBox;
+    QPlainTextEdit  *outputWeightBox;
 
     QCheckBox    *soundCheckBox;
     
