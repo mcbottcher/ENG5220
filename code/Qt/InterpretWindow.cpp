@@ -27,7 +27,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     
     
     homeButton = new QPushButton("Home");
-    connect(homeButton, &QPushButton::clicked, [this](){this->close();});
+    connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
     clearButton = new QPushButton("Clear");
     connect(clearButton, &QPushButton::clicked, [this](){outputWeightBox->clear();});
@@ -78,7 +78,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 
 
 InterpretWindow::~InterpretWindow(){
-    emit stopSampling_sig();
+    //emit stopSampling_sig();
     delete predictor;
     for(int i=0; i<number_of_net_outputs;i++){
         delete net_output_words[i];

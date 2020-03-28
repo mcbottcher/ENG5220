@@ -86,6 +86,7 @@ public slots:
 signals:
     void startSampling_sig();
     void stopSampling_sig();
+    void emitClose();
   
 };
 #endif // TRAINWINDOW_H

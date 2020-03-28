@@ -49,12 +49,11 @@ inline void SampleTimer::readFromSensors(){
     
     mtx.unlock();  
 
-    emit timeoutsignal();
 }
 
 void SampleTimer::timerEvent(){
 	
-	//readFromSensors();
+	readFromSensors();
 	emit timeoutsignal();
         
 }

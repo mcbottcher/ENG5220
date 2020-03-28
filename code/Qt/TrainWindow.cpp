@@ -246,5 +246,6 @@ void TrainWindow::closeWindow(){
     }
     currentState = STATE_START;
 
-    this->close();
+    this->hide();
+    emit emitClose();
 }

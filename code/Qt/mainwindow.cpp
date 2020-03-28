@@ -86,7 +86,7 @@ void MainWindow::createUI(){
     setCentralWidget(window);
 
     connect(but_mon, &QPushButton::clicked, 
-            this, [this](){this->monitor_button_clicked();});
+            this, [this](){this->monitorButtonClicked();});
 
 
     connect(but_interpret, &QPushButton::clicked,
@@ -102,28 +102,13 @@ void MainWindow::createUI(){
              this, [this](){this->close();} );
 
     cppSampleTimer = new SampleTimer();
-
-    trainWindow = new TrainWindow(cppSampleTimer->getSensorValues());
-    trainWindow->setWindowTitle("Training Mode");
-    //trainWindow->startTimer(1000);
-    
-    connect(trainWindow, &TrainWindow::startSampling_sig,
-           this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);}); 
-    
-    connect(trainWindow, &TrainWindow::stopSampling_sig,
-           this, [this](){this->cppSampleTimer->stop();});
   
 
-    monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES, cppSampleTimer->getSensorValues());
-
-    connect(monitorWindow, &MonitorWindow::stopSig,
-           this, [this](){this->cppSampleTimer->stop();});
-
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,
-           this, [this](){this->newDataEvent();});
+           this, &MainWindow::newDataEvent);
 
 
-
+    interpretWindowOpen = false;
 
     //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
@@ -140,7 +125,7 @@ void MainWindow::createFilters(){
 
 void MainWindow::newDataEvent(){
     
-    if(interpretWindow->isVisible()){
+    if(interpretWindowOpen){
         
         //insert into neural network...
         //neural network will be stored in the predict window code...
@@ -148,7 +133,7 @@ void MainWindow::newDataEvent(){
         
     }
     
-    else if(trainWindow->isVisible()){
+    else if(trainWindowOpen){
         
         //send data to trainwindow
         //TODO change this to a signal...
@@ -156,7 +141,7 @@ void MainWindow::newDataEvent(){
     
     }
 
-    else if (monitorWindow->isVisible()){
+    else if (monitorWindowOpen){
         monitorWindow->handleSamples();
     }
 }
@@ -210,20 +195,51 @@ void MainWindow::but_quit_clicked(){
     this->close();
 }
 
-void MainWindow::monitor_button_clicked(){
+void MainWindow::monitorButtonClicked(){
     monitorWindow = new MonitorWindow(NUMBER_OF_PLOT_SAMPLES, cppSampleTimer->getSensorValues());
     monitorWindow->setAttribute(Qt::WA_DeleteOnClose);
     monitorWindow->setWindowTitle("Monitor");
     moitorRefreshtimer = new QTimer(monitorWindow);
     connect(moitorRefreshtimer, &QTimer::timeout,
-            monitorWindow, [this](){monitorWindow->drawPlots();});
+            monitorWindow, &MonitorWindow::drawPlots);
+
+    connect(monitorWindow, &MonitorWindow::emitClose,
+        this, &MainWindow::monitorQuit);
     moitorRefreshtimer->start(MONITOR_REFRESH_RATE);
     cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
+
+    monitorWindowOpen = true;
     monitorWindow->show();
+}
+void MainWindow::monitorQuit(){
+    monitorWindowOpen = false;
+
+    moitorRefreshtimer->stop();
+    cppSampleTimer->stop();
+    monitorWindow->close();
 }
 
 void MainWindow::trainButtonClicked(){
+    trainWindow = new TrainWindow(cppSampleTimer->getSensorValues());
+    interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
+    trainWindow->setWindowTitle("Training Mode");
+    
+    connect(trainWindow, &TrainWindow::stopSampling_sig,
+           this, [this](){this->cppSampleTimer->stop();});
+
+    connect(trainWindow, &TrainWindow::startSampling_sig,
+           this, [this](){this->cppSampleTimer->start(DATA_SAMPLE_INTERVAL);});
+
+    connect(trainWindow, &TrainWindow::emitClose,
+           this, &MainWindow::trainQuit);
+           
+    trainWindowOpen = true;
     trainWindow->show();
+}
+void MainWindow::tainQuit(){
+    trainWindowOpen = false;
+    trainWindow->close();
+
 }
 
 void MainWindow::interpretButtonClicked(){
@@ -232,21 +248,23 @@ void MainWindow::interpretButtonClicked(){
     interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
     interpretWindow->setWindowTitle("Interpret Mode");
     windowtimer = new QTimer(interpretWindow);
-    //connect(windowtimer, SIGNAL(timeout()),interpretWindow, SLOT(timerEvent()));
-    //windowtimer->start(1000);
-    // connect(interpretWindow, SIGNAL(emitClose()),this, SLOT(interpretHome()));
 
-    connect(interpretWindow, &InterpretWindow::stopSampling_sig,
-           this, [this](){this->cppSampleTimer->stop();});
+    connect(interpretWindow, &InterpretWindow::emitClose, this, &MainWindow::interpretQuit);
+ 
+    // connect(interpretWindow, &InterpretWindow::stopSampling_sig,
+    //        this, [this](){this->cppSampleTimer->stop();});
     
-    
+    interpretWindowOpen = true;
     interpretWindow->show();
     
     cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
-void MainWindow::interpretHome(){
-
+void MainWindow::interpretQuit(){
+    interpretWindowOpen = false;
+    cppSampleTimer->stop();
+    interpretWindow->close();
+;
 }
 
 

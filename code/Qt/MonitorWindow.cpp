@@ -8,7 +8,7 @@ using namespace std;
 MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr): 
     bufferSize(bufferSize),
     xAxisData(new double[bufferSize]()){
-
+        
     // set up the initial plot data
 	for(size_t i=0; i<bufferSize; i++ ){
 		xAxisData[i] = i;
@@ -51,7 +51,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
     closeButton = new QPushButton("close");
 
     connect(resetButton, &QPushButton::clicked, [this](){this->resetbutton();});
-    connect(closeButton, &QPushButton::clicked, [this](){this->hide(); emit stopSig();});
+    connect(closeButton, &QPushButton::clicked, [this](){this->hide(); emit emitClose();});
 
  
     //setup and attach curves to plots (also colour them!)
@@ -123,7 +123,6 @@ MonitorWindow::~MonitorWindow(){
 
 // Method to draw all plots on the screen
 void MonitorWindow::drawPlots(){
-    // checkCheckboxes();
     accelerometerPlot->replot();
     gyroPlot->replot();
     fingerPlot->replot();

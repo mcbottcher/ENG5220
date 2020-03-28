@@ -66,19 +66,25 @@ class MainWindow : public QMainWindow
         int count = 0;
 
         // void timerEvent();
-
-        double samplefinger[5][1];
-        double sampleacc[3][1];
-        double samplegyro[3][1];
+        bool interpretWindowOpen = false;
+        bool trainWindowOpen = false;
+        bool monitorWindowOpen = false;
+        // double samplefinger[5][1];
+        // double sampleacc[3][1];
+        // double samplegyro[3][1];
 	
     private slots:
         void timerEvent(); //depreciated: used to plot sinewave to curves 
         void newDataEvent();
-        void monitor_button_clicked();
+        void monitorButtonClicked();
+        void monitorQuit();
         void interpretButtonClicked();
-        void interpretHome();
+        void interpretQuit();
         void trainButtonClicked();
+        void tainQuit();
         void but_quit_clicked();
+
+    
                 
 
 };
