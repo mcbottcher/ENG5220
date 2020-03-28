@@ -17,6 +17,7 @@
 #include <stdlib.h>
 #include <mutex>
 #include <QObject>
+#include <QMutex>
 
 
 #include "../MCP3428/MCP3428.h"
@@ -35,7 +36,8 @@ class SampleTimer : public QObject, public CppTimer
     private:
         //! mtx mutex.
         /*! A mutex to lock the data while the sampling is occuring. */
-	    std::mutex mtx;
+	    // std::mutex mtx;
+        QMutex *mtx;
         //! Motion sensor pointer.
         /*! A pointer to the MPU6050 for data acquision from the Accelerometer/Gyroscope. */
         MPU6050  *motionSensor;

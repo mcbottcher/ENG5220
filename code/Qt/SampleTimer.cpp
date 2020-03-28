@@ -6,6 +6,7 @@ SampleTimer::SampleTimer(){
     motionSensor = new MPU6050(MPU6050_I2C_ADDRESS);
     flexFingers = new MCP3428(MCP3428_I2C_ADDRESS);
     flexThumb = new MCP3428(MCP3421_I2C_ADDRESS);
+    mtx = new QMutex;
 
     motionSensor->initialize();	
     //printf(motionSensor.testConnection() ? "MPU6050 connection successful\r\n" : "MPU6050 connection failed\r\n");
@@ -32,7 +33,7 @@ SampleTimer::~SampleTimer(){
 
 inline void SampleTimer::readFromSensors(){
    
-    mtx.lock();
+    mtx->lock();
     motionSensor->getMotion6(&sensorValues[0],
                             &sensorValues[1],
                             &sensorValues[2],
@@ -47,14 +48,14 @@ inline void SampleTimer::readFromSensors(){
     sensorValues[9]  = flexFingers->readChannel(0);
     sensorValues[10] = flexThumb  ->readChannel(0);
     
-    mtx.unlock();  
+    mtx->unlock();  
 
-    emit timeoutsignal();
+//    emit timeoutsignal();
 }
 
 void SampleTimer::timerEvent(){
 	
-	//readFromSensors();
+	readFromSensors();
 	emit timeoutsignal();
         
 }
