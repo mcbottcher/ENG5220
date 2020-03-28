@@ -228,7 +228,7 @@ void MainWindow::trainButtonClicked(){
     trainWindowOpen = true;
     trainWindow->show();
 }
-void MainWindow::tainQuit(){
+void MainWindow::trainQuit(){
     trainWindowOpen = false;
     trainWindow->close();
 

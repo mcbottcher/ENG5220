@@ -79,7 +79,7 @@ class MainWindow : public QMainWindow
         void interpretButtonClicked();
         void interpretQuit();
         void trainButtonClicked();
-        void tainQuit();
+        void trainQuit();
         void but_quit_clicked();
 
     
