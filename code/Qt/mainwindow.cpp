@@ -197,10 +197,10 @@ void MainWindow::monitorButtonClicked(){
 
     connect(monitorWindow, &MonitorWindow::emitClose,
         this, &MainWindow::monitorQuit);
-    moitorRefreshtimer->start(MONITOR_REFRESH_RATE);
+    
     cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
-
     monitorWindowOpen = true;
+    moitorRefreshtimer->start(MONITOR_REFRESH_RATE);
     monitorWindow->show();
 }
 void MainWindow::monitorQuit(){
@@ -213,7 +213,7 @@ void MainWindow::monitorQuit(){
 
 void MainWindow::trainButtonClicked(){
     trainWindow = new TrainWindow(cppSampleTimer->getSensorValues());
-    interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
+    trainWindow->setAttribute(Qt::WA_DeleteOnClose);
     trainWindow->setWindowTitle("Training Mode");
     
     connect(trainWindow, &TrainWindow::stopSampling_sig,

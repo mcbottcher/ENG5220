@@ -53,102 +53,60 @@ private:
     /*! Data structure for each curve on the graphs. */
     typedef struct Curve{
         const size_t  buffsize; /*!< Length of the ploting buffer */
-        QString       name;     /*!< The name of each curve so the user knows what curve is what data. */
-        double       *data;     /*!< Pointer to the data held in memory for that curve. */
         QwtPlot      *plot;     /*!< The associated QwtPlot for the curve. */
+        const double *xAxisData;/*!< Pointer to the xAxis data */
+        double       *data;     /*!< Pointer to the data held in memory for that curve. */
         QwtPlotCurve *curve;    /*!< The actual curve object itsself. */
         QCheckBox    *checkbox; /*!< Checkbox to turn the curve on and off. */
-        double       *xAxisData;/*!< Pointer to the xAxis data */
-
 
         //! Curve constructor.
         /*! Plot a single samples if the checkbox has been selected by the user.
-            \param buffsize The size of buffer for the plot.
-            \param plotin   The plot that the curve is attached to.
-            \param name     The name of the curve.
-            \param xAxis    The xAxis data.
+            \param buffsize     The size of buffer for the plot.
+            \param plotin       The plot that the curve is attached to.
+            \param name         The name of the curve.
+            \param xAxisData    The xAxis data.
         */
-        Curve(size_t buffsize, QwtPlot *plotin, QString name, double *xAxis): 
-                buffsize(buffsize), name(name), data(new double[buffsize]()){
-
-            curve = new QwtPlotCurve();
-            plot = plotin;
-            xAxisData = xAxis;
+        Curve(size_t buffsize, QwtPlot *plot, QString name, const double *xAxisData): 
+                buffsize(buffsize), plot(plot), xAxisData(xAxisData), data(new double[buffsize]()){
+            curve = new QwtPlotCurve(name);
             checkbox = new QCheckBox(name);
-            for (size_t i =0; i<buffsize; i++){data[i] = 0;}
+            // checkbox->setStyleSheet("QCheckBox { color: red }");
+            resetCurve();
+        }
 
-        }
         //! Default Curve destuctor.
-        ~Curve(){
-            delete[] data;
-        }
+        ~Curve(){delete[] data;}
 
         //! updateCurve method.
         /*! Method to set the samples of a curve with the data held in its CurveStruct.*/
-        void updateCurve(){
-            curve->setRawSamples(xAxisData, data, buffsize);
-        }
+        inline void updateCurve(){curve->setRawSamples(xAxisData, data, buffsize);}
+
         //! resetCurve method.
         /*! Method to rest the curve to zeros*/
-        void resetCurve(){
-            for(size_t i=0; i<buffsize; i++){
-                data[i] = 0;
-            }
-            updateCurve();
-        }
+        void resetCurve(){for(size_t i=0; i<buffsize; i++){data[i] = 0;}};
+
         //! Attach curve to plot.
-        void attach(){curve->attach(plot);}
+        inline void attach(){curve->attach(plot);}
 
         //! setupCuves method.
         /*! Helper Method setup and attach curves to their respective plot widgets.*/
-        void setupCurve(){
-            updateCurve();
-            attach();
-        }
-
-        //! insertSample method.
-        /*! Method to insert a sample into a curve.
-            \param sample The sample to be added to the curve.
-        */
-        inline void insertSample(double sample){
-            memmove(data, data+1, (buffsize-1) * sizeof(double));
-            data[buffsize-1] = sample;
-        }
+        void setupCurve();
 
         //! plotSample method.
         /*! Plot a single samples if the checkbox has been selected by the user.
             \param sample   The sample to be plotted.
-            \sa checkbox and _insertSample()  
+            \sa checkbox and insertSample()  
         */
-        inline void plotSample(double sample){
-            if (checkbox->isChecked()){
-                insertSample(sample);
-            }
-            else{
-                insertSample(0);
-            }
-            updateCurve();
-        }
+        inline void plotSample(double sample);
 
-        //! plotSample method.
-        /*! Plot a buffer of samples if the checkbox has been selected by the user.
+        //! overloaded plotSample method.
+        /*! Plot a buffer of samples.
             \param buffer    Pointer to the buffer to be plotted.
             \param plotSize The size of the buffer to be plotted. 
             \sa  insertSample() and checkbox
         */
-        inline void plotSample(double *buffer, size_t plotSize){
-            if (checkbox->isChecked()){
-                for (size_t i=0; i< plotSize;i++){
-                    insertSample(buffer[i]);
-                }
-            }
-            else{
-                for (size_t i=0; i< plotSize;i++){
-                    insertSample(0);
-                }
-            }
-            updateCurve();
-        }
+        void plotSample(double *buffer, size_t plotSize);
+
     } Curve_t;
     
     //! Curve structure for sensor data.

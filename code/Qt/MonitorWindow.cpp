@@ -18,9 +18,9 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
     // sensorDataPtr = dataPtr;
 
 
-    accelerometerPlot = new QwtPlot;
-    gyroPlot = new QwtPlot;
-    fingerPlot = new QwtPlot;
+    accelerometerPlot = new QwtPlot(this);
+    gyroPlot = new QwtPlot(this);
+    fingerPlot = new QwtPlot(this);
     //Set plot titles
     accelerometerPlot->setTitle("Accelerometer");
     gyroPlot->setTitle("Gyroscope");
@@ -45,9 +45,6 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
         Curve(bufferSize,fingerPlot,"Thumb",xAxisData)
     };
 
-
-
-
     resetButton = new QPushButton("reset");
     closeButton = new QPushButton("close");
 
@@ -60,13 +57,13 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
         if (i < 3){
             acc[i].setupCurve();
             acc[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
+
             gyro[i].setupCurve();
             gyro[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
         }
         finger[i].setupCurve();
         finger[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
     }
-
 
     //plot initial curves
 	drawPlots();
@@ -124,6 +121,15 @@ MonitorWindow::~MonitorWindow(){
 
 // Method to draw all plots on the screen
 void MonitorWindow::drawPlots(){
+
+    for (uint8_t i=0;i<5;i++){
+        if (i < 3){
+            acc[i].updateCurve();
+            gyro[i].updateCurve();
+        }
+        finger[i].updateCurve();
+    }
+
     accelerometerPlot->replot();
     gyroPlot->replot();
     fingerPlot->replot();
@@ -149,4 +155,31 @@ void MonitorWindow::handleSamples(){
     for(int i=0; i<5; i++){
         finger[i].plotSample(sensorDataPtr[i+6]);
     }
+}
+
+inline void MonitorWindow::Curve::plotSample(double sample){
+    memmove(data, data+1, (buffsize-1) * sizeof(double));
+    data[buffsize-1] = curve->isVisible() ? sample :  0;
+}
+
+void MonitorWindow::Curve::plotSample(double *buffer, size_t plotSize){
+    memmove(data, data+plotSize, (buffsize-plotSize) * sizeof(double));
+    if (curve->isVisible()){
+        for (size_t i=0; i< plotSize;i++){
+            data[(buffsize-plotSize)+i] = buffer[i];
+        }
+    }
+    else {
+        for (size_t i=0; i< plotSize;i++){
+            data[(buffsize-plotSize)+i] = 0;
+        }
+    }
+}
+
+
+void MonitorWindow::Curve::setupCurve(){
+    connect(checkbox, &QCheckBox::stateChanged, [=](){checkbox->isChecked() ? curve->setVisible(true) : curve->setVisible(false);});
+    updateCurve();
+    attach();
+    curve->hide();
 }
