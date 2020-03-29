@@ -137,7 +137,7 @@ void MainWindow::newDataEvent(){
         
         //send data to trainwindow
         //TODO change this to a signal...
-        trainWindow->handle_samples();
+        trainWindow->handleSamples();
     
     }
 
@@ -146,38 +146,6 @@ void MainWindow::newDataEvent(){
     }
 }
 
-void MainWindow::timerEvent(){
-    /* 
-        Read MPU6050 and ADCs
-    */
-    //for now, create fake data
-
-    // double samplefinger[5][1];
-    // double sampleacc[3][1];
-    
-    int16_t in = 5 * sin(M_PI * count/50.0);
-    ++count;
-    for (size_t i=0; i<5;i++){
-        for (size_t j=0;j<1;j++){
-            // samplefinger[i][j]= in/(i+1);
-        }
-    }
-    for (size_t i=0; i<3;i++){
-        for (size_t j=0;j<1;j++){ 
-            // sampleacc[i][j]= in/(i+1);
-            // samplegyro[i][j]= in/(i+1);
-        }
-    }
-    // accelFilterBank->filter(sampleacc[0][0]);
-    // gyroFilterBank->filter(sampleacc[0][0]);
-    // fingerFilterBank->filter(samplefinger[0][0]);
-
-    // printf("EMIT outside\n");
-    if (monitorWindow->isVisible()){
-        monitorWindow->handleSamples();
-    }
-
-}
 
 MainWindow::~MainWindow(){
 }
@@ -242,9 +210,6 @@ void MainWindow::interpretButtonClicked(){
     windowtimer = new QTimer(interpretWindow);
 
     connect(interpretWindow, &InterpretWindow::emitClose, this, &MainWindow::interpretQuit);
- 
-    // connect(interpretWindow, &InterpretWindow::stopSampling_sig,
-    //        this, [this](){this->cppSampleTimer->stop();});
     
     interpretWindowOpen = true;
     interpretWindow->show();

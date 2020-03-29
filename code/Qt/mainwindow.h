@@ -42,7 +42,7 @@ class MainWindow : public QMainWindow
         ~MainWindow();
 
     private:
-        // size_t NUMBER_OF_PLOT_SAMPLES = 10;
+
         MonitorWindow *monitorWindow;
         InterpretWindow *interpretWindow;
         TrainWindow *trainWindow;
@@ -63,13 +63,9 @@ class MainWindow : public QMainWindow
         void createFilters();
         int count = 0;
 
-        // void timerEvent();
         bool interpretWindowOpen = false;
         bool trainWindowOpen = false;
         bool monitorWindowOpen = false;
-        // double samplefinger[5][1];
-        // double sampleacc[3][1];
-        // double samplegyro[3][1];
 	
     private slots:
         void timerEvent(); //depreciated: used to plot sinewave to curves 
