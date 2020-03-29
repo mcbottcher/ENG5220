@@ -92,11 +92,11 @@ void InterpretWindow::handleSamples(){
 
     //need to be converted to floats
     float normalised_samples[11];
-    for(int i=0; i<6; i++){
+    for(uint_fast8_t i=0; i<6; i++){
         //for the accell/gyro
         normalised_samples[i] = (sensorValuesPtr[i]/32768.0);
     }
-    for(int i=6; i<11; i++){
+    for(uint_fast8_t i=6; i<11; i++){
         //for the fingers
         normalised_samples[i] = (sensorValuesPtr[i]/4096.0) - 0.5;
     }

@@ -53,7 +53,7 @@ MonitorWindow::MonitorWindow(size_t bufferSize, int16_t* dataPtr):
 
  
     //setup and attach curves to plots (also colour them!)
-    for (uint8_t i = 0; i < 5; i++){
+    for (uint_fast8_t i = 0; i < 5; i++){
         if (i < 3){
             acc[i].setupCurve();
             acc[i].curve->setPen(QColor(Qt::GlobalColor(Qt::red+i)));
@@ -122,7 +122,7 @@ MonitorWindow::~MonitorWindow(){
 // Method to draw all plots on the screen
 void MonitorWindow::drawPlots(){
 
-    for (uint8_t i=0;i<5;i++){
+    for (uint_fast8_t i=0;i<5;i++){
         if (i < 3){
             acc[i].updateCurve();
             gyro[i].updateCurve();
@@ -138,7 +138,7 @@ void MonitorWindow::drawPlots(){
 
 
 void MonitorWindow::resetbutton(){
-    for (uint8_t i=0;i<5;i++){
+    for (uint_fast8_t i=0;i<5;i++){
         if (i < 3){
             acc[i].resetCurve();
             gyro[i].resetCurve();
@@ -148,11 +148,11 @@ void MonitorWindow::resetbutton(){
 }
 
 void MonitorWindow::handleSamples(){
-    for(int i=0; i<3; i++){
+    for(uint_fast8_t i=0; i<3; i++){
         acc[i].plotSample(sensorDataPtr[i]);
         gyro[i].plotSample(sensorDataPtr[i+3]);
     } 
-    for(int i=0; i<5; i++){
+    for(uint_fast8_t i=0; i<5; i++){
         finger[i].plotSample(sensorDataPtr[i+6]);
     }
 }

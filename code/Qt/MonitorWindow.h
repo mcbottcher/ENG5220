@@ -18,7 +18,7 @@
 
 //!  Monitor Window Class
 /*!
-    Class to plot and monitor all the sensor data in real time
+    Class to plot and monitor all the sensor data in real time.
 */
 class MonitorWindow : public QWidget {
 // must include the Q_OBJECT macro for for the Qt signals/slots framework to work with this class
@@ -142,7 +142,7 @@ public:
     */
     template <size_t plotBufferSize>
     void plotAcc(double (&samples)[3][plotBufferSize]){
-        for (size_t i = 0; i < 3; i++){
+        for (uint_fast8_t i = 0; i < 3; i++){
             acc[i].plotSample(samples[i], plotBufferSize);
         }
     }
@@ -154,7 +154,7 @@ public:
     */
     template <size_t plotBufferSize>
     void plotGyro(double (&samples)[3][plotBufferSize]){ 
-        for (size_t i = 0; i < 3; i++){
+        for (uint_fast8_t i = 0; i < 3; i++){
             gyro[i].plotSample(samples[i], plotBufferSize);
         }
     }
@@ -167,7 +167,7 @@ public:
     */
     template <size_t plotBufferSize>
     void plotFinger(double (&samples)[5][plotBufferSize]){
-        for (size_t i = 0; i < 5; i++){
+        for (uint_fast8_t i = 0; i < 5; i++){
             finger[i].plotSample(samples[i], plotBufferSize);
         }
     }
