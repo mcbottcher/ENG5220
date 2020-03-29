@@ -4,7 +4,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 
     sensorValuesPtr = sensorValues;
 
-    predictor = new NeuralNet;
+    predictor = new NeuralNet();
     number_of_net_outputs = predictor->get_number_of_outputs();
     
     net_output_words = new char* [number_of_net_outputs];
@@ -40,13 +40,13 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
         loudspeakerIcon->height(),
         Qt::KeepAspectRatio));
 
-    soundLayout = new QHBoxLayout;
+    soundLayout = new QHBoxLayout();
     soundLayout->addStretch(100);
     soundLayout->addWidget(soundCheckBox);
     soundLayout->addWidget(loudspeakerIcon, Qt::AlignCenter);
     soundLayout->addStretch(100);
     
-    homeLayout = new QHBoxLayout;
+    homeLayout = new QHBoxLayout();
     homeLayout->addStretch(100);
     homeLayout->addWidget(clearButton, Qt::AlignCenter);
     homeLayout->addWidget(homeButton, Qt::AlignCenter);
@@ -55,11 +55,11 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     predictedWordBox = new QLabel("Prediction",this);
     outputWeightBox = new QPlainTextEdit;
 
-    textLayout = new QVBoxLayout;
+    textLayout = new QVBoxLayout();
     textLayout->addWidget(predictedWordBox, Qt::AlignCenter);
     textLayout->addWidget(outputWeightBox, Qt::AlignCenter);
 
-    mainLayout  = new QVBoxLayout;
+    mainLayout  = new QVBoxLayout();
     mainLayout->addLayout(soundLayout);
     mainLayout->addLayout(textLayout);
     mainLayout->addLayout(homeLayout);
@@ -80,10 +80,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 InterpretWindow::~InterpretWindow(){
     //emit stopSampling_sig();
     delete predictor;
-    for(int i=0; i<number_of_net_outputs;i++){
-        delete net_output_words[i];
-    }
-    delete net_output_words;
+    delete[] net_output_words;
 }
 
 void InterpretWindow::closeWindow(){
