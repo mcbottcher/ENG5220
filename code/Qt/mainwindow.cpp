@@ -213,7 +213,7 @@ void MainWindow::monitorQuit(){
 
 void MainWindow::trainButtonClicked(){
     trainWindow = new TrainWindow(cppSampleTimer->getSensorValues());
-    interpretWindow->setAttribute(Qt::WA_DeleteOnClose);
+    trainWindow->setAttribute(Qt::WA_DeleteOnClose);
     trainWindow->setWindowTitle("Training Mode");
     
     connect(trainWindow, &TrainWindow::stopSampling_sig,
