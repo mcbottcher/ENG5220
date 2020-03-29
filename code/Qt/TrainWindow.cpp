@@ -1,9 +1,10 @@
 #include "TrainWindow.h"
 
 
-TrainWindow::TrainWindow(int16_t* dataPtr){
+TrainWindow::TrainWindow(int16_t* dataPtr):
+    sensorDataptr(dataPtr){
     
-    sensorDataptr = dataPtr;
+
     for(int i=0; i<11; i++){
         sensorDataptr[i] = i;
     }
@@ -17,7 +18,7 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
 
     wordTrain = new QPushButton("Train word");
 
-    connect(wordTrain, SIGNAL (released()),this, SLOT (data_aq_state_machine()));
+    connect(wordTrain, Q&PushButton::released, this, &TrainWindow::data_aq_state_machine);
 
     inputLayout = new QGridLayout;
     inputLayout->addWidget(inputLabel, 0, 0);
@@ -36,8 +37,9 @@ TrainWindow::TrainWindow(int16_t* dataPtr){
     timer = new QTimer(this);
     timer->setSingleShot(true);
     
-    connect(timer, SIGNAL(timeout()), this, SLOT(data_aq_state_machine()));
+    connect(timer, &QTimer::timeout, this, &TrainWindow::data_aq_state_machine);
 
+    //setup LEDs
     ledLayout = new QGridLayout;
     for (int i =0; i<10;i++){
         led[i] = new QLed();
@@ -122,7 +124,7 @@ void TrainWindow::startNeuralNet(){
     msg1.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
     msg1.setDefaultButton(QMessageBox::Ok);
 
-    if (msg1.exec() ==QMessageBox::Ok){
+    if (msg1.exec()==QMessageBox::Ok){
         system(command.c_str());
     }
 }
@@ -201,10 +203,10 @@ void TrainWindow::data_aq_state_machine(){
     }
 }
 
-void TrainWindow::handle_samples(){
+void TrainWindow::handleSamples(){
     
     if (currentState !=STATE_START){
-        for(int i=0; i<11; i++){
+        for(uint_fast8_t i=0; i<11; i++){
             movementData[i][sampleCount] = sensorDataptr[i];
         }
     
@@ -228,7 +230,7 @@ void TrainWindow::handle_samples(){
 
 void TrainWindow::saveMovement(){
     
-	for(int j=0; j< 11;j++){
+	for(uint_fast8_t j=0; j< 11;j++){
 
 			for(int k=0; k< NUMBER_OF_BUFFER_ELEMENTS;k++){
 				myfile << movementData[j][k] << ",";
