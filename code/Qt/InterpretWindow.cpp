@@ -1,8 +1,7 @@
 #include "InterpretWindow.h"
 
-InterpretWindow::InterpretWindow(int16_t* sensorValues){
-
-    sensorValuesPtr = sensorValues;
+InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
+        sensorValuesPtr(sensorValuesPtr){
 
     predictor = new NeuralNet();
     number_of_net_outputs = predictor->get_number_of_outputs();
@@ -24,7 +23,9 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
     
     file1.close();
     
-    
+    updateWeightsTimer = new QTimer(this);
+    connect(updateWeightsTimer, &QTimer::timeout, [this](){outputWeightBox->setPlainText(weights);});
+    updateWeightsTimer->start(100);
     
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
@@ -54,6 +55,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 
     predictedWordBox = new QLabel("Prediction",this);
     outputWeightBox = new QPlainTextEdit;
+    outputWeightBox->setReadOnly(true);
 
     textLayout = new QVBoxLayout();
     textLayout->addWidget(predictedWordBox, Qt::AlignCenter);
@@ -79,11 +81,13 @@ InterpretWindow::InterpretWindow(int16_t* sensorValues){
 
 InterpretWindow::~InterpretWindow(){
     //emit stopSampling_sig();
+    updateWeightsTimer->stop();
     delete predictor;
     delete[] net_output_words;
 }
 
 void InterpretWindow::closeWindow(){
+    updateWeightsTimer->stop();
     emit emitClose();
 
 }
@@ -91,7 +95,7 @@ void InterpretWindow::closeWindow(){
 void InterpretWindow::handleSamples(){
 
     //need to be converted to floats
-    float normalised_samples[11];
+    // float normalised_samples[11];
     for(uint_fast8_t i=0; i<6; i++){
         //for the accell/gyro
         normalised_samples[i] = (sensorValuesPtr[i]/32768.0);
@@ -105,13 +109,14 @@ void InterpretWindow::handleSamples(){
     
     fdeep::tensor result = predictor->predict();
     
-    outputWeightBox->clear();
+    // outputWeightBox->clear();
     
-    float max = 0;
-    int max_index = 0;
-    float outputweight; 
+    max = 0;
+    max_index = 0;
+    // float outputweight; 
     
-    for(int i=0; i<number_of_net_outputs; i++){
+    weights = "";
+    for(uint_fast8_t i=0; i<number_of_net_outputs; i++){
         
         outputweight = result.get(fdeep::tensor_pos(i));
         
@@ -119,15 +124,14 @@ void InterpretWindow::handleSamples(){
             max = outputweight;
             max_index = i;
         }
-        
-        outputWeightBox->appendPlainText(QString::number(outputweight));
+        weights += QString::number(outputweight) +"\n";
+        // outputWeightBox->appendPlainText(QString::number(outputweight));
     
     }
     
-   
+    // outputWeightBox->setPlainText(weights);
     // predictedWordBox->clear();
-    QString predictedWord(net_output_words[max_index]);
-    predictedWordBox->setText(predictedWord);
+    predictedWordBox->setText(QString(net_output_words[max_index]));
     
 }
 

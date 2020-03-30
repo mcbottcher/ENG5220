@@ -102,7 +102,7 @@ public:
     /*!
         \param dataPtr pointer to where the CppTimer stores the sensor values.
     */
-    TrainWindow(int16_t* dataPtr) : sensorDataptr(dataPtr);
+    TrainWindow(int16_t* dataPtr);
     ~TrainWindow();
 
     //!  Handle Samples method.

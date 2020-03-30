@@ -9,9 +9,9 @@
 #include <QString>
 #include <QLabel>
 #include <QFont>
+#include <QTimer>
 #include <QPlainTextEdit>
 #include <QTextToSpeech>
-#include <QDebug>
 
 #include <stdio.h>
 #include <iostream>
@@ -27,7 +27,8 @@ class InterpretWindow : public QWidget
 // internal variables for the window class
 
 private:
-    int count=0;
+
+    int16_t* sensorValuesPtr;
 
   
     QLabel *loudspeakerIcon;
@@ -38,6 +39,7 @@ private:
 
     QCheckBox    *soundCheckBox;
     
+    QTimer *updateWeightsTimer;
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
@@ -54,18 +56,24 @@ private:
     QTextToSpeech *speech;
 
     NeuralNet *predictor;
+    QString weights;
 
     void predict();
     
-    int16_t* sensorValuesPtr;
+    // int16_t* sensorValuesPtr;
 
     int number_of_net_outputs;
     
     char** net_output_words;
 
+    float normalised_samples[11];
+    uint_fast8_t max_index;
+    float max;
+    float outputweight;
+
 public:
 
-	InterpretWindow(int16_t* sensorValues); // default constructor - called when a Window is declared without arguments
+	InterpretWindow(int16_t* sensorValuesPtr); // default constructor - called when a Window is declared without arguments
 	~InterpretWindow();
     void sayWords();
 

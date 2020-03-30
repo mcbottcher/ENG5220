@@ -18,7 +18,7 @@ TrainWindow::TrainWindow(int16_t* dataPtr):
 
     wordTrain = new QPushButton("Train word");
 
-    connect(wordTrain, Q&PushButton::released, this, &TrainWindow::data_aq_state_machine);
+    connect(wordTrain, &QPushButton::released, this, &TrainWindow::data_aq_state_machine);
 
     inputLayout = new QGridLayout;
     inputLayout->addWidget(inputLabel, 0, 0);

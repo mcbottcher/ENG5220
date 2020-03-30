@@ -31,7 +31,7 @@ fdeep::tensor NeuralNet::predict(){
 
 void NeuralNet::insertSamples(float* sampleBuff){
 
-    for(int i=0; i<NUMBER_OF_ROWS; i++){
+    for(uint_fast8_t i=0; i<NUMBER_OF_ROWS; i++){
         
         float* rowptr = &netInputs[i][0];
             
@@ -48,8 +48,6 @@ int NeuralNet::get_number_of_outputs(){
 
     std::vector<fdeep::tensor_shape_variable> shape = _model.get_output_shapes();
     
-    size_t mikkel = (shape[0].depth_).unsafe_get_just();
-    
-    return int(mikkel);
+    return static_cast<int>((shape[0].depth_).unsafe_get_just());
 
 }

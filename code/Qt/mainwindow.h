@@ -16,7 +16,6 @@
 #include <QPixmap>
 #include <QToolButton>
 #include <QFont>
-#include <QThread>
 
 #include <iostream>
 #include <cmath> 
@@ -68,7 +67,7 @@ class MainWindow : public QMainWindow
         bool monitorWindowOpen = false;
 	
     private slots:
-        void timerEvent(); //depreciated: used to plot sinewave to curves 
+        // void timerEvent(); //depreciated: used to plot sinewave to curves 
         void newDataEvent();
         void monitorButtonClicked();
         void monitorQuit();
