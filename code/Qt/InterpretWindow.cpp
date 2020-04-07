@@ -26,31 +26,37 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     
     file1.close();
     
-    updateWindowTimer = new QTimer(this);
-    connect(updateWindowTimer, &QTimer::timeout, this, &InterpretWindow::updateWindow);
+    speakerTimer = new QTimer(this);
+    connect(speakerTimer, &QTimer::timeout, this, &InterpretWindow::speaker);
     lastwordsaid = " ";
-    updateWindowTimer->start(100);
-    
+    // speakerTimer->start(100);
+
     for(int i=0; i<number_of_net_outputs; i++){
         weightsLayout->addWidget(&outputWeightBars[i], Qt::AlignCenter);
         outputWeightBars[i].setTextVisible(true);
-        outputWeightBars[i].setFormat(QString(net_output_words[i]));
+        outputWeightBars[i].setFormat(QString(net_output_words[i]).chopped(4));
     }
    
     updateWeightsTimer = new QTimer(this);
-    connect(updateWeightsTimer, &QTimer::timeout, [this](){updateWeights();});
+    connect(updateWeightsTimer, &QTimer::timeout, [this](){this->updateWeights();});
     updateWeightsTimer->start(100);
     
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
     soundCheckBox = new QCheckBox();
+    // soundCheckBox->setChecked(true);
     QPixmap pix("Speaker_Icon.png");
     loudspeakerIcon = new QLabel("Test", this);
     loudspeakerIcon->setPixmap(pix.scaled(
         loudspeakerIcon->width(),
         loudspeakerIcon->height(),
         Qt::KeepAspectRatio));
+
+    connect(soundCheckBox, &QCheckBox::stateChanged, [this](){
+        soundCheckBox->isChecked() ? speakerTimer->start(100) : speakerTimer->stop();
+        });
+    soundCheckBox->setChecked(true);
 
     soundLayout = new QHBoxLayout();
     soundLayout->addStretch(100);
@@ -96,7 +102,7 @@ InterpretWindow::~InterpretWindow(){
 }
 
 void InterpretWindow::closeWindow(){
-    updateWindowTimer->stop();
+    speakerTimer->stop();
     emit emitClose();
 
 }
@@ -156,9 +162,10 @@ void InterpretWindow::updateWeights(){
 //used for outputting the voice...
 //speech->say(textBox->toPlainText());
 
-void InterpretWindow::updateWindow(){
-    outputWeightBox->setPlainText(weights);
+void InterpretWindow::speaker(){
+    // outputWeightBox->setPlainText(weights);
 
+    // if ((soundCheckBox->isChecked())&&(lastwordsaid != predictedWordBox->text())){
     if (lastwordsaid != predictedWordBox->text()){
         speech->say(predictedWordBox->text());
         lastwordsaid = predictedWordBox->text();

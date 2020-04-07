@@ -40,7 +40,7 @@ private:
     QCheckBox    *soundCheckBox;
     QProgressBar *outputWeightBars;
     
-    QTimer *updateWeightsTimer;
+    QTimer *updateWeightsTimer, *speakerTimer;
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
@@ -85,7 +85,7 @@ signals:
 public slots:
     void closeWindow();
     void handleSamples();
-    void updateWindow();
+    void speaker();
     void updateWeights();
 
 };
