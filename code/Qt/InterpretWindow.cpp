@@ -23,9 +23,10 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     
     file1.close();
     
-    updateWeightsTimer = new QTimer(this);
-    connect(updateWeightsTimer, &QTimer::timeout, [this](){outputWeightBox->setPlainText(weights);});
-    updateWeightsTimer->start(100);
+    updateWindowTimer = new QTimer(this);
+    connect(updateWindowTimer, &QTimer::timeout, this, &InterpretWindow::updateWindow);
+    lastwordsaid = " ";
+    updateWindowTimer->start(100);
     
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
@@ -81,13 +82,13 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
 
 InterpretWindow::~InterpretWindow(){
     //emit stopSampling_sig();
-    updateWeightsTimer->stop();
+
     delete predictor;
     delete[] net_output_words;
 }
 
 void InterpretWindow::closeWindow(){
-    updateWeightsTimer->stop();
+    updateWindowTimer->stop();
     emit emitClose();
 
 }
@@ -131,7 +132,7 @@ void InterpretWindow::handleSamples(){
     
     // outputWeightBox->setPlainText(weights);
     // predictedWordBox->clear();
-    predictedWordBox->setText(QString(net_output_words[max_index]));
+    predictedWordBox->setText(QString(net_output_words[max_index]).chopped(4));
     
 }
 
@@ -144,6 +145,15 @@ void InterpretWindow::predict(){
 
 //used for outputting the voice...
 //speech->say(textBox->toPlainText());
+
+void InterpretWindow::updateWindow(){
+    outputWeightBox->setPlainText(weights);
+
+    if (lastwordsaid != predictedWordBox->text()){
+        speech->say(predictedWordBox->text());
+        lastwordsaid = predictedWordBox->text();
+    }
+}
 
 
 

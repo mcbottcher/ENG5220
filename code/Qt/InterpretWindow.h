@@ -56,7 +56,7 @@ private:
     QTextToSpeech *speech;
 
     NeuralNet *predictor;
-    QString weights;
+    QString weights, lastwordsaid;
 
     void predict();
     
@@ -85,6 +85,7 @@ signals:
 public slots:
     void closeWindow();
     void handleSamples();
+    void updateWindow();
     
 
 };
