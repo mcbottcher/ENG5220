@@ -1,0 +1,6 @@
+RUN pulseaudio -D BEFORE LOADING APPLICAITON
+
+libqt5multimedia5-plugin
+libqt5multimedia5
+flite
+pulseaudio
