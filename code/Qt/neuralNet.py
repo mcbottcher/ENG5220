@@ -4,11 +4,12 @@ import convert_model
 import sys
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense, Conv1D, MaxPooling1D, Flatten, Dropout
 from keras.utils import to_categorical
 from numpy import genfromtxt
 import pandas as pd
 
+from keras.optimizers import Adam
 
 # number of arguments : len(sys.argv)
 # list of strings of arugments: str(sys.argv)
@@ -33,7 +34,7 @@ for argument_number in range(1,len(sys.argv)): #first argument is the filename..
     for row in range(len(csv_data)):
     
         temp = csv_data[row]
-        temp[:120] = (temp[:120]/2**15)
+        temp[:120] = (temp[:120]/2**15) 
         temp[120:] = (temp[120:]/2**12) - 0.5
         
         label = np.zeros(1)
@@ -45,17 +46,29 @@ for argument_number in range(1,len(sys.argv)): #first argument is the filename..
     
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
+training_data = np.expand_dims(training_data, axis=2)
+
+num_filters = 64
+filter_size = 3
+pool_size = 2
+
 # Build the model.
 model = Sequential([
-  Dense(330, activation='relu', input_shape=(220,)),
-  Dense(64, activation='relu'),
-  Dense(64, activation='relu'),
-  Dense(len(sys.argv)-1, activation='softmax'),
+  #Dense(330, activation='relu', input_shape=(220,)),
+  #Dense(64, activation='relu'),
+  #Dense(64, activation='relu'),
+  #Dense(len(sys.argv)-1, activation='softmax'),
+  Conv1D(num_filters, filter_size, input_shape=(220,1,)),
+  Dropout(0.5),
+  MaxPooling1D(pool_size=pool_size),
+  Flatten(),
+  Dense(len(sys.argv)-1, activation='softmax')
+
 ])
 
 # Compile the model.
 model.compile(
-  optimizer='adam',
+  optimizer=Adam(lr=0.001),
   loss='categorical_crossentropy',
   metrics=['accuracy'],
 )
@@ -64,8 +77,8 @@ model.compile(
 model.fit(
   training_data,
   to_categorical(training_labels),
-  epochs=1000,
-  batch_size=32,
+  epochs= 100,
+  batch_size= 64,
 )
 
 model.save('keras_model.h5', include_optimizer=False)
@@ -85,12 +98,14 @@ predict_data = df5.to_numpy()
 predict_data = np.delete(predict_data, 220, 1)
 for i in range(len(predict_data)):
     temp = predict_data[i]
-    temp[:120] = (temp[:120]/2**15)
+    temp[:120] = (temp[:120]/2**15) 
     temp[120:] = (temp[120:]/2**12) - 0.5
+
+predict_data = np.expand_dims(predict_data, axis=2)
 
 predictions = model.predict(predict_data)
 
-#for i in range(len(predictions)):
-#    print(predictions[i])
+for i in range(len(predictions)):
+    print(np.max(predictions[i])*100)
 
 print(np.argmax(predictions, axis=1))
