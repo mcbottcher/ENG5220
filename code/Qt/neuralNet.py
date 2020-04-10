@@ -8,6 +8,7 @@ from keras.layers import Dense, Conv1D, MaxPooling1D, Flatten, Dropout
 from keras.utils import to_categorical
 from numpy import genfromtxt
 import pandas as pd
+import os 
 
 from keras.optimizers import Adam
 
@@ -22,9 +23,10 @@ net_output_map = dict()
 for argument_number in range(1,len(sys.argv)): #first argument is the filename...
     
     filename = str(sys.argv[argument_number])
-    
+    root_ext = os.path.splitext(filename)    
+
     if (argument_number - 1) not in net_output_map.keys():
-        net_output_map[(argument_number - 1)] = filename
+        net_output_map[(argument_number - 1)] = root_ext[0]
     
     csv_file = pd.read_csv(filename)
     csv_data = csv_file.to_numpy()
