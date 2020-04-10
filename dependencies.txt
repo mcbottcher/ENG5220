@@ -1,6 +1,24 @@
 RUN pulseaudio -D BEFORE LOADING APPLICAITON
 
-libqt5multimedia5-plugin
+
+SPEECH SYNTHESIS STUFF
+qtmultimedia5-dev
 libqt5multimedia5
-flite
+libqt5multimedia5-plugin
+qtspeech5-flite-plugin
+libqt5texttospeech5-dev
+flite 
+flite1-dev 
+libflite1 
+speech-dispatcher-flite
 pulseaudio
+
+NEURAL NET STUFF?
+libatlas-base-dev
+libhdf5-serial-dev
+
+
+QT STUFF
+qt5-default
+qtdeclarative5-dev-tools 
+libqwt-qt5-dev 
