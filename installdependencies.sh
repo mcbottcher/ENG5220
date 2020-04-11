@@ -7,6 +7,8 @@ libqt5multimedia5 libqt5multimedia5-plugins  qtspeech5-flite-plugin libqt5textto
 flite1-dev libflite1 speech-dispatcher-flite pulseaudio gstreamer1.0-pulseaudio libatlas-base-dev \
 libhdf5-serial-dev 
 
+wget http://download.qt.io/official_releases/qt/5.10/5.10.1/qt-opensource-linux-x64-5.10.1.run
+
 git clone https://github.com/Dobiasd/FunctionalPlus
 cd FunctionalPlus
 mkdir -p build && cd build
