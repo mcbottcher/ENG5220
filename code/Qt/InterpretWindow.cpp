@@ -34,7 +34,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     for(int i=0; i<number_of_net_outputs; i++){
         weightsLayout->addWidget(&outputWeightBars[i], Qt::AlignCenter);
         outputWeightBars[i].setTextVisible(true);
-        outputWeightBars[i].setFormat(QString(net_output_words[i]).chopped(4));
+        outputWeightBars[i].setFormat(QString(net_output_words[i]));
     }
    
     updateWeightsTimer = new QTimer(this);
@@ -139,7 +139,7 @@ void InterpretWindow::handleSamples(){
     
     // outputWeightBox->setPlainText(weights);
     // predictedWordBox->clear();
-    predictedWordBox->setText(QString(net_output_words[max_index]).chopped(4));
+    predictedWordBox->setText(QString(net_output_words[max_index]));
     
 }
 

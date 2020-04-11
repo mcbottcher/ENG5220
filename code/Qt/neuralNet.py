@@ -72,7 +72,7 @@ model.save('keras_model.h5', include_optimizer=False)
 
 file1 = open("outputMap.txt","w")
 for key in net_output_map.keys():
-    file1.write(net_output_map[key])
+    file1.write(net_output_map[key].replace(".csv",""))
     file1.write("\n")
 file1.close() 
 
