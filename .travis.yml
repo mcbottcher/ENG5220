@@ -6,7 +6,15 @@ dist: bionic
 before_install: 
 - sudo chmod +x installdependencies.sh
 - ./installdependencies.sh #install dependencies
+if [ $? != 0 ]
+then
+ exit $?
+fi
 
 script:
 - sudo chmod +x build.sh
 - ./build.sh
+if [ $? != 0 ]
+then
+ exit $?
+fi
