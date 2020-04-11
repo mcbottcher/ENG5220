@@ -1,10 +1,10 @@
 #include "TrainWindow.h"
 
 
-TrainWindow::TrainWindow(int16_t* dataPtr):
-    sensorDataptr(dataPtr){
+TrainWindow::TrainWindow(int16_t* sensorDataptr):
+    sensorDataptr(sensorDataptr){
     
-
+    //what is this for?
     for(int i=0; i<11; i++){
         sensorDataptr[i] = i;
     }
@@ -109,15 +109,7 @@ void TrainWindow::startNeuralNet(){
         msg.exec();
         return;
     }
-    
-    std::string command = "python3 neuralNet.py ";
-    
-    for(int i=0; i<selected_movements.size(); i++){
-        command += (selected_movements[i]->text()).toStdString();
-        command += " ";
-    }
 
-    command += "&";
     QMessageBox msg1;
     msg1.setText("Training neural network.");
     msg1.setInformativeText("This may take a while...");
@@ -125,6 +117,12 @@ void TrainWindow::startNeuralNet(){
     msg1.setDefaultButton(QMessageBox::Ok);
 
     if (msg1.exec()==QMessageBox::Ok){
+        std::string command = "python3 neuralNet.py ";
+        for(int i=0; i<selected_movements.size(); i++){
+            command += (selected_movements[i]->text()).toStdString();
+            command += " ";
+        }
+        command += "&";
         system(command.c_str());
     }
 }

@@ -2,6 +2,8 @@
 
 import convert_model
 import sys
+import os
+sys.path.append(os.path.join(os.getcwd(), os.pardir))
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
@@ -20,7 +22,7 @@ net_output_map = dict()
 
 for argument_number in range(1,len(sys.argv)): #first argument is the filename...
     
-    filename = str(sys.argv[argument_number])
+    filename = "../movementData/" + str(sys.argv[argument_number])
     
     if (argument_number - 1) not in net_output_map.keys():
         net_output_map[(argument_number - 1)] = filename
@@ -64,7 +66,7 @@ model.compile(
 model.fit(
   training_data,
   to_categorical(training_labels),
-  epochs=1000,
+  epochs=200,
   batch_size=32,
 )
 
@@ -79,7 +81,7 @@ file1.close()
 convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
 
 
-df5 = pd.read_csv("verificationData.csv")
+df5 = pd.read_csv("../movementData/verificationData.csv")
 predict_data = df5.to_numpy()
 #delete the nans
 predict_data = np.delete(predict_data, 220, 1)

@@ -62,6 +62,7 @@ class MainWindow : public QMainWindow
         void createFilters();
         int count = 0;
 
+        //! 
         bool interpretWindowOpen = false;
         bool trainWindowOpen = false;
         bool monitorWindowOpen = false;

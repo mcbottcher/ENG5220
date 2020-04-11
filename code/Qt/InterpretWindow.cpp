@@ -34,7 +34,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     connect(clearButton, &QPushButton::clicked, [this](){outputWeightBox->clear();});
 
     soundCheckBox = new QCheckBox();
-    QPixmap pix("Speaker_Icon.png");
+    QPixmap pix("../../images/Speaker_Icon.png");
     loudspeakerIcon = new QLabel("Test", this);
     loudspeakerIcon->setPixmap(pix.scaled(
         loudspeakerIcon->width(),

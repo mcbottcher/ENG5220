@@ -100,9 +100,9 @@ private:
 public:
     //! Default constructor.
     /*!
-        \param dataPtr pointer to where the CppTimer stores the sensor values.
+        \param sensorDataptr pointer to where the CppTimer stores the sensor values.
     */
-    TrainWindow(int16_t* dataPtr);
+    TrainWindow(int16_t* sensorDataptr);
     ~TrainWindow();
 
     //!  Handle Samples method.
