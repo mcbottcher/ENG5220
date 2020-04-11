@@ -1,7 +1,7 @@
 sudo: require
 language: cpp
 compiler: gcc
-dist: bionic
+dist: xenial
 
 before_install: sudo chmod +x installdependencies.sh && ./installdependencies.sh 
 
