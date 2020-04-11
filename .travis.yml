@@ -1,7 +1,9 @@
+sudo: require
 language: cpp
-
-dist: bionic
-
-install: sudo ./installdependencies.sh #install dependencies
-
 compiler: gcc
+
+before_install: 
+- ./installdependencies.sh #install dependencies
+
+script:
+- ./build.sh
