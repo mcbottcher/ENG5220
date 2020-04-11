@@ -8,10 +8,13 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     
     net_output_words = new char* [number_of_net_outputs];
     
+    outputWeightBars = new QProgressBar[number_of_net_outputs];
+    weightsLayout = new QVBoxLayout;
     
+    outputWeights = new float[number_of_net_outputs];
     
     std::ifstream file1;
-    file1.open("outputMap.txt");
+    file1.open("Qt/outputMap.txt");
     
     std::string temp;
     
@@ -23,23 +26,37 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     
     file1.close();
     
+    speakerTimer = new QTimer(this);
+    connect(speakerTimer, &QTimer::timeout, this, &InterpretWindow::speaker);
+    lastwordsaid = " ";
+    // speakerTimer->start(100);
+
+    for(int i=0; i<number_of_net_outputs; i++){
+        weightsLayout->addWidget(&outputWeightBars[i], Qt::AlignCenter);
+        outputWeightBars[i].setTextVisible(true);
+        outputWeightBars[i].setFormat(QString(net_output_words[i]));
+    }
+   
     updateWeightsTimer = new QTimer(this);
-    connect(updateWeightsTimer, &QTimer::timeout, [this](){outputWeightBox->setPlainText(weights);});
+    connect(updateWeightsTimer, &QTimer::timeout, [this](){this->updateWeights();});
     updateWeightsTimer->start(100);
     
     homeButton = new QPushButton("Home");
     connect(homeButton, &QPushButton::clicked, [this](){this->closeWindow();});
 
-    clearButton = new QPushButton("Clear");
-    connect(clearButton, &QPushButton::clicked, [this](){outputWeightBox->clear();});
-
     soundCheckBox = new QCheckBox();
-    QPixmap pix("../../images/Speaker_Icon.png");
+    // soundCheckBox->setChecked(true);
+    QPixmap pix("../images/Speaker_Icon.png");
     loudspeakerIcon = new QLabel("Test", this);
     loudspeakerIcon->setPixmap(pix.scaled(
         loudspeakerIcon->width(),
         loudspeakerIcon->height(),
         Qt::KeepAspectRatio));
+
+    connect(soundCheckBox, &QCheckBox::stateChanged, [this](){
+        soundCheckBox->isChecked() ? speakerTimer->start(100) : speakerTimer->stop();
+        });
+    soundCheckBox->setChecked(true);
 
     soundLayout = new QHBoxLayout();
     soundLayout->addStretch(100);
@@ -49,17 +66,14 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     
     homeLayout = new QHBoxLayout();
     homeLayout->addStretch(100);
-    homeLayout->addWidget(clearButton, Qt::AlignCenter);
     homeLayout->addWidget(homeButton, Qt::AlignCenter);
     homeLayout->addStretch(100);
 
     predictedWordBox = new QLabel("Prediction",this);
-    outputWeightBox = new QPlainTextEdit;
-    outputWeightBox->setReadOnly(true);
-
+   
     textLayout = new QVBoxLayout();
     textLayout->addWidget(predictedWordBox, Qt::AlignCenter);
-    textLayout->addWidget(outputWeightBox, Qt::AlignCenter);
+    textLayout->addLayout(weightsLayout, Qt::AlignCenter);
 
     mainLayout  = new QVBoxLayout();
     mainLayout->addLayout(soundLayout);
@@ -81,13 +95,14 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
 
 InterpretWindow::~InterpretWindow(){
     //emit stopSampling_sig();
-    updateWeightsTimer->stop();
     delete predictor;
     delete[] net_output_words;
+    delete[] outputWeights;
+    delete[] outputWeightBars;
 }
 
 void InterpretWindow::closeWindow(){
-    updateWeightsTimer->stop();
+    speakerTimer->stop();
     emit emitClose();
 
 }
@@ -109,24 +124,17 @@ void InterpretWindow::handleSamples(){
     
     fdeep::tensor result = predictor->predict();
     
-    // outputWeightBox->clear();
-    
     max = 0;
     max_index = 0;
-    // float outputweight; 
-    
-    weights = "";
     for(uint_fast8_t i=0; i<number_of_net_outputs; i++){
         
-        outputweight = result.get(fdeep::tensor_pos(i));
+        outputWeights[i] = result.get(fdeep::tensor_pos(i));
         
-        if(outputweight>max){
-            max = outputweight;
+        if(outputWeights[i]>max){
+            max = outputWeights[i];
             max_index = i;
         }
-        weights += QString::number(outputweight) +"\n";
-        // outputWeightBox->appendPlainText(QString::number(outputweight));
-    
+
     }
     
     // outputWeightBox->setPlainText(weights);
@@ -142,8 +150,27 @@ void InterpretWindow::predict(){
 
 }
 
+void InterpretWindow::updateWeights(){
+    
+    for(int i=0; i<number_of_net_outputs; i++){
+        outputWeightBars[i].setValue(int(outputWeights[i]*100));
+    }
+
+}
+
+
 //used for outputting the voice...
 //speech->say(textBox->toPlainText());
+
+void InterpretWindow::speaker(){
+    // outputWeightBox->setPlainText(weights);
+
+    // if ((soundCheckBox->isChecked())&&(lastwordsaid != predictedWordBox->text())){
+    if (lastwordsaid != predictedWordBox->text()){
+        speech->say(predictedWordBox->text());
+        lastwordsaid = predictedWordBox->text();
+    }
+}
 
 
 

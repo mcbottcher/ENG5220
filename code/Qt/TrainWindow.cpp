@@ -63,7 +63,7 @@ TrainWindow::TrainWindow(int16_t* sensorDataptr):
 
     movementList = new QListWidget();
     movementList->setSelectionMode(QAbstractItemView::ExtendedSelection);
-    QDir directory;
+    QDir directory("movementData/");
     QStringList files = directory.entryList(QStringList() << "*.csv", QDir::Files);
     movementList->addItems(files);
 
@@ -117,7 +117,7 @@ void TrainWindow::startNeuralNet(){
     msg1.setDefaultButton(QMessageBox::Ok);
 
     if (msg1.exec()==QMessageBox::Ok){
-        std::string command = "python3 neuralNet.py ";
+        std::string command = "python3 Qt/neuralNet.py ";
         for(int i=0; i<selected_movements.size(); i++){
             command += (selected_movements[i]->text()).toStdString();
             command += " ";
@@ -140,7 +140,7 @@ void TrainWindow::data_aq_state_machine(){
             }
             
             filename = wordInput->text();
-            myfile.open (filename.toStdString() + ".csv"); 
+            myfile.open ("../movementData/" +filename.toStdString() + ".csv"); 
             
             sampleCount = 0;
             timer->start(1000); //time in ms

@@ -10,8 +10,9 @@
 #include <QLabel>
 #include <QFont>
 #include <QTimer>
-#include <QPlainTextEdit>
 #include <QTextToSpeech>
+#include <QVBoxLayout>
+#include <QProgressBar>
 
 #include <stdio.h>
 #include <iostream>
@@ -33,18 +34,18 @@ private:
   
     QLabel *loudspeakerIcon;
 	
-    QPushButton  *homeButton, *clearButton;
+    QPushButton  *homeButton;
     QLabel  *predictedWordBox;
-    QPlainTextEdit  *outputWeightBox;
 
     QCheckBox    *soundCheckBox;
+    QProgressBar *outputWeightBars;
     
-    QTimer *updateWeightsTimer;
+    QTimer *updateWeightsTimer, *speakerTimer;
 
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
 	QHBoxLayout  *soundLayout, *homeLayout;  // vertical layout
-    QVBoxLayout  *textLayout;
+    QVBoxLayout  *textLayout, *weightsLayout;
     
     QVBoxLayout  *vPlotLayout;  
     QHBoxLayout  *hPlotLayout;
@@ -56,11 +57,9 @@ private:
     QTextToSpeech *speech;
 
     NeuralNet *predictor;
-    QString weights;
+    QString weights, lastwordsaid;
 
     void predict();
-    
-    // int16_t* sensorValuesPtr;
 
     int number_of_net_outputs;
     
@@ -69,7 +68,8 @@ private:
     float normalised_samples[11];
     uint_fast8_t max_index;
     float max;
-    float outputweight;
+    
+    float* outputWeights;
 
 public:
 
@@ -85,7 +85,8 @@ signals:
 public slots:
     void closeWindow();
     void handleSamples();
-    
+    void speaker();
+    void updateWeights();
 
 };
 
