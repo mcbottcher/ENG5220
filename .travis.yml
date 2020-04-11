@@ -7,4 +7,5 @@ before_install:
 - ./installdependencies.sh #install dependencies
 
 script:
+- sudo chmod +x build.sh
 - ./build.sh
