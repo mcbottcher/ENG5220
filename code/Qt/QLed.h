@@ -10,7 +10,7 @@
 class QLed : public QFrame {
     Q_OBJECT
 public:
-    QLed(){
+    //QLed(){
         this->setMinimumSize(12, 12);
         this->setAutoFillBackground(true);
         this->setFrameShape(QFrame::StyledPanel);
