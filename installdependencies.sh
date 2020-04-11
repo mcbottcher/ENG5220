@@ -1,5 +1,7 @@
 mkdir -p build && cd build
 
+sudo apt-get update
+
 sudo apt-get install qt5-default qtdeclarative5-dev-tools libqwt-qt5-dev qtmultimedia5-dev \
 libqt5multimedia5 libqt5multimedia5-plugins  qtspeech5-flite-plugin libqt5texttospeech5-dev \
 flite1-dev libflite1 speech-dispatcher-flite pulseaudio gstreamer1.0-pulseaudio libatlas-base-dev \
