@@ -2,6 +2,6 @@ language: cpp
 
 dist: bionic
 
-install:  #install dependencies
+install: sudo ./installdependencies.sh #install dependencies
 
 compiler: gcc
