@@ -11,10 +11,4 @@ then
  exit $?
 fi
 
-script:
-#- sudo chmod +x build.sh
-#- ./build.sh
-- cd code/Qt
-- qmake
-- make
-- cd -
+script: cd code/Qt && qmake && make && cd -
