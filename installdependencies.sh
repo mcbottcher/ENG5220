@@ -36,6 +36,7 @@ cd ../..
 
 git clone https://github.com/berndporr/iir1.git
 cd iir1
+mkdir -p build && cd build
 cmake ..
 make && sudo make install
 cd ../..
