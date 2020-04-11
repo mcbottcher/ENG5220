@@ -3,7 +3,7 @@ language: cpp
 compiler: gcc
 
 before_install: 
-- sudo chmod +x installdependencies
+- sudo chmod +x installdependencies.sh
 - ./installdependencies.sh #install dependencies
 
 script:
