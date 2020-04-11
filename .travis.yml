@@ -1,1 +1,7 @@
 language: cpp
+
+dist: bionic
+
+install:  #install dependencies
+
+compiler: gcc
