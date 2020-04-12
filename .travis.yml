@@ -6,4 +6,4 @@ dist: bionic
 before_install: sudo chmod +x installdependencies.sh && ./installdependencies.sh 
 
 
-script: cd code/Qt && qmake && make && cd -
+script: cd code && qmake && make && cd -
