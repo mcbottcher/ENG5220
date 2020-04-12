@@ -1,5 +1,5 @@
 #!/bin/bash
-cd code/Qt
+cd code
 qmake
 make
 cd -
