@@ -46,6 +46,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
 
     soundCheckBox = new QCheckBox();
     // soundCheckBox->setChecked(true);
+
     QPixmap pix("../images/Speaker_Icon.png");
     loudspeakerIcon = new QLabel("Test", this);
     loudspeakerIcon->setPixmap(pix.scaled(

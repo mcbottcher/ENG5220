@@ -73,7 +73,7 @@ model.save('Qt/keras_model.h5', include_optimizer=False)
 
 file1 = open("Qt/outputMap.txt","w")
 for key in net_output_map.keys():
-    file1.write(net_output_map[key].replace("Qt/../movementData/","").replace(".csv",""))
+    file1.write(net_output_map[key].replace("Qt/../movementData/","").replace(".csv","").replace("_"," "))
     file1.write("\n")
 file1.close() 
 
