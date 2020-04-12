@@ -2,6 +2,7 @@
 
 import convert_model
 import sys
+import os
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
@@ -20,7 +21,7 @@ net_output_map = dict()
 
 for argument_number in range(1,len(sys.argv)): #first argument is the filename...
     
-    filename = str(sys.argv[argument_number])
+    filename = os.path.join(os.path.dirname(__file__), '../movementData/') + str(sys.argv[argument_number])
     
     if (argument_number - 1) not in net_output_map.keys():
         net_output_map[(argument_number - 1)] = filename
@@ -64,22 +65,22 @@ model.compile(
 model.fit(
   training_data,
   to_categorical(training_labels),
-  epochs=1000,
+  epochs=200,
   batch_size=32,
 )
 
-model.save('keras_model.h5', include_optimizer=False)
+model.save('Qt/keras_model.h5', include_optimizer=False)
 
-file1 = open("outputMap.txt","w")
+file1 = open("Qt/outputMap.txt","w")
 for key in net_output_map.keys():
-    file1.write(net_output_map[key].replace(".csv",""))
+    file1.write(net_output_map[key].replace("Qt/../movementData/","").replace(".csv","").replace("_"," "))
     file1.write("\n")
 file1.close() 
 
-convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
+convert_model.convert('Qt/keras_model.h5', 'Qt/fdeep_model.json', False)
 
-
-df5 = pd.read_csv("verificationData.csv")
+verificationfilename = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')
+df5 = pd.read_csv(verificationfilename)
 predict_data = df5.to_numpy()
 #delete the nans
 predict_data = np.delete(predict_data, 220, 1)

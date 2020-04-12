@@ -7,11 +7,11 @@
 #include <iostream>
 #include <fstream>
 
-#include "cppTimer/CppTimer.h"
-#include "MPU6050/MPU6050.h"
+#include "../../code/cppTimer/CppTimer.h"
+#include "../../code/MPU6050/MPU6050.h"
 //#include "MPU6050/I2Cdev.h"
-#include "MCP3428/MCP3428.h"
-#include "RingBuff.h"
+#include "../../code/MCP3428/MCP3428.h"
+#include "../../code/RingBuff.h"
 
 #define NUMBER_OF_REPETITIONS 40
 

@@ -17,7 +17,7 @@ class NeuralNet{
         
     private:
         
-        fdeep::model _model = fdeep::load_model("fdeep_model.json");
+        fdeep::model _model = fdeep::load_model("Qt/fdeep_model.json");
         
         //11 rows, 20 columns
         float netInputs[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS] = {0};

@@ -14,7 +14,7 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
     outputWeights = new float[number_of_net_outputs];
     
     std::ifstream file1;
-    file1.open("outputMap.txt");
+    file1.open("Qt/outputMap.txt");
     
     std::string temp;
     
@@ -46,7 +46,8 @@ InterpretWindow::InterpretWindow(int16_t* sensorValuesPtr) :
 
     soundCheckBox = new QCheckBox();
     // soundCheckBox->setChecked(true);
-    QPixmap pix("Speaker_Icon.png");
+
+    QPixmap pix("../images/Speaker_Icon.png");
     loudspeakerIcon = new QLabel("Test", this);
     loudspeakerIcon->setPixmap(pix.scaled(
         loudspeakerIcon->width(),

@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 void MainWindow::createUI(){
-    QPixmap pix("TheLexiconGlove.png");
+    QPixmap pix("../images/TheLexiconGlove.png");
     //QLabel icon_label;
     //icon_label.setPixmap(pix);
     //icon_label.setText("Test");
@@ -79,7 +79,7 @@ void MainWindow::createUI(){
     // Set layout in QWidget
     QWidget *window = new QWidget();
     window->setLayout(main_layout);
-    this->setWindowIcon(QIcon("TheLexiconGlove.png"));
+    this->setWindowIcon(QIcon("../images/TheLexiconGlove.png"));
     window->setWindowTitle("The Lexicon Glove");
 
     // Set QWidget as the central layout of the main window
