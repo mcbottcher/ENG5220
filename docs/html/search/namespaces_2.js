@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model',['model',['../namespacemodel.html',1,'']]]
+  ['plotfilter',['plotfilter',['../namespaceplotfilter.html',1,'']]]
 ];

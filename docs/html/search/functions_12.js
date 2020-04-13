@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['wave',['wave',['../namespacecreatesines.html#ac7337cec3a25d030904168ebbef7db5b',1,'createsines']]],
-  ['write_5fstd',['write_std',['../class_i2_cdev.html#aea44932d610604d29699ac932fcdcd9f',1,'I2Cdev::write_std(uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)'],['../class_i2_cdev.html#a49618ca1bfae6ef27fba9f0c8b349dc4',1,'I2Cdev::write_std(uint8_t slaveAddress, uint8_t *txdataBuf, size_t number_of_bytes)']]],
-  ['writebit',['writeBit',['../class_i2_cdev.html#aa68890af87de5471d32e583ebbd91acb',1,'I2Cdev::writeBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)'],['../class_i2_cdev.html#aa4fee368b18443d2f0098647d260ef00',1,'I2Cdev::writeBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data)']]],
-  ['writebits',['writeBits',['../class_i2_cdev.html#a913371251b6a41520c080115650e1b59',1,'I2Cdev::writeBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)'],['../class_i2_cdev.html#a19a09ceb15a27ac621fc7816f0dac5c3',1,'I2Cdev::writeBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)']]],
-  ['writebitsw',['writeBitsW',['../class_i2_cdev.html#a8f8652a1328224cce867eed665a45c4d',1,'I2Cdev::writeBitsW(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)'],['../class_i2_cdev.html#a3d0caf5928c7b5e14696aa325344670b',1,'I2Cdev::writeBitsW(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)']]],
-  ['writebitw',['writeBitW',['../class_i2_cdev.html#a1b5fbedfadec5d429c81ee84d27e658d',1,'I2Cdev::writeBitW(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)'],['../class_i2_cdev.html#adb39954a2858470b16ed1264cc871e34',1,'I2Cdev::writeBitW(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)']]],
-  ['writebyte',['writeByte',['../class_i2_cdev.html#aeb297637ef985cd562da465ba61b7042',1,'I2Cdev::writeByte(uint8_t devAddr, uint8_t regAddr, uint8_t data)'],['../class_i2_cdev.html#a630ff78728db0cfc4e06556ab87ebd18',1,'I2Cdev::writeByte(uint8_t devAddr, uint8_t regAddr, uint8_t data)']]],
-  ['writebytes',['writeBytes',['../class_i2_cdev.html#aa4e39cac6c0eac5112f9132084bcc93e',1,'I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)'],['../class_i2_cdev.html#a3ff98d08476804e210ce0575995e5235',1,'I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)']]],
-  ['writedmpconfigurationset',['writeDMPConfigurationSet',['../class_m_p_u6050.html#abe4f64f68164116b2ec94fe1d987929a',1,'MPU6050']]],
-  ['writememoryblock',['writeMemoryBlock',['../class_m_p_u6050.html#aae135772b45e1c7968b55f4f01b3757f',1,'MPU6050']]],
-  ['writememorybyte',['writeMemoryByte',['../class_m_p_u6050.html#a20de45af9109402f0cfe785f8fdbf439',1,'MPU6050']]],
-  ['writeprogdmpconfigurationset',['writeProgDMPConfigurationSet',['../class_m_p_u6050.html#a160a3d018a81eb85a33874a43f44b3ea',1,'MPU6050']]],
-  ['writeprogmemoryblock',['writeProgMemoryBlock',['../class_m_p_u6050.html#a201dc0aa819f451584c575c5a7590e10',1,'MPU6050']]],
-  ['writeword',['writeWord',['../class_i2_cdev.html#acbe68a802d6a177301736e60bedd1def',1,'I2Cdev::writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data)'],['../class_i2_cdev.html#a939f61622f39de4c3b14b02bb12d9927',1,'I2Cdev::writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data)']]],
-  ['writewords',['writeWords',['../class_i2_cdev.html#aae37c0526e4b4730a5b2ffd752fd8b21',1,'I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)'],['../class_i2_cdev.html#a255d5177c0736b5c069708e7ad8a0cf4',1,'I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)']]],
-  ['wrongbuttonclicked',['wrongButtonClicked',['../class_interpret_window.html#a8fbac855c9221e540e3c1af1a53f11d2',1,'InterpretWindow']]]
+  ['testconnection',['testConnection',['../class_m_p_u6050.html#a95ffab7b44fce3834236e0813687d11a',1,'MPU6050']]],
+  ['timeoutsignal',['timeoutsignal',['../class_sample_timer.html#a92a78d3dcbf7fb9e7086ea2c00d8b7c8',1,'SampleTimer']]],
+  ['timerevent',['timerEvent',['../class_sample_timer.html#aeb8b390f578e49bf74cc93bd901d29ae',1,'SampleTimer::timerEvent()'],['../class_ticker.html#ad8f13d067d028448dc8f6fa3dcab532c',1,'Ticker::timerEvent()'],['../class_timer.html#a76d40cc2816da1521102b34427635e3e',1,'Timer::timerEvent()']]],
+  ['trainbuttonclicked',['trainButtonClicked',['../class_main_window.html#ac739668022b7b6aa8062e8a2bb3a8776',1,'MainWindow']]],
+  ['trainingdataloop',['trainingDataLoop',['../class_train_window.html#a67a932ea98e16f96223f91845924ff54',1,'TrainWindow']]],
+  ['trainquit',['trainQuit',['../class_main_window.html#a36300d9ee353aeb9db643132df54caeb',1,'MainWindow']]],
+  ['trainwindow',['TrainWindow',['../class_train_window.html#a98117c678de0c2105ca579a1aa638f96',1,'TrainWindow']]],
+  ['transform_5fbias',['transform_bias',['../namespaceconvert__model.html#abf56711a7ffa7bbe15f61037c8a529d9',1,'convert_model']]],
+  ['transform_5fcudnn_5fweights',['transform_cudnn_weights',['../namespaceconvert__model.html#a3d1509e504050ecfb988166a6783fe1e',1,'convert_model']]],
+  ['transform_5finput_5fkernel',['transform_input_kernel',['../namespaceconvert__model.html#a5a097259be8a3b2cb5a15aa8b1bfaf93',1,'convert_model']]],
+  ['transform_5fkernels',['transform_kernels',['../namespaceconvert__model.html#ac798d351dc77cdf6b93011a86e68e693',1,'convert_model']]],
+  ['transform_5frecurrent_5fkernel',['transform_recurrent_kernel',['../namespaceconvert__model.html#a63fd3c233dd37383fd2347848ed0f0c0',1,'convert_model']]]
 ];

@@ -1,5 +1,15 @@
 var searchData=
 [
+  ['gen_5ftest_5fdata',['gen_test_data',['../namespaceconvert__model.html#acc9cea17df8a2cdb457ca265316c33bb',1,'convert_model']]],
+  ['get_5fall_5fweights',['get_all_weights',['../namespaceconvert__model.html#aacbe4c419e17c54e0b4eaa3a733a9020',1,'convert_model']]],
+  ['get_5fdict_5fkeys',['get_dict_keys',['../namespaceconvert__model.html#a3aa2674312037868a5e986ea1ba35a5a',1,'convert_model']]],
+  ['get_5flayer_5ffunctions_5fdict',['get_layer_functions_dict',['../namespaceconvert__model.html#a4828d26c08c1cfd9166a2e2b72463977',1,'convert_model']]],
+  ['get_5flayer_5finput_5fshape_5ftensor_5fshape',['get_layer_input_shape_tensor_shape',['../namespaceconvert__model.html#a4c5b330dff27e35098311be6269cb026',1,'convert_model']]],
+  ['get_5fmodel_5finput_5flayers',['get_model_input_layers',['../namespaceconvert__model.html#a9742fd24f12c9afa974165fe33a24ecd',1,'convert_model']]],
+  ['get_5fmodel_5fname',['get_model_name',['../namespaceconvert__model.html#a1dfa97c9fd2e4f9f6d0078e0babef3a0',1,'convert_model']]],
+  ['get_5fnumber_5fof_5foutputs',['get_number_of_outputs',['../class_neural_net.html#a21975ef3f3ffab08dca9db6b9ab9ce80',1,'NeuralNet']]],
+  ['get_5fshapes',['get_shapes',['../namespaceconvert__model.html#a98d3e803e6124f39d6d66df42940361d',1,'convert_model']]],
+  ['get_5ftransform_5ffunc',['get_transform_func',['../namespaceconvert__model.html#ac7d86f6f0b30682caef52d677bdc6ad4',1,'convert_model']]],
   ['getacceleration',['getAcceleration',['../class_m_p_u6050.html#a658dfc7e35b7fdba360a75f137bde33a',1,'MPU6050']]],
   ['getaccelerationx',['getAccelerationX',['../class_m_p_u6050.html#aa68475158c22128e5459c4c5e19439dc',1,'MPU6050']]],
   ['getaccelerationy',['getAccelerationY',['../class_m_p_u6050.html#a27240b90d3e03c85b7a619b794bb1756',1,'MPU6050']]],

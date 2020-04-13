@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sampledata_2ecpp',['sampledata.cpp',['../sampledata_8cpp.html',1,'']]],
-  ['sampletimer_2ecpp',['SampleTimer.cpp',['../_sample_timer_8cpp.html',1,'']]],
-  ['sampletimer_2eh',['SampleTimer.h',['../_sample_timer_8h.html',1,'']]]
+  ['trainwindow_2ecpp',['TrainWindow.cpp',['../_train_window_8cpp.html',1,'']]],
+  ['trainwindow_2eh',['TrainWindow.h',['../_train_window_8h.html',1,'']]]
 ];

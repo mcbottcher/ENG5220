@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['windowtimer',['windowtimer',['../class_main_window.html#aaa776530b3613f80f6135d71485f24c7',1,'MainWindow']]],
-  ['wordinput',['wordInput',['../class_train_window.html#af493f6dac5779a7f4ca417e46b3857ec',1,'TrainWindow']]],
-  ['wordtrain',['wordTrain',['../class_train_window.html#a0c29d679ab30618205fc2fd41e7ec0e3',1,'TrainWindow']]],
-  ['wrongbutton',['wrongButton',['../class_interpret_window.html#a18ef0a58c63b719e1924dcd0c11f36a4',1,'InterpretWindow']]]
+  ['valuearray',['valuearray',['../class_c_s_vreader.html#afb1326f8abfadd3b3eb4448cf9144af7',1,'CSVreader']]],
+  ['vectorarray',['vectorarray',['../class_c_s_vreader.html#aab890a2ae82c008906beb433bf2d68e1',1,'CSVreader']]],
+  ['verificationfilename',['verificationfilename',['../namespaceneural_net.html#a11008eac7811796cd340c1f04c04a3f4',1,'neuralNet']]],
+  ['vplotlayout',['vPlotLayout',['../class_interpret_window.html#a865f3bb899600a52fb5f32d404829dbe',1,'InterpretWindow::vPlotLayout()'],['../class_monitor_window.html#af288cc53017bb1fc672f9f3acaa6d474',1,'MonitorWindow::vPlotLayout()']]]
 ];

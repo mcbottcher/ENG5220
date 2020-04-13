@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -104,21 +104,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66b1ddd47bc5b393cf184f02517e82d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd68e306bdf39aaa8c6ef016e4da18a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#afd68e306bdf39aaa8c6ef016e4da18a1">~NeuralNet</a> ()</td></tr>
 <tr class="separator:afd68e306bdf39aaa8c6ef016e4da18a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5847c3d58230e3f5df8598a6f8b0bceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a5847c3d58230e3f5df8598a6f8b0bceb">predict</a> ()</td></tr>
-<tr class="separator:a5847c3d58230e3f5df8598a6f8b0bceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71540a3421e4e381f3811bcb241b09e"><td class="memItemLeft" align="right" valign="top">fdeep::tensor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#ad71540a3421e4e381f3811bcb241b09e">predict</a> ()</td></tr>
+<tr class="separator:ad71540a3421e4e381f3811bcb241b09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7886a708a90f398259221e5a9f9e1a65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a7886a708a90f398259221e5a9f9e1a65">insertSamples</a> (float *sampleBuff)</td></tr>
 <tr class="separator:a7886a708a90f398259221e5a9f9e1a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21975ef3f3ffab08dca9db6b9ab9ce80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a21975ef3f3ffab08dca9db6b9ab9ce80">get_number_of_outputs</a> ()</td></tr>
+<tr class="separator:a21975ef3f3ffab08dca9db6b9ab9ce80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0fcc02dadaff06b0228304e3e89e9095"><td class="memItemLeft" align="right" valign="top">fdeep::model&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a0fcc02dadaff06b0228304e3e89e9095">_model</a> = fdeep::load_model(&quot;fdeep_model.json&quot;)</td></tr>
+<tr class="memitem:a0fcc02dadaff06b0228304e3e89e9095"><td class="memItemLeft" align="right" valign="top">fdeep::model&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a0fcc02dadaff06b0228304e3e89e9095">_model</a> = fdeep::load_model(&quot;Qt/fdeep_model.json&quot;)</td></tr>
 <tr class="separator:a0fcc02dadaff06b0228304e3e89e9095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de1915a65411a91c61923795a6d273d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neural_net.html#a8de1915a65411a91c61923795a6d273d">netInputs</a> [<a class="el" href="_neural_net_8h.html#a00ad6a3a94ffdd1bc6b55e789f9dfda9">NUMBER_OF_ROWS</a>][<a class="el" href="_neural_net_8h.html#a0240364487a54a70da4ffb51459ada98">NUMBER_OF_COLUMNS</a>] = {0}</td></tr>
 <tr class="separator:a8de1915a65411a91c61923795a6d273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00007">7</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+<div class="textblock"><p>A class defining a feed forward neural network based on a Keras model </p>
+
+<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00011">11</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a66b1ddd47bc5b393cf184f02517e82d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66b1ddd47bc5b393cf184f02517e82d4">&#9670;&nbsp;</a></span>NeuralNet()</h2>
@@ -159,6 +162,26 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a21975ef3f3ffab08dca9db6b9ab9ce80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21975ef3f3ffab08dca9db6b9ab9ce80">&#9670;&nbsp;</a></span>get_number_of_outputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NeuralNet::get_number_of_outputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A function to return the number of network output nodes </p><dl class="section return"><dt>Returns</dt><dd>Number of network output nodes </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_neural_net_8cpp_source.html#l00047">47</a> of file <a class="el" href="_neural_net_8cpp_source.html">NeuralNet.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a7886a708a90f398259221e5a9f9e1a65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7886a708a90f398259221e5a9f9e1a65">&#9670;&nbsp;</a></span>insertSamples()</h2>
 
@@ -174,25 +197,34 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A function to insert an array of new samples into the neural network inputs. The function shifts exisiting inputs by one place inserting the new sample at the first input and disgrading the last input</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sampleBuff</td><td>a pointer to a buffer of new samples, buffer must have a size equal to the number of net input rows</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_neural_net.html#a8de1915a65411a91c61923795a6d273d">netInputs</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_neural_net_8cpp_source.html#l00026">26</a> of file <a class="el" href="_neural_net_8cpp_source.html">NeuralNet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_neural_net_8cpp_source.html#l00032">32</a> of file <a class="el" href="_neural_net_8cpp_source.html">NeuralNet.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5847c3d58230e3f5df8598a6f8b0bceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5847c3d58230e3f5df8598a6f8b0bceb">&#9670;&nbsp;</a></span>predict()</h2>
+<a id="ad71540a3421e4e381f3811bcb241b09e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71540a3421e4e381f3811bcb241b09e">&#9670;&nbsp;</a></span>predict()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void NeuralNet::predict </td>
+          <td class="memname">fdeep::tensor NeuralNet::predict </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A function to perform one feed forward run of the neural network </p><dl class="section return"><dt>Returns</dt><dd>A tensor containing the predicted output layer weights </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_neural_net_8cpp_source.html#l00020">20</a> of file <a class="el" href="_neural_net_8cpp_source.html">NeuralNet.cpp</a>.</p>
 
@@ -209,7 +241,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">fdeep::model NeuralNet::_model = fdeep::load_model(&quot;fdeep_model.json&quot;)</td>
+          <td class="memname">fdeep::model NeuralNet::_model = fdeep::load_model(&quot;Qt/fdeep_model.json&quot;)</td>
         </tr>
       </table>
   </td>
@@ -218,8 +250,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Holds the Cpp implementation of a Keras defined neural network model </p>
 
-<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00019">19</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00044">44</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
 
 </div>
 </div>
@@ -242,8 +275,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Array to hold inputs to the neural network </p>
 
-<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00022">22</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_neural_net_8h_source.html#l00047">47</a> of file <a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>.</p>
 
 </div>
 </div>

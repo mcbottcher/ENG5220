@@ -28,6 +28,5 @@ var hierarchy =
       [ "MonitorWindow", "class_monitor_window.html", null ],
       [ "TrainWindow", "class_train_window.html", null ]
     ] ],
-    [ "RingBuff", "class_ring_buff.html", null ],
-    [ "TrainNet", "class_train_net.html", null ]
+    [ "RingBuff", "class_ring_buff.html", null ]
 ];

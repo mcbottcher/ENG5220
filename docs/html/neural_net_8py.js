@@ -18,5 +18,6 @@ var neural_net_8py =
     [ "predictions", "neural_net_8py.html#a86b84d5b03a4d887980632c9873ae520", null ],
     [ "temp", "neural_net_8py.html#aeb2fce31088901853b27a3220d6d31d3", null ],
     [ "training_data", "neural_net_8py.html#ae7a97e407478d66944242507a3acdeaa", null ],
-    [ "training_labels", "neural_net_8py.html#a15081ae6f8a28618f92123c6d9f7db94", null ]
+    [ "training_labels", "neural_net_8py.html#a15081ae6f8a28618f92123c6d9f7db94", null ],
+    [ "verificationfilename", "neural_net_8py.html#a11008eac7811796cd340c1f04c04a3f4", null ]
 ];

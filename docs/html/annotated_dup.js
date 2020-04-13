@@ -15,6 +15,5 @@ var annotated_dup =
     [ "SampleTimer", "class_sample_timer.html", "class_sample_timer" ],
     [ "Ticker", "class_ticker.html", "class_ticker" ],
     [ "Timer", "class_timer.html", "class_timer" ],
-    [ "TrainNet", "class_train_net.html", "class_train_net" ],
     [ "TrainWindow", "class_train_window.html", "class_train_window" ]
 ];

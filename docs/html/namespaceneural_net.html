@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -102,7 +102,7 @@ Variables</h2></td></tr>
 <tr class="separator:a15081ae6f8a28618f92123c6d9f7db94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2094cfee9ae84db76df9c0bf5a4c98fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a2094cfee9ae84db76df9c0bf5a4c98fb">net_output_map</a> = dict()</td></tr>
 <tr class="separator:a2094cfee9ae84db76df9c0bf5a4c98fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a8ea57b14a0cc6fc9c85af6c47e0acbab">filename</a> = str(sys.argv[argument_number])</td></tr>
+<tr class="memitem:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a8ea57b14a0cc6fc9c85af6c47e0acbab">filename</a> = os.path.join(os.path.dirname(__file__), '../movementData/') + str(sys.argv[argument_number])</td></tr>
 <tr class="separator:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e79f78458febef5d7b6c67653668dc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a5e79f78458febef5d7b6c67653668dc3">csv_file</a> = pd.read_csv(<a class="el" href="namespaceneural_net.html#a8ea57b14a0cc6fc9c85af6c47e0acbab">filename</a>)</td></tr>
 <tr class="separator:a5e79f78458febef5d7b6c67653668dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +126,11 @@ Variables</h2></td></tr>
 <tr class="separator:ab7970914cb5fa26632d45310d5d05059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae079b848cf02a89fdd3d0fdba02f6b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ae079b848cf02a89fdd3d0fdba02f6b7b">include_optimizer</a></td></tr>
 <tr class="separator:ae079b848cf02a89fdd3d0fdba02f6b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#afa2b3b9bc7579fa5687436031f9ff67f">file1</a> = open(&quot;outputMap.txt&quot;,&quot;w&quot;)</td></tr>
+<tr class="memitem:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#afa2b3b9bc7579fa5687436031f9ff67f">file1</a> = open(&quot;Qt/outputMap.txt&quot;,&quot;w&quot;)</td></tr>
 <tr class="separator:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ab3674337e34c94ed1ee6234dc4300b4b">df5</a> = pd.read_csv(&quot;verificationData.csv&quot;)</td></tr>
+<tr class="memitem:a11008eac7811796cd340c1f04c04a3f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a11008eac7811796cd340c1f04c04a3f4">verificationfilename</a> = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')</td></tr>
+<tr class="separator:a11008eac7811796cd340c1f04c04a3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ab3674337e34c94ed1ee6234dc4300b4b">df5</a> = pd.read_csv(<a class="el" href="namespaceneural_net.html#a11008eac7811796cd340c1f04c04a3f4">verificationfilename</a>)</td></tr>
 <tr class="separator:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5af0e0a420f7d686e1548a49ac6884c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ac5af0e0a420f7d686e1548a49ac6884c">predict_data</a> = df5.to_numpy()</td></tr>
 <tr class="separator:ac5af0e0a420f7d686e1548a49ac6884c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +150,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00066">66</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00069">69</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -164,7 +166,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00027">27</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00030">30</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00026">26</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00029">29</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -191,12 +193,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">neuralNet.df5 = pd.read_csv(&quot;verificationData.csv&quot;)</td>
+          <td class="memname">neuralNet.df5 = pd.read_csv(<a class="el" href="namespaceneural_net.html#a11008eac7811796cd340c1f04c04a3f4">verificationfilename</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00076">76</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00083">83</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -212,7 +214,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00065">65</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00068">68</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -223,12 +225,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">neuralNet.file1 = open(&quot;outputMap.txt&quot;,&quot;w&quot;)</td>
+          <td class="memname">neuralNet.file1 = open(&quot;Qt/outputMap.txt&quot;,&quot;w&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00072">72</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00074">74</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -239,12 +241,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">neuralNet.filename = str(sys.argv[argument_number])</td>
+          <td class="memname">neuralNet.filename = os.path.join(os.path.dirname(__file__), '../movementData/') + str(sys.argv[argument_number])</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00021">21</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00024">24</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -260,7 +262,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00070">70</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00072">72</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -276,7 +278,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00037">37</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00040">40</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -292,7 +294,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00057">57</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00060">60</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -308,7 +310,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00058">58</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00061">61</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -324,7 +326,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  Sequential([</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  Dense(330, activation=<span class="stringliteral">&#39;relu&#39;</span>, input_shape=(220,)),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  Dense(64, activation=<span class="stringliteral">&#39;relu&#39;</span>),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  Dense(64, activation=<span class="stringliteral">&#39;relu&#39;</span>),</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  Dense(len(sys.argv)-1, activation=<span class="stringliteral">&#39;softmax&#39;</span>),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;])</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00047">47</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00050">50</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -340,7 +342,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00017">17</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00020">20</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -356,7 +358,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00056">56</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00059">59</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -372,7 +374,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00077">77</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00084">84</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -388,7 +390,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00085">85</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00092">92</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -404,7 +406,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00033">33</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00036">36</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -420,7 +422,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00014">14</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00017">17</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>
@@ -436,7 +438,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00015">15</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00018">18</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
+
+</div>
+</div>
+<a id="a11008eac7811796cd340c1f04c04a3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11008eac7811796cd340c1f04c04a3f4">&#9670;&nbsp;</a></span>verificationfilename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">neuralNet.verificationfilename = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="neural_net_8py_source.html#l00082">82</a> of file <a class="el" href="neural_net_8py_source.html">neuralNet.py</a>.</p>
 
 </div>
 </div>

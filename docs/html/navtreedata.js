@@ -30,7 +30,6 @@ var NAVTREE =
     [ "I2Cdev", "md_code__m_p_u6050__i2_cdev__r_e_a_d_m_e.html", null ],
     [ "MPU6050", "md_code__m_p_u6050__r_e_a_d_m_e.html", null ],
     [ "kerasCpp", "md_code_neuralnet_predict__r_e_a_d_m_e.html", null ],
-    [ "gestureTraining", "md_code_python_training__r_e_a_d_m_e.html", null ],
     [ "Marketing", "md_project_planning__marketing_strategy.html", null ],
     [ "README", "md__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -71,10 +70,9 @@ var NAVTREEINDEX =
 [
 "_c_make_c_compiler_id_8c.html",
 "_m_p_u6050_8h.html#a795c81a32a12a232e00f401ef4c57ea2",
-"class_filter_bank.html#a1f4c10f55bed118220c55f10215be634",
-"class_m_p_u6050.html#a8d5a5e73907c78960154b92656127372",
-"class_train_window.html#ae93a5e77d3d2196bf96d574072993394",
-"struct_monitor_window_1_1_curve.html#ac88a34e2214bfb13dd86a4413bd20c3a"
+"class_interpret_window.html#a57ad0aa458959cb3f4e5cf3e9ec3ad82",
+"class_m_p_u6050.html#ac5fd917549d2ed0f12b8a17167271199",
+"convert__model_8py.html#a9e2a7f97ea9ffaddc9d561f888668880"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

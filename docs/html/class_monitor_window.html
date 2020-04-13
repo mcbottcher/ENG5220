@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('class_monitor_window.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -106,21 +107,12 @@ $(document).ready(function(){initNavTree('class_monitor_window.html','');});
 <div class="dynheader">
 Inheritance diagram for MonitorWindow:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_monitor_window__inherit__graph.png" border="0" usemap="#_monitor_window_inherit__map" alt="Inheritance graph"/></div>
-<map name="_monitor_window_inherit__map" id="_monitor_window_inherit__map">
-<area shape="rect"  title="Monitor Window Class." alt="" coords="5,79,119,104"/>
-<area shape="rect"  title=" " alt="" coords="25,5,99,31"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_monitor_window__inherit__graph.svg" width="124" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for MonitorWindow:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_monitor_window__coll__graph.png" border="0" usemap="#_monitor_window_coll__map" alt="Collaboration graph"/></div>
-<map name="_monitor_window_coll__map" id="_monitor_window_coll__map">
-<area shape="rect"  title="Monitor Window Class." alt="" coords="55,119,168,144"/>
-<area shape="rect"  title=" " alt="" coords="5,5,79,31"/>
-<area shape="rect"  href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure." alt="" coords="103,5,259,31"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_monitor_window__coll__graph.svg" width="264" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -140,6 +132,12 @@ Public Slots</h2></td></tr>
 <tr class="memitem:a5effc4c616eaca46212f0e922669b4d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a5effc4c616eaca46212f0e922669b4d2">handleSamples</a> ()</td></tr>
 <tr class="memdesc:a5effc4c616eaca46212f0e922669b4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle samples.  <a href="#a5effc4c616eaca46212f0e922669b4d2">More...</a><br /></td></tr>
 <tr class="separator:a5effc4c616eaca46212f0e922669b4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a18aa233528f2721db9d80e18177617b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a18aa233528f2721db9d80e18177617b2">emitClose</a> ()</td></tr>
+<tr class="memdesc:a18aa233528f2721db9d80e18177617b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal to emit when closing window.  <a href="#a18aa233528f2721db9d80e18177617b2">More...</a><br /></td></tr>
+<tr class="separator:a18aa233528f2721db9d80e18177617b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -173,6 +171,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7">bufferSize</a></td></tr>
 <tr class="memdesc:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">bufferSize size_t.  <a href="#aa8ad8d4e48eb26f29ce3219dd06cabc7">More...</a><br /></td></tr>
 <tr class="separator:aa8ad8d4e48eb26f29ce3219dd06cabc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d774e837240f24538c6737a379acf29"><td class="memItemLeft" align="right" valign="top">int16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a6d774e837240f24538c6737a379acf29">sensorDataPtr</a></td></tr>
+<tr class="memdesc:a6d774e837240f24538c6737a379acf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensorData pointer.  <a href="#a6d774e837240f24538c6737a379acf29">More...</a><br /></td></tr>
+<tr class="separator:a6d774e837240f24538c6737a379acf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a08d96ae9a999d7d5e72ae0ce0d89f223">xAxisData</a></td></tr>
+<tr class="memdesc:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="mdescLeft">&#160;</td><td class="mdescRight">xAsisData pointer to a double.  <a href="#a08d96ae9a999d7d5e72ae0ce0d89f223">More...</a><br /></td></tr>
+<tr class="separator:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13199c2b7020ffaf2bcc3c239ed12162"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a13199c2b7020ffaf2bcc3c239ed12162">resetButton</a></td></tr>
 <tr class="memdesc:a13199c2b7020ffaf2bcc3c239ed12162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clickable button pointers.  <a href="#a13199c2b7020ffaf2bcc3c239ed12162">More...</a><br /></td></tr>
 <tr class="separator:a13199c2b7020ffaf2bcc3c239ed12162"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,12 +189,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a52de85dce2a646edca75c6ac4637ed5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add518550737fac91912a0e99f6ea282e"><td class="memItemLeft" align="right" valign="top">QwtPlot *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#add518550737fac91912a0e99f6ea282e">fingerPlot</a></td></tr>
 <tr class="separator:add518550737fac91912a0e99f6ea282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a08d96ae9a999d7d5e72ae0ce0d89f223">xAxisData</a></td></tr>
-<tr class="memdesc:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="mdescLeft">&#160;</td><td class="mdescRight">xAsisData pointer to a double.  <a href="#a08d96ae9a999d7d5e72ae0ce0d89f223">More...</a><br /></td></tr>
-<tr class="separator:a08d96ae9a999d7d5e72ae0ce0d89f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d774e837240f24538c6737a379acf29"><td class="memItemLeft" align="right" valign="top">int16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#a6d774e837240f24538c6737a379acf29">sensorDataPtr</a></td></tr>
-<tr class="memdesc:a6d774e837240f24538c6737a379acf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">sensorData pointer.  <a href="#a6d774e837240f24538c6737a379acf29">More...</a><br /></td></tr>
-<tr class="separator:a6d774e837240f24538c6737a379acf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc757305052a3a36784c5cd6ce704772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6">Curve_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_monitor_window.html#adc757305052a3a36784c5cd6ce704772">acc</a></td></tr>
 <tr class="memdesc:adc757305052a3a36784c5cd6ce704772"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> structure for sensor data.  <a href="#adc757305052a3a36784c5cd6ce704772">More...</a><br /></td></tr>
 <tr class="separator:adc757305052a3a36784c5cd6ce704772"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,9 +221,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Monitor Window Class. </p>
-<p>Class to plot and monitor all the sensor data in real time </p>
+<p>Class to plot and monitor all the sensor data in real time. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00027">27</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00023">23</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1570ba7a14d4bbaa97ef521ccbed48f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1570ba7a14d4bbaa97ef521ccbed48f6">&#9670;&nbsp;</a></span>Curve_t</h2>
@@ -309,7 +307,7 @@ Private Attributes</h2></td></tr>
 <p>Class destructor. </p>
 <p>default destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00119">119</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00117">117</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +338,34 @@ Private Attributes</h2></td></tr>
 <p>drawPlots method. </p>
 <p>Public slot to allow refreshing of the screen and update the cruves onto the screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00125">125</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18aa233528f2721db9d80e18177617b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18aa233528f2721db9d80e18177617b2">&#9670;&nbsp;</a></span>emitClose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MonitorWindow::emitClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to emit when closing window. </p>
 
 </div>
 </div>
@@ -370,7 +395,7 @@ Private Attributes</h2></td></tr>
 <p>handle samples. </p>
 <p>Public slot to update the curves with new data </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00144">144</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00150">150</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +434,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00191">191</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00144">144</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +473,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[5][n] = {{IndexFingerArray}, {...}, {...},{PinkyFingerArray}, {ThumbArray}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00216">216</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00169">169</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +512,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>pass samples in format: samples[3][n] = {{X0,X1,Xn},{Y0,Y1,Yn},{Z0,Z1,Zn}}; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00203">203</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00156">156</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +542,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>resetbutton method. </p>
 <p>Public slot to reset all the buffers to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00134">134</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8cpp_source.html#l00140">140</a> of file <a class="el" href="_monitor_window_8cpp_source.html">MonitorWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +570,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> structure for sensor data. </p>
 <p>Create <a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> class for each type of data. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_monitor_window_1_1_curve.html" title="CurveStruct data structure.">Curve</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00116">116</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +597,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>QwtPlot pointers. </p>
 <p>Pointers to plots to allow curves to be added to. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00050">50</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +621,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +648,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>bufferSize size_t. </p>
 <p>The length of buffer for each plotting curve. Set by calling the constructor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_monitor_window.html#afafb4e4916800024a71876dbe89a4952" title="Class constructor.">MonitorWindow()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00036">36</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00032">32</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +672,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00120">120</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +696,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00120">120</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +720,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00120">120</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +744,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00040">40</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00046">46</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -746,7 +771,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>Horizontal layout members. </p>
 <p>Horizontal QT layout elements of the GUI </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +795,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00116">116</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +819,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +843,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00050">50</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +867,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00163">163</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00116">116</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +891,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +915,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00044">44</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00050">50</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -914,7 +939,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00170">170</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00123">123</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -941,7 +966,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>Vertical layout members. </p>
 <p>Vertical QT layout elements of the GUI </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00120">120</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +993,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>Clickable button pointers. </p>
 <p>Pointers to QPushButtons to allow user to close windows and reset buffers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00040">40</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00046">46</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -995,7 +1020,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>sensorData pointer. </p>
 <p>Pointer to where new samples will be stored when the arrive. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sample_timer.html" title="Sample Timer Class.">SampleTimer()</a>, newDataEvent() and <a class="el" href="class_main_window.html">MainWindow()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00054">54</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00037">37</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1044,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00167">167</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00120">120</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1071,7 @@ template&lt;size_t plotBufferSize&gt; </div>
 <p>xAsisData pointer to a double. </p>
 <p>xAxis data for plotting the curves will be filled by constructor with values 0 to bufferSize. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7" title="bufferSize size_t.">bufferSize</a> and <a class="el" href="class_monitor_window.html#afafb4e4916800024a71876dbe89a4952" title="Class constructor.">MonitorWindow()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00049">49</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_monitor_window_8h_source.html#l00042">42</a> of file <a class="el" href="_monitor_window_8h_source.html">MonitorWindow.h</a>.</p>
 
 </div>
 </div>

@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -110,7 +110,7 @@ Variables</h2></td></tr>
 <tr class="separator:a15081ae6f8a28618f92123c6d9f7db94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2094cfee9ae84db76df9c0bf5a4c98fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a2094cfee9ae84db76df9c0bf5a4c98fb">neuralNet.net_output_map</a> = dict()</td></tr>
 <tr class="separator:a2094cfee9ae84db76df9c0bf5a4c98fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a8ea57b14a0cc6fc9c85af6c47e0acbab">neuralNet.filename</a> = str(sys.argv[argument_number])</td></tr>
+<tr class="memitem:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a8ea57b14a0cc6fc9c85af6c47e0acbab">neuralNet.filename</a> = os.path.join(os.path.dirname(__file__), '../movementData/') + str(sys.argv[argument_number])</td></tr>
 <tr class="separator:a8ea57b14a0cc6fc9c85af6c47e0acbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e79f78458febef5d7b6c67653668dc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a5e79f78458febef5d7b6c67653668dc3">neuralNet.csv_file</a> = pd.read_csv(filename)</td></tr>
 <tr class="separator:a5e79f78458febef5d7b6c67653668dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +134,11 @@ Variables</h2></td></tr>
 <tr class="separator:ab7970914cb5fa26632d45310d5d05059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae079b848cf02a89fdd3d0fdba02f6b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ae079b848cf02a89fdd3d0fdba02f6b7b">neuralNet.include_optimizer</a></td></tr>
 <tr class="separator:ae079b848cf02a89fdd3d0fdba02f6b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#afa2b3b9bc7579fa5687436031f9ff67f">neuralNet.file1</a> = open(&quot;outputMap.txt&quot;,&quot;w&quot;)</td></tr>
+<tr class="memitem:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#afa2b3b9bc7579fa5687436031f9ff67f">neuralNet.file1</a> = open(&quot;Qt/outputMap.txt&quot;,&quot;w&quot;)</td></tr>
 <tr class="separator:afa2b3b9bc7579fa5687436031f9ff67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ab3674337e34c94ed1ee6234dc4300b4b">neuralNet.df5</a> = pd.read_csv(&quot;verificationData.csv&quot;)</td></tr>
+<tr class="memitem:a11008eac7811796cd340c1f04c04a3f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#a11008eac7811796cd340c1f04c04a3f4">neuralNet.verificationfilename</a> = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')</td></tr>
+<tr class="separator:a11008eac7811796cd340c1f04c04a3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ab3674337e34c94ed1ee6234dc4300b4b">neuralNet.df5</a> = pd.read_csv(verificationfilename)</td></tr>
 <tr class="separator:ab3674337e34c94ed1ee6234dc4300b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5af0e0a420f7d686e1548a49ac6884c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneural_net.html#ac5af0e0a420f7d686e1548a49ac6884c">neuralNet.predict_data</a> = df5.to_numpy()</td></tr>
 <tr class="separator:ac5af0e0a420f7d686e1548a49ac6884c"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,9 +1,9 @@
 <map id="code/Qt/TrainWindow.cpp" name="code/Qt/TrainWindow.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="723,5,897,31"/>
-<area shape="rect" id="node2" href="$_train_window_8h.html" title=" " alt="" coords="755,79,865,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="778,5,951,31"/>
+<area shape="rect" id="node2" href="$_train_window_8h.html" title=" " alt="" coords="810,79,919,104"/>
 <area shape="rect" id="node3" href="$config_8h.html" title=" " alt="" coords="5,152,73,177"/>
 <area shape="rect" id="node4" title=" " alt="" coords="97,152,192,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="769,225,832,251"/>
+<area shape="rect" id="node5" title=" " alt="" coords="836,225,899,251"/>
 <area shape="rect" id="node6" title=" " alt="" coords="268,152,360,177"/>
 <area shape="rect" id="node7" title=" " alt="" coords="384,152,484,177"/>
 <area shape="rect" id="node8" title=" " alt="" coords="509,152,575,177"/>
@@ -15,8 +15,9 @@
 <area shape="rect" id="node14" title=" " alt="" coords="1079,152,1173,177"/>
 <area shape="rect" id="node15" title=" " alt="" coords="1198,152,1246,177"/>
 <area shape="rect" id="node16" title=" " alt="" coords="1270,152,1406,177"/>
-<area shape="rect" id="node17" href="$_q_led_8h.html" title=" " alt="" coords="1429,152,1495,177"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1518,152,1579,177"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1602,152,1668,177"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1427,225,1497,251"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1429,152,1538,177"/>
+<area shape="rect" id="node18" href="$_q_led_8h.html" title=" " alt="" coords="1561,152,1627,177"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1650,152,1711,177"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1734,152,1800,177"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1559,225,1629,251"/>
 </map>

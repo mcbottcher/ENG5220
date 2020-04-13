@@ -9,7 +9,6 @@ var searchData=
   ['filterobjarray',['filterObjArray',['../class_filter_bank.html#a3653c92ac4ffffd5b48954a9030451cc',1,'FilterBank']]],
   ['filterorder',['filterOrder',['../class_filter.html#a58d09f34bb6da619aeb71f1fbb737847',1,'Filter::filterOrder()'],['../class_filter_bank.html#a83780bb546eda422318b54103df62613',1,'FilterBank::filterOrder()']]],
   ['finger',['finger',['../class_monitor_window.html#ab27c111f826a869a122147e6652ab36a',1,'MonitorWindow']]],
-  ['finger_5fvalue',['finger_value',['../sampledata_8cpp.html#a1e23b69cbfb15c0a5587aa3272f9dbac',1,'sampledata.cpp']]],
   ['fingerlayout',['fingerLayout',['../class_interpret_window.html#a72831bdda5dbae269c53bb6021645435',1,'InterpretWindow::fingerLayout()'],['../class_monitor_window.html#aa2f1384109f069600aae3b33c6952410',1,'MonitorWindow::fingerLayout()']]],
   ['fingerplot',['fingerPlot',['../class_monitor_window.html#add518550737fac91912a0e99f6ea282e',1,'MonitorWindow']]],
   ['flexfingers',['flexFingers',['../class_sample_timer.html#ae149758a165b26a99a759de0936ce97d',1,'SampleTimer::flexFingers()'],['../sampledata_8cpp.html#ad6786df5304329c5da62507fcb109a5c',1,'flexFingers():&#160;sampledata.cpp']]],

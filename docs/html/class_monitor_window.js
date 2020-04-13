@@ -5,6 +5,7 @@ var class_monitor_window =
     [ "MonitorWindow", "class_monitor_window.html#afafb4e4916800024a71876dbe89a4952", null ],
     [ "~MonitorWindow", "class_monitor_window.html#addd6a957bc31c8b95faff7cb575c903f", null ],
     [ "drawPlots", "class_monitor_window.html#aec028f61c1d8b96cea24b484d95ed87e", null ],
+    [ "emitClose", "class_monitor_window.html#a18aa233528f2721db9d80e18177617b2", null ],
     [ "handleSamples", "class_monitor_window.html#a5effc4c616eaca46212f0e922669b4d2", null ],
     [ "plotAcc", "class_monitor_window.html#ac6cc1742f3fcd20f4fa4f07b8687b0d1", null ],
     [ "plotFinger", "class_monitor_window.html#a90fdb8aff13223f47e310b648f3e21cf", null ],

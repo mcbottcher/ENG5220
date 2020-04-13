@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The Lexicon Glove: code/sampledata.cpp File Reference</title>
+<title>The Lexicon Glove: testfiles/sampledata/sampledata.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -102,29 +102,15 @@ $(document).ready(function(){initNavTree('sampledata_8cpp.html','');});
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
-<code>#include &quot;cppTimer/CppTimer.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_m_p_u6050_8h_source.html">MPU6050/MPU6050.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_m_c_p3428_8h_source.html">MCP3428/MCP3428.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_ring_buff_8h_source.html">RingBuff.h</a>&quot;</code><br />
+<code>#include &quot;../../code/cppTimer/CppTimer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_m_p_u6050_8h_source.html">../../code/MPU6050/MPU6050.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_m_c_p3428_8h_source.html">../../code/MCP3428/MCP3428.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ring_buff_8h_source.html">../../code/RingBuff.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sampledata.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="sampledata_8cpp__incl.png" border="0" usemap="#code_2sampledata_8cpp" alt=""/></div>
-<map name="code_2sampledata_8cpp" id="code_2sampledata_8cpp">
-<area shape="rect"  title=" " alt="" coords="420,5,568,31"/>
-<area shape="rect"  title=" " alt="" coords="5,79,73,104"/>
-<area shape="rect"  title=" " alt="" coords="97,79,158,104"/>
-<area shape="rect"  title=" " alt="" coords="610,152,674,177"/>
-<area shape="rect"  title=" " alt="" coords="816,225,879,251"/>
-<area shape="rect"  title=" " alt="" coords="411,79,484,104"/>
-<area shape="rect"  title=" " alt="" coords="508,79,574,104"/>
-<area shape="rect"  title=" " alt="" coords="597,79,746,104"/>
-<area shape="rect"  href="_m_p_u6050_8h.html" title=" " alt="" coords="182,79,337,104"/>
-<area shape="rect"  href="_m_c_p3428_8h.html" title=" " alt="" coords="770,79,925,104"/>
-<area shape="rect"  href="_ring_buff_8h.html" title=" " alt="" coords="999,79,1082,104"/>
-<area shape="rect"  href="_m_p_u6050_2_i2_cdev_2_i2_cdev_8h.html" title=" " alt="" coords="289,152,409,177"/>
-<area shape="rect"  href="_m_c_p3428_2_i2_cdev_2_i2_cdev_8h.html" title=" " alt="" coords="788,152,907,177"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sampledata_8cpp__incl.svg" width="1088" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="sampledata_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -170,24 +156,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab62a20486901fbd3ea7371ca48d917a8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#ab62a20486901fbd3ea7371ca48d917a8">sample_counter</a> = 0</td></tr>
-<tr class="separator:ab62a20486901fbd3ea7371ca48d917a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebedd0a48fe876cce3d3f14326e4ca66"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#aebedd0a48fe876cce3d3f14326e4ca66">ax</a></td></tr>
-<tr class="separator:aebedd0a48fe876cce3d3f14326e4ca66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d26903f1874d06875a974dfa1a9d3c"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#a46d26903f1874d06875a974dfa1a9d3c">ay</a></td></tr>
-<tr class="separator:a46d26903f1874d06875a974dfa1a9d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e60f9324f9d4fd9e916e964370fb2f"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#a41e60f9324f9d4fd9e916e964370fb2f">az</a></td></tr>
-<tr class="separator:a41e60f9324f9d4fd9e916e964370fb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4524555b50a829ee7628cf5e5806f227"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#a4524555b50a829ee7628cf5e5806f227">gx</a></td></tr>
-<tr class="separator:a4524555b50a829ee7628cf5e5806f227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd44b73dc5745833a8dd8d2a6240613"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#a8bd44b73dc5745833a8dd8d2a6240613">gy</a></td></tr>
-<tr class="separator:a8bd44b73dc5745833a8dd8d2a6240613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa61e9778c784ec4695029ed2cc769a61"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#aa61e9778c784ec4695029ed2cc769a61">gz</a></td></tr>
-<tr class="separator:aa61e9778c784ec4695029ed2cc769a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e23b69cbfb15c0a5587aa3272f9dbac"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#a1e23b69cbfb15c0a5587aa3272f9dbac">finger_value</a> [<a class="el" href="sampledata_8cpp.html#ab678d4cc931a32dbfcde84c6cda87d89">NUMBER_OF_FINGERS</a>]</td></tr>
-<tr class="separator:a1e23b69cbfb15c0a5587aa3272f9dbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9dd6ba93ed713dd79a6f61b97c58486"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#ae9dd6ba93ed713dd79a6f61b97c58486">thumb_value</a></td></tr>
-<tr class="separator:ae9dd6ba93ed713dd79a6f61b97c58486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a4c127913498f3ade83e13ae6db9e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_p_u6050.html">MPU6050</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#aa0a4c127913498f3ade83e13ae6db9e9">motionSensor</a> (<a class="el" href="sampledata_8cpp.html#a9d33ce0b80020007ba5277b9427fd003">MPU6050_I2C_ADDRESS</a>)</td></tr>
 <tr class="separator:aa0a4c127913498f3ade83e13ae6db9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6786df5304329c5da62507fcb109a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_c_p3428.html">MCP3428</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampledata_8cpp.html#ad6786df5304329c5da62507fcb109a5c">flexFingers</a> (<a class="el" href="sampledata_8cpp.html#a6456c13b8d7bebacf0dbfdf7934ced1f">MCP3428_I2C_ADDRESS</a>)</td></tr>
@@ -420,78 +388,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aebedd0a48fe876cce3d3f14326e4ca66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebedd0a48fe876cce3d3f14326e4ca66">&#9670;&nbsp;</a></span>ax</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t ax</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00035">35</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a46d26903f1874d06875a974dfa1a9d3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46d26903f1874d06875a974dfa1a9d3c">&#9670;&nbsp;</a></span>ay</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t ay</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00035">35</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a41e60f9324f9d4fd9e916e964370fb2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41e60f9324f9d4fd9e916e964370fb2f">&#9670;&nbsp;</a></span>az</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t az</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00035">35</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a2a0e63f3a7f80821c082ca75f9c8a09c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a0e63f3a7f80821c082ca75f9c8a09c">&#9670;&nbsp;</a></span>dataBuffer</h2>
 
@@ -505,30 +401,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00047">47</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a1e23b69cbfb15c0a5587aa3272f9dbac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e23b69cbfb15c0a5587aa3272f9dbac">&#9670;&nbsp;</a></span>finger_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t finger_value[<a class="el" href="sampledata_8cpp.html#ab678d4cc931a32dbfcde84c6cda87d89">NUMBER_OF_FINGERS</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00038">38</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
 
 </div>
 </div>
@@ -560,78 +432,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4524555b50a829ee7628cf5e5806f227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4524555b50a829ee7628cf5e5806f227">&#9670;&nbsp;</a></span>gx</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t gx</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00036">36</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8bd44b73dc5745833a8dd8d2a6240613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd44b73dc5745833a8dd8d2a6240613">&#9670;&nbsp;</a></span>gy</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t gy</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00036">36</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa61e9778c784ec4695029ed2cc769a61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa61e9778c784ec4695029ed2cc769a61">&#9670;&nbsp;</a></span>gz</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t gz</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00036">36</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
 <a id="aa0a4c127913498f3ade83e13ae6db9e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0a4c127913498f3ade83e13ae6db9e9">&#9670;&nbsp;</a></span>motionSensor</h2>
 
@@ -646,60 +446,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab62a20486901fbd3ea7371ca48d917a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab62a20486901fbd3ea7371ca48d917a8">&#9670;&nbsp;</a></span>sample_counter</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sample_counter = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00032">32</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ae9dd6ba93ed713dd79a6f61b97c58486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9dd6ba93ed713dd79a6f61b97c58486">&#9670;&nbsp;</a></span>thumb_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t thumb_value</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sampledata_8cpp_source.html#l00039">39</a> of file <a class="el" href="sampledata_8cpp_source.html">sampledata.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="sampledata_8cpp.html">sampledata.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_40fae8e1a8c215df42338d81a5ade107.html">testfiles</a></li><li class="navelem"><a class="el" href="dir_246a05e7b129716ee59056c2209c9f2b.html">sampledata</a></li><li class="navelem"><a class="el" href="sampledata_8cpp.html">sampledata.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

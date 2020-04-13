@@ -10,9 +10,14 @@ var searchData=
   ['plotfinger',['plotFinger',['../class_monitor_window.html#a90fdb8aff13223f47e310b648f3e21cf',1,'MonitorWindow']]],
   ['plotgyro',['plotGyro',['../class_monitor_window.html#a96fdff7dc8de70530edd6db2b1cad6b5',1,'MonitorWindow']]],
   ['plotsample',['plotSample',['../struct_monitor_window_1_1_curve.html#a2b3bbf4489f2b4c836fae1a4bca3d534',1,'MonitorWindow::Curve::plotSample(double sample)'],['../struct_monitor_window_1_1_curve.html#ac88a34e2214bfb13dd86a4413bd20c3a',1,'MonitorWindow::Curve::plotSample(double *buffer, size_t plotSize)']]],
-  ['predict',['predict',['../class_neural_net.html#a5847c3d58230e3f5df8598a6f8b0bceb',1,'NeuralNet']]],
-  ['predict_5fdata',['predict_data',['../namespaceattempt1.html#a041f1eb97ba888e532d0b8ac3596b2f9',1,'attempt1.predict_data()'],['../namespaceneural_net.html#ac5af0e0a420f7d686e1548a49ac6884c',1,'neuralNet.predict_data()']]],
-  ['predictions',['predictions',['../namespaceattempt1.html#aa7c65aa6ad580fe38b6ad850cc1f3ea0',1,'attempt1.predictions()'],['../namespacemodel.html#ab0d140afe5408f3dc50f96bfb9a0e25d',1,'model.predictions()'],['../namespaceneural_net.html#a86b84d5b03a4d887980632c9873ae520',1,'neuralNet.predictions()']]],
+  ['predict',['predict',['../class_neural_net.html#ad71540a3421e4e381f3811bcb241b09e',1,'NeuralNet::predict()'],['../class_interpret_window.html#a4331e24386eb211b7582fa81e2815a5e',1,'InterpretWindow::predict()']]],
+  ['predict_5fdata',['predict_data',['../namespaceneural_net.html#ac5af0e0a420f7d686e1548a49ac6884c',1,'neuralNet']]],
+  ['predictedwordbox',['predictedWordBox',['../class_interpret_window.html#ae774754cd49d272715b01ac4c5c4e777',1,'InterpretWindow']]],
+  ['predictions',['predictions',['../namespaceneural_net.html#a86b84d5b03a4d887980632c9873ae520',1,'neuralNet']]],
+  ['predictor',['predictor',['../class_interpret_window.html#a10a222666fca23eb98884ec1db8940dd',1,'InterpretWindow']]],
+  ['prepare_5ffilter_5fweights_5fconv_5f1d',['prepare_filter_weights_conv_1d',['../namespaceconvert__model.html#ab814664b4ac10413513f79f298db71b0',1,'convert_model']]],
+  ['prepare_5ffilter_5fweights_5fconv_5f2d',['prepare_filter_weights_conv_2d',['../namespaceconvert__model.html#a78a2978c2bafeb9fa225075a8c2d1db6',1,'convert_model']]],
+  ['prepare_5ffilter_5fweights_5fslice_5fconv_5f2d',['prepare_filter_weights_slice_conv_2d',['../namespaceconvert__model.html#ab8db2a5dc3fb871bb5ec2869119c25d8',1,'convert_model']]],
   ['print_5fbuff',['print_buff',['../_ring_buff_test_8cpp.html#ad32668a8d7bc8d97892af5dcda5c2347',1,'RingBuffTest.cpp']]],
   ['printvectorarray',['printVectorArray',['../class_c_s_vreader.html#a72b7f3244e80e67f95572c91595f0ab9',1,'CSVreader']]]
 ];

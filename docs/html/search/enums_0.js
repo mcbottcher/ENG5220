@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trainingstate_5ft',['trainingState_t',['../_train_window_8h.html#a70ea54f87b6ab435fbf4166ff83c6e26',1,'TrainWindow.h']]]
+  ['trainingstate',['trainingState',['../_train_window_8h.html#abea70f4f79e38028a596eb278d683647',1,'TrainWindow.h']]]
 ];

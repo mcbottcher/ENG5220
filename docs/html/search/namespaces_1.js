@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['createsines',['createsines',['../namespacecreatesines.html',1,'']]]
+  ['neuralnet',['neuralNet',['../namespaceneural_net.html',1,'']]]
 ];

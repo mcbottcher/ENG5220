@@ -32,7 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">The Lexicon Glove
    </div>
-   <div id="projectbrief">a realtime gesture recogniton glove!</div>
+   <div id="projectbrief">a realtime gesture recognition glove!</div>
   </td>
  </tr>
  </tbody>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('class_interpret_window.html','');});
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_interpret_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -102,73 +103,72 @@ $(document).ready(function(){initNavTree('class_interpret_window.html','');});
 <div class="dynheader">
 Inheritance diagram for InterpretWindow:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_interpret_window__inherit__graph.png" border="0" usemap="#_interpret_window_inherit__map" alt="Inheritance graph"/></div>
-<map name="_interpret_window_inherit__map" id="_interpret_window_inherit__map">
-<area shape="rect"  title=" " alt="" coords="5,79,124,104"/>
-<area shape="rect"  title=" " alt="" coords="28,5,101,31"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_interpret_window__inherit__graph.svg" width="130" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for InterpretWindow:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_interpret_window__coll__graph.png" border="0" usemap="#_interpret_window_coll__map" alt="Collaboration graph"/></div>
-<map name="_interpret_window_coll__map" id="_interpret_window_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,79,124,104"/>
-<area shape="rect"  title=" " alt="" coords="28,5,101,31"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_interpret_window__coll__graph.svg" width="190" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a1955a852966c9acf37428e4c954713e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a1955a852966c9acf37428e4c954713e4">timerEvent</a> ()</td></tr>
-<tr class="separator:a1955a852966c9acf37428e4c954713e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2368591a03d045adb4e91e54c96fa9d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a2368591a03d045adb4e91e54c96fa9d8">closeWindow</a> ()</td></tr>
 <tr class="separator:a2368591a03d045adb4e91e54c96fa9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fbac855c9221e540e3c1af1a53f11d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a8fbac855c9221e540e3c1af1a53f11d2">wrongButtonClicked</a> ()</td></tr>
-<tr class="separator:a8fbac855c9221e540e3c1af1a53f11d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205e55bc5877ffb9e830f7d7878f72b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a205e55bc5877ffb9e830f7d7878f72b8">handleSamples</a> ()</td></tr>
+<tr class="separator:a205e55bc5877ffb9e830f7d7878f72b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcf49e492e280fae202b8e5e882c3f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#afbcf49e492e280fae202b8e5e882c3f9">speaker</a> ()</td></tr>
+<tr class="separator:afbcf49e492e280fae202b8e5e882c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ad0aa458959cb3f4e5cf3e9ec3ad82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a57ad0aa458959cb3f4e5cf3e9ec3ad82">updateWeights</a> ()</td></tr>
+<tr class="separator:a57ad0aa458959cb3f4e5cf3e9ec3ad82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a34d00ce5e7a8fda44136bb60d0ea76b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a34d00ce5e7a8fda44136bb60d0ea76b1">emitClose</a> ()</td></tr>
 <tr class="separator:a34d00ce5e7a8fda44136bb60d0ea76b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab68c2c25a5747da387b9e9166d62c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#aab68c2c25a5747da387b9e9166d62c3c">stopSampling_sig</a> ()</td></tr>
+<tr class="separator:aab68c2c25a5747da387b9e9166d62c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac30a9385a01d43c87d4567ec278a9e35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ac30a9385a01d43c87d4567ec278a9e35">InterpretWindow</a> ()</td></tr>
-<tr class="separator:ac30a9385a01d43c87d4567ec278a9e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c25658a340e17c734dd86dac7684b0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a5c25658a340e17c734dd86dac7684b0f">InterpretWindow</a> (int16_t *<a class="el" href="class_interpret_window.html#ac44498b85cf380ec390a7d9e74e68e64">sensorValuesPtr</a>)</td></tr>
+<tr class="separator:a5c25658a340e17c734dd86dac7684b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8537eb63d6a149536180b66aca631d04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a8537eb63d6a149536180b66aca631d04">~InterpretWindow</a> ()</td></tr>
 <tr class="separator:a8537eb63d6a149536180b66aca631d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4aaeb7dbd8688280d834fa6e21d3d8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ad4aaeb7dbd8688280d834fa6e21d3d8a">sayWords</a> ()</td></tr>
 <tr class="separator:ad4aaeb7dbd8688280d834fa6e21d3d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4331e24386eb211b7582fa81e2815a5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a4331e24386eb211b7582fa81e2815a5e">predict</a> ()</td></tr>
+<tr class="separator:a4331e24386eb211b7582fa81e2815a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1b8e9ca0a2577b18715d20d41c7bb34e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a1b8e9ca0a2577b18715d20d41c7bb34e">count</a> =0</td></tr>
-<tr class="separator:a1b8e9ca0a2577b18715d20d41c7bb34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81d81f2e5585af5765698f329cbe569"><td class="memItemLeft" align="right" valign="top">QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ab81d81f2e5585af5765698f329cbe569">titleFont</a></td></tr>
-<tr class="separator:ab81d81f2e5585af5765698f329cbe569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1167de8e7cc94ef9b855d9c702c13f37"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a1167de8e7cc94ef9b855d9c702c13f37">titleText</a></td></tr>
-<tr class="separator:a1167de8e7cc94ef9b855d9c702c13f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27acfe18ca7d53e67d070603cf1b52a0"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a27acfe18ca7d53e67d070603cf1b52a0">loudspeakerIcon</a></td></tr>
-<tr class="separator:a27acfe18ca7d53e67d070603cf1b52a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44498b85cf380ec390a7d9e74e68e64"><td class="memItemLeft" align="right" valign="top">int16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ac44498b85cf380ec390a7d9e74e68e64">sensorValuesPtr</a></td></tr>
+<tr class="separator:ac44498b85cf380ec390a7d9e74e68e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada00db7a8565bc54ad593570b89ba469"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ada00db7a8565bc54ad593570b89ba469">loudspeakerIcon</a></td></tr>
+<tr class="separator:ada00db7a8565bc54ad593570b89ba469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938dd1e4e7c4bd5fcd3a8b1880449275"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a938dd1e4e7c4bd5fcd3a8b1880449275">homeButton</a></td></tr>
 <tr class="separator:a938dd1e4e7c4bd5fcd3a8b1880449275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ef0a58c63b719e1924dcd0c11f36a4"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a18ef0a58c63b719e1924dcd0c11f36a4">wrongButton</a></td></tr>
-<tr class="separator:a18ef0a58c63b719e1924dcd0c11f36a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a12b27e6101c6418c559655fdd55a3"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a56a12b27e6101c6418c559655fdd55a3">clearButton</a></td></tr>
-<tr class="separator:a56a12b27e6101c6418c559655fdd55a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6682fb7c95c63be174f699e42bc8b470"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a6682fb7c95c63be174f699e42bc8b470">sayButton</a></td></tr>
-<tr class="separator:a6682fb7c95c63be174f699e42bc8b470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d6df0c01749c4931213162c027d385b"><td class="memItemLeft" align="right" valign="top">QPlainTextEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a3d6df0c01749c4931213162c027d385b">textBox</a></td></tr>
-<tr class="separator:a3d6df0c01749c4931213162c027d385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae774754cd49d272715b01ac4c5c4e777"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ae774754cd49d272715b01ac4c5c4e777">predictedWordBox</a></td></tr>
+<tr class="separator:ae774754cd49d272715b01ac4c5c4e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c0c90a6fd30e65815c26c1a677e13b3"><td class="memItemLeft" align="right" valign="top">QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a3c0c90a6fd30e65815c26c1a677e13b3">soundCheckBox</a></td></tr>
 <tr class="separator:a3c0c90a6fd30e65815c26c1a677e13b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91063ca4fe89d0da70f4429db871e84e"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a91063ca4fe89d0da70f4429db871e84e">titleLayout</a></td></tr>
-<tr class="separator:a91063ca4fe89d0da70f4429db871e84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca9bfdce291ed18c1c85fd17e2572bf7"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#aca9bfdce291ed18c1c85fd17e2572bf7">soundLayout</a></td></tr>
-<tr class="separator:aca9bfdce291ed18c1c85fd17e2572bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e62e32ca72b31237d2a0242aedf3cb"><td class="memItemLeft" align="right" valign="top">QProgressBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a21e62e32ca72b31237d2a0242aedf3cb">outputWeightBars</a></td></tr>
+<tr class="separator:a21e62e32ca72b31237d2a0242aedf3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ba79ee2e30a65728496b0d4a3ef88d"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ab4ba79ee2e30a65728496b0d4a3ef88d">updateWeightsTimer</a></td></tr>
+<tr class="separator:ab4ba79ee2e30a65728496b0d4a3ef88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41120d8d44e34d4522faaa5ac283aca0"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a41120d8d44e34d4522faaa5ac283aca0">speakerTimer</a></td></tr>
+<tr class="separator:a41120d8d44e34d4522faaa5ac283aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb9e64967217535269619e1d15dc834"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a7bb9e64967217535269619e1d15dc834">soundLayout</a></td></tr>
+<tr class="separator:a7bb9e64967217535269619e1d15dc834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addecf2f1edbd5ac17e814151c97f10c0"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#addecf2f1edbd5ac17e814151c97f10c0">homeLayout</a></td></tr>
 <tr class="separator:addecf2f1edbd5ac17e814151c97f10c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d7a06b939565e90b45269145714638"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a95d7a06b939565e90b45269145714638">textLayout</a></td></tr>
+<tr class="separator:a95d7a06b939565e90b45269145714638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada22c1bca3c6e7c3e19a287b7bb16fb7"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ada22c1bca3c6e7c3e19a287b7bb16fb7">weightsLayout</a></td></tr>
+<tr class="separator:ada22c1bca3c6e7c3e19a287b7bb16fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a865f3bb899600a52fb5f32d404829dbe"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a865f3bb899600a52fb5f32d404829dbe">vPlotLayout</a></td></tr>
 <tr class="separator:a865f3bb899600a52fb5f32d404829dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca760ca7a50c6e59999314e1265fd343"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#aca760ca7a50c6e59999314e1265fd343">hPlotLayout</a></td></tr>
@@ -189,13 +189,31 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a72831bdda5dbae269c53bb6021645435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602e7f2fdb1d49dcae2ad83fc1853d83"><td class="memItemLeft" align="right" valign="top">QTextToSpeech *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a602e7f2fdb1d49dcae2ad83fc1853d83">speech</a></td></tr>
 <tr class="separator:a602e7f2fdb1d49dcae2ad83fc1853d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a222666fca23eb98884ec1db8940dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_neural_net.html">NeuralNet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a10a222666fca23eb98884ec1db8940dd">predictor</a></td></tr>
+<tr class="separator:a10a222666fca23eb98884ec1db8940dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a52b89e475a0e4965c91103f2377bf"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#af5a52b89e475a0e4965c91103f2377bf">weights</a></td></tr>
+<tr class="separator:af5a52b89e475a0e4965c91103f2377bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb65c6d15c037e70dd35092d1503cc59"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#adb65c6d15c037e70dd35092d1503cc59">lastwordsaid</a></td></tr>
+<tr class="separator:adb65c6d15c037e70dd35092d1503cc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0398f897ef57d7f08b04757de07dc20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#aa0398f897ef57d7f08b04757de07dc20">number_of_net_outputs</a></td></tr>
+<tr class="separator:aa0398f897ef57d7f08b04757de07dc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b55e18a6f79d5b769857f4665bcf305"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a2b55e18a6f79d5b769857f4665bcf305">net_output_words</a></td></tr>
+<tr class="separator:a2b55e18a6f79d5b769857f4665bcf305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa073a37cabd7e25fd1068fc15473ce2c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#aa073a37cabd7e25fd1068fc15473ce2c">normalised_samples</a> [11]</td></tr>
+<tr class="separator:aa073a37cabd7e25fd1068fc15473ce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4825ac87c5904beac9f71a66f75cf73"><td class="memItemLeft" align="right" valign="top">uint_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#af4825ac87c5904beac9f71a66f75cf73">max_index</a></td></tr>
+<tr class="separator:af4825ac87c5904beac9f71a66f75cf73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a9087ff31fa52a5135a4a49364a31f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#a55a9087ff31fa52a5135a4a49364a31f">max</a></td></tr>
+<tr class="separator:a55a9087ff31fa52a5135a4a49364a31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a55d7c2393fd2f0071c188dc753edc"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpret_window.html#ad0a55d7c2393fd2f0071c188dc753edc">outputWeights</a></td></tr>
+<tr class="separator:ad0a55d7c2393fd2f0071c188dc753edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00020">20</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00023">23</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac30a9385a01d43c87d4567ec278a9e35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac30a9385a01d43c87d4567ec278a9e35">&#9670;&nbsp;</a></span>InterpretWindow()</h2>
+<a id="a5c25658a340e17c734dd86dac7684b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c25658a340e17c734dd86dac7684b0f">&#9670;&nbsp;</a></span>InterpretWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,13 +221,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">InterpretWindow::InterpretWindow </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramname"><em>sensorValuesPtr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00006">6</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00003">3</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +247,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00076">76</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00097">97</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +275,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00080">80</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00105">105</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,6 +304,60 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a205e55bc5877ffb9e830f7d7878f72b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205e55bc5877ffb9e830f7d7878f72b8">&#9670;&nbsp;</a></span>handleSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterpretWindow::handleSamples </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00111">111</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4331e24386eb211b7582fa81e2815a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4331e24386eb211b7582fa81e2815a5e">&#9670;&nbsp;</a></span>predict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterpretWindow::predict </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00147">147</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad4aaeb7dbd8688280d834fa6e21d3d8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4aaeb7dbd8688280d834fa6e21d3d8a">&#9670;&nbsp;</a></span>sayWords()</h2>
 
@@ -300,12 +373,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00086">86</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
-
 </div>
 </div>
-<a id="a1955a852966c9acf37428e4c954713e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1955a852966c9acf37428e4c954713e4">&#9670;&nbsp;</a></span>timerEvent</h2>
+<a id="afbcf49e492e280fae202b8e5e882c3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcf49e492e280fae202b8e5e882c3f9">&#9670;&nbsp;</a></span>speaker</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +385,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void InterpretWindow::timerEvent </td>
+          <td class="memname">void InterpretWindow::speaker </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -327,12 +398,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00095">95</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00166">166</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8fbac855c9221e540e3c1af1a53f11d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fbac855c9221e540e3c1af1a53f11d2">&#9670;&nbsp;</a></span>wrongButtonClicked</h2>
+<a id="aab68c2c25a5747da387b9e9166d62c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab68c2c25a5747da387b9e9166d62c3c">&#9670;&nbsp;</a></span>stopSampling_sig</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +412,32 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void InterpretWindow::wrongButtonClicked </td>
+          <td class="memname">void InterpretWindow::stopSampling_sig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57ad0aa458959cb3f4e5cf3e9ec3ad82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ad0aa458959cb3f4e5cf3e9ec3ad82">&#9670;&nbsp;</a></span>updateWeights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterpretWindow::updateWeights </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -354,7 +450,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00091">91</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8cpp_source.html#l00154">154</a> of file <a class="el" href="_interpret_window_8cpp_source.html">InterpretWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +475,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00048">48</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00055">55</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +499,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00047">47</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00054">54</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +523,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00047">47</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00054">54</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -451,55 +547,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00047">47</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
-
-</div>
-</div>
-<a id="a56a12b27e6101c6418c559655fdd55a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56a12b27e6101c6418c559655fdd55a3">&#9670;&nbsp;</a></span>clearButton</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QPushButton * InterpretWindow::clearButton</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00033">33</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
-
-</div>
-</div>
-<a id="a1b8e9ca0a2577b18715d20d41c7bb34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b8e9ca0a2577b18715d20d41c7bb34e">&#9670;&nbsp;</a></span>count</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int InterpretWindow::count =0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00028">28</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00054">54</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +571,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00048">48</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00055">55</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +595,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00048">48</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00055">55</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +619,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00033">33</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00037">37</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +643,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00041">41</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00047">47</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -619,12 +667,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00044">44</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00051">51</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="a27acfe18ca7d53e67d070603cf1b52a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27acfe18ca7d53e67d070603cf1b52a0">&#9670;&nbsp;</a></span>loudspeakerIcon</h2>
+<a id="adb65c6d15c037e70dd35092d1503cc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb65c6d15c037e70dd35092d1503cc59">&#9670;&nbsp;</a></span>lastwordsaid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -633,7 +681,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QLabel * InterpretWindow::loudspeakerIcon</td>
+          <td class="memname">QString InterpretWindow::lastwordsaid</td>
         </tr>
       </table>
   </td>
@@ -643,7 +691,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00031">31</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00060">60</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ada00db7a8565bc54ad593570b89ba469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada00db7a8565bc54ad593570b89ba469">&#9670;&nbsp;</a></span>loudspeakerIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InterpretWindow::loudspeakerIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00035">35</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -667,12 +739,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00045">45</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00052">52</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="a6682fb7c95c63be174f699e42bc8b470"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6682fb7c95c63be174f699e42bc8b470">&#9670;&nbsp;</a></span>sayButton</h2>
+<a id="a55a9087ff31fa52a5135a4a49364a31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a9087ff31fa52a5135a4a49364a31f">&#9670;&nbsp;</a></span>max</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +753,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPushButton * InterpretWindow::sayButton</td>
+          <td class="memname">float InterpretWindow::max</td>
         </tr>
       </table>
   </td>
@@ -691,7 +763,223 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00033">33</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00070">70</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="af4825ac87c5904beac9f71a66f75cf73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4825ac87c5904beac9f71a66f75cf73">&#9670;&nbsp;</a></span>max_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint_fast8_t InterpretWindow::max_index</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00069">69</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a2b55e18a6f79d5b769857f4665bcf305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b55e18a6f79d5b769857f4665bcf305">&#9670;&nbsp;</a></span>net_output_words</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** InterpretWindow::net_output_words</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00066">66</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa073a37cabd7e25fd1068fc15473ce2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa073a37cabd7e25fd1068fc15473ce2c">&#9670;&nbsp;</a></span>normalised_samples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float InterpretWindow::normalised_samples[11]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00068">68</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0398f897ef57d7f08b04757de07dc20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0398f897ef57d7f08b04757de07dc20">&#9670;&nbsp;</a></span>number_of_net_outputs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InterpretWindow::number_of_net_outputs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00064">64</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a21e62e32ca72b31237d2a0242aedf3cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e62e32ca72b31237d2a0242aedf3cb">&#9670;&nbsp;</a></span>outputWeightBars</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QProgressBar* InterpretWindow::outputWeightBars</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00041">41</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0a55d7c2393fd2f0071c188dc753edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a55d7c2393fd2f0071c188dc753edc">&#9670;&nbsp;</a></span>outputWeights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* InterpretWindow::outputWeights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00072">72</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ae774754cd49d272715b01ac4c5c4e777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae774754cd49d272715b01ac4c5c4e777">&#9670;&nbsp;</a></span>predictedWordBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InterpretWindow::predictedWordBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00038">38</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a10a222666fca23eb98884ec1db8940dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a222666fca23eb98884ec1db8940dd">&#9670;&nbsp;</a></span>predictor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_neural_net.html">NeuralNet</a>* InterpretWindow::predictor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00059">59</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ac44498b85cf380ec390a7d9e74e68e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44498b85cf380ec390a7d9e74e68e64">&#9670;&nbsp;</a></span>sensorValuesPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t* InterpretWindow::sensorValuesPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00032">32</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -715,12 +1003,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00036">36</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00040">40</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="aca9bfdce291ed18c1c85fd17e2572bf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca9bfdce291ed18c1c85fd17e2572bf7">&#9670;&nbsp;</a></span>soundLayout</h2>
+<a id="a7bb9e64967217535269619e1d15dc834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb9e64967217535269619e1d15dc834">&#9670;&nbsp;</a></span>soundLayout</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -729,7 +1017,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QHBoxLayout * InterpretWindow::soundLayout</td>
+          <td class="memname">QHBoxLayout* InterpretWindow::soundLayout</td>
         </tr>
       </table>
   </td>
@@ -739,7 +1027,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00041">41</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00047">47</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a41120d8d44e34d4522faaa5ac283aca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41120d8d44e34d4522faaa5ac283aca0">&#9670;&nbsp;</a></span>speakerTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer * InterpretWindow::speakerTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00043">43</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -763,12 +1075,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00050">50</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00057">57</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="a3d6df0c01749c4931213162c027d385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d6df0c01749c4931213162c027d385b">&#9670;&nbsp;</a></span>textBox</h2>
+<a id="a95d7a06b939565e90b45269145714638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d7a06b939565e90b45269145714638">&#9670;&nbsp;</a></span>textLayout</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,7 +1089,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPlainTextEdit* InterpretWindow::textBox</td>
+          <td class="memname">QVBoxLayout* InterpretWindow::textLayout</td>
         </tr>
       </table>
   </td>
@@ -787,12 +1099,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00034">34</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00048">48</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="ab81d81f2e5585af5765698f329cbe569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81d81f2e5585af5765698f329cbe569">&#9670;&nbsp;</a></span>titleFont</h2>
+<a id="ab4ba79ee2e30a65728496b0d4a3ef88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ba79ee2e30a65728496b0d4a3ef88d">&#9670;&nbsp;</a></span>updateWeightsTimer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +1113,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QFont InterpretWindow::titleFont</td>
+          <td class="memname">QTimer* InterpretWindow::updateWeightsTimer</td>
         </tr>
       </table>
   </td>
@@ -811,55 +1123,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00030">30</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
-
-</div>
-</div>
-<a id="a91063ca4fe89d0da70f4429db871e84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91063ca4fe89d0da70f4429db871e84e">&#9670;&nbsp;</a></span>titleLayout</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* InterpretWindow::titleLayout</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00041">41</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
-
-</div>
-</div>
-<a id="a1167de8e7cc94ef9b855d9c702c13f37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1167de8e7cc94ef9b855d9c702c13f37">&#9670;&nbsp;</a></span>titleText</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QLabel* InterpretWindow::titleText</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00031">31</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00043">43</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
@@ -883,12 +1147,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00043">43</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00050">50</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>
-<a id="a18ef0a58c63b719e1924dcd0c11f36a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18ef0a58c63b719e1924dcd0c11f36a4">&#9670;&nbsp;</a></span>wrongButton</h2>
+<a id="af5a52b89e475a0e4965c91103f2377bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a52b89e475a0e4965c91103f2377bf">&#9670;&nbsp;</a></span>weights</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -897,7 +1161,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPushButton * InterpretWindow::wrongButton</td>
+          <td class="memname">QString InterpretWindow::weights</td>
         </tr>
       </table>
   </td>
@@ -907,7 +1171,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00033">33</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00060">60</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ada22c1bca3c6e7c3e19a287b7bb16fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada22c1bca3c6e7c3e19a287b7bb16fb7">&#9670;&nbsp;</a></span>weightsLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVBoxLayout * InterpretWindow::weightsLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_interpret_window_8h_source.html#l00048">48</a> of file <a class="el" href="_interpret_window_8h_source.html">InterpretWindow.h</a>.</p>
 
 </div>
 </div>

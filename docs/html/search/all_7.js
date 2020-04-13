@@ -1,7 +1,17 @@
 var searchData=
 [
   ['gain',['gain',['../struct_m_c_p3428_1_1config_reg_struct.html#a072954d757394d1de8fd1f6c8e6601a7',1,'MCP3428::configRegStruct::gain()'],['../_m_c_p3428_8h.html#a5c9c0f59d06b7360c990c3f49be81fa7',1,'gain():&#160;MCP3428.h']]],
-  ['gesture_5fcount',['gesture_count',['../class_train_window.html#a9b3b0b3b051577a914171f34ff1d091f',1,'TrainWindow']]],
+  ['gen_5ftest_5fdata',['gen_test_data',['../namespaceconvert__model.html#acc9cea17df8a2cdb457ca265316c33bb',1,'convert_model']]],
+  ['gesture_5fcount',['gesture_count',['../class_train_window.html#a76b73e1d7800439dbae5eac1b3472c75',1,'TrainWindow']]],
+  ['get_5fall_5fweights',['get_all_weights',['../namespaceconvert__model.html#aacbe4c419e17c54e0b4eaa3a733a9020',1,'convert_model']]],
+  ['get_5fdict_5fkeys',['get_dict_keys',['../namespaceconvert__model.html#a3aa2674312037868a5e986ea1ba35a5a',1,'convert_model']]],
+  ['get_5flayer_5ffunctions_5fdict',['get_layer_functions_dict',['../namespaceconvert__model.html#a4828d26c08c1cfd9166a2e2b72463977',1,'convert_model']]],
+  ['get_5flayer_5finput_5fshape_5ftensor_5fshape',['get_layer_input_shape_tensor_shape',['../namespaceconvert__model.html#a4c5b330dff27e35098311be6269cb026',1,'convert_model']]],
+  ['get_5fmodel_5finput_5flayers',['get_model_input_layers',['../namespaceconvert__model.html#a9742fd24f12c9afa974165fe33a24ecd',1,'convert_model']]],
+  ['get_5fmodel_5fname',['get_model_name',['../namespaceconvert__model.html#a1dfa97c9fd2e4f9f6d0078e0babef3a0',1,'convert_model']]],
+  ['get_5fnumber_5fof_5foutputs',['get_number_of_outputs',['../class_neural_net.html#a21975ef3f3ffab08dca9db6b9ab9ce80',1,'NeuralNet']]],
+  ['get_5fshapes',['get_shapes',['../namespaceconvert__model.html#a98d3e803e6124f39d6d66df42940361d',1,'convert_model']]],
+  ['get_5ftransform_5ffunc',['get_transform_func',['../namespaceconvert__model.html#ac7d86f6f0b30682caef52d677bdc6ad4',1,'convert_model']]],
   ['getacceleration',['getAcceleration',['../class_m_p_u6050.html#a658dfc7e35b7fdba360a75f137bde33a',1,'MPU6050']]],
   ['getaccelerationx',['getAccelerationX',['../class_m_p_u6050.html#aa68475158c22128e5459c4c5e19439dc',1,'MPU6050']]],
   ['getaccelerationy',['getAccelerationY',['../class_m_p_u6050.html#a27240b90d3e03c85b7a619b794bb1756',1,'MPU6050']]],
@@ -151,11 +161,7 @@ var searchData=
   ['getzgyrooffsetuser',['getZGyroOffsetUser',['../class_m_p_u6050.html#a66da03cd0df03c49ad942643482ece9e',1,'MPU6050']]],
   ['getznegmotiondetected',['getZNegMotionDetected',['../class_m_p_u6050.html#a3601b732eb15644212b8f29cf396e142',1,'MPU6050']]],
   ['getzposmotiondetected',['getZPosMotionDetected',['../class_m_p_u6050.html#a33c766cd415fc5780417b1ed76717875',1,'MPU6050']]],
-  ['gx',['gx',['../sampledata_8cpp.html#a4524555b50a829ee7628cf5e5806f227',1,'sampledata.cpp']]],
-  ['gy',['gy',['../sampledata_8cpp.html#a8bd44b73dc5745833a8dd8d2a6240613',1,'sampledata.cpp']]],
   ['gyro',['gyro',['../class_monitor_window.html#ac1ed0e3fb8f78b7b19b02a5665205d9f',1,'MonitorWindow']]],
   ['gyrolayout',['gyroLayout',['../class_interpret_window.html#a33e5ea808a2cacf6875298674af6ba8c',1,'InterpretWindow::gyroLayout()'],['../class_monitor_window.html#ae9f0235f04f770b2addcb4e38cf7c96b',1,'MonitorWindow::gyroLayout()']]],
-  ['gyroplot',['gyroPlot',['../class_monitor_window.html#a52de85dce2a646edca75c6ac4637ed5e',1,'MonitorWindow']]],
-  ['gz',['gz',['../sampledata_8cpp.html#aa61e9778c784ec4695029ed2cc769a61',1,'sampledata.cpp']]],
-  ['gesturetraining',['gestureTraining',['../md_code_python_training__r_e_a_d_m_e.html',1,'']]]
+  ['gyroplot',['gyroPlot',['../class_monitor_window.html#a52de85dce2a646edca75c6ac4637ed5e',1,'MonitorWindow']]]
 ];

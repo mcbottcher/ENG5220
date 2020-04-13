@@ -15,17 +15,8 @@ var sampledata_8cpp =
     [ "insertDataToBuff", "sampledata_8cpp.html#a299ad0f14f85526d4bb7bffebefdc1f0", null ],
     [ "main", "sampledata_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "sampleSensors", "sampledata_8cpp.html#ab644c7e32bd82c73e211f74c032bd315", null ],
-    [ "ax", "sampledata_8cpp.html#aebedd0a48fe876cce3d3f14326e4ca66", null ],
-    [ "ay", "sampledata_8cpp.html#a46d26903f1874d06875a974dfa1a9d3c", null ],
-    [ "az", "sampledata_8cpp.html#a41e60f9324f9d4fd9e916e964370fb2f", null ],
     [ "dataBuffer", "sampledata_8cpp.html#a2a0e63f3a7f80821c082ca75f9c8a09c", null ],
-    [ "finger_value", "sampledata_8cpp.html#a1e23b69cbfb15c0a5587aa3272f9dbac", null ],
     [ "flexFingers", "sampledata_8cpp.html#ad6786df5304329c5da62507fcb109a5c", null ],
     [ "flexThumb", "sampledata_8cpp.html#a0ba7967a5ea0eb591dd02fa02958a247", null ],
-    [ "gx", "sampledata_8cpp.html#a4524555b50a829ee7628cf5e5806f227", null ],
-    [ "gy", "sampledata_8cpp.html#a8bd44b73dc5745833a8dd8d2a6240613", null ],
-    [ "gz", "sampledata_8cpp.html#aa61e9778c784ec4695029ed2cc769a61", null ],
-    [ "motionSensor", "sampledata_8cpp.html#aa0a4c127913498f3ade83e13ae6db9e9", null ],
-    [ "sample_counter", "sampledata_8cpp.html#ab62a20486901fbd3ea7371ca48d917a8", null ],
-    [ "thumb_value", "sampledata_8cpp.html#ae9dd6ba93ed713dd79a6f61b97c58486", null ]
+    [ "motionSensor", "sampledata_8cpp.html#aa0a4c127913498f3ade83e13ae6db9e9", null ]
 ];
