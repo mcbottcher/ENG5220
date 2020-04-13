@@ -17,6 +17,7 @@
 #include <stdlib.h>
 #include <QObject>
 #include <QMutex>
+#include "../FilterBank.h"
 
 
 #include "../MCP3428/MCP3428.h"
@@ -45,6 +46,8 @@ class SampleTimer : public QObject, public CppTimer
         //! Thumb sensor pointer.
         /*! A pointer to the MCP3428 for data acquision from the thumb sensor. */
         MCP3428  *flexThumb;
+
+        Filter *filters;
 
         //! sensorValues pointer.
         /*! Where the data from the sensors is stored. */     

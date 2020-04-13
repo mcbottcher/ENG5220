@@ -2,5 +2,5 @@ code/build_files/
 code/Qt/__pycache__/
 code/lexicon_glove
 code/.qmake.stash
-.DS_Store
 .vscode/settings.json
+.DS_Store
