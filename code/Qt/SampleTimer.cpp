@@ -26,7 +26,7 @@ SampleTimer::SampleTimer(){
     };
 
     for (uint_fast8_t i=0; i<11; i++){
-        filters[i]->setup();
+        filters[i].setup();
     }
 
     motionSensor->initialize();	
@@ -70,7 +70,7 @@ inline void SampleTimer::readFromSensors(){
     sensorValues[10] = flexThumb  ->readChannel(0);
 
     for (uint_fast8_t i=0; i<11; i++){
-        sensorValues[i] = static_cast <uint16_t>(filters[i]->filter(sensorValues[i]));
+        sensorValues[i] = static_cast <int16_t>(filters[i].filter(sensorValues[i]));
     }
     
     mtx->unlock();  
