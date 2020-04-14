@@ -30,7 +30,6 @@ SampleTimer::SampleTimer(){
     }
 
     motionSensor->initialize();	
-    //printf(motionSensor.testConnection() ? "MPU6050 connection successful\r\n" : "MPU6050 connection failed\r\n");
 
     flexFingers->setConfig(CONFIG_INIT_CONVERSION,
                         CONFIG_CHN1,
