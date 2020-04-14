@@ -17,7 +17,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += \
     Qt/*.cpp    \
-    FilterBank.cpp \
+    filters/FilterBank.cpp \
     cppTimer/CppTimer.cpp \
     MCP3428/MCP3428.cpp \
     MPU6050/MPU6050.cpp \
@@ -27,7 +27,7 @@ SOURCES += \
 
 HEADERS += \
     Qt/*.h  \
-    FilterBank.h \
+    filters/FilterBank.h \
     cppTimer/CppTimer.h \
     MCP3428/MCP3428.h \
     MPU6050/MPU6050.h \

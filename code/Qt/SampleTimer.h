@@ -9,7 +9,7 @@
 #define MCP3421_I2C_ADDRESS 0x68
 
 #include "../cppTimer/CppTimer.h"
-#include "../RingBuff.h"
+#include "../filters/RingBuff.h"
 
 #include <unistd.h>
 #include <stdio.h>
@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <QObject>
 #include <QMutex>
-#include "../FilterBank.h"
+#include "../filters/FilterBank.h"
 
 
 #include "../MCP3428/MCP3428.h"
