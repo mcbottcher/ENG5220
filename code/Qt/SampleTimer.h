@@ -9,7 +9,6 @@
 #define MCP3421_I2C_ADDRESS 0x68
 
 #include "../cppTimer/CppTimer.h"
-#include "../RingBuff.h"
 
 #include <unistd.h>
 #include <stdio.h>

@@ -16,13 +16,8 @@ lessThan(QT_MAJOR_VERSION, 5): LIBS += -lqwt -lm -liir  -lrt
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += \
-    Qt/main.cpp \
-    Qt/mainwindow.cpp \
-    Qt/MonitorWindow.cpp \
-    Qt/InterpretWindow.cpp \
-    Qt/TrainWindow.cpp \
-    Qt/SampleTimer.cpp \
-    FilterBank.cpp \
+    Qt/*.cpp    \
+    filters/FilterBank.cpp \
     cppTimer/CppTimer.cpp \
     MCP3428/MCP3428.cpp \
     MPU6050/MPU6050.cpp \
@@ -31,14 +26,9 @@ SOURCES += \
 
 
 HEADERS += \
-    Qt/mainwindow.h \
-    Qt/MonitorWindow.h \
-    Qt/InterpretWindow.h \
-    Qt/TrainWindow.h \
-    Qt/QLed.h \
-    FilterBank.h \
+    Qt/*.cpp \
+    filters/FilterBank.h \
     cppTimer/CppTimer.h \
-    Qt/SampleTimer.h \
     MCP3428/MCP3428.h \
     MPU6050/MPU6050.h \
     MPU6050/I2Cdev/I2Cdev.h \
