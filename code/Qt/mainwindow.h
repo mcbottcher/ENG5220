@@ -14,6 +14,7 @@
 #include <QLabel>
 #include <QPixmap>
 #include <QToolButton>
+#include <QMessageBox>
 #include <QFont>
 
 #include <iostream>

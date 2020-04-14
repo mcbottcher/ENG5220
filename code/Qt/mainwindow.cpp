@@ -102,6 +102,15 @@ void MainWindow::createUI(){
              this, [this](){this->close();} );
 
     cppSampleTimer = new SampleTimer();
+
+    if (!cppSampleTimer->testConnection()){
+        QMessageBox msg;
+        msg.setText("Device Error");
+        msg.setInformativeText("No glove detected\nPlease check connection and restart");
+        msg.setStandardButtons(QMessageBox::Ok);
+        msg.setDefaultButton(QMessageBox::Ok);
+        msg.exec();
+    }
   
 
     connect(cppSampleTimer, &SampleTimer::timeoutsignal,

@@ -73,6 +73,10 @@ class SampleTimer : public QObject, public CppTimer
         /*! Overridden method of CppTimer to call once timer has timed out. */
         void timerEvent();
 
+        //! testConnection method.
+        /*! Test if there is a device connected. */
+        bool testConnection(){return motionSensor->testConnection();}
+
         //! getSensorValues function.
         /*! Return a pointer to the captured sensor values so we can process the captured samples.*/
         int16_t* getSensorValues(){return sensorValues;}
