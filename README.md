@@ -18,6 +18,26 @@ Avaliable at https://mcbottcher.github.io/ENG5220
 
 ### Build Instructions
 
+Install the QT5, Qwt and all other relevant packages:
+'''
+  sudo chmod +x installdependencies.sh
+  ./installdependencies.sh
+'''
+To build:
+'''
+  cd code
+  qmake
+  make
+'''
+To allow text-to-speech functionality (only has to be run first time):
+'''
+  pulseaudio -D
+'''
+
+To run:
+'''
+  ./lexicon_glove
+'''
 
 
 Follow us on [Twitter](https://twitter.com/GloveLexicon)! 
