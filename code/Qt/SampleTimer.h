@@ -9,6 +9,7 @@
 #define MCP3421_I2C_ADDRESS 0x68
 
 #include "../cppTimer/CppTimer.h"
+#include "../filters/RingBuff.h"
 
 #include <unistd.h>
 #include <stdio.h>
@@ -16,6 +17,7 @@
 #include <stdlib.h>
 #include <QObject>
 #include <QMutex>
+#include "../filters/FilterBank.h"
 
 
 #include "../MCP3428/MCP3428.h"
@@ -44,6 +46,8 @@ class SampleTimer : public QObject, public CppTimer
         //! Thumb sensor pointer.
         /*! A pointer to the MCP3428 for data acquision from the thumb sensor. */
         MCP3428  *flexThumb;
+
+        Filter *filters;
 
         //! sensorValues pointer.
         /*! Where the data from the sensors is stored. */     

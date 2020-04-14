@@ -4,5 +4,5 @@ code/lexicon_glove
 code/.qmake.stash
 code/unitTests/sensors/build_files/
 
-.DS_Store
 .vscode/settings.json
+.DS_Store

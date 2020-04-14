@@ -4,7 +4,6 @@
 #include "MonitorWindow.h"
 #include "InterpretWindow.h"
 #include "TrainWindow.h"
-#include "../FilterBank.h"
 #include "SampleTimer.h"
 #include "config.h"
 
@@ -50,16 +49,9 @@ class MainWindow : public QMainWindow
         QLabel *title_text, *logo, *lab_train, *lab_interpret, *lab_mon, *lab_icon;
         QPushButton *but_train, *but_interpret, *but_mon, *but_quit;
         QTimer *windowtimer, *moitorRefreshtimer;
-        //QToolButton *logo_icon;
-        //QVBoxLayout main_layout;
-        // double filterCuttoffFreqs[10] = {0.01,1,1,1,2,2,3,3,4,4}; //cutoff frequencies for filters
-        // FilterBank *accelFilterBank; //depreciated?
-        // FilterBank *gyroFilterBank;
-        // FilterBank *fingerFilterBank;
         SampleTimer  *cppSampleTimer;
 
         void createUI();
-        void createFilters();
         int count = 0;
 
         //! 

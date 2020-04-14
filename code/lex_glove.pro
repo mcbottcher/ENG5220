@@ -26,7 +26,7 @@ SOURCES += \
 
 
 HEADERS += \
-    Qt/*.cpp \
+    Qt/*.h  \
     filters/FilterBank.h \
     cppTimer/CppTimer.h \
     MCP3428/MCP3428.h \

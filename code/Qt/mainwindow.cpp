@@ -113,15 +113,6 @@ void MainWindow::createUI(){
     //cppSampleTimer->start(DATA_SAMPLE_INTERVAL);
 }
 
-void MainWindow::createFilters(){
-    // accelFilterBank = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    // gyroFilterBank  = new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    // fingerFilterBank= new FilterBank(NUMBER_OF_FILTERS, ORDER_OF_FILTERS, SAMPLE_RATE, filterCuttoffFreqs);
-    // accelFilterBank ->setup();
-    // gyroFilterBank  ->setup();
-    // fingerFilterBank->setup();
-
-}
 
 void MainWindow::newDataEvent(){
     

@@ -8,6 +8,27 @@ SampleTimer::SampleTimer(){
     flexThumb = new MCP3428(MCP3421_I2C_ADDRESS);
     mtx = new QMutex;
 
+    filters = new Filter[11]{
+        //accelgyro
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        //fingers
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        Filter(2,10,5),
+        //thumb
+        Filter(2,10,5)
+    };
+
+    for (uint_fast8_t i=0; i<11; i++){
+        filters[i].setup();
+    }
+
     motionSensor->initialize();	
     //printf(motionSensor.testConnection() ? "MPU6050 connection successful\r\n" : "MPU6050 connection failed\r\n");
 
@@ -47,6 +68,10 @@ inline void SampleTimer::readFromSensors(){
     sensorValues[8]  = flexFingers->readChannel(1);
     sensorValues[9]  = flexFingers->readChannel(0);
     sensorValues[10] = flexThumb  ->readChannel(0);
+
+    for (uint_fast8_t i=0; i<11; i++){
+        sensorValues[i] = static_cast <int16_t>(filters[i].filter(sensorValues[i]));
+    }
     
     mtx->unlock();  
 
