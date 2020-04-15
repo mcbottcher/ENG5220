@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 """Convert a Keras model to frugally-deep format.
 """
 
