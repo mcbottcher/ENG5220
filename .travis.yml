@@ -6,4 +6,4 @@ dist: bionic
 before_install: sudo chmod +x installdependencies.sh && ./installdependencies.sh 
 
 
-script: cd code && qmake && make && cd -
+script: cd code && qmake && make && cd - && cd code/unitTests && chmod +x run_sw_tests.sh && ./run_sw_tests.sh
