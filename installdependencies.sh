@@ -43,6 +43,6 @@ cmake ..
 make && sudo make install
 cd ../..
 
-pip3 install tensorflow keras pandas
+pip3 install numpy tensorflow keras pandas
 
 cd ..
