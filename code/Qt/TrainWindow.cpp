@@ -11,12 +11,12 @@ TrainWindow::TrainWindow(int16_t* sensorDataptr):
     
     inputGroup = new QGroupBox(tr("Input"));
 
-    inputLabel = new QLabel(tr("Training word:"));
+    inputLabel = new QLabel(tr("Training Word:"));
     wordInput = new QLineEdit;
-    wordInput->setPlaceholderText("Insert word Here");
+    wordInput->setPlaceholderText("Insert Word Here");
     wordInput->setFocus();
 
-    wordTrain = new QPushButton("Train word");
+    wordTrain = new QPushButton("Train Word");
 
     connect(wordTrain, &QPushButton::released, this, &TrainWindow::data_aq_state_machine);
 
@@ -48,7 +48,7 @@ TrainWindow::TrainWindow(int16_t* sensorDataptr):
         }
     
 
-    trainGroup = new QGroupBox(tr("Data Aquisition"));
+    trainGroup = new QGroupBox(tr("Data Acquisition"));
 
     trainLayout = new QGridLayout;
     trainLayout->addWidget(statusText, 0, 0);
@@ -140,7 +140,7 @@ void TrainWindow::data_aq_state_machine(){
             }
             
             filename = wordInput->text();
-            myfile.open ("../movementData/" +filename.toStdString() + ".csv"); 
+            myfile.open ("movementData/" +filename.toStdString() + ".csv"); 
             
             sampleCount = 0;
             timer->start(1000); //time in ms
