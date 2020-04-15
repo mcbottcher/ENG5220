@@ -69,29 +69,29 @@ model.fit(
   batch_size=32,
 )
 
-model.save('Qt/keras_model.h5', include_optimizer=False)
+model.save('keras_model.h5', include_optimizer=False)
 
-file1 = open("Qt/outputMap.txt","w")
+file1 = open("outputMap.txt","w")
 for key in net_output_map.keys():
-    file1.write(net_output_map[key].replace("Qt/../movementData/","").replace(".csv","").replace("_"," "))
+    file1.write(net_output_map[key].replace("../movementData/","").replace(".csv","").replace("_"," "))
     file1.write("\n")
 file1.close() 
 
-convert_model.convert('Qt/keras_model.h5', 'Qt/fdeep_model.json', False)
+convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
 
-verificationfilename = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')
-df5 = pd.read_csv(verificationfilename)
-predict_data = df5.to_numpy()
+#verificationfilename = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')
+#df5 = pd.read_csv(verificationfilename)
+#predict_data = df5.to_numpy()
 #delete the nans
-predict_data = np.delete(predict_data, 220, 1)
-for i in range(len(predict_data)):
-    temp = predict_data[i]
-    temp[:120] = (temp[:120]/2**15)
-    temp[120:] = (temp[120:]/2**12) - 0.5
+#predict_data = np.delete(predict_data, 220, 1)
+#for i in range(len(predict_data)):
+#    temp = predict_data[i]
+#    temp[:120] = (temp[:120]/2**15)
+#    temp[120:] = (temp[120:]/2**12) - 0.5
 
-predictions = model.predict(predict_data)
+#predictions = model.predict(predict_data)
 
 #for i in range(len(predictions)):
 #    print(predictions[i])
 
-print(np.argmax(predictions, axis=1))
+#print(np.argmax(predictions, axis=1))
