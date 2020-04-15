@@ -12,7 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 void MainWindow::createUI(){
-    QPixmap pix("../images/TheLexiconGlove.png");
+    //QPixmap pix("../images/TheLexiconGlove.png");
+    QPixmap pix("../images/logo_with_text_small.png");
     //QLabel icon_label;
     //icon_label.setPixmap(pix);
     //icon_label.setText("Test");
