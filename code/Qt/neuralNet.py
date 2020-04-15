@@ -71,13 +71,13 @@ model.fit(
 
 model.save('keras_model.h5', include_optimizer=False)
 
-file1 = open("outputMap.txt","w")
+file1 = open("Qt/outputMap.txt","w")
 for key in net_output_map.keys():
-    file1.write(net_output_map[key].replace("../movementData/","").replace(".csv","").replace("_"," "))
+    file1.write(net_output_map[key].replace("Qt/../movementData/","").replace(".csv","").replace("_"," "))
     file1.write("\n")
 file1.close() 
 
-convert_model.convert('keras_model.h5', 'fdeep_model.json', False)
+convert_model.convert('keras_model.h5', 'Qt/fdeep_model.json', False)
 
 #verificationfilename = os.path.join(os.path.dirname(__file__), '../movementData/verificationData.csv')
 #df5 = pd.read_csv(verificationfilename)
