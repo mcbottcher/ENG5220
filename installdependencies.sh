@@ -44,5 +44,6 @@ make && sudo make install
 cd ../..
 
 pip3 install numpy tensorflow keras pandas
+pip install numpy
 
 cd ..
