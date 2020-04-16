@@ -4,6 +4,7 @@ compiler: gcc
 dist: bionic
 
 before_install: 
+- make get-deps
 - sudo chmod +x installdependencies.sh 
 - ./installdependencies.sh 
 
