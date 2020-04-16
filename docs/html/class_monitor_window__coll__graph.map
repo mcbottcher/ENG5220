@@ -1,5 +1,5 @@
 <map id="MonitorWindow" name="MonitorWindow">
-<area shape="rect" id="node1" title="Monitor Window Class." alt="" coords="55,119,168,144"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,79,31"/>
-<area shape="rect" id="node3" href="$struct_monitor_window_1_1_curve.html" title="CurveStruct data structure." alt="" coords="103,5,259,31"/>
+<area shape="rect" id="node1" title="Monitor Window Class." alt="" coords="41,327,182,627"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,85,79,159"/>
+<area shape="rect" id="node3" href="$struct_monitor_window_1_1_curve.html" title="CurveStruct data structure." alt="" coords="103,5,259,239"/>
 </map>

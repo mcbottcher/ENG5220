@@ -41,19 +41,17 @@ var searchData=
   ['count',['count',['../class_main_window.html#a56d8727651a8b002ebff58e79e5ef26f',1,'MainWindow']]],
   ['countdown',['countdown',['../sampledata_8cpp.html#a87726c5d201ef29efa9aa57511a2e562',1,'sampledata.cpp']]],
   ['cppsampletimer',['cppSampleTimer',['../class_main_window.html#a626eec967d3981392e278927c4505264',1,'MainWindow']]],
-  ['createfilters',['createFilters',['../class_main_window.html#ae24d795221d33aeed0bf1df68e8e369a',1,'MainWindow']]],
   ['createsines',['createsines',['../namespacecreatesines.html',1,'']]],
   ['createsines_2epy',['createsines.py',['../createsines_8py.html',1,'']]],
   ['createui',['createUI',['../class_main_window.html#aabd8d480a18455fd70abceb51345d6a6',1,'MainWindow']]],
   ['csv_5fdata',['csv_data',['../namespaceneural_net.html#a0a5495581094cf2010535e247a1ff50b',1,'neuralNet']]],
   ['csv_5ffile',['csv_file',['../namespaceneural_net.html#a5e79f78458febef5d7b6c67653668dc3',1,'neuralNet']]],
   ['csvreader',['CSVreader',['../class_c_s_vreader.html',1,'CSVreader'],['../class_c_s_vreader.html#a92841dcf40072cb132f75d67ec32cf7a',1,'CSVreader::CSVreader()']]],
-  ['csvreader_2ecpp',['CSVreader.cpp',['../_c_s_vto_vector_cpp_2_c_s_vreader_8cpp.html',1,'(Global Namespace)'],['../neuralnet__predict_2_c_s_vreader_8cpp.html',1,'(Global Namespace)']]],
-  ['csvreader_2eh',['CSVreader.h',['../_c_s_vto_vector_cpp_2_c_s_vreader_8h.html',1,'(Global Namespace)'],['../neuralnet__predict_2_c_s_vreader_8h.html',1,'(Global Namespace)']]],
+  ['csvreader_2ecpp',['CSVreader.cpp',['../_c_s_vreader_8cpp.html',1,'']]],
+  ['csvreader_2eh',['CSVreader.h',['../_c_s_vreader_8h.html',1,'']]],
   ['currentstate',['currentState',['../class_train_window.html#ac17ab662f5906dd6fc940a0ae500467b',1,'TrainWindow']]],
   ['curve',['Curve',['../struct_monitor_window_1_1_curve.html',1,'MonitorWindow::Curve'],['../struct_monitor_window_1_1_curve.html#a74e6857fb0325a5b32471213db62a5fb',1,'MonitorWindow::Curve::curve()'],['../struct_monitor_window_1_1_curve.html#adadec29d18c9ddc2dff9f3644855f7ab',1,'MonitorWindow::Curve::Curve(size_t buffsize, QwtPlot *plot, QString name, const double *xAxisData)']]],
   ['curve_5ft',['Curve_t',['../class_monitor_window.html#a1570ba7a14d4bbaa97ef521ccbed48f6',1,'MonitorWindow']]],
   ['cutofffrequency',['cutoffFrequency',['../class_filter.html#a8a11e2fb77cc7ec2c99db82b4a7645e1',1,'Filter']]],
-  ['cxx_5fstd',['CXX_STD',['../_c_make_c_x_x_compiler_id_8cpp.html#a34cc889e576a1ae6c84ae9e0a851ba21',1,'CMakeCXXCompilerId.cpp']]],
-  ['csvtovectorcpp',['CSVtoVectorCpp',['../md_code__c_s_vto_vector_cpp__r_e_a_d_m_e.html',1,'']]]
+  ['cxx_5fstd',['CXX_STD',['../_c_make_c_x_x_compiler_id_8cpp.html#a34cc889e576a1ae6c84ae9e0a851ba21',1,'CMakeCXXCompilerId.cpp']]]
 ];

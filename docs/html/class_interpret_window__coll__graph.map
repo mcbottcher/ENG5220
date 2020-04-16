@@ -1,5 +1,5 @@
 <map id="InterpretWindow" name="InterpretWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="33,92,152,117"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,79,31"/>
-<area shape="rect" id="node3" href="$class_neural_net.html" title=" " alt="" coords="103,5,184,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="42,207,194,507"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,39,79,112"/>
+<area shape="rect" id="node3" href="$class_neural_net.html" title=" " alt="" coords="103,5,285,145"/>
 </map>

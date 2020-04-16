@@ -1,5 +1,5 @@
 <map id="MCP3428" name="MCP3428">
-<area shape="rect" id="node1" title=" " alt="" coords="130,92,210,117"/>
-<area shape="rect" id="node2" href="$struct_m_c_p3428_1_1config_reg_struct.html" title=" " alt="" coords="5,5,188,31"/>
-<area shape="rect" id="node3" href="$class_i2_cdev.html" title=" " alt="" coords="212,5,275,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="101,300,260,507"/>
+<area shape="rect" id="node2" href="$struct_m_c_p3428_1_1config_reg_struct.html" title=" " alt="" coords="5,59,188,185"/>
+<area shape="rect" id="node3" href="$class_i2_cdev.html" title=" " alt="" coords="212,5,320,239"/>
 </map>

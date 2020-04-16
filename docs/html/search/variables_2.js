@@ -1,7 +1,7 @@
 var searchData=
 [
   ['batch_5fsize',['batch_size',['../namespaceneural_net.html#ab7970914cb5fa26632d45310d5d05059',1,'neuralNet']]],
-  ['buffer',['buffer',['../class_m_p_u6050.html#ad2000cad671bb7b293e26f2d463d4cea',1,'MPU6050::buffer()'],['../class_ring_buff.html#a94cbd2f64a3f104e4adb0a29c1b1a69c',1,'RingBuff::buffer()']]],
+  ['buffer',['buffer',['../class_ring_buff.html#a94cbd2f64a3f104e4adb0a29c1b1a69c',1,'RingBuff::buffer()'],['../class_m_p_u6050.html#ad2000cad671bb7b293e26f2d463d4cea',1,'MPU6050::buffer()']]],
   ['buffersize',['bufferSize',['../class_monitor_window.html#aa8ad8d4e48eb26f29ce3219dd06cabc7',1,'MonitorWindow']]],
   ['buffsize',['buffsize',['../struct_monitor_window_1_1_curve.html#a122ffb2ce770c69fc051d7c069d1e39f',1,'MonitorWindow::Curve']]],
   ['bufsize',['bufSize',['../class_ring_buff.html#aa444ffb4f62b071b6d39463a49bc61e2',1,'RingBuff']]],

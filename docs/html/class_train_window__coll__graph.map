@@ -1,6 +1,6 @@
 <map id="TrainWindow" name="TrainWindow">
-<area shape="rect" id="node1" title="Training Window Class." alt="" coords="14,167,113,192"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,79,105"/>
-<area shape="rect" id="node3" href="$class_q_led.html" title="QLed Class." alt="" coords="103,80,157,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="95,5,165,31"/>
+<area shape="rect" id="node1" title="Training Window Class." alt="" coords="5,289,189,589"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,141,97,215"/>
+<area shape="rect" id="node3" href="$class_q_led.html" title="QLed Class." alt="" coords="120,128,211,228"/>
+<area shape="rect" id="node4" title=" " alt="" coords="130,5,200,79"/>
 </map>

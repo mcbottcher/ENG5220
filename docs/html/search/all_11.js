@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readme',['README',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['readme',['README',['../md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220__r_e_a_d_m_e.html',1,'']]],
   ['rdy_5fbar',['RDY_bar',['../struct_m_c_p3428_1_1config_reg_struct.html#a1789e56d30b801bef868aa802d1565c0',1,'MCP3428::configRegStruct::RDY_bar()'],['../_m_c_p3428_8h.html#ada38fba529204dfd36200b083aad0d8f',1,'RDY_bar():&#160;MCP3428.h']]],
   ['read_5fstd',['read_std',['../class_i2_cdev.html#a32fcdbfba31615b5761c5e991253898c',1,'I2Cdev::read_std(uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)'],['../class_i2_cdev.html#a2a9491cbbafac3040e91bc59909ec233',1,'I2Cdev::read_std(uint8_t slaveAddress, uint8_t *rxdataBuf, size_t number_of_bytes)']]],
   ['readbit',['readBit',['../class_i2_cdev.html#abe6d8ea07027d362419de86188981559',1,'I2Cdev::readBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)'],['../class_i2_cdev.html#ada206f7b5787944363ad9c56a7602351',1,'I2Cdev::readBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout)']]],
@@ -15,7 +15,7 @@ var searchData=
   ['readconfig',['readConfig',['../class_m_c_p3428.html#a5d5ba6815cafd19cfef940fa72e1a3a6',1,'MCP3428']]],
   ['readcsv',['readCSV',['../class_c_s_vreader.html#a9b57c67c6032d6366c629ecde54013ee',1,'CSVreader']]],
   ['readfromsensors',['readFromSensors',['../class_sample_timer.html#a64e770c1941ded68bec40c5a24d43b19',1,'SampleTimer']]],
-  ['readme_2emd',['README.md',['../code_2_c_s_vto_vector_cpp_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_c_p3428_2_i2_cdev_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_c_p3428_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_p_u6050_2_i2_cdev_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_p_u6050_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2neuralnet__predict_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd',['README.md',['../code_2_m_c_p3428_2_i2_cdev_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_c_p3428_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_p_u6050_2_i2_cdev_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2_m_p_u6050_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../code_2neuralnet__predict_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
   ['readmemoryblock',['readMemoryBlock',['../class_m_p_u6050.html#a04d8d5e7b62605aed15f07f52afa74ca',1,'MPU6050']]],
   ['readmemorybyte',['readMemoryByte',['../class_m_p_u6050.html#a4fb50ebcff2f4e686e3fbbafb70a1f75',1,'MPU6050']]],
   ['readtimeout',['readTimeout',['../class_i2_cdev.html#a89c2dd0649451cb09d2edb96c27c158c',1,'I2Cdev']]],

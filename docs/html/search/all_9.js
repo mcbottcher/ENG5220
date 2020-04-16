@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i2c',['i2c',['../class_m_c_p3428.html#a51eb206de1889199eb73ce1d94b9a8fe',1,'MCP3428']]],
+  ['i2c',['i2c',['../class_m_c_p3428.html#a51eb206de1889199eb73ce1d94b9a8fe',1,'MCP3428::i2c()'],['../class_m_p_u6050.html#a98a90c03161c56e616b86481748510b0',1,'MPU6050::i2c()']]],
   ['i2c_5fbus',['I2C_BUS',['../_m_c_p3428_8h.html#a357ae664eb5f3c937443339e9b568c51',1,'MCP3428.h']]],
   ['i2c_5fbus_5fdev_5ffile_5fpath',['I2C_BUS_DEV_FILE_PATH',['../_m_c_p3428_2_i2_cdev_2_i2_cdev_8h.html#ac7c7f66e72782af783d48976ae3a80c1',1,'I2C_BUS_DEV_FILE_PATH():&#160;I2Cdev.h'],['../_m_p_u6050_2_i2_cdev_2_i2_cdev_8h.html#ac7c7f66e72782af783d48976ae3a80c1',1,'I2C_BUS_DEV_FILE_PATH():&#160;I2Cdev.h']]],
   ['i2cdev',['I2Cdev',['../class_i2_cdev.html',1,'I2Cdev'],['../class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84',1,'I2Cdev::I2Cdev()'],['../class_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84',1,'I2Cdev::I2Cdev()']]],
@@ -27,6 +27,6 @@ var searchData=
   ['interpretwindow_2eh',['InterpretWindow.h',['../_interpret_window_8h.html',1,'']]],
   ['interpretwindowopen',['interpretWindowOpen',['../class_main_window.html#af7d0442d49a351832be7c244741d65da',1,'MainWindow']]],
   ['is_5fascii',['is_ascii',['../namespaceconvert__model.html#a6f0a27af8098c2b11ce0aa611ce2838d',1,'convert_model']]],
-  ['i2cdev',['I2Cdev',['../md_code__m_c_p3428__i2_cdev__r_e_a_d_m_e.html',1,'']]],
-  ['i2cdev',['I2Cdev',['../md_code__m_p_u6050__i2_cdev__r_e_a_d_m_e.html',1,'']]]
+  ['i2cdev',['I2Cdev',['../md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_c_p3428__i2_cdev__r_e_a_d_m_e.html',1,'']]],
+  ['i2cdev',['I2Cdev',['../md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_p_u6050__i2_cdev__r_e_a_d_m_e.html',1,'']]]
 ];

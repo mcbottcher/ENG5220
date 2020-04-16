@@ -6,6 +6,7 @@ var class_sample_timer =
     [ "readFromSensors", "class_sample_timer.html#a64e770c1941ded68bec40c5a24d43b19", null ],
     [ "timeoutsignal", "class_sample_timer.html#a92a78d3dcbf7fb9e7086ea2c00d8b7c8", null ],
     [ "timerEvent", "class_sample_timer.html#aeb8b390f578e49bf74cc93bd901d29ae", null ],
+    [ "filters", "class_sample_timer.html#a9822fdc4dbc9eca3d2f0f1d2447eb7a4", null ],
     [ "flexFingers", "class_sample_timer.html#ae149758a165b26a99a759de0936ce97d", null ],
     [ "flexThumb", "class_sample_timer.html#a5d89018646d2b57446ac016e08b4b9eb", null ],
     [ "motionSensor", "class_sample_timer.html#aabdada00833e1b4c9174eeec100fc291", null ],

@@ -24,14 +24,14 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "The Lexicon Glove", "index.html", [
-    [ "CSVtoVectorCpp", "md_code__c_s_vto_vector_cpp__r_e_a_d_m_e.html", null ],
-    [ "I2Cdev", "md_code__m_c_p3428__i2_cdev__r_e_a_d_m_e.html", null ],
-    [ "MCP3428", "md_code__m_c_p3428__r_e_a_d_m_e.html", null ],
-    [ "I2Cdev", "md_code__m_p_u6050__i2_cdev__r_e_a_d_m_e.html", null ],
-    [ "MPU6050", "md_code__m_p_u6050__r_e_a_d_m_e.html", null ],
-    [ "kerasCpp", "md_code_neuralnet_predict__r_e_a_d_m_e.html", null ],
-    [ "Marketing", "md_project_planning__marketing_strategy.html", null ],
-    [ "README", "md__r_e_a_d_m_e.html", null ],
+    [ "CSVtoVectorCpp", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__c_s_vto_vector_cpp__r_e_a_d_m_e.html", null ],
+    [ "I2Cdev", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_c_p3428__i2_cdev__r_e_a_d_m_e.html", null ],
+    [ "MCP3428", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_c_p3428__r_e_a_d_m_e.html", null ],
+    [ "I2Cdev", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_p_u6050__i2_cdev__r_e_a_d_m_e.html", null ],
+    [ "MPU6050", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code__m_p_u6050__r_e_a_d_m_e.html", null ],
+    [ "kerasCpp", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_code_neuralnet_predict__r_e_a_d_m_e.html", null ],
+    [ "Marketing", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220_project_planning__marketing_strategy.html", null ],
+    [ "README", "md___users_jamielee__desktop_uni_stuff__r_t_e5__e_n_g5220__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -72,7 +72,7 @@ var NAVTREEINDEX =
 "_m_p_u6050_8h.html#a795c81a32a12a232e00f401ef4c57ea2",
 "class_interpret_window.html#a57ad0aa458959cb3f4e5cf3e9ec3ad82",
 "class_m_p_u6050.html#ac5fd917549d2ed0f12b8a17167271199",
-"convert__model_8py.html#a9e2a7f97ea9ffaddc9d561f888668880"
+"convert__model_8py.html#a9dcad603f29c9a6113178484b81d5d59"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

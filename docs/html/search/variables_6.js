@@ -8,6 +8,7 @@ var searchData=
   ['filtered',['filtered',['../namespaceplotfilter.html#a03f2bc93d269885b2b62fcfc4be986d8',1,'plotfilter']]],
   ['filterobjarray',['filterObjArray',['../class_filter_bank.html#a3653c92ac4ffffd5b48954a9030451cc',1,'FilterBank']]],
   ['filterorder',['filterOrder',['../class_filter.html#a58d09f34bb6da619aeb71f1fbb737847',1,'Filter::filterOrder()'],['../class_filter_bank.html#a83780bb546eda422318b54103df62613',1,'FilterBank::filterOrder()']]],
+  ['filters',['filters',['../class_sample_timer.html#a9822fdc4dbc9eca3d2f0f1d2447eb7a4',1,'SampleTimer']]],
   ['finger',['finger',['../class_monitor_window.html#ab27c111f826a869a122147e6652ab36a',1,'MonitorWindow']]],
   ['fingerlayout',['fingerLayout',['../class_interpret_window.html#a72831bdda5dbae269c53bb6021645435',1,'InterpretWindow::fingerLayout()'],['../class_monitor_window.html#aa2f1384109f069600aae3b33c6952410',1,'MonitorWindow::fingerLayout()']]],
   ['fingerplot',['fingerPlot',['../class_monitor_window.html#add518550737fac91912a0e99f6ea282e',1,'MonitorWindow']]],

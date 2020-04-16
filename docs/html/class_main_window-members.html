@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -55,23 +47,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_main_window.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,6 +61,7 @@ $(document).ready(function(){initNavTree('class_main_window.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">MainWindow Member List</div>  </div>
@@ -101,42 +77,38 @@ $(document).ready(function(){initNavTree('class_main_window.html','');});
   <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a736a4a4844c6ef154f358bb50f956a75">but_train</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_main_window.html#a56d8727651a8b002ebff58e79e5ef26f">count</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a626eec967d3981392e278927c4505264">cppSampleTimer</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#ae24d795221d33aeed0bf1df68e8e369a">createFilters</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#aabd8d480a18455fd70abceb51345d6a6">createUI</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a5f79fa5048dcd15e8fbc9e2cc585cdf2">interpretButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#af6d537df199e481767cab8c8f44becd7">interpretQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#aa40db177d33ae137ea6f49adf36a76cb">interpretWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#af7d0442d49a351832be7c244741d65da">interpretWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a47338c0917ca1834819265ee37daf94d">lab_icon</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a16e5d3d19dbc3fbed256ed72c99ebc7c">lab_interpret</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a5bb6b7334521ee0f6761d2fe1c1574d3">lab_mon</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a2afd294ea45f6d00538ac439731b5688">lab_train</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#acb3bde298a3db1072f56a0210caa19bc">logo</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a82198bd0b2620b2d0a9d0a319010135a">logo_image</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent=nullptr)</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a5413c743856077ba000b3b02b462ae40">moitorRefreshtimer</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#ab4e7785aa4ae2f9d167caa3dabee52d8">monitorButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a2b520c36e8b8cf4d8b0ffde221291ca8">monitorQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a4914486ee3b888bda79eda5690011331">monitorWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a608d595d7e1fcf47000f528991d83cc1">monitorWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#ac753b09079c4652b29c6e96e1f055d5b">newDataEvent</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#ab7666e594453210c6f6a2007b09d72f2">title_font</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#aa2ada250d55b0d32a974067d7799b05a">title_text</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#ac739668022b7b6aa8062e8a2bb3a8776">trainButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#a36300d9ee353aeb9db643132df54caeb">trainQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a0e70c73ab2c766dc32c6a96a54768796">trainWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#acce29aef3b999709286902a8f20fe5eb">trainWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#aaa776530b3613f80f6135d71485f24c7">windowtimer</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#aabd8d480a18455fd70abceb51345d6a6">createUI</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a5f79fa5048dcd15e8fbc9e2cc585cdf2">interpretButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#af6d537df199e481767cab8c8f44becd7">interpretQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#aa40db177d33ae137ea6f49adf36a76cb">interpretWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#af7d0442d49a351832be7c244741d65da">interpretWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a47338c0917ca1834819265ee37daf94d">lab_icon</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a16e5d3d19dbc3fbed256ed72c99ebc7c">lab_interpret</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a5bb6b7334521ee0f6761d2fe1c1574d3">lab_mon</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a2afd294ea45f6d00538ac439731b5688">lab_train</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#acb3bde298a3db1072f56a0210caa19bc">logo</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a82198bd0b2620b2d0a9d0a319010135a">logo_image</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent=nullptr)</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a5413c743856077ba000b3b02b462ae40">moitorRefreshtimer</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#ab4e7785aa4ae2f9d167caa3dabee52d8">monitorButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a2b520c36e8b8cf4d8b0ffde221291ca8">monitorQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a4914486ee3b888bda79eda5690011331">monitorWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a608d595d7e1fcf47000f528991d83cc1">monitorWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#ac753b09079c4652b29c6e96e1f055d5b">newDataEvent</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#ab7666e594453210c6f6a2007b09d72f2">title_font</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#aa2ada250d55b0d32a974067d7799b05a">title_text</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#ac739668022b7b6aa8062e8a2bb3a8776">trainButtonClicked</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#a36300d9ee353aeb9db643132df54caeb">trainQuit</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#a0e70c73ab2c766dc32c6a96a54768796">trainWindow</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#acce29aef3b999709286902a8f20fe5eb">trainWindowOpen</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_main_window.html#aaa776530b3613f80f6135d71485f24c7">windowtimer</a></td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>()</td><td class="entry"><a class="el" href="class_main_window.html">MainWindow</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
 </body>
 </html>

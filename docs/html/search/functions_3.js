@@ -8,7 +8,6 @@ var searchData=
   ['convert',['convert',['../namespaceconvert__model.html#a8e33528d881cc7de1fc3e42757592757',1,'convert_model']]],
   ['convert_5fsequential_5fto_5fmodel',['convert_sequential_to_model',['../namespaceconvert__model.html#aeebb6e84073c42c736b880a1d1fc4b45',1,'convert_model']]],
   ['countdown',['countdown',['../sampledata_8cpp.html#a87726c5d201ef29efa9aa57511a2e562',1,'sampledata.cpp']]],
-  ['createfilters',['createFilters',['../class_main_window.html#ae24d795221d33aeed0bf1df68e8e369a',1,'MainWindow']]],
   ['createui',['createUI',['../class_main_window.html#aabd8d480a18455fd70abceb51345d6a6',1,'MainWindow']]],
   ['csvreader',['CSVreader',['../class_c_s_vreader.html#a92841dcf40072cb132f75d67ec32cf7a',1,'CSVreader']]],
   ['curve',['Curve',['../struct_monitor_window_1_1_curve.html#adadec29d18c9ddc2dff9f3644855f7ab',1,'MonitorWindow::Curve']]]
