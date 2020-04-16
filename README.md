@@ -33,6 +33,13 @@ To build:
   qmake
   make
 ```
+To setup the i2c functionality:
+```
+  cd code/MCP3428/I2Cdev
+  chmod +x setup-i2c.sh
+  ./setup-i2c.sh
+```
+
 To allow text-to-speech functionality (only has to be run first time):
 ```
   pulseaudio -D
