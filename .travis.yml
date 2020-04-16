@@ -4,7 +4,7 @@ compiler: gcc
 dist: bionic
 
 before_install: 
-- make get-deps
+- apt-get install python3
 - sudo chmod +x installdependencies.sh 
 - ./installdependencies.sh 
 
