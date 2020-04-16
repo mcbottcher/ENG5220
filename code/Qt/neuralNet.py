@@ -1,4 +1,3 @@
-import convert_model
 import sys
 import os
 import numpy as np
@@ -7,7 +6,7 @@ from keras.layers import Dense
 from keras.utils import to_categorical
 from numpy import genfromtxt
 import pandas as pd
-
+import convert_model
 
 # number of arguments : len(sys.argv)
 # list of strings of arugments: str(sys.argv)
