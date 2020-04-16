@@ -10,7 +10,9 @@ The Lexicon Glove is a wearable glove capable of interpreting hand movements to 
 
 In Training Mode, the user can create a new custom gesture linked to a word or phrase of their choice. During training, they will be taken through the process of creating training data for the neural network by repeating the movement a number of times. Once training is completed, the training data for all of the gestures is used to create a neural network model. In Interpret Mode, the model is used to correctly output words/phrases based on the glove movements in real time.
 
-For more information about the design of the Lexicon Glove and its applications, see the [Wiki](https://github.com/mcbottcher/ENG5220/wiki).
+You can 
+
+For more information about the design of the Lexicon Glove and its applications, see the [Wiki](https://github.com/mcbottcher/ENG5220/wiki), where you can also watch some [Demonstration Videos](https://github.com/mcbottcher/ENG5220/wiki/Demonstration-Videos) of the key features!
 
 <p align="center">
   <img height="227" width="403" src="https://github.com/mcbottcher/ENG5220/blob/master/images/glove_photo_1.jpg">
