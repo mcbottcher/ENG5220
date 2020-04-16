@@ -11,4 +11,6 @@ script:
 - cd code 
 - qmake 
 - make 
-- cd -
+- cd unitTests
+- chmod +x run_sw_tests.sh
+- ./run_sw_tests.sh
