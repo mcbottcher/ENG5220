@@ -12,6 +12,10 @@ In Training Mode, the user can create a new custom gesture linked to a word or p
 
 For more information about the design of the Lexicon Glove and its applications, see the [Wiki](https://github.com/mcbottcher/ENG5220/wiki).
 
+<p align="center">
+  <img height="262" width="456" src="https://github.com/mcbottcher/ENG5220/blob/master/images/glove_photo_1.png">
+</p>
+
 ### Code Documentation
 Avaliable at https://mcbottcher.github.io/ENG5220
 
