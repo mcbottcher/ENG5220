@@ -5,6 +5,7 @@ dist: bionic
 
 before_install: 
 - sudo apt-get install python3
+- sudo snap install pypy3 --classic
 - sudo chmod +x installdependencies.sh 
 - ./installdependencies.sh 
 
