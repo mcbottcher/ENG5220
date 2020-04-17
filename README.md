@@ -19,7 +19,7 @@ For more information about the design of the Lexicon Glove and its applications,
 </p>
 
 ### Code Documentation
-Avaliable at https://mcbottcher.github.io/ENG5220
+Avaliable at this repo's [GitHub pages](https://mcbottcher.github.io/ENG5220)!
 
 
 ### Build Instructions
