@@ -35,7 +35,7 @@ To build:
   qmake
   make
 ```
-To setup the i2c functionality:
+To setup the i2c functionality (only has to be run first time):
 ```
   cd code/MCP3428/I2Cdev
   chmod +x setup-i2c.sh
