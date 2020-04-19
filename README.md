@@ -53,8 +53,7 @@ To run:
 ```
 
 
-Follow us on [Twitter](https://twitter.com/GloveLexicon)!
-Follow us on [Hackaday.io](https://hackaday.io/project/170876-realtime-gesture-recognition-glove)!
+Follow us on [Twitter](https://twitter.com/GloveLexicon) and [Hackaday.io](https://hackaday.io/project/170876-realtime-gesture-recognition-glove)!
 
 ### Authors and Contributors 
 * [Mikkel Caschetto-Bottcher](https://github.com/mcbottcher)
