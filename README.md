@@ -60,4 +60,5 @@ Follow us on [Twitter](https://twitter.com/GloveLexicon) and [Hackaday.io](https
 * [James Lee](https://github.com/jamielee183)
 * [Dan Wareing](https://github.com/danwareing1)
 
-
+***
+Anyone who feels they can contribute any imporovements to the project is welcome to fork the project, and submit an issue with a pull request with the changes. For some ideas, concepts for future developement can be found on the project's [issues](https://github.com/mcbottcher/ENG5220/issues) page.
