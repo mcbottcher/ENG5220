@@ -57,6 +57,7 @@ Follow us on [Twitter](https://twitter.com/GloveLexicon) and [Hackaday.io](https
 
 ### Authors and Contributors 
 * [Mikkel Caschetto-Bottcher](https://github.com/mcbottcher)
-* [Dan Wareing](https://github.com/danwareing1)
 * [James Lee](https://github.com/jamielee183)
+* [Dan Wareing](https://github.com/danwareing1)
+
 
